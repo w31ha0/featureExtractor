@@ -12,6 +12,8 @@ def parseManifest():
 	suspiciousPermissions = []
 	intentsCounter = 0
 	suspiciousIntents = []
+	hardwareCounter = 0
+	suspiciousHardwares = []
 	
 	for child in root:
 		if child.tag == PERMISSION_LABEL: #Parse permissions
@@ -30,11 +32,15 @@ def parseManifest():
 									if intent in MALICIOUS_INTENTS:
 										intentsCounter = intentsCounter + 1
 										suspiciousIntents.append(intent)
+								elif action.tag == HARDWARE_LABEL:
+									intent = action.attrib[HARDWARE_KEY]
+									if intent in MALICIOUS_HARDWARES:
+										hardwareCounter = hardwareCounter + 1
+										suspiciousHardwares.append(intent)
 									
-	print "Number of suspiscious permissions is "+str(permissionsCounter)
-	print suspiciousPermissions
-	print "Number of suspiscious intents is "+str(intentsCounter)
-	print suspiciousIntents
+	print "Number of suspiscious permissions is "+str(permissionsCounter)+":"+str(suspiciousPermissions)
+	print "Number of suspiscious intents is "+str(intentsCounter)+":"+str(suspiciousIntents)
+	print "Number of suspiscious hardware is "+str(hardwareCounter)+":"+str(suspiciousHardwares)
 								
 		
 				
