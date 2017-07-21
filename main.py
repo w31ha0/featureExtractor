@@ -1,5 +1,6 @@
 from extractor import *
 from manifestParser import *
+from fileParser import *
 import argparse
 
 parser = argparse.ArgumentParser(description='Feature Extractor')
@@ -11,5 +12,6 @@ apkfile = args.i
 unzip(apkfile)
 convertAll()
 parseManifest()
+searchForInnerApkOrJar()
 
 cleanup()
