@@ -4,9 +4,21 @@ from constants import *
 
 manifestPath = TEMP_DIRECTORY+'/'+MANIFEST_FILE_CONVERTED
 
+def checkSuspiciousName(sample,array):
+	for malicious in array:
+		if malicious in sample:
+			return True
+	return False
+
 def parseManifest():	
 	tree = ET.parse(manifestPath)
 	root = tree.getroot()
+	
+	MALICIOUS_NAMES = []
+	MALICIOUS_NAMES.extend(MALICIOUS_ACTIVITIES)
+	MALICIOUS_NAMES.extend(MALICIOUS_SERVICES)
+	MALICIOUS_NAMES.extend(MALICIOUS_RECEIVERS)
+	MALICIOUS_NAMES.extend(MALICIOUS_PROVIDERS)
 	
 	permissionsCounter = 0
 	hardwareCounter = 0
@@ -27,7 +39,7 @@ def parseManifest():
 			for innerChild in child:
 				if innerChild.tag == ACTIVITY_LABEL or innerChild.tag == RECEVIER_LABEL or innerChild.tag == SERVICE_LABEL or innerChild.tag == PROVIDER_LABEL:
 					componentName = innerChild.attrib[OBJECT_KEY]
-					if componentName in MALICIOUS_ACTIVITIES or componentName in MALICIOUS_RECEIVERS or componentName in MALICIOUS_SERVICES or componentName in MALICIOUS_PROVIDERS: #parse malicious names in components
+					if checkSuspiciousName(componentName,MALICIOUS_NAMES): #parse malicious names in components
 						malicousNamesCounter = malicousNamesCounter + 1
 						malicousNames.append(componentName)
 					for innerInnerChild in innerChild:
