@@ -1,5 +1,7 @@
 TEMP_DIRECTORY = 'temp'
 ANDROGUARD_PATH = '../tools/androguard/'
+SMALI_PATH = 'smali'
+BAKSMALI_PATH = ' ~/tools/baksmali-2.2.1.jar'
 
 #Manifest
 MANIFEST_FILE_RAW = 'AndroidManifest.xml'
@@ -24,3 +26,5 @@ MALICIOUS_ACTIVITIES = ['FirstAActivity']
 MALICIOUS_SERVICES = ['FirstAService']
 MALICIOUS_RECEIVERS = ['BaseABroadcastReceiver']
 MALICIOUS_PROVIDERS = []
+
+SENSITIVE_APIS = ['getSMSCFromSms']
