@@ -14,6 +14,7 @@ unzip(apkfile)
 convertAll()
 baksmali()
 
+print ""
 parseManifest()
 searchForInnerApkOrJar()
 parseSmali()

@@ -14,3 +14,4 @@ def searchForInnerApkOrJar():
 				innerFiles.append(fullpath)
 				
 	print "Number of suspicious inner files is "+str(innerFilesCounter)+":"+str(innerFiles)
+	print ""

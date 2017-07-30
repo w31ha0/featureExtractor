@@ -28,3 +28,5 @@ MALICIOUS_RECEIVERS = ['BaseABroadcastReceiver']
 MALICIOUS_PROVIDERS = []
 
 SENSITIVE_APIS = ['getSMSCFromSms']
+REFLECTION_LABEL = "Ljava/lang/reflect/Method"
+GET_METHOD_LABEL = "getMethod"

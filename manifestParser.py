@@ -57,9 +57,13 @@ def parseManifest():
 										suspiciousHardwares.append(intent)
 									
 	print "Number of suspiscious permissions is "+str(permissionsCounter)+":"+str(suspiciousPermissions)
+	print ""
 	print "Number of suspiscious intents is "+str(intentsCounter)+":"+str(suspiciousIntents)
+	print ""
 	print "Number of suspiscious hardware is "+str(hardwareCounter)+":"+str(suspiciousHardwares)
-	print "Number of suspiscious names is "+str(malicousNamesCounter)+":"+str(malicousNames)				
+	print ""
+	print "Number of suspiscious names is "+str(malicousNamesCounter)+":"+str(malicousNames)		
+	print ""	
 		
 				
 	
