@@ -16,6 +16,6 @@ baksmali()
 
 parseManifest()
 searchForInnerApkOrJar()
-searchSenstitiveCalls()
+parseSmali()
 
 cleanup()
