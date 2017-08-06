@@ -16,7 +16,7 @@ baksmali()
 
 print ""
 parseManifest()
-searchForInnerApkOrJar()
+traverseAll()
 parseSmali()
 
 cleanup()

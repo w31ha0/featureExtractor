@@ -30,3 +30,7 @@ MALICIOUS_PROVIDERS = []
 SENSITIVE_APIS = ['getSMSCFromSms']
 REFLECTION_LABEL = "Ljava/lang/reflect/Method"
 GET_METHOD_LABEL = "getMethod"
+DEX_CLASS_LABEL = "Ldalvik/system/DexClassLoader"
+DECRYPTION_LABEL = "Ljavax/crypto/Cipher"
+NATIVE_LOAD_LABEL = "loadLibrary"
+NATIVE_FUNCTION_LABEL = "native"

@@ -8,6 +8,9 @@ def parseSmali():
 	allNetworkAddresses = []
 	allConstantClassNames = []
 	allReflectionCode = []
+	allDexCode = []
+	allDecryptionCode = []
+	allNativeCode = []
 	
 	for path, subdirs, files in os.walk(dir_path):
 		for name in files:
@@ -18,6 +21,9 @@ def parseSmali():
 				allNetworkAddresses.extend(searchNetworkAddresses(content,fullpath))
 				allConstantClassNames.extend(searchConstantClassNames(content,fullpath))
 				allReflectionCode.extend(searchForReflection(content,fullpath))
+				allDexCode.extend(searchForLoadingOfDex(content,fullpath))
+				allDecryptionCode.extend(searchForDecryptionUsage(content,fullpath))
+				allNativeCode.extend(searchForNativeCodeUsage(content,fullpath))
 			else:
 				fullpath = os.path.join(path, name)
 				content = open(fullpath,'r').readlines()			
@@ -31,7 +37,10 @@ def parseSmali():
 	print ""
 	print "Number of reflection code:" + str(len(allReflectionCode)) + str(allReflectionCode)
 	print ""
-	
+	print "Number of Dex code:" + str(len(allDexCode)) + str(allDexCode)
+	print ""
+	print "Number of Native code:" + str(len(allNativeCode)) + str(allNativeCode)
+	print ""	
 
 def searchSenstitiveCalls(content,fullpath):
 	sensitiveAPIS = []
@@ -82,9 +91,44 @@ def searchForReflection(content,fullpath):
 	for line in content:
 		lineNo = lineNo + 1
 		if REFLECTION_LABEL in line and GET_METHOD_LABEL in line:
-			#print line
 			record = line + " <" + fullpath + ":"+str(lineNo)+">"
 			reflectionCode.append(record)
 			
 	return reflectionCode
+	
+def searchForLoadingOfDex(content,fullpath):
+	dexCode = []
+	lineNo = 1
+
+	for line in content:
+		lineNo = lineNo + 1
+		if DEX_CLASS_LABEL in line:
+			record = line + " <" + fullpath + ":"+str(lineNo)+">"
+			dexCode.append(record)
+			
+	return dexCode	
+
+def searchForDecryptionUsage(content,fullpath):
+	decryptCode = []
+	lineNo = 1
+
+	for line in content:
+		lineNo = lineNo + 1
+		if DECRYPTION_LABEL in line:
+			record = line + " <" + fullpath + ":"+str(lineNo)+">"
+			decryptCode.append(record)
+			
+	return decryptCode	
+	
+def searchForNativeCodeUsage(content,fullpath):
+	nativeCode = []
+	lineNo = 1
+
+	for line in content:
+		lineNo = lineNo + 1
+		if NATIVE_LOAD_LABEL in line or (NATIVE_FUNCTION_LABEL in line and ".method" in line):
+			record = line + " <" + fullpath + ":"+str(lineNo)+">"
+			nativeCode.append(record)
+			
+	return nativeCode	
 	
