@@ -2,6 +2,7 @@ TEMP_DIRECTORY = 'temp'
 ANDROGUARD_PATH = '../tools/androguard/'
 SMALI_PATH = 'smali'
 BAKSMALI_PATH = ' ~/tools/baksmali-2.2.1.jar'
+HIDEX_PATH = 'hidex.pl'
 
 #Manifest
 MANIFEST_FILE_RAW = 'AndroidManifest.xml'
@@ -27,6 +28,9 @@ MALICIOUS_SERVICES = ['FirstAService']
 MALICIOUS_RECEIVERS = ['BaseABroadcastReceiver']
 MALICIOUS_PROVIDERS = []
 
+BANGCLE_ACTIVITIES = ["FirstApplication","ACall"]
+BANGCLE_LIBRARIES = ["libsecexe","libsecmain"]
+
 SENSITIVE_APIS = ['getSMSCFromSms']
 REFLECTION_LABEL = "Ljava/lang/reflect/Method"
 GET_METHOD_LABEL = "getMethod"
@@ -34,3 +38,5 @@ DEX_CLASS_LABEL = "Ldalvik/system/DexClassLoader"
 DECRYPTION_LABEL = "Ljavax/crypto/Cipher"
 NATIVE_LOAD_LABEL = "loadLibrary"
 NATIVE_FUNCTION_LABEL = "native"
+APKPROTECT_LABEL = "APKProtected"
+BANGCLE_LABEL = "com.secapk.wrapper.ApplicationWrapper"

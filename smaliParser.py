@@ -11,6 +11,7 @@ def parseSmali():
 	allDexCode = []
 	allDecryptionCode = []
 	allNativeCode = []
+	nonAsciiCounter = 0
 	
 	for path, subdirs, files in os.walk(dir_path):
 		for name in files:
@@ -19,11 +20,12 @@ def parseSmali():
 				content = open(fullpath,'r').readlines()
 				allSensitiveAPIS.extend(searchSenstitiveCalls(content,fullpath))
 				allNetworkAddresses.extend(searchNetworkAddresses(content,fullpath))
-				allConstantClassNames.extend(searchConstantClassNames(content,fullpath))
+				allConstantClassNames.extend(searchConstantStrings(content,fullpath))
 				allReflectionCode.extend(searchForReflection(content,fullpath))
 				allDexCode.extend(searchForLoadingOfDex(content,fullpath))
 				allDecryptionCode.extend(searchForDecryptionUsage(content,fullpath))
 				allNativeCode.extend(searchForNativeCodeUsage(content,fullpath))
+				nonAsciiCounter += searchNonAscii(content,fullpath)
 			else:
 				fullpath = os.path.join(path, name)
 				content = open(fullpath,'r').readlines()			
@@ -41,7 +43,20 @@ def parseSmali():
 	print ""
 	print "Number of Native code:" + str(len(allNativeCode)) + str(allNativeCode)
 	print ""	
+	if nonAsciiCounter > 0:
+		print "Dex Guard detected:" + str(nonAsciiCounter) + " non-ASCII namings detected"
 
+def searchNonAscii(content,fullpath):
+	counter = 0
+	for line in content:
+		for c in line:
+			if 0 <= ord(c) <= 127:
+				pass
+			else:
+				counter += 1
+				
+	return counter
+	
 def searchSenstitiveCalls(content,fullpath):
 	sensitiveAPIS = []
 	lineNo = 1
@@ -70,7 +85,7 @@ def searchNetworkAddresses(content,fullpath):
 		
 	return networkAddresses
 	
-def searchConstantClassNames(content,fullpath):
+def searchConstantStrings(content,fullpath):
 	constantStrings = []
 	constantClassNames = []
 	lineNo = 1
@@ -81,6 +96,9 @@ def searchConstantClassNames(content,fullpath):
 		for constant in constantStrings:
 			if 1 == 2: #to match class names here
 				constantClassNames.append(constant)
+			for bangcleLibrary in BANGCLE_LIBRARIES:
+				if bangcleLibrary in constant:
+					print "Use of Bangcle detected:" + bangcleLibrary
 		
 	return constantClassNames
 	

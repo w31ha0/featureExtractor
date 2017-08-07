@@ -2,6 +2,7 @@ from extractor import *
 from manifestParser import *
 from fileParser import *
 from smaliParser import *
+from obsfucationDetector import *
 import argparse
 
 parser = argparse.ArgumentParser(description='Feature Extractor')
@@ -18,5 +19,7 @@ print ""
 parseManifest()
 traverseAll()
 parseSmali()
+calculateEdges(apkfile)
+parseDex()
 
 cleanup()

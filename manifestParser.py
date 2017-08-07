@@ -29,6 +29,9 @@ def parseManifest():
 	suspiciousHardwares = []
 	malicousNames = []
 	
+	package = root.attrib["package"]
+	if package == BANGCLE_LABEL:
+		print "Use of Bangcle detected:"+package
 	for child in root:
 		if child.tag == PERMISSION_LABEL: #Parse permissions
 			permission = child.attrib[OBJECT_KEY]
@@ -37,11 +40,13 @@ def parseManifest():
 				suspiciousPermissions.append(permission)
 		elif child.tag == APPLICATION_LABEL: 
 			for innerChild in child:
+				componentName = innerChild.attrib[OBJECT_KEY]
 				if innerChild.tag == ACTIVITY_LABEL or innerChild.tag == RECEVIER_LABEL or innerChild.tag == SERVICE_LABEL or innerChild.tag == PROVIDER_LABEL:
-					componentName = innerChild.attrib[OBJECT_KEY]
 					if checkSuspiciousName(componentName,MALICIOUS_NAMES): #parse malicious names in components
 						malicousNamesCounter = malicousNamesCounter + 1
 						malicousNames.append(componentName)
+				if checkSuspiciousName(componentName,BANGCLE_ACTIVITIES):
+					print "Use of Bangcle detected: " + componentName
 					for innerInnerChild in innerChild:
 						if innerInnerChild.tag == INTENT_LABEL: #Parse intents
 							for action in innerInnerChild:

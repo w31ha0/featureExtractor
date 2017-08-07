@@ -1,5 +1,13 @@
 import sys,os,subprocess
+import os
+from constants import *
 
+def checkSuspiciousName(sample,array):
+	for malicious in array:
+		if malicious in sample:
+			return True
+	return False
+		
 def traverseAll():
 	dir_path = os.path.dirname(os.path.realpath(__file__))
 	innerFilesCounter = 0
@@ -10,8 +18,10 @@ def traverseAll():
 	for path, subdirs, files in os.walk(dir_path):
 		for name in files:
 			fullpath = os.path.join(path, name)
-			if searchForPolyglotImageFiles(fullpath) == True:
-				suspiciousImageFiles.append(fullpath)
+			dataType = searchForPolyglotImageFiles(fullpath)
+			if dataType != None:
+				record = fullpath+":"+dataType
+				suspiciousImageFiles.append(record)
 				suspiciousImageFilesCounter += 1
 			output = searchForInnerApkOrJar(path,name)
 			if output != None:
@@ -39,8 +49,8 @@ def searchForPolyglotImageFiles(fullpath):
 		for i in range(3,len(content)):
 			dataType = content[i].strip()
 			if "image" not in dataType and "Zlib" not in dataType and dataType:
-				print "Found suspicious " + dataType
-				return True
-	return False
+				#print "Found suspicious image data:" + dataType
+				return dataType
+	return None
 		
 	
