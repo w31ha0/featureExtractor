@@ -19,6 +19,7 @@ SERVICE_LABEL = 'service'
 PROVIDER_LABEL = 'provider'
 
 OBJECT_KEY = '{http://schemas.android.com/apk/res/android}name'
+OBJECT_KEY2 = "name"
 
 MALICIOUS_PERMISSIONS = ['android.permission.INTERNET','android.permission.WRITE_SMS','android.permission.DISABLE_KEYGUARD']
 MALICIOUS_INTENTS = ['android.intent.action.BOOT_COMPLETED','android.provider.Telephony.SMS_RECEIVED','android.intent.action.UMS_CONNECTED']
@@ -28,8 +29,9 @@ MALICIOUS_SERVICES = ['FirstAService']
 MALICIOUS_RECEIVERS = ['BaseABroadcastReceiver']
 MALICIOUS_PROVIDERS = []
 
-BANGCLE_ACTIVITIES = ["FirstApplication","ACall"]
-BANGCLE_LIBRARIES = ["libsecexe","libsecmain"]
+BANGCLE_ACTIVITIES = ["FirstApplication","ACall","com.bangcle.everisk.stub.NewActivity"]
+BANGCLE_LIBRARIES = ["libsecexe.so","libsecmain.so","libSecShell.so","libSecShell-x86.so"]
+BANGCLE_LABELS = ["com.secapk.wrapper.ApplicationWrapper","com.secshell.secData.ApplicationWrapper"]
 
 SENSITIVE_APIS = ['getSMSCFromSms']
 REFLECTION_LABEL = "Ljava/lang/reflect/Method"
@@ -39,4 +41,3 @@ DECRYPTION_LABEL = "Ljavax/crypto/Cipher"
 NATIVE_LOAD_LABEL = "loadLibrary"
 NATIVE_FUNCTION_LABEL = "native"
 APKPROTECT_LABEL = "APKProtected"
-BANGCLE_LABEL = "com.secapk.wrapper.ApplicationWrapper"

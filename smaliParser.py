@@ -96,9 +96,6 @@ def searchConstantStrings(content,fullpath):
 		for constant in constantStrings:
 			if 1 == 2: #to match class names here
 				constantClassNames.append(constant)
-			for bangcleLibrary in BANGCLE_LIBRARIES:
-				if bangcleLibrary in constant:
-					print "Use of Bangcle detected:" + bangcleLibrary
 		
 	return constantClassNames
 	

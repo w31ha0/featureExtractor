@@ -1,6 +1,7 @@
 import sys,os,subprocess
 import os
 from constants import *
+from sharedFunctions import *
 
 def checkSuspiciousName(sample,array):
 	for malicious in array:
@@ -23,7 +24,7 @@ def traverseAll():
 				record = fullpath+":"+dataType
 				suspiciousImageFiles.append(record)
 				suspiciousImageFilesCounter += 1
-			output = searchForInnerApkOrJar(path,name)
+			output = searchForInnerFiles(path,name)
 			if output != None:
 				innerFiles.append(output)
 				innerFilesCounter += 1
@@ -33,10 +34,13 @@ def traverseAll():
 	print "Number of suspicious image files is "+str(suspiciousImageFilesCounter)+":"+str(suspiciousImageFiles)
 	print ""
 	
-def searchForInnerApkOrJar(path,name):	
+def searchForInnerFiles(path,name):	
 	if name.endswith('apk') or name.endswith('jar'):
 		fullpath = os.path.join(path, name)
 		return fullpath
+	elif name.endswith('so'):
+		if name in BANGCLE_LIBRARIES:
+			onBangcleDetected(name)
 	else:
 		return None
 				
