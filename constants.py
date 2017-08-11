@@ -23,10 +23,10 @@ OBJECT_KEY2 = "name"
 
 MALICIOUS_PERMISSIONS = ['android.permission.INTERNET','android.permission.WRITE_SMS','android.permission.DISABLE_KEYGUARD','android.permission.RECEIVE_WAP_PUSH','android.permission.RECEIVE_MMS',
 'android.permission.WRITE_APN_SETTINGS','android.permission.READ_SMS','android.permission.INSTALL_PACKAGES','android.permission.DELETE_PACKAGES','android.permission.BROADCAST_PACKAGE_REMOVED','android.permission.SEND_SMS']
-MALICIOUS_INTENTS = ['android.intent.action.BOOT_COMPLETED','android.provider.Telephony.SMS_RECEIVED','android.intent.action.UMS_CONNECTED']
-MALICIOUS_HARDWARES = ['android.hardware.sensor.stepcounter']
-MALICIOUS_ACTIVITIES = ['FirstAActivity']
-MALICIOUS_SERVICES = ['FirstAService']
+MALICIOUS_INTENTS = ['BOOT_COMPLETED','SMS_RECEIVED','UMS_CONNECTED','SENDTO','DIAL','SCREEN_OFF','TEXT','SEND','USER_PRESENT','PACKAGE_ADDED','SCREEN_ON','CALL']
+MALICIOUS_HARDWARES = ['android.hardware.camera','android.hardware.microphone','android.hardware.location','android.hardware.telephony']
+MALICIOUS_ACTIVITIES = ['FirstAActivity','SecondAActivity','ThirdAActivity','FourthAActivity','MainA']
+MALICIOUS_SERVICES = ['FirstAService','SecondAService','ThirdAService','FourthAService','AdSmsService','OperateService','SMSService','SMSSendService']
 MALICIOUS_RECEIVERS = ['BaseABroadcastReceiver']
 MALICIOUS_PROVIDERS = []
 

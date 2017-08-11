@@ -72,9 +72,10 @@ def parseManifest():
                             for action in innerInnerChild:
                                 if action.tag == ACTION_LABEL:
                                     intent = action.attrib[OBJECT_KEY]
-                                    if intent in MALICIOUS_INTENTS:
-                                        intentsCounter = intentsCounter + 1
-                                        suspiciousIntents.append(intent)
+                                    for maliciousIntent in MALICIOUS_INTENTS:
+                                        if maliciousIntent in intent:
+                                            intentsCounter = intentsCounter + 1
+                                            suspiciousIntents.append(intent)
                                 elif action.tag == HARDWARE_LABEL: #Parse HARDWARE
                                     totalHardwareCounter += 1
                                     intent = action.attrib[OBJECT_KEY]
@@ -94,7 +95,7 @@ def parseManifest():
     print ""
     print "Number of suspiscious hardware is "+str(hardwareCounter)+":"+str(suspiciousHardwares)
     print ""
-    print "Number of suspiscious names is "+str(malicousNamesCounter)+":"+str(malicousNames)        
+    print "Number of suspiscious component names is "+str(malicousNamesCounter)+":"+str(malicousNames)        
     print ""    
         
                 
