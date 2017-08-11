@@ -45,6 +45,7 @@ def parseSmali():
 	print ""	
 	if nonAsciiCounter > 0:
 		print "Dex Guard detected:" + str(nonAsciiCounter) + " non-ASCII namings detected"
+        print ""
 
 def searchNonAscii(content,fullpath):
 	counter = 0

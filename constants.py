@@ -21,7 +21,8 @@ PROVIDER_LABEL = 'provider'
 OBJECT_KEY = '{http://schemas.android.com/apk/res/android}name'
 OBJECT_KEY2 = "name"
 
-MALICIOUS_PERMISSIONS = ['android.permission.INTERNET','android.permission.WRITE_SMS','android.permission.DISABLE_KEYGUARD']
+MALICIOUS_PERMISSIONS = ['android.permission.INTERNET','android.permission.WRITE_SMS','android.permission.DISABLE_KEYGUARD','android.permission.RECEIVE_WAP_PUSH','android.permission.RECEIVE_MMS',
+'android.permission.WRITE_APN_SETTINGS','android.permission.READ_SMS','android.permission.INSTALL_PACKAGES','android.permission.DELETE_PACKAGES','android.permission.BROADCAST_PACKAGE_REMOVED','android.permission.SEND_SMS']
 MALICIOUS_INTENTS = ['android.intent.action.BOOT_COMPLETED','android.provider.Telephony.SMS_RECEIVED','android.intent.action.UMS_CONNECTED']
 MALICIOUS_HARDWARES = ['android.hardware.sensor.stepcounter']
 MALICIOUS_ACTIVITIES = ['FirstAActivity']
