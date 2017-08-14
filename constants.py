@@ -21,8 +21,13 @@ PROVIDER_LABEL = 'provider'
 OBJECT_KEY = '{http://schemas.android.com/apk/res/android}name'
 OBJECT_KEY2 = "name"
 
-MALICIOUS_PERMISSIONS = ['android.permission.INTERNET','android.permission.WRITE_SMS','android.permission.DISABLE_KEYGUARD','android.permission.RECEIVE_WAP_PUSH','android.permission.RECEIVE_MMS',
-'android.permission.WRITE_APN_SETTINGS','android.permission.READ_SMS','android.permission.INSTALL_PACKAGES','android.permission.DELETE_PACKAGES','android.permission.BROADCAST_PACKAGE_REMOVED','android.permission.SEND_SMS']
+MALICIOUS_PERMISSIONS = ['android.permission.BROADCAST_WAP_PUSH','android.permission.WRITE_SMS','android.permission.DISABLE_KEYGUARD','android.permission.RECEIVE_WAP_PUSH',
+'android.permission.RECEIVE_MMS','android.permission.WRITE_APN_SETTINGS','android.permission.READ_SMS','android.permission.INSTALL_PACKAGES','android.permission.DELETE_PACKAGES',
+'android.permission.BROADCAST_PACKAGE_REMOVED','android.permission.SEND_SMS','android.permission.BRICK','android.permission.ADD_SYSTEM_SERVICE','android.permission.EXPAND_STATUS_BAR',
+'android.permission.SET_PROCESS_LIMIT','android.permission.RECEIVE_SMS','android.permission.SEND_SMS','android.permission.SET_WALLPAPER_HINTS','android.permission.FACTORY_TEST',
+'android.permission.RESTART_PACKAGES','android.permission.BIND_APPWIDGET','android.permission.MODIFY_PHONE_STATE','android.permission.INTERNAL_SYSTEM_WINDOW','android.permission.DEVICE_POWER',
+'android.permission.PERSISTENT_ACTIVITY','android.permission.WRITE_CONTACTS','android.permission.SET_ALWAYS_FINISH','android.permission.PROCESS_OUTGOING_CALLS','android.permission.CHANGE_WIFI_STATE',
+'android.permission.BROADCAST_SMS','android.permission.READ_FRAME_BUFFER','android.permission.READ_LOGS','android.permission.DELETE_CACHE_FILES','android.permission.STATUS_BAR']
 MALICIOUS_INTENTS = ['BOOT_COMPLETED','SMS_RECEIVED','UMS_CONNECTED','SENDTO','DIAL','SCREEN_OFF','TEXT','SEND','USER_PRESENT','PACKAGE_ADDED','SCREEN_ON','CALL']
 MALICIOUS_HARDWARES = ['android.hardware.camera','android.hardware.microphone','android.hardware.location','android.hardware.telephony']
 MALICIOUS_ACTIVITIES = ['FirstAActivity','SecondAActivity','ThirdAActivity','FourthAActivity','MainA']

@@ -43,6 +43,8 @@ def parseSmali():
 	print ""
 	print "Number of Native code:" + str(len(allNativeCode)) + str(allNativeCode)
 	print ""	
+	print "Number of Crypto code:" + str(len(allDecryptionCode)) + str(allDecryptionCode)
+	print ""	
 	if nonAsciiCounter > 0:
 		print "Dex Guard detected:" + str(nonAsciiCounter) + " non-ASCII namings detected"
         print ""
