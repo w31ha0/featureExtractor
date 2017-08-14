@@ -1,7 +1,6 @@
 from extractor import *
 from manifestParser import *
 from fileParser import *
-from smaliParser import *
 from obsfucationDetector import *
 import argparse
 
@@ -17,8 +16,7 @@ baksmali()
 
 print ""
 parseManifest()
-traverseAll()
-parseSmali()
+traveseAll()
 calculateEdges(apkfile)
 parseDex()
 

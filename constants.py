@@ -17,6 +17,7 @@ ACTION_LABEL = 'action'
 HARDWARE_LABEL = 'uses-feature'
 SERVICE_LABEL = 'service'
 PROVIDER_LABEL = 'provider'
+SIGNATURE_LABL = 'PackageInfo;->signatures'
 
 OBJECT_KEY = '{http://schemas.android.com/apk/res/android}name'
 OBJECT_KEY2 = "name"
