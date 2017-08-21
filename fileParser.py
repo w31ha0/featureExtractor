@@ -1,6 +1,7 @@
 import re
 import sys,os
 from constants import *
+from sharedFunctions import *
 import subprocess
 
 allSensitiveAPIS = []
@@ -16,7 +17,7 @@ allSuspiciousImageFiles = []
 nonAsciiCounter = 0
 
 
-def traveseAll():
+def traveseAll(sh,startColumn):
     global nonAsciiCounter,allSensitiveAPIS,allNetworkAddresses,allConstantClassNames,allReflectionCode,allDexCode,allDecryptionCode,allNativeCode,nonAsciiCounter,allInnerJarAPKFiles
 
     dir_path = os.path.dirname(os.path.realpath(__file__)) + '/' + TEMP_DIRECTORY
@@ -32,7 +33,7 @@ def traveseAll():
                 allInnerJarAPKFiles.append(fullpath)
             elif name.endswith('so'):
                 if name in BANGCLE_LIBRARIES:
-                    onBangcleDetected(name)
+                    onBangcleDetected(name,sh,startColumn)
             elif name.endswith("png") or name.endswith("jpg") or name.endswith("gif"):
                 proc = subprocess.Popen(['binwalk',fullpath], stdout=subprocess.PIPE)
                 content = proc.stdout.readlines()
@@ -61,15 +62,50 @@ def traveseAll():
     print "Number of suspicious image files is "+str(len(allSuspiciousImageFiles))+":"+str(allSuspiciousImageFiles)
     print ""
     
+    sh.write(START_ROW+7,0,"Total number of sensitive APIs")
+    sh.write(START_ROW+7,startColumn,str(len(allSensitiveAPIS)))
+    sh.write(START_ROW+8,0,"Total number of network addresses")
+    sh.write(START_ROW+8,startColumn,str(len(allNetworkAddresses)))
+    sh.write(START_ROW+9,0,"Total number of constant class names")
+    sh.write(START_ROW+9,startColumn,str(len(allConstantClassNames)))
+    sh.write(START_ROW+10,0,"Total number of reflection code")
+    sh.write(START_ROW+10,startColumn,str(len(allReflectionCode)))
+    sh.write(START_ROW+11,0,"Total number of Dex code")
+    sh.write(START_ROW+11,startColumn,str(len(allDexCode)))
+    sh.write(START_ROW+12,0,"Total number of Native")
+    sh.write(START_ROW+12,startColumn,str(len(allNativeCode)))
+    sh.write(START_ROW+13,0,"Total number of Crypto Code")
+    sh.write(START_ROW+13,startColumn,str(len(allDecryptionCode)))    
+    sh.write(START_ROW+14,0,"Total number of suspicious inner files")
+    sh.write(START_ROW+14,startColumn,str(len(allInnerJarAPKFiles))) 
+    sh.write(START_ROW+15,0,"Total number of suspicious image files")
+    sh.write(START_ROW+15,startColumn,str(len(allSuspiciousImageFiles))) 
+    
     if nonAsciiCounter > 0:
-        print "Dex Guard detected:" + str(nonAsciiCounter) + " non-ASCII namings detected"
-        print ""
-
+        onDexGuardDetected(str(nonAsciiCounter),sh,startColumn)
+    
 def searchSmaliContent(content,fullpath):
     global nonAsciiCounter,allSensitiveAPIS,allNetworkAddresses,allConstantClassNames,allReflectionCode,allDexCode,allDecryptionCode,allNativeCode
 
     lineNo = 1
+    startRecordingMethod = False
+    methodContents = []
+    currentMethodName = "unknown"
+    
     for line in content:
+        if ".method" in line:
+            array = line.split(' ')
+            for part in array:
+                if "(" in part and ")" in part:
+                    currentMethodName = part.strip()
+            continue
+        elif ".end method" in line:
+            currentMethodName = "unknown"
+            continue
+            
+        if startRecordingMethod:
+            methodContents.append(line)
+            
         for c in line: #check For Non Ascii
             if 0 <= ord(c) <= 127:
                 pass

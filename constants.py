@@ -2,11 +2,13 @@ TEMP_DIRECTORY = 'temp'
 ANDROGUARD_PATH = '../tools/androguard/'
 SMALI_PATH = 'smali'
 BAKSMALI_PATH = ' ~/tools/baksmali-2.2.1.jar'
+APKTOOL_PATH = '~/tools/apktool_2.2.4.jar'
 HIDEX_PATH = 'hidex.pl'
+START_ROW = 1
 
 #Manifest
 MANIFEST_FILE_RAW = 'AndroidManifest.xml'
-MANIFEST_FILE_CONVERTED = 'Manifest.xml'
+MANIFEST_FILE_CONVERTED = 'AndroidManifest.xml'
 
 ACTIVITY_LABEL = 'activity'
 APPLICATION_LABEL = 'application'

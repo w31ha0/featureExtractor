@@ -19,7 +19,7 @@ def getNameValueFromObject(object):
     else:
         return None
 
-def parseManifest():    
+def parseManifest(sh,startColumn):    
     tree = ET.parse(manifestPath)
     root = tree.getroot()
     
@@ -52,7 +52,7 @@ def parseManifest():
         elif child.tag == APPLICATION_LABEL:
             applicationName = getNameValueFromObject(child.attrib)
             if applicationName in BANGCLE_LABELS:
-                onBangcleDetected(applicationName)
+                onBangcleDetected(applicationName,sh,startColumn)
                 print ""
             for innerChild in child:
                 componentName = getNameValueFromObject(innerChild.attrib)
@@ -66,7 +66,7 @@ def parseManifest():
                     totalIntentsCounter += 1
                         
                 if checkSuspiciousName(componentName,BANGCLE_ACTIVITIES):
-                    onBangcleDetected(componentName)
+                    onBangcleDetected(componentName,sh,startColumn)
                     for innerInnerChild in innerChild:
                         if innerInnerChild.tag == INTENT_LABEL: #Parse intents
                             for action in innerInnerChild:
@@ -97,6 +97,21 @@ def parseManifest():
     print ""
     print "Number of suspiscious component names is "+str(malicousNamesCounter)+":"+str(malicousNames)        
     print ""    
+    
+    sh.write(START_ROW+0,0,"Total number of permissions requested")
+    sh.write(START_ROW+0,startColumn,str(totalPermissoinsCounter))
+    sh.write(START_ROW+1,0,"Total number of intents requested")
+    sh.write(START_ROW+1,startColumn,str(totalIntentsCounter))
+    sh.write(START_ROW+2,0,"Total number of hardware requested")
+    sh.write(START_ROW+2,startColumn,str(totalHardwareCounter))
+    sh.write(START_ROW+3,0,"Total number of suspicious permissions requested")
+    sh.write(START_ROW+3,startColumn,str(permissionsCounter))
+    sh.write(START_ROW+4,0,"Total number of suspiscious intents requested")
+    sh.write(START_ROW+4,startColumn,str(intentsCounter))
+    sh.write(START_ROW+5,0,"Total number of suspiscious hardware requested")
+    sh.write(START_ROW+5,startColumn,str(hardwareCounter))
+    sh.write(START_ROW+6,0,"Total number of suspiscious component names requested")
+    sh.write(START_ROW+6,startColumn,str(malicousNamesCounter))
         
                 
     

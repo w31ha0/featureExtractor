@@ -1,9 +1,9 @@
 from constants import *
 import xml.etree.ElementTree as ET
 import os,subprocess
+from sharedFunctions import *
 
-
-def parseDex():
+def parseDex(sh):
     dir_path = os.path.dirname(os.path.realpath(__file__))
     for path, subdirs, files in os.walk(dir_path):
         for name in files:
@@ -16,8 +16,7 @@ def parseDex():
                 proc = subprocess.Popen(['perl',HIDEX_PATH,'--input',relative_path], shell=False,stdout=subprocess.PIPE, stderr=devnull)
                 content = proc.stdout.read()
                 if "strange header size" in content:    #check for hosedex2jar
-                    print "HoseDex2Jar Detected"
-                    print ""
+                    onHose2JarDetected("strange header size",sh,startColumn)
                 
 def calculateEdges(inputAPK):
     cmd = 'python ~/tools/vivano/androxgmml.py -i '+inputAPK+' -o out.xgmml'

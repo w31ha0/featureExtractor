@@ -2,7 +2,7 @@ import os
 from constants import *
 
 def unzip(filename):
-	os.system('unzip '+filename+' -d '+TEMP_DIRECTORY +'> /dev/null')
+	os.system('unzip '+filename+' -d '+TEMP_DIRECTORY +'> /dev/null 2>/dev/null')
 	
 def cleanup():
 	os.system('rm -rf '+TEMP_DIRECTORY)
@@ -14,3 +14,7 @@ def convertAll():
 def baksmali():
 	cmd = 'java -jar ' + BAKSMALI_PATH + ' d ' + TEMP_DIRECTORY + '/classes.dex -o ' + TEMP_DIRECTORY + '/' + SMALI_PATH
 	os.system(cmd)	
+    
+def disassemble(apk):
+ 	cmd = 'java -jar ' + APKTOOL_PATH + ' d ' + apk + ' -o ' + TEMP_DIRECTORY +' -f > /dev/null'
+	os.system(cmd)	   
