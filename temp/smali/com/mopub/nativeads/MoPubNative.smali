@@ -1,0 +1,852 @@
+.class public Lcom/mopub/nativeads/MoPubNative;
+.super Ljava/lang/Object;
+.source "MoPubNative.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+    }
+.end annotation
+
+
+# static fields
+.field static final EMPTY_NETWORK_LISTENER:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+
+# instance fields
+.field mAdRendererRegistry:Lcom/mopub/nativeads/AdRendererRegistry;
+    .annotation build Landroid/support/annotation/NonNull;
+    .end annotation
+.end field
+
+.field private final mAdUnitId:Ljava/lang/String;
+    .annotation build Landroid/support/annotation/NonNull;
+    .end annotation
+.end field
+
+.field private final mContext:Ljava/lang/ref/WeakReference;
+    .annotation build Landroid/support/annotation/NonNull;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/WeakReference",
+            "<",
+            "Landroid/content/Context;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private mLocalExtras:Ljava/util/Map;
+    .annotation build Landroid/support/annotation/NonNull;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map",
+            "<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+    .annotation build Landroid/support/annotation/NonNull;
+    .end annotation
+.end field
+
+.field private mNativeRequest:Lcom/mopub/network/AdRequest;
+    .annotation build Landroid/support/annotation/Nullable;
+    .end annotation
+.end field
+
+.field private final mVolleyListener:Lcom/mopub/network/AdRequest$Listener;
+    .annotation build Landroid/support/annotation/NonNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    .line 44
+    new-instance v0, Lcom/mopub/nativeads/MoPubNative$1;
+
+    invoke-direct {v0}, Lcom/mopub/nativeads/MoPubNative$1;-><init>()V
+
+    sput-object v0, Lcom/mopub/nativeads/MoPubNative;->EMPTY_NETWORK_LISTENER:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Lcom/mopub/nativeads/AdRendererRegistry;Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;)V
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+        .annotation build Landroid/support/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2, "adUnitId"    # Ljava/lang/String;
+        .annotation build Landroid/support/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3, "adRendererRegistry"    # Lcom/mopub/nativeads/AdRendererRegistry;
+        .annotation build Landroid/support/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p4, "moPubNativeNetworkListener"    # Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+        .annotation build Landroid/support/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Lcom/mopub/common/VisibleForTesting;
+    .end annotation
+
+    .prologue
+    .line 78
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 63
+    new-instance v0, Ljava/util/TreeMap;
+
+    invoke-direct {v0}, Ljava/util/TreeMap;-><init>()V
+
+    iput-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mLocalExtras:Ljava/util/Map;
+
+    .line 79
+    const-string v0, "context may not be null."
+
+    invoke-static {p1, v0}, Lcom/mopub/common/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 80
+    const-string v0, "AdUnitId may not be null."
+
+    invoke-static {p2, v0}, Lcom/mopub/common/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 81
+    const-string v0, "AdRendererRegistry may not be null."
+
+    invoke-static {p3, v0}, Lcom/mopub/common/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 82
+    const-string v0, "MoPubNativeNetworkListener may not be null."
+
+    invoke-static {p4, v0}, Lcom/mopub/common/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 84
+    invoke-static {p1}, Lcom/mopub/common/util/ManifestUtils;->checkNativeActivitiesDeclared(Landroid/content/Context;)V
+
+    .line 86
+    new-instance v0, Ljava/lang/ref/WeakReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mContext:Ljava/lang/ref/WeakReference;
+
+    .line 87
+    iput-object p2, p0, Lcom/mopub/nativeads/MoPubNative;->mAdUnitId:Ljava/lang/String;
+
+    .line 88
+    iput-object p4, p0, Lcom/mopub/nativeads/MoPubNative;->mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    .line 89
+    iput-object p3, p0, Lcom/mopub/nativeads/MoPubNative;->mAdRendererRegistry:Lcom/mopub/nativeads/AdRendererRegistry;
+
+    .line 90
+    new-instance v0, Lcom/mopub/nativeads/MoPubNative$2;
+
+    invoke-direct {v0, p0}, Lcom/mopub/nativeads/MoPubNative$2;-><init>(Lcom/mopub/nativeads/MoPubNative;)V
+
+    iput-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mVolleyListener:Lcom/mopub/network/AdRequest$Listener;
+
+    .line 103
+    const/4 v0, 0x0
+
+    invoke-static {p1, v0}, Lcom/mopub/common/GpsHelper;->fetchAdvertisingInfoAsync(Landroid/content/Context;Lcom/mopub/common/GpsHelper$GpsHelperListener;)V
+
+    .line 104
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;)V
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+        .annotation build Landroid/support/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2, "adUnitId"    # Ljava/lang/String;
+        .annotation build Landroid/support/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p3, "moPubNativeNetworkListener"    # Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+        .annotation build Landroid/support/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .prologue
+    .line 71
+    new-instance v0, Lcom/mopub/nativeads/AdRendererRegistry;
+
+    invoke-direct {v0}, Lcom/mopub/nativeads/AdRendererRegistry;-><init>()V
+
+    invoke-direct {p0, p1, p2, v0, p3}, Lcom/mopub/nativeads/MoPubNative;-><init>(Landroid/content/Context;Ljava/lang/String;Lcom/mopub/nativeads/AdRendererRegistry;Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;)V
+
+    .line 72
+    return-void
+.end method
+
+.method static synthetic access$000(Lcom/mopub/nativeads/MoPubNative;Lcom/mopub/network/AdResponse;)V
+    .locals 0
+    .param p0, "x0"    # Lcom/mopub/nativeads/MoPubNative;
+    .param p1, "x1"    # Lcom/mopub/network/AdResponse;
+
+    .prologue
+    .line 37
+    invoke-direct {p0, p1}, Lcom/mopub/nativeads/MoPubNative;->onAdLoad(Lcom/mopub/network/AdResponse;)V
+
+    return-void
+.end method
+
+.method static synthetic access$100(Lcom/mopub/nativeads/MoPubNative;)Ljava/lang/String;
+    .locals 1
+    .param p0, "x0"    # Lcom/mopub/nativeads/MoPubNative;
+
+    .prologue
+    .line 37
+    iget-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mAdUnitId:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method static synthetic access$200(Lcom/mopub/nativeads/MoPubNative;)Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+    .locals 1
+    .param p0, "x0"    # Lcom/mopub/nativeads/MoPubNative;
+
+    .prologue
+    .line 37
+    iget-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    return-object v0
+.end method
+
+.method private loadNativeAd(Lcom/mopub/nativeads/RequestParameters;Ljava/lang/Integer;)V
+    .locals 5
+    .param p1, "requestParameters"    # Lcom/mopub/nativeads/RequestParameters;
+        .annotation build Landroid/support/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2, "sequenceNumber"    # Ljava/lang/Integer;
+        .annotation build Landroid/support/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .prologue
+    .line 158
+    invoke-virtual {p0}, Lcom/mopub/nativeads/MoPubNative;->getContextOrDestroy()Landroid/content/Context;
+
+    move-result-object v0
+
+    .line 159
+    .local v0, "context":Landroid/content/Context;
+    if-nez v0, :cond_0
+
+    .line 178
+    :goto_0
+    return-void
+
+    .line 163
+    :cond_0
+    new-instance v3, Lcom/mopub/nativeads/NativeUrlGenerator;
+
+    invoke-direct {v3, v0}, Lcom/mopub/nativeads/NativeUrlGenerator;-><init>(Landroid/content/Context;)V
+
+    iget-object v4, p0, Lcom/mopub/nativeads/MoPubNative;->mAdUnitId:Ljava/lang/String;
+
+    .line 164
+    invoke-virtual {v3, v4}, Lcom/mopub/nativeads/NativeUrlGenerator;->withAdUnitId(Ljava/lang/String;)Lcom/mopub/nativeads/NativeUrlGenerator;
+
+    move-result-object v3
+
+    .line 165
+    invoke-virtual {v3, p1}, Lcom/mopub/nativeads/NativeUrlGenerator;->withRequest(Lcom/mopub/nativeads/RequestParameters;)Lcom/mopub/nativeads/NativeUrlGenerator;
+
+    move-result-object v2
+
+    .line 167
+    .local v2, "generator":Lcom/mopub/nativeads/NativeUrlGenerator;
+    if-eqz p2, :cond_1
+
+    .line 168
+    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+
+    move-result v3
+
+    invoke-virtual {v2, v3}, Lcom/mopub/nativeads/NativeUrlGenerator;->withSequenceNumber(I)Lcom/mopub/nativeads/NativeUrlGenerator;
+
+    .line 171
+    :cond_1
+    const-string v3, "ads.mopub.com"
+
+    invoke-virtual {v2, v3}, Lcom/mopub/nativeads/NativeUrlGenerator;->generateUrlString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 173
+    .local v1, "endpointUrl":Ljava/lang/String;
+    if-eqz v1, :cond_2
+
+    .line 174
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Loading ad from: "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lcom/mopub/common/logging/MoPubLog;->d(Ljava/lang/String;)V
+
+    .line 177
+    :cond_2
+    invoke-virtual {p0, v1}, Lcom/mopub/nativeads/MoPubNative;->requestNativeAd(Ljava/lang/String;)V
+
+    goto :goto_0
+.end method
+
+.method private onAdLoad(Lcom/mopub/network/AdResponse;)V
+    .locals 3
+    .param p1, "response"    # Lcom/mopub/network/AdResponse;
+        .annotation build Landroid/support/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .prologue
+    .line 197
+    invoke-virtual {p0}, Lcom/mopub/nativeads/MoPubNative;->getContextOrDestroy()Landroid/content/Context;
+
+    move-result-object v0
+
+    .line 198
+    .local v0, "context":Landroid/content/Context;
+    if-nez v0, :cond_0
+
+    .line 238
+    :goto_0
+    return-void
+
+    .line 201
+    :cond_0
+    new-instance v1, Lcom/mopub/nativeads/MoPubNative$3;
+
+    invoke-direct {v1, p0, p1}, Lcom/mopub/nativeads/MoPubNative$3;-><init>(Lcom/mopub/nativeads/MoPubNative;Lcom/mopub/network/AdResponse;)V
+
+    .line 232
+    .local v1, "customEventNativeListener":Lcom/mopub/nativeads/CustomEventNative$CustomEventNativeListener;
+    iget-object v2, p0, Lcom/mopub/nativeads/MoPubNative;->mLocalExtras:Ljava/util/Map;
+
+    invoke-static {v0, v2, p1, v1}, Lcom/mopub/nativeads/CustomEventNativeAdapter;->loadNativeAd(Landroid/content/Context;Ljava/util/Map;Lcom/mopub/network/AdResponse;Lcom/mopub/nativeads/CustomEventNative$CustomEventNativeListener;)V
+
+    goto :goto_0
+.end method
+
+
+# virtual methods
+.method public destroy()V
+    .locals 1
+
+    .prologue
+    .line 116
+    iget-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mContext:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->clear()V
+
+    .line 117
+    iget-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mNativeRequest:Lcom/mopub/network/AdRequest;
+
+    if-eqz v0, :cond_0
+
+    .line 118
+    iget-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mNativeRequest:Lcom/mopub/network/AdRequest;
+
+    invoke-virtual {v0}, Lcom/mopub/network/AdRequest;->cancel()V
+
+    .line 119
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mNativeRequest:Lcom/mopub/network/AdRequest;
+
+    .line 121
+    :cond_0
+    sget-object v0, Lcom/mopub/nativeads/MoPubNative;->EMPTY_NETWORK_LISTENER:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    iput-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    .line 122
+    return-void
+.end method
+
+.method getContextOrDestroy()Landroid/content/Context;
+    .locals 2
+    .annotation build Landroid/support/annotation/Nullable;
+    .end annotation
+
+    .annotation build Lcom/mopub/common/VisibleForTesting;
+    .end annotation
+
+    .prologue
+    .line 283
+    iget-object v1, p0, Lcom/mopub/nativeads/MoPubNative;->mContext:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/content/Context;
+
+    .line 284
+    .local v0, "context":Landroid/content/Context;
+    if-nez v0, :cond_0
+
+    .line 285
+    invoke-virtual {p0}, Lcom/mopub/nativeads/MoPubNative;->destroy()V
+
+    .line 286
+    const-string v1, "Weak reference to Context in MoPubNative became null. This instance of MoPubNative is destroyed and No more requests will be processed."
+
+    invoke-static {v1}, Lcom/mopub/common/logging/MoPubLog;->d(Ljava/lang/String;)V
+
+    .line 289
+    :cond_0
+    return-object v0
+.end method
+
+.method getMoPubNativeNetworkListener()Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+    .locals 1
+    .annotation build Landroid/support/annotation/NonNull;
+    .end annotation
+
+    .annotation build Lcom/mopub/common/VisibleForTesting;
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .prologue
+    .line 296
+    iget-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    return-object v0
+.end method
+
+.method public makeRequest()V
+    .locals 1
+
+    .prologue
+    .line 133
+    const/4 v0, 0x0
+
+    check-cast v0, Lcom/mopub/nativeads/RequestParameters;
+
+    invoke-virtual {p0, v0}, Lcom/mopub/nativeads/MoPubNative;->makeRequest(Lcom/mopub/nativeads/RequestParameters;)V
+
+    .line 134
+    return-void
+.end method
+
+.method public makeRequest(Lcom/mopub/nativeads/RequestParameters;)V
+    .locals 1
+    .param p1, "requestParameters"    # Lcom/mopub/nativeads/RequestParameters;
+        .annotation build Landroid/support/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .prologue
+    .line 137
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, p1, v0}, Lcom/mopub/nativeads/MoPubNative;->makeRequest(Lcom/mopub/nativeads/RequestParameters;Ljava/lang/Integer;)V
+
+    .line 138
+    return-void
+.end method
+
+.method public makeRequest(Lcom/mopub/nativeads/RequestParameters;Ljava/lang/Integer;)V
+    .locals 3
+    .param p1, "requestParameters"    # Lcom/mopub/nativeads/RequestParameters;
+        .annotation build Landroid/support/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2, "sequenceNumber"    # Ljava/lang/Integer;
+        .annotation build Landroid/support/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .prologue
+    .line 142
+    invoke-virtual {p0}, Lcom/mopub/nativeads/MoPubNative;->getContextOrDestroy()Landroid/content/Context;
+
+    move-result-object v0
+
+    .line 143
+    .local v0, "context":Landroid/content/Context;
+    if-nez v0, :cond_0
+
+    .line 153
+    :goto_0
+    return-void
+
+    .line 147
+    :cond_0
+    invoke-static {v0}, Lcom/mopub/common/util/DeviceUtils;->isNetworkAvailable(Landroid/content/Context;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    .line 148
+    iget-object v1, p0, Lcom/mopub/nativeads/MoPubNative;->mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    sget-object v2, Lcom/mopub/nativeads/NativeErrorCode;->CONNECTION_ERROR:Lcom/mopub/nativeads/NativeErrorCode;
+
+    invoke-interface {v1, v2}, Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;->onNativeFail(Lcom/mopub/nativeads/NativeErrorCode;)V
+
+    goto :goto_0
+
+    .line 152
+    :cond_1
+    invoke-direct {p0, p1, p2}, Lcom/mopub/nativeads/MoPubNative;->loadNativeAd(Lcom/mopub/nativeads/RequestParameters;Ljava/lang/Integer;)V
+
+    goto :goto_0
+.end method
+
+.method onAdError(Lcom/mopub/volley/VolleyError;)V
+    .locals 4
+    .param p1, "volleyError"    # Lcom/mopub/volley/VolleyError;
+        .annotation build Landroid/support/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Lcom/mopub/common/VisibleForTesting;
+    .end annotation
+
+    .prologue
+    .line 242
+    const-string v2, "Native ad request failed."
+
+    invoke-static {v2, p1}, Lcom/mopub/common/logging/MoPubLog;->d(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 243
+    instance-of v2, p1, Lcom/mopub/network/MoPubNetworkError;
+
+    if-eqz v2, :cond_0
+
+    move-object v0, p1
+
+    .line 244
+    check-cast v0, Lcom/mopub/network/MoPubNetworkError;
+
+    .line 245
+    .local v0, "error":Lcom/mopub/network/MoPubNetworkError;
+    sget-object v2, Lcom/mopub/nativeads/MoPubNative$4;->$SwitchMap$com$mopub$network$MoPubNetworkError$Reason:[I
+
+    invoke-virtual {v0}, Lcom/mopub/network/MoPubNetworkError;->getReason()Lcom/mopub/network/MoPubNetworkError$Reason;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/mopub/network/MoPubNetworkError$Reason;->ordinal()I
+
+    move-result v3
+
+    aget v2, v2, v3
+
+    packed-switch v2, :pswitch_data_0
+
+    .line 263
+    iget-object v2, p0, Lcom/mopub/nativeads/MoPubNative;->mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    sget-object v3, Lcom/mopub/nativeads/NativeErrorCode;->UNSPECIFIED:Lcom/mopub/nativeads/NativeErrorCode;
+
+    invoke-interface {v2, v3}, Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;->onNativeFail(Lcom/mopub/nativeads/NativeErrorCode;)V
+
+    .line 278
+    .end local v0    # "error":Lcom/mopub/network/MoPubNetworkError;
+    :goto_0
+    return-void
+
+    .line 247
+    .restart local v0    # "error":Lcom/mopub/network/MoPubNetworkError;
+    :pswitch_0
+    iget-object v2, p0, Lcom/mopub/nativeads/MoPubNative;->mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    sget-object v3, Lcom/mopub/nativeads/NativeErrorCode;->INVALID_RESPONSE:Lcom/mopub/nativeads/NativeErrorCode;
+
+    invoke-interface {v2, v3}, Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;->onNativeFail(Lcom/mopub/nativeads/NativeErrorCode;)V
+
+    goto :goto_0
+
+    .line 250
+    :pswitch_1
+    iget-object v2, p0, Lcom/mopub/nativeads/MoPubNative;->mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    sget-object v3, Lcom/mopub/nativeads/NativeErrorCode;->INVALID_RESPONSE:Lcom/mopub/nativeads/NativeErrorCode;
+
+    invoke-interface {v2, v3}, Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;->onNativeFail(Lcom/mopub/nativeads/NativeErrorCode;)V
+
+    goto :goto_0
+
+    .line 255
+    :pswitch_2
+    sget-object v2, Lcom/mopub/mobileads/MoPubErrorCode;->WARMUP:Lcom/mopub/mobileads/MoPubErrorCode;
+
+    invoke-virtual {v2}, Lcom/mopub/mobileads/MoPubErrorCode;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/mopub/common/logging/MoPubLog;->c(Ljava/lang/String;)V
+
+    .line 256
+    iget-object v2, p0, Lcom/mopub/nativeads/MoPubNative;->mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    sget-object v3, Lcom/mopub/nativeads/NativeErrorCode;->EMPTY_AD_RESPONSE:Lcom/mopub/nativeads/NativeErrorCode;
+
+    invoke-interface {v2, v3}, Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;->onNativeFail(Lcom/mopub/nativeads/NativeErrorCode;)V
+
+    goto :goto_0
+
+    .line 259
+    :pswitch_3
+    iget-object v2, p0, Lcom/mopub/nativeads/MoPubNative;->mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    sget-object v3, Lcom/mopub/nativeads/NativeErrorCode;->EMPTY_AD_RESPONSE:Lcom/mopub/nativeads/NativeErrorCode;
+
+    invoke-interface {v2, v3}, Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;->onNativeFail(Lcom/mopub/nativeads/NativeErrorCode;)V
+
+    goto :goto_0
+
+    .line 268
+    .end local v0    # "error":Lcom/mopub/network/MoPubNetworkError;
+    :cond_0
+    iget-object v1, p1, Lcom/mopub/volley/VolleyError;->networkResponse:Lcom/mopub/volley/NetworkResponse;
+
+    .line 269
+    .local v1, "response":Lcom/mopub/volley/NetworkResponse;
+    if-eqz v1, :cond_1
+
+    iget v2, v1, Lcom/mopub/volley/NetworkResponse;->statusCode:I
+
+    const/16 v3, 0x1f4
+
+    if-lt v2, v3, :cond_1
+
+    iget v2, v1, Lcom/mopub/volley/NetworkResponse;->statusCode:I
+
+    const/16 v3, 0x258
+
+    if-ge v2, v3, :cond_1
+
+    .line 270
+    iget-object v2, p0, Lcom/mopub/nativeads/MoPubNative;->mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    sget-object v3, Lcom/mopub/nativeads/NativeErrorCode;->SERVER_ERROR_RESPONSE_CODE:Lcom/mopub/nativeads/NativeErrorCode;
+
+    invoke-interface {v2, v3}, Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;->onNativeFail(Lcom/mopub/nativeads/NativeErrorCode;)V
+
+    goto :goto_0
+
+    .line 271
+    :cond_1
+    if-nez v1, :cond_2
+
+    iget-object v2, p0, Lcom/mopub/nativeads/MoPubNative;->mContext:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/content/Context;
+
+    invoke-static {v2}, Lcom/mopub/common/util/DeviceUtils;->isNetworkAvailable(Landroid/content/Context;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    .line 272
+    sget-object v2, Lcom/mopub/mobileads/MoPubErrorCode;->NO_CONNECTION:Lcom/mopub/mobileads/MoPubErrorCode;
+
+    invoke-virtual {v2}, Lcom/mopub/mobileads/MoPubErrorCode;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/mopub/common/logging/MoPubLog;->c(Ljava/lang/String;)V
+
+    .line 273
+    iget-object v2, p0, Lcom/mopub/nativeads/MoPubNative;->mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    sget-object v3, Lcom/mopub/nativeads/NativeErrorCode;->CONNECTION_ERROR:Lcom/mopub/nativeads/NativeErrorCode;
+
+    invoke-interface {v2, v3}, Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;->onNativeFail(Lcom/mopub/nativeads/NativeErrorCode;)V
+
+    goto :goto_0
+
+    .line 275
+    :cond_2
+    iget-object v2, p0, Lcom/mopub/nativeads/MoPubNative;->mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    sget-object v3, Lcom/mopub/nativeads/NativeErrorCode;->UNSPECIFIED:Lcom/mopub/nativeads/NativeErrorCode;
+
+    invoke-interface {v2, v3}, Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;->onNativeFail(Lcom/mopub/nativeads/NativeErrorCode;)V
+
+    goto :goto_0
+
+    .line 245
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+    .end packed-switch
+.end method
+
+.method public registerAdRenderer(Lcom/mopub/nativeads/MoPubAdRenderer;)V
+    .locals 1
+    .param p1, "moPubAdRenderer"    # Lcom/mopub/nativeads/MoPubAdRenderer;
+
+    .prologue
+    .line 112
+    iget-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mAdRendererRegistry:Lcom/mopub/nativeads/AdRendererRegistry;
+
+    invoke-virtual {v0, p1}, Lcom/mopub/nativeads/AdRendererRegistry;->registerAdRenderer(Lcom/mopub/nativeads/MoPubAdRenderer;)V
+
+    .line 113
+    return-void
+.end method
+
+.method requestNativeAd(Ljava/lang/String;)V
+    .locals 7
+    .param p1, "endpointUrl"    # Ljava/lang/String;
+        .annotation build Landroid/support/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .prologue
+    .line 181
+    invoke-virtual {p0}, Lcom/mopub/nativeads/MoPubNative;->getContextOrDestroy()Landroid/content/Context;
+
+    move-result-object v4
+
+    .line 182
+    .local v4, "context":Landroid/content/Context;
+    if-nez v4, :cond_0
+
+    .line 194
+    :goto_0
+    return-void
+
+    .line 186
+    :cond_0
+    if-nez p1, :cond_1
+
+    .line 187
+    iget-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mMoPubNativeNetworkListener:Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;
+
+    sget-object v1, Lcom/mopub/nativeads/NativeErrorCode;->INVALID_REQUEST_URL:Lcom/mopub/nativeads/NativeErrorCode;
+
+    invoke-interface {v0, v1}, Lcom/mopub/nativeads/MoPubNative$MoPubNativeNetworkListener;->onNativeFail(Lcom/mopub/nativeads/NativeErrorCode;)V
+
+    goto :goto_0
+
+    .line 191
+    :cond_1
+    new-instance v0, Lcom/mopub/network/AdRequest;
+
+    sget-object v2, Lcom/mopub/common/AdFormat;->NATIVE:Lcom/mopub/common/AdFormat;
+
+    iget-object v3, p0, Lcom/mopub/nativeads/MoPubNative;->mAdUnitId:Ljava/lang/String;
+
+    iget-object v5, p0, Lcom/mopub/nativeads/MoPubNative;->mVolleyListener:Lcom/mopub/network/AdRequest$Listener;
+
+    move-object v1, p1
+
+    invoke-direct/range {v0 .. v5}, Lcom/mopub/network/AdRequest;-><init>(Ljava/lang/String;Lcom/mopub/common/AdFormat;Ljava/lang/String;Landroid/content/Context;Lcom/mopub/network/AdRequest$Listener;)V
+
+    iput-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mNativeRequest:Lcom/mopub/network/AdRequest;
+
+    .line 192
+    invoke-static {v4}, Lcom/mopub/network/Networking;->getRequestQueue(Landroid/content/Context;)Lcom/mopub/network/MoPubRequestQueue;
+
+    move-result-object v6
+
+    .line 193
+    .local v6, "requestQueue":Lcom/mopub/volley/RequestQueue;
+    iget-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mNativeRequest:Lcom/mopub/network/AdRequest;
+
+    invoke-virtual {v6, v0}, Lcom/mopub/volley/RequestQueue;->add(Lcom/mopub/volley/Request;)Lcom/mopub/volley/Request;
+
+    goto :goto_0
+.end method
+
+.method public setLocalExtras(Ljava/util/Map;)V
+    .locals 1
+    .param p1    # Ljava/util/Map;
+        .annotation build Landroid/support/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map",
+            "<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;)V"
+        }
+    .end annotation
+
+    .prologue
+    .line 125
+    .local p1, "localExtras":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;"
+    if-nez p1, :cond_0
+
+    .line 126
+    new-instance v0, Ljava/util/TreeMap;
+
+    invoke-direct {v0}, Ljava/util/TreeMap;-><init>()V
+
+    iput-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mLocalExtras:Ljava/util/Map;
+
+    .line 130
+    :goto_0
+    return-void
+
+    .line 128
+    :cond_0
+    new-instance v0, Ljava/util/TreeMap;
+
+    invoke-direct {v0, p1}, Ljava/util/TreeMap;-><init>(Ljava/util/Map;)V
+
+    iput-object v0, p0, Lcom/mopub/nativeads/MoPubNative;->mLocalExtras:Ljava/util/Map;
+
+    goto :goto_0
+.end method

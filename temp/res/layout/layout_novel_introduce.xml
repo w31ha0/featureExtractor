@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <ImageView android:id="@id/novel_image" android:layout_width="55.0dip" android:layout_height="75.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/app_icon_black" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="75.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="2.0dip" android:layout_weight="1.0" android:layout_toRightOf="@id/novel_image">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:id="@id/novel_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="天龍八部" android:maxLines="2" />
+            <TextView android:id="@id/novel_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="作者:金庸" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_my_bookcase1" />
+            <CheckBox android:id="@id/checkbox_add_bookcase" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/starStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ff3b6f9c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/novel_introduce" />
+        </RelativeLayout>
+        <TextView android:textSize="15.0dip" android:id="@id/novel_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="簡介內容.................................. >" />
+        <LinearLayout android:gravity="right" android:id="@id/layout_text_arrow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+            <ImageView android:id="@id/image_arrow" android:background="@drawable/text_arrow_right" android:layout_width="12.0dip" android:layout_height="12.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/novel_layout_progress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0dip" android:id="@id/text_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/order" android:layout_centerVertical="true" />
+        <Button android:id="@id/novel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/novel_back" android:layout_toRightOf="@id/text_rank" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0dip" android:id="@id/novel_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="8.0dip" android:text="更新:2013-03-06" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ExpandableListView android:id="@id/novel_artiles_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@null" />
+</LinearLayout>

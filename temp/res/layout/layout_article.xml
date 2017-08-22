@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#cc111111" android:layout_width="fill_parent" android:layout_height="15.0dip">
+            <TextView android:textSize="12.0dip" android:textColor="#ffeeeeee" android:id="@id/article_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="test" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/layout_progress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/article_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.kosbrother.tool.DetectScrollView android:id="@id/article_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.google.android.gms.ads.NativeExpressAdView android:id="@id/adView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSize="FULL_WIDTHx120" ads:adUnitId="ca-app-pub-5774496584789671/3343739148" />
+                    <TextView android:id="@id/article_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:lineSpacingMultiplier="1.1" />
+                    <com.google.android.gms.ads.NativeExpressAdView android:id="@id/adView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSize="360x320" ads:adUnitId="ca-app-pub-5774496584789671/6038339149" />
+                </LinearLayout>
+            </com.kosbrother.tool.DetectScrollView>
+            <WebView android:id="@id/article_webview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bottom_buttons" android:background="#ffe3e3e3" android:layout_width="fill_parent" android:layout_height="46.0dip">
+            <Button android:theme="@style/ColoredButton" android:id="@id/article_button_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/article_up" android:layout_alignParentLeft="true" />
+            <TextView android:id="@id/article_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" android:layout_centerInParent="true" />
+            <Button android:theme="@style/ColoredButton" android:id="@id/article_button_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/article_down" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/adonView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/bookmarkImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/article_bookmark" />
+    <ImageView android:id="@id/novelImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/star" android:layout_toRightOf="@id/bookmarkImage" />
+</RelativeLayout>

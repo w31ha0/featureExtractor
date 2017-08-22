@@ -69,13 +69,14 @@ startColumn = getStartCol(sh)
 book = copy(rb)
 sh = book.get_sheet(sheetNo)
 sh.write(0,startColumn,appname)    
-    
+
+
 disassemble(apkfile)
 print ""
 parseManifest(sh,startColumn)
 traveseAll(sh,startColumn)
 parseDex(sh)
-
+calculateCyclomaticComplexity(apkfile,sh,startColumn)
 cleanup()
 
 try:

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/grid_selector" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/grid_item_image" android:layout_width="72.0dip" android:layout_height="100.0dip" android:layout_marginTop="5.0px" android:layout_marginBottom="5.0px" android:src="@drawable/ic_launcher" />
+    <TextView android:textSize="20.0px" android:typeface="serif" android:textStyle="bold" android:id="@id/grid_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0px" android:text="天龍八部" android:maxLines="2" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginRight="5.0px">
+        <TextView android:textSize="15.0px" android:typeface="serif" android:textColor="#ff999999" android:id="@id/author_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/author_tip">
+            <TextView android:textSize="13.0px" android:typeface="serif" android:textColor="#ff555555" android:id="@id/grid_item_article_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0px" android:text="金庸第四十一章" android:maxLines="1" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginRight="5.0px">
+        <TextView android:textSize="15.0px" android:typeface="serif" android:textColor="#ffff3333" android:id="@id/bookmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0px" android:text="@string/my_recent_reading" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

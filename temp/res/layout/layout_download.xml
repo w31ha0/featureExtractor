@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/novel_layout_progress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ExpandableListView android:id="@id/download_artiles_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:groupIndicator="@null" android:layout_weight="1.0" android:fastScrollEnabled="true" />
+    <RelativeLayout android:background="@color/main_color_grey_dark" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:id="@id/download_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/novel_select_zero" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:textSize="15.0dip" android:id="@id/download_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/novel_start_download" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

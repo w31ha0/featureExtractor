@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/layout_progress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.taiwan.imageload.LoadMoreGridView android:id="@id/news_list" android:background="@color/main_color_grey_dark" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="#ffffffff" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:stretchMode="columnWidth" android:numColumns="2" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:id="@id/load_more_grid" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/toast_novel_downloading" />
+        <ProgressBar android:id="@id/load_more_progressBar" android:padding="3.0dip" android:visibility="visible" android:layout_width="36.0dip" android:layout_height="36.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/costum_progress_bar" android:layout_centerInParent="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/layout_no_data" android:background="@color/main_color_grey_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/app_icon_black" />
+        <TextView android:textSize="23.0dip" android:textColor="#ff6e6e6e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/no_data" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/layout_reload" android:background="@color/main_color_grey_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="23.0dip" android:textColor="#ff6e6e6e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/no_internet" />
+        <Button android:id="@id/button_reload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/try_again" />
+    </LinearLayout>
+</LinearLayout>

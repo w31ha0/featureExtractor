@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/baselayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0dip" android:textColor="@color/setting_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/setting_text" />
+            <SeekBar android:id="@id/seekBar1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:max="40" android:progress="20" />
+            <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="10.0dip" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/setting_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/setting_sun_mode" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/setting_select_text_background" />
+                    <LinearLayout android:background="#ff696969" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                        <ImageView android:id="@id/imageview_sunmode_textbackground" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/setting_select_text_color" />
+                    <LinearLayout android:background="#ff696969" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                        <ImageView android:id="@id/imageview_sunmode_textcolor" android:background="#fffff700" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="20.0px" android:textColor="#fffff700" android:id="@id/sunmode_text_preview" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/setting_text_preview" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/setting_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/setting_moon_mode" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/setting_select_text_background" />
+                    <LinearLayout android:background="#ff696969" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                        <ImageView android:id="@id/imageview_moonmode_textbackground" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/setting_select_text_color" />
+                    <LinearLayout android:background="#ff696969" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                        <ImageView android:id="@id/imageview_moonmode_textcolor" android:background="#fffff700" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="20.0px" android:textColor="#fffff700" android:id="@id/moonmode_text_preview" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/setting_text_preview" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/setting_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/setting_select_mode" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/RadioGroup_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <RadioButton android:id="@id/myModeRadioButton1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/sun_mode" />
+                <RadioButton android:id="@id/myModeRadioButton2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/moon_mode" />
+            </RadioGroup>
+            <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="10.0dip" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/setting_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/setting_select_lan" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/RadioGroup_lan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <RadioButton android:id="@id/myRadioButton1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/setting_lan_tra" />
+                <RadioButton android:id="@id/myRadioButton2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_lan_sim" />
+            </RadioGroup>
+            <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="10.0dip" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/setting_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/setting_select_direction" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/RadioGroup_reading_direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <RadioButton android:id="@id/myRadioButton_reading_direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/setting_direction_portrait" />
+                <RadioButton android:id="@id/myRadioButton2_reading_direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_direction_horizontal" />
+                <RadioButton android:id="@id/myRadioButton3_reading_direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_direction_none" />
+            </RadioGroup>
+            <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="10.0dip" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/setting_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/setting_select_tap" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/RadioGroup_tap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <RadioButton android:id="@id/myRadioButton_tap1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_tap_open" />
+                <RadioButton android:id="@id/myRadioButton2_tap2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/setting_tap_close" />
+            </RadioGroup>
+            <TextView android:textSize="18.0dip" android:textColor="@color/setting_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/setting_audio_button" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/RadioGroup_audio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <RadioButton android:id="@id/myRadioButton_audio1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_tap_open" />
+                <RadioButton android:id="@id/myRadioButton2_audio2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/setting_tap_close" />
+            </RadioGroup>
+            <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="10.0dip" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/setting_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/setting_select_sleeping" />
+            <RadioGroup android:orientation="vertical" android:id="@id/RadioGroup_stop_sleep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <RadioButton android:id="@id/myRadioButton_stop_sleep_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_sleeping_open" />
+                <RadioButton android:id="@id/myRadioButton_stop_sleep_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/setting_sleeping_close" />
+            </RadioGroup>
+            <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="10.0dip" />
+            <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="10.0dip" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/setting_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/aritcle_ad_type" />
+            <RadioGroup android:orientation="horizontal" android:id="@id/RadioGroup_AD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <RadioButton android:id="@id/myRadioButton_ad1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/InterstitialAd" />
+                <RadioButton android:id="@id/myRadioButton_ad2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/BannerAd" />
+            </RadioGroup>
+            <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="10.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="@color/setting_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/reset_db_hint" />
+                <Button android:id="@id/dbResetButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reset" />
+            </LinearLayout>
+            <LinearLayout android:background="#ffa3a3a3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

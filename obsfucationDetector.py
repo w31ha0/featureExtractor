@@ -17,6 +17,37 @@ def parseDex(sh):
                 content = proc.stdout.read()
                 if "strange header size" in content:    #check for hosedex2jar
                     onHose2JarDetected("strange header size",sh,startColumn)
+                    
+def calculateCyclomaticComplexity(inputAPK,sh,startColumn):
+    noOfNodes = 0
+    noOfEdges = 0
+    noOfConnectedComponenets = 0
+    uniqueFunctions = []
+
+    cmd = 'python ~/tools/vivano/androxgmml.py -i '+inputAPK+' -o out.xgmml'
+    os.system(cmd)
+        
+    tree = ET.parse('out.xgmml')
+    root = tree.getroot()
+    clusters = dict()
+    
+    for child in root:
+        if "edge" in child.tag:
+            noOfEdges += 1
+            functionName = ""
+            arrays = child.attrib['label'].split('-')
+            for part in arrays:
+                if "@" not in part:
+                    functionName += part
+            if functionName not in uniqueFunctions:
+                uniqueFunctions.append(functionName)
+        elif "node" in child.tag:
+            noOfNodes += 1
+            
+    complexity = noOfEdges-noOfNodes+2*len(uniqueFunctions)        
+    print "Cyclomatic Complexity is " + str(complexity)
+    sh.write(START_ROW+17,0,"Cyclomatic Complexity")
+    sh.write(START_ROW+17,startColumn,str(complexity))
                 
 def calculateEdges(inputAPK):
     cmd = 'python ~/tools/vivano/androxgmml.py -i '+inputAPK+' -o out.xgmml'

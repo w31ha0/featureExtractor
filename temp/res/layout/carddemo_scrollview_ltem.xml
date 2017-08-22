@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_color_grey_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/recommend_title" android:background="@drawable/my_novel_selector" android:padding="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+        <TextView android:textSize="20.0dip" android:id="@id/category_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R-Novel" />
+        <TextView android:textSize="18.0dip" android:textColor="#ffdfdfdf" android:background="@drawable/index_text_background" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <GridView android:gravity="center" android:id="@id/carddemo_grid_base1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="0.0dip" android:verticalSpacing="0.0dip" android:stretchMode="none" android:columnWidth="@dimen/carddemo_gplay_grid_columnwidth" android:numColumns="auto_fit" />
+</LinearLayout>

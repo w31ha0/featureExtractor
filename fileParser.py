@@ -6,19 +6,19 @@ import subprocess
 
 allSensitiveAPIS = []
 allNetworkAddresses = []
-allConstantClassNames = []
 allReflectionCode = []
 allDexCode = []
 allDecryptionCode = []
 allNativeCode = []
 allInnerJarAPKFiles = []
 allSuspiciousImageFiles = []
+allClassLoadingCode = []
 
 nonAsciiCounter = 0
 
 
 def traveseAll(sh,startColumn):
-    global nonAsciiCounter,allSensitiveAPIS,allNetworkAddresses,allConstantClassNames,allReflectionCode,allDexCode,allDecryptionCode,allNativeCode,nonAsciiCounter,allInnerJarAPKFiles
+    global nonAsciiCounter,allSensitiveAPIS,allNetworkAddresses,allClassLoadingCode,allReflectionCode,allDexCode,allDecryptionCode,allNativeCode,nonAsciiCounter,allInnerJarAPKFiles
 
     dir_path = os.path.dirname(os.path.realpath(__file__)) + '/' + TEMP_DIRECTORY
     
@@ -47,7 +47,7 @@ def traveseAll(sh,startColumn):
     print ""
     print "Number of network addresses:" + str(len(allNetworkAddresses)) + str(allNetworkAddresses)
     print ""
-    print "Number of constant class names:" + str(len(allConstantClassNames)) + str(allConstantClassNames)
+    print "Number of class loading code:" + str(len(allClassLoadingCode)) + str(allClassLoadingCode)
     print ""
     print "Number of reflection code:" + str(len(allReflectionCode)) + str(allReflectionCode)
     print ""
@@ -66,8 +66,8 @@ def traveseAll(sh,startColumn):
     sh.write(START_ROW+7,startColumn,str(len(allSensitiveAPIS)))
     sh.write(START_ROW+8,0,"Total number of network addresses")
     sh.write(START_ROW+8,startColumn,str(len(allNetworkAddresses)))
-    sh.write(START_ROW+9,0,"Total number of constant class names")
-    sh.write(START_ROW+9,startColumn,str(len(allConstantClassNames)))
+    sh.write(START_ROW+9,0,"Total number of class loading code")
+    sh.write(START_ROW+9,startColumn,str(len(allClassLoadingCode)))
     sh.write(START_ROW+10,0,"Total number of reflection code")
     sh.write(START_ROW+10,startColumn,str(len(allReflectionCode)))
     sh.write(START_ROW+11,0,"Total number of Dex code")
@@ -85,7 +85,7 @@ def traveseAll(sh,startColumn):
         onDexGuardDetected(str(nonAsciiCounter),sh,startColumn)
     
 def searchSmaliContent(content,fullpath):
-    global nonAsciiCounter,allSensitiveAPIS,allNetworkAddresses,allConstantClassNames,allReflectionCode,allDexCode,allDecryptionCode,allNativeCode
+    global nonAsciiCounter,allSensitiveAPIS,allNetworkAddresses,allReflectionCode,allDexCode,allDecryptionCode,allNativeCode,allClassLoadingCode
 
     lineNo = 1
     startRecordingMethod = False
@@ -122,10 +122,9 @@ def searchSmaliContent(content,fullpath):
             record = ip + " <" + fullpath + ":"+str(lineNo)+">"
             allNetworkAddresses.append(record)       
             
-        constantStrings = re.findall( r'const-string\s\w\w,\s"\S*"', line) #check for constant strings
-        for constant in constantStrings:
-            if 1 == 2: #to match class names here
-                allConstantClassNames.append(constant)
+        if "invoke" in line and LOAD_CLASS_LABEL in line: #check for dynamic loading of class
+            record = line + " <" + fullpath + ":"+str(lineNo)+">"
+            allClassLoadingCode.append(record) 
                 
         if REFLECTION_LABEL in line and GET_METHOD_LABEL in line: #check for reflection
             record = line + " <" + fullpath + ":"+str(lineNo)+">"
@@ -143,6 +142,6 @@ def searchSmaliContent(content,fullpath):
             record = line + " <" + fullpath + ":"+str(lineNo)+">"
             allNativeCode.append(record)
                 
-    lineNo += 1
+        lineNo += 1
         
     

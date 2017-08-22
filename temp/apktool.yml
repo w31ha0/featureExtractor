@@ -1,0 +1,65 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: novelking.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '16'
+  targetSdkVersion: '26'
+sharedLibrary: false
+unknownFiles:
+  browser_icon.png: '8'
+  build-data.properties: '8'
+  close_1_30.png: '8'
+  facebook.png: '8'
+  float_close_big.png: '8'
+  float_close_small.png: '8'
+  know_more.png: '8'
+  narrow_f.png: '8'
+  vpon_bg.png: '8'
+  vpon_button_close50.png: '8'
+  vpon_button_close50_new.png: '8'
+  vpon_close.png: '8'
+  vpon_close_mix.png: '8'
+  vpon_next.png: '8'
+  vpon_next_mix.png: '8'
+  vpon_opennew.png: '8'
+  vpon_opennew_mix.png: '8'
+  vpon_prev.png: '8'
+  vpon_prev_mix.png: '8'
+  vpon_s-off.png: '8'
+  vpon_s-on.png: '8'
+  vpon_video2_a-left.png: '8'
+  vpon_video2_a-right.png: '8'
+  vpon_video2_bg_bottom.png: '8'
+  vpon_video2_bg_top.png: '8'
+  vpon_video2_close.png: '8'
+  vpon_video2_close2.png: '8'
+  vpon_video2_full.png: '8'
+  vpon_video2_pause.png: '8'
+  vpon_video2_play.png: '8'
+  vpon_video2_replay.png: '8'
+  vpon_video2_reply.png: '8'
+  vpon_video2_s-off.png: '8'
+  vpon_video2_s-on.png: '8'
+  cfg/ts.tab: '8'
+  fabric/com.crashlytics.sdk.android.answers.properties: '8'
+  fabric/com.crashlytics.sdk.android.beta.properties: '8'
+  fabric/com.crashlytics.sdk.android.crashlytics-core.properties: '8'
+  fabric/com.crashlytics.sdk.android.crashlytics.properties: '8'
+  fabric/com.mopub.sdk.android.mopub.properties: '8'
+  fabric/io.fabric.sdk.android.fabric.properties: '8'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
+  values/attrs.xml: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.2.4
+versionInfo:
+  versionCode: '107'
+  versionName: 5.2.3

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/grid_item_image" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="10.0px" android:layout_marginTop="10.0px" android:layout_marginRight="20.0px" android:src="@drawable/ic_launcher" />
+        <TextView android:textSize="30.0px" android:typeface="serif" android:textStyle="bold" android:textColor="#ff3333ff" android:id="@id/grid_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:text="天龍八部" android:maxLines="2" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0px" android:layout_marginRight="20.0px">
+        <TextView android:textSize="20.0px" android:typeface="serif" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0px" android:text="@string/serializing" />
+    </RelativeLayout>
+</LinearLayout>

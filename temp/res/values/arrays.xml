@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bookmarks">
+        <item>我的書籤</item>
+        <item>最近閱讀</item>
+    </string-array>
+    <string-array name="category_sections">
+        <item>人氣排行</item>
+        <item>推薦</item>
+        <item>本週排行</item>
+        <item>近期更新</item>
+        <item>完本小說</item>
+        <item>全部小說</item>
+    </string-array>
+    <string-array name="collections">
+        <item>我的收藏</item>
+        <item>我的下載</item>
+    </string-array>
+    <string-array name="fontsize_selection">
+        <item>大</item>
+        <item>中</item>
+        <item>小</item>
+        <item>修改</item>
+    </string-array>
+    <string-array name="mode_selection">
+        <item>日間模式</item>
+        <item>夜間模式</item>
+        <item>修改</item>
+    </string-array>
+    <string-array name="sections">
+        <item>類別</item>
+        <item>推薦小說</item>
+        <item>近期更新</item>
+        <item>最新上架</item>
+        <item>本週排行</item>
+        <item>本月排行</item>
+        <item>總人氣排行</item>
+    </string-array>
+</resources>
