@@ -2,6 +2,7 @@ import re
 import sys,os
 from constants import *
 from sharedFunctions import *
+from featuresStruct import features
 import subprocess
 
 allSensitiveAPIS = []
@@ -18,7 +19,7 @@ nonAsciiCounter = 0
 
 
 def traveseAll(sh,startColumn):
-    global nonAsciiCounter,allSensitiveAPIS,allNetworkAddresses,allClassLoadingCode,allReflectionCode,allDexCode,allDecryptionCode,allNativeCode,nonAsciiCounter,allInnerJarAPKFiles
+    global nonAsciiCounter,allSensitiveAPIS,allNetworkAddresses,allClassLoadingCode,allReflectionCode,allDexCode,allDecryptionCode,allNativeCode,nonAsciiCounter,allInnerJarAPKFiles,features
 
     dir_path = os.path.dirname(os.path.realpath(__file__)) + '/' + TEMP_DIRECTORY
     
@@ -41,8 +42,17 @@ def traveseAll(sh,startColumn):
                     dataType = content[i].strip()
                     if "image" not in dataType and "Zlib" not in dataType and dataType:
                         record = fullpath+":"+dataType
-                        allSuspiciousImageFiles.append(record)
+                        allSuspiciousImageFiles.append(record)       
+                        
+    features["HARDCODED_ADDRESSES"] = len(allNetworkAddresses)       
+    features["DEXCLASSLOADER"] = len(allDexCode)    
+    features["REFLECTION"] = len(allReflectionCode)
+    features["LOADCLASS"] = len(allClassLoadingCode)
+    features["CRYPTO"] = len(allDecryptionCode)
+    features["INNERJARAPK"] = len(allInnerJarAPKFiles)
+    features["NATIVE"] = len(allNativeCode)
                 
+    '''            
     print "Number of sensitive APIS:" + str(len(allSensitiveAPIS)) + str(allSensitiveAPIS)
     print ""
     print "Number of network addresses:" + str(len(allNetworkAddresses)) + str(allNetworkAddresses)
@@ -61,7 +71,8 @@ def traveseAll(sh,startColumn):
     print ""
     print "Number of suspicious image files is "+str(len(allSuspiciousImageFiles))+":"+str(allSuspiciousImageFiles)
     print ""
-    
+    '''
+        
     sh.write(START_ROW+7,0,"Total number of sensitive APIs")
     sh.write(START_ROW+7,startColumn,str(len(allSensitiveAPIS)))
     sh.write(START_ROW+8,0,"Total number of network addresses")
@@ -85,7 +96,7 @@ def traveseAll(sh,startColumn):
         onDexGuardDetected(str(nonAsciiCounter),sh,startColumn)
     
 def searchSmaliContent(content,fullpath):
-    global nonAsciiCounter,allSensitiveAPIS,allNetworkAddresses,allReflectionCode,allDexCode,allDecryptionCode,allNativeCode,allClassLoadingCode
+    global nonAsciiCounter,allSensitiveAPIS,allNetworkAddresses,allReflectionCode,allDexCode,allDecryptionCode,allNativeCode,allClassLoadingCode,features
 
     lineNo = 1
     startRecordingMethod = False
@@ -114,6 +125,7 @@ def searchSmaliContent(content,fullpath):
                 
         for api in SENSITIVE_APIS: # Check for malicious API calls
             if api in line:
+                features[api] = 1
                 record = api + " <" + fullpath + ":"+str(lineNo)+">"
                 allSensitiveAPIS.append(record)
                 

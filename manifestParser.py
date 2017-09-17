@@ -1,13 +1,17 @@
 import xml.etree.ElementTree as ET
 import os
+from featuresStruct import features
 from constants import *
 from sharedFunctions import *
 
 manifestPath = TEMP_DIRECTORY+'/'+MANIFEST_FILE_CONVERTED
 
 def checkSuspiciousName(sample,array):
+    global features 
+    
     for malicious in array:
         if malicious in sample:
+            features[malicious] = 1
             return True
     return False
     
@@ -20,6 +24,8 @@ def getNameValueFromObject(object):
         return None
 
 def parseManifest(sh,startColumn):    
+    global features
+    
     tree = ET.parse(manifestPath)
     root = tree.getroot()
     
@@ -32,6 +38,7 @@ def parseManifest(sh,startColumn):
     totalPermissoinsCounter = 0
     totalIntentsCounter = 0
     totalHardwareCounter = 0
+    totalServicesCounter = 0
     
     permissionsCounter = 0
     hardwareCounter = 0
@@ -47,6 +54,7 @@ def parseManifest(sh,startColumn):
             totalPermissoinsCounter += 1
             permission = getNameValueFromObject(child.attrib)
             if permission in MALICIOUS_PERMISSIONS:
+                features[permission] = 1
                 permissionsCounter = permissionsCounter + 1
                 suspiciousPermissions.append(permission)
         elif child.tag == APPLICATION_LABEL:
@@ -64,6 +72,9 @@ def parseManifest(sh,startColumn):
                         malicousNames.append(componentName)
                 if innerChild.tag == RECEVIER_LABEL:
                     totalIntentsCounter += 1
+                    
+                elif innerChild.tag == SERVICE_LABEL:
+                    totalServicesCounter += 1
                         
                 if checkSuspiciousName(componentName,BANGCLE_ACTIVITIES):
                     onBangcleDetected(componentName,sh,startColumn)
@@ -74,15 +85,23 @@ def parseManifest(sh,startColumn):
                                     intent = action.attrib[OBJECT_KEY]
                                     for maliciousIntent in MALICIOUS_INTENTS:
                                         if maliciousIntent in intent:
+                                            features[maliciousIntent] = 1
                                             intentsCounter = intentsCounter + 1
                                             suspiciousIntents.append(intent)
                                 elif action.tag == HARDWARE_LABEL: #Parse HARDWARE
                                     totalHardwareCounter += 1
                                     intent = action.attrib[OBJECT_KEY]
                                     if intent in MALICIOUS_HARDWARES:
+                                        features[intent] = 1
                                         hardwareCounter = hardwareCounter + 1
                                         suspiciousHardwares.append(intent)
                                         
+    features["PERMISSIONSCOUNT"] = permissionsCounter
+    features["INTENTSCOUNT"] = intentsCounter
+    features["HARDWARECOUNT"] = totalHardwareCounter
+    features["SERVICESCOUNT"] = totalServicesCounter
+    
+    '''
     print "Total number of permissions requested is "+str(totalPermissoinsCounter)
     print ""     
     print "Total number of intents requested is "+str(totalIntentsCounter)
@@ -97,6 +116,7 @@ def parseManifest(sh,startColumn):
     print ""
     print "Number of suspiscious component names is "+str(malicousNamesCounter)+":"+str(malicousNames)        
     print ""    
+    '''
     
     sh.write(START_ROW+0,0,"Total number of permissions requested")
     sh.write(START_ROW+0,startColumn,str(totalPermissoinsCounter))

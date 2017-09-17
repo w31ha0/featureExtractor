@@ -6,6 +6,7 @@ import argparse
 import xlwt
 from xlrd import *
 from xlutils.copy import copy
+import featuresStruct
 
 def getSheetNo(sheetname):
     try:
@@ -55,6 +56,7 @@ args = parser.parse_args()
 
 apkfile = args.i
 sheetname = args.t
+featuresStruct.init()
 
 apkname = apkfile.split('/')[-1].split('.')[0]
 if len(apkname) > 29:
@@ -78,6 +80,9 @@ traveseAll(sh,startColumn)
 parseDex(sh)
 calculateCyclomaticComplexity(apkfile,sh,startColumn)
 cleanup()
+
+for key, value in sorted(featuresStruct.features.iteritems()): 
+    print key + ":" + str(value)
 
 try:
     rb.save("results.csv")

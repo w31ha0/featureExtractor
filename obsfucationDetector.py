@@ -2,6 +2,7 @@ from constants import *
 import xml.etree.ElementTree as ET
 import os,subprocess
 from sharedFunctions import *
+from featuresStruct import features
 
 def parseDex(sh):
     dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -11,7 +12,7 @@ def parseDex(sh):
                 relative_path = TEMP_DIRECTORY+'/'+name
                 content = open(relative_path,'r').read()
                 if APKPROTECT_LABEL in content: #check for APKProtect
-                    print "Use of APKProtect detected"
+                    onAPKProtectDetected(APKPROTECT_LABEL,sh,startColumn)
                 devnull = open(os.devnull, 'wb')
                 proc = subprocess.Popen(['perl',HIDEX_PATH,'--input',relative_path], shell=False,stdout=subprocess.PIPE, stderr=devnull)
                 content = proc.stdout.read()
@@ -19,6 +20,8 @@ def parseDex(sh):
                     onHose2JarDetected("strange header size",sh,startColumn)
                     
 def calculateCyclomaticComplexity(inputAPK,sh,startColumn):
+    global features
+
     noOfNodes = 0
     noOfEdges = 0
     noOfConnectedComponenets = 0
@@ -43,9 +46,11 @@ def calculateCyclomaticComplexity(inputAPK,sh,startColumn):
                 uniqueFunctions.append(functionName)
         elif "node" in child.tag:
             noOfNodes += 1
-            
-    complexity = noOfEdges-noOfNodes+2*len(uniqueFunctions)        
-    print "Cyclomatic Complexity is " + str(complexity)
+    #caluclate for each method        
+    complexity = noOfEdges-noOfNodes+2*len(uniqueFunctions) 
+    features["CYCLOMATIC_COMPLEXITY"] = complexity
+    #print "Number of unique functions is " + str(len(uniqueFunctions))
+    #print "Cyclomatic Complexity is " + str(complexity)
     sh.write(START_ROW+17,0,"Cyclomatic Complexity")
     sh.write(START_ROW+17,startColumn,str(complexity))
                 
