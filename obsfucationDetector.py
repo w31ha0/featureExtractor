@@ -22,9 +22,8 @@ def parseDex(sh):
 def calculateCyclomaticComplexity(inputAPK,sh,startColumn):
     global features
 
-    noOfNodes = 0
-    noOfEdges = 0
-    noOfConnectedComponenets = 0
+    noOfConnectedComponenets = 1
+    functionsMap = {}
     uniqueFunctions = []
 
     cmd = 'python ~/tools/vivano/androxgmml.py -i '+inputAPK+' -o out.xgmml'
@@ -33,24 +32,51 @@ def calculateCyclomaticComplexity(inputAPK,sh,startColumn):
     tree = ET.parse('out.xgmml')
     root = tree.getroot()
     clusters = dict()
+    lastPart = False
     
     for child in root:
         if "edge" in child.tag:
-            noOfEdges += 1
             functionName = ""
             arrays = child.attrib['label'].split('-')
-            for part in arrays:
-                if "@" not in part:
-                    functionName += part
-            if functionName not in uniqueFunctions:
-                uniqueFunctions.append(functionName)
+            functionName = arrays[0].encode('utf-8').strip()+arrays[1].encode('utf-8').strip()+arrays[3].split(';')[0].encode('utf-8').strip()
+            if functionName not in functionsMap:
+                functionsMap[functionName] = [1,0]
+                #print functionName
+            else:
+                newEdges = functionsMap[functionName][0]+1
+                newNodes = functionsMap[functionName][1]
+                functionsMap[functionName] = [newEdges,newNodes]
         elif "node" in child.tag:
-            noOfNodes += 1
-    #caluclate for each method        
-    complexity = noOfEdges-noOfNodes+2*len(uniqueFunctions) 
-    features["CYCLOMATIC_COMPLEXITY"] = complexity
-    #print "Number of unique functions is " + str(len(uniqueFunctions))
-    #print "Cyclomatic Complexity is " + str(complexity)
+            functionName = ""
+            arrays = child.attrib['label'].split('-')
+            functionName = arrays[0].encode('utf-8').strip()+arrays[1].encode('utf-8').strip()+arrays[3].split(';')[0].encode('utf-8').strip()
+            if functionName not in functionsMap:
+                functionsMap[functionName] = [0,1]
+                #print functionName
+            else:
+                newEdges = functionsMap[functionName][0]
+                newNodes = functionsMap[functionName][1]+1
+                functionsMap[functionName] = [newEdges,newNodes]
+                
+    highestComplexity = 0
+    lowestComplexity = 10000
+    totalComplexity = 0
+    counter = 0
+                
+    for key,value in functionsMap.iteritems():
+            complexity = value[0] - value[1] + 2
+            totalComplexity += complexity
+            counter += 1
+            if complexity > highestComplexity:
+                highestComplexity = complexity
+            if complexity < lowestComplexity:
+                lowestComplexity = complexity
+            #print key+": Edges="+str(value[0])+" Nodes="+str(value[1])
+
+    features["HIGHEST_CYCLOMATIC_COMPLEXITY"] = highestComplexity
+    features["LOWEST_CYCLOMATIC_COMPLEXITY"] = lowestComplexity
+    features["AVERAGE_CYCLOMATIC_COMPLEXITY"] = totalComplexity/counter
+            
     sh.write(START_ROW+17,0,"Cyclomatic Complexity")
     sh.write(START_ROW+17,startColumn,str(complexity))
                 

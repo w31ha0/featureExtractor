@@ -43,7 +43,7 @@ def init():
     features["INNERJARAPK"] = 0
     features["NATIVE"] = 0
     
-    features["CYCLOMATIC_COMPLEXITY"] = 0
-    
+    features["HIGHEST_CYCLOMATIC_COMPLEXITY"] = 0
+    features["LOWEST_CYCLOMATIC_COMPLEXITY"] = 0
     
     
