@@ -42,11 +42,14 @@ BANGCLE_ACTIVITIES = ["FirstApplication","ACall","com.bangcle.everisk.stub.NewAc
 BANGCLE_LIBRARIES = ["libsecexe.so","libsecmain.so","libSecShell.so","libSecShell-x86.so"]
 BANGCLE_LABELS = ["com.secapk.wrapper.ApplicationWrapper","com.secshell.secData.ApplicationWrapper"]
 
-SENSITIVE_APIS = ['getSMSCFromSms']
+SENSITIVE_APIS = ['getSMSCFromSms','getSubscriberId','Service;->onDestroy','Service;->onCreate','getDeviceId','Context;->startService','PackageManager','SmsManager;->getDefault','sendTextMessage'
+,'Timer;-><init>','Bundle;->get','ApplicationInfo;->loadLabel','Process;->getOutputStream','Runtime;->exec','TimerTask;-><init>','DataOutputStream;->flush','FileOutputStream;->flush','Process;->waitFor'
+,'NetworkInfo;->getExtraInfo','TelephonyManager;->getLine1Number','TelephonyManager','SmsManager']
 REFLECTION_LABEL = "Ljava/lang/reflect/Method"
 GET_METHOD_LABEL = "getMethod"
 DEX_CLASS_LABEL = "Ldalvik/system/DexClassLoader"
 DECRYPTION_LABEL = "Ljavax/crypto/Cipher"
+DO_FINAL_LABEL = "doFinal"
 NATIVE_LOAD_LABEL = "loadLibrary"
 NATIVE_FUNCTION_LABEL = "native"
 APKPROTECT_LABEL = "APKProtected"
