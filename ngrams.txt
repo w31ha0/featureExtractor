@@ -1,0 +1,285 @@
+android.location.Location: double getLongitude()
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String,java.lang.String)
+
+android.net.wifi.WifiInfo: java.lang.String getMacAddress()
+com.tencent.mobwin.core.r: void <init
+com.tencent.mobwin.core.b.d: MobWin.UserInfo a(android.content.Context)
+java.util.Map: java.lang.Object get(java.lang.Object)
+
+com.tencent.mobwin.core.r: void <init
+com.tencent.mobwin.core.b.d: MobWin.UserInfo a(android.content.Context)
+java.util.Map: java.lang.Object get(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+
+com.tencent.mobwin.core.b.d: MobWin.UserInfo a(android.content.Context)
+java.util.Map: java.lang.Object get(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+
+java.util.Map: java.lang.Object get(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int e(java.lang.String,java.lang.String)
+
+android.location.Location: double getLatitude()
+java.lang.Double: java.lang.Double valueOf(double)
+com.connect.MyService: java.lang.Double access$16(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+
+java.lang.Double: java.lang.Double valueOf(double)
+com.connect.MyService: java.lang.Double access$16(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+
+com.connect.MyService: java.lang.Double access$16(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String,java.lang.String)
+
+android.telephony.gsm.GsmCellLocation: int getLac()
+com.tencent.lbsapi.core.a: void <init
+com.tencent.lbsapi.core.a: void <init
+com.tencent.lbsapi.core.QLBSEngine: void r()
+
+com.tencent.lbsapi.core.a: void <init
+com.tencent.lbsapi.core.a: void <init
+com.tencent.lbsapi.core.QLBSEngine: void r()
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+
+com.tencent.lbsapi.core.a: void <init
+com.tencent.lbsapi.core.QLBSEngine: void r()
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.telephony.TelephonyManager: java.lang.String getNetworkOperator()
+
+com.tencent.lbsapi.core.QLBSEngine: void r()
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.telephony.TelephonyManager: java.lang.String getNetworkOperator()
+java.lang.String: java.lang.String substring(int)
+
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.telephony.TelephonyManager: java.lang.String getNetworkOperator()
+java.lang.String: java.lang.String substring(int)
+java.lang.Integer: int parseInt(java.lang.String)
+
+android.telephony.TelephonyManager: java.lang.String getNetworkOperator()
+java.lang.String: java.lang.String substring(int)
+java.lang.Integer: int parseInt(java.lang.String)
+com.tencent.lbsapi.core.QLBSEngine: java.lang.String toString()
+
+java.lang.String: java.lang.String substring(int)
+java.lang.Integer: int parseInt(java.lang.String)
+com.tencent.lbsapi.core.QLBSEngine: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+
+java.lang.Integer: int parseInt(java.lang.String)
+com.tencent.lbsapi.core.QLBSEngine: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+
+com.tencent.lbsapi.core.QLBSEngine: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.String toString()
+
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int e(java.lang.String,java.lang.String)
+
+android.location.Location: double getLatitude()
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.String toString()
+
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String,java.lang.String)
+
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String,java.lang.String)
+
+android.telephony.gsm.GsmCellLocation: int getCid()
+com.tencent.lbsapi.core.a: void <init
+com.tencent.lbsapi.core.a: void <init
+com.tencent.lbsapi.core.QLBSEngine: void r()
+
+android.net.wifi.WifiInfo: java.lang.String getMacAddress()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+
+android.location.Location: double getLongitude()
+java.lang.Double: java.lang.Double valueOf(double)
+com.connect.MyService: java.lang.Double access$17(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+
+java.lang.Double: java.lang.Double valueOf(double)
+com.connect.MyService: java.lang.Double access$17(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+
+com.connect.MyService: java.lang.Double access$17(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+
+android.telephony.TelephonyManager: java.lang.String getSubscriberId()
+com.tencent.mobwin.core.b.d: MobWin.UserInfo a(android.content.Context)
+java.util.Map: java.lang.Object get(java.lang.Object)
+MobWin.UserInfo: void i(java.lang.String)
+
+com.tencent.mobwin.core.b.d: MobWin.UserInfo a(android.content.Context)
+java.util.Map: java.lang.Object get(java.lang.Object)
+MobWin.UserInfo: void i(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+
+java.util.Map: java.lang.Object get(java.lang.Object)
+MobWin.UserInfo: void i(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.String toString()
+
+MobWin.UserInfo: void i(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int v(java.lang.String,java.lang.String)
+
+android.telephony.TelephonyManager: java.lang.String getSubscriberId()
+com.tencent.mobwin.core.r: void <init
+com.tencent.mobwin.core.b.d: MobWin.UserInfo a(android.content.Context)
+java.util.Map: java.lang.Object get(java.lang.Object)
+
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String,java.lang.String)
+
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+
+android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+java.lang.String: java.lang.String toLowerCase()
+android.util.Log: int e(java.lang.String
+java.lang.String)
+
+android.location.Location: double getLongitude()
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String,java.lang.String)
+
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+com.tencent.lbsapi.core.QLBSEngine: boolean a()
+com.tencent.lbsapi.core.a: void <init
+com.tencent.lbsapi.core.QLBSEngine: void r()
+
+com.tencent.lbsapi.core.QLBSEngine: boolean a()
+com.tencent.lbsapi.core.a: void <init
+com.tencent.lbsapi.core.QLBSEngine: void r()
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String,java.lang.String)
+
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String,java.lang.String)
+
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.String: java.lang.String valueOf(java.lang.Object)
+
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.String: java.lang.String valueOf(java.lang.Object)
+java.lang.StringBuilder: void <init
+
+java.lang.StringBuilder: void <init
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String,java.lang.String)
+
+android.telephony.TelephonyManager: java.lang.String getLine1Number()
+com.connect.MyService: java.lang.String access$21(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+
+com.connect.MyService: java.lang.String access$21(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+
+com.connect.MyService: java.lang.Double access$17(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+
+android.net.wifi.WifiInfo: java.lang.String getMacAddress()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int v(java.lang.String,java.lang.String)
+

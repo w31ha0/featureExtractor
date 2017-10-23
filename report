@@ -1,0 +1,754 @@
+
+Parsing /home/ubuntu/fyp/full_malware_samples/launcher.apk
+
+Traceback (most recent call last):
+  File "apiSequenceExtractor.py", line 45, in <module>
+    output = subprocess.check_output('cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive', shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 574, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "/home/ubuntu/fyp/full_malware_samples/launcher.apk" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive' returned non-zero exit status 1
+ for launcher.apk
+
+Parsing /home/ubuntu/fyp/full_malware_samples/FakeCMCC.A.apk
+
+Traceback (most recent call last):
+  File "apiSequenceExtractor.py", line 45, in <module>
+    output = subprocess.check_output('cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive', shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 574, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "/home/ubuntu/fyp/full_malware_samples/FakeCMCC.A.apk" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive' returned non-zero exit status 1
+ for FakeCMCC.A.apk
+
+Parsing /home/ubuntu/fyp/full_malware_samples/b5f9a2b92bccb21d7cdd0d81c3d5b4a63ad04775e288218f1a8e5a79ed54025d.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.fdhgkjhrtjkjbx.model.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/96f95e432b6325f00042e67c4cead6061563d833e35c531b372581ac0f51eac2.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/XTaoAd.A.apk
+
+Sink is android.util.Log: int v(java.lang.String,java.lang.String)
+Sink is android.util.Log: int v(java.lang.String,java.lang.String)
+Sink is android.util.Log: int v(java.lang.String,java.lang.String)
+Sink is android.util.Log: int e(java.lang.String,java.lang.String)
+Sink is android.util.Log: int e(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int e(java.lang.String,java.lang.String)
+Sink is android.util.Log: int e(java.lang.String,java.lang.String)
+Sink is android.util.Log: int e(java.lang.String,java.lang.String)
+Sink is android.util.Log: int e(java.lang.String,java.lang.String)
+Sink is android.util.Log: int e(java.lang.String,java.lang.String)
+Sink is android.util.Log: int e(java.lang.String,java.lang.String)
+
+Parsing /home/ubuntu/fyp/full_malware_samples/BadNews.A.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.statetss.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.prasesfee.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Claco.A.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.parental.control.v4.apk
+
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+
+Parsing /home/ubuntu/fyp/full_malware_samples/FakeDoc.apk
+
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.prasesamor.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/FakeBank.B.apk
+
+Traceback (most recent call last):
+  File "apiSequenceExtractor.py", line 45, in <module>
+    output = subprocess.check_output('cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive', shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 574, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "/home/ubuntu/fyp/full_malware_samples/FakeBank.B.apk" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive' returned non-zero exit status 1
+ for FakeBank.B.apk
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Dropdialer.apk
+
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+
+Parsing /home/ubuntu/fyp/full_malware_samples/1264C25D67D41F52102573D3C528BCDDDA42129DF5052881F7E98B4A90F61F23.apk
+
+Sink is android.util.Log: int w(java.lang.String,java.lang.String)
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.laughtter.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/fakeAV_148B76C664F2854E2947AF01160FFA99_LabelReader.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/towelroot.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/GinMaster.Z.AdvancedObfuscation.apk
+
+Sink is java.net.URL: java.net.URLConnection openConnection()
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Vietcon.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Google-play.apk
+
+Traceback (most recent call last):
+  File "apiSequenceExtractor.py", line 45, in <module>
+    output = subprocess.check_output('cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive', shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 574, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "/home/ubuntu/fyp/full_malware_samples/Google-play.apk" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive' returned non-zero exit status 1
+ for Google-play.apk
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Opfake.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/org.benews.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Omigo.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.thinkking.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Fobus.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/AndroidFileSystem.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Opfake.A.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/SmsWorker.apk
+
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int v(java.lang.String,java.lang.String)
+Sink is android.util.Log: int v(java.lang.String,java.lang.String)
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.chistescortos.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/14d9f1a92dd984d6040cc41ed06e273e.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Masnu.apk
+
+Traceback (most recent call last):
+  File "apiSequenceExtractor.py", line 45, in <module>
+    output = subprocess.check_output('cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive', shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 574, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "/home/ubuntu/fyp/full_malware_samples/Masnu.apk" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive' returned non-zero exit status 1
+ for Masnu.apk
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Asroot-0c059ad62b9dbccf8943fe4697f2a6b0cb917548.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Agent.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.imagepets.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Blatantsms.apk
+
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+
+Parsing /home/ubuntu/fyp/full_malware_samples/fakeAV_1CA532F171A0B765A46AF995EBAAB1D2_LabelReader.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/SmsThief.apk
+
+Traceback (most recent call last):
+  File "apiSequenceExtractor.py", line 45, in <module>
+    output = subprocess.check_output('cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive', shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 574, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "/home/ubuntu/fyp/full_malware_samples/SmsThief.apk" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive' returned non-zero exit status 1
+ for SmsThief.apk
+
+Parsing /home/ubuntu/fyp/full_malware_samples/fakeAV_ED1E0689F93B0C57E403489BB5338F59_LabelReader.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/fakeAV_1E178E501B41659FFACE85153615DEA7_LabelReader.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/fakeAV_6F237D25472D9D09FC44ECE7DC9CED92_LabelReader.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.recipesmart.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.romaticpost.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/mcpef.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/bank.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/andappsys.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/fakeAV_75B8F9DBB1CD79B7FC074F7F499150CF_LabelReader.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.tinker.gameone(Cowboy Adventure).apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/fakeAV_934527F8EBB5C1088009CC9329DC3DE6_LabelReader.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/5781eb58f1e628930e37fef8d2215fe5b3b7d81dd20c4edfdf0c1bb7e685c9c9.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/ad61e0abe570c3575b01fbd07fc92e88c2516d1b74bb2ed536c6e2cc8e70435e.apk
+
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+Sink is android.util.Log: int i(java.lang.String,java.lang.String)
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.parental.control.v4-dexguarded.apk
+
+Traceback (most recent call last):
+  File "apiSequenceExtractor.py", line 45, in <module>
+    output = subprocess.check_output('cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive', shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 574, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "/home/ubuntu/fyp/full_malware_samples/com.parental.control.v4-dexguarded.apk" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive' returned non-zero exit status 1
+ for com.parental.control.v4-dexguarded.apk
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Samsapo.A.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Opfake.B.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/4ab8f26e8aaee3de12b04b7a86be9ee349672e228b52e5b90dcd63cf7b564e34.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/bank2.apk
+
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int e(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int e(java.lang.String,java.lang.String)
+Sink is java.net.URL: java.net.URLConnection openConnection()
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int e(java.lang.String,java.lang.String)
+Sink is android.util.Log: int e(java.lang.String,java.lang.String)
+Sink is android.util.Log: int e(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+Sink is android.util.Log: int d(java.lang.String,java.lang.String)
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Bios.NativeMaliciousCode.apk
+
+Traceback (most recent call last):
+  File "apiSequenceExtractor.py", line 45, in <module>
+    output = subprocess.check_output('cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive', shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 574, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "/home/ubuntu/fyp/full_malware_samples/Bios.NativeMaliciousCode.apk" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive' returned non-zero exit status 1
+ for Bios.NativeMaliciousCode.apk
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Obad.A.apk
+
+Traceback (most recent call last):
+  File "apiSequenceExtractor.py", line 45, in <module>
+    output = subprocess.check_output('cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive', shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 574, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "/home/ubuntu/fyp/full_malware_samples/Obad.A.apk" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive' returned non-zero exit status 1
+ for Obad.A.apk
+
+Parsing /home/ubuntu/fyp/full_malware_samples/krep.itmtd.ywtjexf-1.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/FakeValidation.apk
+
+Traceback (most recent call last):
+  File "apiSequenceExtractor.py", line 45, in <module>
+    output = subprocess.check_output('cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive', shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 574, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "/home/ubuntu/fyp/full_malware_samples/FakeValidation.apk" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive' returned non-zero exit status 1
+ for FakeValidation.apk
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.chistespicanticos.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/skype.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/AnserverBot-001fa1574a73e9a8481e26df2aa6104eb2406b57.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/Oldboot.A.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.cattss.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/JiFake.A.apk
+
+Traceback (most recent call last):
+  File "apiSequenceExtractor.py", line 45, in <module>
+    output = subprocess.check_output('cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive', shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 574, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+CalledProcessError: Command 'cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "/home/ubuntu/fyp/full_malware_samples/JiFake.A.apk" /home/ubuntu/android-sdk-linux/platform-tools --pathalgo contextsensitive' returned non-zero exit status 137
+ for JiFake.A.apk
+
+Parsing /home/ubuntu/fyp/full_malware_samples/021d55c415ff951c8e7b1ce3f94399bb.apk
+
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+
+Parsing /home/ubuntu/fyp/full_malware_samples/fakeAV_77BB7F86FB0AC66C97B1AB3573ADFFC1_LabelReader.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.kitchenn.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.tinker.jumperchess(Jump Chess).apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/BaseBridge-00c154b42fd483196d303618582420b89cedbf46.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.funnyys.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/com.c101421042723.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/brother.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/BeanBot-16706fe77bf2fa73ef2d85543ae1839772d429f9.apk
+
+Sink is android.telephony.gsm.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+Sink is android.telephony.gsm.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)
+
+Parsing /home/ubuntu/fyp/full_malware_samples/NotCompatible.A.apk
+
+
+Parsing /home/ubuntu/fyp/full_malware_samples/fakeAV_36B177910C99872B33E90DEA71B16617_LabelReader.apk
+
+
+67 out of 78 succeeeded
+
+
+Files tried:['/home/ubuntu/fyp/full_malware_samples/launcher.apk', '/home/ubuntu/fyp/full_malware_samples/FakeCMCC.A.apk', '/home/ubuntu/fyp/full_malware_samples/b5f9a2b92bccb21d7cdd0d81c3d5b4a63ad04775e288218f1a8e5a79ed54025d.apk', '/home/ubuntu/fyp/full_malware_samples/com.fdhgkjhrtjkjbx.model.apk', '/home/ubuntu/fyp/full_malware_samples/96f95e432b6325f00042e67c4cead6061563d833e35c531b372581ac0f51eac2.apk', '/home/ubuntu/fyp/full_malware_samples/XTaoAd.A.apk', '/home/ubuntu/fyp/full_malware_samples/BadNews.A.apk', '/home/ubuntu/fyp/full_malware_samples/com.statetss.apk', '/home/ubuntu/fyp/full_malware_samples/com.prasesfee.apk', '/home/ubuntu/fyp/full_malware_samples/Claco.A.apk', '/home/ubuntu/fyp/full_malware_samples/com.parental.control.v4.apk', '/home/ubuntu/fyp/full_malware_samples/FakeDoc.apk', '/home/ubuntu/fyp/full_malware_samples/com.prasesamor.apk', '/home/ubuntu/fyp/full_malware_samples/FakeBank.B.apk', '/home/ubuntu/fyp/full_malware_samples/Dropdialer.apk', '/home/ubuntu/fyp/full_malware_samples/1264C25D67D41F52102573D3C528BCDDDA42129DF5052881F7E98B4A90F61F23.apk', '/home/ubuntu/fyp/full_malware_samples/com.laughtter.apk', '/home/ubuntu/fyp/full_malware_samples/fakeAV_148B76C664F2854E2947AF01160FFA99_LabelReader.apk', '/home/ubuntu/fyp/full_malware_samples/towelroot.apk', '/home/ubuntu/fyp/full_malware_samples/GinMaster.Z.AdvancedObfuscation.apk', '/home/ubuntu/fyp/full_malware_samples/Vietcon.apk', '/home/ubuntu/fyp/full_malware_samples/Google-play.apk', '/home/ubuntu/fyp/full_malware_samples/Opfake.apk', '/home/ubuntu/fyp/full_malware_samples/org.benews.apk', '/home/ubuntu/fyp/full_malware_samples/Omigo.apk', '/home/ubuntu/fyp/full_malware_samples/com.thinkking.apk', '/home/ubuntu/fyp/full_malware_samples/Fobus.apk', '/home/ubuntu/fyp/full_malware_samples/AndroidFileSystem.apk', '/home/ubuntu/fyp/full_malware_samples/Opfake.A.apk', '/home/ubuntu/fyp/full_malware_samples/SmsWorker.apk', '/home/ubuntu/fyp/full_malware_samples/com.chistescortos.apk', '/home/ubuntu/fyp/full_malware_samples/14d9f1a92dd984d6040cc41ed06e273e.apk', '/home/ubuntu/fyp/full_malware_samples/Masnu.apk', '/home/ubuntu/fyp/full_malware_samples/Asroot-0c059ad62b9dbccf8943fe4697f2a6b0cb917548.apk', '/home/ubuntu/fyp/full_malware_samples/Agent.apk', '/home/ubuntu/fyp/full_malware_samples/com.imagepets.apk', '/home/ubuntu/fyp/full_malware_samples/Blatantsms.apk', '/home/ubuntu/fyp/full_malware_samples/fakeAV_1CA532F171A0B765A46AF995EBAAB1D2_LabelReader.apk', '/home/ubuntu/fyp/full_malware_samples/SmsThief.apk', '/home/ubuntu/fyp/full_malware_samples/fakeAV_ED1E0689F93B0C57E403489BB5338F59_LabelReader.apk', '/home/ubuntu/fyp/full_malware_samples/fakeAV_1E178E501B41659FFACE85153615DEA7_LabelReader.apk', '/home/ubuntu/fyp/full_malware_samples/fakeAV_6F237D25472D9D09FC44ECE7DC9CED92_LabelReader.apk', '/home/ubuntu/fyp/full_malware_samples/com.recipesmart.apk', '/home/ubuntu/fyp/full_malware_samples/com.romaticpost.apk', '/home/ubuntu/fyp/full_malware_samples/mcpef.apk', '/home/ubuntu/fyp/full_malware_samples/bank.apk', '/home/ubuntu/fyp/full_malware_samples/andappsys.apk', '/home/ubuntu/fyp/full_malware_samples/fakeAV_75B8F9DBB1CD79B7FC074F7F499150CF_LabelReader.apk', '/home/ubuntu/fyp/full_malware_samples/com.tinker.gameone(Cowboy Adventure).apk', '/home/ubuntu/fyp/full_malware_samples/fakeAV_934527F8EBB5C1088009CC9329DC3DE6_LabelReader.apk', '/home/ubuntu/fyp/full_malware_samples/5781eb58f1e628930e37fef8d2215fe5b3b7d81dd20c4edfdf0c1bb7e685c9c9.apk', '/home/ubuntu/fyp/full_malware_samples/ad61e0abe570c3575b01fbd07fc92e88c2516d1b74bb2ed536c6e2cc8e70435e.apk', '/home/ubuntu/fyp/full_malware_samples/com.parental.control.v4-dexguarded.apk', '/home/ubuntu/fyp/full_malware_samples/Samsapo.A.apk', '/home/ubuntu/fyp/full_malware_samples/Opfake.B.apk', '/home/ubuntu/fyp/full_malware_samples/4ab8f26e8aaee3de12b04b7a86be9ee349672e228b52e5b90dcd63cf7b564e34.apk', '/home/ubuntu/fyp/full_malware_samples/bank2.apk', '/home/ubuntu/fyp/full_malware_samples/Bios.NativeMaliciousCode.apk', '/home/ubuntu/fyp/full_malware_samples/Obad.A.apk', '/home/ubuntu/fyp/full_malware_samples/krep.itmtd.ywtjexf-1.apk', '/home/ubuntu/fyp/full_malware_samples/FakeValidation.apk', '/home/ubuntu/fyp/full_malware_samples/com.chistespicanticos.apk', '/home/ubuntu/fyp/full_malware_samples/skype.apk', '/home/ubuntu/fyp/full_malware_samples/AnserverBot-001fa1574a73e9a8481e26df2aa6104eb2406b57.apk', '/home/ubuntu/fyp/full_malware_samples/Oldboot.A.apk', '/home/ubuntu/fyp/full_malware_samples/com.cattss.apk', '/home/ubuntu/fyp/full_malware_samples/JiFake.A.apk', '/home/ubuntu/fyp/full_malware_samples/021d55c415ff951c8e7b1ce3f94399bb.apk', '/home/ubuntu/fyp/full_malware_samples/fakeAV_77BB7F86FB0AC66C97B1AB3573ADFFC1_LabelReader.apk', '/home/ubuntu/fyp/full_malware_samples/com.kitchenn.apk', '/home/ubuntu/fyp/full_malware_samples/com.tinker.jumperchess(Jump Chess).apk', '/home/ubuntu/fyp/full_malware_samples/BaseBridge-00c154b42fd483196d303618582420b89cedbf46.apk', '/home/ubuntu/fyp/full_malware_samples/com.funnyys.apk', '/home/ubuntu/fyp/full_malware_samples/com.c101421042723.apk', '/home/ubuntu/fyp/full_malware_samples/brother.apk', '/home/ubuntu/fyp/full_malware_samples/BeanBot-16706fe77bf2fa73ef2d85543ae1839772d429f9.apk', '/home/ubuntu/fyp/full_malware_samples/NotCompatible.A.apk', '/home/ubuntu/fyp/full_malware_samples/fakeAV_36B177910C99872B33E90DEA71B16617_LabelReader.apk']
+
+Occurences:XTaoAd.A.apk,XTaoAd.A.apk,XTaoAd.A.apk,XTaoAd.A.apk,XTaoAd.A.apk,XTaoAd.A.apk,XTaoAd.A.apk,com.parental.control.v4.apk,com.parental.control.v4.apk,FakeDoc.apk,FakeDoc.apk,FakeDoc.apk,FakeDoc.apk,FakeDoc.apk,FakeDoc.apk,FakeDoc.apk,FakeDoc.apk,FakeDoc.apk,FakeDoc.apk,FakeDoc.apk,FakeDoc.apk,FakeDoc.apk,Dropdialer.apk,Dropdialer.apk,1264C25D67D41F52102573D3C528BCDDDA42129DF5052881F7E98B4A90F61F23.apk,GinMaster.Z.AdvancedObfuscation.apk,SmsWorker.apk,SmsWorker.apk,SmsWorker.apk,SmsWorker.apk,SmsWorker.apk,SmsWorker.apk,SmsWorker.apk,Blatantsms.apk,Blatantsms.apk,Blatantsms.apk,ad61e0abe570c3575b01fbd07fc92e88c2516d1b74bb2ed536c6e2cc8e70435e.apk,ad61e0abe570c3575b01fbd07fc92e88c2516d1b74bb2ed536c6e2cc8e70435e.apk,ad61e0abe570c3575b01fbd07fc92e88c2516d1b74bb2ed536c6e2cc8e70435e.apk,ad61e0abe570c3575b01fbd07fc92e88c2516d1b74bb2ed536c6e2cc8e70435e.apk,bank2.apk,bank2.apk,bank2.apk,bank2.apk,bank2.apk,bank2.apk,bank2.apk,bank2.apk,bank2.apk,021d55c415ff951c8e7b1ce3f94399bb.apk,021d55c415ff951c8e7b1ce3f94399bb.apk,021d55c415ff951c8e7b1ce3f94399bb.apk,021d55c415ff951c8e7b1ce3f94399bb.apk,021d55c415ff951c8e7b1ce3f94399bb.apk,021d55c415ff951c8e7b1ce3f94399bb.apk,021d55c415ff951c8e7b1ce3f94399bb.apk,021d55c415ff951c8e7b1ce3f94399bb.apk,021d55c415ff951c8e7b1ce3f94399bb.apk,021d55c415ff951c8e7b1ce3f94399bb.apk,021d55c415ff951c8e7b1ce3f94399bb.apk,021d55c415ff951c8e7b1ce3f94399bb.apk,BeanBot-16706fe77bf2fa73ef2d85543ae1839772d429f9.apk,BeanBot-16706fe77bf2fa73ef2d85543ae1839772d429f9.apk
+
+Occurences:XTaoAd.A.apk,XTaoAd.A.apk
+android.location.Location: double getLongitude()
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk
+android.net.wifi.WifiInfo: java.lang.String getMacAddress()
+com.tencent.mobwin.core.r: void <init
+com.tencent.mobwin.core.b.d: MobWin.UserInfo a(android.content.Context)
+java.util.Map: java.lang.Object get(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int e(java.lang.String
+java.lang.String)
+
+Occurences:com.parental.control.v4.apk
+android.location.Location: double getLatitude()
+java.lang.Double: java.lang.Double valueOf(double)
+com.connect.MyService: java.lang.Double access$16(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk
+android.telephony.gsm.GsmCellLocation: int getLac()
+com.tencent.lbsapi.core.a: void <init
+com.tencent.lbsapi.core.a: void <init
+com.tencent.lbsapi.core.QLBSEngine: void r()
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.telephony.TelephonyManager: java.lang.String getNetworkOperator()
+java.lang.String: java.lang.String substring(int)
+java.lang.Integer: int parseInt(java.lang.String)
+com.tencent.lbsapi.core.QLBSEngine: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int e(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk,XTaoAd.A.apk
+android.location.Location: double getLatitude()
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk
+android.telephony.gsm.GsmCellLocation: int getCid()
+com.tencent.lbsapi.core.a: void <init
+com.tencent.lbsapi.core.a: void <init
+com.tencent.lbsapi.core.QLBSEngine: void r()
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.telephony.TelephonyManager: java.lang.String getNetworkOperator()
+java.lang.String: java.lang.String substring(int)
+java.lang.Integer: int parseInt(java.lang.String)
+com.tencent.lbsapi.core.QLBSEngine: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int e(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk
+android.net.wifi.WifiInfo: java.lang.String getMacAddress()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:com.parental.control.v4.apk
+android.location.Location: double getLongitude()
+java.lang.Double: java.lang.Double valueOf(double)
+com.connect.MyService: java.lang.Double access$17(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk
+android.telephony.TelephonyManager: java.lang.String getSubscriberId()
+com.tencent.mobwin.core.b.d: MobWin.UserInfo a(android.content.Context)
+java.util.Map: java.lang.Object get(java.lang.Object)
+MobWin.UserInfo: void i(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int v(java.lang.String
+java.lang.String)
+
+Occurences:bank2.apk
+android.telephony.TelephonyManager: java.lang.String getSubscriberId()
+java.lang.String: java.lang.String toLowerCase()
+android.util.Log: int e(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk
+android.telephony.TelephonyManager: java.lang.String getSubscriberId()
+com.tencent.mobwin.core.r: void <init
+com.tencent.mobwin.core.b.d: MobWin.UserInfo a(android.content.Context)
+java.util.Map: java.lang.Object get(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int e(java.lang.String
+java.lang.String)
+
+Occurences:ad61e0abe570c3575b01fbd07fc92e88c2516d1b74bb2ed536c6e2cc8e70435e.apk,ad61e0abe570c3575b01fbd07fc92e88c2516d1b74bb2ed536c6e2cc8e70435e.apk
+android.location.Location: double getLatitude()
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:021d55c415ff951c8e7b1ce3f94399bb.apk
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.telephony.SmsManager: void sendTextMessage(java.lang.String
+java.lang.String
+java.lang.String
+android.app.PendingIntent
+android.app.PendingIntent)
+
+Occurences:021d55c415ff951c8e7b1ce3f94399bb.apk
+android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.telephony.SmsManager: void sendTextMessage(java.lang.String
+java.lang.String
+java.lang.String
+android.app.PendingIntent
+android.app.PendingIntent)
+
+Occurences:bank2.apk
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+java.lang.String: java.lang.String toLowerCase()
+android.util.Log: int e(java.lang.String
+java.lang.String)
+
+Occurences:ad61e0abe570c3575b01fbd07fc92e88c2516d1b74bb2ed536c6e2cc8e70435e.apk,ad61e0abe570c3575b01fbd07fc92e88c2516d1b74bb2ed536c6e2cc8e70435e.apk
+android.location.Location: double getLongitude()
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+com.tencent.lbsapi.core.QLBSEngine: boolean a()
+com.tencent.lbsapi.core.a: void <init
+com.tencent.lbsapi.core.QLBSEngine: void r()
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.telephony.TelephonyManager: java.lang.String getNetworkOperator()
+java.lang.String: java.lang.String substring(int)
+java.lang.Integer: int parseInt(java.lang.String)
+com.tencent.lbsapi.core.QLBSEngine: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int e(java.lang.String
+java.lang.String)
+
+Occurences:bank2.apk
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:021d55c415ff951c8e7b1ce3f94399bb.apk
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.telephony.SmsManager: void sendTextMessage(java.lang.String
+java.lang.String
+java.lang.String
+android.app.PendingIntent
+android.app.PendingIntent)
+
+Occurences:XTaoAd.A.apk
+android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:bank2.apk
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:com.parental.control.v4.apk,com.parental.control.v4.apk
+android.location.Location: double getLatitude()
+java.lang.Double: java.lang.Double valueOf(double)
+com.connect.MyService: java.lang.Double access$16(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.String: java.lang.String valueOf(java.lang.Object)
+java.lang.StringBuilder: void <init
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:com.parental.control.v4.apk,com.parental.control.v4.apk
+android.telephony.TelephonyManager: java.lang.String getLine1Number()
+com.connect.MyService: java.lang.String access$21(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.String: java.lang.String valueOf(java.lang.Object)
+java.lang.StringBuilder: void <init
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:com.parental.control.v4.apk,com.parental.control.v4.apk
+android.location.Location: double getLongitude()
+java.lang.Double: java.lang.Double valueOf(double)
+com.connect.MyService: java.lang.Double access$17(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.String: java.lang.String valueOf(java.lang.Object)
+java.lang.StringBuilder: void <init
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk
+android.net.wifi.WifiInfo: java.lang.String getMacAddress()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int v(java.lang.String
+java.lang.String)
+

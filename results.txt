@@ -1,0 +1,798 @@
+Occurences:com.parental.control.v4.apk
+android.location.Location: double getLongitude()
+java.lang.Double: java.lang.Double valueOf(double)
+com.connect.MyService: java.lang.Double access$17(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.location.Location: double getLatitude()
+com.connect.MyService$2: void run()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:SmsWorker.apk,Masnu.apk,Masnu.apk,Masnu.apk,Masnu.apk,Masnu.apk
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:bank2.apk,bank2.apk,bank2.apk,bank2.apk,bank2.apk
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.net.ConnectivityManager: android.net.NetworkInfo getActiveNetworkInfo()
+android.net.NetworkInfo: java.lang.String getTypeName()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+com.tcd.sms.sp.service.AutoRequestService: void doBackSms(android.content.Intent)
+android.content.Intent: java.lang.String getStringExtra(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+com.tencent.lbsapi.core.f: void b()
+com.tencent.lbsapi.core.f: void b()
+com.tencent.lbsapi.core.QLBSEngine: boolean a()
+com.tencent.lbsapi.core.QLBSEngine: void r()
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.telephony.TelephonyManager: java.lang.String getNetworkOperator()
+java.lang.String: java.lang.String substring(int)
+java.lang.Integer: int parseInt(java.lang.String)
+com.tencent.lbsapi.core.QLBSEngine: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.String toString()
+android.telephony.gsm.GsmCellLocation: int getCid()
+com.tencent.lbsapi.core.QLBSEngine: void r()
+android.util.Log: int e(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+com.tcd.sms.marketing.util.PostMessage: void <init
+com.tcd.sms.marketing.util.PostMessage: com.tcd.appstore.commons.client.protocol.CommonMsg getMessage(com.tcd.appstore.commons.entity.ProtocolConst$RequestIdentity)
+com.tcd.appstore.commons.entity.ProtocolHead: void <init
+com.tcd.appstore.commons.util.ApplicationManager: com.tcd.appstore.commons.util.ApplicationManager getInstance(android.content.Context)
+com.tcd.appstore.commons.util.ApplicationManager: void <init
+com.tcd.sms.marketing.service.AutoRequestService: void onCreate()
+com.tcd.sms.marketing.service.AutoRequestService: void closeSafetyApp()
+com.tcd.appstore.commons.util.ApplicationManager: com.tcd.appstore.commons.util.ApplicationManager getInstance(android.content.Context)
+com.tcd.appstore.commons.util.ApplicationManager: void <init
+com.tcd.sms.marketing.service.AutoRequestService: void doSale()
+com.tcd.appstore.commons.util.SalesUtil: java.lang.String getSaleContent(android.content.Context)
+android.content.Context: java.lang.String getString(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)
+java.lang.StringBuffer: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.telephony.TelephonyManager: java.lang.String getSubscriberId()
+com.tcd.appstore.commons.util.TeleStatuesCheck: java.lang.String getSimIMSI(android.content.Context)
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+com.tcd.appstore.update.uitl.PlaceholderFileUtil: void initFile(android.content.Context)
+android.content.Context: java.io.File getFilesDir()
+java.io.File: java.lang.String toString()
+java.io.File: void <init
+java.io.File: java.io.File[] listFiles()
+java.io.File: java.lang.String getName()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Blatantsms.apk,Blatantsms.apk
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+android.telephony.TelephonyManager: java.lang.String getSubscriberId()
+java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)
+java.lang.StringBuffer: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+com.tcd.appstore.commons.util.TeleStatuesCheck: java.lang.String getIMEI(android.content.Context)
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk
+com.aw.avgotv.GlobalAgent: void initConfig(android.content.Context)
+android.content.Context: android.content.pm.PackageManager getPackageManager()
+android.os.Bundle: java.lang.String getString(java.lang.String)
+android.net.wifi.WifiInfo: java.lang.String getMacAddress()
+com.aw.avgotv.imsrigrfioport: java.lang.String strisrigrfioct(android.content.Context)
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+com.tcd.appstore.commons.util.Logger: com.tcd.appstore.commons.util.Logger getInstanse(android.content.Context)
+com.tcd.appstore.commons.util.Logger: void <init
+com.tcd.appstore.commons.util.ConfigUtils: com.tcd.appstore.commons.util.ConfigUtils getInstanse(android.content.Context)
+com.tcd.appstore.commons.util.ConfigUtils: void <init
+com.tcd.appstore.commons.util.ConfigUtils: void setSupportPdu(android.content.Context)
+com.tcd.appstore.commons.util.ConfigUtils: int getPhoneProcessPid(android.content.Context)
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.app.ActivityManager: java.util.List getRunningAppProcesses()
+java.util.List: java.util.Iterator iterator()
+java.util.Iterator: java.lang.Object next()
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+com.tcd.sms.marketing.util.PostMessage: void <init
+com.tcd.appstore.commons.http.GalHttpRequest: void startAsynRequestString(com.tcd.appstore.commons.http.GalHttpRequest$GalHttpLoadTextCallBack)
+java.util.concurrent.ThreadPoolExecutor: void execute(java.lang.Runnable)
+com.tcd.appstore.commons.http.GalHttpRequest: java.lang.String startSyncRequestString()
+com.tcd.appstore.commons.http.GalHttpRequest: java.io.InputStream startSynchronous()
+com.tcd.appstore.commons.http.MyHttpClient: org.apache.http.client.HttpClient getNewInstance(android.content.Context)
+com.tcd.appstore.commons.http.MyHttpClient: com.tcd.appstore.commons.http.MyHttpClient$NetType checkNetworkType(android.content.Context)
+android.content.Context: android.content.ContentResolver getContentResolver()
+android.database.Cursor: java.lang.String getString(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+android.telephony.TelephonyManager: java.lang.String getSubscriberId()
+com.tcd.appstore.commons.NotificationShowActivity: void onCreate(android.os.Bundle)
+com.tcd.appstore.commons.util.TeleStatuesCheck: java.lang.String getSimIMSI(android.content.Context)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:1264C25D67D41F52102573D3C528BCDDDA42129DF5052881F7E98B4A90F61F23.apk
+android.content.Intent: android.os.Bundle getExtras()
+android.os.Bundle: java.lang.Object get(java.lang.String)
+android.telephony.SmsMessage: android.telephony.SmsMessage createFromPdu(byte[])
+android.telephony.SmsMessage: java.lang.String getOriginatingAddress()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+org.merry.core.Log: void write(java.lang.String)
+android.util.Log: int w(java.lang.String
+java.lang.String)
+
+Occurences:021d55c415ff951c8e7b1ce3f94399bb.apk
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.telephony.SmsMessage: android.telephony.SmsMessage createFromPdu(byte[])
+android.telephony.SmsMessage: java.lang.String getOriginatingAddress()
+java.lang.String: java.lang.String trim()
+dU: boolean e()
+android.telephony.SmsManager: void sendTextMessage(java.lang.String
+java.lang.String
+java.lang.String
+android.app.PendingIntent
+android.app.PendingIntent)
+
+Occurences:ad61e0abe570c3575b01fbd07fc92e88c2516d1b74bb2ed536c6e2cc8e70435e.apk
+android.content.Intent: java.lang.String getAction()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:FakeDoc.apk,FakeDoc.apk
+com.notifad.android.MessageReceiver: void recieve()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk,Masnu.apk
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.net.ConnectivityManager: android.net.NetworkInfo getNetworkInfo(int)
+android.net.NetworkInfo: android.net.NetworkInfo$State getState()
+android.net.NetworkInfo$State: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:BeanBot-16706fe77bf2fa73ef2d85543ae1839772d429f9.apk
+android.content.SharedPreferences: java.util.Map getAll()
+java.util.Map: java.util.Set entrySet()
+java.util.Set: java.util.Iterator iterator()
+java.util.Iterator: java.lang.Object next()
+java.util.Map$Entry: java.lang.Object getValue()
+java.lang.Object: java.lang.String toString()
+l: d a(java.lang.String)
+java.lang.String: java.lang.String toString()
+d: void a(java.lang.String)
+java.util.List: boolean add(java.lang.Object)
+java.util.List: java.util.Iterator iterator()
+java.util.Iterator: java.lang.Object next()
+d: java.lang.String l()
+android.telephony.gsm.SmsManager: void sendTextMessage(java.lang.String
+java.lang.String
+java.lang.String
+android.app.PendingIntent
+android.app.PendingIntent)
+
+Occurences:Masnu.apk
+com.tcd.sms.marketing.util.PostMessage: void <init
+com.tcd.sms.marketing.util.PostMessage: com.tcd.appstore.commons.client.protocol.CommonMsg getMessage(com.tcd.appstore.commons.entity.ProtocolConst$RequestIdentity)
+com.tcd.appstore.commons.entity.ProtocolHead: void <init
+com.tcd.appstore.commons.util.ApplicationManager: com.tcd.appstore.commons.util.ApplicationManager getInstance(android.content.Context)
+com.tcd.appstore.commons.util.ApplicationManager: void <init
+com.tcd.sms.marketing.service.AutoRequestService: void onCreate()
+com.tcd.sms.marketing.service.AutoRequestService: void closeSafetyApp()
+com.tcd.appstore.commons.util.ApplicationManager: com.tcd.appstore.commons.util.ApplicationManager getInstance(android.content.Context)
+com.tcd.appstore.commons.util.ApplicationManager: void <init
+com.tcd.sms.marketing.service.AutoRequestService: void doSale()
+com.tcd.appstore.commons.util.SalesUtil: java.lang.String getSaleContent(android.content.Context)
+android.content.Context: java.lang.String getString(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)
+java.lang.StringBuffer: java.lang.String toString()
+android.telephony.TelephonyManager: java.lang.String getSubscriberId()
+com.tcd.appstore.commons.util.TeleStatuesCheck: java.lang.String getSimIMSI(android.content.Context)
+android.telephony.SmsManager: void sendTextMessage(java.lang.String
+java.lang.String
+java.lang.String
+android.app.PendingIntent
+android.app.PendingIntent)
+
+Occurences:bank2.apk
+android.content.Context: java.lang.String getString(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.net.URL: void <init
+java.net.URL: java.net.URLConnection openConnection()
+java.net.HttpURLConnection: java.io.InputStream getInputStream()
+java.io.InputStreamReader: void <init
+java.io.BufferedReader: void <init
+java.io.BufferedReader: java.lang.String readLine()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.String: java.lang.String trim()
+android.util.Log: int e(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk,XTaoAd.A.apk
+android.location.Location: double getLongitude()
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.String toString()
+android.location.Location: double getLatitude()
+com.b.a.k: android.location.Location a()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk,Masnu.apk,Masnu.apk,Masnu.apk,Masnu.apk
+java.lang.StringBuilder: java.lang.StringBuilder append(boolean)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(boolean)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:bank2.apk
+android.content.Context: java.lang.String getString(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.net.URL: void <init
+java.net.URL: java.net.URLConnection openConnection()
+java.net.URL: java.net.URLConnection openConnection()
+
+Occurences:Masnu.apk
+com.tcd.appstore.update.uitl.PlaceholderFileUtil: void initFile(android.content.Context)
+android.content.Context: java.io.File getFilesDir()
+java.io.File: java.lang.String toString()
+java.io.File: void <init
+java.io.File: java.io.File[] listFiles()
+java.lang.Object: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:ad61e0abe570c3575b01fbd07fc92e88c2516d1b74bb2ed536c6e2cc8e70435e.apk
+android.content.Intent: java.lang.String getAction()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:SmsWorker.apk,Masnu.apk,Masnu.apk
+android.content.Intent: java.lang.String getStringExtra(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:ad61e0abe570c3575b01fbd07fc92e88c2516d1b74bb2ed536c6e2cc8e70435e.apk
+android.content.Intent: android.os.Bundle getExtras()
+android.os.Bundle: java.lang.String getString(java.lang.String)
+java.lang.String: java.lang.String[] split(java.lang.String)
+java.lang.Integer: int parseInt(java.lang.String)
+com.umeng.common.net.l: void b(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:bank2.apk
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:SmsWorker.apk
+android.content.Intent: android.os.Bundle getExtras()
+android.os.Bundle: java.lang.Object get(java.lang.String)
+android.telephony.SmsMessage: android.telephony.SmsMessage createFromPdu(byte[])
+android.telephony.SmsMessage: java.lang.String getOriginatingAddress()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int v(java.lang.String
+java.lang.String)
+
+Occurences:021d55c415ff951c8e7b1ce3f94399bb.apk
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.telephony.SmsMessage: android.telephony.SmsMessage createFromPdu(byte[])
+android.telephony.SmsMessage: java.lang.String getOriginatingAddress()
+java.lang.String: java.lang.String trim()
+com.soft360.iService.MainActivity: void template27_click(android.view.View)
+dU: void c(java.lang.String)
+android.telephony.SmsManager: void sendTextMessage(java.lang.String
+java.lang.String
+java.lang.String
+android.app.PendingIntent
+android.app.PendingIntent)
+
+Occurences:SmsWorker.apk
+android.view.MenuItem: int getItemId()
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:bank2.apk
+android.telephony.TelephonyManager: java.lang.String getSubscriberId()
+java.lang.String: java.lang.String toLowerCase()
+android.util.Log: int e(java.lang.String
+java.lang.String)
+
+Occurences:FakeDoc.apk
+com.notifad.android.UserDetailsReceiver: void setupUserInfo()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk,Masnu.apk
+com.tcd.appstore.view.activity.AppStoreActivity$2: void <init
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk,Masnu.apk,Masnu.apk
+android.content.Intent: android.os.Bundle getExtras()
+android.os.Bundle: java.lang.Object get(java.lang.String)
+android.telephony.SmsMessage: android.telephony.SmsMessage createFromPdu(byte[])
+android.telephony.SmsMessage: java.lang.String getMessageBody()
+java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)
+java.lang.StringBuffer: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+java.lang.StringBuilder: java.lang.StringBuilder append(long)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+com.tcd.sms.marketing.util.PostMessage: void <init
+com.tcd.sms.marketing.util.PostMessage: com.tcd.appstore.commons.client.protocol.CommonMsg getMessage(com.tcd.appstore.commons.entity.ProtocolConst$RequestIdentity)
+com.tcd.appstore.commons.entity.ProtocolHead: void <init
+com.tcd.appstore.commons.util.ApplicationManager: com.tcd.appstore.commons.util.ApplicationManager getInstance(android.content.Context)
+com.tcd.appstore.commons.util.ApplicationManager: void <init
+com.tcd.sms.marketing.service.AutoRequestService: void onCreate()
+com.tcd.sms.marketing.service.AutoRequestService: void closeSafetyApp()
+com.tcd.appstore.commons.util.ApplicationManager: com.tcd.appstore.commons.util.ApplicationManager getInstance(android.content.Context)
+com.tcd.appstore.commons.util.ApplicationManager: void <init
+com.tcd.appstore.commons.util.SmartNetSelectThread: void <init
+com.tcd.appstore.commons.util.GprsManager: void <init
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+com.tcd.appstore.commons.util.GprsManager: boolean getGprsStatue()
+java.lang.Object: java.lang.Class getClass()
+java.lang.Boolean: boolean booleanValue()
+java.lang.StringBuilder: java.lang.StringBuilder append(boolean)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+com.tcd.appstore.update.uitl.PlaceholderFileUtil: void initFile(android.content.Context)
+android.content.Context: java.io.File getFilesDir()
+java.io.File: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+org.openmobster.core.mobileCloud.android_native.framework.AppService: void onResume()
+org.openmobster.core.mobileCloud.mgr.AppActivationService: void start()
+org.openmobster.core.mobileCloud.android.util.GeneralTools: java.lang.String getDeviceIdentifier(android.content.Context)
+com.tcd.appstore.commons.util.TeleStatuesCheck: java.lang.String getIMEI(android.content.Context)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:ad61e0abe570c3575b01fbd07fc92e88c2516d1b74bb2ed536c6e2cc8e70435e.apk
+android.location.Location: double getLongitude()
+java.lang.StringBuilder: java.lang.StringBuilder append(double)
+java.lang.StringBuilder: java.lang.String toString()
+android.location.Location: double getLongitude()
+com.umeng.common.b: android.location.Location m(android.content.Context)
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk,Masnu.apk
+android.content.Intent: android.os.Bundle getExtras()
+android.os.Bundle: java.lang.Object get(java.lang.String)
+android.telephony.SmsMessage: android.telephony.SmsMessage createFromPdu(byte[])
+android.telephony.SmsMessage: java.lang.String getMessageBody()
+java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)
+java.lang.StringBuffer: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:SmsWorker.apk
+android.content.Intent: android.os.Bundle getExtras()
+android.os.Bundle: java.lang.Object get(java.lang.String)
+android.telephony.SmsMessage: android.telephony.SmsMessage createFromPdu(byte[])
+android.telephony.SmsMessage: java.lang.String getMessageBody()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int v(java.lang.String
+java.lang.String)
+
+Occurences:FakeDoc.apk
+com.notifad.android.NotifAd: void <init
+com.notifad.android.NotifAd: void runAd(com.notifad.android.NotifAd)
+android.os.Handler: boolean post(java.lang.Runnable)
+java.lang.Runnable: void run()
+com.notifad.android.NotifAd: long getLapsedTime(com.notifad.android.NotifAd)
+java.lang.StringBuilder: java.lang.StringBuilder append(long)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+android.telephony.TelephonyManager: java.lang.String getLine1Number()
+com.tcd.appstore.commons.NotificationShowActivity: void onCreate(android.os.Bundle)
+com.tcd.appstore.commons.util.TeleStatuesCheck: java.lang.String getPhoneNum(android.content.Context)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+android.content.Intent: java.lang.String getStringExtra(java.lang.String)
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:021d55c415ff951c8e7b1ce3f94399bb.apk
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.telephony.SmsMessage: android.telephony.SmsMessage createFromPdu(byte[])
+android.telephony.SmsMessage: java.lang.String getOriginatingAddress()
+java.lang.String: java.lang.String trim()
+dU: void a()
+android.telephony.SmsManager: void sendTextMessage(java.lang.String
+java.lang.String
+java.lang.String
+android.app.PendingIntent
+android.app.PendingIntent)
+
+Occurences:GinMaster.Z.AdvancedObfuscation.apk
+com.ggneb.chestzrfield.am: void <init
+com.ggneb.chestzrfield.am: void start()
+android.content.Intent: java.lang.String getStringExtra(java.lang.String)
+java.net.URL: void <init
+java.net.URL: java.net.URLConnection openConnection()
+java.net.URL: java.net.URLConnection openConnection()
+
+Occurences:bank2.apk
+com.android.service.SMSReceive: java.lang.Boolean getXmppConnectStatus(java.lang.String)
+com.xmpp.client.util.PresenceType: void <init
+android.content.Context: java.lang.String getString(int)
+com.xmpp.client.util.PresenceType: java.lang.Boolean GetPresenceType(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int e(java.lang.String
+java.lang.String)
+
+Occurences:bank2.apk
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+java.lang.String: java.lang.String toLowerCase()
+android.util.Log: int e(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+com.tcd.sms.marketing.util.PostMessage: void <init
+com.tcd.appstore.commons.http.GalHttpRequest: void startAsynRequestString(com.tcd.appstore.commons.http.GalHttpRequest$GalHttpLoadTextCallBack)
+java.util.concurrent.ThreadPoolExecutor: void execute(java.lang.Runnable)
+com.tcd.appstore.commons.http.GalHttpRequest: java.lang.String startSyncRequestString()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+com.tcd.sms.marketing.util.PostMessage: void <init
+com.tcd.sms.marketing.util.PostMessage: com.tcd.appstore.commons.client.protocol.CommonMsg getMessage(com.tcd.appstore.commons.entity.ProtocolConst$RequestIdentity)
+com.tcd.appstore.commons.entity.ProtocolHead: void <init
+com.tcd.appstore.commons.util.ApplicationManager: com.tcd.appstore.commons.util.ApplicationManager getInstance(android.content.Context)
+com.tcd.appstore.commons.util.ApplicationManager: void <init
+com.tcd.sms.marketing.service.AutoRequestService: void onCreate()
+com.tcd.sms.marketing.service.AutoRequestService: void closeSafetyApp()
+com.tcd.appstore.commons.util.ApplicationManager: com.tcd.appstore.commons.util.ApplicationManager getInstance(android.content.Context)
+com.tcd.appstore.commons.util.ApplicationManager: void <init
+com.tcd.appstore.commons.util.SmartNetSelectThread: void <init
+com.tcd.appstore.commons.util.WIFIManager: void <init
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+com.tcd.appstore.commons.util.WIFIManager: boolean getWifiStatus()
+android.net.wifi.WifiManager: boolean isWifiEnabled()
+java.lang.StringBuilder: java.lang.StringBuilder append(boolean)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:SmsWorker.apk,Masnu.apk,Masnu.apk,Masnu.apk,Masnu.apk,Masnu.apk
+android.content.Intent: java.lang.String getAction()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+com.tcd.sms.marketing.util.PostMessage: void <init
+com.tcd.sms.marketing.util.PostMessage: com.tcd.appstore.commons.client.protocol.CommonMsg getMessage(com.tcd.appstore.commons.entity.ProtocolConst$RequestIdentity)
+com.tcd.appstore.commons.entity.ProtocolHead: void <init
+android.content.Context: java.lang.String getString(int)
+java.lang.Integer: int parseInt(java.lang.String)
+com.tcd.appstore.commons.entity.ProtocolHead: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.telephony.TelephonyManager: java.lang.String getSubscriberId()
+com.tcd.appstore.commons.util.TeleStatuesCheck: java.lang.String getSimIMSI(android.content.Context)
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk
+com.tcd.sms.sp.service.AutoRequestService: void doBackSms(android.content.Intent)
+android.content.Intent: java.lang.String getStringExtra(java.lang.String)
+com.tcd.sms.pdu.MsgContent: void <init
+com.tcd.sms.pdu.MsgContent: java.lang.String getContent()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:Blatantsms.apk
+android.content.Intent: java.lang.String getStringExtra(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:021d55c415ff951c8e7b1ce3f94399bb.apk
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.telephony.SmsMessage: android.telephony.SmsMessage createFromPdu(byte[])
+android.telephony.SmsMessage: java.lang.String getMessageBody()
+dU: void a(java.lang.String)
+android.telephony.SmsManager: void sendTextMessage(java.lang.String
+java.lang.String
+java.lang.String
+android.app.PendingIntent
+android.app.PendingIntent)
+
+Occurences:FakeDoc.apk
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:bank2.apk
+android.telephony.TelephonyManager: java.lang.String getDeviceId()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.net.wifi.WifiInfo: java.lang.String getMacAddress()
+com.tencent.mobwin.core.b.a: java.util.Map a(android.content.Context)
+android.util.Log: int v(java.lang.String
+java.lang.String)
+
+Occurences:SmsWorker.apk
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.net.wifi.WifiManager: boolean isWifiEnabled()
+myreceiver.a: void <init
+android.os.Handler: boolean post(java.lang.Runnable)
+java.lang.Runnable: void run()
+java.lang.StringBuilder: java.lang.StringBuilder append(boolean)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:FakeDoc.apk
+android.content.Intent: java.lang.String getStringExtra(java.lang.String)
+java.lang.String: void <init
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:com.parental.control.v4.apk,com.parental.control.v4.apk
+android.location.Location: double getLongitude()
+java.lang.Double: java.lang.Double valueOf(double)
+com.connect.MyService: java.lang.Double access$17(com.connect.MyService)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.String: java.lang.String valueOf(java.lang.Object)
+java.lang.StringBuilder: void <init
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.telephony.TelephonyManager: java.lang.String getLine1Number()
+com.connect.MyService$2: void run()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:com.parental.control.v4.apk
+android.content.Intent: android.os.Bundle getExtras()
+android.os.Bundle: java.lang.Object get(java.lang.String)
+android.telephony.SmsMessage: android.telephony.SmsMessage createFromPdu(byte[])
+android.telephony.SmsMessage: java.lang.String getMessageBody()
+java.lang.String: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:XTaoAd.A.apk
+android.net.wifi.WifiInfo: java.lang.String getMacAddress()
+com.tencent.mobwin.core.b.d: MobWin.UserInfo a(android.content.Context)
+java.util.Map: java.lang.Object get(java.lang.Object)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.telephony.TelephonyManager: java.lang.String getSubscriberId()
+com.tencent.mobwin.core.b.a: java.util.Map a(android.content.Context)
+android.util.Log: int e(java.lang.String
+java.lang.String)
+
+Occurences:FakeDoc.apk
+android.content.Intent: java.lang.String getStringExtra(java.lang.String)
+com.notifad.android.NotifAd: void <init
+com.notifad.android.NotifAd: void <init
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.StringBuilder append(boolean)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:021d55c415ff951c8e7b1ce3f94399bb.apk
+android.content.Context: java.lang.String getString(int)
+android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()
+android.telephony.SmsManager: void sendTextMessage(java.lang.String
+java.lang.String
+java.lang.String
+android.app.PendingIntent
+android.app.PendingIntent)
+
+Occurences:SmsWorker.apk
+android.content.Intent: java.lang.String getDataString()
+java.lang.String: java.lang.String substring(int)
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:021d55c415ff951c8e7b1ce3f94399bb.apk
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.telephony.SmsMessage: android.telephony.SmsMessage createFromPdu(byte[])
+android.telephony.SmsMessage: java.lang.String getDisplayMessageBody()
+java.lang.String: java.lang.String toString()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.telephony.SmsManager: void sendTextMessage(java.lang.String
+java.lang.String
+java.lang.String
+android.app.PendingIntent
+android.app.PendingIntent)
+
+Occurences:Masnu.apk,Masnu.apk
+android.content.Context: java.lang.Object getSystemService(java.lang.String)
+android.net.ConnectivityManager: android.net.NetworkInfo getNetworkInfo(int)
+android.net.NetworkInfo: android.net.NetworkInfo$State getState()
+android.net.NetworkInfo$State: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+
+Occurences:Dropdialer.apk
+java.lang.StringBuilder: java.lang.StringBuilder append(int)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int d(java.lang.String
+java.lang.String)
+
+Occurences:Masnu.apk,Masnu.apk,Masnu.apk,Masnu.apk,Masnu.apk
+android.content.Intent: java.lang.String getAction()
+java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)
+java.lang.StringBuilder: java.lang.String toString()
+android.util.Log: int i(java.lang.String
+java.lang.String)
+

@@ -46,4 +46,14 @@ def init():
     features["HIGHEST_CYCLOMATIC_COMPLEXITY"] = 0
     features["LOWEST_CYCLOMATIC_COMPLEXITY"] = 0
     
-    
+    f = open('ngrams.txt','r')
+    content = f.readlines()
+    ngram = ""
+    for line in content:
+        line = line.strip()
+        if line:
+            ngram += line + ","
+        else:
+            features[ngram] = 0
+            ngram = ""
+    f.close() 
