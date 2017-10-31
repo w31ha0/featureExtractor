@@ -79,6 +79,7 @@ parseManifest(sh,startColumn)
 traveseAll(sh,startColumn)
 parseDex(sh)
 calculateCyclomaticComplexity(apkfile,sh,startColumn)
+nGramsExtractor(apkfile)
 cleanup()
 
 for key, value in sorted(featuresStruct.features.iteritems()): 

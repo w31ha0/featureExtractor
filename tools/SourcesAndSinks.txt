@@ -1,0 +1,65 @@
+<com.android.bluetooth.btservice.RemoteDevices$DeviceProperties: byte[] getAddress()> (BLUETOOTH_INFORMATION) -> _SOURCE_
+<com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder: java.lang.String getAddress()> (BLUETOOTH_INFORMATION) -> _SOURCE_
+<android.bluetooth.IBluetoothManager$Stub$Proxy: java.lang.String getAddress()> (BLUETOOTH_INFORMATION) -> _SOURCE_
+<android.bluetooth.BluetoothDevice: java.lang.String getAddress()> (BLUETOOTH_INFORMATION) -> _SOURCE_
+<com.android.server.BluetoothManagerService: java.lang.String getAddress()> (BLUETOOTH_INFORMATION) -> _SOURCE_
+<android.bluetooth.IBluetooth$Stub$Proxy: java.lang.String getAddress()> (BLUETOOTH_INFORMATION) -> _SOURCE_
+<com.android.bluetooth.btservice.AdapterProperties: byte[] getAddress()> (BLUETOOTH_INFORMATION) -> _SOURCE_
+<com.android.bluetooth.btservice.AdapterService: java.lang.String getAddress()> (BLUETOOTH_INFORMATION) -> _SOURCE_
+<android.bluetooth.BluetoothAdapter: java.lang.String getAddress()> (BLUETOOTH_INFORMATION) -> _SOURCE_
+<android.net.wifi.WifiInfo: java.lang.String getMacAddress()> (NETWORK_INFORMATION) -> _SOURCE_
+<android.net.wifi.WifiNative: java.lang.String getMacAddress()> (NETWORK_INFORMATION) -> _SOURCE_
+<java.util.Locale: java.lang.String getCountry()> (NO_CATEGORY) -> _SOURCE_
+<android.location.Address: java.lang.String getCountryName()> (LOCATION_INFORMATION) -> _SOURCE_
+<android.location.Country: java.lang.String getCountryIso()> (LOCATION_INFORMATION) -> _SOURCE_
+<android.location.Address: java.lang.String getCountryCode()> (LOCATION_INFORMATION) -> _SOURCE_
+<com.android.providers.contacts.CountryMonitor: java.lang.String getCountryIso()> (CONTACT_INFORMATION) -> _SOURCE_
+<com.android.providers.contacts.ContactsDatabaseHelper: java.lang.String getCountryIso()> (CONTACT_INFORMATION) -> _SOURCE_
+<com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata: int getCountryCode()> (NO_CATEGORY) -> _SOURCE_
+<android.net.wifi.WifiInfo: java.lang.String getSSID()> (NETWORK_INFORMATION) -> _SOURCE_
+<android.telephony.CellIdentityGsm: int getCid()> (NETWORK_INFORMATION) -> _SOURCE_
+<android.telephony.NeighboringCellInfo: int getCid()> (NETWORK_INFORMATION) -> _SOURCE_
+<android.telephony.gsm.GsmCellLocation: int getCid()> (LOCATION_INFORMATION) -> _SOURCE_
+<android.telephony.SmsCbLocation: int getCid()> (LOCATION_INFORMATION) -> _SOURCE_
+<android.telephony.NeighboringCellInfo: int getLac()> (NETWORK_INFORMATION) -> _SOURCE_
+<android.telephony.CellIdentityGsm: int getLac()> (NETWORK_INFORMATION) -> _SOURCE_
+<android.telephony.SmsCbLocation: int getLac()> (LOCATION_INFORMATION) -> _SOURCE_
+<android.telephony.gsm.GsmCellLocation: int getLac()> (LOCATION_INFORMATION) -> _SOURCE_
+<android.location.Address: double getLongitude()> (LOCATION_INFORMATION) -> _SOURCE_
+<android.location.Location: double getLongitude()> (LOCATION_INFORMATION) -> _SOURCE_
+<android.telephony.CellIdentityCdma: int getLongitude()> (NETWORK_INFORMATION) -> _SOURCE_
+<android.location.Location: double getLatitude()> android.permission.STOP_APP_SWITCHES (LOCATION_INFORMATION) -> _SOURCE_
+<android.location.Address: double getLatitude()> (LOCATION_INFORMATION) -> _SOURCE_
+<android.telephony.CellIdentityCdma: int getLatitude()> (NETWORK_INFORMATION) -> _SOURCE_
+<android.accounts.AccountManager: android.accounts.Account[] getAccounts()> (ACCOUNT_INFORMATION) -> _SOURCE_
+<android.accounts.AccountManagerService: android.accounts.Account[] getAccounts(java.lang.String)> android.permission.GET_ACCOUNTS (ACCOUNT_INFORMATION) -> _SOURCE_
+<com.android.contacts.model.AccountTypeManagerImpl: java.util.List getAccounts(boolean)> (CONTACT_INFORMATION) -> _SOURCE_
+<com.android.calendar.Utils: java.lang.String getTimeZone(android.content.Context,java.lang.Runnable)> (CALENDAR_INFORMATION) -> _SOURCE_
+<com.android.calendar.CalendarUtils$TimeZoneUtils: java.lang.String getTimeZone(android.content.Context,java.lang.Runnable)> android.permission.READ_CALENDAR (CALENDAR_INFORMATION) -> _SOURCE_
+<java.util.Calendar: java.util.TimeZone getTimeZone()> (CALENDAR_INFORMATION) -> _SOURCE_
+<java.util.TimeZone: java.util.TimeZone getTimeZone(java.lang.String)> (NO_CATEGORY) -> _SOURCE_
+<android.util.TimeUtils: java.util.TimeZone getTimeZone(int,boolean,long,java.lang.String)> (NO_CATEGORY) -> _SOURCE_
+<com.android.internal.telephony.cdma.CDMAPhone: java.lang.String getDeviceId()> (UNIQUE_IDENTIFIER) -> _SOURCE_
+<com.android.internal.telephony.gsm.GSMPhone: java.lang.String getDeviceId()> (UNIQUE_IDENTIFIER) -> _SOURCE_
+<com.android.internal.telephony.sip.SipPhoneBase: java.lang.String getDeviceId()> (UNIQUE_IDENTIFIER) -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getDeviceId()> (UNIQUE_IDENTIFIER) -> _SOURCE_
+<com.android.internal.telephony.cdma.CDMAPhone: java.lang.String getSubscriberId()> (UNIQUE_IDENTIFIER) -> _SOURCE_
+<com.android.internal.telephony.sip.SipPhone: java.lang.String getSubscriberId()> (UNIQUE_IDENTIFIER) -> _SOURCE_
+<com.android.internal.telephony.gsm.GSMPhone: java.lang.String getSubscriberId()> (UNIQUE_IDENTIFIER) -> _SOURCE_
+<com.android.internal.telephony.cdma.CDMALTEPhone: java.lang.String getSubscriberId()> (UNIQUE_IDENTIFIER) -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getSubscriberId()> (UNIQUE_IDENTIFIER) -> _SOURCE_
+<com.android.internal.telephony.gsm.GSMPhone: java.lang.String getLine1Number()> (UNIQUE_IDENTIFIER) -> _SOURCE_
+<com.android.internal.telephony.cdma.CDMAPhone: java.lang.String getLine1Number()> (UNIQUE_IDENTIFIER) -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getLine1Number()> android.permission.READ_PHONE_STATE (UNIQUE_IDENTIFIER) -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()> (UNIQUE_IDENTIFIER) -> _SOURCE_
+<android.provider.Browser: android.database.Cursor getAllBookmarks(android.content.ContentResolver)> com.android.browser.permission.READ_HISTORY_BOOKMARKS (BROWSER_INFORMATION) -> _SOURCE_
+<android.telephony.gsm.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)> (SMS_MMS) -> _SINK_
+<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)> (SMS_MMS) -> _SINK_
+<android.util.Log: int v(java.lang.String,java.lang.String)> android.permission.STOP_APP_SWITCHES (LOG) -> _SINK_
+<android.util.Log: int w(java.lang.String,java.lang.String)> (LOG) -> _SINK_
+<android.util.Log: int e(java.lang.String,java.lang.String)> android.permission.STOP_APP_SWITCHES (LOG) -> _SINK_
+<android.util.Log: int d(java.lang.String,java.lang.String)> (LOG) -> _SINK_
+<android.util.Log: int i(java.lang.String,java.lang.String)> (LOG) -> _SINK_
+<java.net.URL: java.net.URLConnection openConnection()> android.permission.INTERNET (NETWORK)
+<android.net.http.HttpsConnection: android.net.http.AndroidHttpClientConnection openConnection(android.net.http.Request)> -> _SINK_
+<java.net.URL: java.net.URLConnection openConnection()> -> _SINK_
