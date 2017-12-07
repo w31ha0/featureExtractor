@@ -1,528 +1,337 @@
 .class public Lcom/a/a/a/e;
-.super Ljava/lang/Object;
-.source "HttpHeaderParser.java"
+.super Ljava/io/FilterOutputStream;
+
+
+# static fields
+.field private static final e:[C
+
+
+# instance fields
+.field private a:I
+
+.field private b:I
+
+.field private c:Z
+
+.field private d:Z
 
 
 # direct methods
-.method public static a(Ljava/lang/String;)J
+.method static constructor <clinit>()V
+    .locals 1
+
+    const/16 v0, 0x10
+
+    new-array v0, v0, [C
+
+    fill-array-data v0, :array_0
+
+    sput-object v0, Lcom/a/a/a/e;->e:[C
+
+    return-void
+
+    :array_0
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x41s
+        0x42s
+        0x43s
+        0x44s
+        0x45s
+        0x46s
+    .end array-data
+.end method
+
+.method public constructor <init>(Ljava/io/OutputStream;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1}, Ljava/io/FilterOutputStream;-><init>(Ljava/io/OutputStream;)V
+
+    iput v0, p0, Lcom/a/a/a/e;->a:I
+
+    iput-boolean v0, p0, Lcom/a/a/a/e;->c:Z
+
+    iput-boolean v0, p0, Lcom/a/a/a/e;->d:Z
+
+    const v0, 0x7ffffffe
+
+    iput v0, p0, Lcom/a/a/a/e;->b:I
+
+    return-void
+.end method
+
+.method private a()V
     .locals 2
 
-    .prologue
-    .line 129
-    :try_start_0
-    invoke-static {p0}, Lorg/apache/http/impl/cookie/DateUtils;->parseDate(Ljava/lang/String;)Ljava/util/Date;
+    iget-object v0, p0, Lcom/a/a/a/e;->out:Ljava/io/OutputStream;
 
-    move-result-object v0
+    const/16 v1, 0xd
 
-    invoke-virtual {v0}, Ljava/util/Date;->getTime()J
-    :try_end_0
-    .catch Lorg/apache/http/impl/cookie/DateParseException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    move-result-wide v0
+    iget-object v0, p0, Lcom/a/a/a/e;->out:Ljava/io/OutputStream;
 
-    .line 132
+    const/16 v1, 0xa
+
+    invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/a/a/a/e;->a:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected final a(IZ)V
+    .locals 5
+
+    const/16 v4, 0xd
+
+    const/16 v3, 0xa
+
+    const/16 v2, 0x3d
+
+    if-eqz p2, :cond_1
+
+    iget v0, p0, Lcom/a/a/a/e;->a:I
+
+    add-int/lit8 v0, v0, 0x3
+
+    iput v0, p0, Lcom/a/a/a/e;->a:I
+
+    iget v1, p0, Lcom/a/a/a/e;->b:I
+
+    if-le v0, v1, :cond_0
+
+    iget-object v0, p0, Lcom/a/a/a/e;->out:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, v2}, Ljava/io/OutputStream;->write(I)V
+
+    iget-object v0, p0, Lcom/a/a/a/e;->out:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, v4}, Ljava/io/OutputStream;->write(I)V
+
+    iget-object v0, p0, Lcom/a/a/a/e;->out:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, v3}, Ljava/io/OutputStream;->write(I)V
+
+    const/4 v0, 0x3
+
+    iput v0, p0, Lcom/a/a/a/e;->a:I
+
+    :cond_0
+    iget-object v0, p0, Lcom/a/a/a/e;->out:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, v2}, Ljava/io/OutputStream;->write(I)V
+
+    iget-object v0, p0, Lcom/a/a/a/e;->out:Ljava/io/OutputStream;
+
+    sget-object v1, Lcom/a/a/a/e;->e:[C
+
+    shr-int/lit8 v2, p1, 0x4
+
+    aget-char v1, v1, v2
+
+    invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
+
+    iget-object v0, p0, Lcom/a/a/a/e;->out:Ljava/io/OutputStream;
+
+    sget-object v1, Lcom/a/a/a/e;->e:[C
+
+    and-int/lit8 v2, p1, 0xf
+
+    aget-char v1, v1, v2
+
+    invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
+
     :goto_0
-    return-wide v0
+    return-void
 
-    .line 130
-    :catch_0
-    move-exception v0
+    :cond_1
+    iget v0, p0, Lcom/a/a/a/e;->a:I
 
-    .line 132
-    const-wide/16 v0, 0x0
+    add-int/lit8 v0, v0, 0x1
+
+    iput v0, p0, Lcom/a/a/a/e;->a:I
+
+    iget v1, p0, Lcom/a/a/a/e;->b:I
+
+    if-le v0, v1, :cond_2
+
+    iget-object v0, p0, Lcom/a/a/a/e;->out:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, v2}, Ljava/io/OutputStream;->write(I)V
+
+    iget-object v0, p0, Lcom/a/a/a/e;->out:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, v4}, Ljava/io/OutputStream;->write(I)V
+
+    iget-object v0, p0, Lcom/a/a/a/e;->out:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, v3}, Ljava/io/OutputStream;->write(I)V
+
+    const/4 v0, 0x1
+
+    iput v0, p0, Lcom/a/a/a/e;->a:I
+
+    :cond_2
+    iget-object v0, p0, Lcom/a/a/a/e;->out:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
 
     goto :goto_0
 .end method
 
-.method public static a(Lcom/a/a/i;)Lcom/a/a/b$a;
-    .locals 25
-
-    .prologue
-    .line 40
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v22
-
-    .line 42
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/a/a/i;->c:Ljava/util/Map;
-
-    move-object/from16 v24, v0
-
-    .line 44
-    const-wide/16 v4, 0x0
-
-    .line 45
-    const-wide/16 v16, 0x0
-
-    .line 46
-    const-wide/16 v14, 0x0
-
-    .line 47
-    const-wide/16 v20, 0x0
-
-    .line 48
-    const-wide/16 v18, 0x0
-
-    .line 49
-    const-wide/16 v10, 0x0
-
-    .line 50
-    const-wide/16 v8, 0x0
-
-    .line 51
-    const/4 v7, 0x0
-
-    .line 52
-    const/4 v6, 0x0
-
-    .line 57
-    const-string v2, "Date"
-
-    move-object/from16 v0, v24
-
-    invoke-interface {v0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    .line 58
-    if-eqz v2, :cond_0
-
-    .line 59
-    invoke-static {v2}, Lcom/a/a/a/e;->a(Ljava/lang/String;)J
-
-    move-result-wide v2
-
-    move-wide v4, v2
-
-    .line 62
-    :cond_0
-    const-string v2, "Cache-Control"
-
-    move-object/from16 v0, v24
-
-    invoke-interface {v0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    .line 63
-    if-eqz v2, :cond_d
-
-    .line 64
-    const/4 v12, 0x1
-
-    .line 65
-    const-string v3, ","
-
-    invoke-virtual {v2, v3}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v13
-
-    .line 66
-    const/4 v2, 0x0
-
-    move v3, v6
-
-    move-wide v6, v8
-
-    move-wide v8, v10
-
-    :goto_0
-    array-length v10, v13
-
-    if-lt v2, v10, :cond_1
-
-    move-wide v10, v8
-
-    move-wide v8, v6
-
-    move v6, v12
-
-    .line 86
-    :goto_1
-    const-string v2, "Expires"
-
-    move-object/from16 v0, v24
-
-    invoke-interface {v0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    .line 87
-    if-eqz v2, :cond_c
-
-    .line 88
-    invoke-static {v2}, Lcom/a/a/a/e;->a(Ljava/lang/String;)J
-
-    move-result-wide v12
-
-    .line 91
-    :goto_2
-    const-string v2, "Last-Modified"
-
-    move-object/from16 v0, v24
-
-    invoke-interface {v0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    .line 92
-    if-eqz v2, :cond_b
-
-    .line 93
-    invoke-static {v2}, Lcom/a/a/a/e;->a(Ljava/lang/String;)J
-
-    move-result-wide v14
-
-    .line 96
-    :goto_3
-    const-string v2, "ETag"
-
-    move-object/from16 v0, v24
-
-    invoke-interface {v0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    .line 100
-    if-eqz v6, :cond_9
-
-    .line 101
-    const-wide/16 v6, 0x3e8
-
-    mul-long/2addr v6, v10
-
-    add-long v10, v22, v6
-
-    .line 102
-    if-eqz v3, :cond_8
-
-    move-wide v6, v10
-
-    .line 111
-    :goto_4
-    new-instance v3, Lcom/a/a/b$a;
-
-    invoke-direct {v3}, Lcom/a/a/b$a;-><init>()V
-
-    .line 112
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/a/a/i;->b:[B
-
-    iput-object v8, v3, Lcom/a/a/b$a;->a:[B
-
-    .line 113
-    iput-object v2, v3, Lcom/a/a/b$a;->b:Ljava/lang/String;
-
-    .line 114
-    iput-wide v10, v3, Lcom/a/a/b$a;->f:J
-
-    .line 115
-    iput-wide v6, v3, Lcom/a/a/b$a;->e:J
-
-    .line 116
-    iput-wide v4, v3, Lcom/a/a/b$a;->c:J
-
-    .line 117
-    iput-wide v14, v3, Lcom/a/a/b$a;->d:J
-
-    .line 118
-    move-object/from16 v0, v24
-
-    iput-object v0, v3, Lcom/a/a/b$a;->g:Ljava/util/Map;
-
-    move-object v2, v3
-
-    .line 120
-    :goto_5
-    return-object v2
-
-    .line 67
-    :cond_1
-    aget-object v10, v13, v2
-
-    invoke-virtual {v10}, Ljava/lang/String;->trim()Ljava/lang/String;
-
-    move-result-object v10
-
-    .line 68
-    const-string v11, "no-cache"
-
-    invoke-virtual {v10, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v11
-
-    if-nez v11, :cond_2
-
-    const-string v11, "no-store"
-
-    invoke-virtual {v10, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_3
-
-    .line 69
-    :cond_2
-    const/4 v2, 0x0
-
-    goto :goto_5
-
-    .line 70
-    :cond_3
-    const-string v11, "max-age="
-
-    invoke-virtual {v10, v11}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_5
-
-    .line 72
-    const/16 v11, 0x8
-
-    :try_start_0
-    invoke-virtual {v10, v11}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-static {v10}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
-
-    move-result-wide v8
-
-    .line 66
-    :cond_4
-    :goto_6
-    add-int/lit8 v2, v2, 0x1
-
-    goto/16 :goto_0
-
-    .line 75
-    :cond_5
-    const-string v11, "stale-while-revalidate="
-
-    invoke-virtual {v10, v11}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_6
-
-    .line 77
-    const/16 v11, 0x17
-
-    :try_start_1
-    invoke-virtual {v10, v11}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-static {v10}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-
-    move-result-wide v6
-
-    goto :goto_6
-
-    .line 80
-    :cond_6
-    const-string v11, "must-revalidate"
-
-    invoke-virtual {v10, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v11
-
-    if-nez v11, :cond_7
-
-    const-string v11, "proxy-revalidate"
-
-    invoke-virtual {v10, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v10
-
-    if-eqz v10, :cond_4
-
-    .line 81
-    :cond_7
-    const/4 v3, 0x1
-
-    goto :goto_6
-
-    .line 104
-    :cond_8
-    const-wide/16 v6, 0x3e8
-
-    mul-long/2addr v6, v8
-
-    add-long/2addr v6, v10
-
-    goto :goto_4
-
-    .line 105
-    :cond_9
-    const-wide/16 v6, 0x0
-
-    cmp-long v3, v4, v6
-
-    if-lez v3, :cond_a
-
-    cmp-long v3, v12, v4
-
-    if-ltz v3, :cond_a
-
-    .line 107
-    sub-long v6, v12, v4
-
-    add-long v6, v6, v22
-
-    move-wide v10, v6
-
-    .line 108
-    goto/16 :goto_4
-
-    .line 78
-    :catch_0
-    move-exception v10
-
-    goto :goto_6
-
-    .line 73
-    :catch_1
-    move-exception v10
-
-    goto :goto_6
-
-    :cond_a
-    move-wide/from16 v6, v18
-
-    move-wide/from16 v10, v20
-
-    goto/16 :goto_4
-
-    :cond_b
-    move-wide/from16 v14, v16
-
-    goto/16 :goto_3
-
-    :cond_c
-    move-wide v12, v14
-
-    goto/16 :goto_2
-
-    :cond_d
-    move v3, v6
-
-    move v6, v7
-
-    goto/16 :goto_1
-.end method
-
-.method public static a(Ljava/util/Map;)Ljava/lang/String;
+.method public close()V
     .locals 1
 
-    .prologue
-    .line 166
-    const-string v0, "ISO-8859-1"
+    iget-object v0, p0, Lcom/a/a/a/e;->out:Ljava/io/OutputStream;
 
-    invoke-static {p0, v0}, Lcom/a/a/a/e;->a(Ljava/util/Map;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method
 
-.method public static a(Ljava/util/Map;Ljava/lang/String;)Ljava/lang/String;
-    .locals 6
+.method public flush()V
+    .locals 1
 
-    .prologue
-    const/4 v1, 0x1
+    iget-object v0, p0, Lcom/a/a/a/e;->out:Ljava/io/OutputStream;
 
-    .line 145
-    const-string v0, "Content-Type"
+    invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
 
-    invoke-interface {p0, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    return-void
+.end method
 
-    move-result-object v0
+.method public write(I)V
+    .locals 7
 
-    check-cast v0, Ljava/lang/String;
+    const/16 v6, 0xd
 
-    .line 146
-    if-eqz v0, :cond_0
+    const/16 v5, 0xa
 
-    .line 147
-    const-string v2, ";"
+    const/16 v4, 0x20
 
-    invoke-virtual {v0, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    const/4 v3, 0x1
 
-    move-result-object v2
+    const/4 v2, 0x0
 
-    move v0, v1
+    and-int/lit16 v0, p1, 0xff
 
-    .line 148
-    :goto_0
-    array-length v3, v2
+    iget-boolean v1, p0, Lcom/a/a/a/e;->c:Z
 
-    if-lt v0, v3, :cond_1
+    if-eqz v1, :cond_1
 
-    .line 158
+    if-eq v0, v6, :cond_0
+
+    if-ne v0, v5, :cond_2
+
     :cond_0
-    :goto_1
-    return-object p1
+    invoke-virtual {p0, v4, v3}, Lcom/a/a/a/e;->a(IZ)V
 
-    .line 149
+    :goto_0
+    iput-boolean v2, p0, Lcom/a/a/a/e;->c:Z
+
     :cond_1
-    aget-object v3, v2, v0
+    if-ne v0, v6, :cond_3
 
-    invoke-virtual {v3}, Ljava/lang/String;->trim()Ljava/lang/String;
+    iput-boolean v3, p0, Lcom/a/a/a/e;->d:Z
 
-    move-result-object v3
+    invoke-direct {p0}, Lcom/a/a/a/e;->a()V
 
-    const-string v4, "="
+    :goto_1
+    return-void
 
-    invoke-virtual {v3, v4}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    :cond_2
+    invoke-virtual {p0, v4, v2}, Lcom/a/a/a/e;->a(IZ)V
 
-    move-result-object v3
+    goto :goto_0
 
-    .line 150
-    array-length v4, v3
+    :cond_3
+    if-ne v0, v5, :cond_5
 
-    const/4 v5, 0x2
+    iget-boolean v0, p0, Lcom/a/a/a/e;->d:Z
 
-    if-ne v4, v5, :cond_2
+    if-nez v0, :cond_4
 
-    .line 151
-    const/4 v4, 0x0
+    invoke-direct {p0}, Lcom/a/a/a/e;->a()V
 
-    aget-object v4, v3, v4
-
-    const-string v5, "charset"
-
-    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_2
-
-    .line 152
-    aget-object p1, v3, v1
+    :cond_4
+    :goto_2
+    iput-boolean v2, p0, Lcom/a/a/a/e;->d:Z
 
     goto :goto_1
 
-    .line 148
-    :cond_2
+    :cond_5
+    if-ne v0, v4, :cond_6
+
+    iput-boolean v3, p0, Lcom/a/a/a/e;->c:Z
+
+    goto :goto_2
+
+    :cond_6
+    if-lt v0, v4, :cond_7
+
+    const/16 v1, 0x7f
+
+    if-ge v0, v1, :cond_7
+
+    const/16 v1, 0x3d
+
+    if-ne v0, v1, :cond_8
+
+    :cond_7
+    invoke-virtual {p0, v0, v3}, Lcom/a/a/a/e;->a(IZ)V
+
+    goto :goto_2
+
+    :cond_8
+    invoke-virtual {p0, v0, v2}, Lcom/a/a/a/e;->a(IZ)V
+
+    goto :goto_2
+.end method
+
+.method public write([B)V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    array-length v1, p1
+
+    invoke-virtual {p0, p1, v0, v1}, Lcom/a/a/a/e;->write([BII)V
+
+    return-void
+.end method
+
+.method public write([BII)V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    :goto_0
+    if-lt v0, p3, :cond_0
+
+    return-void
+
+    :cond_0
+    add-int v1, p2, v0
+
+    aget-byte v1, p1, v1
+
+    invoke-virtual {p0, v1}, Lcom/a/a/a/e;->write(I)V
+
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0

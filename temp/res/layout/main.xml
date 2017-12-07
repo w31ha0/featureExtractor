@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/InputLine" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/InputHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/StrInputHint" />
+            <EditText android:id="@id/idnumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:digits="\ 0123456789" android:inputType="phone" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/InputLine2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/InputReceiveEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/StrInputReceiveEmail" />
+            <EditText android:id="@id/idReceiveEmail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" />
+        </LinearLayout>
+        <Button android:layout_gravity="center" android:id="@id/IdSend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/BtnStrSave" />
+        <TextView android:textSize="20.0px" android:textColor="@color/red" android:layout_gravity="center" android:id="@id/aboutTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/StrAboutTitle" />
+        <TextView android:id="@id/aboutContent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

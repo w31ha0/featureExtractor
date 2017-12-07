@@ -65,6 +65,8 @@ def calculateCyclomaticComplexity(inputAPK,sh,startColumn):
                 
     for key,value in functionsMap.iteritems():
             complexity = value[0] - value[1] + 2
+            if complexity < 1:
+                continue
             totalComplexity += complexity
             counter += 1
             if complexity > highestComplexity:

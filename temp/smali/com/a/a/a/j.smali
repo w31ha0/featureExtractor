@@ -1,193 +1,105 @@
-.class public Lcom/a/a/a/j;
-.super Ljava/io/ByteArrayOutputStream;
-.source "PoolingByteArrayOutputStream.java"
-
-
-# instance fields
-.field private final a:Lcom/a/a/a/b;
+.class public final Lcom/a/a/a/j;
+.super Lcom/a/a/a/h;
 
 
 # direct methods
-.method public constructor <init>(Lcom/a/a/a/b;I)V
-    .locals 2
+.method public constructor <init>(Ljava/io/InputStream;)V
+    .locals 0
 
-    .prologue
-    .line 51
-    invoke-direct {p0}, Ljava/io/ByteArrayOutputStream;-><init>()V
+    invoke-direct {p0, p1}, Lcom/a/a/a/h;-><init>(Ljava/io/InputStream;)V
 
-    .line 52
-    iput-object p1, p0, Lcom/a/a/a/j;->a:Lcom/a/a/a/b;
-
-    .line 53
-    iget-object v0, p0, Lcom/a/a/a/j;->a:Lcom/a/a/a/b;
-
-    const/16 v1, 0x100
-
-    invoke-static {p2, v1}, Ljava/lang/Math;->max(II)I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Lcom/a/a/a/b;->a(I)[B
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/a/a/a/j;->buf:[B
-
-    .line 54
     return-void
-.end method
-
-.method private a(I)V
-    .locals 4
-
-    .prologue
-    const/4 v3, 0x0
-
-    .line 73
-    iget v0, p0, Lcom/a/a/a/j;->count:I
-
-    add-int/2addr v0, p1
-
-    iget-object v1, p0, Lcom/a/a/a/j;->buf:[B
-
-    array-length v1, v1
-
-    if-gt v0, v1, :cond_0
-
-    .line 80
-    :goto_0
-    return-void
-
-    .line 76
-    :cond_0
-    iget-object v0, p0, Lcom/a/a/a/j;->a:Lcom/a/a/a/b;
-
-    iget v1, p0, Lcom/a/a/a/j;->count:I
-
-    add-int/2addr v1, p1
-
-    mul-int/lit8 v1, v1, 0x2
-
-    invoke-virtual {v0, v1}, Lcom/a/a/a/b;->a(I)[B
-
-    move-result-object v0
-
-    .line 77
-    iget-object v1, p0, Lcom/a/a/a/j;->buf:[B
-
-    iget v2, p0, Lcom/a/a/a/j;->count:I
-
-    invoke-static {v1, v3, v0, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 78
-    iget-object v1, p0, Lcom/a/a/a/j;->a:Lcom/a/a/a/b;
-
-    iget-object v2, p0, Lcom/a/a/a/j;->buf:[B
-
-    invoke-virtual {v1, v2}, Lcom/a/a/a/b;->a([B)V
-
-    .line 79
-    iput-object v0, p0, Lcom/a/a/a/j;->buf:[B
-
-    goto :goto_0
 .end method
 
 
 # virtual methods
-.method public close()V
-    .locals 2
+.method public final read()I
+    .locals 4
 
-    .prologue
-    .line 58
-    iget-object v0, p0, Lcom/a/a/a/j;->a:Lcom/a/a/a/b;
+    iget-object v0, p0, Lcom/a/a/a/j;->in:Ljava/io/InputStream;
 
-    iget-object v1, p0, Lcom/a/a/a/j;->buf:[B
+    invoke-virtual {v0}, Ljava/io/InputStream;->read()I
 
-    invoke-virtual {v0, v1}, Lcom/a/a/a/b;->a([B)V
+    move-result v0
 
-    .line 59
-    const/4 v0, 0x0
+    const/16 v1, 0x5f
 
-    iput-object v0, p0, Lcom/a/a/a/j;->buf:[B
+    if-ne v0, v1, :cond_1
 
-    .line 60
-    invoke-super {p0}, Ljava/io/ByteArrayOutputStream;->close()V
+    const/16 v0, 0x20
 
-    .line 61
-    return-void
-.end method
+    :cond_0
+    :goto_0
+    return v0
 
-.method public finalize()V
-    .locals 2
+    :cond_1
+    const/16 v1, 0x3d
 
-    .prologue
-    .line 65
-    iget-object v0, p0, Lcom/a/a/a/j;->a:Lcom/a/a/a/b;
+    if-ne v0, v1, :cond_0
 
-    iget-object v1, p0, Lcom/a/a/a/j;->buf:[B
+    iget-object v0, p0, Lcom/a/a/a/j;->a:[B
 
-    invoke-virtual {v0, v1}, Lcom/a/a/a/b;->a([B)V
+    const/4 v1, 0x0
 
-    .line 66
-    return-void
-.end method
+    iget-object v2, p0, Lcom/a/a/a/j;->in:Ljava/io/InputStream;
 
-.method public declared-synchronized write(I)V
-    .locals 1
+    invoke-virtual {v2}, Ljava/io/InputStream;->read()I
 
-    .prologue
-    .line 90
-    monitor-enter p0
+    move-result v2
 
-    const/4 v0, 0x1
+    int-to-byte v2, v2
 
-    :try_start_0
-    invoke-direct {p0, v0}, Lcom/a/a/a/j;->a(I)V
+    aput-byte v2, v0, v1
 
-    .line 91
-    invoke-super {p0, p1}, Ljava/io/ByteArrayOutputStream;->write(I)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    iget-object v0, p0, Lcom/a/a/a/j;->a:[B
 
-    .line 92
-    monitor-exit p0
+    const/4 v1, 0x1
 
-    return-void
+    iget-object v2, p0, Lcom/a/a/a/j;->in:Ljava/io/InputStream;
 
-    .line 90
-    :catchall_0
-    move-exception v0
+    invoke-virtual {v2}, Ljava/io/InputStream;->read()I
 
-    monitor-exit p0
+    move-result v2
 
-    throw v0
-.end method
+    int-to-byte v2, v2
 
-.method public declared-synchronized write([BII)V
-    .locals 1
-
-    .prologue
-    .line 84
-    monitor-enter p0
+    aput-byte v2, v0, v1
 
     :try_start_0
-    invoke-direct {p0, p3}, Lcom/a/a/a/j;->a(I)V
+    iget-object v0, p0, Lcom/a/a/a/j;->a:[B
 
-    .line 85
-    invoke-super {p0, p1, p2, p3}, Ljava/io/ByteArrayOutputStream;->write([BII)V
+    invoke-static {v0}, Lcom/a/a/a/g;->a([B)I
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 86
-    monitor-exit p0
+    move-result v0
 
-    return-void
+    goto :goto_0
 
-    .line 84
-    :catchall_0
+    :catch_0
     move-exception v0
 
-    monitor-exit p0
+    new-instance v1, Ljava/io/IOException;
 
-    throw v0
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v3, "Error in QP stream "
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/lang/NumberFormatException;->getMessage()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw v1
 .end method

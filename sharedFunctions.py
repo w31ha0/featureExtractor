@@ -139,4 +139,3 @@ def onAPKProtectDetected(evidence,sh,startColumn):
     sh.write(START_ROW+16,0,"Obsfucation technique")
     sh.write(START_ROW+16,startColumn,"ApkProtect")
     
-nGramsExtractor('/home/ubuntu/android-malware/Dendroid/com.parental.control.v4.apk')
