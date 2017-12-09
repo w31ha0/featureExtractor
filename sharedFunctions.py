@@ -1,6 +1,6 @@
 from constants import *
 from featuresStruct import features
-import subprocess,re
+import subprocess,re,traceback,sys
 
 def nGramsExtractor(apk):
     name = apk.split('/')[-1]
@@ -25,43 +25,48 @@ def nGramsExtractor(apk):
     Sequences = {}
     cmd = 'cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /home/ubuntu/android-platforms --pathalgo contextsensitive'
     print "\nCommand is " + cmd + "\n"
-    output = subprocess.check_output(cmd, shell=True)            
-    results = output.split('Found a flow to sink')
-    for i in range(1,len(results)):
-        sink = results[i].split('from the following sources:')[0][:-1]
-        sink = re.findall( '<(.*?)>', sink)[0]
-        startSource = results[i].split('from the following sources:')[1].split('on Path ')[0]
-        startSource = re.findall( '<(.*?)>', startSource)[0]
-        apipaths = results[i].split('from the following sources:')[1].split('on Path ')
-        for pathh in apipaths:
-            Sequence = ""
-            if "[" not in pathh or "]" not in pathh:
-                continue
-            pathh = pathh.split('[')[1].split(']')[0]
-            sources = pathh.split(',')
-            apiPath = []
-            for source in sources:
-                if "invoke" not in source:
+    try:
+        output = subprocess.check_output(cmd, shell=True)            
+        results = output.split('Found a flow to sink')
+        for i in range(1,len(results)):
+            sink = results[i].split('from the following sources:')[0][:-1]
+            sink = re.findall( '<(.*?)>', sink)[0]
+            startSource = results[i].split('from the following sources:')[1].split('on Path ')[0]
+            startSource = re.findall( '<(.*?)>', startSource)[0]
+            apipaths = results[i].split('from the following sources:')[1].split('on Path ')
+            for pathh in apipaths:
+                Sequence = ""
+                if "[" not in pathh or "]" not in pathh:
                     continue
-                m = re.findall ( '<(.*?)>', source)
-                for mm in m:
-                    apiPath.append(mm)
-            print "Sink is "+sink
-                #apiPath.append(sink)
-            validSourceFound = False
-            for subpath in apiPath:
-                if subpath in Sources:
-                    validSourceFound = True
+                pathh = pathh.split('[')[1].split(']')[0]
+                sources = pathh.split(',')
+                apiPath = []
+                for source in sources:
+                    if "invoke" not in source:
+                        continue
+                    m = re.findall ( '<(.*?)>', source)
+                    for mm in m:
+                        apiPath.append(mm)
+                print "Sink is "+sink
+                    #apiPath.append(sink)
+                validSourceFound = False
+                for subpath in apiPath:
+                    if subpath in Sources:
+                        validSourceFound = True
+                    if validSourceFound:
+                        Sequence += subpath + ","
+                        #print "\n"
                 if validSourceFound:
-                    Sequence += subpath + ","
-                    #print "\n"
-            if validSourceFound:
-                Sequence += sink + ","
-            if Sequence in Sequences:
-                    Sequences[Sequence] = Sequences[Sequence] + "," + name
-            else:
-                Sequences[Sequence] = name
-    
+                    Sequence += sink + ","
+                if Sequence in Sequences:
+                        Sequences[Sequence] = Sequences[Sequence] + "," + name
+                else:
+                    Sequences[Sequence] = name
+    except Exception as e:
+        traceback.print_exc(file=sys.stdout)
+        print(e.message) + " for " + name
+        return False
+        
     currentngram = []
     ngrams = []
     n = 4
@@ -98,9 +103,12 @@ def nGramsExtractor(apk):
             if set(basengram) == set(ngram):
                 string = ",".join(basengram)
                 #print "\nFound "+string+"\n"
+                if string[-1] == ",":
+                    string = string[:-1]
                 features[string] = 1
     
     f.close() 
+    return True
 
 
 def onBangcleDetected(evidence,sh,startColumn):

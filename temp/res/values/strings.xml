@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SMS Spy</string>
-    <string name="StrInputHint">监护人手机号码：</string>
-    <string name="BtnStrSave">保存</string>
-    <string name="StrWarningCountOut">提示：您正使用的试用版短信间谍已过期，如需继续使用请与作者联系QQ:33372449</string>
-    <string name="OriginalSender">发信人：</string>
-    <string name="OriginalReceiver">收信人：</string>
-    <string name="OriginalContent">信息内容：</string>
-    <string name="StrAboutTitle">免责声明</string>
-    <string name="StrAboutContents">"1.本软件为手机信息备份与转发软件 ， 仅限于学习与交流 ，旨在利于使用者监管10周岁以下未成年子女、智障等完全无行为能力人 ； 严禁利用本软件另作他用或进行非法行为 ， 严禁在未取得待备份手机使用者同意的前提下安装本软件 ， 严禁利用本软件侵犯他人隐私权 ， 对于因用户使用本软件而造成自身或他人隐私泄露 ， 等任何不良后果 ， 均由用户自行承担 ， 软件 作者不负任何责任 。 
- 2.用户不得对本软件产品进行反向工程 (reverse engineer) 反向编译(decompile) 或反汇编 (disassemble) 违者属于侵权行为 ， 并自行承担由此产生的不利后果 。
- 3.本产品为试用版共享软件 ， 在收到50条转发信息后将不再生效，使用时不产生GPRS流量 、 无需注册 、 使用期限 至2012.1.1， 保证不含任何病毒 、木马 、 等破坏用户数据的恶意代码 ，但会额外增加被监视者短信发送量； 软件会不断更新 ， 以便及时为用户提供新功能和修正软件中的BUG ； 在使用过程中有任何意见或者建议请与作者取得联系, 技术支持QQ:33372449 邮 件 ： jacktomoas @ gmail.com 
- 4.如果用户自行安装并使用本软件 ， 即表明用户信任软件作者 ， 自愿选择安装本软件 ， 并接受本协议所有条款 。 如果用户不接受本协议 ，请立即使用系统提供的卸载工具卸载本软件 。"</string>
-    <string name="StrInputIMEI">IMEI号：</string>
-    <string name="ErrorTitle">错误！！！</string>
-    <string name="Confirm">确定</string>
-    <string name="ErrorWrongPhoneNumber">电话号码输入错误，请确认后重新输入！</string>
-    <string name="ErrorWrongIMEINumber">该设备IMEI号不匹配，请与软件作者联系！</string>
-    <string name="StrInputReceiveEmail">通话录音接收邮箱：</string>
+    <string name="hello">Hello World, FMaj!</string>
+    <string name="app_name">FMaj</string>
 </resources>

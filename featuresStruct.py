@@ -54,6 +54,6 @@ def init():
         if line:
             ngram += line + ","
         else:
-            features[ngram] = 0
+            features[ngram[:-1]] = 0
             ngram = ""
     f.close() 

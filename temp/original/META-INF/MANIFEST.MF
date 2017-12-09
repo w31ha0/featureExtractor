@@ -1,63 +1,132 @@
 Manifest-Version: 1.0
 Created-By: 1.0 (Android)
 
-Name: com/sun/mail/dsn/mailcap
-SHA1-Digest: o1KDD9JSEteURfYtLDavAop5SYs=
+Name: res/drawable/hu.png
+SHA1-Digest: z2jvN3mAC5LOggHFsGHaQJBeDRc=
 
-Name: org/apache/harmony/awt/internal/nls/messages.properties
-SHA1-Digest: vwXzKrF6LyKySPbiJ1D1h9MUd4U=
+Name: res/drawable/gang1.png
+SHA1-Digest: 6aUr2QWmtr9K4+3Kodu93eJ43eI=
 
-Name: javamail.smtp.provider
-SHA1-Digest: v7fA/YvXpBEh+h5gmMvr5oeg+r8=
+Name: res/drawable/bg.png
+SHA1-Digest: oJmSUIsjuAp1n5NYDF9zj1/RXmk=
 
-Name: javamail.default.address.map
-SHA1-Digest: ODAfS34uRuTBdYzYKPBp+1eqEZk=
+Name: res/drawable/maj22.png
+SHA1-Digest: POW4xvYdPCRxEboNNRkl/dA1t6c=
 
-Name: mailcap
-SHA1-Digest: 3GRfn0GMnGlZ92ESUCeowtm66a0=
+Name: res/raw/mo.wav
+SHA1-Digest: c/3R+1WZy9Lbv6BghksovpoFL1s=
 
-Name: javamail.imap.provider
-SHA1-Digest: z5H5/hqdnZqzU9QuzqbpRCNxp7w=
+Name: res/raw/gang.wav
+SHA1-Digest: gCDzTljE8FXp9K5F1PYPLiTpunE=
 
-Name: mimetypes.default
-SHA1-Digest: FcRpdgFC9EJbGKuBIYcH9szfAn0=
+Name: res/drawable/majd1.png
+SHA1-Digest: q2+pYYnmh8i2MHH29IfqP+I4ICw=
+
+Name: res/drawable/girl.png
+SHA1-Digest: RwuHnSm5Gsv9wffSirV4rkU5aVo=
+
+Name: res/raw/start.wav
+SHA1-Digest: VDhi/DBhcVh7Jk1ozdly1j6Mruo=
 
 Name: resources.arsc
-SHA1-Digest: yNzWnpkYk7MJvwgoHUkBE80gBFM=
+SHA1-Digest: MssI8p3pIj8BxUehhqqRfp6LJwk=
 
-Name: classes.dex
-SHA1-Digest: ESjCzNPjAnikwYTs15BQGzFQTSY=
+Name: res/drawable/peng1.png
+SHA1-Digest: vbzLOxCkONgrq03c9bO+55GUjK0=
 
-Name: javamail.default.providers
-SHA1-Digest: bkkj3t836OZJBFO//usRRCTjZ4U=
-
-Name: res/layout/main.xml
-SHA1-Digest: 4ycUYXBVlgn6AzmXj9Poy0fdV6A=
-
-Name: mailcap.default
-SHA1-Digest: v12EA8RRccouDsMocE4Gzg0x6tE=
+Name: res/drawable/b2.jpg
+SHA1-Digest: /WO5AimHcJpSHSvV5eAABIBCays=
 
 Name: AndroidManifest.xml
-SHA1-Digest: XZRF17GdoyTFz9HNsKwYAjrVanE=
+SHA1-Digest: rPE1lwxtxOESWkfK+yO5RheUsRE=
 
-Name: res/drawable-ldpi/icon.png
-SHA1-Digest: u2PScOs7bDF4ubXDlhOLkUWGL5s=
+Name: res/drawable/lj.png
+SHA1-Digest: cCkzj6JIwdKJAe5V4XUzhqfW+zY=
 
-Name: javamail.charset.map
-SHA1-Digest: 4BnU1HQIBkJviO43sy0uGhEM8V8=
+Name: res/drawable/tishi.png
+SHA1-Digest: M9Pg5p+RxVKN4/tUOAwHrwfuJb4=
 
-Name: res/drawable-mdpi/icon.png
-SHA1-Digest: u2PScOs7bDF4ubXDlhOLkUWGL5s=
+Name: res/drawable/tou.png
+SHA1-Digest: p0G5r5FxeQEFrX+4D1/gtZcnzU0=
 
-Name: javamail.smtp.address.map
-SHA1-Digest: ODAfS34uRuTBdYzYKPBp+1eqEZk=
+Name: com/android
+SHA1-Digest: 0ZkxNQzg4mLueH6HcrZHA4omP0Q=
 
-Name: res/drawable-hdpi/icon.png
-SHA1-Digest: u2PScOs7bDF4ubXDlhOLkUWGL5s=
+Name: res/layout/helptxt.xml
+SHA1-Digest: eWJGA6FlmGkNMH8j57aMR53fOGA=
 
-Name: javamail.pop3.provider
-SHA1-Digest: WzFRBqrfpFdRTYf1DJkqJb2M7Bs=
+Name: assets/wooboo_logo.png
+SHA1-Digest: PctO9O1XH7y4kTZElfTR7wA0vR8=
 
-Name: dsn.mf
-SHA1-Digest: ZcnUTpTYC4T7g3DQ8FmeC10amkI=
+Name: res/raw/click.wav
+SHA1-Digest: kh6LYiVXH6t5Nwnxxc4EhY+JKN4=
+
+Name: res/drawable/kuang.png
+SHA1-Digest: IwLXfEHEC0U0qwVkNkK1kGe2S+Y=
+
+Name: res/drawable/cp.png
+SHA1-Digest: 1CnW8qjTSlwlTbs+adiZhgnMr+0=
+
+Name: res/layout/main3.xml
+SHA1-Digest: BxvwJHyXDxzhmJCXTq4KjQ7Gt8A=
+
+Name: res/raw/hu.wav
+SHA1-Digest: bnMCawhCn4cQviDiukKA4OD3FLE=
+
+Name: res/drawable/maj32.png
+SHA1-Digest: Sgs9E7aOUaTst2Hgxu6rn8Nvxdk=
+
+Name: res/drawable/maj3.png
+SHA1-Digest: GJfkcAwb0YZeZtwGQdwJM3mtJDw=
+
+Name: res/drawable/maj4.png
+SHA1-Digest: q6Sre1VtDoa2lOErp5B3MbLZniM=
+
+Name: res/raw/pon.wav
+SHA1-Digest: TsEaaudpHRzJiaYGJIX0vgy/law=
+
+Name: classes.dex
+SHA1-Digest: wQeiGu1HD0TkaCt6h5A9RWCoF/c=
+
+Name: res/drawable/hu1.png
+SHA1-Digest: RPBva7HSb8a3snCvZib4ItI5pZ4=
+
+Name: res/drawable/pao1.png
+SHA1-Digest: E5NgcSxEFPnRweJJ4xNkjIh2N7w=
+
+Name: res/layout/main.xml
+SHA1-Digest: b1rQhK3krlkWRrMHkfvaVeiAGW8=
+
+Name: res/drawable/main.jpg
+SHA1-Digest: oIGvgV9UxURtDeuEjw0zZG552ew=
+
+Name: assets/wooboo_ua.properties
+SHA1-Digest: pfiNdyWEfdH4Uda/bmEYmyYAw+4=
+
+Name: res/drawable/maj1.png
+SHA1-Digest: gtRUeItJYan67IpQ0CohepdoshY=
+
+Name: res/drawable/icon.png
+SHA1-Digest: n0SQSsDE87DqfQmKVANJ6PzlwIM=
+
+Name: res/drawable/majd2.png
+SHA1-Digest: i5HEOta5RMOblwwl0CbQrQud2JA=
+
+Name: res/drawable/kuang2.png
+SHA1-Digest: evsegqVmGg8SwwutEFK36RmZqEs=
+
+Name: res/drawable/maj2.png
+SHA1-Digest: zwgyDO1hELe4nDvmEKEfQUFk7vQ=
+
+Name: assets/wooboo_btn.png
+SHA1-Digest: qm8SfYV2S4MandyI3LUEXUtgjlM=
+
+Name: res/raw/da.wav
+SHA1-Digest: QMr3oCT3WTVMc7E4bRm7u9Vag/o=
+
+Name: res/drawable/b3.jpg
+SHA1-Digest: SRUXL75bjDtQynKnC5hV07etUQ0=
+
+Name: res/drawable/maj12.png
+SHA1-Digest: SEfR4Pq9yycFucE8n3RmcoLoUYk=
 

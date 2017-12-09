@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: f1d8b11012df9b898ca2f9b0a5a97ef79b8a5e1d.apk
+apkFileName: 663e8eb52c7b4a14e2873b1551748587018661b3.apk
 compressionType: false
 doNotCompress:
 - arsc
@@ -7,27 +7,17 @@ isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
   renameManifestPackage: null
-sdkInfo: null
+sdkInfo:
+  minSdkVersion: '1'
+  targetSdkVersion: '4'
 sharedLibrary: false
 unknownFiles:
-  mimetypes.default: '8'
-  mailcap.default: '8'
-  javamail.default.address.map: '8'
-  javamail.charset.map: '8'
-  javamail.smtp.provider: '8'
-  javamail.imap.provider: '8'
-  javamail.default.providers: '8'
-  mailcap: '8'
-  javamail.smtp.address.map: '8'
-  dsn.mf: '8'
-  javamail.pop3.provider: '8'
-  org/apache/harmony/awt/internal/nls/messages.properties: '8'
-  com/sun/mail/dsn/mailcap: '8'
+  com/android: '8'
 usesFramework:
   ids:
   - 1
   tag: null
 version: 2.2.4
 versionInfo:
-  versionCode: '1'
-  versionName: '1.0'
+  versionCode: '4'
+  versionName: '1.4'

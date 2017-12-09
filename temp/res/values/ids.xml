@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item type="id" name="scrollView1">false</item>
-    <item type="id" name="InputLine">false</item>
-    <item type="id" name="InputHint">false</item>
-    <item type="id" name="idnumber">false</item>
-    <item type="id" name="InputLine2">false</item>
-    <item type="id" name="InputReceiveEmail">false</item>
-    <item type="id" name="idReceiveEmail">false</item>
-    <item type="id" name="IdSend">false</item>
-    <item type="id" name="aboutTitle">false</item>
-    <item type="id" name="aboutContent">false</item>
+    <item type="id" name="myHelp">false</item>
+    <item type="id" name="myMain">false</item>
+    <item type="id" name="ad1">false</item>
+    <item type="id" name="myMain3">false</item>
 </resources>

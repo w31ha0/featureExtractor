@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from extractor import *
 from manifestParser import *
 from fileParser import *
@@ -56,13 +57,17 @@ parser.add_argument('-i', action="store",dest="i",required=True,help="Input APK 
 args = parser.parse_args()
 dir_path = args.i
 sheetname = "temp"
+totalFilesTried = 0
+totalFilesSucceed = 0
 
 for path, subdirs, files in os.walk(dir_path):
     for name in files:
-        if not name.endswith("apk"):
-            continue
         fullpath = os.path.join(path, name)
+        if not name.endswith("apk"):
+            print "Skipping " + fullpath
+            continue
         family = fullpath.split('/')[5]
+        os.system("mkdir /home/ubuntu/featuresOutput/"+family)
         print "Malware family: " + str(family)
         startTime = time.time()
         apkfile = fullpath
@@ -91,14 +96,16 @@ for path, subdirs, files in os.walk(dir_path):
         traveseAll(sh,startColumn)
         parseDex(sh)
         calculateCyclomaticComplexity(apkfile,sh,startColumn)
-        nGramsExtractor(apkfile)
+        totalFilesTried += 1
+        if nGramsExtractor(apkfile):
+            totalFilesSucceed += 1
         cleanup()
 
 
         f = open("/home/ubuntu/featuresOutput/"+family+"/"+apkname+".txt","w+")
         for key, value in sorted(featuresStruct.features.iteritems()): 
-            print key + ":" + str(value)
-            f.write(key + ":" + str(value))
+            print key + " ::: " + str(value)
+            f.write(key + " ::: " + str(value))
             f.write('\n')
         
         print "Execution took " + str(time.time() - startTime) + " seconds."
@@ -114,4 +121,5 @@ timeTaken = time.time() - overallStartTime
 stats = open("/home/ubuntu/featuresOutput/stats.txt","w+")
 print "Overall execution took " +str(timeTaken)+" seconds."        
 stats.write("Overall execution took " +str(timeTaken)+" seconds.")
+stats.write(totalFilesSucceed+" out of "+totalFilesTried+" files succeeded.")
 stats.close()
