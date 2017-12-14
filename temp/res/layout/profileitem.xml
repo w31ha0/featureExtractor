@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/profileRow" android:background="@android:drawable/list_selector_background" android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/profileEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/profile" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电池电量 &lt; 100%​​​" android:layout_toRightOf="@id/profileEnable" android:layout_alignTop="@id/profileEnable" />
+    <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/profilePriority" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优先级别: 0​​​​" android:layout_toRightOf="@id/profileEnable" android:layout_alignBaseline="@id/profileGovernor" />
+    <TextView android:textSize="15.0dip" android:typeface="monospace" android:textColor="#ffffffff" android:id="@id/profileMax" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1267最大值​" android:layout_alignParentRight="true" />
+    <TextView android:textSize="15.0dip" android:typeface="monospace" android:textColor="#ffffffff" android:id="@id/profileMin" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="245最小值​" android:layout_below="@id/profileMax" android:layout_alignParentRight="true" />
+    <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/profileGovernor" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ondemand" android:layout_below="@id/profileMin" android:layout_alignParentRight="true" />
+</RelativeLayout>

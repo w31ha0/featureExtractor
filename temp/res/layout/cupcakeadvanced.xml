@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="25.0dip" android:textColor="#ffffffff" android:id="@id/warningText" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="注意：要使用高级设置【缩放选项】必须是【ondemand】或【conservative】​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​" />
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/editLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/sampling_rate_text" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="采样频率:​​​​​​​​​" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <EditText android:id="@id/sampling_rate" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="N/A" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:inputType="phone" />
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/up_threshold_text" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="向上阈值 (1%-100%):​​​​​​​​" android:layout_below="@id/sampling_rate" android:layout_alignParentLeft="true" />
+            <EditText android:id="@id/up_threshold" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="N/A" android:layout_below="@id/sampling_rate" android:layout_alignParentRight="true" android:inputType="phone" />
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/down_threshold_text" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="向下阈值 (1%-100%):​​​​​​​​​​" android:layout_below="@id/up_threshold" android:layout_alignParentLeft="true" />
+            <EditText android:id="@id/down_threshold" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="N/A" android:layout_below="@id/up_threshold" android:layout_alignParentRight="true" android:inputType="phone" />
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/ignore_nice_load_text" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="忽略良好加载 (0/1):​​​​​​​​​​" android:layout_below="@id/down_threshold" android:layout_alignParentLeft="true" />
+            <EditText android:id="@id/ignore_nice_load" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="N/A" android:layout_below="@id/down_threshold" android:layout_alignParentRight="true" android:inputType="phone" />
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/powersave_bias_text" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="省电偏差 (0-1000):​​​​​​​​​​" android:layout_below="@id/ignore_nice_load" android:layout_alignParentLeft="true" />
+            <EditText android:id="@id/powersave_bias" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="N/A" android:layout_below="@id/ignore_nice_load" android:layout_alignParentRight="true" android:inputType="phone" />
+            <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/freq_step_text" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="频率步阶 (0%-100%):​​​​​" android:layout_below="@id/powersave_bias" android:layout_alignParentLeft="true" />
+            <EditText android:id="@id/freq_step" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="N/A" android:layout_below="@id/powersave_bias" android:layout_alignParentRight="true" android:inputType="phone" />
+            <Button android:id="@id/advancedApply" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="应用​​​" android:layout_below="@id/freq_step" android:layout_centerHorizontal="true" />
+            <CheckBox android:id="@id/checkAdvancedBoot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="启动设置​​​​​​​" android:layout_below="@id/advancedApply" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

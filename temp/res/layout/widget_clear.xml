@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/widget" android:background="@android:drawable/list_selector_background" android:focusable="true" android:clickable="true" android:layout_width="82.0dip" android:layout_height="86.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/widget_inside" android:background="@drawable/widgetback_none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/widgetMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="手机加速器" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="14.0dip" android:textColor="#ff00ff00" android:id="@id/widgetMax" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0000" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="13.0dip" android:typeface="monospace" android:textColor="#ff00ff00" android:id="@id/widgetMaxText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 最大值" android:layout_alignBaseline="@id/widgetMax" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="14.0dip" android:textColor="#ff00ff00" android:id="@id/widgetMin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0000" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="13.0dip" android:typeface="monospace" android:textColor="#ff00ff00" android:id="@id/widgetMinText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 最小值" android:layout_alignBaseline="@id/widgetMin" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="10.0dip" android:textColor="#ffffffff" android:id="@id/widgetTempC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="10.0dip" android:textColor="#ffffffff" android:id="@id/widgetTempF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            <TextView android:textSize="10.0dip" android:textColor="#ffffffff" android:id="@id/widgetTempCenterC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0dip" android:textColor="#ffffffff" android:id="@id/widgetTempCenterF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

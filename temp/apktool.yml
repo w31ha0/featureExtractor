@@ -1,23 +1,23 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: 663e8eb52c7b4a14e2873b1551748587018661b3.apk
+apkFileName: 9066a0fc37e4f88bda9b5377fc1d1dd3737e3fa0.apk
 compressionType: false
 doNotCompress:
-- arsc
+- assets/gjsvro
+- assets/legacy
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
   renameManifestPackage: null
 sdkInfo:
-  minSdkVersion: '1'
-  targetSdkVersion: '4'
+  minSdkVersion: '3'
+  targetSdkVersion: '8'
 sharedLibrary: false
-unknownFiles:
-  com/android: '8'
+unknownFiles: {}
 usesFramework:
   ids:
   - 1
   tag: null
 version: 2.2.4
 versionInfo:
-  versionCode: '4'
-  versionName: '1.4'
+  versionCode: '14'
+  versionName: 1.3.1

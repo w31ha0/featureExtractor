@@ -66,9 +66,10 @@ for path, subdirs, files in os.walk(dir_path):
         if not name.endswith("apk"):
             print "Skipping " + fullpath
             continue
-        family = fullpath.split('/')[5]
+        family = fullpath.split('/')[4]
         os.system("mkdir /home/ubuntu/featuresOutput/"+family)
         print "Malware family: " + str(family)
+        
         startTime = time.time()
         apkfile = fullpath
         featuresStruct.init()
@@ -87,8 +88,8 @@ for path, subdirs, files in os.walk(dir_path):
         startColumn = getStartCol(sh)
         book = copy(rb)
         sh = book.get_sheet(sheetNo)
-        sh.write(0,startColumn,appname)    
-
+        #sh.write(0,startColumn,appname)    
+        
 
         disassemble(apkfile)
         print ""
@@ -121,5 +122,5 @@ timeTaken = time.time() - overallStartTime
 stats = open("/home/ubuntu/featuresOutput/stats.txt","w+")
 print "Overall execution took " +str(timeTaken)+" seconds."        
 stats.write("Overall execution took " +str(timeTaken)+" seconds.")
-stats.write(totalFilesSucceed+" out of "+totalFilesTried+" files succeeded.")
+stats.write(str(totalFilesSucceed)+" out of "+str(totalFilesTried)+" files succeeded.")
 stats.close()

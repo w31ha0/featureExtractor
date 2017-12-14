@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/header" android:background="@color/header1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:id="@id/header2" android:background="@color/header1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="25.0dip" android:textColor="#ffffffff" android:id="@id/cupcakeStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="528MHz" />
+            <TextView android:textSize="13.0dip" android:typeface="monospace" android:textColor="#ffffffff" android:id="@id/cupcakeNote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="current" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="20.0dip" android:typeface="monospace" android:textColor="#ff5dfc0a" android:id="@id/cupcakeMeterMax" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="000MHz最大值​" />
+            <TextView android:textSize="20.0dip" android:typeface="monospace" android:textColor="#ff5dfc0a" android:id="@id/cupcakeMeterMin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="000MHz最小值​" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/scroll" android:background="@color/back1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/background" android:background="@color/back1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/maxText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="最大值:000MHz​" />
+            <SeekBar android:id="@id/maxSeek" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="225.0dip" android:layout_height="wrap_content" android:max="5" />
+            <TextView android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:height="10.0dip" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/minText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="最小值:000MHz​" />
+            <SeekBar android:id="@id/minSeek" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="225.0dip" android:layout_height="wrap_content" android:max="5" />
+            <TextView android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:height="5.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+                    <Button android:id="@id/cupcakeRefresh" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="刷新​​​​​" />
+                    <Button android:id="@id/cupcakeProfiles" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="配置​​​​​​" />
+                    <Button android:id="@id/cupcakeInfo" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="系统信息​​​​​​​" />
+                    <Button android:id="@id/advanced" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="高级​​​​​​" />
+                    <Button android:id="@id/about" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="关于/主题​​​​​​​" />
+                    <Button android:id="@id/donate" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="捐赠​​​​" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:orientation="vertical" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+                    <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/governorText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CPU调节器​​​​​​" />
+                    <Spinner android:textColor="#ff000000" android:id="@id/chooseGovernor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <CheckBox android:textColor="#ffffffff" android:id="@id/checkRefresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自动刷新​​​​​​​​" />
+                    <CheckBox android:textColor="#ffffffff" android:id="@id/checkBoot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="启动设置​​​​​​​" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textColor="#ffffffff" android:id="@id/versionText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/version" android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <CheckBox android:textColor="#ffffffff" android:id="@id/checkWarning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="启用警报声音​​​​​​​​​" />
+            <CheckBox android:textColor="#ffffffff" android:id="@id/checkTempSensor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="使用CPU温度警报声音​​​​​​​​" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/maxTextChooserFailsafe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="设置最大值:000MHz​​​" />
+            <SeekBar android:id="@id/maxSeekChooserFailsafe" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="250.0dip" android:layout_height="wrap_content" android:max="5" />
+            <TextView android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:height="20.0dip" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/minTextChooserFailsafe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="设置最小值:000MHz​​​" />
+            <SeekBar android:id="@id/minSeekChooserFailsafe" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="250.0dip" android:layout_height="wrap_content" android:max="5" />
+            <TextView android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:height="20.0dip" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/chooserFailsafeText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="如果电池温度超过:00.0 °C​​​​​​​​​​​" />
+            <SeekBar android:id="@id/chooserFailsafe" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="250.0dip" android:layout_height="wrap_content" android:max="800" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/chooserGovernorText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CPU调节器​​​​​​" />
+            <Spinner android:textColor="#ff000000" android:id="@id/governorChooserFailsafe" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/failsafeRefreshIntervalText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="刷新间隔​​​​​​​​​​​​" />
+            <Spinner android:textColor="#ff000000" android:id="@id/failsafeRefreshInterval" android:layout_width="150.0dip" android:layout_height="wrap_content" />
+            <Button android:id="@id/chooserFailsafeSet" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="应用​​​" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

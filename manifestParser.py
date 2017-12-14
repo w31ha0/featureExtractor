@@ -116,7 +116,7 @@ def parseManifest(sh,startColumn):
     print ""
     print "Number of suspiscious component names is "+str(malicousNamesCounter)+":"+str(malicousNames)        
     print ""    
-    '''
+    
     
     sh.write(START_ROW+0,0,"Total number of permissions requested")
     sh.write(START_ROW+0,startColumn,str(totalPermissoinsCounter))
@@ -132,6 +132,6 @@ def parseManifest(sh,startColumn):
     sh.write(START_ROW+5,startColumn,str(hardwareCounter))
     sh.write(START_ROW+6,0,"Total number of suspiscious component names requested")
     sh.write(START_ROW+6,startColumn,str(malicousNamesCounter))
-        
+        '''
                 
     

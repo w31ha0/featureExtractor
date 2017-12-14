@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <CheckBox android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/checkTempSensor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用CPU温度警报声音​​​​​​​​" android:layout_alignParentTop="true" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/widgetFreqColorText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="部件：最大值/最小值 颜色​​​​​​​" android:layout_below="@id/checkTempSensor" android:layout_alignParentLeft="true" />
+        <Spinner android:textColor="#ff000000" android:id="@id/widgetFreqColorChooser" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_below="@id/widgetFreqColorText" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/widgetBackText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="部件背景选项​​​​​​​​​​​" android:layout_below="@id/widgetFreqColorChooser" android:layout_alignParentLeft="true" />
+        <Spinner android:textColor="#ff000000" android:id="@id/widgetBackChooser" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_below="@id/widgetBackText" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/widgetRefreshText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主动刷新间隔​​​​​​​​​​​​​​​​​" android:layout_below="@id/widgetBackChooser" android:layout_alignParentLeft="true" />
+        <Spinner android:textColor="#ff000000" android:id="@id/widgetRefreshChooser" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_below="@id/widgetRefreshText" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/widgetTempText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="温度显示​​​​​​​​​​​​​​​" android:layout_below="@id/widgetRefreshChooser" android:layout_alignParentLeft="true" />
+        <Spinner android:textColor="#ff000000" android:id="@id/widgetTempChooser" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_below="@id/widgetTempText" android:layout_centerHorizontal="true" />
+        <Button android:id="@id/widgetconfigSet" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="应用​​​" android:layout_below="@id/widgetTempChooser" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="#ffffffff" android:id="@id/widgetConfigNote" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/widgetconfig_note" android:layout_below="@id/widgetconfigSet" />
+    </RelativeLayout>
+</ScrollView>

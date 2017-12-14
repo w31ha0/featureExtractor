@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/maxTextChooserBattery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="设置最大值:000MHz​​​" />
+        <SeekBar android:id="@id/maxSeekChooserBattery" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="250.0dip" android:layout_height="wrap_content" android:max="5" />
+        <TextView android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:height="20.0dip" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/minTextChooserBattery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="设置最小值:000MHz​​​" />
+        <SeekBar android:id="@id/minSeekChooserBattery" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="250.0dip" android:layout_height="wrap_content" android:max="5" />
+        <TextView android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:height="20.0dip" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/chooserBatteryText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="如果电池电量低于 000%​​​​​​​​​​​" />
+        <SeekBar android:id="@id/chooserBattery" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="250.0dip" android:layout_height="wrap_content" android:max="100" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/chooserGovernorText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CPU调节器​​​​​​" />
+        <Spinner android:textColor="#ff000000" android:id="@id/governorChooserBattery" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:id="@id/chooserBatterySet" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="应用​​​" />
+    </LinearLayout>
+</ScrollView>

@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, FMaj!</string>
-    <string name="app_name">FMaj</string>
+    <string name="app_name">手机加速器</string>
+    <string name="widget_name">手机加速器</string>
+    <string name="version">手机加速器1.3.1</string>
+    <string name="perflock_disable_warning">注意: Perflock是基于HTC Sense内核（包括大多数存储内核）设备的驱动程序，会阻止手机加速器正确地设置频率。本软件提供的禁用Perflock功能仍是一项实验性功能。大多数运行在基于2.6.29和2.6.32.15内核（Android 1.6 - 2.2）的HTC手机均开启了Perflock，如果您使用的是HTC的手机，且手机加速器无法正确设置频率，可以尝试禁用Perflock功能。如果发生错误或手机崩溃，请将您手机的型号以及内核信息发送至tutuandroid@163.com</string>
+    <string name="profiles_warning">当满足配置的条件时，手机加速器将自动设置您所定义的CPU频率。如果有多个配置且有不少于2个条件同时满足，将使用优先级更高的情景模式。对于电池配置，百分比较低的配置具有更高的优先级。</string>
+    <string name="intro_text">"1. 本软件需要ROOT权限才能正常工作。出现ROOT权限请求时，请勾选“记住选择”，并点击“允许”或“总是允许”。
+2. 本软件可以调整低端硬件的设置，请谨慎使用！
+3. 如果启用了配置或窗口小部件，请不要在任务管理器里终止手机加速器。
+4. 您必须了解修改CPU频率的风险，并自行承担使用本软件的所有风险，程序开发人员不承担使用本程序所造成的一切后果！
+5. 如果您的手机CPU使用的是非标准频率，请选择自动检测或使用自定义功能。
+6. HTC Sense用户：如果在设置频率时遇到问题，请尝试按Menu键并使用“禁用Perflock”功能。
+
+"</string>
+    <string name="root_text">手机加速器将请求ROOT权限，请稍候。出现超ROOT权限请求时，请勾选“记住选择”，并点击“允许”或“总是允许”。如果之后出现黑屏或强行关闭的问题，请按Home键返回主屏幕并重启手机加速器</string>
+    <string name="saved_text">设置已保存。如果想更改设备，请在手机加速器的主界面按Menu键，再点击“设备选择”</string>
+    <string name="about">"
+
+如需帮助：请发邮件至tutuandroid@163.com"</string>
+    <string name="widgetconfig_note">强烈建议一次只使用一个窗口小部件</string>
+    <string name="jobs_taunt">Tutu Android软件</string>
+    <string name="iphone_taunt">友情提醒：不正确地使用本程序可能给您的手机带来严重的后果！</string>
+    <string name="over_nine_thousand">Tutu Android软件</string>
 </resources>

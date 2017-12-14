@@ -75,7 +75,7 @@ def traveseAll(sh,startColumn):
     print ""
     print "Number of suspicious image files is "+str(len(allSuspiciousImageFiles))+":"+str(allSuspiciousImageFiles)
     print ""
-    '''
+    
 
 
     sh.write(START_ROW+7,0,"Total number of sensitive APIs")
@@ -96,7 +96,8 @@ def traveseAll(sh,startColumn):
     sh.write(START_ROW+14,startColumn,str(len(allInnerJarAPKFiles)))
     sh.write(START_ROW+15,0,"Total number of suspicious image files")
     sh.write(START_ROW+15,startColumn,str(len(allSuspiciousImageFiles)))
-
+    '''
+    
     if nonAsciiCounter > 0:
         onDexGuardDetected(str(nonAsciiCounter),sh,startColumn)
 

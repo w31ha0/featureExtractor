@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="25.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="手机加速器Root权限用户" android:height="40.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/intro_text" />
+            <Button android:id="@id/donate" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="60.0dip" android:text="支持的设备和捐赠方式\n请访问我们的Android电子市场的手机加速器" />
+            <Button android:id="@id/autoChoose" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="自动检测频率速度\n推荐使用" />
+            <Button android:id="@id/override" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="显示其它频率速度设置" />
+            <Button android:id="@id/cupcakeChoose" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="G1/Dream/myTouch/Magic 32B [MSM7k]" />
+            <Button android:id="@id/sholesChoose" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="Motorola Droid/Milestone [OMAP3]" />
+            <Button android:id="@id/qsdChoose" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="Nexus One/Snapdragon [QSD8x50]" />
+            <Button android:id="@id/galaxyChoose" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="Samsung Galaxy [MSM7k Turbo]" />
+            <Button android:id="@id/dextChoose" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="Motorola Cliq [MSM7k]" />
+            <Button android:id="@id/pulseChoose" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="T-Mobile Pulse [MSM7k Turbo]" />
+            <Button android:id="@id/liquidChoose" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="Acer Liquid [QSD8x50]" />
+            <Button android:id="@id/momentChoose" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="Samsung Moment [ARM]" />
+            <Button android:id="@id/tattooChoose" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="HTC Hero/Eris/Tattoo [MSM7k Turbo]\n某些内核可能无法使用全部功能" />
+            <Button android:id="@id/msm7x27Choose" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="MSM7x27" />
+            <Button android:id="@id/msm7x30Choose" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="MSM7x30" />
+            <Button android:id="@id/qsd8x55Choose" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="QSD8x55" />
+            <Button android:id="@id/customChoose" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="自定义频率\n读取配置文件:\n/sdcard/Speedup.txt\n/system/sd/Speedup.txt\n/data/local/Speedup\n频率速度使用kHz从低到高用逗号分隔进行排列" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -6,12 +6,13 @@ for path, subdirs, files in os.walk(dir_path):
     for name in files:
         fullpath = os.path.join(path, name)
         family = fullpath.split('/')[4]
+        os.system("mkdir /home/ubuntu/featuresOutput/"+family+"/binaryForm")
         if name.endswith('txt') and "binary" not in name:
             print "Reading contents of " + name
             f = open(fullpath,"r")
             features = f.readlines()
             f.close()
-            f2 = open("/home/ubuntu/featuresOutput/"+family+"/binary"+name,"w+")
+            f2 = open("/home/ubuntu/featuresOutput/"+family+"/binaryForm/binary"+name,"w+")
             for feature in features:
                 #print feature
                 if ":::" not in feature:
