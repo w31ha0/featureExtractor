@@ -3,6 +3,7 @@ ANDROGUARD_PATH = '../tools/androguard/'
 SMALI_PATH = 'smali'
 BAKSMALI_PATH = ' ~/tools/baksmali-2.2.1.jar'
 APKTOOL_PATH = '~/tools/apktool_2.2.4.jar'
+PROJECT_PATH = '/root/FYP/'
 HIDEX_PATH = 'hidex.pl'
 START_ROW = 1
 

@@ -1,273 +1,1107 @@
 Manifest-Version: 1.0
-Created-By: 1.6.0_20 (Sun Microsystems Inc.)
+Created-By: 1.0 (Android SignApk)
 
-Name: res/drawable/thumb_selected.png
-SHA1-Digest: bSazymOcHLLTucMlh79EBK6HxsY=
+Name: assets/graphics/menu/icon_money_anim.png
+SHA1-Digest: ugIInU0p6pSpuTthLcTmlxUYofU=
 
-Name: res/layout/widget_clear.xml
-SHA1-Digest: PuHpLaRiyoqbxmx8uCTKwWtfneA=
+Name: assets/graphics/cars/Mercedes_Benz_SLR_McLaren_Hamann_Detail.png
+SHA1-Digest: vc0uzthCFju96fK7i9tsYHZ4iMo=
 
-Name: res/drawable/tab_about_selected.png
-SHA1-Digest: BDMI2fIHaa8uVuoobLlFFV3gKWE=
+Name: assets/graphics/cars/Enzo_Ferrari_Wheel.png
+SHA1-Digest: mRW2UTojrGt18oaJYx7RD32/B9g=
 
-Name: res/layout/intro.xml
-SHA1-Digest: 4jdBUgNDDmghgQ7hYEO1sKO3B2Q=
+Name: assets/graphics/cars/Corvette_ZR1_Detail.png
+SHA1-Digest: FS5nieaJ562a+Mfjqll21upxScQ=
 
-Name: res/layout-land/cupcake.xml
-SHA1-Digest: WQ6D1QzHhqRHND09KQM3H+ICnrM=
+Name: res/raw/gearchange.ogg
+SHA1-Digest: 2kKkSwC2CbG9w4ImPA1KqjBHwRo=
 
-Name: res/drawable/ic_menu_add.png
-SHA1-Digest: k0Hp/EjeDo+eYX/P/0Taog0r2Ok=
+Name: assets/graphics/cars/Gumpert_Apollo_Sport.png
+SHA1-Digest: lkx6N8gQctYajkZOnj/ngPXRQ8g=
 
-Name: assets/killall
-SHA1-Digest: b5Kz3+ntvfQCFF3DX4TRivzh1Rc=
+Name: assets/graphics/cars/Brabus_700_Biturbo_Wheel.png
+SHA1-Digest: bSBRysG/PVmFJU0kwcydFYG0DNY=
 
-Name: res/drawable/notify.png
-SHA1-Digest: kRE9ig95tiMPeUe0mcZ+QI/yBgc=
+Name: assets/graphics/cars/Porsche_911_Detail.png
+SHA1-Digest: NZEpZp8ciyx9b1ZOUe74+KgEn3k=
 
-Name: res/drawable/progress_gray.xml
-SHA1-Digest: EMf6BJMv10jtzHIybMzaD65OD2g=
+Name: assets/cars.bin
+SHA1-Digest: Oo+LttKml+oQ6Yw2m5iXFjeTHKM=
 
-Name: res/drawable/tab_profiles.xml
-SHA1-Digest: 88zfnMtwGCUyb3abJt6BBBYfNVY=
+Name: assets/graphics/menu/icon_money.png
+SHA1-Digest: Ti80i/PwWsKpZPWguiMhX/js8Yo=
 
-Name: res/drawable-hdpi/clipboard.png
-SHA1-Digest: 8+1Z3dF9me8wmWA6DqaNAwUP0dk=
+Name: assets/graphics/menu/friends.png
+SHA1-Digest: UmR5y/Uyp21qYak119TDx4ZAqro=
 
-Name: res/layout/perflockdisable.xml
-SHA1-Digest: kp6hHJTv/xgJM3rzV6ToLxEOWEc=
+Name: assets/graphics/menu/checkbox_on.png
+SHA1-Digest: Rk7d2K03W+ApF9akdlcEQn6elTg=
 
-Name: res/drawable/tab_main.xml
-SHA1-Digest: 7pFCh5yEdx5VePgtw74KajsilbM=
+Name: assets/graphics/cars/Carrera_GT.png
+SHA1-Digest: 477MXnG4BOJavL0mPtJoPWDssRM=
 
-Name: res/drawable-hdpi/thumb_selected.png
-SHA1-Digest: HhyrCaMm+8CYtUazvtvrk3RFs1c=
+Name: assets/graphics/cars/BMW_M6.png
+SHA1-Digest: PCJQjbM6UIAs5IgWB3CzZOD1SiQ=
 
-Name: res/drawable/tab_advanced.xml
-SHA1-Digest: 9sXXNwzrUdvifn8sAflZYexqgyc=
+Name: res/raw/bov10.ogg
+SHA1-Digest: ZQvd5Kri9MzNSR+oSCu4ib6c0aU=
 
-Name: res/drawable/progress_green.xml
-SHA1-Digest: KKS5ZNhvWZcO/5UJy3pZhrtQszw=
+Name: assets/graphics/race_result.png
+SHA1-Digest: t/E+MOavQwZtc9cw7SarieK17ac=
 
-Name: res/layout/tablayout.xml
-SHA1-Digest: xBSaJJFzf4ZiEbn/l0ZzpfhnWuM=
+Name: assets/graphics/garage/garage_overlay.png
+SHA1-Digest: teyqDE4xys/NQKJaaFSEOoonKow=
 
-Name: res/layout/widget_green.xml
-SHA1-Digest: M+wJ7NY9MMry4piueslXMOh62dQ=
+Name: assets/graphics/cars/Ferrari_599_Novitec_Rosso_Wheel.png
+SHA1-Digest: Mi5MqztouuiSl44snqpSXm9NwZ4=
 
-Name: res/layout/cupcake.xml
-SHA1-Digest: NVKEtiYJPH0OZ/p+SjIkImYCVDM=
+Name: res/drawable-mdpi/trophy_gold.png
+SHA1-Digest: i3hj4z74T/an8dCcfQyNwwO/IPE=
 
-Name: res/drawable/notify_failsafe.png
-SHA1-Digest: fcMzIEqlhXZHRWB4Pw/Tc0JYy2k=
+Name: assets/graphics/mincar2.png
+SHA1-Digest: G8M9fsLJx/5Px8CfGxHeRo67QgA=
 
-Name: res/drawable/welcome.png
-SHA1-Digest: cvIpJrr37VRJPf4HMbxbSEc0DOY=
+Name: res/raw/engine_muscle.ogg
+SHA1-Digest: gH75VIhymjMkhwN6hhtBvhezuyQ=
 
-Name: res/drawable/widgetback_none.9.png
-SHA1-Digest: I8k8ExcI6QG11kM0yIj0VMmYq9o=
+Name: res/drawable-mdpi/toast_background.9.png
+SHA1-Digest: 59g2wke2RHbU/Pdyy/WF8p9BXIg=
 
-Name: res/drawable/tab_main_selected.png
-SHA1-Digest: tO/VQRvW4SAd1yaBSiclsaWy91A=
+Name: assets/graphics/cars/Bugatti_Veyron_16_SS_Wheel.png
+SHA1-Digest: XpOlcdnL42aJDX8um7/j2I8m0sE=
 
-Name: res/drawable-hdpi/tab_about_selected.png
-SHA1-Digest: TMF+v7Lso/JdPI4PHUHAhat8rQ4=
+Name: assets/graphics/cars/Lamborghini_Murcielago_Detail.png
+SHA1-Digest: zwYizOruIwRkWZJTwpGqIX290L4=
 
-Name: res/layout-land/main.xml
-SHA1-Digest: JUGN3Ske5UjpqqcevHGFBpUBmgI=
+Name: assets/graphics/cars/BMW_M6_Detail.png
+SHA1-Digest: mGj4axEiSV0BcIUyiTGh4XpMWG0=
 
-Name: res/drawable/widgetback_red.9.png
-SHA1-Digest: oXl/yYiXds2K0ACh8/skRyIZqj0=
+Name: assets/graphics/signs.png
+SHA1-Digest: KzWvskZlnp9smqrugEmb8lDgMd4=
 
-Name: res/drawable-hdpi/thumb_pressed.png
-SHA1-Digest: 74PUoO8E4Olij/Ji5pXl0NXSc0Y=
+Name: assets/graphics/garage/frame_hl.png
+SHA1-Digest: xpXRPiiZzGRYxBYrEQytVGiZXhM=
 
-Name: res/drawable/widgetback_blue.9.png
-SHA1-Digest: QLqABh+i3Y098O5Humq/xeMsJhE=
+Name: assets/graphics/cars/Zonda_R_Disk.png
+SHA1-Digest: IqHcwwjBOAla5Ca15m8hus2MQjo=
 
-Name: res/layout/main.xml
-SHA1-Digest: RH29WiGvj54ndIXzghbkx0UJB74=
+Name: assets/graphics/menu/crest0.png
+SHA1-Digest: T8AfyGAgIXNqk4ITF9s04pxcbYo=
 
-Name: res/drawable/progress_blue.xml
-SHA1-Digest: xDbUwTJyKedZIqrZZv6Yfy/d38o=
+Name: assets/graphics/cars/Zonda_R.png
+SHA1-Digest: eEfBStJGjTR52Saq0c2TTOYpvQs=
 
-Name: res/drawable/notify_battery.png
-SHA1-Digest: I5ZdAv1EPTcV72SoxRaoofDIXAA=
+Name: assets/graphics/cars/9ff_GT9_Disk.png
+SHA1-Digest: DghA7wzJlIidZgZB+VJfDKwjDfI=
 
-Name: res/drawable/widgetback_new.9.png
-SHA1-Digest: IQAhAVnF7IhTq7QpwHO+EDTvuoU=
+Name: assets/graphics/highlight.png
+SHA1-Digest: 9qyKq4wBNrIea0G4XqeKL39PVkY=
 
-Name: res/layout/advancedwarning.xml
-SHA1-Digest: SO0+eDe8sF90VqjbOTse3/b/EU4=
+Name: assets/graphics/menu/icon_race_online.png
+SHA1-Digest: hX4332+u4794lTEqR8B/UKmt+iE=
 
-Name: res/layout/chooser.xml
-SHA1-Digest: Il9ZyeHQguIw4Lwwcn1Ox3gBLfo=
+Name: assets/graphics/menu/crest_shining.png
+SHA1-Digest: 1BOsvlfdb9QICeJ35SBo35dz1+I=
 
-Name: res/drawable/tab_main_deselected.png
-SHA1-Digest: 0yk6vGaTQnv+tZcxztaCGjOjj6M=
+Name: assets/graphics/cars/Golf_GTI.png
+SHA1-Digest: Xd9XCXhagaE0i8cGDnalkSbBtSg=
 
-Name: res/drawable/tab_info_selected.png
-SHA1-Digest: nxBIM26vw34jQRAWNbkdfFpjLVA=
+Name: assets/graphics/cars/Ford_GT_GeigerCars_HP790_Disk.png
+SHA1-Digest: viUmpdxwJSswwct2hbNtw5jxpdo=
 
-Name: res/drawable/thumb_pressed.png
-SHA1-Digest: Wy6PNkU2K2HJGHEb4OTsE7GqocQ=
+Name: assets/graphics/cars/Maserati_MC12_Corsa_Disk.png
+SHA1-Digest: 6Jz2CCL/rdVwTB4QY6BwVKpfAqk=
 
-Name: res/drawable/tab_advanced_deselected.png
-SHA1-Digest: PEQ2nUOLpXQ3OJeLGsMkHZWct1E=
+Name: assets/graphics/cars/Callaway_C16_Detail.png
+SHA1-Digest: mtt55L+OLO8+xt6hqlJRO9SKzg0=
 
-Name: res/drawable-hdpi/tab_profiles_deselected.png
-SHA1-Digest: y5LGahNoB68R4lpqNJWwG869ylU=
+Name: res/layout/tapjoy_offers_web_view.xml
+SHA1-Digest: x6LafgEw/3R8v2X8Dl4YfSqzrr4=
 
-Name: res/layout/profileitem.xml
-SHA1-Digest: 1jOjMCU6pp8C496SchPO6HibZ00=
+Name: res/drawable-mdpi/facebook_icon.png
+SHA1-Digest: 9jTbeG4b8nJZlZss16UPfagqlUs=
 
-Name: res/layout/cupcakeadvanced.xml
-SHA1-Digest: CTi538DkjE6tppEB2CSxayS6Bw0=
+Name: assets/graphics/cars/Ford_Mustang_429_Disk.png
+SHA1-Digest: 4OB9oIa3gwV0WRNzXXgqUdZ6/uk=
 
-Name: res/layout/about.xml
-SHA1-Digest: 2LVLUx+QM7H6GHIml6hq+YOG2WQ=
+Name: assets/graphics/cars/Renault_Clio_Detail.png
+SHA1-Digest: gy3c1HeR4lifKBK+bZngSH7L0lM=
 
-Name: res/drawable-hdpi/tab_main_deselected.png
-SHA1-Digest: rQ7fzQkbUFtDp89QbY88Ng+DAZQ=
+Name: assets/graphics/cars/Lotus_Elise_111s_Disk.png
+SHA1-Digest: 3sOIjEHhYTGHfHZwRRZunVomB2k=
 
-Name: res/drawable-hdpi/tab_advanced_selected.png
-SHA1-Digest: n43QgUTNkwGW5PvLSGO6Xk6I2As=
+Name: assets/graphics/loading.jpg
+SHA1-Digest: V2nlsC4lvK56SadoBXU93fRzQhU=
 
-Name: res/raw/perflock_disable29.ko
-SHA1-Digest: zLuKN5D3l5U3Rgy3XUbMX2yXGfo=
+Name: assets/graphics/cars/Koenigsegg_Agera_R.png
+SHA1-Digest: f4wyJBB4mVAs0BXc7YafrsxhcsI=
 
-Name: res/drawable/tab_info.xml
-SHA1-Digest: n6ktEoNMaEtylroZyBAJ871rxG4=
+Name: assets/graphics/divider.png
+SHA1-Digest: yrzUFgkGiXcwWY+FccqbbECnRDE=
 
-Name: res/drawable-hdpi/ic_menu_add.png
-SHA1-Digest: 4j1x+R6oZaeHdRKB2TqJgyhK0Lk=
+Name: assets/graphics/cars/Ferrari_599_Novitec_Rosso_Detail.png
+SHA1-Digest: pGoV542tW6KVqcYExfLNcXVLazU=
 
-Name: res/layout/widget_red.xml
-SHA1-Digest: hcCkyofh99Keru7E6TWVIQbuZ4A=
+Name: assets/graphics/race_track.png
+SHA1-Digest: kbAyZ89RyqjvSuWj85tp4z4B57E=
 
-Name: res/layout/widget_light.xml
-SHA1-Digest: 5piGl1NquLV4NozeMVPkmDgij0o=
+Name: assets/graphics/cars/Toyota_Supra_Wheel.png
+SHA1-Digest: r9kEP8jyTU49NZrYO0L5tzM/l+Q=
 
-Name: assets/ratc
-SHA1-Digest: f9eRrhhFXqO7eH7NSYcS0oBGr6s=
+Name: assets/graphics/menu/icon3.png
+SHA1-Digest: wqF35OJ+wwNAEPw0ZxdT9Zqs41w=
 
-Name: assets/gjsvro
-SHA1-Digest: 1pN+mX4P/+4WqzJjiJAEjnx1Jr8=
+Name: assets/graphics/cars/SSC_Ultimate_Aero_TT_Wheel.png
+SHA1-Digest: P/KrxilA37D9H+yhfZakUma9FPI=
 
-Name: res/layout/info.xml
-SHA1-Digest: 395xotWQMt9TTOAA2SPh1v3KHIw=
+Name: assets/graphics/cars/Dodge_SRT_Wheel.png
+SHA1-Digest: w5MvduxDVgdpzo+oQ4iKVrBelcg=
+
+Name: assets/graphics/road/crack1.png
+SHA1-Digest: E/M7Ad4N9i+qKVrr8zM/tpGpeTM=
+
+Name: assets/graphics/cars/Porsche_911.png
+SHA1-Digest: 3bRXPMYnemUqHf70M2rFSeIqmyA=
+
+Name: assets/graphics/cars/Ferrari_599_Novitec_Rosso.png
+SHA1-Digest: gjtqDkVQFZA6/NoMzu0B02qUfgk=
+
+Name: assets/graphics/cars/Ferrari_599_Novitec_Rosso_Disk.png
+SHA1-Digest: nqCvasCc/T1uu3bIPrWCnQ/+Q48=
+
+Name: assets/graphics/cars/Aston_Martin_One_77_Detail.png
+SHA1-Digest: xd0xkaiQLc4xl/7UxGO/5ul7+dg=
+
+Name: assets/graphics/tachometer10.png
+SHA1-Digest: 1Y6Feibrc8pu7iidfZapxYGZrFA=
+
+Name: assets/graphics/shiftUp.png
+SHA1-Digest: LAn5bjeSEPof5Bprkvjb46iwJ+c=
+
+Name: assets/graphics/shiftanimation.png
+SHA1-Digest: 2BeejmIJ/QPVeQx5moCcWv6oQUA=
+
+Name: assets/graphics/cars/Dodge_Challenger_440_Wheel.png
+SHA1-Digest: t7XG1TuK1hXwIDDXo7foEwOBwBg=
+
+Name: assets/graphics/menu/checkbox_off.png
+SHA1-Digest: Y8YnkJwaKOsEeiWXewl/SFGOWlY=
+
+Name: assets/graphics/cars/Mazda_RX8_Disk.png
+SHA1-Digest: RO30UqwXmLJQe048ichXo8DYSnA=
+
+Name: assets/graphics/cars/Hennessey_Venom_GT_Disk.png
+SHA1-Digest: 63Ap+0jxnAxFyAlAmS/qXPVR3FU=
+
+Name: assets/graphics/road/wire1.png
+SHA1-Digest: Dsn9k91OH3ujVvuX/azW1lCyPm0=
+
+Name: assets/graphics/cars/Bugatti_Veyron_16_SS_Disk.png
+SHA1-Digest: aAJ/Ij6dwv4C1glLtZhu+lhMk1Y=
+
+Name: assets/graphics/tachometer5.png
+SHA1-Digest: l6idKpOgy+HxsY7xixTXK63ESh8=
+
+Name: assets/graphics/cars/Audi_R8_V10_MTM_Biturbo_Disk.png
+SHA1-Digest: VmwBAoK4rNnRF7XOsTww2rdfq3U=
+
+Name: assets/graphics/cars/BMW_M3_Detail.png
+SHA1-Digest: ATWLhnTQNU+EvvCF+5DoPabhdT4=
+
+Name: assets/graphics/cars/BMW_E36_Detail.png
+SHA1-Digest: 0mStKGPexE0SkIC9TxvxS62UuUI=
+
+Name: assets/graphics/cars/BMW_M3_Wheel.png
+SHA1-Digest: GOcDtkupCtamoXinHOlBywGE92U=
+
+Name: assets/graphics/menu/settings_graphic.png
+SHA1-Digest: TCvfKYFqyzRIyLmAhZZSiESU9jU=
+
+Name: assets/graphics/cars/Alfa_Romeo_8C_Competizione.png
+SHA1-Digest: 3oRhBxRvlejfxsXHsE+VgPtrMQA=
+
+Name: assets/graphics/cars/Impreza_P1_Detail.png
+SHA1-Digest: TrdCIcEBfNRtOJp23Ctg2rMPZjM=
+
+Name: assets/graphics/garage/owned.png
+SHA1-Digest: 9CvBPodj1WGCevdIjBwSybT4z8M=
+
+Name: res/drawable-hdpi/toast_background.9.png
+SHA1-Digest: AElL58QNAMyTTp46gBYDFk5eMQE=
+
+Name: res/raw/tires_1.ogg
+SHA1-Digest: bS/vuO+DLYzrh6xP+Pf4NP8YJGY=
+
+Name: assets/graphics/garage/test_drive.png
+SHA1-Digest: 9WfWA0zDBnHiQ1/6U0Ycx/AJ3hY=
+
+Name: assets/graphics/cars/Pontiac_Firebird_Disk.png
+SHA1-Digest: k2Wz8HPiZ3HkeHkS1JZ5696O5o4=
+
+Name: assets/graphics/cars/Honda_S2000_Wheel.png
+SHA1-Digest: aluJoReHJQcV92nkgW2hLCz+UcI=
+
+Name: assets/graphics/cars/BMW_M6_Wheel.png
+SHA1-Digest: a7IPtoN7pYedN5hR+3J3y0O9+4Q=
+
+Name: res/raw/bov8.ogg
+SHA1-Digest: 4hsM5whcX3Icg/wyy8+opQUft4M=
+
+Name: res/layout/mainmenu.xml
+SHA1-Digest: nBrytpRn76/jgfk33/bSeXXN4ZA=
+
+Name: assets/graphics/road.jpg
+SHA1-Digest: fhp6g/eICmpx/k+7TET5q0LXzMY=
+
+Name: assets/graphics/cars/Audi_RS6_Wheel.png
+SHA1-Digest: NAWm1DxKUNNLfCZBha5iEHlf+h0=
+
+Name: assets/graphics/cars/Mazda_RX8_Detail.png
+SHA1-Digest: FO6AsBNwv7VCZ/oaSRhmXb4c0f4=
+
+Name: assets/graphics/cars/Honda_Integra_Wheel.png
+SHA1-Digest: TcBl21r+DU9zDA8tH1rUpDxNiRg=
+
+Name: assets/graphics/garage/hue.png
+SHA1-Digest: YC47Vz+X92q1523T/UL9Pf5v1a4=
+
+Name: assets/graphics/cars/Ford_RS200_Evolution_Detail.png
+SHA1-Digest: mmPtiG7M7H1aH8p5OLvYJM/iCBg=
+
+Name: assets/graphics/cars/Gumpert_Apollo_Sport_Disk.png
+SHA1-Digest: cZ9a8Oo/XE1rhYf81nawvl6Svig=
+
+Name: assets/graphics/menu/reset.png
+SHA1-Digest: AfLCGClakGc2EpxR5GWvvcBVvP0=
+
+Name: assets/graphics/cars/Brabus_700_Biturbo_Disk.png
+SHA1-Digest: tcmaU7xG6koxuyDQa9gjutfLHZA=
+
+Name: assets/graphics/cars/Honda_NSX_Type_R_Disk.png
+SHA1-Digest: 8hW0hpDh0tukOiR4bN7xjWIeY1A=
+
+Name: assets/graphics/cars/Aston_Martin_One_77.png
+SHA1-Digest: zY1YzZQBGtuYz+FnTQfg3QvYJMU=
+
+Name: assets/graphics/cars/Golf_GTI_Disk.png
+SHA1-Digest: Ggv7vrhWMCnrNQcgePdC76fJUp4=
+
+Name: assets/graphics/menu/listitem_hl.png
+SHA1-Digest: NeGE3K/F1c9ugPqk3b5bkIcf9kY=
+
+Name: assets/graphics/cars/Audi_RS6_Detail.png
+SHA1-Digest: aNpTks5NnlV0ZTJcpdmEIlh9Tvo=
+
+Name: assets/graphics/cars/Alfa_Romeo_GT.png
+SHA1-Digest: lhBNTQ73h43ZJ7p0fs5R2FKMQjk=
+
+Name: assets/graphics/shadow.png
+SHA1-Digest: blFMNtaVOYxzw2YmWhHWlYbE1H0=
+
+Name: assets/graphics/cars/Ferrari_599_GTO.png
+SHA1-Digest: 5vwUxn3m8lTia4uqmgLpS4ZzJ5U=
+
+Name: assets/graphics/cars/Renault_Clio_Disk.png
+SHA1-Digest: l747dMHLN65zZsnjDvrg9ngQtoY=
+
+Name: assets/graphics/garage/bar_edge_rt.png
+SHA1-Digest: 0vwHogdfhh+GESl5wH4HxsJaph4=
+
+Name: assets/graphics/cars/Lotus_Elise_111s_Wheel.png
+SHA1-Digest: hmkfP4YzeQfXfkrcPzhOsi2G9rQ=
+
+Name: res/raw/nitro.ogg
+SHA1-Digest: +TOZL8pskOGFyAHXeJVzioIfb84=
+
+Name: assets/graphics/cars/Golf_GTI_Detail.png
+SHA1-Digest: WVzKoqIKSrIPL+QlRO85N3LAYSU=
+
+Name: assets/graphics/cars/Brabus_700_Biturbo_Detail.png
+SHA1-Digest: F7C6LivwZEaplqWS/EUwfNHruPc=
+
+Name: assets/graphics/powerButton.png
+SHA1-Digest: QQsMfCmLO5UcSacUISKEdVPCSSc=
+
+Name: assets/graphics/cars/Callaway_C16_Wheel.png
+SHA1-Digest: JXLarkNF43eTxKt5X+MW/3CUup8=
+
+Name: assets/graphics/cars/BMW_M3_Disk.png
+SHA1-Digest: lftznyyVUnxI8dossOmIbgMGWS8=
+
+Name: assets/graphics/cars/Carrera_GT_Detail.png
+SHA1-Digest: YdueA9Yub4aVx+4zAxwns9CsX94=
+
+Name: assets/graphics/cars/Pontiac_Firebird_Detail.png
+SHA1-Digest: gkNNIqfJwsiB9J5Si3brWh7FUIg=
+
+Name: res/drawable-mdpi/icon.png
+SHA1-Digest: P1XUmox6TYB7oBp4nVNRhhGXESA=
+
+Name: assets/graphics/tachometer8.png
+SHA1-Digest: u6LfGX7g2ooV8w9FwiTc51LWZ6s=
+
+Name: assets/graphics/menu/arrow.png
+SHA1-Digest: RKmD8swdrnzBd6uGa96SbywFH/Y=
+
+Name: assets/graphics/menu/settings_header.png
+SHA1-Digest: SF47eaRNANcDJsc8mKriXQyAeQo=
+
+Name: assets/graphics/cars/Shelby_GT500.png
+SHA1-Digest: bxoM0pbscN0dSApwScanOPKO81g=
+
+Name: res/raw/engine2.ogg
+SHA1-Digest: eBkWXqYI7ulKxMvAAPHCrLRSeF8=
+
+Name: assets/graphics/cars/BMW_M3.png
+SHA1-Digest: GnyWCZQGi3JFqy2vElOwNxJ4V7Q=
+
+Name: assets/graphics/garage/apply.png
+SHA1-Digest: Jp1HU759athcU6rUneFsVlrjCwY=
+
+Name: assets/graphics/advert.png
+SHA1-Digest: +v64/W9gfobPE4jNeZgvt2P4a4E=
+
+Name: assets/graphics/cars/Dodge_Charger_Detail.png
+SHA1-Digest: +Wq78EaYq3rW6MIbzd4XA5XfYiE=
+
+Name: assets/graphics/girl.png
+SHA1-Digest: QiN/x/7t1vY62l0GvkaVnVyK7m0=
+
+Name: assets/graphics/cars/Zonda_R_Wheel.png
+SHA1-Digest: ikKAbaXKqqKaeSn7YjCEW22vW3M=
+
+Name: assets/digital.ttf
+SHA1-Digest: LeTm7OltaOr2shb0njo00EOCQOY=
+
+Name: assets/graphics/cars/Alfa_Romeo_GT_Detail.png
+SHA1-Digest: S7Sh4PJ4uds6n7nOT78de0AdQ7k=
+
+Name: assets/graphics/next.png
+SHA1-Digest: MHDY/rPSNGVefczqSm2FvzWIc/s=
+
+Name: assets/graphics/cars/Shelby_GT500_Disk.png
+SHA1-Digest: gR/Ow5XBxj02QeYJik+47EbgnRE=
+
+Name: assets/graphics/garage/cp_cursor.png
+SHA1-Digest: 8QIxtw5451YKPHNv+g+n9tuv0ak=
+
+Name: assets/graphics/cars/Shelby_GT500_Detail.png
+SHA1-Digest: ovkes0d3sxIc8dGVLxLfu3wTeJI=
+
+Name: assets/graphics/garage/garage_upgrade.png
+SHA1-Digest: 3IAmpso7sdAd7U86nBzkBwCNMRc=
+
+Name: assets/graphics/cars/Bugatti_Veyron_16_SS_Detail.png
+SHA1-Digest: xtCK2egkBtBWFjdCxBnmc7VrfrQ=
+
+Name: assets/digital_mono.ttf
+SHA1-Digest: yr2SRHLjQXwq/SM5bJeZT7/be3U=
+
+Name: assets/graphics/cars/Honda_S2000_Detail.png
+SHA1-Digest: IAFs8wloidCGa8UNWJwS0r3650s=
+
+Name: assets/graphics/cars/Dodge_Challenger_440.png
+SHA1-Digest: PD/GxMLIrwGGj89iLrZ50VExwY8=
+
+Name: assets/graphics/cars/Saleen_S7.png
+SHA1-Digest: fAJHrEnhUUGsLbh4zxeDAvwBiWA=
+
+Name: assets/graphics/cars/Nissan_GTR_Disk.png
+SHA1-Digest: OUyhebFPpfDfx24x94oeJLkWWL0=
+
+Name: assets/graphics/cars/9ff_GT9_Wheel.png
+SHA1-Digest: KAgm/qFken9lWnxab81Htg5unOY=
+
+Name: assets/graphics/cars/Impreza_P1_Disk.png
+SHA1-Digest: N1+I8rf/ErFuaj6ekx7+X8Mr/7U=
+
+Name: assets/graphics/garage/tune.png
+SHA1-Digest: em8Y2prJk1DH1mNnBBnwsMb4VWs=
+
+Name: assets/graphics/garage/garage_race.png
+SHA1-Digest: vsJkwI/ir0VfpxW5xGngVREWEh0=
+
+Name: assets/graphics/cars/Dodge_Challenger_440_Detail.png
+SHA1-Digest: e2NUUTqaFrB8U6I54+cM2dT7gws=
+
+Name: assets/graphics/cars/Porsche_911_Disk.png
+SHA1-Digest: zW4L51zNlR05+LkzYQxtIqDMnmE=
+
+Name: res/drawable-mdpi/pro_icon_temp.png
+SHA1-Digest: FIT53wQR0LpQhFHl/7sDO+1hWvE=
+
+Name: assets/graphics/menu/listitem.png
+SHA1-Digest: KQg0BjnCtbICEHjVWVs1MSbxNSg=
+
+Name: assets/graphics/cars/Audi_R8_V10_MTM_Biturbo.png
+SHA1-Digest: rEnITGC1BEljWSdWlZHD5hirZUg=
+
+Name: assets/graphics/cars/Corvette_ZR1_Wheel.png
+SHA1-Digest: gdX/iSHGMFumAGuaXrQgVV3gSsA=
+
+Name: assets/graphics/cars/Corvette_ZR1_Disk.png
+SHA1-Digest: EsyTPI7lSRqBqDRgSj8izsm8juc=
+
+Name: assets/graphics/cars/Honda_S2000_Disk.png
+SHA1-Digest: Bp62JgrfN08ZuHtG7qn/IvHWzxU=
+
+Name: assets/graphics/cars/Ford_Mustang_429.png
+SHA1-Digest: Ct+GrY643qvnMZJyrlkcUqOdGJs=
+
+Name: assets/graphics/menu/lock.png
+SHA1-Digest: Rw2+FpWacl3nK+MHDwmuvx8u32c=
+
+Name: assets/graphics/menu/icon_anim.png
+SHA1-Digest: RCuATMz/lHSNagEOBxz494QOolU=
+
+Name: assets/graphics/menu/race.png
+SHA1-Digest: jAS+9f1mZvvWGwYQAzUPiUR7Qbw=
+
+Name: assets/graphics/cars/Koenigsegg_Agera_R_Detail.png
+SHA1-Digest: 7RM/2mZM0CAETmShJ0xOwsjfx2s=
+
+Name: assets/graphics/indicators_large.png
+SHA1-Digest: AfCz3eeObJOWc2Gyuj3GK13qFJE=
+
+Name: assets/graphics/garage/upgrades.png
+SHA1-Digest: 0GOlENPMKd7DRf5DIV/LetwZXos=
+
+Name: assets/graphics/garage/upgrade_bar_empty.png
+SHA1-Digest: KnO6ffQ0tC30bcYgQw4aD0qFAtc=
+
+Name: assets/graphics/menu/pro_frame.png
+SHA1-Digest: 5jIQk97wXJqwsIRWbvx2Y6GrA3c=
+
+Name: assets/graphics/cars/Mazda_RX8_Wheel.png
+SHA1-Digest: xISX80q720Mjfxck48QxebfGum8=
+
+Name: assets/graphics/menu/main_menu_bg.jpg
+SHA1-Digest: TiUDspQF3P40O7n4064PnuUT/74=
+
+Name: assets/graphics/menu/crest1.png
+SHA1-Digest: Uw/X0PT4etSfd8koqzxYHUYC0qU=
+
+Name: assets/graphics/garage/garage_header.png
+SHA1-Digest: +dehXH9iOom5ftG/Un0v0Kt6xc4=
+
+Name: assets/graphics/cars/Porsche_911_Wheel.png
+SHA1-Digest: FXnojkx1LiBDcNnPxEUlHgIsc7c=
+
+Name: assets/graphics/garage/upgrade_frame.png
+SHA1-Digest: 6t88FW7/tvR9HbBD6710Kbvj+0U=
+
+Name: assets/graphics/cars/Dodge_Charger_Disk.png
+SHA1-Digest: 0D0B/YlcjQ4fOKr3b0qHhTN34qo=
+
+Name: assets/graphics/starL.png
+SHA1-Digest: bSEYfJEI/jJpdO3hBeY9BqehVz8=
+
+Name: assets/graphics/cars/Audi_RS6.png
+SHA1-Digest: ubaJDB99JNYN9aV+kFImQ6lb7Zk=
+
+Name: assets/graphics/cars/Ford_GT_GeigerCars_HP790_Wheel.png
+SHA1-Digest: BPOeXM0wxheAB2XaMHYCGVhk4KM=
+
+Name: assets/graphics/menu/main_menu_button.png
+SHA1-Digest: PCWDT3IL5FB82wHZS3dWhvPQ2XI=
+
+Name: assets/graphics/cars/Bugatti_Veyron_16_Detail.png
+SHA1-Digest: V8nHyOLYvbVPQzVcGDtAddcYXAU=
+
+Name: assets/graphics/menu/trophy_silver.png
+SHA1-Digest: QQ92zPoUeaQItCmYkkLe+N7BOBo=
+
+Name: assets/graphics/cars/Nissan_Skyline.png
+SHA1-Digest: oxLnqlZAjZWGKqWt2en1Fc0kpG8=
+
+Name: assets/digital_italic.ttf
+SHA1-Digest: aGs1Gauz7EfJzkp0YkEPdGhhzJE=
+
+Name: assets/graphics/cars/BMW_E36.png
+SHA1-Digest: bu529C9WNdmmzWgBZ+5obkL5meI=
+
+Name: assets/graphics/cars/Brabus_700_Biturbo.png
+SHA1-Digest: 3XUNzcwH3vER82VDp04Zbt1R0DU=
+
+Name: assets/graphics/cars/MB_CLS_63_Detail.png
+SHA1-Digest: u1F3iWEdV7Phau/BJaOkKnaeaqw=
+
+Name: assets/graphics/menu/trophy_frame.png
+SHA1-Digest: kAxNaTzaDqz6jTuqN1AKpWb0BnQ=
+
+Name: assets/graphics/cars/Corvette_ZR1.png
+SHA1-Digest: kAmeY82ROR1Q1+DLHLyqVrzZZBM=
+
+Name: assets/graphics/menu/icon_awards.png
+SHA1-Digest: XTl4eDJtpaPmaRfTx0YbIIDAOD4=
+
+Name: assets/graphics/cars/Mercedes_Benz_SLR_McLaren_Hamann.png
+SHA1-Digest: Pvr5pEitgiPO59XIJpF9RbL4smU=
+
+Name: assets/graphics/cars/Alfa_Romeo_8C_Competizione_Detail.png
+SHA1-Digest: 6y+PVkIUgLUym0TQ2LMeng0lxVA=
+
+Name: res/layout/toast.xml
+SHA1-Digest: eeRugfL8gWRIaOWaou+m7XJhYrM=
+
+Name: assets/graphics/cars/Lamborghini_Murcielago_Disk.png
+SHA1-Digest: seQgGL43WZ7h70V9NbP3fUm9dVM=
+
+Name: assets/graphics/cars/Maserati_MC12_Corsa.png
+SHA1-Digest: nbyrNewmCQL38mmlb6YEW8Y4bS8=
+
+Name: res/drawable-hdpi/icon.png
+SHA1-Digest: AGEoFSEtnD+ydJpeNF18tPwHbG4=
+
+Name: res/drawable-ldpi/facebook_icon.png
+SHA1-Digest: lPHIYoqZ+2OpY0LPumyDkUdNdoc=
+
+Name: assets/graphics/cars/Toyota_Supra_Disk.png
+SHA1-Digest: jy02IqVxWTYWJ0eSte6BwZeD9fs=
+
+Name: assets/graphics/cars/Lotus_Elise_111s_Detail.png
+SHA1-Digest: uqeptb89ddGSDyksgiQZ/LtxZoo=
+
+Name: assets/graphics/menu/name.png
+SHA1-Digest: o5QbAkAUN88XskrqJTOwSVRVsVQ=
+
+Name: res/layout/tapjoy_featured_app_web_view.xml
+SHA1-Digest: dKO2zleBr51/+dSGnwQ+5yBvDcs=
+
+Name: assets/graphics/menu/crest2.png
+SHA1-Digest: 7OqzvI5cJb8j/SGOsjUV9jiuNXs=
+
+Name: assets/graphics/cars/Saleen_S7_Detail.png
+SHA1-Digest: BSFysYb58cV0dZ5BO21vZnnqrGk=
+
+Name: assets/graphics/garage/pres.png
+SHA1-Digest: 2jxgLKTzZ7epA8HiiWjEiBXJ2AU=
+
+Name: assets/graphics/cars/Lamborghini_Gallardo.png
+SHA1-Digest: RelZMjtQySZ9ppl8RL1gAvad0qg=
+
+Name: assets/graphics/mincar1.png
+SHA1-Digest: 4koNsZlr8T08Bf+nvEyOWCdJK1c=
+
+Name: assets/graphics/cars/Gumpert_Apollo_Sport_Detail.png
+SHA1-Digest: 7xR83+l5riMqKesNYjS1fs1cvAM=
+
+Name: assets/graphics/cars/Nissan_Skyline_Disk.png
+SHA1-Digest: VdjEELg0Jq8duPIdw09FxsBwR9s=
+
+Name: res/drawable-hdpi/facebook_icon.png
+SHA1-Digest: V2LEVKYg2PFb0nYYOBnKjQliS/s=
+
+Name: assets/graphics/cars/Gumpert_Apollo_Sport_Wheel.png
+SHA1-Digest: xiLixj5olat18N8gHBbv86Uq8bw=
+
+Name: assets/graphics/cars/Enzo_Ferrari_Disk.png
+SHA1-Digest: 2rre7ONf6M9hVhq61Qw3Q73dK+g=
+
+Name: assets/graphics/cars/Lamborghini_Murcielago.png
+SHA1-Digest: 95vT8Is72zwUbksZYdXOyuFJGq4=
+
+Name: assets/graphics/cars/Dodge_SRT.png
+SHA1-Digest: gIJTvN2a2hz3dHpbe1ZUJ+z7COc=
+
+Name: assets/graphics/garage/paint.png
+SHA1-Digest: OQEgG/L6j08QmW6aLq5cfvO/hM4=
+
+Name: assets/graphics/cars/Toyota_Supra_Detail.png
+SHA1-Digest: XCkAfMqgO3ihztej3Dba4PNYH/I=
+
+Name: assets/graphics/cars/SSC_Ultimate_Aero_TT_Detail.png
+SHA1-Digest: g6pLabWK0as6LR79Ej3ceDLP4yk=
+
+Name: assets/graphics/menu/distance_switch_on.png
+SHA1-Digest: F/zC8BYiADMZZYEfyCoCHH5gCBg=
+
+Name: assets/graphics/cars/Honda_S2000.png
+SHA1-Digest: Veowk9VB3ZAzs5ef2dNK5g/dgMA=
+
+Name: assets/graphics/cars/Dodge_Challenger_440_Disk.png
+SHA1-Digest: c5gqnsBx98nQIw7ThtIoXxmA4rw=
+
+Name: assets/graphics/cars/Hennessey_Venom_GT_Wheel.png
+SHA1-Digest: ivxZtojv7ymiVlQDOdnEWpnvKzc=
+
+Name: assets/graphics/menu/online_header.png
+SHA1-Digest: tH/MdF6+nq63Lh0lBSLyRs8p1iw=
+
+Name: assets/graphics/cars/Aston_Martin_One_77_Wheel.png
+SHA1-Digest: ILfWycLbvds5eyK/k04doPXl1NQ=
+
+Name: assets/graphics/cars/Viper_SRT_10.png
+SHA1-Digest: B1Y8H0cZhjXxyzZSxRG4YGNVkus=
+
+Name: assets/graphics/cars/Mercedes_Benz_SLR_McLaren_Hamann_Disk.png
+SHA1-Digest: HP4g3IqG1qIaiCYz5H51A8u4XuA=
+
+Name: assets/graphics/tachometer7.png
+SHA1-Digest: QeYXV520pIeEWzdk9DXY9df4tms=
+
+Name: assets/graphics/menu/icon0.png
+SHA1-Digest: wobscWb4pmB4rb2nTpYZdGOBKSs=
+
+Name: assets/graphics/garage/frame.png
+SHA1-Digest: lm4i0aBALW/mSj/01y63Om6b8XU=
+
+Name: assets/graphics/cars/Ferrari_599_GTO_Detail.png
+SHA1-Digest: 0BwoqQSPma2Sw7scgUrra144Kko=
+
+Name: assets/graphics/garage/garage_stats.png
+SHA1-Digest: IM2d9F6l1Uoszg+bj9gibmQS/ng=
+
+Name: assets/graphics/menu/icon_race_offline.png
+SHA1-Digest: BA4Sg5cnAFbKT52frUCCOZ5HASo=
+
+Name: res/layout/racemenu.xml
+SHA1-Digest: lBYqB3Hwxf11E44fEnXJXD+fMAs=
+
+Name: assets/graphics/cars/Ford_RS200_Evolution_Wheel.png
+SHA1-Digest: VrbHp5gZhOcw+NcBWo0u8GySjUQ=
+
+Name: assets/graphics/cars/Viper_SRT_10_Disk.png
+SHA1-Digest: oydjMC4W7P0eb3TH222Ya8R8x3M=
+
+Name: assets/graphics/cars/Pontiac_Firebird.png
+SHA1-Digest: TCvAZLnpmKjJToFlcOwv8W4irw0=
+
+Name: assets/graphics/menu/stats_graphic.png
+SHA1-Digest: q6Jmey2Wnau/YUxG4NyE2e36kV4=
+
+Name: assets/graphics/menu_bg.jpg
+SHA1-Digest: wqmydJ7710YUf7lpXk08Ux+lgyg=
+
+Name: assets/graphics/tachometer6.png
+SHA1-Digest: oyJ5rlcp71yzPAPvHCFgCr1LuAI=
+
+Name: assets/graphics/indicators.png
+SHA1-Digest: 5xgGMHCRzDcm4p8zU4kf15wVugQ=
+
+Name: assets/graphics/cars/Bugatti_Veyron_16_Disk.png
+SHA1-Digest: 44HhnKXcXLHVmPID/OJ9E4OcjD8=
+
+Name: assets/graphics/tachometer9.png
+SHA1-Digest: 15BZ56pUYoffmkxfxUJUve4rzCE=
+
+Name: assets/graphics/garage/frame_funds.png
+SHA1-Digest: SP/jDgYU4woVCml+Fh54XIcgCjg=
+
+Name: assets/graphics/cars/Viper_SRT_10_Wheel.png
+SHA1-Digest: 7Aj0nwkzXylQ0j+YonsKUCKz5Wk=
+
+Name: assets/graphics/cars/Ford_RS200_Evolution_Disk.png
+SHA1-Digest: E5oHmeXKX8c1o2KIhM6sgawmwIs=
+
+Name: assets/graphics/cars/Audi_R8_V10_MTM_Biturbo_Wheel.png
+SHA1-Digest: AEWazKrMTZZX5to+5Pl4XKI1XUE=
+
+Name: assets/graphics/finish.png
+SHA1-Digest: HbTGNPwkGOtK+TQ/r+3Wqe6BfuQ=
+
+Name: assets/graphics/cars/Lamborghini_Murcielago_Wheel.png
+SHA1-Digest: mVQx0hqG7W5iVfnT08yE7s67lJA=
+
+Name: assets/graphics/cars/Lancer_Evo_X_Wheel.png
+SHA1-Digest: olDS7HtOGA83MJS1DXBkQMFmq3c=
+
+Name: assets/electrotome.ttf
+SHA1-Digest: DIuqdw7AhPBUfYRvsRQUj/VmRPA=
 
 Name: resources.arsc
-SHA1-Digest: B0SvZfg+fePnw3+KrND67PJhkMo=
+SHA1-Digest: DVpGqwr9knsnVwwn/nqShIM+SkI=
 
-Name: res/drawable/tab_profiles_selected.png
-SHA1-Digest: I/P8pZMVMlbnqwbaYviMIubJSas=
+Name: assets/graphics/cars/Lamborghini_Gallardo_Wheel.png
+SHA1-Digest: E6BSntu8Tv3/B+HNF9dmJv1zWKw=
 
-Name: res/layout/widget.xml
-SHA1-Digest: D01fXnEWcX0Ua2WKNcFOxj+6TKI=
-
-Name: res/drawable/tab_about_deselected.png
-SHA1-Digest: r0zjHVahKE11XkrRZ3J740wJuSA=
-
-Name: res/drawable/thumb_normal.png
-SHA1-Digest: F6R4/JE7YjvcfB4Q17eVPOcNJ94=
-
-Name: res/drawable-hdpi/tab_about_deselected.png
-SHA1-Digest: BxIKFPNxIMfWN7QEi1dxkvFGGcE=
-
-Name: res/drawable/widgetback_clear.9.png
-SHA1-Digest: Hu5uKm16PHtYcgAOE/P67jnKIhs=
-
-Name: res/layout/widget_blue.xml
-SHA1-Digest: /92P9hXRzJbvTZvzCS6J3MLewLw=
+Name: assets/graphics/garage/upgrade_bar_filled.png
+SHA1-Digest: S15ibal7nhbCpgMB/epxvIQQehA=
 
 Name: AndroidManifest.xml
-SHA1-Digest: DSgS8fGnqFTZsMaQHTjVcTv2G8s=
+SHA1-Digest: LfaH4uO0QI11vRw4Zi8W+SNFAdY=
 
-Name: res/drawable-hdpi/welcome.png
-SHA1-Digest: 7+BhOasHW8D9NG4RFiRitHgV7kg=
+Name: assets/graphics/panel.png
+SHA1-Digest: ywjyx3AevzumOeBd7GPkVbKXtYQ=
 
-Name: res/drawable-hdpi/thumb_normal.png
-SHA1-Digest: B9RAhIaHspwpBWuVG6D2XVzbuc4=
+Name: assets/graphics/cars/Alfa_Romeo_8C_Competizione_Wheel.png
+SHA1-Digest: ariz67G5+RTTwImvabgxEF6KUf8=
 
-Name: res/layout/profiles.xml
-SHA1-Digest: fcDB0JXEKR14QBwCvy0vZXNiV7s=
+Name: assets/graphics/cars/Enzo_Ferrari_Detail.png
+SHA1-Digest: Nfaelxr3pwl92kINM4POtWmdDRQ=
 
-Name: lib/armeabi/libspeedup.so
-SHA1-Digest: TCuqZfGHWx6AMYFn4Kt8iZltEeI=
+Name: assets/graphics/cars/Carrera_GT_Disk.png
+SHA1-Digest: nGvbR9sDmXaI0K5m0EBfsOV7ImI=
 
-Name: res/drawable-hdpi/tab_main_selected.png
-SHA1-Digest: f70UEN96YTpWgzg1NvwVJOpF45k=
+Name: assets/graphics/cars/Golf_GTI_Wheel.png
+SHA1-Digest: TmKGaOgO6nx+C1e+jXMIu593+d8=
 
-Name: res/drawable/tab_info_deselected.png
-SHA1-Digest: K8piEmy6yczOKZ4hLbnWnLa8lNk=
+Name: assets/graphics/road/crack2.png
+SHA1-Digest: bKhA1lk+aOAmsIVHtMcao8yOCAk=
 
-Name: res/drawable/clipboard.png
-SHA1-Digest: SIiEI6ejmJ4TrGnIS3iwBPvcbBQ=
+Name: assets/graphics/cars/Ford_Mustang_429_Detail.png
+SHA1-Digest: eYcU0ZsoY9yKFzTd0cgiXrAXpmw=
 
-Name: res/layout/chooserfailsafe.xml
-SHA1-Digest: b3Ngt45pwtfYdrD6hrA381qXbec=
+Name: assets/graphics/cars/Nissan_GTR_Wheel.png
+SHA1-Digest: c4LkTVBzaS9CRPcGyYOJquQLmsM=
 
-Name: res/drawable-hdpi/tab_advanced_deselected.png
-SHA1-Digest: mbJQha/dkOfLJzV8l+2qmNIqpcQ=
+Name: assets/graphics/cars/Dodge_SRT_Disk.png
+SHA1-Digest: 8kZEx6rjH7WzTqifPF5UG6BgUsI=
 
-Name: res/layout/widgetconfig.xml
-SHA1-Digest: iF6WVmuCjj1xDYiWQogrWJcl3+A=
+Name: assets/graphics/cars/Renault_Clio_Wheel.png
+SHA1-Digest: h+mRO+laNLX2i1+/yWJjernpYUk=
 
-Name: res/drawable/tab_advanced_selected.png
-SHA1-Digest: xnUzHQ/Giv29P5a48ke7utHnuXM=
+Name: assets/graphics/menu/pro_league.png
+SHA1-Digest: X5cIPo7A48XjEMsK1nPevyBYbvA=
+
+Name: assets/graphics/cars/Carrera_GT_Wheel.png
+SHA1-Digest: ju12bP43lLoIhcMv/SKrMFtTu+Q=
+
+Name: assets/graphics/cars/Honda_Integra_Disk.png
+SHA1-Digest: XUn6XQ858hLaZMDeDdtjpSRXOtI=
+
+Name: assets/graphics/menu/distance_switch_off.png
+SHA1-Digest: rFiJUFCpFiofvJtg0ONyjaPWbz4=
+
+Name: assets/graphics/garage/cp_point.png
+SHA1-Digest: X98wbInz6AX1/2JmHDsOkauo+FE=
+
+Name: assets/graphics/nitro.png
+SHA1-Digest: 8SeZMHSOX9y7uI/9G/Els3HS4ok=
+
+Name: assets/graphics/garage/garage_sell.png
+SHA1-Digest: 2O4ZMUsNkUdgtFY75pv/lpiDbe8=
+
+Name: assets/graphics/cars/Alfa_Romeo_8C_Competizione_Disk.png
+SHA1-Digest: 77t3pMAAKOs1kFAIunSVgeq8rY0=
 
 Name: classes.dex
-SHA1-Digest: vzim0dwMEDySrtdhMnEDKI737yg=
+SHA1-Digest: c3SIPvf8petWX5AwwqC0KcuUoFY=
 
-Name: res/drawable/tab_profiles_deselected.png
-SHA1-Digest: f4x0nzLb58LS3tSE3IjdJaFtVNQ=
+Name: assets/graphics/cars/9ff_GT9_Detail.png
+SHA1-Digest: jSwM/115KsNbj+/WOMLa8DDopHc=
 
-Name: res/layout/profileedit.xml
-SHA1-Digest: ojbDP9gDEOO6XQsPWfQwn8qyFsk=
+Name: assets/graphics/cars/MB_CLS_63.png
+SHA1-Digest: 5w9MTxiSM8oM5RDzn5MLmz0q/Xk=
 
-Name: res/layout/cupcakeprofiles.xml
-SHA1-Digest: RaoiWOvd8dWnvqANN3Iy9DkQjGE=
+Name: assets/graphics/cars/Alfa_Romeo_GT_Disk.png
+SHA1-Digest: Pjva4goNBbM+rNIXnGOx3Q/WwsQ=
 
-Name: res/drawable/notify_charge.png
-SHA1-Digest: 38i8vWwnqIZWtS2lMPPj20yyZFs=
+Name: assets/graphics/cars/Ford_RS200_Evolution.png
+SHA1-Digest: bDb5PAo5imhiZCPkpppPLz+dHME=
 
-Name: res/drawable-hdpi/tab_profiles_selected.png
-SHA1-Digest: UpSSVVhuNZF/3C36zz42DuU06kQ=
+Name: assets/graphics/menu/icon2.png
+SHA1-Digest: QBnAaWIQTovLgFGBQ9s4hchXa6o=
 
-Name: res/drawable/thumb.xml
-SHA1-Digest: PcD1n2maIxQtIOHTe8TM3DzO4K4=
+Name: assets/graphics/menu/cr.png
+SHA1-Digest: kXO9qa9WFtZf3Was1RLJwmUy6mw=
 
-Name: res/drawable-hdpi/tab_info_deselected.png
-SHA1-Digest: iSlmgtYUSjTqDjV3YSSO+ntc2aA=
+Name: assets/graphics/menu/crest3.png
+SHA1-Digest: ys+T5bsROn5LlTK+GhWPK0AR/RU=
 
-Name: lib/armeabi/libnative.so
-SHA1-Digest: 4/+QdSqLcRW6VSst9R/4FOo9q+Q=
+Name: assets/graphics/cars/Ford_GT_GeigerCars_HP790_Detail.png
+SHA1-Digest: DZ4EVSaZyYQFIgQWrpVXd0opzXE=
 
-Name: res/drawable/icon.png
-SHA1-Digest: VsO8gdWWdlN5D6ekvUpewJFVA/A=
+Name: assets/graphics/cars/Mustang_Cobra_Detail.png
+SHA1-Digest: cvrQc2D2tbxMOYrwhBQfPrJnUak=
 
-Name: res/drawable/widgetback.9.png
-SHA1-Digest: UxA1REJAteIt0d5MslMQWzZAFHo=
+Name: assets/graphics/cars/Mazda_RX8.png
+SHA1-Digest: NIoz1M9pCFjjN8pUFWhomNyWgyI=
 
-Name: res/drawable/progress_red.xml
-SHA1-Digest: XYwwJUwa3Ogmi5C5XHULFirvo3E=
+Name: assets/graphics/cars/Bugatti_Veyron_16_SS.png
+SHA1-Digest: drCXitqzBFwWiR8pfBh1DihuAwo=
 
-Name: res/layout/chooserbattery.xml
-SHA1-Digest: yRsgClk5SS1UlssEZtqfRk41UTc=
+Name: assets/graphics/cars/Honda_NSX_Type_R.png
+SHA1-Digest: X2CCfLqEt/zz8AXSU77OpS7HvVg=
 
-Name: res/drawable/tab_about.xml
-SHA1-Digest: rN/XTmdDM4F6LV+G3cgDgFdz16A=
+Name: assets/graphics/road/shadow_small.png
+SHA1-Digest: lsVLt0StSqRkaTTvWURRRHILA6Y=
 
-Name: res/xml/widget.xml
-SHA1-Digest: fMIeRB4BZELPx6MR6mzbLmnf57k=
+Name: assets/graphics/poweranimation.png
+SHA1-Digest: p5r0K/dybYnXCJ5n0YrIQ4Xctss=
 
-Name: res/drawable/widgetback_green.9.png
-SHA1-Digest: 29w+CAycJIptX7kLkCX1VUwyzwI=
+Name: assets/graphics/cars/BMW_E36_Wheel.png
+SHA1-Digest: 3wcQJylX8FmUlw+svfD+8zpN3Gk=
 
-Name: assets/legacy
-SHA1-Digest: ynH1gn+uvrEpJ3RzDbMNjifYaHU=
+Name: assets/graphics/cars/Alfa_Romeo_GT_Wheel.png
+SHA1-Digest: Rot0S1M6reXv8Cpiezbb6wSlxTk=
 
-Name: res/drawable-hdpi/tab_info_selected.png
-SHA1-Digest: 71r7XzpjxHKK9XFFpnnhLllA5iU=
+Name: assets/graphics/starD.png
+SHA1-Digest: PHOuvZbrCHMHu7HpWUrMG9rwaZQ=
+
+Name: assets/graphics/garage/palette.png
+SHA1-Digest: XcfsXohu/rEryVcJWQylpzR8QOQ=
+
+Name: assets/graphics/menu/trophy_gold.png
+SHA1-Digest: 4X+ovwdh0YXVVjscuL8uJBYv2ow=
+
+Name: assets/graphics/cars/SSC_Ultimate_Aero_TT_Disk.png
+SHA1-Digest: xCXa+jjzOJmfJOVd+ZrxeWsDJmc=
+
+Name: assets/graphics/garage/bar_edge_lt.png
+SHA1-Digest: Cpm+MqnvrAsmAwW0a+1JT9RASaM=
+
+Name: assets/graphics/menu/hint.png
+SHA1-Digest: 0y+W9IhGsRbuYLfP1opSA6uqGYs=
+
+Name: assets/graphics/cars/Callaway_C16.png
+SHA1-Digest: X1DEuxMWIRjA1jE+EyiA3W8zcZ0=
+
+Name: assets/graphics/road/wire2.png
+SHA1-Digest: ZHkXfHxv1A4/NesZV7LuqAeygoc=
+
+Name: assets/graphics/garage/garage_remove.png
+SHA1-Digest: xZ1PauiDs4lQ+1VZfGsHjldS7gM=
+
+Name: assets/graphics/garage/line.png
+SHA1-Digest: 7Vkf3rQ6zyGqnAEnSgAPgGAUfzI=
+
+Name: res/drawable-ldpi/icon.png
+SHA1-Digest: yyeFawcVKMdG6dkhWIRnmGLvZVM=
+
+Name: assets/graphics/cars/Audi_R8_V10_MTM_Biturbo_Detail.png
+SHA1-Digest: MULi5tRteip2zGay03BWbuB2aFg=
+
+Name: assets/graphics/cars/9ff_GT9.png
+SHA1-Digest: b+3wqjvCuw2rYPrhL+ySRoP28w0=
+
+Name: assets/graphics/cars/Toyota_Supra.png
+SHA1-Digest: 7yTNodaeeK4q0Tk6HL8rSCNlKWY=
+
+Name: assets/graphics/cars/Pontiac_Firebird_Wheel.png
+SHA1-Digest: Awn9EwxJp2vQXq4QuGB2ZcIhjf4=
+
+Name: assets/graphics/cars/Koenigsegg_Agera_R_Wheel.png
+SHA1-Digest: S+e4NWNeKU0r+zD++tOA+f9lLQA=
+
+Name: assets/graphics/cars/Honda_Integra_Detail.png
+SHA1-Digest: aqSC7d/Z52aTd/MD/Uqo3uTH4ok=
+
+Name: assets/graphics/menu/pro_frame_locked.png
+SHA1-Digest: A02MYF2M1n5cNRGVf3i5V8a1oqA=
+
+Name: assets/graphics/menu/arrowUP.png
+SHA1-Digest: wYCn4hyTpQzqqa8Z4wJdM6rCPnQ=
+
+Name: assets/graphics/cars/Dodge_SRT_Detail.png
+SHA1-Digest: b6bJiy47T+OTqsbIHzbaY3uApSc=
+
+Name: assets/graphics/cars/Nissan_Skyline_Detail.png
+SHA1-Digest: fjmvHsetJ7v3ngcVrs5SgB4Wza4=
+
+Name: assets/graphics/cars/Audi_RS6_Disk.png
+SHA1-Digest: 5Oq3NuLSWMLZhSM0AHJRCe6E/KQ=
+
+Name: assets/graphics/cars/Dodge_Charger_Wheel.png
+SHA1-Digest: fzfj4cHF3eKGOxDRZl3dKNkHI94=
+
+Name: assets/graphics/cars/Mustang_Cobra.png
+SHA1-Digest: huLcqR5AAsbQwCszeo4a4NzuowY=
+
+Name: assets/graphics/garage/garage_buy.png
+SHA1-Digest: 72Bd7cYZq9kCHF/cAADMwlyl0XM=
+
+Name: assets/graphics/cars/Mustang_Cobra_Wheel.png
+SHA1-Digest: Awn9EwxJp2vQXq4QuGB2ZcIhjf4=
+
+Name: assets/graphics/cars/Nissan_GTR_Detail.png
+SHA1-Digest: bnetY15Mt2JTpk4+c5CLO7Kqm0s=
+
+Name: assets/graphics/road/crack3.png
+SHA1-Digest: +931Qj/gLLxMfHoM/cyYZm5yXYM=
+
+Name: assets/graphics/cars/MB_CLS_63_Disk.png
+SHA1-Digest: eRfdUQG/KtRCyTO+z4kCPkGcmFM=
+
+Name: assets/graphics/start.png
+SHA1-Digest: QjytSmYAaO7fs9bK/yv5Jw4EBZw=
+
+Name: assets/graphics/cars/Callaway_C16_Disk.png
+SHA1-Digest: Q/KOWvaWndz0pCsEiioebN9+7/s=
+
+Name: assets/graphics/cars/Nissan_Skyline_Wheel.png
+SHA1-Digest: CKsuf1UXX96n2ELRwXLBzXGmrMQ=
+
+Name: assets/graphics/cars/Ford_GT_GeigerCars_HP790.png
+SHA1-Digest: QntcpAMNi875aay5RTE2nHRUfu8=
+
+Name: assets/graphics/cars/Ferrari_599_GTO_Wheel.png
+SHA1-Digest: XO8QXj3JwQPkdGYIHZzUcHKjvYc=
+
+Name: assets/graphics/cars/Maserati_MC12_Corsa_Wheel.png
+SHA1-Digest: g7u+iSA0vuk19bNm9vi/zpkyVnw=
+
+Name: assets/graphics/cars/Enzo_Ferrari.png
+SHA1-Digest: otB8R0uJpQEFvrNy/mn1TDlJ/Mg=
+
+Name: assets/graphics/cars/Saleen_S7_Wheel.png
+SHA1-Digest: +ilGyolklhAE+KmBz+SllCf89MY=
+
+Name: assets/graphics/garage/dropdown.png
+SHA1-Digest: h61SmDuU2f+fD2I9ruIawWS/c8k=
+
+Name: assets/graphics/cars/Lancer_Evo_X.png
+SHA1-Digest: /V0zRmNZN37xspBuhPfVcjzTdGM=
+
+Name: assets/graphics/cars/Viper_SRT_10_Detail.png
+SHA1-Digest: Dk0V6Y5+HaBDulRCdhLShYFQDP0=
+
+Name: assets/graphics/cars/Koenigsegg_Agera_R_Disk.png
+SHA1-Digest: zp0QTir5h+MUyoL43b54joipBaU=
+
+Name: res/raw/race_8_4fun.ogg
+SHA1-Digest: E5+HrjxaRzG1sEiJvYjs0Sl6oVc=
+
+Name: assets/graphics/cars/Shelby_GT500_Wheel.png
+SHA1-Digest: yOM9kqE3HPr2UBfqHMo329VbOSA=
+
+Name: assets/graphics/cars/Bugatti_Veyron_16.png
+SHA1-Digest: y5aJktLYxi2V8g5GcjX2WOdpI00=
+
+Name: assets/graphics/garage/race_button.png
+SHA1-Digest: 0iGJvf+ZG1UXyTHtLEDUTWqY4zI=
+
+Name: assets/graphics/cars/Honda_NSX_Type_R_Wheel.png
+SHA1-Digest: se2Ao6lWE7Ofn/V10D7AYKPM4gA=
+
+Name: assets/graphics/garage/garage.jpg
+SHA1-Digest: sjCwQ86lpPZ2NlkVs0vixQ57ZEc=
+
+Name: assets/graphics/cars/BMW_E36_Disk.png
+SHA1-Digest: EA+ba+Q8dzUtg18aIZjYCxPsy08=
+
+Name: assets/graphics/cars/Bugatti_Veyron_16_Wheel.png
+SHA1-Digest: WmUr5zQ3KkWDxo4p7W1HdTbmHSw=
+
+Name: assets/graphics/arrow.png
+SHA1-Digest: t98y613ASOZnvV3gWv8xHDRV50Q=
+
+Name: assets/graphics/menu/hint_cars.png
+SHA1-Digest: UwYDRTstSFE/Ms5U87zj89EVePc=
+
+Name: assets/graphics/cars/Impreza_P1.png
+SHA1-Digest: R66bHc8xj6IaKh3ZgRYADyslntc=
+
+Name: assets/graphics/cars/Ford_Mustang_429_Wheel.png
+SHA1-Digest: ei1t9I1/CKtcWWPREDjwShRpcYQ=
+
+Name: assets/graphics/wheelSpin.png
+SHA1-Digest: /Hlh74pgw+gFqNJvUjlLsw8soR0=
+
+Name: assets/graphics/cars/Lancer_Evo_X_Detail.png
+SHA1-Digest: Xj8O6YXYV/SGlHQ/p6tU89cwbS0=
+
+Name: res/raw/turbo.ogg
+SHA1-Digest: 0rAJfmkT2RraELBzjm5GwgKyGU0=
+
+Name: assets/graphics/road/spot.png
+SHA1-Digest: HuvLZjNzK4nlaMO1fr49US/lem4=
+
+Name: assets/graphics/cars/Impreza_P1_Wheel.png
+SHA1-Digest: g2JC0tIo3MiPEU7x3Np7haQTQDs=
+
+Name: assets/graphics/menu/tuning.png
+SHA1-Digest: whk4DkBSRswgQkXOA2CVLGujOok=
+
+Name: assets/graphics/cars/Lancer_Evo_X_Disk.png
+SHA1-Digest: pMh0wyS46BwAw3+fxpQz7FUD9yk=
+
+Name: assets/graphics/cars/MB_CLS_63_Wheel.png
+SHA1-Digest: 5J0ITstXwKGwSLAyscrbL630ijk=
+
+Name: assets/graphics/menu/stats_header.png
+SHA1-Digest: ezU0cyJB2DBwPcBDf1+q7CqIerE=
+
+Name: assets/graphics/cars/Honda_NSX_Type_R_Detail.png
+SHA1-Digest: bRO8GJpWZEbN7dI7mz2VFRVtsSU=
+
+Name: assets/graphics/waiting.png
+SHA1-Digest: 9sBrNXrd6Zjj6fzzNHhCDrowpVw=
+
+Name: assets/graphics/cars/Maserati_MC12_Corsa_Detail.png
+SHA1-Digest: he3hXymIGyi+OnHCpz1BomFU0oU=
+
+Name: assets/graphics/cars/Lamborghini_Gallardo_Detail.png
+SHA1-Digest: u/Aekx54pAEoN5BTvOci0S830B4=
+
+Name: assets/graphics/cars/Mustang_Cobra_Disk.png
+SHA1-Digest: onWrKaOV0aGH6AdVh/Al/MSrguY=
+
+Name: assets/graphics/menu/main_menu_div.png
+SHA1-Digest: Hx/nS0tNv0B3Yy6uofKZBdhdLm0=
+
+Name: assets/graphics/menu/icon_race_pro.png
+SHA1-Digest: DU/8RYku2NfYrA4VTiuhJhlO3Vw=
+
+Name: res/raw/engine1.ogg
+SHA1-Digest: E5+HrjxaRzG1sEiJvYjs0Sl6oVc=
+
+Name: assets/graphics/cars/Honda_Integra.png
+SHA1-Digest: vgx1KxcLv473k0nZITWGPLLt1Mw=
+
+Name: assets/graphics/cars/Aston_Martin_One_77_Disk.png
+SHA1-Digest: nI+nuA5hskNUfTvZkLIHY5Fl/wM=
+
+Name: assets/graphics/cars/Zonda_R_Detail.png
+SHA1-Digest: 3iDG9Lahr8McJjOkRr9k4YlVIC4=
+
+Name: assets/graphics/cars/Lamborghini_Gallardo_Disk.png
+SHA1-Digest: jjG+AfpnS9ed6jpLtjeC1w0jHeg=
+
+Name: assets/graphics/cars/Lotus_Elise_111s.png
+SHA1-Digest: d/y43HXlbPhBRF61IcqaQIMLU+0=
+
+Name: assets/graphics/cars/Hennessey_Venom_GT_Detail.png
+SHA1-Digest: xgdf571eZoEJRum7XMqMyj1lNZo=
+
+Name: assets/graphics/cars/Ferrari_599_GTO_Disk.png
+SHA1-Digest: jVz6snbEdU2QzDY9JSp9hL8/Gh0=
+
+Name: assets/graphics/cars/Renault_Clio.png
+SHA1-Digest: IUNdMz/ntVGWunCD6vJLQdDqehQ=
+
+Name: assets/graphics/menu/pro_icon_temp.png
+SHA1-Digest: zvITfcNJbj7OPPZdg+fDO98bVNA=
+
+Name: assets/graphics/nitroButtons.png
+SHA1-Digest: D1pA7pKUf7NmTmv+W4ys4F8YFdU=
+
+Name: assets/graphics/cars/BMW_M6_Disk.png
+SHA1-Digest: wP8p6vgmEg6p++1u8cmF3emqtdU=
+
+Name: assets/graphics/cars/SSC_Ultimate_Aero_TT.png
+SHA1-Digest: P3JEZtlU5gCgdi1gSZZNhuOlkZg=
+
+Name: assets/graphics/menu/icon1.png
+SHA1-Digest: zxEySxDMyMb5VbnuTXVgiUtDCH0=
+
+Name: assets/graphics/menu/icon_facebook.png
+SHA1-Digest: P+xS8FJummpW3CwvJU5PkQYFins=
+
+Name: assets/graphics/cars/Saleen_S7_Disk.png
+SHA1-Digest: +gqy0yMZIVipQjQg0X5maGUeB10=
+
+Name: assets/graphics/shiftDown.png
+SHA1-Digest: Db74rHhjdB36mKZitbleoYZVg7g=
+
+Name: assets/graphics/menu/scrollbar.png
+SHA1-Digest: zXimJanPI9J0BjsKBqkDBcDtlzM=
+
+Name: res/raw/engine0.ogg
+SHA1-Digest: XQABW4mb8NcXLEerbPCQl2xN1DU=
+
+Name: assets/graphics/cars/Hennessey_Venom_GT.png
+SHA1-Digest: X49tTkaBKMSTB0Ccl7djenmRrfQ=
+
+Name: assets/graphics/menu/infinity.png
+SHA1-Digest: 853i7O2n1kO/0X7xhe6RGC7q6mo=
+
+Name: assets/graphics/cars/Nissan_GTR.png
+SHA1-Digest: ofmdR0wGb2OkLgo48M2t9HR4Sy4=
+
+Name: assets/graphics/cars/Dodge_Charger.png
+SHA1-Digest: d+uha/uL6VVMpKQNLu2At/75eq0=
+
+Name: assets/graphics/cars/Mercedes_Benz_SLR_McLaren_Hamann_Wheel.png
+SHA1-Digest: j4ZRwwryEQVMbT/FXDniuFIZgM0=
 

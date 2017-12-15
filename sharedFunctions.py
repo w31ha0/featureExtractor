@@ -1,14 +1,15 @@
 from constants import *
 from featuresStruct import features
-import subprocess,re,traceback,sys
+from command import *
+import subprocess,re,traceback,sys,os
 
-def nGramsExtractor(apk):
+def nGramsExtractor(apk,family):
     name = apk.split('/')[-1]
     Sources = []
     Sinks = []
 
-    f = open("/home/ubuntu/featureExtractor/ngrams.txt","r")
-    f2 = open("/home/ubuntu/tools/flowdroid/SourcesAndSinks.txt","r")
+    f = open("ngrams.txt","r")
+    f2 = open(PROJECT_PATH+"tools/flowdroid/SourcesAndSinks.txt","r")
 
     sourcesinks = f2.readlines()
 
@@ -23,10 +24,15 @@ def nGramsExtractor(apk):
 		Sinks.append(payload)
 
     Sequences = {}
-    cmd = 'cd /home/ubuntu/tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /home/ubuntu/android-platforms --pathalgo contextsensitive'
+    cmd = 'cd '+PROJECT_PATH+'tools/flowdroid/ && java -Xmx12g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /root/FYP/android-platforms --pathalgo contextsensitive'
     print "\nCommand is " + cmd + "\n"
     try:
-        output = subprocess.check_output(cmd, shell=True)            
+        output = Command(cmd).run(capture=True,timeout=500)            
+        if output == "failed":
+            print "Moving apk to quarantine"
+            os.system("mv "+apk+" "+PROJECT_PATH+"quarantine/"+family+"/")
+            return False
+        output = '\n'.join(output)
         results = output.split('Found a flow to sink')
         for i in range(1,len(results)):
             sink = results[i].split('from the following sources:')[0][:-1]

@@ -79,8 +79,8 @@ def calculateCyclomaticComplexity(inputAPK,sh,startColumn):
     features["LOWEST_CYCLOMATIC_COMPLEXITY"] = lowestComplexity
     features["AVERAGE_CYCLOMATIC_COMPLEXITY"] = totalComplexity/counter
             
-    sh.write(START_ROW+17,0,"Cyclomatic Complexity")
-    sh.write(START_ROW+17,startColumn,str(complexity))
+    #sh.write(START_ROW+17,0,"Cyclomatic Complexity")
+    #sh.write(START_ROW+17,startColumn,str(complexity))
                 
 def calculateEdges(inputAPK):
     cmd = 'python ~/tools/vivano/androxgmml.py -i '+inputAPK+' -o out.xgmml'

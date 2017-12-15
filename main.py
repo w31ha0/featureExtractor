@@ -67,7 +67,8 @@ for path, subdirs, files in os.walk(dir_path):
             print "Skipping " + fullpath
             continue
         family = fullpath.split('/')[4]
-        os.system("mkdir /home/ubuntu/featuresOutput/"+family)
+        os.system("mkdir "+PROJECT_PATH+"featuresOutput/"+family)
+        os.system("mkdir "+PROJECT_PATH+"quarantine/"+family)
         print "Malware family: " + str(family)
         
         startTime = time.time()
@@ -98,12 +99,14 @@ for path, subdirs, files in os.walk(dir_path):
         parseDex(sh)
         calculateCyclomaticComplexity(apkfile,sh,startColumn)
         totalFilesTried += 1
-        if nGramsExtractor(apkfile):
+        if nGramsExtractor(apkfile,family):
             totalFilesSucceed += 1
+        else:
+            continue
         cleanup()
 
 
-        f = open("/home/ubuntu/featuresOutput/"+family+"/"+apkname+".txt","w+")
+        f = open(PROJECT_PATH+"featuresOutput/"+family+"/"+apkname+".txt","w+")
         for key, value in sorted(featuresStruct.features.iteritems()): 
             print key + " ::: " + str(value)
             f.write(key + " ::: " + str(value))
@@ -119,7 +122,7 @@ for path, subdirs, files in os.walk(dir_path):
             book.save("results.csv")
 
 timeTaken = time.time() - overallStartTime            
-stats = open("/home/ubuntu/featuresOutput/stats.txt","w+")
+stats = open(PROJECT_PATH+"featuresOutput/stats.txt","w+")
 print "Overall execution took " +str(timeTaken)+" seconds."        
 stats.write("Overall execution took " +str(timeTaken)+" seconds.")
 stats.write(str(totalFilesSucceed)+" out of "+str(totalFilesTried)+" files succeeded.")
