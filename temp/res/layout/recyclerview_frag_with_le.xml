@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/listview_frag_container" android:background="@color/transparent" style="@style/match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/kubrick_frag_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+        <View android:background="@drawable/kubrick_border_shadow_left" android:layout_width="15.0dip" android:layout_height="fill_parent" />
+        <View android:background="@drawable/kubrick_border_shadow_right" android:layout_width="15.0dip" android:layout_height="fill_parent" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@android:id/list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/empty_list_stub" android:layout="@layout/empty_state_stub" android:inflatedId="@id/empty_state_view" style="@style/match" />
+    <include layout="@layout/loading_and_error_inset" />
+</FrameLayout>

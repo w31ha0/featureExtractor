@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="ui.about.prefs.screen"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/label_debug" android:key="ui.about.debug.cat">
+        <Preference android:selectable="false" android:key="ui.about.debug" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/label_about">
+        <Preference android:title="@string/label_device" android:selectable="false" android:key="ui.about.device" />
+        <Preference android:title="@string/label_account" android:selectable="false" android:key="ui.account" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/label_diagnostics" android:key="ui.diagnosis">
+        <Preference android:title="@string/label_network" android:key="ui.diagnosis.network" />
+        <Preference android:title="@string/button_message_download" android:key="ui.diagnosis.download" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/label_pref_settings_category_legal">
+        <Preference android:title="@string/label_open_source_licenses" android:key="@string/settings_key_open_source_licenses" />
+        <Preference android:title="@string/label_pref_settings_privacy_policy" android:key="pref.privacy" />
+        <Preference android:title="@string/label_pref_settings_privacy_policy_cookies" android:key="pref.privacy.cookies" />
+        <Preference android:title="@string/label_pref_settings_legal_terms_of_use" android:key="pref.terms" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_padding" android:layout_marginTop="@dimen/text_padding" android:layout_marginRight="@dimen/content_padding" android:layout_marginBottom="@dimen/text_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/item_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/offline_profile_row_height" android:layout_margin="@dimen/content_padding">
+        <com.netflix.mediaclient.android.widget.AdvancedImageView android:layout_gravity="center" android:id="@id/profile_avatar" android:layout_width="@dimen/offline_profile_icon_width" android:layout_height="@dimen/offline_profile_icon_width" android:scaleType="centerCrop" />
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/profile_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/content_padding" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/item_content" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/offline_video_row_height">
+        <FrameLayout android:layout_width="@dimen/offline_video_icon_width" android:layout_height="@dimen/offline_video_row_height">
+            <com.netflix.mediaclient.android.widget.AdvancedImageView android:id="@id/box_shot" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <ImageView android:layout_gravity="center" android:id="@id/play_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_play_72" />
+            <ProgressBar android:layout_gravity="bottom" android:id="@id/video_progress" android:layout_width="fill_parent" android:layout_height="3.0dip" android:max="100" android:indeterminateOnly="false" android:progressDrawable="@drawable/cw_progress_bar" android:layoutDirection="ltr" style="?android:attr/progressBarStyleHorizontal" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/content_padding" android:paddingRight="@dimen/content_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:textDirection="locale" android:textAlignment="gravity" />
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:ellipsize="end" android:id="@id/download_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif-light" />
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:ellipsize="end" android:id="@id/download_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif-light" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/button_container" android:layout_width="40.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/show_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chevron_right" />
+            <com.netflix.mediaclient.ui.offline.DownloadButton android:layout_gravity="center" android:id="@id/download_button" android:layout_width="40.0dip" android:layout_height="40.0dip" app:showPrimaryMessages="false" app:showViewMyDownloads="false" />
+            <android.support.v7.widget.AppCompatCheckBox android:layout_gravity="center" android:id="@id/checkmark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

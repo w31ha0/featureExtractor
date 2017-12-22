@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/action_bar" android:background="?toolbarBackground" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/Toolbar.TitleText" app:subtitleTextAppearance="@style/Toolbar.SubtitleText" />
+    <View android:id="@id/action_bar_shadow" android:background="@drawable/shadow_black_to_trans" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+</LinearLayout>

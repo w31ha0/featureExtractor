@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netflix.mediaclient.android.widget.LoggingScrollView android:id="@id/search_results_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="?android:actionBarSize" style="@style/match">
+        <include android:id="@id/search_results_label_videos" android:visibility="gone" layout="@layout/search_results_section_header" />
+        <com.netflix.mediaclient.android.widget.StaticGridView android:id="@id/search_results_grid_view_videos" android:paddingTop="6.0dip" android:paddingBottom="8.0dip" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" style="@style/match" />
+        <include android:id="@id/search_results_label_people" android:visibility="gone" layout="@layout/search_results_section_header" />
+        <com.netflix.mediaclient.android.widget.StaticGridView android:id="@id/search_results_grid_view_people" android:paddingTop="6.0dip" android:paddingBottom="8.0dip" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" style="@style/match" />
+        <include android:id="@id/search_results_label_suggestions" android:visibility="gone" layout="@layout/search_results_section_header" />
+        <com.netflix.mediaclient.android.widget.StaticGridView android:id="@id/search_results_grid_view_suggestions" style="@style/match" />
+    </LinearLayout>
+</com.netflix.mediaclient.android.widget.LoggingScrollView>

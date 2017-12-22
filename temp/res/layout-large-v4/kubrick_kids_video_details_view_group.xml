@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.netflix.mediaclient.android.widget.TopCropImageView android:layout_gravity="center" android:id="@id/video_img" android:focusable="true" android:scaleType="centerCrop" android:adjustViewBounds="true" style="@style/match" />
+        <com.netflix.mediaclient.android.widget.TopCropImageView android:layout_gravity="center" android:id="@id/video_img_2" android:focusable="true" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignTop="@id/video_img" android:layout_alignBottom="@id/video_img" android:alpha="0.0" style="@style/match" />
+        <View android:background="@drawable/kubrick_character_hero_info_background" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignBottom="@id/video_img" />
+        <com.netflix.mediaclient.android.widget.PressAnimationFrameLayout android:id="@id/pressable_view_group" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/video_img" android:layout_alignBottom="@id/video_img">
+            <ImageView android:layout_gravity="center" android:id="@id/kubrick_play" android:layout_width="128.0dip" android:layout_height="128.0dip" android:src="@drawable/btn_play_default_normal" />
+        </com.netflix.mediaclient.android.widget.PressAnimationFrameLayout>
+        <RelativeLayout android:background="@drawable/bg_kids_download_button" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginEnd="24.0dip" android:layout_alignParentEnd="true">
+            <com.netflix.mediaclient.ui.offline.DownloadButton android:id="@id/video_details_download_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:showPrimaryMessages="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/kubrick_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/video_img" android:layout_marginStart="24.0dip">
+            <com.netflix.mediaclient.android.widget.AdvancedImageView android:id="@id/kubrick_hero_row_title_image" android:layout_marginBottom="10.0dip" style="@style/KubrickTitleImage" />
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:ellipsize="end" android:id="@id/video_details_title" android:layout_marginBottom="4.0dip" android:maxLines="2" style="@style/PrimaryText.Large" />
+            <include layout="@layout/kubrick_kids_basic_info_layout" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/video_details_indented_group" android:paddingTop="@dimen/kubrick_kids_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/kubrick_kids_content_padding" android:paddingEnd="@dimen/kubrick_kids_content_padding" />
+    <FrameLayout android:id="@id/video_details_footer" android:paddingTop="@dimen/kubrick_kids_season_spinner_padding_top" android:layout_width="fill_parent" android:layout_height="@dimen/seasons_spinner_height">
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_small" android:textStyle="bold" android:textColor="@color/kubrick_kids_text_color" android:ellipsize="end" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/similar_items_grid_view_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/kubrick_kids_label_similar_shows" android:maxLines="2" android:singleLine="true" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" android:layout_marginStart="24.0dip" />
+    </FrameLayout>
+</merge>

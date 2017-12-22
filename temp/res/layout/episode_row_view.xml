@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="top" android:id="@id/divider" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/episode_row_header_group" android:background="@drawable/selectable_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/episode_row_header_group2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/content_padding">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:paddingStart="@dimen/content_padding">
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_nano" android:id="@id/episode_badge" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" style="@style/SecondaryText.RedBadge" />
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/episode_row_number" android:singleLine="true" android:paddingEnd="@dimen/content_padding" style="@style/PrimaryText.Small" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:paddingStart="@dimen/content_padding">
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/episode_row_title" android:paddingBottom="@dimen/content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="false" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" style="@style/PrimaryText.Small" />
+                <ProgressBar android:id="@id/episode_row_progress_bar" android:layout_width="160.0dip" android:layout_height="2.0dip" android:layout_marginTop="@dimen/text_padding" android:layout_marginBottom="@dimen/content_padding" android:max="100" android:indeterminateOnly="false" android:progressDrawable="@drawable/episode_row_progress_bar" android:layoutDirection="ltr" style="?android:attr/progressBarStyleHorizontal" />
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:textColor="@color/grey90" android:id="@id/episode_row_synopsis" android:paddingTop="@dimen/double_padding" android:paddingBottom="@dimen/content_padding" android:layout_width="wrap_content" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" style="@style/SecondaryText.Micro" />
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:textColor="@color/disabled_text_color" android:id="@id/episode_time" android:paddingTop="@dimen/content_padding" android:paddingBottom="@dimen/content_padding" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" android:paddingEnd="@dimen/content_padding" style="@style/SecondaryText.Micro" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.netflix.mediaclient.ui.offline.DownloadButton android:id="@id/episode_row_download_button" android:layout_width="40.0dip" android:layout_height="@dimen/episode_row_primary_height" app:showPrimaryMessages="false" />
+        <ImageView android:id="@id/episode_row_play_button" android:background="@drawable/selectable_video_background_with_press" android:padding="@dimen/double_padding" android:visibility="gone" android:layout_width="@dimen/episode_row_primary_height" android:layout_height="@dimen/episode_row_primary_height" android:src="@drawable/icon_play_list" android:contentDescription="@string/accesibility_play_episode" />
+    </LinearLayout>
+</merge>

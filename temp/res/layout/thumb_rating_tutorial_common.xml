@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="@color/white" card_view:cardCornerRadius="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="450.0dip">
+            <include layout="@layout/thumb_rating_tutorial_banner" />
+            <TextView android:textSize="34.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/title_text" android:padding="@dimen/double_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rating_tooltip_title" android:fontFamily="sans-serif-light" />
+            <ImageView android:layout_width="219.0dip" android:layout_height="219.0dip" android:layout_margin="@dimen/double_padding" android:src="@drawable/rating_existing_user_graphic" />
+            <TextView android:textSize="@dimen/text_medium" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/body_text" android:padding="@dimen/content_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rating_tooltip_body" android:paddingStart="@dimen/double_padding" android:paddingEnd="@dimen/double_padding" />
+            <TextView android:textSize="@dimen/text_small_medium" android:textColor="@color/grey" android:gravity="center" android:id="@id/sub_body_text" android:padding="@dimen/content_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rating_tooltip_sub_body" android:paddingStart="@dimen/double_padding" android:paddingEnd="@dimen/double_padding" />
+            <View android:background="@color/offline_tutorial_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/double_padding" android:layout_marginTop="@dimen/moderate_padding" android:layout_marginRight="@dimen/double_padding" />
+            <com.netflix.mediaclient.android.widget.NetflixTextButton android:textSize="@dimen/text_medium" android:id="@id/close_button" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/content_padding" android:layout_marginTop="@dimen/moderate_padding" android:layout_marginRight="@dimen/content_padding" android:layout_marginBottom="@dimen/moderate_padding" android:text="@string/rating_tooltip_ok_button" android:maxLines="2" android:textAllCaps="true" style="@style/NetflixButton.Flat.Light" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/details_content_padding">
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:id="@id/video_details_episode_badge" android:background="@color/brand_red" android:paddingLeft="6.0dip" android:paddingTop="1.0dip" android:paddingRight="6.0dip" android:paddingBottom="1.0dip" android:singleLine="true" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" android:layout_marginEnd="10.0dip" style="@style/PrimaryText.Nano" />
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:id="@id/video_details_episode_title" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" style="@style/PrimaryText.Small" />
+    </LinearLayout>
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:ellipsize="end" android:id="@id/video_details_synopsis" android:layout_marginTop="@dimen/details_content_padding" android:maxLines="6" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" style="@style/PrimaryText.Small" />
+    <include layout="@layout/video_details_credits" />
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:ellipsize="end" android:id="@id/video_details_supplemental" android:layout_marginTop="@dimen/details_content_padding" android:maxLines="6" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" style="@style/PrimaryText.Small" />
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/details_content_padding" />
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:id="@id/color_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="20.0dip" />
+    <FrameLayout android:id="@id/color_square_outline" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_below="@id/color_title" android:layout_alignParentStart="true">
+        <View android:id="@id/color_square" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="2.0dip" />
+    </FrameLayout>
+    <EditText android:id="@id/color_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:maxLines="1" android:maxLength="9" android:layout_below="@id/color_title" android:layout_marginEnd="20.0dip" android:layout_toEndOf="@id/color_square_outline" android:layout_alignParentEnd="true" />
+</RelativeLayout>

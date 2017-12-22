@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netflix.mediaclient.ui.player.PostPlayItemSeamlessView android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <com.netflix.mediaclient.android.widget.NetflixTextButton android:id="@id/watch_credit" android:text="@string/label_postplay_seamless_credits" style="@style/NetflixButton.Outline" />
+    <com.netflix.mediaclient.android.widget.NetflixTextButton android:id="@id/post_play_play_button" android:text="@string/label_postplay_seamless_next" android:drawableStart="@drawable/ic_media_play_dark" style="@style/NetflixButton.Red" />
+</com.netflix.mediaclient.ui.player.PostPlayItemSeamlessView>

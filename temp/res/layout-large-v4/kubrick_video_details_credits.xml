@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_small" android:id="@id/video_details_starring" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" style="@style/KubrickDetailsCredit" />
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_small" android:id="@id/video_details_creators" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" style="@style/KubrickDetailsCredit" />
+</LinearLayout>

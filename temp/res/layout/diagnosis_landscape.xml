@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="?actionBarSize" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <FrameLayout android:layout_gravity="center" android:id="@id/diagnosis_status_group" android:padding="@dimen/content_padding" android:layout_weight="1.0" style="@style/match">
+            <include layout="@layout/diagnosis_status_view" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/diagnosis_info_group" android:paddingTop="@dimen/content_padding" android:paddingBottom="@dimen/content_padding" android:layout_weight="1.0" android:paddingStart="@dimen/double_padding" android:paddingEnd="@dimen/double_padding" style="@style/match">
+            <include layout="@layout/diagnosis_info_view" />
+        </FrameLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

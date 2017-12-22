@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/login_status_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/diagnosis_network_status" android:layout_margin="@dimen/content_padding" android:text="@string/label_checkNetwork" style="@style/PrimaryText.Medium" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_margin="@dimen/content_padding" style="@style/match">
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:gravity="center" android:layout_gravity="center" android:id="@id/diagnosis_testInfo" android:text="@string/label_testInfo" android:maxLines="3" style="@style/PrimaryText.Small" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/diagnosis_loading_view" android:padding="@dimen/content_padding" android:indeterminate="true" android:indeterminateOnly="true" style="@style/wrap" />
+        </FrameLayout>
+        <com.netflix.mediaclient.android.widget.NetflixTextButton android:id="@id/diagnosis_startTest" android:focusable="true" android:layout_margin="@dimen/content_padding" android:text="@string/label_startTest" style="@style/NetflixButton.Outline" />
+    </LinearLayout>
+</merge>

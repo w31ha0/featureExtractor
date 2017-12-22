@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sliding_panel_pull" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/cast_player_fragment" android:background="@color/window_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</RelativeLayout>

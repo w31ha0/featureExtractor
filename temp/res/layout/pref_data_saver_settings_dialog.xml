@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/id_bw_description" android:layout_marginTop="@dimen/bw_generic_24_margin" android:text="@string/label_bw_save_detail" android:layout_marginStart="@dimen/bw_generic_24_margin" android:layout_marginEnd="@dimen/bw_generic_24_margin" style="@style/PrimaryText.Small" />
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/id_bw_description_more" android:text="@string/label_bw_save_detail_more" android:layout_marginStart="@dimen/bw_generic_24_margin" android:layout_marginEnd="@dimen/bw_generic_24_margin" style="@style/PrimaryText.Small" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/bw_generic_16_margin" android:layout_marginStart="@dimen/bw_generic_24_margin" android:layout_marginEnd="@dimen/bw_generic_24_margin">
+            <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bw_generic_48_margin">
+                <android.support.v7.widget.SwitchCompat android:id="@id/id_bw_automatic_switch" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_marginTop="8.0dip" app:theme="@style/ColorBandwidthSwitchStyle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:layout_gravity="start" android:id="@id/id_bw_automatic_header" android:text="@string/label_bw_automatic_header" style="@style/PrimaryText.SmallMedium" />
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:layout_gravity="start" android:id="@id/id_bw_automatic_detail" android:text="@string/label_bw_automatic_detail" android:layout_marginEnd="@dimen/bw_generic_48_margin" style="@style/PrimaryText.Small" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@drawable/vertical_list_div" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/bw_generic_24_margin" android:layout_marginStart="@dimen/bw_generic_24_margin" android:layout_marginEnd="@dimen/bw_generic_24_margin" />
+        <RadioGroup android:id="@id/id_bw_radioGroup" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/bw_generic_24_margin" android:layout_marginEnd="@dimen/bw_generic_24_margin">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/id_bw_rb_off_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bw_generic_16_margin">
+                <RadioButton android:id="@id/id_bw_rb_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" style="@style/PrimaryText.Medium" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bw_generic_8_margin" android:layout_toEndOf="@id/id_bw_rb_off">
+                    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/id_bw_off_header" android:text="@string/label_bw_off_header" style="@style/PrimaryText.Medium" />
+                    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/id_bw_off_detail" android:text="@string/label_bw_off_detail" android:layout_marginEnd="@dimen/bw_generic_24_margin" style="@style/PrimaryText.Small" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/id_bw_rb_low_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bw_generic_16_margin">
+                <RadioButton android:id="@id/id_bw_rb_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" style="@style/PrimaryText.Medium" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bw_generic_8_margin" android:layout_toEndOf="@id/id_bw_rb_low">
+                    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/id_bw_low_header" android:text="@string/label_bw_low_header" style="@style/PrimaryText.Medium" />
+                    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/id_bw_low_detail" android:text="@string/label_bw_low_detail" android:layout_marginEnd="@dimen/bw_generic_24_margin" style="@style/PrimaryText.Small" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/id_bw_rb_medium_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bw_generic_16_margin">
+                <RadioButton android:id="@id/id_bw_rb_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" style="@style/PrimaryText.Medium" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bw_generic_8_margin" android:layout_toEndOf="@id/id_bw_rb_medium">
+                    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/id_bw_medium_header" android:text="@string/label_bw_medium_header" style="@style/PrimaryText.Medium" />
+                    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/id_bw_medium_detail" android:text="@string/label_bw_medium_detail" style="@style/PrimaryText.Small" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/id_bw_rb_high_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bw_generic_16_margin">
+                <RadioButton android:id="@id/id_bw_rb_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" style="@style/PrimaryText.Medium" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bw_generic_8_margin" android:layout_toEndOf="@id/id_bw_rb_high">
+                    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/id_bw_high_header" android:text="@string/label_bw_high_header" style="@style/PrimaryText.Medium" />
+                    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/id_bw_high_detail" android:text="@string/label_bw_high_detail" android:layout_marginEnd="@dimen/bw_generic_24_margin" style="@style/PrimaryText.Small" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/id_bw_rb_unlimited_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bw_generic_16_margin">
+                <RadioButton android:id="@id/id_bw_rb_unlimited" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" style="@style/PrimaryText.Medium" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/bw_generic_8_margin" android:layout_toEndOf="@id/id_bw_rb_unlimited">
+                    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/id_bw_unlimited_header" android:text="@string/label_bw_unlimited_header" style="@style/PrimaryText.Medium" />
+                    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/id_bw_unlimited_detail" android:text="@string/label_bw_unlimited_detail" android:layout_marginEnd="@dimen/bw_generic_24_margin" style="@style/PrimaryText.Small" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

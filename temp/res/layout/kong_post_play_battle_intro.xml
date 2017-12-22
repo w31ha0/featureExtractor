@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netflix.mediaclient.android.widget.PressAnimationFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/battle_card_composite" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/screen_divider" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/right_gate" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layerType="hardware" />
+        <ImageView android:id="@id/left_gate" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layerType="hardware" />
+        <ImageView android:id="@id/opponent_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/kong_avatar_margin_top" android:adjustViewBounds="true" android:layout_toRightOf="@id/screen_divider" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/kong_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/kong_avatar_margin_top" android:adjustViewBounds="true" android:layout_toLeftOf="@id/screen_divider" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/versus_hex" android:layout_width="@dimen/kong_hex_button_width" android:layout_height="@dimen/kong_hex_button_height" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/versus_hex_sword" android:layout_width="@dimen/kong_hex_button_width" android:layout_height="@dimen/kong_hex_button_height" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/battle_card" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+</com.netflix.mediaclient.android.widget.PressAnimationFrameLayout>

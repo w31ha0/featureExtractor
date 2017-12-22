@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:paddingEnd="@dimen/content_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="start" android:id="@id/sliding_menu_notification_indicator" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/red_netflix_circle" android:paddingStart="4.0dip" />
+    <com.netflix.mediaclient.android.widget.AdvancedImageView android:id="@id/nsa_video_art_img" android:visibility="gone" android:layout_width="@dimen/kubrick_nsa_list_boxart_width" android:layout_height="@dimen/kubrick_nsa_list_boxart_height" android:layout_margin="@dimen/content_padding" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/content_padding">
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_fixed_small_medium" android:textStyle="bold" android:textColor="@color/sliding_menu_selected_text" android:ellipsize="end" android:id="@id/top_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" />
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_fixed_small_medium" android:textColor="@color/sliding_menu_unselected_text" android:ellipsize="end" android:id="@id/middle_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="true" android:fontFamily="sans-serif-light" />
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_nano_medium" android:textColor="@color/medium_grey" android:ellipsize="end" android:id="@id/timestamp_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <com.netflix.mediaclient.android.widget.AdvancedImageView android:id="@id/video_art_img" android:layout_width="@dimen/social_notifications_list_boxart_width" android:layout_height="@dimen/social_notifications_list_boxart_height" android:layout_margin="@dimen/content_padding" />
+</LinearLayout>

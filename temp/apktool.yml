@@ -1,20 +1,33 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: 6d0c0a4da591b890b112776911bfa8c022c387be.apk
+apkFileName: com.netflix.mediaclient.apk
 compressionType: false
-doNotCompress: null
+doNotCompress:
+- arsc
+- dat
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
   renameManifestPackage: null
 sdkInfo:
-  minSdkVersion: '4'
+  minSdkVersion: '21'
+  targetSdkVersion: '25'
 sharedLibrary: false
-unknownFiles: {}
+unknownFiles:
+  NDK_LICENSES: '8'
+  build-data.properties: '8'
+  com/ibm/icu/impl/data/icudt59b/en_US.res: '8'
+  com/ibm/icu/impl/data/icudt59b/pool.res: '8'
+  com/jayway/android/robotium/solo/RobotiumWeb.js: '8'
+  entityauth/msl.key: '8'
+  entityauth/msl.pem: '8'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
+  org/bouncycastle/x509/CertPathReviewerMessages.properties: '8'
+  org/bouncycastle/x509/CertPathReviewerMessages_de.properties: '8'
 usesFramework:
   ids:
   - 1
   tag: null
 version: 2.2.4
 versionInfo:
-  versionCode: '26'
-  versionName: 1.0.17
+  versionCode: '17106'
+  versionName: 5.1.2 build 17106

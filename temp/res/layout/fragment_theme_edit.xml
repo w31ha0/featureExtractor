@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:gravity="center" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Edit Your Theme!" style="@style/PrimaryText.MediumLarge" />
+        <include android:id="@id/primary_color" layout="@layout/theme_edit_item" />
+        <include android:id="@id/secondary_color" layout="@layout/theme_edit_item" />
+        <include android:id="@id/icon_color" layout="@layout/theme_edit_item" />
+        <include android:id="@id/background_color" layout="@layout/theme_edit_item" />
+        <Switch android:textStyle="bold" android:id="@id/light_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textOn="Light" android:textOff="Dark" android:text="Should use Light ActionBar" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.netflix.mediaclient.android.widget.NetflixTextButton android:id="@id/apply_theme" android:layout_width="0.0dip" android:layout_marginTop="20.0dip" android:text="Apply Theme" android:layout_weight="1.0" android:layout_marginStart="10.0dip" style="@style/NetflixButton.Red" />
+            <com.netflix.mediaclient.android.widget.NetflixTextButton android:id="@id/clear_theme" android:layout_width="0.0dip" android:layout_marginTop="20.0dip" android:text="Clear Theme" android:layout_weight="1.0" android:layout_marginEnd="10.0dip" style="@style/NetflixButton.Grey" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

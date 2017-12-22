@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/play" android:visible="false" android:title="@string/offline_action_play" />
+    <item android:id="@id/pause" android:visible="false" android:title="@string/offline_action_pause_download" />
+    <item android:id="@id/delete" android:visible="false" android:title="@string/offline_action_delete_download" />
+    <item android:id="@id/resume" android:visible="false" android:title="@string/offline_action_resume_download" />
+    <item android:id="@id/cancel" android:visible="false" android:title="@string/offline_action_cancel_download" />
+    <item android:id="@id/view_my_downloads" android:visible="false" android:title="@string/offline_action_view_my_downloads" />
+</menu>

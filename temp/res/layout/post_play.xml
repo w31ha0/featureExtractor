@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:id="@id/postplay" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/post_play_background_container" />
+    <View android:id="@id/postplay_episodes_overlay_black" android:background="@color/postplay_episode_black_overlay" android:layout_width="fill_parent" android:layout_height="@dimen/postplay_items_background_height" android:layout_alignParentBottom="true" />
+    <View android:background="@drawable/post_play_background_overlay_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/postplay_episodes_overlay_gradient_height" android:layout_above="@id/postplay_episodes_overlay_black" />
+    <LinearLayout android:orientation="vertical" android:id="@id/postplay_ignore_tap" android:paddingBottom="@dimen/postplay_play_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingStart="@dimen/postplay_play_margin_left" android:paddingEnd="@dimen/postplay_play_margin_left">
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/post_play_experience_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/postplay_play_margin_bottom" style="@style/PostPlayTitle" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/post_play_items" android:paddingBottom="@dimen/postplay_movie_recommendation_boxart_pad_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/postplay_items_height" />
+    </LinearLayout>
+</RelativeLayout>

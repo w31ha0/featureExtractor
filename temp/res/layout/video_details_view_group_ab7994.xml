@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout style="@style/match">
+        <FrameLayout android:id="@id/video_img_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/video_details_image_views" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/moderate_padding" android:paddingEnd="@dimen/moderate_padding">
+                <include layout="@layout/video_details_info_layout_ab7994" />
+                <include layout="@layout/video_details_text_descrip_ab7994" />
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/video_details_copyright" />
+            </LinearLayout>
+            <include layout="@layout/video_details_buttons_layout_ab7994" />
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" layout="@layout/dp_tab_menu" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/video_details_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="19.0dip" />
+</merge>

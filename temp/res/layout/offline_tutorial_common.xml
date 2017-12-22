@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardBackgroundColor="@color/white" card_view:cardCornerRadius="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="450.0dip">
+            <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/offline_tutorial_banner" />
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="34.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/title_text" android:padding="@dimen/double_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
+            <ImageView android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_margin="@dimen/double_padding" android:src="@drawable/fullscreen_tutorial_dl_icon" />
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_medium" android:textColor="@color/black" android:gravity="center" android:id="@id/body_text" android:padding="@dimen/content_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/double_padding" android:paddingEnd="@dimen/double_padding" />
+            <include layout="@layout/offline_tutorial_buttons" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>

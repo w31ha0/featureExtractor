@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/kubrick_basic_info_certification" android:background="@drawable/kubrick_kids_hero_row_certification_bg" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="9.0dip" android:paddingEnd="9.0dip" android:layout_marginEnd="12.0dip" />
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_micro" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/kubrick_basic_supplemental_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="12.0dip" />
+</LinearLayout>

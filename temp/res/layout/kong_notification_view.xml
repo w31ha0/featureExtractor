@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/kong_unlock_gear_view" android:paddingBottom="@dimen/kong_gear_title_bottom_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_sunburst_bg" android:layout_width="wrap_content" android:layout_height="@dimen/kong_gear_sunburst_height" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="@dimen/kong_gear_height" android:layout_marginBottom="@dimen/kong_interactive_moments_bottom_margin" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/title" android:layout_marginTop="@dimen/kong_unlock_gear_title_margin_top" android:layout_below="@id/image" android:layout_centerHorizontal="true" style="@style/KongLabelText" />
+</RelativeLayout>

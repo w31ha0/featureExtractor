@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:animateLayoutChanges="true" style="@style/wrap" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/action_bar" android:background="@color/kubrick_kids_toolbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Light" />
+    <View android:id="@id/action_bar_shadow" android:background="@drawable/kubrick_kids_lolomo_shadow" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+</LinearLayout>

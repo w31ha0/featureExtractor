@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="language_selector_text_fixed_small">14.0sp</dimen>
+    <item type="dimen" name="lolomo_row_title_size">@dimen/text_small_medium</item>
+    <item type="dimen" name="search_people_title_text_size">@dimen/text_nano</item>
+    <dimen name="toolbar_title_text_size">17.0dip</dimen>
+</resources>

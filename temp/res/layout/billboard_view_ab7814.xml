@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/billboard_story_art_frame" android:layout_centerVertical="true" style="@style/match">
+        <com.netflix.mediaclient.android.widget.TopCropImageView android:id="@id/billboard_story_art" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" app:yOffset="@dimen/top_crop_y_offest" />
+        <TextureView android:id="@id/motion_billboard_story_art" android:visibility="gone" style="@style/match" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/billboard_bottom_container" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.netflix.mediaclient.android.widget.AdvancedImageView android:layout_gravity="center_horizontal" android:id="@id/billboard_originals_logo_card" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+            <com.netflix.mediaclient.android.widget.AdvancedImageView android:layout_gravity="center_horizontal" android:id="@id/billboard_portrait_tv_card" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/billboard_tv_card_margin_bottom" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:textColor="@color/white" android:gravity="center" android:id="@id/billboard_phone_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/billboard_info_phone_height" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+            <include android:layout_gravity="center_horizontal" android:id="@id/billboard_portrait_button_group" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/cta_portrait_button_group" />
+        </LinearLayout>
+    </FrameLayout>
+</merge>

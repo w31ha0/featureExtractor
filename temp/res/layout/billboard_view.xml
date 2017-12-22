@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/billboard_story_art_frame" android:layout_centerVertical="true" style="@style/match">
+        <com.netflix.mediaclient.android.widget.TopCropImageView android:id="@id/billboard_story_art" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" app:yOffset="@dimen/top_crop_y_offest" />
+        <TextureView android:id="@id/motion_billboard_story_art" android:visibility="gone" style="@style/match" />
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/billboard_phone_info" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/billboard_info_phone_height" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    </FrameLayout>
+    <View android:id="@id/billboard_shadow_overlay" android:background="@color/black" android:layout_alignParentStart="true" style="@style/match" />
+    <View android:id="@id/billboard_shadow_overlay_gradient" android:background="@drawable/shadow_black_to_trans_horizontal" android:layout_width="@dimen/billboard_shadow_overlay_width" android:layout_height="fill_parent" android:layout_alignParentStart="true" />
+    <RelativeLayout android:id="@id/billboard_info_view_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+        <com.netflix.mediaclient.android.widget.AdvancedImageView android:id="@id/billboard_awards_headline" android:layout_width="@dimen/billboard_info_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/billboard_headline_margin_bottom" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/billboard_info_margin" android:layout_width="@dimen/billboard_info_width" android:layout_height="wrap_content" android:layout_below="@id/billboard_awards_headline" android:layout_marginStart="@dimen/billboard_info_view_group_margin_left">
+            <com.netflix.mediaclient.android.widget.AdvancedImageView android:id="@id/billboard_tv_card" android:layout_width="@dimen/billboard_tv_card_regular_width" android:layout_height="@dimen/billboard_tv_card_regular_height" android:layout_marginBottom="@dimen/billboard_tv_card_margin_bottom" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/billboard_info_wrapper" android:layout_width="300.0dip" android:layout_height="wrap_content">
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_nano" android:id="@id/billboard_episode_badge" style="@style/SecondaryText.RedBadge" />
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:ellipsize="end" android:id="@id/billboard_basic_info" android:layout_marginBottom="@dimen/billboard_basic_info_margin_bottom" android:maxLines="2" style="@style/PrimaryText.Small" />
+            </LinearLayout>
+            <com.netflix.mediaclient.android.widget.AdvancedImageView android:layout_gravity="start" android:id="@id/billboard_date_badge" android:layout_width="wrap_content" android:layout_height="@dimen/text_small" android:layout_marginBottom="@dimen/narrow_content_padding" android:scaleType="fitStart" />
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:textColor="@color/billboard_text_synopsis_dark_color" android:ellipsize="end" android:id="@id/billboard_synopsis" android:layout_width="300.0dip" android:layout_marginBottom="@dimen/double_padding" android:maxLines="4" style="@style/PrimaryText.Nano" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/billboard_button_group" style="@style/wrap">
+                <com.netflix.mediaclient.android.widget.NetflixTextButton android:id="@id/billboard_cta1_button" android:text="@string/label_play_now" android:contentDescription="@string/label_play_now" android:drawableStart="@drawable/p4p_play" android:layout_marginEnd="@dimen/content_padding" style="@style/NetflixButton.Red" />
+                <com.netflix.mediaclient.android.widget.NetflixTextButton android:id="@id/billboard_cta2_button" android:visibility="gone" android:text="@string/label_play_trailer" android:contentDescription="@string/label_play_now" android:drawableStart="@drawable/p4p_play" android:layout_marginEnd="@dimen/content_padding" style="@style/NetflixButton.Red" />
+                <com.netflix.mediaclient.android.widget.NetflixTextButton android:id="@id/billboard_add_to_queue" android:focusable="true" android:text="@string/label_my_list" android:contentDescription="@string/accesibility_add_to_my_list" android:layout_marginEnd="@dimen/content_padding" style="@style/NetflixButton.Outline" />
+                <com.netflix.mediaclient.android.widget.NetflixTextButton android:id="@id/billboard_info_button" android:visibility="gone" android:text="@string/label_more_info" android:contentDescription="@string/label_more_info" style="@style/NetflixButton.Outline" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.netflix.mediaclient.android.widget.IconFontTextView android:id="@id/motion_billboard_mute" android:visibility="gone" android:clickable="true" android:text="@string/icon_font_muted" android:layout_alignBottom="@id/billboard_info_view_group" android:contentDescription="@string/label_cs_dialer_mic_mute" android:layout_marginEnd="@dimen/motion_billboard_mute_button_margin_right" android:layout_alignParentEnd="true" style="@style/IconFontRoundButton" />
+</merge>

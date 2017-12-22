@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_small_medium" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/all_profiles_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/label_show_all_profiles" android:drawableEnd="@drawable/ic_chevron_down" />
+</LinearLayout>

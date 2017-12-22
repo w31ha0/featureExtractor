@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netflix.mediaclient.ui.player.PostPlayItemSignup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/postplay_episodes_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/double_padding">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/double_padding">
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_small" android:id="@id/sampling_details" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/label_sampling_details" android:layout_weight="0.45" android:paddingEnd="@dimen/content_padding" />
+            <com.netflix.mediaclient.android.widget.NetflixTextButton android:id="@id/sampling_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_sampling_join" android:layout_marginEnd="@dimen/content_padding" style="@style/NetflixButton.Red"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.netflix.mediaclient.ui.player.PostPlayItemSignup>

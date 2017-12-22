@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/data_saving_toast" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationY="-30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/quick_actions_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true">
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:textColor="@color/brand_red" android:id="@id/data_saving_toast_part1" android:paddingTop="@dimen/content_padding" android:paddingBottom="@dimen/content_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_bw_quick_action_new" android:paddingStart="@dimen/content_padding" android:paddingEnd="@dimen/content_padding" style="@style/PrimaryText.SmallMedium" />
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:textColor="@color/light_grey" android:id="@id/data_saving_toast_part2" android:paddingTop="@dimen/content_padding" android:paddingBottom="@dimen/content_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_bw_quick_action" android:paddingEnd="40.0dip" style="@style/PrimaryText.SmallMedium" />
+    </LinearLayout>
+    <View android:id="@id/indicator" android:background="@drawable/triangle" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="1.0dip" android:layout_marginEnd="24.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

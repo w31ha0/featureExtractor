@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/window_bg" android:padding="@dimen/content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/double_padding" android:layout_weight="1.0" android:paddingEnd="@dimen/kubrick_language_dialog_spacing">
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_small" android:textColor="@color/text_primary_dark" android:layout_gravity="center" android:id="@id/label_audio" android:layout_width="fill_parent" android:layout_height="@dimen/language_selector_tab_height" android:text="@string/label_audio" android:singleLine="true" android:textAllCaps="true" android:paddingStart="@dimen/double_padding" />
+        <ListView android:id="@id/audios" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/KubrickLanguageListView" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/double_padding" android:layout_weight="1.0" android:paddingEnd="@dimen/kubrick_language_dialog_spacing">
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_small" android:textColor="@color/text_primary_dark" android:layout_gravity="center" android:id="@id/label_subtitle" android:layout_width="fill_parent" android:layout_height="@dimen/language_selector_tab_height" android:text="@string/label_subtitle" android:singleLine="true" android:textAllCaps="true" android:paddingStart="@dimen/double_padding" />
+        <ListView android:id="@id/subtitles" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/KubrickLanguageListView" />
+    </LinearLayout>
+    <com.netflix.mediaclient.android.widget.NetflixTextButton android:textColor="@color/white" android:id="@id/ok_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/double_padding" android:minWidth="@dimen/kubrick_dialog_button_min_width" android:minHeight="@dimen/kubrick_button_min_height" android:text="@string/label_ok" style="@style/NetflixButton.Outline" />
+</LinearLayout>

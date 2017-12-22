@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netflix.mediaclient.android.widget.LoggingScrollView android:id="@id/search_results_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/match">
+        <LinearLayout android:orientation="vertical" android:paddingTop="?android:actionBarSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/search_category_label" android:gravity="center_vertical" android:id="@id/search_results_label_suggestions" android:paddingTop="17.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            <com.netflix.mediaclient.android.widget.FlowLayout android:id="@id/search_results_flowlayout_suggestions" android:focusable="true" android:focusableInTouchMode="true" style="@style/match" />
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/search_category_label" android:gravity="center_vertical" android:id="@id/search_results_label_people" android:paddingTop="17.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            <com.netflix.mediaclient.android.widget.FlowLayout android:id="@id/search_results_flowlayout_people" android:focusable="true" android:focusableInTouchMode="true" style="@style/match" />
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:textColor="?relatedResultsTitleTextColor" android:ellipsize="end" android:id="@id/similar_items_grid_view_title" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/content_padding" android:maxLines="2" android:singleLine="true" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" android:paddingStart="10.0dip" style="@style/PrimaryText.Medium" />
+            <com.netflix.mediaclient.android.widget.StaticGridView android:id="@id/search_results_grid_view_videos" android:paddingTop="12.0dip" style="@style/match" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/loading_view" android:padding="@dimen/double_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip" android:indeterminate="true" android:indeterminateOnly="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyle" />
+    </RelativeLayout>
+</com.netflix.mediaclient.android.widget.LoggingScrollView>

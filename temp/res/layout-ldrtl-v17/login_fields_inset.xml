@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:text="@string/email" style="@style/SecondaryText.Small" />
+    <EditText android:textSize="@dimen/text_medium" android:id="@id/login_email" android:layout_width="@dimen/login_field_width" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="50" android:drawablePadding="@dimen/content_padding" android:inputType="textEmailAddress" android:imeOptions="flagForceAscii|flagNoFullscreen" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" style="@style/wrap"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:layout_marginTop="@dimen/double_padding" android:text="@string/password" android:layout_weight="0.8" style="@style/SecondaryText.Small" />
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textColor="@color/grey" android:id="@id/show_password" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/double_padding" android:text="@string/show" android:layout_weight="0.2" android:fontFamily="sans-serif" style="@style/SecondaryText.Small" />
+    </LinearLayout>
+    <EditText android:textSize="@dimen/text_medium" android:id="@id/login_password" android:layout_width="@dimen/login_field_width" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="60" android:drawablePadding="@dimen/content_padding" android:inputType="textPassword" android:imeOptions="actionDone|flagNoFullscreen" android:imeActionLabel="@string/label_sign_in" android:imeActionId="@integer/ime_action_login" />
+</LinearLayout>

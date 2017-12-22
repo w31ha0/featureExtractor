@@ -54,8 +54,10 @@ def getStartCol(sh):
 overallStartTime = time.time()    
 parser = argparse.ArgumentParser(description='Feature Extractor')
 parser.add_argument('-i', action="store",dest="i",required=True,help="Input APK File")    
+parser.add_argument('-o', action="store",dest="o",required=True,help="Output stats file")
 args = parser.parse_args()
 dir_path = args.i
+outputStatsFile = args.o
 sheetname = "temp"
 totalFilesTried = 0
 totalFilesSucceed = 0
@@ -91,17 +93,20 @@ for path, subdirs, files in os.walk(dir_path):
         sh = book.get_sheet(sheetNo)
         #sh.write(0,startColumn,appname)    
         
-
-        disassemble(apkfile)
-        print ""
-        parseManifest(sh,startColumn)
-        traveseAll(sh,startColumn)
-        parseDex(sh)
-        calculateCyclomaticComplexity(apkfile,sh,startColumn)
-        totalFilesTried += 1
-        if nGramsExtractor(apkfile,family):
-            totalFilesSucceed += 1
-        else:
+        try:
+            totalFilesTried += 1
+            disassemble(apkfile)
+            print ""
+            parseManifest(sh,startColumn)
+            traveseAll(sh,startColumn)
+            parseDex(sh)
+            calculateCyclomaticComplexity(apkfile,sh,startColumn)
+            if nGramsExtractor(apkfile,family):
+                totalFilesSucceed += 1
+            else:
+                continue
+        except Exception as e:
+            print str(e)
             continue
         cleanup()
 
@@ -122,7 +127,7 @@ for path, subdirs, files in os.walk(dir_path):
             book.save("results.csv")
 
 timeTaken = time.time() - overallStartTime            
-stats = open(PROJECT_PATH+"featuresOutput/stats.txt","w+")
+stats = open(PROJECT_PATH+"featuresOutput/"+outputStatsFile,"w+")
 print "Overall execution took " +str(timeTaken)+" seconds."        
 stats.write("Overall execution took " +str(timeTaken)+" seconds.")
 stats.write(str(totalFilesSucceed)+" out of "+str(totalFilesTried)+" files succeeded.")

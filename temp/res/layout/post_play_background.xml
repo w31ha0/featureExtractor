@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netflix.mediaclient.ui.player.PostPlayBackgroundBasic android:gravity="center" android:id="@id/post_play_background_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:layout_alignParentTop="true">
+        <com.netflix.mediaclient.android.widget.TopCropImageView android:id="@id/postplay_bgd" android:layout_width="fill_parent" android:layout_height="fill_parent" android:antialias="true" android:dither="true" android:scaleType="centerCrop" android:adjustViewBounds="false" />
+    </LinearLayout>
+</com.netflix.mediaclient.ui.player.PostPlayBackgroundBasic>

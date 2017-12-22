@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/profile_avatar_parent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/profile_avatars_grid_img_size" android:layout_height="@dimen/profile_avatars_grid_img_size" android:layout_marginBottom="@dimen/profile_avatars_grid_padding" android:layout_marginEnd="@dimen/profile_avatars_grid_padding">
+        <com.netflix.mediaclient.android.widget.AdvancedImageView android:id="@id/profile_avatar_img" style="@style/match" />
+        <ImageView android:id="@id/avatar_checkmark_overlay" android:visibility="gone" style="@style/match" />
+        <View android:background="@drawable/selectable_avatar_mask" style="@style/match" />
+    </FrameLayout>
+</FrameLayout>

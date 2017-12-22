@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netflix.mediaclient.android.widget.NetflixTextView android:textColor="@color/season_spinner_text_color" android:gravity="center_vertical" android:id="@id/season_number" android:background="@drawable/selectable_item_background_opaque_grey" android:paddingTop="@dimen/content_padding" android:paddingBottom="@dimen/content_padding" android:layout_width="fill_parent" android:singleLine="true" android:paddingStart="@dimen/double_padding" android:paddingEnd="@dimen/double_padding" style="@style/PrimaryText.SmallMedium"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

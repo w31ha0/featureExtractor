@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/text_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:ellipsize="end" android:id="@id/video_details_title" android:layout_marginTop="?android:actionBarSize" android:layout_marginBottom="12.0dip" android:maxLines="1" android:singleLine="true" android:layout_alignParentStart="true" style="@style/PrimaryText.Large" />
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:ellipsize="end" android:id="@id/video_details_basic_info" android:layout_marginTop="@dimen/details_content_padding" android:maxLines="1" android:singleLine="true" android:layout_below="@id/video_details_title" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" android:layout_alignParentStart="true" style="@style/SecondaryText.NanoMedium" />
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:ellipsize="end" android:id="@id/video_details_available_date" android:text="@string/label_video_details_pre_release_soon" android:maxLines="1" android:layout_below="@id/video_details_basic_info" android:layout_alignParentStart="true" style="@style/PrimaryText.Micro" />
+</RelativeLayout>

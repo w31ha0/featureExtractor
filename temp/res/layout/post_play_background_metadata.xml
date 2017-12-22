@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netflix.mediaclient.ui.player.PostPlayBackgroundMetadata android:layout_gravity="bottom" android:id="@id/post_play_background_metadata" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/post_play_background_play_button" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="100.0" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:paddingBottom="@dimen/postplay_play_margin_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/postplay_items_height_plus_experience_title" android:layout_weight="60.0" android:paddingStart="@dimen/postplay_play_margin_left">
+                <com.netflix.mediaclient.android.widget.AdvancedImageView android:id="@id/post_play_logo" android:layout_width="wrap_content" android:layout_height="40.0dip" android:scaleType="fitStart" />
+                <include layout="@layout/post_play_metadata_with_metabar" />
+            </LinearLayout>
+            <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="40.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.netflix.mediaclient.ui.player.PostPlayBackgroundMetadata>

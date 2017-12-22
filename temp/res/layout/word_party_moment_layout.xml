@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/wp_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/pug_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/pug_margin" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+        <View android:layout_gravity="center" android:id="@id/pug_reveal_view" android:background="@drawable/word_party_pug_progress_bg" android:layout_width="@dimen/pug_progress_width" android:layout_height="@dimen/pug_progress_height" android:layerType="hardware" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:background="@drawable/word_party_pug_progress_bg" android:padding="6.0dip" android:layout_width="@dimen/pug_progress_width" android:layout_height="@dimen/pug_progress_height" android:max="500" android:progress="0" android:progressDrawable="@drawable/word_party_pug_progress" android:rotation="-90.0" android:layerType="hardware" style="?android:attr/progressBarStyleHorizontal" />
+        <ImageView android:layout_gravity="center" android:id="@id/pug_image" android:padding="2.0dip" android:layout_width="@dimen/pug_image_width" android:layout_height="@dimen/pug_image_height" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <ImageView android:id="@id/bg_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/wp_panel_container" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <View android:id="@id/wp_panel1" android:background="@color/wp_yellow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/wp_panel2" android:background="@color/wp_green" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/wp_panel3" android:background="@color/wp_blue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/wp_panel4" android:background="@color/wp_red" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.netflix.mediaclient.ui.iko.wordparty.moments.WPStandardCardLayout android:id="@id/card1" style="@style/WordPartyCardStyle" />
+    <com.netflix.mediaclient.ui.iko.wordparty.moments.WPStandardCardLayout android:id="@id/card2" style="@style/WordPartyCardStyle" />
+    <com.netflix.mediaclient.ui.iko.wordparty.moments.WPStandardCardLayout android:id="@id/card3" style="@style/WordPartyCardStyle" />
+    <com.netflix.mediaclient.ui.iko.wordparty.moments.WPStandardCardLayout android:id="@id/card4" style="@style/WordPartyCardStyle" />
+    <com.netflix.mediaclient.ui.iko.wordparty.moments.WPWordWallyCardLayout android:id="@id/word_wally_card1" style="@style/WordPartyWordWallyCardStyle" />
+    <com.netflix.mediaclient.ui.iko.wordparty.moments.WPWordWallyCardLayout android:id="@id/word_wally_card2" style="@style/WordPartyWordWallyCardStyle" />
+    <com.netflix.mediaclient.ui.iko.wordparty.moments.WPWordWallyCardLayout android:id="@id/word_wally_card3" style="@style/WordPartyWordWallyCardStyle" />
+    <com.netflix.mediaclient.ui.iko.wordparty.moments.WPWordWallyCardLayout android:id="@id/word_wally_card4" style="@style/WordPartyWordWallyCardStyle" />
+    <ImageView android:id="@id/fg_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.netflix.mediaclient.android.widget.IconFontTextView android:textSize="@dimen/wp_close_button_size" android:id="@id/close_button" android:visibility="gone" android:clickable="true" android:layout_marginTop="@dimen/close_button_margin_top" android:text="@string/icon_font_close" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/close_button_margin" android:layout_alignParentEnd="true" style="@style/IconFontBasic" />
+    <ProgressBar android:id="@id/wp_moment_progress" android:visibility="gone" android:layout_width="@dimen/pug_image_width" android:layout_height="@dimen/pug_image_height" android:layout_centerInParent="true" style="?android:attr/progressBarStyle" />
+</RelativeLayout>

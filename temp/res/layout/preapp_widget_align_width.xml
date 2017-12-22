@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/preapp_video_image1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/preapp_mobile_signin" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/preapp_video_image" />
+            <ImageView android:id="@id/preapp_gradient0" android:layout_width="fill_parent" android:layout_height="40.0dip" android:src="@drawable/preapp_image_gradient_top" android:layout_alignTop="@id/preapp_video_image1" />
+            <ImageView android:id="@id/preapp_gradient1" android:layout_width="fill_parent" android:layout_height="160.0dip" android:src="@drawable/preapp_image_gradient" android:layout_alignBottom="@id/preapp_video_image1" />
+            <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:gravity="center" android:id="@id/preapp_list_name" android:padding="@dimen/preapp_widget_padding" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/ic_preapp_refresh" />
+            </LinearLayout>
+            <ImageView android:gravity="center" android:id="@id/preapp_play1" android:background="@drawable/selectable_item_background" android:focusable="true" android:visibility="invisible" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/ic_play_72" android:layout_centerInParent="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/preapp_video_image1">
+                <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingEnd="@dimen/preapp_widget_padding">
+                    <ImageView android:id="@id/preapp_app_logo" android:background="@drawable/selectable_item_background" android:focusable="true" android:layout_width="63.0dip" android:layout_height="27.0dip" android:src="@drawable/netflix_splash" android:layout_marginStart="@dimen/preapp_widget_padding" />
+                    <TextView android:textStyle="bold" android:ellipsize="end" android:id="@id/preapp_video_title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/preapp_ad1" android:maxLines="1" android:layout_marginStart="@dimen/preapp_widget_padding" style="@style/PrimaryText.Small" />
+                    <TextView android:textStyle="bold" android:ellipsize="end" android:id="@id/preapp_t2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/preapp_widget_padding" android:text="@string/preapp_promo_month_free" android:maxLines="1" android:layout_marginStart="@dimen/preapp_widget_padding" style="@style/PrimaryText.Small" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

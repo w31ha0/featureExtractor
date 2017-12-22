@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/eogPpHeader" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogPpTitle" android:layout_marginTop="@dimen/eog_pp_margin_title_top" android:layout_marginBottom="@dimen/eog_lp_title_margin_bottom" android:singleLine="false" android:paddingStart="@dimen/eog_pp_padding" android:paddingEnd="@dimen/eog_pp_padding" style="@style/EogTitle" />
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogPpSelect" android:layout_marginBottom="@dimen/eog_lp_margin_normal" android:layout_below="@id/eogPpTitle" android:paddingStart="@dimen/eog_pp_padding" android:paddingEnd="@dimen/eog_pp_padding" style="@style/EogText" />
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/eogPpSdPlanHeader" android:background="@drawable/eog_plan_bg_inactive" android:clickable="true" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginBottom="@dimen/eog_pp_margin_plan_seperation" android:layout_below="@id/eogPpSelect" android:onClick="performPlanSelection">
+                    <CheckBox android:id="@id/eogPpSdCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="performPlanSelection" android:layout_marginStart="@dimen/eog_pp_margin_cb_start" />
+                    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogPpSdPlanName" android:singleLine="true" android:layout_marginStart="@dimen/eog_pp_margin_cb_start" android:layout_alignParentStart="true" style="@style/EogButton" />
+                        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogPpSdPlanValue" android:singleLine="true" android:layout_marginEnd="@dimen/eog_pp_margin_cb_start" android:layout_alignParentEnd="true" style="@style/EogButton" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/eogPpHdPlanHeader" android:background="@drawable/eog_plan_bg_inactive" android:clickable="true" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginBottom="@dimen/eog_pp_margin_plan_seperation" android:layout_below="@id/eogPpSdPlanHeader" android:onClick="performPlanSelection">
+                    <CheckBox android:id="@id/eogPpHdCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="performPlanSelection" android:layout_marginStart="@dimen/eog_pp_margin_cb_start" />
+                    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogPpHdPlanName" android:singleLine="true" android:layout_marginStart="@dimen/eog_pp_margin_cb_start" android:layout_alignParentStart="true" style="@style/EogButton" />
+                        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogPpHdPlanValue" android:singleLine="true" android:layout_marginEnd="@dimen/eog_pp_margin_cb_start" android:layout_alignParentEnd="true" style="@style/EogButton" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/eogPpUhdPlanHeader" android:background="@drawable/eog_plan_bg_inactive" android:clickable="true" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginBottom="@dimen/eog_pp_margin_plan_seperation" android:layout_below="@id/eogPpHdPlanHeader" android:onClick="performPlanSelection">
+                    <CheckBox android:id="@id/eogPpUhdCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="performPlanSelection" android:layout_marginStart="@dimen/eog_pp_margin_cb_start" />
+                    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogPpUhdPlanName" android:singleLine="true" android:layout_marginStart="@dimen/eog_pp_margin_cb_start" android:layout_alignParentStart="true" style="@style/EogButton" />
+                        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogPpUhdPlanValue" android:singleLine="true" android:layout_marginEnd="@dimen/eog_pp_margin_cb_start" android:layout_alignParentEnd="true" style="@style/EogButton" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogPpAccount" android:layout_marginTop="@dimen/eog_pp_account_margin" android:layout_marginBottom="@dimen/eog_pp_account_margin" android:layout_below="@id/eogPpUhdPlanHeader" android:paddingStart="@dimen/eog_pp_padding" android:paddingEnd="@dimen/eog_pp_padding" style="@style/EogText" />
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/eogPpContinueHeader" android:background="@drawable/eog_continue_bg" android:clickable="true" android:layout_width="240.0dip" android:layout_height="48.0dip" android:layout_below="@id/eogPpAccount" android:onClick="performAction" android:layout_marginStart="@dimen/eog_pp_padding" android:layout_marginEnd="@dimen/eog_pp_padding">
+                    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogPpContinue" android:singleLine="true" android:layout_marginStart="@dimen/eog_button_inline_divider" style="@style/EogButton" />
+                </LinearLayout>
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:textColor="@color/light_grey" android:id="@id/eogPpDisclaimer" android:layout_marginTop="@dimen/eog_lp_body_margin_bottom" android:layout_marginBottom="@dimen/eog_lp_body_margin_bottom" android:layout_below="@id/eogPpContinueHeader" android:paddingStart="@dimen/eog_pp_padding" android:paddingEnd="@dimen/eog_pp_padding" style="@style/EogText" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

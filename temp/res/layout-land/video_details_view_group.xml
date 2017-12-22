@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/video_img_group" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/video_details_image_views" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/details_top_info_margin">
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:ellipsize="end" android:layout_gravity="start|center|top" android:id="@id/video_details_title" android:clickable="true" android:layout_marginBottom="@dimen/content_padding" android:maxLines="2" android:layout_marginStart="@dimen/content_padding" android:layout_marginEnd="@dimen/content_padding" style="@style/PrimaryText.Large" />
+        <LinearLayout android:orientation="horizontal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <include layout="@layout/video_details_info_layout" />
+                <include layout="@layout/video_details_text_descrip" />
+                <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/content_padding" layout="@layout/video_details_copyright" />
+                <include layout="@layout/video_details_copyright" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/double_padding">
+                <include layout="@layout/video_details_buttons_layout" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/video_details_footer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:ellipsize="end" android:id="@id/similar_items_grid_view_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_padding" android:layout_marginBottom="@dimen/content_padding" android:text="@string/label_similar_shows" android:maxLines="2" android:singleLine="true" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" android:layout_marginStart="@dimen/content_padding" style="@style/PrimaryText.Medium" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

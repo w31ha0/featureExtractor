@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:background="@drawable/toast_background" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:padding="0.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/trophy_gold" />
-    <TextView android:layout_gravity="center_vertical" android:id="@id/message" android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[message]" style="@style/text_normal_normal_inverted" />
-</LinearLayout>

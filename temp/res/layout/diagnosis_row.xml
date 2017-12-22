@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/diagnosis_row_icon" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/double_padding" android:layout_marginEnd="@dimen/double_padding" style="@style/wrap" />
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/diagnosis_firstLine" android:layout_alignParentTop="true" android:layout_toEndOf="@id/diagnosis_row_icon" android:layout_alignParentEnd="true" style="@style/PrimaryText.Medium" />
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/diagnosis_secondLine" android:layout_below="@id/diagnosis_firstLine" android:layout_alignParentBottom="true" android:layout_toEndOf="@id/diagnosis_row_icon" android:layout_alignParentEnd="true" style="@style/PrimaryText.Small" />
+</RelativeLayout>

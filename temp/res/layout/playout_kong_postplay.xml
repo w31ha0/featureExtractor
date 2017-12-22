@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/screen_divider" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/kong_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layerType="hardware" />
+    <ImageView android:id="@id/kong_background_pattern" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/unlocking_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/kong_gear_view" />
+    <RelativeLayout android:id="@id/next_episode_container" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.netflix.mediaclient.android.widget.AdvancedImageView android:id="@id/next_episode" android:layout_width="@dimen/kong_battle_card_width" android:layout_height="wrap_content" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/next_episode_title" android:layout_marginTop="@dimen/kong_battle_card_title_margin_top" android:layout_below="@id/next_episode" android:layout_centerHorizontal="true" style="@style/KongLabelText" />
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/next_episode_countdown_timer" android:layout_below="@id/next_episode_title" android:layout_centerHorizontal="true" style="@style/KongLabelTextTimer" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/battle_intro_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/battle_intro" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/kong_post_play_battle_intro" />
+        <View android:id="@id/battle_intro_placeholder" android:visibility="invisible" android:layout_width="@dimen/kong_battle_card_width" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/kong_battle_title" android:layout_marginTop="@dimen/kong_battle_card_title_margin_top" android:layout_below="@id/battle_intro_placeholder" android:layout_centerHorizontal="true" style="@style/KongLabelText" />
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/battle_countdown_timer" android:visibility="gone" android:layout_below="@id/kong_battle_title" android:layout_centerHorizontal="true" style="@style/KongLabelTextTimer" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/screen_divider" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/kong_gear_selection_container_margin_end">
+        <include android:id="@id/kong_gear_1_container" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/kong_gear_view" />
+        <include android:id="@id/kong_gear_2_container" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/kong_gear_view" />
+    </LinearLayout>
+    <ImageView android:id="@id/back_button" android:layout_width="@dimen/kong_nav_button_width" android:layout_height="@dimen/kong_nav_button_height" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/close_button" android:layout_width="@dimen/kong_nav_button_width" android:layout_height="@dimen/kong_nav_button_height" android:layout_margin="@dimen/kong_post_play_close_button_margin" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/kong_battle_result_avatar" android:paddingBottom="@dimen/kong_battle_result_avatar_padding_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/kong_battle_result_avatar_margin" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/kong_powerup_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/image_sunburst_bg_placeholder" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/kong_gear_sunburst_height" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/powerup_title" android:visibility="gone" android:layout_marginBottom="@dimen/kong_gear_title_bottom_padding" android:layout_below="@id/image_sunburst_bg_placeholder" android:layout_centerHorizontal="true" style="@style/KongLabelText" />
+        <FrameLayout android:id="@id/kong_powerup_image_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include android:id="@id/post_play_title_container" android:layout_width="fill_parent" android:layout_height="@dimen/kong_post_play_title_height" android:layout_marginTop="@dimen/kong_post_play_title_margin_top" android:layout_toLeftOf="@id/close_button" android:layout_marginStart="@dimen/kong_post_play_title_margin_start" layout="@layout/kong_post_play_title" />
+    <ProgressBar android:id="@id/screen_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyle" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_small_medium" android:textColor="@color/sliding_menu_unselected_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/sliding_menu_row_text" android:layout_width="fill_parent" android:layout_height="@dimen/old_sliding_menu_row_height" android:minHeight="@dimen/old_sliding_menu_row_height_min" android:maxLines="1" android:fontFamily="sans-serif-light" android:paddingStart="@dimen/double_padding" style="@style/PrimaryText.Small" />
+        <View android:layout_gravity="bottom" android:id="@id/sliding_menu_row_separator" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/drawer_separator_height" />
+    </LinearLayout>
+    <View android:layout_gravity="start" android:id="@id/sliding_menu_row_selection_indicator" android:background="@color/brand_red" android:visibility="gone" android:layout_width="4.0dip" android:layout_height="fill_parent" />
+</FrameLayout>

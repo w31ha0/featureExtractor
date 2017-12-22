@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/double_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/moderate_padding" android:paddingEnd="@dimen/moderate_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.netflix.mediaclient.android.widget.AdvancedImageView android:layout_gravity="center_vertical" android:id="@id/cw_view_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/video_play_icon" android:src="@drawable/ic_play_60" android:contentDescription="@string/accesibility_play_video" style="@style/wrap" />
+        <ProgressBar android:layout_gravity="bottom" android:id="@id/cw_view_video_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:max="100" android:indeterminateOnly="false" android:progressDrawable="@drawable/cw_progress_bar" android:layoutDirection="ltr" style="?android:attr/progressBarStyleHorizontal" />
+    </FrameLayout>
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:layout_gravity="start|bottom|center" android:id="@id/cw_view_title" android:paddingTop="@dimen/content_padding" android:paddingBottom="@dimen/content_padding" android:layout_width="fill_parent" android:maxLines="2" style="@style/PrimaryText.Small" />
+</LinearLayout>

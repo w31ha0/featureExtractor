@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netflix.mediaclient.ui.player.PostPlayItemMetadata android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/postplay_episodes_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/post_play_item_poster" />
+    <include layout="@layout/post_play_metadata_with_title" />
+</com.netflix.mediaclient.ui.player.PostPlayItemMetadata>

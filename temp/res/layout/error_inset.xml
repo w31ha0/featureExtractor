@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/error_view" android:background="@color/window_bg" style="@style/match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/error_content" android:padding="@dimen/double_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.netflix.mediaclient.android.widget.NetflixTextView android:gravity="center" android:layout_gravity="center" android:id="@id/error_view_label" android:text="@string/label_could_not_load_data" style="@style/PrimaryText.Medium" />
+        <com.netflix.mediaclient.android.widget.NetflixTextButton android:layout_gravity="center" android:id="@id/error_view_retry_button" android:layout_margin="@dimen/content_padding" android:text="@string/label_retry" android:textAllCaps="false" style="@style/NetflixButton.Flat" />
+    </LinearLayout>
+    <com.netflix.mediaclient.android.widget.NetflixTextButton android:layout_gravity="bottom|center" android:id="@id/error_view_all_downloads_button" android:visibility="gone" android:layout_marginBottom="48.0dip" android:text="@string/offline_action_view_my_downloads" android:textAllCaps="false" style="@style/NetflixButton.Outline" />
+</FrameLayout>

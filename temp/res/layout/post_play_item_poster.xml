@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netflix.mediaclient.ui.player.PostPlayItemBasic android:orientation="horizontal" android:id="@id/post_play_item_poster" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.netflix.mediaclient.android.widget.AdvancedImageView android:id="@id/post_play_display_art" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@color/black" android:antialias="true" android:dither="true" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_marginEnd="@dimen/postplay_movie_recommendation_boxart_between" />
+        <ImageView android:layout_gravity="center" android:id="@id/post_play_play_button" android:visibility="gone" android:layout_width="@dimen/postplay_tablet_movie_play_btn_size" android:layout_height="@dimen/postplay_tablet_movie_play_btn_size" android:src="@drawable/play_overlay" />
+    </FrameLayout>
+</com.netflix.mediaclient.ui.player.PostPlayItemBasic>

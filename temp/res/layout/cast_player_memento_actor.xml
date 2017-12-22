@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.netflix.mediaclient.android.widget.FocalPointImageView android:id="@id/actor_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/actor_still_placeholder" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:id="@id/rdp_image_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/actor_img" android:layout_alignBottom="@id/actor_img">
+        <View android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="60.0" />
+        <View android:background="@drawable/memento_image_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="40.0" />
+    </LinearLayout>
+    <com.netflix.mediaclient.android.widget.IconFontTextView android:textSize="45.0dip" android:id="@id/actor_more_info" android:layout_marginBottom="30.0dip" android:text="@string/icon_font_rdp_info" android:layout_alignBottom="@id/actor_img" android:layout_marginStart="@dimen/rdp_content_padding" android:layout_marginEnd="@dimen/rdp_content_padding" android:layout_alignEnd="@id/actor_img" style="@style/IconFontBasic" />
+    <TextView android:textSize="17.0dip" android:textStyle="italic" android:id="@id/actor_role" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="as TBD" android:layout_alignBottom="@id/actor_more_info" android:fontFamily="sans-serif-medium" android:paddingStart="@dimen/rdp_content_padding" />
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/rdp_actor_name" android:textColor="@color/white" android:id="@id/actor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/actor_more_info" android:layout_above="@id/actor_role" android:lineSpacingMultiplier="0.9" android:fontFamily="sans-serif-thin" android:paddingStart="@dimen/rdp_content_padding" android:paddingEnd="10.0dip" android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.netflix.mediaclient.android.widget.AdvancedImageView android:id="@id/cw_view_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/cw_test_row_progress_bar_affordance" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <ProgressBar android:id="@id/cw_view_video_progress" android:layout_width="fill_parent" android:layout_height="@dimen/cw_test_row_progress_bar_height" android:max="100" android:indeterminateOnly="false" android:progressDrawable="@drawable/cw_test_progress_bar" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/cw_test_row_progress_bar_side_margin" android:layout_marginEnd="@dimen/cw_test_row_progress_bar_side_margin" style="?android:attr/progressBarStyleHorizontal" />
+</merge>

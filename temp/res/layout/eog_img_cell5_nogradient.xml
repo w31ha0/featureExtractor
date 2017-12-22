@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/eogImagepHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/eogLpSkipHeader"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="@dimen/eog_pp_img_spacing" android:layout_height="@dimen/eog_lp_cell5_img_ht" />
+    <com.netflix.mediaclient.android.widget.AdvancedImageView android:id="@id/eog_img1" android:layout_width="@dimen/eog_lp_cell5_img_wd" android:layout_height="@dimen/eog_lp_cell5_img_ht" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <View android:layout_width="@dimen/eog_pp_img_spacing" android:layout_height="160.0dip" />
+    <com.netflix.mediaclient.android.widget.AdvancedImageView android:id="@id/eog_img2" android:layout_width="@dimen/eog_lp_cell5_img_wd" android:layout_height="@dimen/eog_lp_cell5_img_ht" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <View android:layout_width="@dimen/eog_pp_img_spacing" android:layout_height="@dimen/eog_lp_cell5_img_ht" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/preapp_border" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/preapp_widget_block" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/preapp_video_image1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/preapp_widget_padding_small" android:src="@drawable/preapp_mobile_signin" android:scaleType="fitStart" android:adjustViewBounds="true" android:contentDescription="@string/preapp_video_image" />
+            <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignTop="@id/preapp_video_image1" android:layout_alignBottom="@id/preapp_video_image1" android:layout_alignStart="@id/preapp_video_image1" android:layout_alignEnd="@id/preapp_video_image1">
+                <ImageView android:id="@id/preapp_play1" android:background="@drawable/selectable_item_background" android:focusable="true" android:visibility="gone" android:src="@drawable/ic_play_72" android:layout_centerInParent="true" style="@style/preapp_playIcon_medium" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/preapp_logo_on_image_group" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignTop="@id/preapp_video_image1" android:layout_alignBottom="@id/preapp_video_image1" android:layout_alignStart="@id/preapp_video_image1" android:layout_alignEnd="@id/preapp_video_image1">
+                <ImageView android:id="@id/preapp_gradient1" android:layout_width="fill_parent" android:layout_height="32.0dip" android:src="@drawable/preapp_image_gradient" android:layout_alignParentBottom="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/preapp_widget_padding_small">
+                    <TextView android:layout_gravity="center" android:id="@id/preapp_list_name" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="12.0dip" style="@style/PrimaryText.Small" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <ImageView android:layout_gravity="bottom" android:id="@id/preapp_app_logo" android:visibility="visible" android:layout_width="36.0dip" android:layout_height="16.0dip" android:src="@drawable/netflix_splash" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="end|bottom|center" android:id="@id/preapp_refresh" android:paddingTop="@dimen/preapp_widget_padding" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/ic_preapp_refresh" android:paddingStart="@dimen/preapp_widget_padding" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

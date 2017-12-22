@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="pref.screen"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/label_pref_settings_category_playback" android:key="video.playback">
+        <CheckBoxPreference android:title="@string/label_pref_settings_wifi_warning_title" android:key="nf_play_no_wifi_warning" android:defaultValue="false" />
+        <com.netflix.mediaclient.ui.bandwidthsetting.BandwidthPreferenceDialog android:title="@string/label_bw_header" android:key="nf.bw_save" android:summary="@string/label_bw_header_detail_def" android:positiveButtonText="@string/label_ok" android:negativeButtonText="@string/label_cancel" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/label_pref_settings_category_notification" android:key="pref.notification">
+        <CheckBoxPreference android:title="@string/label_pref_settings_notification_enable" android:key="nf_notification_enable" android:summary="@string/label_pref_settings_notification_enable_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/label_pref_settings_category_downloads" android:key="pref.downloads">
+        <CheckBoxPreference android:title="@string/label_pref_settings_wifi_warning_title" android:key="pref.downloads.wifi_only" />
+        <ListPreference android:title="@string/offline_message_quality_title" android:key="pref.downloads.video_quality" android:summary="@string/offline_message_quality_standard" android:negativeButtonText="@string/label_cancel" />
+        <Preference android:title="@string/offline_message_download_location" android:key="pref.downloads.storage_selector" />
+        <Preference android:title="@string/label_pref_settings_downloads_remove_all" android:key="pref.downloads.remove_all" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/label_pref_settings_category_qa" android:key="pref.qa.debugonly">
+        <Preference android:title="@string/label_site" android:key="ui.site" android:summary="@string/label_site_summary" />
+        <Preference android:title="@string/label_reset_uibootloader" android:key="ui.reset_bootloader" android:summary="@string/label_reset_uibootloader_summary" />
+        <Preference android:title="@string/label_reset_license_sync_time" android:key="ui.reset_license_sync_time" android:summary="@string/label_reset_license_sync_time_summary" />
+        <Preference android:title="@string/label_bugreport" android:key="ui.bugreport" android:summary="@string/label_bugreport_summary" />
+        <CheckBoxPreference android:title="@string/label_playeroverlay_enable" android:key="ui.playeroverlay" android:summary="@string/label_playeroverlay_summary" android:defaultValue="false" />
+        <ListPreference android:title="@string/label_select_videoformat_title" android:key="ui.offlineVideoFormat" android:summary="@string/label_select_videoformat_summary" />
+        <ListPreference android:title="@string/label_select_streaming_format" android:key="ui.hdrVideoFormat" android:summary="@string/label_select_video_format" />
+        <CheckBoxPreference android:title="@string/label_use_android_http_stack" android:key="ui.forceAndroidHttpStack" android:summary="@string/label_disable_cronet_and_use_android_http_stack_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/label_force_swvideo_title" android:key="ui.forceswdecoder" android:defaultValue="false" />
+        <EditTextPreference android:title="@string/label_bootParams" android:key="ui.bootParams" android:summary="@string/label_bootParams_summary" />
+        <EditTextPreference android:title="@string/label_castappid_title" android:key="ui.castAppId" android:summary="@string/label_castappid_summary" />
+        <ListPreference android:title="@string/label_subtitleConfiguration" android:key="ui.subtitleConfig" android:summary="@string/label_subtitleConfiguration_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

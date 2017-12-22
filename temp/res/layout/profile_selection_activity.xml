@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/profile_selection_parent" style="@style/match"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/loading_and_error_inset" />
+    <ScrollView android:id="@id/profile_selection_content" android:visibility="gone" style="@style/match">
+        <LinearLayout android:orientation="vertical" style="@style/match">
+            <com.netflix.mediaclient.android.widget.NetflixTextView android:layout_gravity="center_horizontal" android:id="@id/profile_selection_title" android:paddingTop="@dimen/double_padding" android:paddingBottom="@dimen/content_padding" android:layout_marginTop="?actionBarSize" android:text="@string/label_whos_watching" style="@style/PrimaryText.Medium" />
+            <com.netflix.mediaclient.android.widget.StaticGridView android:layout_gravity="center_horizontal" android:id="@id/profile_selection_grid_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@drawable/selectable_item_background" android:stretchMode="none" android:columnWidth="@dimen/profile_avatar_view_group_width" android:numColumns="1" />
+            <LinearLayout android:orientation="vertical" android:id="@id/profile_selection_promo_view" android:background="@drawable/profile_selection_promo_background" android:paddingTop="@dimen/profile_promo_view_padding_top" android:paddingBottom="@dimen/profile_promo_view_padding_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/double_padding" android:paddingEnd="@dimen/double_padding">
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_selection_promo_header" style="@style/PrimaryText.Small" />
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:gravity="center" android:paddingTop="@dimen/text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_selection_promo_text" style="@style/PrimaryText.Micro" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/kids_loading_screen" />
+</FrameLayout>

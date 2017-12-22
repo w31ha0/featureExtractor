@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="@dimen/language_selector_tab_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_small" android:textColor="@color/language_selector_tab_textcolor" android:gravity="center" android:id="@id/tabLanguageSelectTitle" android:padding="@dimen/text_padding" android:layout_width="fill_parent" android:layout_height="@dimen/language_selector_tab_text_height" android:singleLine="true" android:textAllCaps="true" />
+    <View android:background="@drawable/language_selector_tab_indicator_bg" android:layout_width="fill_parent" android:layout_height="@dimen/language_selector_tab_indicator_height" />
+</LinearLayout>

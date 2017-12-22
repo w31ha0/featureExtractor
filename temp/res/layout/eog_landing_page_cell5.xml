@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/eogLpHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/eog_lp_padding" android:paddingEnd="@dimen/eog_lp_padding">
+            <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/eog_lp_padding" android:paddingEnd="@dimen/eog_lp_padding">
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogLpTitle" android:layout_marginTop="@dimen/eog_pp_margin_title_top" android:layout_marginBottom="@dimen/eog_lp_title_margin_bottom" android:singleLine="false" style="@style/EogTitle" />
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogLpBody" android:layout_marginBottom="@dimen/eog_lp_body_margin_bottom" android:layout_below="@id/eogLpTitle" style="@style/EogText" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/eogLpContinueHeader" android:background="@drawable/eog_continue_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_below="@id/eogLpBody" android:onClick="performAction">
+                    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogLpContinue" android:singleLine="true" android:layout_marginStart="@dimen/eog_button_inline_divider" style="@style/EogButton" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/eogLpPlansHeader" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="@dimen/eog_lp_margin_normal" android:layout_below="@id/eogLpContinueHeader" android:onClick="performAction" style="@style/EogOutlineButton">
+                    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogLpPlans" android:singleLine="true" android:layout_marginStart="@dimen/eog_button_inline_divider" style="@style/EogButton" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/eogLpSkipHeader" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="@dimen/eog_lp_margin_normal" android:layout_below="@id/eogLpPlansHeader" android:onClick="performAction">
+                    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogLpSkip" android:singleLine="true" android:layout_marginStart="@dimen/eog_button_inline_divider" style="@style/EogButton" />
+                </LinearLayout>
+                <include android:id="@id/imageContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eog_lp_body_margin_bottom" android:layout_below="@id/eogLpSkipHeader" layout="@layout/eog_img_cell5_nogradient" />
+                <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/eogLpAccount" android:layout_marginTop="@dimen/eog_lp_body_margin_bottom" android:layout_marginBottom="@dimen/eog_lp_title_margin_bottom" android:layout_below="@id/imageContainer" style="@style/EogText" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
