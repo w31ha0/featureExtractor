@@ -1,10 +1,17 @@
 from sklearn import cross_validation
 from sklearn import neighbors
-
+from sklearn.grid_search import GridSearchCV
 from math import *
 from constants import *
-
 import os,sys
+
+def fillParams(min,max,step):
+	array = []
+	i = min
+	while i <= max:
+		array.append(i)
+		i += step
+	return array
 
 family = sys.argv[1]
 malicious_dir_path = PROJECT_PATH+"featuresOutput/"+family
@@ -26,7 +33,7 @@ param_neighbour=100
 param_leaf=3
 param_p=5
 neighbour_min = 1
-neighbour_max=100
+neighbour_max=48
 neighbour_step=5
 leaf_min=1
 leaf_max=100
@@ -35,6 +42,12 @@ p_min=1
 p_max=100
 p_step=5
 
+neighbours = fillParams(neighbour_min,neighbour_max,neighbour_step)
+leaves = fillParams(leaf_min,leaf_max,leaf_step)
+ps = fillParams(p_min,p_max,p_step)
+param_grid = {'n_neighbors':neighbours,'leaf_size':leaves,'p':ps}
+clf = neighbors.KNeighborsClassifier()
+grid_search = GridSearchCV(clf, param_grid,cv=2)
 trainingPortion = 0.8
 
 def loadDataSet():
@@ -91,36 +104,10 @@ print "No of label sets: " + str(len(labelSet))
 print "No of full sets: " + str(len(fullSet))
     
 x_train,x_test,y_train,y_test = cross_validation.train_test_split(fullSet,labelSet, test_size=(1-trainingPortion) )
-
-param_neighbour = neighbour_min
-param_leaf = leaf_min
-param_p = p_min
-while param_neighbour <= neighbour_max:
-	while param_leaf <= leaf_max:
-		while param_p <= p_max:
-			clf = neighbors.KNeighborsClassifier(n_neighbors=param_neighbour,leaf_size=param_leaf,p=param_p)
-			clf.fit(x_train,y_train)
-			accuracy = clf.score(x_test,y_test)
-			print "Accuracy: "+str(accuracy)+" for neighbours:"+str(param_neighbour)+",leaf:"+str(param_leaf)+",p:"+str(param_p)
-			f1 = open(resultsFile1,'a')
-			f1.write(str(param_neighbour)+"\t"+str(accuracy))
-			f1.write('\n')
-			f1.close()
-			f2 = open(resultsFile2,'a')
-			f2.write(str(param_leaf)+"\t"+str(accuracy))
-			f2.write('\n')
-			f2.close()
-			f3 = open(resultsFile3,'a')
-			f3.write(str(param_p)+"\t"+str(accuracy))
-			f3.write('\n')
-			f3.close()
-			param_p += p_step	
-		param_leaf += leaf_step
-		param_p = p_min
-	param_neighbour += neighbour_step
-	param_leaf = leaf_min
-	param_p = p_min
-	#print "param_gamma is now " + str(param_gamma)
+grid_search.fit(x_train, y_train)
+score = grid_search.score(x_test,y_test)
+params = grid_search.best_params_
+print "Best accuracy is "+str(score)+" with params "+str(params)
 		
 		
 

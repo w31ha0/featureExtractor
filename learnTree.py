@@ -1,10 +1,17 @@
 from sklearn import cross_validation
 from sklearn.tree import DecisionTreeClassifier
-
+from sklearn.grid_search import GridSearchCV
 from math import *
 from constants import *
-
 import os,sys
+
+def fillParams(min,max,step):
+	array = []
+	i = min
+	while i <= max:
+		array.append(i)
+		i += step
+	return array
 
 family = sys.argv[1]
 malicious_dir_path = PROJECT_PATH+"featuresOutput/"+family
@@ -35,6 +42,12 @@ min_samples_min=1
 min_samples_max=100
 min_samples_step=5
 
+randoms = fillParams(random_min,random_max,random_step)
+maxDepths = fillParams(maxDepth_min,maxDepth_max,maxDepth_step)
+min_samples = fillParams(min_samples_min,min_samples_max,min_samples_step)
+param_grid = {'random_state':randoms,'max_depth':maxDepths,'min_samples_leaf':min_samples}
+clf = DecisionTreeClassifier(criterion = "gini")
+grid_search = GridSearchCV(clf, param_grid,cv=2)
 trainingPortion = 0.8
 
 def loadDataSet():
@@ -91,37 +104,11 @@ print "No of label sets: " + str(len(labelSet))
 print "No of full sets: " + str(len(fullSet))
     
 x_train,x_test,y_train,y_test = cross_validation.train_test_split(fullSet,labelSet, test_size=(1-trainingPortion) )
+grid_search.fit(x_train, y_train)
+score = grid_search.score(x_test,y_test)
+params = grid_search.best_params_
+print "Best accuracy is "+str(score)+" with params "+str(params)
 
-param_random = random_min
-param_depth = maxDepth_min
-param_samples = min_samples_min
-while param_random <= random_max:
-	while param_depth <= maxDepth_max:
-		while param_samples <= min_samples_max:
-			clf = DecisionTreeClassifier(criterion = "gini", random_state = param_random,
-		                       max_depth=param_depth, min_samples_leaf=param_samples)
-			clf.fit(x_train,y_train)
-			accuracy = clf.score(x_test,y_test)
-			print "Accuracy: "+str(accuracy)+" for random:"+str(param_random)+",depth:"+str(param_depth)+",samples:"+str(param_samples)
-			f1 = open(resultsFile1,'a')
-			f1.write(str(param_random)+"\t"+str(accuracy))
-			f1.write('\n')
-			f1.close()
-			f2 = open(resultsFile2,'a')
-			f2.write(str(param_depth)+"\t"+str(accuracy))
-			f2.write('\n')
-			f2.close()
-			f3 = open(resultsFile3,'a')
-			f3.write(str(param_samples)+"\t"+str(accuracy))
-			f3.write('\n')
-			f3.close()
-			param_samples += min_samples_step	
-		param_depth += maxDepth_step
-		param_samples = min_samples_min
-	param_random += random_step
-	param_depth = maxDepth_min
-	param_samples = min_samples_min
-	#print "param_gamma is now " + str(param_gamma)
 		
 		
 

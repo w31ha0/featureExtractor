@@ -1,8 +1,17 @@
 from sklearn import svm,cross_validation
+from sklearn.grid_search import GridSearchCV
 from math import *
 from constants import *
 
 import os,sys
+
+def fillParams(min,max,step):
+	array = []
+	i = min
+	while i <= max:
+		array.append(i)
+		i += step
+	return array
 
 family = sys.argv[1]
 malicious_dir_path = PROJECT_PATH+"featuresOutput/"+family
@@ -18,16 +27,18 @@ os.system('mkdir '+PROJECT_PATH+"machinelearningResults/"+family)
 os.system('rm '+resultsFile1)
 os.system('rm '+resultsFile2)
 
-param_gamma=0.01
-param_C=100
 gamma_min = 0.1
 gamma_max = 1
 gamma_step = 0.1
 C_min = 1
 C_max = 2
-C_step = 1
+C_step = 0.1
 
-clf = svm.SVC(gamma=param_gamma,C=param_C)
+Cs = fillParams(C_min,C_max,C_step)
+Gammas = fillParams(gamma_min,gamma_max,gamma_step)
+param_grid = {'C':Cs,'gamma':Gammas}
+clf = svm.SVC()
+grid_search = GridSearchCV(clf, param_grid,cv=2)
 trainingPortion = 0.8
 
 def loadDataSet():
@@ -84,27 +95,10 @@ print "No of label sets: " + str(len(labelSet))
 print "No of full sets: " + str(len(fullSet))
     
 x_train,x_test,y_train,y_test = cross_validation.train_test_split(fullSet,labelSet, test_size=(1-trainingPortion) )
-
-param_gamma = gamma_min
-param_C = C_min
-while param_gamma <= gamma_max:
-	while param_C <= C_max:
-		clf = svm.SVC(gamma=param_gamma,C=param_C)
-		clf.fit(x_train,y_train)
-		accuracy = clf.score(x_test,y_test)
-		print "Accuracy: "+str(accuracy)+" for gamma:"+str(param_gamma)+",C:"+str(param_C)
-		f1 = open(resultsFile1,'a')
-		f1.write(str(param_gamma)+"\t"+str(accuracy))
-		f1.write('\n')
-		f1.close()
-		f2 = open(resultsFile2,'a')
-		f2.write(str(param_C)+"\t"+str(accuracy))
-		f2.write('\n')
-		f2.close()
-		param_C += C_step		
-	param_gamma += gamma_step
-	param_C = C_min
-	#print "param_gamma is now " + str(param_gamma)
+grid_search.fit(x_train, y_train)
+score = grid_search.score(x_test,y_test)
+params = grid_search.best_params_
+print "Best accuracy is "+str(score)+" with params "+str(params)
 		
 		
 
