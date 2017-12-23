@@ -79,7 +79,7 @@ for path, subdirs, files in os.walk(dir_path):
 
         print "Parsing apk file " + apkfile
 
-        apkname = apkfile.split('/')[-1].split('.')[0]
+        apkname = apkfile.split('/')[-1].split('.apk')[0]
         if len(apkname) > 29:
             appname = apkname[:30]
         else:
