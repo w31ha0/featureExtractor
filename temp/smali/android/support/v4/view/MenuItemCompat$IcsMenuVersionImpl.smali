@@ -1,6 +1,17 @@
 .class Landroid/support/v4/view/MenuItemCompat$IcsMenuVersionImpl;
 .super Landroid/support/v4/view/MenuItemCompat$HoneycombMenuVersionImpl;
-.source "SourceFile"
+.source "MenuItemCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/MenuItemCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "IcsMenuVersionImpl"
+.end annotation
 
 
 # direct methods
@@ -18,6 +29,7 @@
 # virtual methods
 .method public collapseActionView(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1, "item"    # Landroid/view/MenuItem;
 
     .prologue
     .line 208
@@ -30,6 +42,7 @@
 
 .method public expandActionView(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1, "item"    # Landroid/view/MenuItem;
 
     .prologue
     .line 203
@@ -42,6 +55,7 @@
 
 .method public isActionViewExpanded(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1, "item"    # Landroid/view/MenuItem;
 
     .prologue
     .line 213
@@ -54,6 +68,8 @@
 
 .method public setOnActionExpandListener(Landroid/view/MenuItem;Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;)Landroid/view/MenuItem;
     .locals 1
+    .param p1, "item"    # Landroid/view/MenuItem;
+    .param p2, "listener"    # Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;
 
     .prologue
     .line 219

@@ -1,6 +1,17 @@
 .class Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityNodeInfoIcsImpl;
 .super Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityNodeInfoStubImpl;
-.source "SourceFile"
+.source "AccessibilityNodeInfoCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "AccessibilityNodeInfoIcsImpl"
+.end annotation
 
 
 # direct methods
@@ -8,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 412
+    .line 426
     invoke-direct {p0}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityNodeInfoStubImpl;-><init>()V
 
     return-void
@@ -18,28 +29,34 @@
 # virtual methods
 .method public addAction(Ljava/lang/Object;I)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "action"    # I
 
     .prologue
-    .line 430
+    .line 444
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->addAction(Ljava/lang/Object;I)V
 
-    .line 431
+    .line 445
     return-void
 .end method
 
 .method public addChild(Ljava/lang/Object;Landroid/view/View;)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "child"    # Landroid/view/View;
 
     .prologue
-    .line 435
+    .line 449
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->addChild(Ljava/lang/Object;Landroid/view/View;)V
 
-    .line 436
+    .line 450
     return-void
 .end method
 
 .method public findAccessibilityNodeInfosByText(Ljava/lang/Object;Ljava/lang/String;)Ljava/util/List;
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "text"    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -54,7 +71,7 @@
     .end annotation
 
     .prologue
-    .line 440
+    .line 454
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->findAccessibilityNodeInfosByText(Ljava/lang/Object;Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v0
@@ -64,9 +81,10 @@
 
 .method public getActions(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 445
+    .line 459
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->getActions(Ljava/lang/Object;)I
 
     move-result v0
@@ -76,31 +94,37 @@
 
 .method public getBoundsInParent(Ljava/lang/Object;Landroid/graphics/Rect;)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "outBounds"    # Landroid/graphics/Rect;
 
     .prologue
-    .line 450
+    .line 464
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->getBoundsInParent(Ljava/lang/Object;Landroid/graphics/Rect;)V
 
-    .line 451
+    .line 465
     return-void
 .end method
 
 .method public getBoundsInScreen(Ljava/lang/Object;Landroid/graphics/Rect;)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "outBounds"    # Landroid/graphics/Rect;
 
     .prologue
-    .line 455
+    .line 469
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->getBoundsInScreen(Ljava/lang/Object;Landroid/graphics/Rect;)V
 
-    .line 456
+    .line 470
     return-void
 .end method
 
 .method public getChild(Ljava/lang/Object;I)Ljava/lang/Object;
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "index"    # I
 
     .prologue
-    .line 460
+    .line 474
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->getChild(Ljava/lang/Object;I)Ljava/lang/Object;
 
     move-result-object v0
@@ -110,9 +134,10 @@
 
 .method public getChildCount(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 465
+    .line 479
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->getChildCount(Ljava/lang/Object;)I
 
     move-result v0
@@ -122,9 +147,10 @@
 
 .method public getClassName(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 470
+    .line 484
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->getClassName(Ljava/lang/Object;)Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -134,9 +160,10 @@
 
 .method public getContentDescription(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 475
+    .line 489
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->getContentDescription(Ljava/lang/Object;)Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -146,9 +173,10 @@
 
 .method public getPackageName(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 480
+    .line 494
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->getPackageName(Ljava/lang/Object;)Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -158,9 +186,10 @@
 
 .method public getParent(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 485
+    .line 499
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->getParent(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -170,9 +199,10 @@
 
 .method public getText(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 490
+    .line 504
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->getText(Ljava/lang/Object;)Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -182,9 +212,10 @@
 
 .method public getWindowId(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 495
+    .line 509
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->getWindowId(Ljava/lang/Object;)I
 
     move-result v0
@@ -194,9 +225,10 @@
 
 .method public isCheckable(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 500
+    .line 514
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->isCheckable(Ljava/lang/Object;)Z
 
     move-result v0
@@ -206,9 +238,10 @@
 
 .method public isChecked(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 505
+    .line 519
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->isChecked(Ljava/lang/Object;)Z
 
     move-result v0
@@ -218,9 +251,10 @@
 
 .method public isClickable(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 510
+    .line 524
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->isClickable(Ljava/lang/Object;)Z
 
     move-result v0
@@ -230,9 +264,10 @@
 
 .method public isEnabled(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 515
+    .line 529
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->isEnabled(Ljava/lang/Object;)Z
 
     move-result v0
@@ -242,9 +277,10 @@
 
 .method public isFocusable(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 520
+    .line 534
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->isFocusable(Ljava/lang/Object;)Z
 
     move-result v0
@@ -254,9 +290,10 @@
 
 .method public isFocused(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 525
+    .line 539
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->isFocused(Ljava/lang/Object;)Z
 
     move-result v0
@@ -266,9 +303,10 @@
 
 .method public isLongClickable(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 530
+    .line 544
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->isLongClickable(Ljava/lang/Object;)Z
 
     move-result v0
@@ -278,9 +316,10 @@
 
 .method public isPassword(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 535
+    .line 549
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->isPassword(Ljava/lang/Object;)Z
 
     move-result v0
@@ -290,9 +329,10 @@
 
 .method public isScrollable(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 540
+    .line 554
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->isScrollable(Ljava/lang/Object;)Z
 
     move-result v0
@@ -302,9 +342,10 @@
 
 .method public isSelected(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 545
+    .line 559
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->isSelected(Ljava/lang/Object;)Z
 
     move-result v0
@@ -316,7 +357,7 @@
     .locals 1
 
     .prologue
-    .line 415
+    .line 429
     invoke-static {}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->obtain()Ljava/lang/Object;
 
     move-result-object v0
@@ -326,9 +367,10 @@
 
 .method public obtain(Landroid/view/View;)Ljava/lang/Object;
     .locals 1
+    .param p1, "source"    # Landroid/view/View;
 
     .prologue
-    .line 420
+    .line 434
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->obtain(Landroid/view/View;)Ljava/lang/Object;
 
     move-result-object v0
@@ -338,9 +380,10 @@
 
 .method public obtain(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 425
+    .line 439
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->obtain(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -350,9 +393,11 @@
 
 .method public performAction(Ljava/lang/Object;I)Z
     .locals 1
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "action"    # I
 
     .prologue
-    .line 550
+    .line 564
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->performAction(Ljava/lang/Object;I)Z
 
     move-result v0
@@ -362,209 +407,246 @@
 
 .method public recycle(Ljava/lang/Object;)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
 
     .prologue
-    .line 645
+    .line 659
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->recycle(Ljava/lang/Object;)V
 
-    .line 646
+    .line 660
     return-void
 .end method
 
 .method public setBoundsInParent(Ljava/lang/Object;Landroid/graphics/Rect;)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "bounds"    # Landroid/graphics/Rect;
 
     .prologue
-    .line 555
+    .line 569
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setBoundsInParent(Ljava/lang/Object;Landroid/graphics/Rect;)V
 
-    .line 556
+    .line 570
     return-void
 .end method
 
 .method public setBoundsInScreen(Ljava/lang/Object;Landroid/graphics/Rect;)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "bounds"    # Landroid/graphics/Rect;
 
     .prologue
-    .line 560
+    .line 574
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setBoundsInScreen(Ljava/lang/Object;Landroid/graphics/Rect;)V
 
-    .line 561
+    .line 575
     return-void
 .end method
 
 .method public setCheckable(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "checkable"    # Z
 
     .prologue
-    .line 565
+    .line 579
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setCheckable(Ljava/lang/Object;Z)V
 
-    .line 566
+    .line 580
     return-void
 .end method
 
 .method public setChecked(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "checked"    # Z
 
     .prologue
-    .line 570
+    .line 584
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setChecked(Ljava/lang/Object;Z)V
 
-    .line 571
+    .line 585
     return-void
 .end method
 
 .method public setClassName(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "className"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 575
+    .line 589
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setClassName(Ljava/lang/Object;Ljava/lang/CharSequence;)V
 
-    .line 576
+    .line 590
     return-void
 .end method
 
 .method public setClickable(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "clickable"    # Z
 
     .prologue
-    .line 580
+    .line 594
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setClickable(Ljava/lang/Object;Z)V
 
-    .line 581
+    .line 595
     return-void
 .end method
 
 .method public setContentDescription(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "contentDescription"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 585
+    .line 599
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setContentDescription(Ljava/lang/Object;Ljava/lang/CharSequence;)V
 
-    .line 586
+    .line 600
     return-void
 .end method
 
 .method public setEnabled(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "enabled"    # Z
 
     .prologue
-    .line 590
+    .line 604
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setEnabled(Ljava/lang/Object;Z)V
 
-    .line 591
+    .line 605
     return-void
 .end method
 
 .method public setFocusable(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "focusable"    # Z
 
     .prologue
-    .line 595
+    .line 609
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setFocusable(Ljava/lang/Object;Z)V
 
-    .line 596
+    .line 610
     return-void
 .end method
 
 .method public setFocused(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "focused"    # Z
 
     .prologue
-    .line 600
+    .line 614
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setFocused(Ljava/lang/Object;Z)V
 
-    .line 601
+    .line 615
     return-void
 .end method
 
 .method public setLongClickable(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "longClickable"    # Z
 
     .prologue
-    .line 605
+    .line 619
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setLongClickable(Ljava/lang/Object;Z)V
 
-    .line 606
+    .line 620
     return-void
 .end method
 
 .method public setPackageName(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "packageName"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 610
+    .line 624
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setPackageName(Ljava/lang/Object;Ljava/lang/CharSequence;)V
 
-    .line 611
+    .line 625
     return-void
 .end method
 
 .method public setParent(Ljava/lang/Object;Landroid/view/View;)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "parent"    # Landroid/view/View;
 
     .prologue
-    .line 615
+    .line 629
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setParent(Ljava/lang/Object;Landroid/view/View;)V
 
-    .line 616
+    .line 630
     return-void
 .end method
 
 .method public setPassword(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "password"    # Z
 
     .prologue
-    .line 620
+    .line 634
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setPassword(Ljava/lang/Object;Z)V
 
-    .line 621
+    .line 635
     return-void
 .end method
 
 .method public setScrollable(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "scrollable"    # Z
 
     .prologue
-    .line 625
+    .line 639
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setScrollable(Ljava/lang/Object;Z)V
 
-    .line 626
+    .line 640
     return-void
 .end method
 
 .method public setSelected(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "selected"    # Z
 
     .prologue
-    .line 630
+    .line 644
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setSelected(Ljava/lang/Object;Z)V
 
-    .line 631
+    .line 645
     return-void
 .end method
 
 .method public setSource(Ljava/lang/Object;Landroid/view/View;)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "source"    # Landroid/view/View;
 
     .prologue
-    .line 635
+    .line 649
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setSource(Ljava/lang/Object;Landroid/view/View;)V
 
-    .line 636
+    .line 650
     return-void
 .end method
 
 .method public setText(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
+    .param p1, "info"    # Ljava/lang/Object;
+    .param p2, "text"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 640
+    .line 654
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatIcs;->setText(Ljava/lang/Object;Ljava/lang/CharSequence;)V
 
-    .line 641
+    .line 655
     return-void
 .end method

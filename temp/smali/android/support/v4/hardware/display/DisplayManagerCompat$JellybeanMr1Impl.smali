@@ -1,6 +1,17 @@
 .class Landroid/support/v4/hardware/display/DisplayManagerCompat$JellybeanMr1Impl;
 .super Landroid/support/v4/hardware/display/DisplayManagerCompat;
-.source "SourceFile"
+.source "DisplayManagerCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/hardware/display/DisplayManagerCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "JellybeanMr1Impl"
+.end annotation
 
 
 # instance fields
@@ -10,6 +21,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1, "context"    # Landroid/content/Context;
 
     .prologue
     .line 135
@@ -30,6 +42,7 @@
 # virtual methods
 .method public getDisplay(I)Landroid/view/Display;
     .locals 1
+    .param p1, "displayId"    # I
 
     .prologue
     .line 141
@@ -58,6 +71,7 @@
 
 .method public getDisplays(Ljava/lang/String;)[Landroid/view/Display;
     .locals 1
+    .param p1, "category"    # Ljava/lang/String;
 
     .prologue
     .line 151

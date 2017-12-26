@@ -1,6 +1,17 @@
 .class Landroid/support/v4/app/FragmentActivity$1;
 .super Landroid/os/Handler;
-.source "SourceFile"
+.source "FragmentActivity.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/FragmentActivity;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
@@ -24,6 +35,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
+    .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
     .line 89

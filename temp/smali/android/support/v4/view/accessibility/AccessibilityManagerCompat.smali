@@ -1,6 +1,17 @@
 .class public Landroid/support/v4/view/accessibility/AccessibilityManagerCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AccessibilityManagerCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat;,
+        Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerIcsImpl;,
+        Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerStubImpl;,
+        Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerVersionImpl;
+    }
+.end annotation
 
 
 # static fields
@@ -64,6 +75,8 @@
 
 .method public static addAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager;Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat;)Z
     .locals 1
+    .param p0, "manager"    # Landroid/view/accessibility/AccessibilityManager;
+    .param p1, "listener"    # Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat;
 
     .prologue
     .line 144
@@ -78,6 +91,8 @@
 
 .method public static getEnabledAccessibilityServiceList(Landroid/view/accessibility/AccessibilityManager;I)Ljava/util/List;
     .locals 1
+    .param p0, "manager"    # Landroid/view/accessibility/AccessibilityManager;
+    .param p1, "feedbackTypeFlags"    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -103,6 +118,7 @@
 
 .method public static getInstalledAccessibilityServiceList(Landroid/view/accessibility/AccessibilityManager;)Ljava/util/List;
     .locals 1
+    .param p0, "manager"    # Landroid/view/accessibility/AccessibilityManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -128,6 +144,7 @@
 
 .method public static isTouchExplorationEnabled(Landroid/view/accessibility/AccessibilityManager;)Z
     .locals 1
+    .param p0, "manager"    # Landroid/view/accessibility/AccessibilityManager;
 
     .prologue
     .line 196
@@ -142,6 +159,8 @@
 
 .method public static removeAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager;Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat;)Z
     .locals 1
+    .param p0, "manager"    # Landroid/view/accessibility/AccessibilityManager;
+    .param p1, "listener"    # Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat;
 
     .prologue
     .line 156

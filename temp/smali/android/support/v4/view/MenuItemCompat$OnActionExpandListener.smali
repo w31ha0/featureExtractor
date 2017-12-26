@@ -1,6 +1,17 @@
 .class public interface abstract Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "MenuItemCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/MenuItemCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OnActionExpandListener"
+.end annotation
 
 
 # virtual methods

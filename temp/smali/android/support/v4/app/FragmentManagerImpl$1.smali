@@ -1,9 +1,20 @@
 .class Landroid/support/v4/app/FragmentManagerImpl$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "FragmentManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/FragmentManagerImpl;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields

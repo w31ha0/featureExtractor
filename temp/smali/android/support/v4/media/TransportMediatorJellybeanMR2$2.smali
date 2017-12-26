@@ -1,9 +1,20 @@
 .class Landroid/support/v4/media/TransportMediatorJellybeanMR2$2;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "TransportMediatorJellybeanMR2.java"
 
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnWindowFocusChangeListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/media/TransportMediatorJellybeanMR2;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
@@ -27,6 +38,7 @@
 # virtual methods
 .method public onWindowFocusChanged(Z)V
     .locals 1
+    .param p1, "hasFocus"    # Z
 
     .prologue
     .line 56

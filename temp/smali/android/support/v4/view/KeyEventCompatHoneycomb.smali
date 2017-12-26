@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/KeyEventCompatHoneycomb;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "KeyEventCompatHoneycomb.java"
 
 
 # direct methods
@@ -16,6 +16,8 @@
 
 .method public static metaStateHasModifiers(II)Z
     .locals 1
+    .param p0, "metaState"    # I
+    .param p1, "modifiers"    # I
 
     .prologue
     .line 30
@@ -28,6 +30,7 @@
 
 .method public static metaStateHasNoModifiers(I)Z
     .locals 1
+    .param p0, "metaState"    # I
 
     .prologue
     .line 34
@@ -40,6 +43,7 @@
 
 .method public static normalizeMetaState(I)I
     .locals 1
+    .param p0, "metaState"    # I
 
     .prologue
     .line 26

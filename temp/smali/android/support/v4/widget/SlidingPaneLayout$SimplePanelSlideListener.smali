@@ -1,9 +1,20 @@
 .class public Landroid/support/v4/widget/SlidingPaneLayout$SimplePanelSlideListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SlidingPaneLayout.java"
 
 # interfaces
 .implements Landroid/support/v4/widget/SlidingPaneLayout$PanelSlideListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/SlidingPaneLayout;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "SimplePanelSlideListener"
+.end annotation
 
 
 # direct methods
@@ -21,6 +32,7 @@
 # virtual methods
 .method public onPanelClosed(Landroid/view/View;)V
     .locals 0
+    .param p1, "panel"    # Landroid/view/View;
 
     .prologue
     .line 240
@@ -29,6 +41,7 @@
 
 .method public onPanelOpened(Landroid/view/View;)V
     .locals 0
+    .param p1, "panel"    # Landroid/view/View;
 
     .prologue
     .line 237
@@ -37,6 +50,8 @@
 
 .method public onPanelSlide(Landroid/view/View;F)V
     .locals 0
+    .param p1, "panel"    # Landroid/view/View;
+    .param p2, "slideOffset"    # F
 
     .prologue
     .line 234

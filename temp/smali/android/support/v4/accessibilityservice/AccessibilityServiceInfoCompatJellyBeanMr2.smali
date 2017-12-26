@@ -1,6 +1,6 @@
 .class Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompatJellyBeanMr2;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AccessibilityServiceInfoCompatJellyBeanMr2.java"
 
 
 # direct methods
@@ -16,6 +16,7 @@
 
 .method public static getCapabilities(Landroid/accessibilityservice/AccessibilityServiceInfo;)I
     .locals 1
+    .param p0, "info"    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     .prologue
     .line 28

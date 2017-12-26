@@ -1,6 +1,17 @@
 .class Landroid/support/v4/widget/CursorAdapter$MyDataSetObserver;
 .super Landroid/database/DataSetObserver;
-.source "SourceFile"
+.source "CursorAdapter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/CursorAdapter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "MyDataSetObserver"
+.end annotation
 
 
 # instance fields
@@ -22,6 +33,8 @@
 
 .method synthetic constructor <init>(Landroid/support/v4/widget/CursorAdapter;Landroid/support/v4/widget/CursorAdapter$1;)V
     .locals 0
+    .param p1, "x0"    # Landroid/support/v4/widget/CursorAdapter;
+    .param p2, "x1"    # Landroid/support/v4/widget/CursorAdapter$1;
 
     .prologue
     .line 469

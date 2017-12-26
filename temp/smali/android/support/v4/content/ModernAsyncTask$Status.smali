@@ -1,9 +1,18 @@
 .class public final enum Landroid/support/v4/content/ModernAsyncTask$Status;
 .super Ljava/lang/Enum;
-.source "SourceFile"
+.source "ModernAsyncTask.java"
 
 
 # annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/content/ModernAsyncTask;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x4019
+    name = "Status"
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Enum",
@@ -101,6 +110,7 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/support/v4/content/ModernAsyncTask$Status;
     .locals 1
+    .param p0, "name"    # Ljava/lang/String;
 
     .prologue
     .line 89

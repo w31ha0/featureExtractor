@@ -1,6 +1,15 @@
 .class public abstract Landroid/support/v4/view/ActionProvider;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ActionProvider.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/view/ActionProvider$VisibilityListener;,
+        Landroid/support/v4/view/ActionProvider$SubUiVisibilityListener;
+    }
+.end annotation
 
 
 # static fields
@@ -18,6 +27,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .param p1, "context"    # Landroid/content/Context;
 
     .prologue
     .line 78
@@ -67,6 +77,7 @@
 
 .method public onCreateActionView(Landroid/view/MenuItem;)Landroid/view/View;
     .locals 1
+    .param p1, "forItem"    # Landroid/view/MenuItem;
 
     .prologue
     .line 109
@@ -89,6 +100,7 @@
 
 .method public onPrepareSubMenu(Landroid/view/SubMenu;)V
     .locals 0
+    .param p1, "subMenu"    # Landroid/view/SubMenu;
 
     .prologue
     .line 208
@@ -136,6 +148,7 @@
 
 .method public setSubUiVisibilityListener(Landroid/support/v4/view/ActionProvider$SubUiVisibilityListener;)V
     .locals 0
+    .param p1, "listener"    # Landroid/support/v4/view/ActionProvider$SubUiVisibilityListener;
 
     .prologue
     .line 226
@@ -147,6 +160,7 @@
 
 .method public setVisibilityListener(Landroid/support/v4/view/ActionProvider$VisibilityListener;)V
     .locals 3
+    .param p1, "listener"    # Landroid/support/v4/view/ActionProvider$VisibilityListener;
 
     .prologue
     .line 236
@@ -203,6 +217,7 @@
 
 .method public subUiVisibilityChanged(Z)V
     .locals 1
+    .param p1, "isVisible"    # Z
 
     .prologue
     .line 217

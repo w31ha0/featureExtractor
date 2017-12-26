@@ -1,5 +1,6 @@
 .class public interface abstract Lcom/google/ads/mediation/MediationInterstitialAdapter;
 .super Ljava/lang/Object;
+.source "SourceFile"
 
 # interfaces
 .implements Lcom/google/ads/mediation/MediationAdapter;
@@ -19,9 +20,6 @@
         "L_PARAMETERS;",
         "TSERVER_PARAMETERS;>;"
     }
-.end annotation
-
-.annotation runtime Ljava/lang/Deprecated;
 .end annotation
 
 

@@ -1,9 +1,26 @@
 .class Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "TrafficStatsCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/net/TrafficStatsCompat$TrafficStatsCompatImpl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/net/TrafficStatsCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "BaseTrafficStatsCompatImpl"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$SocketTags;
+    }
+.end annotation
 
 
 # instance fields
@@ -80,6 +97,7 @@
 
 .method public incrementOperationCount(I)V
     .locals 0
+    .param p1, "operationCount"    # I
 
     .prologue
     .line 64
@@ -88,6 +106,8 @@
 
 .method public incrementOperationCount(II)V
     .locals 0
+    .param p1, "tag"    # I
+    .param p2, "operationCount"    # I
 
     .prologue
     .line 68
@@ -96,6 +116,7 @@
 
 .method public setThreadStatsTag(I)V
     .locals 1
+    .param p1, "tag"    # I
 
     .prologue
     .line 72
@@ -115,6 +136,7 @@
 
 .method public tagSocket(Ljava/net/Socket;)V
     .locals 0
+    .param p1, "socket"    # Ljava/net/Socket;
 
     .prologue
     .line 77
@@ -123,6 +145,7 @@
 
 .method public untagSocket(Ljava/net/Socket;)V
     .locals 0
+    .param p1, "socket"    # Ljava/net/Socket;
 
     .prologue
     .line 81

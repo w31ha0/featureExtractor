@@ -1,9 +1,20 @@
 .class Landroid/support/v4/widget/SlidingPaneLayout$DisableLayerRunnable;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SlidingPaneLayout.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/SlidingPaneLayout;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "DisableLayerRunnable"
+.end annotation
 
 
 # instance fields
@@ -15,6 +26,7 @@
 # direct methods
 .method constructor <init>(Landroid/support/v4/widget/SlidingPaneLayout;Landroid/view/View;)V
     .locals 0
+    .param p2, "childView"    # Landroid/view/View;
 
     .prologue
     .line 1484

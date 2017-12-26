@@ -1,5 +1,6 @@
 .class public interface abstract annotation Lcom/google/ads/mediation/MediationServerParameters$Parameter;
 .super Ljava/lang/Object;
+.source "SourceFile"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;
@@ -10,6 +11,15 @@
     value = .subannotation Lcom/google/ads/mediation/MediationServerParameters$Parameter;
         required = true
     .end subannotation
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/ads/mediation/MediationServerParameters;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x260c
+    name = "Parameter"
 .end annotation
 
 .annotation runtime Ljava/lang/annotation/Retention;

@@ -1,12 +1,21 @@
 .class final Landroid/support/v4/app/Fragment$SavedState$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "Fragment.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
 
 
 # annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/Fragment$SavedState;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = null
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
@@ -33,6 +42,7 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Landroid/support/v4/app/Fragment$SavedState;
     .locals 2
+    .param p1, "in"    # Landroid/os/Parcel;
 
     .prologue
     .line 333
@@ -47,6 +57,7 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
+    .param p1, "x0"    # Landroid/os/Parcel;
 
     .prologue
     .line 331
@@ -59,6 +70,7 @@
 
 .method public newArray(I)[Landroid/support/v4/app/Fragment$SavedState;
     .locals 1
+    .param p1, "size"    # I
 
     .prologue
     .line 337
@@ -69,6 +81,7 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
+    .param p1, "x0"    # I
 
     .prologue
     .line 331

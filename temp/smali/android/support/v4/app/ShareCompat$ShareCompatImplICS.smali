@@ -1,6 +1,17 @@
 .class Landroid/support/v4/app/ShareCompat$ShareCompatImplICS;
 .super Landroid/support/v4/app/ShareCompat$ShareCompatImplBase;
-.source "SourceFile"
+.source "ShareCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/ShareCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "ShareCompatImplICS"
+.end annotation
 
 
 # direct methods
@@ -18,6 +29,8 @@
 # virtual methods
 .method public configureMenuItem(Landroid/view/MenuItem;Landroid/support/v4/app/ShareCompat$IntentBuilder;)V
     .locals 2
+    .param p1, "item"    # Landroid/view/MenuItem;
+    .param p2, "shareIntent"    # Landroid/support/v4/app/ShareCompat$IntentBuilder;
 
     .prologue
     .line 125
@@ -52,6 +65,7 @@
 
 .method shouldAddChooserIntent(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1, "item"    # Landroid/view/MenuItem;
 
     .prologue
     .line 133

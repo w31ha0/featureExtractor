@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/layoutLetraSolucion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.9"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/internalAd" android:background="@drawable/internal_ad_4pics" android:layout_width="54.0dip" android:layout_height="100.0dip" />
-</RelativeLayout>

@@ -1,6 +1,17 @@
 .class public Landroid/support/v4/app/NotificationCompat$Builder;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "NotificationCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/NotificationCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Builder"
+.end annotation
 
 
 # instance fields
@@ -53,6 +64,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
+    .param p1, "context"    # Landroid/content/Context;
 
     .prologue
     .line 217
@@ -102,6 +114,8 @@
 
 .method private setFlag(IZ)V
     .locals 3
+    .param p1, "mask"    # I
+    .param p2, "value"    # Z
 
     .prologue
     .line 520
@@ -139,6 +153,9 @@
 # virtual methods
 .method public addAction(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 2
+    .param p1, "icon"    # I
+    .param p2, "title"    # Ljava/lang/CharSequence;
+    .param p3, "intent"    # Landroid/app/PendingIntent;
 
     .prologue
     .line 560
@@ -190,6 +207,7 @@
 
 .method public setAutoCancel(Z)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1, "autoCancel"    # Z
 
     .prologue
     .line 497
@@ -203,6 +221,7 @@
 
 .method public setContent(Landroid/widget/RemoteViews;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1, "views"    # Landroid/widget/RemoteViews;
 
     .prologue
     .line 342
@@ -216,6 +235,7 @@
 
 .method public setContentInfo(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
+    .param p1, "info"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 323
@@ -227,6 +247,7 @@
 
 .method public setContentIntent(Landroid/app/PendingIntent;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
+    .param p1, "intent"    # Landroid/app/PendingIntent;
 
     .prologue
     .line 355
@@ -238,6 +259,7 @@
 
 .method public setContentText(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
+    .param p1, "text"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 291
@@ -249,6 +271,7 @@
 
 .method public setContentTitle(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
+    .param p1, "title"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 283
@@ -260,6 +283,7 @@
 
 .method public setDefaults(I)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 2
+    .param p1, "defaults"    # I
 
     .prologue
     .line 512
@@ -288,6 +312,7 @@
 
 .method public setDeleteIntent(Landroid/app/PendingIntent;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1, "intent"    # Landroid/app/PendingIntent;
 
     .prologue
     .line 367
@@ -301,6 +326,8 @@
 
 .method public setFullScreenIntent(Landroid/app/PendingIntent;Z)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1, "intent"    # Landroid/app/PendingIntent;
+    .param p2, "highPriority"    # Z
 
     .prologue
     .line 385
@@ -317,6 +344,7 @@
 
 .method public setLargeIcon(Landroid/graphics/Bitmap;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
+    .param p1, "icon"    # Landroid/graphics/Bitmap;
 
     .prologue
     .line 414
@@ -328,6 +356,9 @@
 
 .method public setLights(III)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 5
+    .param p1, "argb"    # I
+    .param p2, "onMs"    # I
+    .param p3, "offMs"    # I
 
     .prologue
     const/4 v1, 0x1
@@ -335,36 +366,37 @@
     const/4 v2, 0x0
 
     .line 456
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
+    iget-object v3, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
-    iput p1, v0, Landroid/app/Notification;->ledARGB:I
+    iput p1, v3, Landroid/app/Notification;->ledARGB:I
 
     .line 457
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
+    iget-object v3, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
-    iput p2, v0, Landroid/app/Notification;->ledOnMS:I
+    iput p2, v3, Landroid/app/Notification;->ledOnMS:I
 
     .line 458
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
+    iget-object v3, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
-    iput p3, v0, Landroid/app/Notification;->ledOffMS:I
+    iput p3, v3, Landroid/app/Notification;->ledOffMS:I
 
     .line 459
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
+    iget-object v3, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
-    iget v0, v0, Landroid/app/Notification;->ledOnMS:I
+    iget v3, v3, Landroid/app/Notification;->ledOnMS:I
 
-    if-eqz v0, :cond_0
+    if-eqz v3, :cond_0
 
-    iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
+    iget-object v3, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
-    iget v0, v0, Landroid/app/Notification;->ledOffMS:I
+    iget v3, v3, Landroid/app/Notification;->ledOffMS:I
 
-    if-eqz v0, :cond_0
+    if-eqz v3, :cond_0
 
     move v0, v1
 
     .line 460
+    .local v0, "showLights":Z
     :goto_0
     iget-object v3, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
@@ -377,19 +409,21 @@
     if-eqz v0, :cond_1
 
     :goto_1
-    or-int v0, v4, v1
+    or-int/2addr v1, v4
 
-    iput v0, v3, Landroid/app/Notification;->flags:I
+    iput v1, v3, Landroid/app/Notification;->flags:I
 
     .line 462
     return-object p0
 
+    .end local v0    # "showLights":Z
     :cond_0
     move v0, v2
 
     .line 459
     goto :goto_0
 
+    .restart local v0    # "showLights":Z
     :cond_1
     move v1, v2
 
@@ -399,6 +433,7 @@
 
 .method public setNumber(I)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
+    .param p1, "number"    # I
 
     .prologue
     .line 315
@@ -410,6 +445,7 @@
 
 .method public setOngoing(Z)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1, "ongoing"    # Z
 
     .prologue
     .line 477
@@ -423,6 +459,7 @@
 
 .method public setOnlyAlertOnce(Z)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1, "onlyAlertOnce"    # Z
 
     .prologue
     .line 486
@@ -436,6 +473,7 @@
 
 .method public setPriority(I)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
+    .param p1, "pri"    # I
 
     .prologue
     .line 539
@@ -447,6 +485,9 @@
 
 .method public setProgress(IIZ)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
+    .param p1, "max"    # I
+    .param p2, "progress"    # I
+    .param p3, "indeterminate"    # Z
 
     .prologue
     .line 332
@@ -464,6 +505,7 @@
 
 .method public setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1, "icon"    # I
 
     .prologue
     .line 259
@@ -477,6 +519,8 @@
 
 .method public setSmallIcon(II)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1, "icon"    # I
+    .param p2, "level"    # I
 
     .prologue
     .line 274
@@ -495,6 +539,7 @@
 
 .method public setSound(Landroid/net/Uri;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 2
+    .param p1, "sound"    # Landroid/net/Uri;
 
     .prologue
     .line 422
@@ -515,6 +560,8 @@
 
 .method public setSound(Landroid/net/Uri;I)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1, "sound"    # Landroid/net/Uri;
+    .param p2, "streamType"    # I
 
     .prologue
     .line 434
@@ -533,6 +580,7 @@
 
 .method public setStyle(Landroid/support/v4/app/NotificationCompat$Style;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1, "style"    # Landroid/support/v4/app/NotificationCompat$Style;
 
     .prologue
     .line 573
@@ -560,6 +608,7 @@
 
 .method public setSubText(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
+    .param p1, "text"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 305
@@ -571,6 +620,7 @@
 
 .method public setTicker(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1, "tickerText"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 395
@@ -584,6 +634,8 @@
 
 .method public setTicker(Ljava/lang/CharSequence;Landroid/widget/RemoteViews;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1, "tickerText"    # Ljava/lang/CharSequence;
+    .param p2, "views"    # Landroid/widget/RemoteViews;
 
     .prologue
     .line 405
@@ -600,6 +652,7 @@
 
 .method public setUsesChronometer(Z)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
+    .param p1, "b"    # Z
 
     .prologue
     .line 247
@@ -611,6 +664,7 @@
 
 .method public setVibrate([J)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1, "pattern"    # [J
 
     .prologue
     .line 446
@@ -624,6 +678,7 @@
 
 .method public setWhen(J)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1, "when"    # J
 
     .prologue
     .line 231

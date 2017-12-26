@@ -1,6 +1,17 @@
 .class Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;
 .super Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;
-.source "SourceFile"
+.source "ExploreByTouchHelper.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/ExploreByTouchHelper;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "ExploreByTouchNodeProvider"
+.end annotation
 
 
 # instance fields
@@ -22,6 +33,8 @@
 
 .method synthetic constructor <init>(Landroid/support/v4/widget/ExploreByTouchHelper;Landroid/support/v4/widget/ExploreByTouchHelper$1;)V
     .locals 0
+    .param p1, "x0"    # Landroid/support/v4/widget/ExploreByTouchHelper;
+    .param p2, "x1"    # Landroid/support/v4/widget/ExploreByTouchHelper$1;
 
     .prologue
     .line 713
@@ -34,6 +47,7 @@
 # virtual methods
 .method public createAccessibilityNodeInfo(I)Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;
     .locals 1
+    .param p1, "virtualViewId"    # I
 
     .prologue
     .line 716
@@ -48,6 +62,9 @@
 
 .method public performAction(IILandroid/os/Bundle;)Z
     .locals 1
+    .param p1, "virtualViewId"    # I
+    .param p2, "action"    # I
+    .param p3, "arguments"    # Landroid/os/Bundle;
 
     .prologue
     .line 721

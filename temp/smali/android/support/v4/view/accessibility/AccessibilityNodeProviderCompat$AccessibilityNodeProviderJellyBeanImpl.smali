@@ -1,6 +1,17 @@
 .class Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl;
 .super Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderStubImpl;
-.source "SourceFile"
+.source "AccessibilityNodeProviderCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "AccessibilityNodeProviderJellyBeanImpl"
+.end annotation
 
 
 # direct methods
@@ -18,6 +29,7 @@
 # virtual methods
 .method public newAccessibilityNodeProviderBridge(Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;)Ljava/lang/Object;
     .locals 1
+    .param p1, "compat"    # Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;
 
     .prologue
     .line 47

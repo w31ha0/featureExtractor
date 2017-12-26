@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/MarginLayoutParamsCompatJellybeanMr1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "MarginLayoutParamsCompatJellybeanMr1.java"
 
 
 # direct methods
@@ -16,6 +16,7 @@
 
 .method public static getLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 1
+    .param p0, "lp"    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     .prologue
     .line 44
@@ -28,6 +29,7 @@
 
 .method public static getMarginEnd(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 1
+    .param p0, "lp"    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     .prologue
     .line 28
@@ -40,6 +42,7 @@
 
 .method public static getMarginStart(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 1
+    .param p0, "lp"    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     .prologue
     .line 24
@@ -52,6 +55,7 @@
 
 .method public static isMarginRelative(Landroid/view/ViewGroup$MarginLayoutParams;)Z
     .locals 1
+    .param p0, "lp"    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     .prologue
     .line 40
@@ -64,6 +68,8 @@
 
 .method public static resolveLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 0
+    .param p0, "lp"    # Landroid/view/ViewGroup$MarginLayoutParams;
+    .param p1, "layoutDirection"    # I
 
     .prologue
     .line 53
@@ -75,6 +81,8 @@
 
 .method public static setLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 0
+    .param p0, "lp"    # Landroid/view/ViewGroup$MarginLayoutParams;
+    .param p1, "layoutDirection"    # I
 
     .prologue
     .line 48
@@ -86,6 +94,8 @@
 
 .method public static setMarginEnd(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 0
+    .param p0, "lp"    # Landroid/view/ViewGroup$MarginLayoutParams;
+    .param p1, "marginEnd"    # I
 
     .prologue
     .line 36
@@ -97,6 +107,8 @@
 
 .method public static setMarginStart(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 0
+    .param p0, "lp"    # Landroid/view/ViewGroup$MarginLayoutParams;
+    .param p1, "marginStart"    # I
 
     .prologue
     .line 32

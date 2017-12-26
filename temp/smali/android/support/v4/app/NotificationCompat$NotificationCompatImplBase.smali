@@ -1,9 +1,20 @@
 .class Landroid/support/v4/app/NotificationCompat$NotificationCompatImplBase;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "NotificationCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/NotificationCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "NotificationCompatImplBase"
+.end annotation
 
 
 # direct methods
@@ -21,12 +32,14 @@
 # virtual methods
 .method public build(Landroid/support/v4/app/NotificationCompat$Builder;)Landroid/app/Notification;
     .locals 5
+    .param p1, "b"    # Landroid/support/v4/app/NotificationCompat$Builder;
 
     .prologue
     .line 87
     iget-object v0, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
     .line 88
+    .local v0, "result":Landroid/app/Notification;
     iget-object v1, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mContext:Landroid/content/Context;
 
     iget-object v2, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mContentTitle:Ljava/lang/CharSequence;

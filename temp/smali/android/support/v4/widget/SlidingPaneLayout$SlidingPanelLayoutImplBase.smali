@@ -1,9 +1,20 @@
 .class Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplBase;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SlidingPaneLayout.java"
 
 # interfaces
 .implements Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImpl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/SlidingPaneLayout;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "SlidingPanelLayoutImplBase"
+.end annotation
 
 
 # direct methods
@@ -21,6 +32,8 @@
 # virtual methods
 .method public invalidateChildRegion(Landroid/support/v4/widget/SlidingPaneLayout;Landroid/view/View;)V
     .locals 4
+    .param p1, "parent"    # Landroid/support/v4/widget/SlidingPaneLayout;
+    .param p2, "child"    # Landroid/view/View;
 
     .prologue
     .line 1339

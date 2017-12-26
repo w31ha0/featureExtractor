@@ -1,6 +1,16 @@
 .class public Landroid/support/v4/view/GravityCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "GravityCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/view/GravityCompat$GravityCompatImplJellybeanMr1;,
+        Landroid/support/v4/view/GravityCompat$GravityCompatImplBase;,
+        Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
+    }
+.end annotation
 
 
 # static fields
@@ -24,16 +34,17 @@
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 90
+    .local v0, "version":I
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
     .line 91
-    new-instance v0, Landroid/support/v4/view/GravityCompat$GravityCompatImplJellybeanMr1;
+    new-instance v1, Landroid/support/v4/view/GravityCompat$GravityCompatImplJellybeanMr1;
 
-    invoke-direct {v0}, Landroid/support/v4/view/GravityCompat$GravityCompatImplJellybeanMr1;-><init>()V
+    invoke-direct {v1}, Landroid/support/v4/view/GravityCompat$GravityCompatImplJellybeanMr1;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/GravityCompat;->IMPL:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
+    sput-object v1, Landroid/support/v4/view/GravityCompat;->IMPL:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
 
     .line 95
     :goto_0
@@ -41,11 +52,11 @@
 
     .line 93
     :cond_0
-    new-instance v0, Landroid/support/v4/view/GravityCompat$GravityCompatImplBase;
+    new-instance v1, Landroid/support/v4/view/GravityCompat$GravityCompatImplBase;
 
-    invoke-direct {v0}, Landroid/support/v4/view/GravityCompat$GravityCompatImplBase;-><init>()V
+    invoke-direct {v1}, Landroid/support/v4/view/GravityCompat$GravityCompatImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/view/GravityCompat;->IMPL:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
+    sput-object v1, Landroid/support/v4/view/GravityCompat;->IMPL:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
 
     goto :goto_0
 .end method
@@ -63,6 +74,14 @@
 
 .method public static apply(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;I)V
     .locals 9
+    .param p0, "gravity"    # I
+    .param p1, "w"    # I
+    .param p2, "h"    # I
+    .param p3, "container"    # Landroid/graphics/Rect;
+    .param p4, "xAdj"    # I
+    .param p5, "yAdj"    # I
+    .param p6, "outRect"    # Landroid/graphics/Rect;
+    .param p7, "layoutDirection"    # I
 
     .prologue
     .line 162
@@ -92,6 +111,12 @@
 
 .method public static apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
     .locals 7
+    .param p0, "gravity"    # I
+    .param p1, "w"    # I
+    .param p2, "h"    # I
+    .param p3, "container"    # Landroid/graphics/Rect;
+    .param p4, "outRect"    # Landroid/graphics/Rect;
+    .param p5, "layoutDirection"    # I
 
     .prologue
     .line 132
@@ -117,6 +142,10 @@
 
 .method public static applyDisplay(ILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
     .locals 1
+    .param p0, "gravity"    # I
+    .param p1, "display"    # Landroid/graphics/Rect;
+    .param p2, "inoutObj"    # Landroid/graphics/Rect;
+    .param p3, "layoutDirection"    # I
 
     .prologue
     .line 186
@@ -130,6 +159,8 @@
 
 .method public static getAbsoluteGravity(II)I
     .locals 1
+    .param p0, "gravity"    # I
+    .param p1, "layoutDirection"    # I
 
     .prologue
     .line 201

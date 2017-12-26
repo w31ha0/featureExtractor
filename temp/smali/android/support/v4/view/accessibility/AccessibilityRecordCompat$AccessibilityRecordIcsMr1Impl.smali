@@ -1,6 +1,17 @@
 .class Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordIcsMr1Impl;
 .super Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordIcsImpl;
-.source "SourceFile"
+.source "AccessibilityRecordCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "AccessibilityRecordIcsMr1Impl"
+.end annotation
 
 
 # direct methods
@@ -18,6 +29,7 @@
 # virtual methods
 .method public getMaxScrollX(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 479
@@ -30,6 +42,7 @@
 
 .method public getMaxScrollY(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 484
@@ -42,6 +55,8 @@
 
 .method public setMaxScrollX(Ljava/lang/Object;I)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "maxScrollX"    # I
 
     .prologue
     .line 489
@@ -53,6 +68,8 @@
 
 .method public setMaxScrollY(Ljava/lang/Object;I)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "maxScrollY"    # I
 
     .prologue
     .line 494

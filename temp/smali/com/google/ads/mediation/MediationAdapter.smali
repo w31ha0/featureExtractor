@@ -1,5 +1,6 @@
 .class public interface abstract Lcom/google/ads/mediation/MediationAdapter;
 .super Ljava/lang/Object;
+.source "SourceFile"
 
 
 # annotations
@@ -12,9 +13,6 @@
         ">",
         "Ljava/lang/Object;"
     }
-.end annotation
-
-.annotation runtime Ljava/lang/Deprecated;
 .end annotation
 
 

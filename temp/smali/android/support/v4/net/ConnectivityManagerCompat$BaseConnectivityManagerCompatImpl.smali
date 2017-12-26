@@ -1,9 +1,20 @@
 .class Landroid/support/v4/net/ConnectivityManagerCompat$BaseConnectivityManagerCompatImpl;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ConnectivityManagerCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/net/ConnectivityManagerCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "BaseConnectivityManagerCompatImpl"
+.end annotation
 
 
 # direct methods
@@ -20,38 +31,41 @@
 
 # virtual methods
 .method public isActiveNetworkMetered(Landroid/net/ConnectivityManager;)Z
-    .locals 2
+    .locals 3
+    .param p1, "cm"    # Landroid/net/ConnectivityManager;
 
     .prologue
-    const/4 v0, 0x1
+    const/4 v2, 0x1
 
     .line 40
     invoke-virtual {p1}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
-    move-result-object v1
+    move-result-object v0
 
     .line 41
-    if-nez v1, :cond_0
+    .local v0, "info":Landroid/net/NetworkInfo;
+    if-nez v0, :cond_0
 
     .line 54
     :goto_0
     :pswitch_0
-    return v0
+    return v2
 
     .line 46
     :cond_0
-    invoke-virtual {v1}, Landroid/net/NetworkInfo;->getType()I
+    invoke-virtual {v0}, Landroid/net/NetworkInfo;->getType()I
 
     move-result v1
 
     .line 47
+    .local v1, "type":I
     packed-switch v1, :pswitch_data_0
 
     goto :goto_0
 
     .line 51
     :pswitch_1
-    const/4 v0, 0x0
+    const/4 v2, 0x0
 
     goto :goto_0
 

@@ -1,6 +1,17 @@
 .class Landroid/support/v4/view/KeyEventCompat$EclairKeyEventVersionImpl;
 .super Landroid/support/v4/view/KeyEventCompat$BaseKeyEventVersionImpl;
-.source "SourceFile"
+.source "KeyEventCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/KeyEventCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "EclairKeyEventVersionImpl"
+.end annotation
 
 
 # direct methods
@@ -18,6 +29,10 @@
 # virtual methods
 .method public dispatch(Landroid/view/KeyEvent;Landroid/view/KeyEvent$Callback;Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "event"    # Landroid/view/KeyEvent;
+    .param p2, "receiver"    # Landroid/view/KeyEvent$Callback;
+    .param p3, "state"    # Ljava/lang/Object;
+    .param p4, "target"    # Ljava/lang/Object;
 
     .prologue
     .line 137
@@ -30,6 +45,7 @@
 
 .method public getKeyDispatcherState(Landroid/view/View;)Ljava/lang/Object;
     .locals 1
+    .param p1, "view"    # Landroid/view/View;
 
     .prologue
     .line 131
@@ -42,6 +58,7 @@
 
 .method public isTracking(Landroid/view/KeyEvent;)Z
     .locals 1
+    .param p1, "event"    # Landroid/view/KeyEvent;
 
     .prologue
     .line 126
@@ -54,6 +71,7 @@
 
 .method public startTracking(Landroid/view/KeyEvent;)V
     .locals 0
+    .param p1, "event"    # Landroid/view/KeyEvent;
 
     .prologue
     .line 121

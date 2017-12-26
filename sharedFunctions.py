@@ -27,7 +27,7 @@ def nGramsExtractor(apk,family):
     cmd = 'cd '+PROJECT_PATH+'tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /root/FYP/android-platforms --pathalgo contextsensitive'
     print "\nCommand is " + cmd + "\n"
     try:
-        output = Command(cmd).run(capture=True,timeout=600)            
+        output = Command(cmd).run(capture=True,timeout=600)
         if output == "failed":
             print "Moving apk to quarantine"
             os.system("mv "+apk+" "+PROJECT_PATH+"quarantine/"+family+"/")
@@ -72,7 +72,7 @@ def nGramsExtractor(apk,family):
         traceback.print_exc(file=sys.stdout)
         print(e.message) + " for " + name
         return False
-        
+
     currentngram = []
     ngrams = []
     n = 4
@@ -91,7 +91,7 @@ def nGramsExtractor(apk,family):
                 if not alreadyAdded:
                     ngrams.append(ngramcopy)
                 currentngram.pop(0)
-    
+
     basengrams = []
     content = f.readlines()
 
@@ -103,7 +103,7 @@ def nGramsExtractor(apk,family):
         else:
             basengrams.append(ngram)
             ngram = []
-            
+
     for ngram in ngrams:
         for basengram in basengrams:
             if set(basengram) == set(ngram):
@@ -112,44 +112,43 @@ def nGramsExtractor(apk,family):
                 if string[-1] == ",":
                     string = string[:-1]
                 features[string] = 1
-    
-    f.close() 
+
+    f.close()
     return True
 
 
 def onBangcleDetected(evidence,sh,startColumn):
     global features
-    
+
     features["BANGCLE"] = 1
     #print "Use of bangcle detected:"+evidence
     #print ""
     #sh.write(START_ROW+16,0,"Obsfucation technique")
-    #sh.write(START_ROW+16,startColumn,"Bangcle")    
-    
+    #sh.write(START_ROW+16,startColumn,"Bangcle")
+
 def onDexGuardDetected(evidence,sh,startColumn):
     global features
-    
+
     features["DEXGUARD"] = 1
     #print "Use of Dexguard detected:"+evidence+" non-ASCII characters"
     #print ""
     #sh.write(START_ROW+16,0,"Obsfucation technique")
     #sh.write(START_ROW+16,startColumn,"DexGuard")
-    
+
 def onHose2JarDetected(evidence,sh,startColumn):
     global features
-    
+
     features["HOSE2JAR"] = 1
     #print "Use of Hose2Jar detected:"+evidence
     #print ""
     #sh.write(START_ROW+16,0,"Obsfucation technique")
     #sh.write(START_ROW+16,startColumn,"Hose2Jar")
-    
+
 def onAPKProtectDetected(evidence,sh,startColumn):
     global features
-    
+
     features["APKPROTECT"] = 1
     #print "Use of Hose2Jar detected:"+evidence
     #print ""
     #sh.write(START_ROW+16,0,"Obsfucation technique")
     #sh.write(START_ROW+16,startColumn,"ApkProtect")
-    

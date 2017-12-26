@@ -1,6 +1,6 @@
 .class public abstract Landroid/support/v4/app/FragmentTransaction;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "FragmentTransaction.java"
 
 
 # static fields

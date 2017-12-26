@@ -1,6 +1,17 @@
 .class Landroid/support/v4/content/LocalBroadcastManager$ReceiverRecord;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "LocalBroadcastManager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/content/LocalBroadcastManager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "ReceiverRecord"
+.end annotation
 
 
 # instance fields
@@ -14,6 +25,8 @@
 # direct methods
 .method constructor <init>(Landroid/content/IntentFilter;Landroid/content/BroadcastReceiver;)V
     .locals 0
+    .param p1, "_filter"    # Landroid/content/IntentFilter;
+    .param p2, "_receiver"    # Landroid/content/BroadcastReceiver;
 
     .prologue
     .line 52
@@ -43,6 +56,7 @@
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
     .line 60
+    .local v0, "builder":Ljava/lang/StringBuilder;
     const-string v1, "Receiver{"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -70,7 +84,7 @@
     .line 65
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    return-object v0
+    return-object v1
 .end method

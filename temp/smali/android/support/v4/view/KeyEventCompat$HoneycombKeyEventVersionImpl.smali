@@ -1,6 +1,17 @@
 .class Landroid/support/v4/view/KeyEventCompat$HoneycombKeyEventVersionImpl;
 .super Landroid/support/v4/view/KeyEventCompat$EclairKeyEventVersionImpl;
-.source "SourceFile"
+.source "KeyEventCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/KeyEventCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "HoneycombKeyEventVersionImpl"
+.end annotation
 
 
 # direct methods
@@ -18,6 +29,8 @@
 # virtual methods
 .method public metaStateHasModifiers(II)Z
     .locals 1
+    .param p1, "metaState"    # I
+    .param p2, "modifiers"    # I
 
     .prologue
     .line 152
@@ -30,6 +43,7 @@
 
 .method public metaStateHasNoModifiers(I)Z
     .locals 1
+    .param p1, "metaState"    # I
 
     .prologue
     .line 157
@@ -42,6 +56,7 @@
 
 .method public normalizeMetaState(I)I
     .locals 1
+    .param p1, "metaState"    # I
 
     .prologue
     .line 147

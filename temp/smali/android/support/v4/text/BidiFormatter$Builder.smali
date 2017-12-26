@@ -1,6 +1,17 @@
 .class public final Landroid/support/v4/text/BidiFormatter$Builder;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "BidiFormatter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/text/BidiFormatter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Builder"
+.end annotation
 
 
 # instance fields
@@ -36,6 +47,7 @@
 
 .method public constructor <init>(Ljava/util/Locale;)V
     .locals 1
+    .param p1, "locale"    # Ljava/util/Locale;
 
     .prologue
     .line 155
@@ -54,6 +66,7 @@
 
 .method public constructor <init>(Z)V
     .locals 0
+    .param p1, "rtlContext"    # Z
 
     .prologue
     .line 146
@@ -68,6 +81,7 @@
 
 .method private static getDefaultInstanceFromContext(Z)Landroid/support/v4/text/BidiFormatter;
     .locals 1
+    .param p0, "isRtlContext"    # Z
 
     .prologue
     .line 196
@@ -90,6 +104,7 @@
 
 .method private initialize(Z)V
     .locals 1
+    .param p1, "isRtlContext"    # Z
 
     .prologue
     .line 165
@@ -161,6 +176,7 @@
 
 .method public setTextDirectionHeuristic(Landroid/support/v4/text/TextDirectionHeuristicCompat;)Landroid/support/v4/text/BidiFormatter$Builder;
     .locals 0
+    .param p1, "heuristic"    # Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     .prologue
     .line 191
@@ -172,6 +188,7 @@
 
 .method public stereoReset(Z)Landroid/support/v4/text/BidiFormatter$Builder;
     .locals 1
+    .param p1, "stereoReset"    # Z
 
     .prologue
     .line 175

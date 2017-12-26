@@ -1,6 +1,17 @@
 .class public Landroid/support/v4/app/NotificationCompat$BigTextStyle;
 .super Landroid/support/v4/app/NotificationCompat$Style;
-.source "SourceFile"
+.source "NotificationCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/NotificationCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "BigTextStyle"
+.end annotation
 
 
 # instance fields
@@ -21,6 +32,7 @@
 
 .method public constructor <init>(Landroid/support/v4/app/NotificationCompat$Builder;)V
     .locals 0
+    .param p1, "builder"    # Landroid/support/v4/app/NotificationCompat$Builder;
 
     .prologue
     .line 726
@@ -37,6 +49,7 @@
 # virtual methods
 .method public bigText(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$BigTextStyle;
     .locals 0
+    .param p1, "cs"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 753
@@ -48,6 +61,7 @@
 
 .method public setBigContentTitle(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$BigTextStyle;
     .locals 0
+    .param p1, "title"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 735
@@ -59,6 +73,7 @@
 
 .method public setSummaryText(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$BigTextStyle;
     .locals 1
+    .param p1, "cs"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 743

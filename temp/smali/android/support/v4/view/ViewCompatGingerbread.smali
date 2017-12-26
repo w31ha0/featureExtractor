@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/ViewCompatGingerbread;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ViewCompatGingerbread.java"
 
 
 # direct methods
@@ -16,6 +16,7 @@
 
 .method public static getOverScrollMode(Landroid/view/View;)I
     .locals 1
+    .param p0, "v"    # Landroid/view/View;
 
     .prologue
     .line 23
@@ -28,6 +29,8 @@
 
 .method public static setOverScrollMode(Landroid/view/View;I)V
     .locals 0
+    .param p0, "v"    # Landroid/view/View;
+    .param p1, "mode"    # I
 
     .prologue
     .line 27

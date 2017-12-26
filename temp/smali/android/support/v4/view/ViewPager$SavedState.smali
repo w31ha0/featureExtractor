@@ -1,6 +1,17 @@
 .class public Landroid/support/v4/view/ViewPager$SavedState;
 .super Landroid/view/View$BaseSavedState;
-.source "SourceFile"
+.source "ViewPager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/ViewPager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "SavedState"
+.end annotation
 
 
 # static fields
@@ -45,6 +56,8 @@
 
 .method constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
     .locals 1
+    .param p1, "in"    # Landroid/os/Parcel;
+    .param p2, "loader"    # Ljava/lang/ClassLoader;
 
     .prologue
     .line 1249
@@ -86,6 +99,7 @@
 
 .method public constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
+    .param p1, "superState"    # Landroid/os/Parcelable;
 
     .prologue
     .line 1219
@@ -151,6 +165,8 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
+    .param p1, "out"    # Landroid/os/Parcel;
+    .param p2, "flags"    # I
 
     .prologue
     .line 1224

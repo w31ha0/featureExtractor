@@ -1,11 +1,23 @@
 .class public Landroid/support/v4/widget/SearchViewCompatIcs$MySearchView;
 .super Landroid/widget/SearchView;
-.source "SourceFile"
+.source "SearchViewCompatIcs.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/SearchViewCompatIcs;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "MySearchView"
+.end annotation
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .param p1, "context"    # Landroid/content/Context;
 
     .prologue
     .line 30

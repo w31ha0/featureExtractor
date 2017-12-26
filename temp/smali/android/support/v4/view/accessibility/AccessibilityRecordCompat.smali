@@ -1,6 +1,18 @@
 .class public Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AccessibilityRecordCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordJellyBeanImpl;,
+        Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordIcsMr1Impl;,
+        Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordIcsImpl;,
+        Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordStubImpl;,
+        Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
+    }
+.end annotation
 
 
 # static fields
@@ -81,6 +93,7 @@
 
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 528
@@ -113,6 +126,7 @@
 
 .method public static obtain(Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;)Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
     .locals 3
+    .param p0, "record"    # Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
 
     .prologue
     .line 550
@@ -134,12 +148,13 @@
 
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
-    .locals 4
+    .locals 5
+    .param p1, "obj"    # Ljava/lang/Object;
 
     .prologue
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
     .line 1025
     if-ne p0, p1, :cond_1
@@ -147,13 +162,13 @@
     .line 1042
     :cond_0
     :goto_0
-    return v0
+    return v1
 
     .line 1028
     :cond_1
     if-nez p1, :cond_2
 
-    move v0, v1
+    move v1, v2
 
     .line 1029
     goto :goto_0
@@ -162,51 +177,54 @@
     :cond_2
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result-object v2
+    move-result-object v3
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result-object v3
+    move-result-object v4
 
-    if-eq v2, v3, :cond_3
+    if-eq v3, v4, :cond_3
 
-    move v0, v1
+    move v1, v2
 
     .line 1032
     goto :goto_0
 
-    .line 1034
     :cond_3
-    check-cast p1, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
+    move-object v0, p1
+
+    .line 1034
+    check-cast v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
 
     .line 1035
-    iget-object v2, p0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->mRecord:Ljava/lang/Object;
+    .local v0, "other":Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
+    iget-object v3, p0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->mRecord:Ljava/lang/Object;
 
-    if-nez v2, :cond_4
+    if-nez v3, :cond_4
 
     .line 1036
-    iget-object v2, p1, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->mRecord:Ljava/lang/Object;
+    iget-object v3, v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->mRecord:Ljava/lang/Object;
 
-    if-eqz v2, :cond_0
+    if-eqz v3, :cond_0
 
-    move v0, v1
+    move v1, v2
 
     .line 1037
     goto :goto_0
 
     .line 1039
     :cond_4
-    iget-object v2, p0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->mRecord:Ljava/lang/Object;
+    iget-object v3, p0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->mRecord:Ljava/lang/Object;
 
-    iget-object v3, p1, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->mRecord:Ljava/lang/Object;
+    iget-object v4, v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->mRecord:Ljava/lang/Object;
 
-    invoke-virtual {v2, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v3
 
-    if-nez v2, :cond_0
+    if-nez v3, :cond_0
 
-    move v0, v1
+    move v1, v2
 
     .line 1040
     goto :goto_0
@@ -624,6 +642,7 @@
 
 .method public setAddedCount(I)V
     .locals 2
+    .param p1, "addedCount"    # I
 
     .prologue
     .line 891
@@ -639,6 +658,7 @@
 
 .method public setBeforeText(Ljava/lang/CharSequence;)V
     .locals 2
+    .param p1, "beforeText"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 961
@@ -654,6 +674,7 @@
 
 .method public setChecked(Z)V
     .locals 2
+    .param p1, "isChecked"    # Z
 
     .prologue
     .line 634
@@ -669,6 +690,7 @@
 
 .method public setClassName(Ljava/lang/CharSequence;)V
     .locals 2
+    .param p1, "className"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 931
@@ -684,6 +706,7 @@
 
 .method public setContentDescription(Ljava/lang/CharSequence;)V
     .locals 2
+    .param p1, "contentDescription"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 981
@@ -699,6 +722,7 @@
 
 .method public setCurrentItemIndex(I)V
     .locals 2
+    .param p1, "currentItemIndex"    # I
 
     .prologue
     .line 754
@@ -714,6 +738,7 @@
 
 .method public setEnabled(Z)V
     .locals 2
+    .param p1, "isEnabled"    # Z
 
     .prologue
     .line 654
@@ -729,6 +754,7 @@
 
 .method public setFromIndex(I)V
     .locals 2
+    .param p1, "fromIndex"    # I
 
     .prologue
     .line 780
@@ -744,6 +770,7 @@
 
 .method public setFullScreen(Z)V
     .locals 2
+    .param p1, "isFullScreen"    # Z
 
     .prologue
     .line 694
@@ -759,6 +786,7 @@
 
 .method public setItemCount(I)V
     .locals 2
+    .param p1, "itemCount"    # I
 
     .prologue
     .line 734
@@ -774,6 +802,7 @@
 
 .method public setMaxScrollX(I)V
     .locals 2
+    .param p1, "maxScrollX"    # I
 
     .prologue
     .line 853
@@ -789,6 +818,7 @@
 
 .method public setMaxScrollY(I)V
     .locals 2
+    .param p1, "maxScrollY"    # I
 
     .prologue
     .line 871
@@ -804,6 +834,7 @@
 
 .method public setParcelableData(Landroid/os/Parcelable;)V
     .locals 2
+    .param p1, "parcelableData"    # Landroid/os/Parcelable;
 
     .prologue
     .line 1001
@@ -819,6 +850,7 @@
 
 .method public setPassword(Z)V
     .locals 2
+    .param p1, "isPassword"    # Z
 
     .prologue
     .line 674
@@ -834,6 +866,7 @@
 
 .method public setRemovedCount(I)V
     .locals 2
+    .param p1, "removedCount"    # I
 
     .prologue
     .line 911
@@ -849,6 +882,7 @@
 
 .method public setScrollX(I)V
     .locals 2
+    .param p1, "scrollX"    # I
 
     .prologue
     .line 818
@@ -864,6 +898,7 @@
 
 .method public setScrollY(I)V
     .locals 2
+    .param p1, "scrollY"    # I
 
     .prologue
     .line 836
@@ -879,6 +914,7 @@
 
 .method public setScrollable(Z)V
     .locals 2
+    .param p1, "scrollable"    # Z
 
     .prologue
     .line 714
@@ -894,6 +930,7 @@
 
 .method public setSource(Landroid/view/View;)V
     .locals 2
+    .param p1, "source"    # Landroid/view/View;
 
     .prologue
     .line 571
@@ -909,6 +946,8 @@
 
 .method public setSource(Landroid/view/View;I)V
     .locals 2
+    .param p1, "root"    # Landroid/view/View;
+    .param p2, "virtualDescendantId"    # I
 
     .prologue
     .line 589
@@ -924,6 +963,7 @@
 
 .method public setToIndex(I)V
     .locals 2
+    .param p1, "toIndex"    # I
 
     .prologue
     .line 800

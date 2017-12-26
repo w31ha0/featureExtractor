@@ -1,6 +1,18 @@
 .class public Landroid/support/v4/net/ConnectivityManagerCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ConnectivityManagerCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/net/ConnectivityManagerCompat$JellyBeanConnectivityManagerCompatImpl;,
+        Landroid/support/v4/net/ConnectivityManagerCompat$HoneycombMR2ConnectivityManagerCompatImpl;,
+        Landroid/support/v4/net/ConnectivityManagerCompat$GingerbreadConnectivityManagerCompatImpl;,
+        Landroid/support/v4/net/ConnectivityManagerCompat$BaseConnectivityManagerCompatImpl;,
+        Landroid/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl;
+    }
+.end annotation
 
 
 # static fields
@@ -87,32 +99,36 @@
 .end method
 
 .method public static getNetworkInfoFromBroadcast(Landroid/net/ConnectivityManager;Landroid/content/Intent;)Landroid/net/NetworkInfo;
-    .locals 1
+    .locals 2
+    .param p0, "cm"    # Landroid/net/ConnectivityManager;
+    .param p1, "intent"    # Landroid/content/Intent;
 
     .prologue
     .line 114
-    const-string v0, "networkInfo"
+    const-string v1, "networkInfo"
 
-    invoke-virtual {p1, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
+    invoke-virtual {p1, v1}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/NetworkInfo;
 
     .line 115
+    .local v0, "info":Landroid/net/NetworkInfo;
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->getType()I
 
-    move-result v0
+    move-result v1
 
-    invoke-virtual {p0, v0}, Landroid/net/ConnectivityManager;->getNetworkInfo(I)Landroid/net/NetworkInfo;
+    invoke-virtual {p0, v1}, Landroid/net/ConnectivityManager;->getNetworkInfo(I)Landroid/net/NetworkInfo;
 
-    move-result-object v0
+    move-result-object v1
 
-    return-object v0
+    return-object v1
 .end method
 
 .method public static isActiveNetworkMetered(Landroid/net/ConnectivityManager;)Z
     .locals 1
+    .param p0, "cm"    # Landroid/net/ConnectivityManager;
 
     .prologue
     .line 103

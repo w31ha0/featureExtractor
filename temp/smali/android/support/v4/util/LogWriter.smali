@@ -1,6 +1,6 @@
 .class public Landroid/support/v4/util/LogWriter;
 .super Ljava/io/Writer;
-.source "SourceFile"
+.source "LogWriter.java"
 
 
 # instance fields
@@ -12,6 +12,7 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
+    .param p1, "tag"    # Ljava/lang/String;
 
     .prologue
     .line 39
@@ -101,30 +102,35 @@
 
 .method public write([CII)V
     .locals 3
+    .param p1, "buf"    # [C
+    .param p2, "offset"    # I
+    .param p3, "count"    # I
 
     .prologue
     .line 52
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
+    .local v1, "i":I
     :goto_0
-    if-ge v0, p3, :cond_1
+    if-ge v1, p3, :cond_1
 
     .line 53
-    add-int v1, p2, v0
+    add-int v2, p2, v1
 
-    aget-char v1, p1, v1
+    aget-char v0, p1, v2
 
     .line 54
+    .local v0, "c":C
     const/16 v2, 0xa
 
-    if-ne v1, v2, :cond_0
+    if-ne v0, v2, :cond_0
 
     .line 55
     invoke-direct {p0}, Landroid/support/v4/util/LogWriter;->flushBuilder()V
 
     .line 52
     :goto_1
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
@@ -132,11 +138,12 @@
     :cond_0
     iget-object v2, p0, Landroid/support/v4/util/LogWriter;->mBuilder:Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     goto :goto_1
 
     .line 61
+    .end local v0    # "c":C
     :cond_1
     return-void
 .end method

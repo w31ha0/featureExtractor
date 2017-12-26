@@ -1,10 +1,21 @@
 .class Landroid/support/v4/view/PagerTitleStrip$PageListener;
 .super Landroid/database/DataSetObserver;
-.source "SourceFile"
+.source "PagerTitleStrip.java"
 
 # interfaces
-.implements Landroid/support/v4/view/ViewPager$OnAdapterChangeListener;
 .implements Landroid/support/v4/view/ViewPager$OnPageChangeListener;
+.implements Landroid/support/v4/view/ViewPager$OnAdapterChangeListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/PagerTitleStrip;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "PageListener"
+.end annotation
 
 
 # instance fields
@@ -28,6 +39,8 @@
 
 .method synthetic constructor <init>(Landroid/support/v4/view/PagerTitleStrip;Landroid/support/v4/view/PagerTitleStrip$1;)V
     .locals 0
+    .param p1, "x0"    # Landroid/support/v4/view/PagerTitleStrip;
+    .param p2, "x1"    # Landroid/support/v4/view/PagerTitleStrip$1;
 
     .prologue
     .line 470
@@ -40,6 +53,8 @@
 # virtual methods
 .method public onAdapterChanged(Landroid/support/v4/view/PagerAdapter;Landroid/support/v4/view/PagerAdapter;)V
     .locals 1
+    .param p1, "oldAdapter"    # Landroid/support/v4/view/PagerAdapter;
+    .param p2, "newAdapter"    # Landroid/support/v4/view/PagerAdapter;
 
     .prologue
     .line 501
@@ -89,13 +104,14 @@
 
     if-ltz v1, :cond_0
 
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip$PageListener;->this$0:Landroid/support/v4/view/PagerTitleStrip;
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip$PageListener;->this$0:Landroid/support/v4/view/PagerTitleStrip;
 
-    invoke-static {v0}, Landroid/support/v4/view/PagerTitleStrip;->access$100(Landroid/support/v4/view/PagerTitleStrip;)F
+    invoke-static {v1}, Landroid/support/v4/view/PagerTitleStrip;->access$100(Landroid/support/v4/view/PagerTitleStrip;)F
 
     move-result v0
 
     .line 509
+    .local v0, "offset":F
     :cond_0
     iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip$PageListener;->this$0:Landroid/support/v4/view/PagerTitleStrip;
 
@@ -117,6 +133,7 @@
 
 .method public onPageScrollStateChanged(I)V
     .locals 0
+    .param p1, "state"    # I
 
     .prologue
     .line 496
@@ -128,6 +145,9 @@
 
 .method public onPageScrolled(IFI)V
     .locals 2
+    .param p1, "position"    # I
+    .param p2, "positionOffset"    # F
+    .param p3, "positionOffsetPixels"    # I
 
     .prologue
     .line 476
@@ -154,6 +174,7 @@
 
 .method public onPageSelected(I)V
     .locals 4
+    .param p1, "position"    # I
 
     .prologue
     const/4 v0, 0x0
@@ -195,13 +216,14 @@
 
     if-ltz v1, :cond_0
 
-    iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip$PageListener;->this$0:Landroid/support/v4/view/PagerTitleStrip;
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip$PageListener;->this$0:Landroid/support/v4/view/PagerTitleStrip;
 
-    invoke-static {v0}, Landroid/support/v4/view/PagerTitleStrip;->access$100(Landroid/support/v4/view/PagerTitleStrip;)F
+    invoke-static {v1}, Landroid/support/v4/view/PagerTitleStrip;->access$100(Landroid/support/v4/view/PagerTitleStrip;)F
 
     move-result v0
 
     .line 490
+    .local v0, "offset":F
     :cond_0
     iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip$PageListener;->this$0:Landroid/support/v4/view/PagerTitleStrip;
 
@@ -218,6 +240,7 @@
     invoke-virtual {v1, v2, v0, v3}, Landroid/support/v4/view/PagerTitleStrip;->updateTextPositions(IFZ)V
 
     .line 492
+    .end local v0    # "offset":F
     :cond_1
     return-void
 .end method

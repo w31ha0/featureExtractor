@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:background="@drawable/btn_pot_stripe" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <Button android:id="@id/button1" android:background="@drawable/back" android:layout_width="60.0dip" android:layout_height="wrap_content" android:onClick="Back" />
+        <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/reminder" android:layout_weight="1.0" />
+        <TextView android:layout_width="60.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_page_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                    <LinearLayout android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:onClick="show_notification">
+                        <Button android:id="@id/show_notification_btn" android:background="@drawable/checkbox_on" android:layout_width="@dimen/pref_5" android:layout_height="@dimen/pref_5" android:onClick="show_notification" />
+                        <TextView android:textSize="@dimen/pref_2" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/notification" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                    <LinearLayout android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:onClick="reminder_sound">
+                        <Button android:id="@id/reminder_sound_btn" android:background="@drawable/checkbox_on" android:layout_width="@dimen/pref_5" android:layout_height="@dimen/pref_5" android:onClick="reminder_sound" />
+                        <TextView android:textSize="@dimen/pref_2" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/sound" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                    <LinearLayout android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:onClick="reminder_vibration">
+                        <Button android:id="@id/reminder_vibration_btn" android:background="@drawable/checkbox_on" android:layout_width="@dimen/pref_5" android:layout_height="@dimen/pref_5" android:onClick="reminder_vibration" />
+                        <TextView android:textSize="@dimen/pref_2" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/vibration" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/bg_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                    <LinearLayout android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:onClick="turn_on_screen">
+                        <Button android:id="@id/turn_on_screen_btn" android:background="@drawable/checkbox_on" android:layout_width="@dimen/pref_5" android:layout_height="@dimen/pref_5" android:onClick="turn_on_screen" />
+                        <TextView android:textSize="@dimen/pref_2" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/turn_on_screen" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

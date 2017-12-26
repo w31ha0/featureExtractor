@@ -1,6 +1,17 @@
 .class Landroid/support/v4/app/FragmentTabHost$SavedState;
 .super Landroid/view/View$BaseSavedState;
-.source "SourceFile"
+.source "FragmentTabHost.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/FragmentTabHost;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "SavedState"
+.end annotation
 
 
 # static fields
@@ -37,6 +48,7 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
+    .param p1, "in"    # Landroid/os/Parcel;
 
     .prologue
     .line 98
@@ -55,6 +67,8 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/support/v4/app/FragmentTabHost$1;)V
     .locals 0
+    .param p1, "x0"    # Landroid/os/Parcel;
+    .param p2, "x1"    # Landroid/support/v4/app/FragmentTabHost$1;
 
     .prologue
     .line 90
@@ -65,6 +79,7 @@
 
 .method constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
+    .param p1, "superState"    # Landroid/os/Parcelable;
 
     .prologue
     .line 94
@@ -130,6 +145,8 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
+    .param p1, "out"    # Landroid/os/Parcel;
+    .param p2, "flags"    # I
 
     .prologue
     .line 104

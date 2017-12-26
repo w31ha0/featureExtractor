@@ -1,6 +1,17 @@
 .class Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler;
 .super Landroid/os/Handler;
-.source "SourceFile"
+.source "GestureDetectorCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "GestureHandler"
+.end annotation
 
 
 # instance fields
@@ -24,6 +35,7 @@
 
 .method constructor <init>(Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;Landroid/os/Handler;)V
     .locals 1
+    .param p2, "handler"    # Landroid/os/Handler;
 
     .prologue
     .line 107
@@ -44,6 +56,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
+    .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
     .line 113

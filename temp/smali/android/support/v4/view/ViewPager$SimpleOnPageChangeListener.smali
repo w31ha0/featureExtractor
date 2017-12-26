@@ -1,9 +1,20 @@
 .class public Landroid/support/v4/view/ViewPager$SimpleOnPageChangeListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ViewPager.java"
 
 # interfaces
 .implements Landroid/support/v4/view/ViewPager$OnPageChangeListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/ViewPager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "SimpleOnPageChangeListener"
+.end annotation
 
 
 # direct methods
@@ -21,6 +32,7 @@
 # virtual methods
 .method public onPageScrollStateChanged(I)V
     .locals 0
+    .param p1, "state"    # I
 
     .prologue
     .line 306
@@ -29,6 +41,9 @@
 
 .method public onPageScrolled(IFI)V
     .locals 0
+    .param p1, "position"    # I
+    .param p2, "positionOffset"    # F
+    .param p3, "positionOffsetPixels"    # I
 
     .prologue
     .line 296
@@ -37,6 +52,7 @@
 
 .method public onPageSelected(I)V
     .locals 0
+    .param p1, "position"    # I
 
     .prologue
     .line 301

@@ -1,6 +1,17 @@
 .class Landroid/support/v4/widget/SlidingPaneLayout$SavedState;
 .super Landroid/view/View$BaseSavedState;
-.source "SourceFile"
+.source "SlidingPaneLayout.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/SlidingPaneLayout;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "SavedState"
+.end annotation
 
 
 # static fields
@@ -37,6 +48,7 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
+    .param p1, "in"    # Landroid/os/Parcel;
 
     .prologue
     .line 1311
@@ -66,6 +78,8 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/support/v4/widget/SlidingPaneLayout$1;)V
     .locals 0
+    .param p1, "x0"    # Landroid/os/Parcel;
+    .param p2, "x1"    # Landroid/support/v4/widget/SlidingPaneLayout$1;
 
     .prologue
     .line 1303
@@ -76,6 +90,7 @@
 
 .method constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
+    .param p1, "superState"    # Landroid/os/Parcelable;
 
     .prologue
     .line 1307
@@ -89,6 +104,8 @@
 # virtual methods
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
+    .param p1, "out"    # Landroid/os/Parcel;
+    .param p2, "flags"    # I
 
     .prologue
     .line 1317

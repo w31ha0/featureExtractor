@@ -1,15 +1,26 @@
 .class final Landroid/support/v4/app/FragmentActivity$NonConfigurationInstances;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "FragmentActivity.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/FragmentActivity;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "NonConfigurationInstances"
+.end annotation
 
 
 # instance fields
 .field activity:Ljava/lang/Object;
 
-.field children:Ljava/util/HashMap;
+.field children:Landroid/support/v4/util/SimpleArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/HashMap",
+            "Landroid/support/v4/util/SimpleArrayMap",
             "<",
             "Ljava/lang/String;",
             "Ljava/lang/Object;",
@@ -31,10 +42,10 @@
     .end annotation
 .end field
 
-.field loaders:Ljava/util/HashMap;
+.field loaders:Landroid/support/v4/util/SimpleArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/HashMap",
+            "Landroid/support/v4/util/SimpleArrayMap",
             "<",
             "Ljava/lang/String;",
             "Landroid/support/v4/app/LoaderManagerImpl;",

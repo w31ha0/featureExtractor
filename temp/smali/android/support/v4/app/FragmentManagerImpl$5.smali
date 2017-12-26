@@ -1,9 +1,20 @@
 .class Landroid/support/v4/app/FragmentManagerImpl$5;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "FragmentManager.java"
 
 # interfaces
 .implements Landroid/view/animation/Animation$AnimationListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroid/support/v4/app/FragmentManagerImpl;->moveToState(Landroid/support/v4/app/Fragment;IIIZ)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
@@ -31,6 +42,7 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 6
+    .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
     const/4 v3, 0x0
@@ -71,6 +83,7 @@
 
 .method public onAnimationRepeat(Landroid/view/animation/Animation;)V
     .locals 0
+    .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
     .line 1018
@@ -79,6 +92,7 @@
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)V
     .locals 0
+    .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
     .line 1021

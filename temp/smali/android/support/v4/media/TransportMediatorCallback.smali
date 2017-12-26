@@ -1,6 +1,6 @@
 .class interface abstract Landroid/support/v4/media/TransportMediatorCallback;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "TransportMediatorCallback.java"
 
 
 # virtual methods

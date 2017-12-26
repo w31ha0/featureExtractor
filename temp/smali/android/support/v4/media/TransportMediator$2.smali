@@ -1,9 +1,20 @@
 .class Landroid/support/v4/media/TransportMediator$2;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "TransportMediator.java"
 
 # interfaces
 .implements Landroid/view/KeyEvent$Callback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/media/TransportMediator;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
@@ -27,6 +38,8 @@
 # virtual methods
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1, "keyCode"    # I
+    .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
     .line 133
@@ -55,6 +68,8 @@
 
 .method public onKeyLongPress(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1, "keyCode"    # I
+    .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
     .line 137
@@ -65,6 +80,9 @@
 
 .method public onKeyMultiple(IILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1, "keyCode"    # I
+    .param p2, "count"    # I
+    .param p3, "event"    # Landroid/view/KeyEvent;
 
     .prologue
     .line 147
@@ -75,6 +93,8 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1, "keyCode"    # I
+    .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
     .line 142

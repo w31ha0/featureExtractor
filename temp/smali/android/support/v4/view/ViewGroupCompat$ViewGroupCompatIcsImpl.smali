@@ -1,6 +1,17 @@
 .class Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatIcsImpl;
 .super Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatHCImpl;
-.source "SourceFile"
+.source "ViewGroupCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/ViewGroupCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "ViewGroupCompatIcsImpl"
+.end annotation
 
 
 # direct methods
@@ -8,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 55
+    .line 83
     invoke-direct {p0}, Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatHCImpl;-><init>()V
 
     return-void
@@ -18,9 +29,12 @@
 # virtual methods
 .method public onRequestSendAccessibilityEvent(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
+    .param p1, "group"    # Landroid/view/ViewGroup;
+    .param p2, "child"    # Landroid/view/View;
+    .param p3, "event"    # Landroid/view/accessibility/AccessibilityEvent;
 
     .prologue
-    .line 59
+    .line 87
     invoke-static {p1, p2, p3}, Landroid/support/v4/view/ViewGroupCompatIcs;->onRequestSendAccessibilityEvent(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
     move-result v0

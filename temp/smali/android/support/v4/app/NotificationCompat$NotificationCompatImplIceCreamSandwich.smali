@@ -1,9 +1,20 @@
 .class Landroid/support/v4/app/NotificationCompat$NotificationCompatImplIceCreamSandwich;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "NotificationCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/NotificationCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "NotificationCompatImplIceCreamSandwich"
+.end annotation
 
 
 # direct methods
@@ -21,6 +32,7 @@
 # virtual methods
 .method public build(Landroid/support/v4/app/NotificationCompat$Builder;)Landroid/app/Notification;
     .locals 13
+    .param p1, "b"    # Landroid/support/v4/app/NotificationCompat$Builder;
 
     .prologue
     .line 108

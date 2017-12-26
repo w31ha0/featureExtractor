@@ -1,6 +1,14 @@
 .class Landroid/support/v4/view/AccessibilityDelegateCompatIcs;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AccessibilityDelegateCompatIcs.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/view/AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge;
+    }
+.end annotation
 
 
 # direct methods
@@ -17,11 +25,15 @@
 
 .method public static dispatchPopulateAccessibilityEvent(Ljava/lang/Object;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
+    .param p0, "delegate"    # Ljava/lang/Object;
+    .param p1, "host"    # Landroid/view/View;
+    .param p2, "event"    # Landroid/view/accessibility/AccessibilityEvent;
 
     .prologue
     .line 87
     check-cast p0, Landroid/view/View$AccessibilityDelegate;
 
+    .end local p0    # "delegate":Ljava/lang/Object;
     invoke-virtual {p0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->dispatchPopulateAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
     move-result v0
@@ -31,6 +43,7 @@
 
 .method public static newAccessibilityDelegateBridge(Landroid/support/v4/view/AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge;)Ljava/lang/Object;
     .locals 1
+    .param p0, "bridge"    # Landroid/support/v4/view/AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge;
 
     .prologue
     .line 46
@@ -55,11 +68,15 @@
 
 .method public static onInitializeAccessibilityEvent(Ljava/lang/Object;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 0
+    .param p0, "delegate"    # Ljava/lang/Object;
+    .param p1, "host"    # Landroid/view/View;
+    .param p2, "event"    # Landroid/view/accessibility/AccessibilityEvent;
 
     .prologue
     .line 92
     check-cast p0, Landroid/view/View$AccessibilityDelegate;
 
+    .end local p0    # "delegate":Ljava/lang/Object;
     invoke-virtual {p0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
     .line 93
@@ -68,13 +85,18 @@
 
 .method public static onInitializeAccessibilityNodeInfo(Ljava/lang/Object;Landroid/view/View;Ljava/lang/Object;)V
     .locals 0
+    .param p0, "delegate"    # Ljava/lang/Object;
+    .param p1, "host"    # Landroid/view/View;
+    .param p2, "info"    # Ljava/lang/Object;
 
     .prologue
     .line 96
     check-cast p0, Landroid/view/View$AccessibilityDelegate;
 
+    .end local p0    # "delegate":Ljava/lang/Object;
     check-cast p2, Landroid/view/accessibility/AccessibilityNodeInfo;
 
+    .end local p2    # "info":Ljava/lang/Object;
     invoke-virtual {p0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
     .line 98
@@ -83,11 +105,15 @@
 
 .method public static onPopulateAccessibilityEvent(Ljava/lang/Object;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 0
+    .param p0, "delegate"    # Ljava/lang/Object;
+    .param p1, "host"    # Landroid/view/View;
+    .param p2, "event"    # Landroid/view/accessibility/AccessibilityEvent;
 
     .prologue
     .line 102
     check-cast p0, Landroid/view/View$AccessibilityDelegate;
 
+    .end local p0    # "delegate":Ljava/lang/Object;
     invoke-virtual {p0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onPopulateAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
     .line 103
@@ -96,11 +122,16 @@
 
 .method public static onRequestSendAccessibilityEvent(Ljava/lang/Object;Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
+    .param p0, "delegate"    # Ljava/lang/Object;
+    .param p1, "host"    # Landroid/view/ViewGroup;
+    .param p2, "child"    # Landroid/view/View;
+    .param p3, "event"    # Landroid/view/accessibility/AccessibilityEvent;
 
     .prologue
     .line 107
     check-cast p0, Landroid/view/View$AccessibilityDelegate;
 
+    .end local p0    # "delegate":Ljava/lang/Object;
     invoke-virtual {p0, p1, p2, p3}, Landroid/view/View$AccessibilityDelegate;->onRequestSendAccessibilityEvent(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
     move-result v0
@@ -110,11 +141,15 @@
 
 .method public static sendAccessibilityEvent(Ljava/lang/Object;Landroid/view/View;I)V
     .locals 0
+    .param p0, "delegate"    # Ljava/lang/Object;
+    .param p1, "host"    # Landroid/view/View;
+    .param p2, "eventType"    # I
 
     .prologue
     .line 112
     check-cast p0, Landroid/view/View$AccessibilityDelegate;
 
+    .end local p0    # "delegate":Ljava/lang/Object;
     invoke-virtual {p0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->sendAccessibilityEvent(Landroid/view/View;I)V
 
     .line 113
@@ -123,11 +158,15 @@
 
 .method public static sendAccessibilityEventUnchecked(Ljava/lang/Object;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 0
+    .param p0, "delegate"    # Ljava/lang/Object;
+    .param p1, "host"    # Landroid/view/View;
+    .param p2, "event"    # Landroid/view/accessibility/AccessibilityEvent;
 
     .prologue
     .line 117
     check-cast p0, Landroid/view/View$AccessibilityDelegate;
 
+    .end local p0    # "delegate":Ljava/lang/Object;
     invoke-virtual {p0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->sendAccessibilityEventUnchecked(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
     .line 118

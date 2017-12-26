@@ -1,6 +1,6 @@
 .class Landroid/support/v4/content/IntentCompatIcsMr1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "IntentCompatIcsMr1.java"
 
 
 # direct methods
@@ -16,6 +16,8 @@
 
 .method public static makeMainSelectorActivity(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
+    .param p0, "selectorAction"    # Ljava/lang/String;
+    .param p1, "selectorCategory"    # Ljava/lang/String;
 
     .prologue
     .line 24

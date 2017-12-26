@@ -1,9 +1,20 @@
 .class Landroid/support/v4/view/PagerTabStrip$2;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "PagerTabStrip.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroid/support/v4/view/PagerTabStrip;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
@@ -27,6 +38,7 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
+    .param p1, "v"    # Landroid/view/View;
 
     .prologue
     .line 114

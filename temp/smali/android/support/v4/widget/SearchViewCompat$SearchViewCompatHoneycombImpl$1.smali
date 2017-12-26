@@ -1,9 +1,20 @@
 .class Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SearchViewCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl;->newOnQueryTextListener(Landroid/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
@@ -31,6 +42,7 @@
 # virtual methods
 .method public onQueryTextChange(Ljava/lang/String;)Z
     .locals 1
+    .param p1, "newText"    # Ljava/lang/String;
 
     .prologue
     .line 157
@@ -45,6 +57,7 @@
 
 .method public onQueryTextSubmit(Ljava/lang/String;)Z
     .locals 1
+    .param p1, "query"    # Ljava/lang/String;
 
     .prologue
     .line 153

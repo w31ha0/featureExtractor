@@ -1,6 +1,6 @@
 .class public Landroid/support/v4/view/WindowCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "WindowCompat.java"
 
 
 # static fields

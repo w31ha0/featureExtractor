@@ -1,6 +1,6 @@
 .class public abstract Landroid/support/v4/media/TransportPerformer;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "TransportPerformer.java"
 
 
 # static fields
@@ -32,12 +32,14 @@
 # virtual methods
 .method public onAudioFocusChange(I)V
     .locals 8
+    .param p1, "focusChange"    # I
 
     .prologue
     .line 188
     const/4 v6, 0x0
 
     .line 189
+    .local v6, "keyCode":I
     packed-switch p1, :pswitch_data_0
 
     .line 196
@@ -50,6 +52,7 @@
     move-result-wide v1
 
     .line 198
+    .local v1, "now":J
     new-instance v0, Landroid/view/KeyEvent;
 
     const/4 v5, 0x0
@@ -76,6 +79,7 @@
     invoke-virtual {p0, v6, v0}, Landroid/support/v4/media/TransportPerformer;->onMediaButtonUp(ILandroid/view/KeyEvent;)Z
 
     .line 201
+    .end local v1    # "now":J
     :cond_0
     return-void
 
@@ -123,6 +127,8 @@
 
 .method public onMediaButtonDown(ILandroid/view/KeyEvent;)Z
     .locals 2
+    .param p1, "keyCode"    # I
+    .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
     const/4 v1, 0x1
@@ -186,6 +192,8 @@
 
 .method public onMediaButtonUp(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1, "keyCode"    # I
+    .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
     .line 164

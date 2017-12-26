@@ -1,6 +1,6 @@
 .class public Landroid/support/v4/app/ServiceCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ServiceCompat.java"
 
 
 # static fields

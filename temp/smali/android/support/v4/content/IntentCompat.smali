@@ -1,6 +1,17 @@
 .class public Landroid/support/v4/content/IntentCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "IntentCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/content/IntentCompat$IntentCompatImplIcsMr1;,
+        Landroid/support/v4/content/IntentCompat$IntentCompatImplHC;,
+        Landroid/support/v4/content/IntentCompat$IntentCompatImplBase;,
+        Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
+    }
+.end annotation
 
 
 # static fields
@@ -30,16 +41,17 @@
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 86
+    .local v0, "version":I
     const/16 v1, 0xf
 
     if-lt v0, v1, :cond_0
 
     .line 87
-    new-instance v0, Landroid/support/v4/content/IntentCompat$IntentCompatImplIcsMr1;
+    new-instance v1, Landroid/support/v4/content/IntentCompat$IntentCompatImplIcsMr1;
 
-    invoke-direct {v0}, Landroid/support/v4/content/IntentCompat$IntentCompatImplIcsMr1;-><init>()V
+    invoke-direct {v1}, Landroid/support/v4/content/IntentCompat$IntentCompatImplIcsMr1;-><init>()V
 
-    sput-object v0, Landroid/support/v4/content/IntentCompat;->IMPL:Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
+    sput-object v1, Landroid/support/v4/content/IntentCompat;->IMPL:Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
 
     .line 93
     :goto_0
@@ -52,21 +64,21 @@
     if-lt v0, v1, :cond_1
 
     .line 89
-    new-instance v0, Landroid/support/v4/content/IntentCompat$IntentCompatImplHC;
+    new-instance v1, Landroid/support/v4/content/IntentCompat$IntentCompatImplHC;
 
-    invoke-direct {v0}, Landroid/support/v4/content/IntentCompat$IntentCompatImplHC;-><init>()V
+    invoke-direct {v1}, Landroid/support/v4/content/IntentCompat$IntentCompatImplHC;-><init>()V
 
-    sput-object v0, Landroid/support/v4/content/IntentCompat;->IMPL:Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
+    sput-object v1, Landroid/support/v4/content/IntentCompat;->IMPL:Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
 
     goto :goto_0
 
     .line 91
     :cond_1
-    new-instance v0, Landroid/support/v4/content/IntentCompat$IntentCompatImplBase;
+    new-instance v1, Landroid/support/v4/content/IntentCompat$IntentCompatImplBase;
 
-    invoke-direct {v0}, Landroid/support/v4/content/IntentCompat$IntentCompatImplBase;-><init>()V
+    invoke-direct {v1}, Landroid/support/v4/content/IntentCompat$IntentCompatImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/content/IntentCompat;->IMPL:Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
+    sput-object v1, Landroid/support/v4/content/IntentCompat;->IMPL:Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
 
     goto :goto_0
 .end method
@@ -84,6 +96,7 @@
 
 .method public static makeMainActivity(Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 1
+    .param p0, "mainActivity"    # Landroid/content/ComponentName;
 
     .prologue
     .line 221
@@ -98,6 +111,8 @@
 
 .method public static makeMainSelectorActivity(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
+    .param p0, "selectorAction"    # Ljava/lang/String;
+    .param p1, "selectorCategory"    # Ljava/lang/String;
 
     .prologue
     .line 249
@@ -112,6 +127,7 @@
 
 .method public static makeRestartActivityTask(Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 1
+    .param p0, "mainActivity"    # Landroid/content/ComponentName;
 
     .prologue
     .line 266

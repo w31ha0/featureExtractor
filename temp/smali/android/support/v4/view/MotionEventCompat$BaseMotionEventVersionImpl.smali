@@ -1,9 +1,20 @@
 .class Landroid/support/v4/view/MotionEventCompat$BaseMotionEventVersionImpl;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "MotionEventCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/MotionEventCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "BaseMotionEventVersionImpl"
+.end annotation
 
 
 # direct methods
@@ -21,6 +32,8 @@
 # virtual methods
 .method public findPointerIndex(Landroid/view/MotionEvent;I)I
     .locals 1
+    .param p1, "event"    # Landroid/view/MotionEvent;
+    .param p2, "pointerId"    # I
 
     .prologue
     .line 43
@@ -41,6 +54,7 @@
 
 .method public getPointerCount(Landroid/view/MotionEvent;)I
     .locals 1
+    .param p1, "event"    # Landroid/view/MotionEvent;
 
     .prologue
     .line 73
@@ -51,6 +65,8 @@
 
 .method public getPointerId(Landroid/view/MotionEvent;I)I
     .locals 2
+    .param p1, "event"    # Landroid/view/MotionEvent;
+    .param p2, "pointerIndex"    # I
 
     .prologue
     .line 51
@@ -74,6 +90,8 @@
 
 .method public getX(Landroid/view/MotionEvent;I)F
     .locals 2
+    .param p1, "event"    # Landroid/view/MotionEvent;
+    .param p2, "pointerIndex"    # I
 
     .prologue
     .line 59
@@ -99,6 +117,8 @@
 
 .method public getY(Landroid/view/MotionEvent;I)F
     .locals 2
+    .param p1, "event"    # Landroid/view/MotionEvent;
+    .param p2, "pointerIndex"    # I
 
     .prologue
     .line 66

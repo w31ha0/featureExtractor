@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: com.wordloco.wordchallenge.apk
+apkFileName: com.skipping.apk
 compressionType: false
 doNotCompress:
 - arsc
@@ -8,15 +8,18 @@ packageInfo:
   forcedPackageId: '127'
   renameManifestPackage: null
 sdkInfo:
-  minSdkVersion: '11'
-  targetSdkVersion: '21'
+  minSdkVersion: '9'
+  targetSdkVersion: '18'
 sharedLibrary: false
-unknownFiles: {}
+unknownFiles:
+  manifest: '8'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
+  jsr305_annotations/v0_r47/V0_r47.gwt.xml: '8'
 usesFramework:
   ids:
   - 1
   tag: null
 version: 2.2.4
 versionInfo:
-  versionCode: '9'
-  versionName: 1.1.1
+  versionCode: '7'
+  versionName: 1.4.3

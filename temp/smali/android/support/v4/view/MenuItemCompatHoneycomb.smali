@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/MenuItemCompatHoneycomb;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "MenuItemCompatHoneycomb.java"
 
 
 # direct methods
@@ -16,6 +16,7 @@
 
 .method public static getActionView(Landroid/view/MenuItem;)Landroid/view/View;
     .locals 1
+    .param p0, "item"    # Landroid/view/MenuItem;
 
     .prologue
     .line 39
@@ -28,6 +29,8 @@
 
 .method public static setActionView(Landroid/view/MenuItem;I)Landroid/view/MenuItem;
     .locals 1
+    .param p0, "item"    # Landroid/view/MenuItem;
+    .param p1, "resId"    # I
 
     .prologue
     .line 35
@@ -40,6 +43,8 @@
 
 .method public static setActionView(Landroid/view/MenuItem;Landroid/view/View;)Landroid/view/MenuItem;
     .locals 1
+    .param p0, "item"    # Landroid/view/MenuItem;
+    .param p1, "view"    # Landroid/view/View;
 
     .prologue
     .line 31
@@ -52,6 +57,8 @@
 
 .method public static setShowAsAction(Landroid/view/MenuItem;I)V
     .locals 0
+    .param p0, "item"    # Landroid/view/MenuItem;
+    .param p1, "actionEnum"    # I
 
     .prologue
     .line 27

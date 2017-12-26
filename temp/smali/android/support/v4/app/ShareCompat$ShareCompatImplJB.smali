@@ -1,6 +1,17 @@
 .class Landroid/support/v4/app/ShareCompat$ShareCompatImplJB;
 .super Landroid/support/v4/app/ShareCompat$ShareCompatImplICS;
-.source "SourceFile"
+.source "ShareCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/ShareCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "ShareCompatImplJB"
+.end annotation
 
 
 # direct methods
@@ -18,6 +29,7 @@
 # virtual methods
 .method public escapeHtml(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 1
+    .param p1, "html"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 139
@@ -30,6 +42,7 @@
 
 .method shouldAddChooserIntent(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1, "item"    # Landroid/view/MenuItem;
 
     .prologue
     .line 144

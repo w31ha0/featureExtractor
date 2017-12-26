@@ -1,9 +1,20 @@
 .class Landroid/support/v4/app/TaskStackBuilder$TaskStackBuilderImplHoneycomb;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "TaskStackBuilder.java"
 
 # interfaces
 .implements Landroid/support/v4/app/TaskStackBuilder$TaskStackBuilderImpl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/TaskStackBuilder;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "TaskStackBuilderImplHoneycomb"
+.end annotation
 
 
 # direct methods
@@ -21,6 +32,11 @@
 # virtual methods
 .method public getPendingIntent(Landroid/content/Context;[Landroid/content/Intent;IILandroid/os/Bundle;)Landroid/app/PendingIntent;
     .locals 3
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "intents"    # [Landroid/content/Intent;
+    .param p3, "requestCode"    # I
+    .param p4, "flags"    # I
+    .param p5, "options"    # Landroid/os/Bundle;
 
     .prologue
     const/4 v2, 0x0

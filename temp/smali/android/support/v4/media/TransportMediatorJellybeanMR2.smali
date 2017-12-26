@@ -1,6 +1,6 @@
 .class Landroid/support/v4/media/TransportMediatorJellybeanMR2;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "TransportMediatorJellybeanMR2.java"
 
 # interfaces
 .implements Landroid/media/RemoteControlClient$OnGetPlaybackPositionListener;
@@ -44,6 +44,10 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/media/AudioManager;Landroid/view/View;Landroid/support/v4/media/TransportMediatorCallback;)V
     .locals 2
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "audioManager"    # Landroid/media/AudioManager;
+    .param p3, "view"    # Landroid/view/View;
+    .param p4, "transportCallback"    # Landroid/support/v4/media/TransportMediatorCallback;
 
     .prologue
     .line 86
@@ -351,6 +355,7 @@
 
 .method public onPlaybackPositionUpdate(J)V
     .locals 1
+    .param p1, "newPositionMs"    # J
 
     .prologue
     .line 155
@@ -393,6 +398,9 @@
 
 .method public refreshState(ZJI)V
     .locals 3
+    .param p1, "playing"    # Z
+    .param p2, "position"    # J
+    .param p4, "transportControls"    # I
 
     .prologue
     .line 159

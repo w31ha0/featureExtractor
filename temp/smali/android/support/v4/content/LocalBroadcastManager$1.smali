@@ -1,6 +1,17 @@
 .class Landroid/support/v4/content/LocalBroadcastManager$1;
 .super Landroid/os/Handler;
-.source "SourceFile"
+.source "LocalBroadcastManager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroid/support/v4/content/LocalBroadcastManager;-><init>(Landroid/content/Context;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
@@ -10,6 +21,7 @@
 # direct methods
 .method constructor <init>(Landroid/support/v4/content/LocalBroadcastManager;Landroid/os/Looper;)V
     .locals 0
+    .param p2, "x0"    # Landroid/os/Looper;
 
     .prologue
     .line 110
@@ -24,6 +36,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
+    .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
     .line 114

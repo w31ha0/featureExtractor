@@ -1,197 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="com_facebook_dialogloginactivity_ok_button">OK</string>
-    <string name="com_facebook_like_button_not_liked">Like</string>
-    <string name="com_facebook_like_button_liked">Liked</string>
-    <string name="com_facebook_loginview_log_out_button">Log out</string>
-    <string name="com_facebook_loginview_log_in_button">Log in with Facebook</string>
-    <string name="com_facebook_loginview_logged_in_as">Logged in as: %1$s</string>
-    <string name="com_facebook_loginview_logged_in_using_facebook">Logged in using Facebook</string>
-    <string name="com_facebook_loginview_log_out_action">Log out</string>
-    <string name="com_facebook_loginview_cancel_action">Cancel</string>
-    <string name="com_facebook_logo_content_description">Facebook Logo</string>
-    <string name="com_facebook_usersettingsfragment_log_in_button">Log in…</string>
-    <string name="com_facebook_usersettingsfragment_logged_in">Logged in</string>
-    <string name="com_facebook_usersettingsfragment_not_logged_in">Not logged in</string>
-    <string name="com_facebook_placepicker_subtitle_format">%1$s • %2$,d were here</string>
-    <string name="com_facebook_placepicker_subtitle_catetory_only_format">%1$s</string>
-    <string name="com_facebook_placepicker_subtitle_were_here_only_format">%1$,d were here</string>
-    <string name="com_facebook_picker_done_button_text">Done</string>
-    <string name="com_facebook_choose_friends">Choose Friends</string>
-    <string name="com_facebook_nearby">Nearby</string>
-    <string name="com_facebook_loading">Loading...</string>
-    <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
-    <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
-    <string name="com_facebook_requesterror_web_login">Your Facebook account is locked. Please log into www.facebook.com to continue.</string>
-    <string name="com_facebook_requesterror_relogin">Please log into this app again to reconnect your Facebook account.</string>
-    <string name="com_facebook_requesterror_password_changed">Your Facebook password has changed. Please log into this app again to reconnect your Facebook account.</string>
-    <string name="com_facebook_requesterror_reconnect">Please log into this app again to reconnect your Facebook account.</string>
-    <string name="com_facebook_requesterror_permissions">This app doesn’t have permission to do this. To change permissions, try logging into the app again.</string>
-    <string name="com_facebook_tooltip_default">"New! You're in control - choose what info you want to share with apps."</string>
-    <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
-    <string name="store_picture_title">Save image</string>
-    <string name="store_picture_message">Allow Ad to store image in Picture gallery?</string>
-    <string name="accept">Accept</string>
-    <string name="decline">Decline</string>
-    <string name="create_calendar_title">Create calendar event</string>
-    <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
-    <string name="auth_google_play_services_client_google_display_name">Google</string>
-    <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
-    <string name="cast_notification_connecting_message">Connecting to %1$s</string>
-    <string name="cast_notification_connected_message">Connected to %1$s</string>
-    <string name="cast_notification_disconnect">Disconnect</string>
-    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
-    <string name="common_google_play_services_notification_needs_update_title">An application requires an update for Google Play services.</string>
-    <string name="common_android_wear_notification_needs_update_text">%1$s requires an update to the Android Wear app.</string>
-    <string name="common_google_play_services_needs_enabling_title">An application requires Google Play services to be enabled.</string>
-    <string name="common_google_play_services_error_notification_requested_by_msg">Requested by %1$s</string>
-    <string name="common_google_play_services_install_title">Get Google Play services</string>
-    <string name="common_google_play_services_install_text_phone">"%1$s won't run without Google Play services, which are missing from your phone."</string>
-    <string name="common_google_play_services_install_text_tablet">"%1$s won't run without Google Play services, which are missing from your tablet."</string>
-    <string name="common_google_play_services_install_button">Get Google Play services</string>
-    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
-    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
-    <string name="common_google_play_services_enable_button">Enable Google Play services</string>
-    <string name="common_google_play_services_update_title">Update Google Play services</string>
-    <string name="common_android_wear_update_title">Update Android Wear</string>
-    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
-    <string name="common_android_wear_update_text">"%1$s won't run unless you update the Android Wear app."</string>
-    <string name="common_google_play_services_updating_title">Google Play services are updating</string>
-    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
-    <string name="common_google_play_services_network_error_title">Network Error</string>
-    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
-    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
-    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
-    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
-    <string name="common_google_play_services_unsupported_title">Google Play services</string>
-    <string name="common_google_play_services_unsupported_text">%1$s relies on Google Play services, which is not supported by your device. Contact the manufacturer for assistance.</string>
-    <string name="common_google_play_services_update_button">Update</string>
-    <string name="common_signin_button_text">Sign in</string>
-    <string name="common_signin_button_text_long">Sign in with Google</string>
-    <string name="common_open_on_phone">Open on phone</string>
-    <string name="common_google_play_services_api_unavailable_text">%1$s requires one or more Google Play services that are not currently available. Please contact the developer for assistance.</string>
-    <string name="common_google_play_services_sign_in_failed_title">Sign in failed</string>
-    <string name="common_google_play_services_sign_in_failed_text">Error signing in the specified account. Please choose a different account.</string>
-    <string name="wallet_buy_button_place_holder">Buy with Google</string>
-    <string name="gamehelper_sign_in_failed">Failed to sign in. Please check your network connection and try again.</string>
-    <string name="gamehelper_app_misconfigured">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>
-    <string name="gamehelper_license_failed">License check failed.</string>
-    <string name="gamehelper_unknown_error">Unknown error.</string>
-    <string name="sign_in_failed">Failed to sign in. Please check your network connection and try again.</string>
-    <string name="app_misconfigured">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>
-    <string name="license_failed">License check failed.</string>
-    <string name="unknown_error">Unknown error.</string>
-    <string name="com.crashlytics.android.build_id">36722a9f-cdc8-43a0-9353-1642659d76bb</string>
-    <string name="app_id_gps">140844081489</string>
-    <string name="leaderboard_id">CgkI0cLY14wEEAIQAA</string>
-    <string name="achievement_1">CgkI0cLY14wEEAIQAQ</string>
-    <string name="achievement_2">CgkI0cLY14wEEAIQAg</string>
-    <string name="achievement_3">CgkI0cLY14wEEAIQAw</string>
-    <string name="achievement_4">CgkI0cLY14wEEAIQBA</string>
-    <string name="achievement_5">CgkI0cLY14wEEAIQBQ</string>
-    <string name="achievement_6">CgkI0cLY14wEEAIQBg</string>
-    <string name="achievement_7">CgkI0cLY14wEEAIQBw</string>
-    <string name="achievement_8">CgkI0cLY14wEEAIQCA</string>
-    <string name="achievement_9">CgkI0cLY14wEEAIQCQ</string>
-    <string name="achievement_10">CgkI0cLY14wEEAIQCg</string>
-    <string name="helps_active_on">Hints On</string>
-    <string name="helps_active_off">Hints Off</string>
-    <string name="dialog_text">"&lt;b>Cookie Law info: &lt;/b>We use third party identifiers (social media, ads and analysis) to improve the user experience. By using this game it's understood that you accept their use. &lt;a href=>READ MORE&lt;/a>"</string>
-    <string name="internal_ad_wordsearch_desc">Try the best Word Search Game for Android!</string>
-    <string name="internal_ad_picsearch_desc">You will see a collection of images and you will have to guess and find the proper words</string>
-    <string name="internal_ad_4pics_desc">Get ready for our 4 Pics 1 Word Challenge!</string>
-    <string name="internal_ad_wordchallenge_desc">Word Search with Leaderboard to challenge your friends!</string>
-    <string name="internal_ad_pixelite_desc">Pixelite is a fun, addictive and original color puzzle game</string>
-    <string name="internal_ad_colorsflood_desc">Easy, the objective of this game is to fill the entire board with one single color</string>
-    <string name="internal_ad_tictactoe_desc">The classic Tic Tac Toe game played by millons!</string>
-    <string name="internal_ad_logicpuzzle_desc">Similar to Sudoku and Japanese crosswords, play using logical reasoning and deduction</string>
-    <string name="internal_ad_matching_desc">Train your brain with this cool Matching Game!</string>
-    <string name="internal_ad_wordmonster_desc">Challenge yourself and guess the words!</string>
-    <string name="internal_ad_questionmonster_desc">Trivia Game with interesting facts that will surprise you!</string>
-    <string name="internal_ad_onepic_desc">Look at the image and guess the word that is related</string>
-    <string name="internal_ad_4pictures_desc">Get ready for our new 4 Pictures 1 Word Challenge!</string>
-    <string name="internal_ad_filter_desc">Blue Light emision harms your vision, take care using our BlueLight Filter</string>
-    <string name="internal_ad_wordsearchmath_desc">Try the revolutionary Word Search Math, use basic math operations to solve it!</string>
-    <string name="internal_ad_button">FREE DOWNLOAD</string>
-    <string name="internal_ad_subtitle">Click to access Google Play Store</string>
-    <string name="internal_ad_wordsearch_title">Word Search</string>
-    <string name="internal_ad_picsearch_title">Word Search: Pics!</string>
-    <string name="internal_ad_4pics_title">Guess the Word: 4 Pics 1 Word</string>
-    <string name="internal_ad_wordchallenge_title">Word Search</string>
-    <string name="internal_ad_pixelite_title">Math Puzzles</string>
-    <string name="internal_ad_colorsflood_title">Color Flood Puzzle</string>
-    <string name="internal_ad_tictactoe_title">Tic Tac Toe</string>
-    <string name="internal_ad_logicpuzzle_title">Logic Puzzles</string>
-    <string name="internal_ad_matching_title">Matching Game</string>
-    <string name="internal_ad_wordmonster_title">Trivia Word</string>
-    <string name="internal_ad_questionmonster_title">Trivia Quiz</string>
-    <string name="internal_ad_onepic_title">4 Pictures 1 Word - Challenge</string>
-    <string name="internal_ad_4pictures_title">4 Pictures 1 Word</string>
-    <string name="internal_ad_filter_title">BlueLight Screen Filter</string>
-    <string name="internal_ad_wordsearchmath_title">Word Search - Math!</string>
-    <string name="share_dialog_complete">"You win the game!
-Time to try another game from us!"</string>
-    <string name="desc_plusbutton">Surprise Quest for our friends</string>
-    <string name="gift">Today, you win %1$s Coins! Enjoy your day!</string>
-    <string name="dialogconfirmsolve">Solve game (You will not earn coins)?</string>
-    <string name="dialognewgamemsg">Restart game? You will lose your current game</string>
-    <string name="words_found">WORDS</string>
-    <string name="app_title">Word Search</string>
-    <string name="win">YOU WON!</string>
-    <string name="nextisreto">Ready for the Challenge?</string>
-    <string name="next">NEXT</string>
-    <string name="challengeAdvisorN2Reto">%1$s more for the Challenge!</string>
-    <string name="challengeAdvisorTurned">The next level is a challenge, get ready!</string>
-    <string name="winChallenge">GREAT! Challenge Complete! You reach Level:</string>
-    <string name="challenge">CHALLENGE</string>
-    <string name="skip">SKIP</string>
-    <string name="lose">YOU LOSE!</string>
-    <string name="lose_desc">"Let's try again!"</string>
-    <string name="lose_tip">You can use your coins to get %1$s!</string>
-    <string name="rate_enjoy">Are you enjoying the game?</string>
-    <string name="rate_rate">Would you like to rate it 5 stars on Google Play Store?</string>
-    <string name="button_yes">YES</string>
-    <string name="button_no">NO</string>
-    <string name="dialogconfirmhelp">Do you want to buy %1$s for %2$s coins?</string>
-    <string name="toastwithoutmoney">"You don't have enough coins. Remember! Every day you can receive coins as a gift, check the Home Screen!"</string>
-    <string name="button_cancel">Cancel</string>
-    <string name="share_dialog_complete_button">TRY MORE GAMES!</string>
-    <string name="share_dialog_complete_subtitle">Click to access Google Play Store</string>
-    <string name="button_plusbutton">Surprise Quest!</string>
-    <string name="share_dialog_plusbutton_desc">If you like the game and want to give us a +1 in Google Plus, we have a surprise for you!</string>
-    <string name="share_dialog_plusbutton_toast">You have to follow us in g+1 if you want to enable this content</string>
-    <string name="button_ok">OK</string>
-    <string name="desc_quests">Play the Challenge</string>
-    <string name="button_quests">Play!</string>
-    <string name="share_dialog_sharebtn">SHARE</string>
-    <string name="exit">Press BACK again to exit</string>
-    <string name="package_name">com.wordloco.wordchallenge</string>
-    <string name="app_id">425257134350491</string>
-    <string name="playstore_url_gplus">https://play.google.com/store/apps/details?id=com.wordloco.wordchallenge</string>
-    <string name="playstore_url">http://play.google.com/store/apps/details?id=com.wordloco.wordchallenge&amp;hl=en</string>
-    <string name="facebook_page">https://www.facebook.com/WordCallenge-902559396502321/</string>
-    <string name="winwhat">+ %1$s</string>
-    <string name="chosenlangEs">ESPAÑOL</string>
-    <string name="chosenlangEn">ENGLISH</string>
-    <string name="chosenlangIt">ITALIANO</string>
-    <string name="chosenlangRu">РУССКИЙ</string>
-    <string name="chosenlangDe">DEUTSCH</string>
-    <string name="chosenlangSv">SVENSKA</string>
-    <string name="chosenlangNl">NEDERLANDSE</string>
-    <string name="chosenlangPt">PORTUGUES</string>
-    <string name="chosenlangFr">FRANÇAIS</string>
-    <string name="chosenlangPl">POLSKI</string>
-    <string name="chosenlangCs">ČEŠTINA</string>
-    <string name="chosenlangUk">УКРАЇНСЬКИЙ</string>
-    <string name="chosenlangSk">SLOVENČINA</string>
-    <string name="chosenlangTr">TÜRK</string>
-    <string name="chosenlangJa">日本の</string>
-    <string name="chosenlangKo">한국의</string>
-    <string name="chosenlangZh">中国的</string>
-    <string name="chosenlangHi">हिंदू</string>
-    <string name="app_name">Simple Ad Sample</string>
-    <string name="description">This is a simple app for testing ad loading capabilities of the Amazon Mobile Ads API. This app demonstrates ad loading, expanding and collapsing along with device rotation.</string>
-    <string name="button_text">Load Ad</string>
-    <string name="button_text_show_ad">Show Ad</string>
-    <string name="show_ad_on_load_checkbox">Show Ad Upon Loading</string>
+    <string name="ga_trackingId">UA-50209559-1</string>
+    <string name="lang1">System</string>
+    <string name="lang2">German (Deutsch)</string>
+    <string name="lang3">Spanish (Español)</string>
+    <string name="lang4">French (Français)</string>
+    <string name="lang5">Italian (Italiano)</string>
+    <string name="lang6">Russian (Русский)</string>
+    <string name="lang7">Swedish (Svenska)</string>
+    <string name="lang8">English</string>
+    <string name="lang9">Danish(Dansk)</string>
+    <string name="lang10">Czech(Česká)</string>
+    <string name="lang11">Norwegian(Norsk)</string>
+    <string name="lang12">Greek(Έλληνας)</string>
+    <string name="lang13">Portuguese(Português)</string>
+    <string name="lang14">Slovak(Slovenčina)</string>
+    <string name="app_name">Skipping</string>
+    <string name="action_settings">Settings</string>
+    <string name="page_name_1">Skipping</string>
+    <string name="training">Training</string>
+    <string name="practice">Practice</string>
+    <string name="level">Level</string>
+    <string name="statistics">Statistics</string>
+    <string name="preferences">Preferences</string>
+    <string name="notification">Notification</string>
+    <string name="easy">Easy</string>
+    <string name="normal">Normal</string>
+    <string name="hard">Hard</string>
+    <string name="very_hard">Very hard</string>
+    <string name="time">Time</string>
+    <string name="times_a_day">Times a day</string>
+    <string name="times_a_week">Times a week</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="timer">Timer</string>
+    <string name="jump">Jump</string>
+    <string name="calories">Calories</string>
+    <string name="need_weight">To count calories you need to enter your weight</string>
+    <string name="weight_pref">Weight</string>
+    <string name="weight_pref1">(for counting calories)</string>
+    <string name="disable_ads">Disable ads</string>
+    <string name="disable_ads1">and help the project</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="weight">Weight</string>
+    <string name="kg">Kg</string>
+    <string name="lb">Pounds</string>
+    <string name="st_lb">Stone + pounds</string>
+    <string name="st">Stone</string>
+    <string name="lb_short">Lb</string>
+    <string name="st_short">St</string>
+    <string name="weight_unit">Unit of weight</string>
+    <string name="ok">OK</string>
+    <string name="review">Reviewed</string>
+    <string name="share">Share</string>
+    <string name="feedback">Feedback</string>
+    <string name="lang">Language</string>
+    <string name="translate">Observations on the translation</string>
+    <string name="version">Version :</string>
+    <string name="Hello">Hello</string>
+    <string name="share_friends_text1">Hi, I use the program</string>
+    <string name="share_friends_text2">and try you</string>
+    <string name="translate1">Inaccurate translation</string>
+    <string name="trans_text">If you find inaccuracies in the translation, please let us know. Thank you!</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="workout1">Workout 1</string>
+    <string name="workout2">Workout 2</string>
+    <string name="workout">Workout</string>
+    <string name="notification_enabled">Notification enabled</string>
+    <string name="need_turn_off1">Turn off the notification</string>
+    <string name="time_to_skipping">Time to skipping</string>
+    <string name="sound">Sound</string>
+    <string name="vibration">Vibration</string>
+    <string name="turn_on_screen">Turn on the screen</string>
+    <string name="reminder">Reminder</string>
+    <string name="sure_to_stop">Are you sure you want to stop training?</string>
+    <string name="easy_for_me">Easy for me (next level)</string>
+    <string name="normal_for_me">Normal for me (current level)</string>
+    <string name="hard_for_me">Hard for me (previous level)</string>
+    <string name="calories_burned">calories burned</string>
+    <string name="progress_this_week">Progress this week (min)</string>
+    <string name="min_week">"min/ 
+ week"</string>
+    <string name="week">Week</string>
+    <string name="day">Day</string>
+    <string name="minutes">Minutes</string>
+    <string name="calories1">Calories</string>
+    <string name="weight1">Weight</string>
+    <string name="list">list</string>
+    <string name="add_weight">Add weight</string>
+    <string name="workout_time">Workout time</string>
+    <string name="date">Date</string>
+    <string name="calories_burned1">Calories burned</string>
+    <string name="goal">Goal</string>
+    <string name="put_pocket">For counting jumps put your phone in pocket. Some devices do not count jumping when the screen off.</string>
+    <string name="current_level">Current level</string>
+    <string name="delete">Delete?</string>
+    <string name="delete_record">delete this record</string>
+    <string name="about">"&lt;h1> Jumping rope - Not only for kids &lt;/h1> Remember those old days where you used to jump the rope for fun? Good times right. Jumping rope is not only a simple game, it is an extraordinary workout. So extraordinary that by the time you finish reading this you will be amazed. I can tell you from my own experience that jumping the rope is a very effective workout, so effective that you will not believe how fast you can lose weight, and at the same time you will get stronger and healthier. Jumping rope is one of the best exercises out there that will workout your whole body. &lt;h1>Is Jumping rope, the ultimate weight loss exercise?&lt;/h1> You probably have heard of exercises like swimming and running. You probably thing that they are among the best exercises to lose weight. But there is one particular exercise that stands out from the rest, and that is jumping rope. Running can cause knee problems, especially if you are overweight, but that is not the case if you jump the rope. In contrast to running, jumping rope is unlikely to lead to knee damage since the impact of each jump or step is absorbed by both legs. Jumping rope also helps strengthen the arms and shoulders because of the motion used when you are jumping. Jumping rope is the cheapest fat burning exericse. It makes your legs stronger, your heart stronger and It tones your whole body! The fact is that boxers have been jumping the rope for a long time. No wonder why the are among the fittest people on earth. Boxing requieres the body to be in top shape &lt;h1>The benefits of jumping rope&lt;/h1> Aside from being one of the most amazing exercises ever. Jumping the rope not only helps you lose weight quickly, it also helps you in a variety of ways and it can be done just about everywhere. Jumping rope optimizes cardiovascular conditioning thus making you have a lower resting rate, which means that you have a big, strong, healthy heart. Some studies suggest that jumping rope can burn up to 1000 calories per hour! that's huge amount of calories.It also makes your larger upper and lower body muscles look nice and lean and is not hard to learn. With the economic recession now, people are not willing to spend a lot of money in fitness products. The good thing is that jump ropes are very inexpensive. A decent jump rope can cost anywhere between $5 - $10 dollars and you can take it anywhere you go. Other great benefits include the improvisation of your agility, posture, balance, reflexes and coordination. &lt;h1>Sounds too good to be true&lt;/h1> So you might be thinking that this sounds too good to be true, after all jumping rope tones your whole body, burns tons of calories, is inexpensive, can be done alone or in groups, greatly improves cardiovascular condition and more. All of that can be achieved with one single exercise. Well, if you think it is too good. Let me bring you to the back from your dream. It is not. You are wrong if you think that jumping rope is an easy and effective exercise. It is effective, but is not easy. To get all the benefits from this great cardiovascular exercise it is necessary that you actually do it. The reason why I said this is because once you try it, you will probably want to quit doing. Jumping rope can be pretty intense. You could get tire in just minutes if you are trying it for the first time. It can also make you feel frustrated if you continuously keep missing. I challenge everyone here who is a first time jumper, to jump for at least 30 seconds without stopping. &lt;h1>How is it done?&lt;/h1> There are very different ways to jump the rope. From the basic two foot jump to a more complicated one like Criss-cross. I think it's pretty easy self explanatory how to jump the rope. But there are mistakes that you should avoid at all cost. People make the mistake of bending their knees because it is easier for them, but it is less beneficial, incorrect, and wil mess up your timing. Some of the styles include the following:&lt;p> Basic jump&lt;p>
+
+This is where both feet are slightly apart and jump at the same time over the rope. Beginners should master this technique first before moving onto more advanced techniques.
+
+&lt;p>Alternate foot jump (speed step)&lt;p>
+
+This style consists of using alternate feet to jump off the ground. This technique can be used to effectively double the number of skips per minute as compared to the above technique.
+
+&lt;p>Criss-cross&lt;p>
+
+This method is similar to the basic jump with the only difference being that while jumping, the left hand goes to the right part of the body and vice versa for the right hand.
+
+&lt;p>Double under&lt;p>
+
+To perform a double under, the participant needs to jump up a bit higher than usual while swinging the rope twice under his feet. It is possible to have the rope swing three times under the feet (triple under). In fact, in competitive jump rope, triples, quadruples (quads), and quintuples (quins) are not uncommon.
+
+&lt;p>Combination jumps&lt;p>
+
+There are many more difficult jump roping tricks that combine two or more of these techniques to make a single trick. These combinations can also be used in Chinese Wheel, Double Dutch, and Long Rope.
+
+&lt;p>Toad&lt;p>
+
+The toad is a complicated trick where the jumper performs the Cross manoeuvre with their leg intersecting the arms.
+
+&lt;p>Other&lt;p>
+
+Many other variations are possible, including: skier, a side-to-side jump keeping the feet together; bell, a front-and-back jump keeping the feet together; scissors, a jump putting one foot forward and the other back, then switching back-and-forth; jumping jack, a jump putting the feet apart and then together; and can-can a jump with one leg up and bent, followed by a jump with both feet on ground, followed by a jump kicking the foot out. &lt;h1>What kind of jump rope is the best&lt;/h1> There's no best jump rope. Start out with any rope. Have your rope light-weight and/or adjustable. Once you get better, try some of the other types of ropes such as speed jump ropes. They weight more and can go faster than a normal ropes but be careful if you do something wrong it will hurt you. A speed rope swung very fast can sting. Start slowly and built your speed up. &lt;p>&lt;p>Tips and recommendations&lt;p>&lt;p> Choose an open area to jump rope and be aware of who is around you to avoid whipping someone.&lt;p> Practice a lot&lt;p> Start out slow and built your speed up&lt;p> Try to do some tricks to keep you from getting bored&lt;p> Jump the rope using different styles and techniques &lt;p> &lt;h1>Things I wish you know&lt;/h1> As you can see jumping rope is a really good exercise. In my experience, It takes time and effort to master some of the techniques above. When I first started jumping, I just did it for like thirty minutes the first day. It felt awkward because I could only jump for like twelve seconds straight. It was frustrating. The next day I felt so sore, as if the day before I had done a lot of strength training, specially in my arms, shoulders and calves but I continued to do it and now I can jump a solid two minutes. I was also able to lose sixteen pounds in one month by jumping the rope along with a healthy diet. My heart got stronger, my resting heart rate now is lower than before. Sometimes I find jumping rope more enjoyable than running, although running is also pretty adictive. In conclusion, I highly recommend you to include jumping rope as part of your fitness program."</string>
 </resources>

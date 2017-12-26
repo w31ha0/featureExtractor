@@ -1,6 +1,14 @@
 .class public abstract Landroid/support/v4/app/LoaderManager;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "LoaderManager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/app/LoaderManager$LoaderCallbacks;
+    }
+.end annotation
 
 
 # direct methods
@@ -17,6 +25,7 @@
 
 .method public static enableDebugLogging(Z)V
     .locals 0
+    .param p0, "enabled"    # Z
 
     .prologue
     .line 177

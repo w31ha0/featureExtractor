@@ -1,6 +1,6 @@
 .class public Landroid/support/v4/view/MenuCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "MenuCompat.java"
 
 
 # direct methods
@@ -16,6 +16,8 @@
 
 .method public static setShowAsAction(Landroid/view/MenuItem;I)V
     .locals 0
+    .param p0, "item"    # Landroid/view/MenuItem;
+    .param p1, "actionEnum"    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

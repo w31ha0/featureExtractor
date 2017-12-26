@@ -1,9 +1,20 @@
 .class Landroid/support/v4/widget/ViewDragHelper$2;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ViewDragHelper.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/ViewDragHelper;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields

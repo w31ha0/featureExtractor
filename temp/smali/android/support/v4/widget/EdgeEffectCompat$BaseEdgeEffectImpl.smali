@@ -1,9 +1,20 @@
 .class Landroid/support/v4/widget/EdgeEffectCompat$BaseEdgeEffectImpl;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "EdgeEffectCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/EdgeEffectCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "BaseEdgeEffectImpl"
+.end annotation
 
 
 # direct methods
@@ -21,6 +32,8 @@
 # virtual methods
 .method public draw(Ljava/lang/Object;Landroid/graphics/Canvas;)Z
     .locals 1
+    .param p1, "edgeEffect"    # Ljava/lang/Object;
+    .param p2, "canvas"    # Landroid/graphics/Canvas;
 
     .prologue
     .line 86
@@ -31,6 +44,7 @@
 
 .method public finish(Ljava/lang/Object;)V
     .locals 0
+    .param p1, "edgeEffect"    # Ljava/lang/Object;
 
     .prologue
     .line 71
@@ -39,6 +53,7 @@
 
 .method public isFinished(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "edgeEffect"    # Ljava/lang/Object;
 
     .prologue
     .line 67
@@ -49,6 +64,7 @@
 
 .method public newEdgeEffect(Landroid/content/Context;)Ljava/lang/Object;
     .locals 1
+    .param p1, "context"    # Landroid/content/Context;
 
     .prologue
     .line 60
@@ -59,6 +75,8 @@
 
 .method public onAbsorb(Ljava/lang/Object;I)Z
     .locals 1
+    .param p1, "edgeEffect"    # Ljava/lang/Object;
+    .param p2, "velocity"    # I
 
     .prologue
     .line 82
@@ -69,6 +87,8 @@
 
 .method public onPull(Ljava/lang/Object;F)Z
     .locals 1
+    .param p1, "edgeEffect"    # Ljava/lang/Object;
+    .param p2, "deltaDistance"    # F
 
     .prologue
     .line 74
@@ -79,6 +99,7 @@
 
 .method public onRelease(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "edgeEffect"    # Ljava/lang/Object;
 
     .prologue
     .line 78
@@ -89,6 +110,9 @@
 
 .method public setSize(Ljava/lang/Object;II)V
     .locals 0
+    .param p1, "edgeEffect"    # Ljava/lang/Object;
+    .param p2, "width"    # I
+    .param p3, "height"    # I
 
     .prologue
     .line 64

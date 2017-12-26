@@ -1,6 +1,17 @@
 .class Landroid/support/v4/view/ViewCompat$EclairMr1ViewCompatImpl;
 .super Landroid/support/v4/view/ViewCompat$BaseViewCompatImpl;
-.source "SourceFile"
+.source "ViewCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/ViewCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "EclairMr1ViewCompatImpl"
+.end annotation
 
 
 # direct methods
@@ -8,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 273
+    .line 366
     invoke-direct {p0}, Landroid/support/v4/view/ViewCompat$BaseViewCompatImpl;-><init>()V
 
     return-void
@@ -18,9 +29,10 @@
 # virtual methods
 .method public isOpaque(Landroid/view/View;)Z
     .locals 1
+    .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 276
+    .line 369
     invoke-static {p1}, Landroid/support/v4/view/ViewCompatEclairMr1;->isOpaque(Landroid/view/View;)Z
 
     move-result v0

@@ -1,6 +1,6 @@
 .class final Landroid/support/v4/app/FragmentManagerState;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "FragmentManager.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -55,6 +55,7 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
+    .param p1, "in"    # Landroid/os/Parcel;
 
     .prologue
     .line 357
@@ -107,6 +108,8 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
+    .param p1, "dest"    # Landroid/os/Parcel;
+    .param p2, "flags"    # I
 
     .prologue
     .line 368

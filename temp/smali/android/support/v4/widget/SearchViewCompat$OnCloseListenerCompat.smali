@@ -1,6 +1,17 @@
 .class public abstract Landroid/support/v4/widget/SearchViewCompat$OnCloseListenerCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SearchViewCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/SearchViewCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "OnCloseListenerCompat"
+.end annotation
 
 
 # instance fields

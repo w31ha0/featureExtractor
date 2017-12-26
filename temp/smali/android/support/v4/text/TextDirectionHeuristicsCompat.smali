@@ -1,6 +1,20 @@
 .class public Landroid/support/v4/text/TextDirectionHeuristicsCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "TextDirectionHeuristicsCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/text/TextDirectionHeuristicsCompat$1;,
+        Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicLocale;,
+        Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;,
+        Landroid/support/v4/text/TextDirectionHeuristicsCompat$FirstStrong;,
+        Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;,
+        Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;,
+        Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;
+    }
+.end annotation
 
 
 # static fields
@@ -96,6 +110,7 @@
 
 .method static synthetic access$100(I)I
     .locals 1
+    .param p0, "x0"    # I
 
     .prologue
     .line 28
@@ -108,6 +123,7 @@
 
 .method static synthetic access$200(I)I
     .locals 1
+    .param p0, "x0"    # I
 
     .prologue
     .line 28
@@ -120,6 +136,7 @@
 
 .method private static isRtlText(I)I
     .locals 1
+    .param p0, "directionality"    # I
 
     .prologue
     .line 79
@@ -156,6 +173,7 @@
 
 .method private static isRtlTextOrFormat(I)I
     .locals 1
+    .param p0, "directionality"    # I
 
     .prologue
     .line 91

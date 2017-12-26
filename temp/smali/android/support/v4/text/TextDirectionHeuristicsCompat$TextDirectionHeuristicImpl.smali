@@ -1,9 +1,20 @@
 .class abstract Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "TextDirectionHeuristicsCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/text/TextDirectionHeuristicCompat;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/text/TextDirectionHeuristicsCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x40a
+    name = "TextDirectionHeuristicImpl"
+.end annotation
 
 
 # instance fields
@@ -13,6 +24,7 @@
 # direct methods
 .method public constructor <init>(Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;)V
     .locals 0
+    .param p1, "algorithm"    # Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
 
     .prologue
     .line 114
@@ -27,6 +39,9 @@
 
 .method private doCheck(Ljava/lang/CharSequence;II)Z
     .locals 1
+    .param p1, "cs"    # Ljava/lang/CharSequence;
+    .param p2, "start"    # I
+    .param p3, "count"    # I
 
     .prologue
     .line 140
@@ -73,6 +88,9 @@
 
 .method public isRtl(Ljava/lang/CharSequence;II)Z
     .locals 1
+    .param p1, "cs"    # Ljava/lang/CharSequence;
+    .param p2, "start"    # I
+    .param p3, "count"    # I
 
     .prologue
     .line 130
@@ -123,6 +141,9 @@
 
 .method public isRtl([CII)Z
     .locals 1
+    .param p1, "array"    # [C
+    .param p2, "start"    # I
+    .param p3, "count"    # I
 
     .prologue
     .line 125

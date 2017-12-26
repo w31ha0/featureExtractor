@@ -1,6 +1,16 @@
 .class public Landroid/support/v4/view/ViewConfigurationCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ViewConfigurationCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/view/ViewConfigurationCompat$FroyoViewConfigurationVersionImpl;,
+        Landroid/support/v4/view/ViewConfigurationCompat$BaseViewConfigurationVersionImpl;,
+        Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
+    }
+.end annotation
 
 
 # static fields
@@ -54,6 +64,7 @@
 
 .method public static getScaledPagingTouchSlop(Landroid/view/ViewConfiguration;)I
     .locals 1
+    .param p0, "config"    # Landroid/view/ViewConfiguration;
 
     .prologue
     .line 73

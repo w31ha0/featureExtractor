@@ -1,6 +1,16 @@
 .class public Landroid/support/v4/view/accessibility/AccessibilityEventCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AccessibilityEventCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventIcsImpl;,
+        Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventStubImpl;,
+        Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;
+    }
+.end annotation
 
 
 # static fields
@@ -86,6 +96,8 @@
 
 .method public static appendRecord(Landroid/view/accessibility/AccessibilityEvent;Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;)V
     .locals 2
+    .param p0, "event"    # Landroid/view/accessibility/AccessibilityEvent;
+    .param p1, "record"    # Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
 
     .prologue
     .line 206
@@ -103,6 +115,7 @@
 
 .method public static asRecord(Landroid/view/accessibility/AccessibilityEvent;)Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
     .locals 1
+    .param p0, "event"    # Landroid/view/accessibility/AccessibilityEvent;
 
     .prologue
     .line 233
@@ -115,6 +128,8 @@
 
 .method public static getRecord(Landroid/view/accessibility/AccessibilityEvent;I)Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
     .locals 2
+    .param p0, "event"    # Landroid/view/accessibility/AccessibilityEvent;
+    .param p1, "index"    # I
 
     .prologue
     .line 216
@@ -133,6 +148,7 @@
 
 .method public static getRecordCount(Landroid/view/accessibility/AccessibilityEvent;)I
     .locals 1
+    .param p0, "event"    # Landroid/view/accessibility/AccessibilityEvent;
 
     .prologue
     .line 194

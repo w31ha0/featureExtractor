@@ -1,6 +1,17 @@
 .class Landroid/support/v4/app/NavUtils$NavUtilsImplJB;
 .super Landroid/support/v4/app/NavUtils$NavUtilsImplBase;
-.source "SourceFile"
+.source "NavUtils.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/NavUtils;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "NavUtilsImplJB"
+.end annotation
 
 
 # direct methods
@@ -18,6 +29,7 @@
 # virtual methods
 .method public getParentActivityIntent(Landroid/app/Activity;)Landroid/content/Intent;
     .locals 1
+    .param p1, "activity"    # Landroid/app/Activity;
 
     .prologue
     .line 101
@@ -26,6 +38,7 @@
     move-result-object v0
 
     .line 102
+    .local v0, "result":Landroid/content/Intent;
     if-nez v0, :cond_0
 
     .line 103
@@ -40,6 +53,8 @@
 
 .method public getParentActivityName(Landroid/content/Context;Landroid/content/pm/ActivityInfo;)Ljava/lang/String;
     .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "info"    # Landroid/content/pm/ActivityInfo;
 
     .prologue
     .line 124
@@ -48,6 +63,7 @@
     move-result-object v0
 
     .line 125
+    .local v0, "result":Ljava/lang/String;
     if-nez v0, :cond_0
 
     .line 126
@@ -62,6 +78,8 @@
 
 .method public navigateUpTo(Landroid/app/Activity;Landroid/content/Intent;)V
     .locals 0
+    .param p1, "activity"    # Landroid/app/Activity;
+    .param p2, "upIntent"    # Landroid/content/Intent;
 
     .prologue
     .line 119
@@ -73,6 +91,8 @@
 
 .method public shouldUpRecreateTask(Landroid/app/Activity;Landroid/content/Intent;)Z
     .locals 1
+    .param p1, "activity"    # Landroid/app/Activity;
+    .param p2, "targetIntent"    # Landroid/content/Intent;
 
     .prologue
     .line 114
@@ -85,6 +105,7 @@
 
 .method superGetParentActivityIntent(Landroid/app/Activity;)Landroid/content/Intent;
     .locals 1
+    .param p1, "activity"    # Landroid/app/Activity;
 
     .prologue
     .line 109

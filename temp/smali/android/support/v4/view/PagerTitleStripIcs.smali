@@ -1,6 +1,14 @@
 .class Landroid/support/v4/view/PagerTitleStripIcs;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "PagerTitleStripIcs.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/view/PagerTitleStripIcs$SingleLineAllCapsTransform;
+    }
+.end annotation
 
 
 # direct methods
@@ -17,6 +25,7 @@
 
 .method public static setSingleLineAllCaps(Landroid/widget/TextView;)V
     .locals 2
+    .param p0, "text"    # Landroid/widget/TextView;
 
     .prologue
     .line 28

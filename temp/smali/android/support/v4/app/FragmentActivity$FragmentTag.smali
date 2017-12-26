@@ -1,6 +1,17 @@
 .class Landroid/support/v4/app/FragmentActivity$FragmentTag;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "FragmentActivity.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/FragmentActivity;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "FragmentTag"
+.end annotation
 
 
 # static fields

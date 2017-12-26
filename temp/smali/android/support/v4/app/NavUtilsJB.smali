@@ -1,6 +1,6 @@
 .class Landroid/support/v4/app/NavUtilsJB;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "NavUtilsJB.java"
 
 
 # direct methods
@@ -16,6 +16,7 @@
 
 .method public static getParentActivityIntent(Landroid/app/Activity;)Landroid/content/Intent;
     .locals 1
+    .param p0, "activity"    # Landroid/app/Activity;
 
     .prologue
     .line 25
@@ -28,6 +29,7 @@
 
 .method public static getParentActivityName(Landroid/content/pm/ActivityInfo;)Ljava/lang/String;
     .locals 1
+    .param p0, "info"    # Landroid/content/pm/ActivityInfo;
 
     .prologue
     .line 37
@@ -38,6 +40,8 @@
 
 .method public static navigateUpTo(Landroid/app/Activity;Landroid/content/Intent;)V
     .locals 0
+    .param p0, "activity"    # Landroid/app/Activity;
+    .param p1, "upIntent"    # Landroid/content/Intent;
 
     .prologue
     .line 33
@@ -49,6 +53,8 @@
 
 .method public static shouldUpRecreateTask(Landroid/app/Activity;Landroid/content/Intent;)Z
     .locals 1
+    .param p0, "activity"    # Landroid/app/Activity;
+    .param p1, "targetIntent"    # Landroid/content/Intent;
 
     .prologue
     .line 29

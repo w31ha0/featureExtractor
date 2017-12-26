@@ -1,6 +1,17 @@
 .class interface abstract Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "EdgeEffectCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/EdgeEffectCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x608
+    name = "EdgeEffectImpl"
+.end annotation
 
 
 # virtual methods

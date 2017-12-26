@@ -1,6 +1,15 @@
 .class Landroid/support/v4/view/MenuItemCompatIcs;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "MenuItemCompatIcs.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/view/MenuItemCompatIcs$OnActionExpandListenerWrapper;,
+        Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;
+    }
+.end annotation
 
 
 # direct methods
@@ -17,6 +26,7 @@
 
 .method public static collapseActionView(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p0, "item"    # Landroid/view/MenuItem;
 
     .prologue
     .line 28
@@ -29,6 +39,7 @@
 
 .method public static expandActionView(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p0, "item"    # Landroid/view/MenuItem;
 
     .prologue
     .line 24
@@ -41,6 +52,7 @@
 
 .method public static isActionViewExpanded(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p0, "item"    # Landroid/view/MenuItem;
 
     .prologue
     .line 32
@@ -53,6 +65,8 @@
 
 .method public static setOnActionExpandListener(Landroid/view/MenuItem;Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;)Landroid/view/MenuItem;
     .locals 1
+    .param p0, "item"    # Landroid/view/MenuItem;
+    .param p1, "listener"    # Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;
 
     .prologue
     .line 37

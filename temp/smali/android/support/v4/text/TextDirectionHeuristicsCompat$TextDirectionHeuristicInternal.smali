@@ -1,6 +1,17 @@
 .class Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;
 .super Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;
-.source "SourceFile"
+.source "TextDirectionHeuristicsCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/text/TextDirectionHeuristicsCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "TextDirectionHeuristicInternal"
+.end annotation
 
 
 # instance fields
@@ -10,6 +21,8 @@
 # direct methods
 .method private constructor <init>(Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;Z)V
     .locals 0
+    .param p1, "algorithm"    # Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
+    .param p2, "defaultIsRtl"    # Z
 
     .prologue
     .line 156
@@ -24,6 +37,9 @@
 
 .method synthetic constructor <init>(Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;ZLandroid/support/v4/text/TextDirectionHeuristicsCompat$1;)V
     .locals 0
+    .param p1, "x0"    # Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
+    .param p2, "x1"    # Z
+    .param p3, "x2"    # Landroid/support/v4/text/TextDirectionHeuristicsCompat$1;
 
     .prologue
     .line 151

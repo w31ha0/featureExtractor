@@ -1,6 +1,17 @@
 .class Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatIcsImpl;
 .super Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl;
-.source "SourceFile"
+.source "SearchViewCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/SearchViewCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "SearchViewCompatIcsImpl"
+.end annotation
 
 
 # direct methods
@@ -18,6 +29,7 @@
 # virtual methods
 .method public newSearchView(Landroid/content/Context;)Landroid/view/View;
     .locals 1
+    .param p1, "context"    # Landroid/content/Context;
 
     .prologue
     .line 238
@@ -30,6 +42,8 @@
 
 .method public setImeOptions(Landroid/view/View;I)V
     .locals 0
+    .param p1, "searchView"    # Landroid/view/View;
+    .param p2, "imeOptions"    # I
 
     .prologue
     .line 243
@@ -41,6 +55,8 @@
 
 .method public setInputType(Landroid/view/View;I)V
     .locals 0
+    .param p1, "searchView"    # Landroid/view/View;
+    .param p2, "inputType"    # I
 
     .prologue
     .line 248

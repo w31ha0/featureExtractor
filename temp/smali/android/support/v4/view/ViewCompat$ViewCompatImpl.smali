@@ -1,6 +1,17 @@
 .class interface abstract Landroid/support/v4/view/ViewCompat$ViewCompatImpl;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ViewCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/ViewCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x608
+    name = "ViewCompatImpl"
+.end annotation
 
 
 # virtual methods
@@ -8,6 +19,9 @@
 .end method
 
 .method public abstract canScrollVertically(Landroid/view/View;I)Z
+.end method
+
+.method public abstract getAccessibilityLiveRegion(Landroid/view/View;)I
 .end method
 
 .method public abstract getAccessibilityNodeProvider(Landroid/view/View;)Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;
@@ -26,6 +40,15 @@
 .end method
 
 .method public abstract getLayoutDirection(Landroid/view/View;)I
+.end method
+
+.method public abstract getMeasuredHeightAndState(Landroid/view/View;)I
+.end method
+
+.method public abstract getMeasuredState(Landroid/view/View;)I
+.end method
+
+.method public abstract getMeasuredWidthAndState(Landroid/view/View;)I
 .end method
 
 .method public abstract getOverScrollMode(Landroid/view/View;)I
@@ -64,7 +87,13 @@
 .method public abstract postOnAnimationDelayed(Landroid/view/View;Ljava/lang/Runnable;J)V
 .end method
 
+.method public abstract resolveSizeAndState(III)I
+.end method
+
 .method public abstract setAccessibilityDelegate(Landroid/view/View;Landroid/support/v4/view/AccessibilityDelegateCompat;)V
+.end method
+
+.method public abstract setAccessibilityLiveRegion(Landroid/view/View;I)V
 .end method
 
 .method public abstract setHasTransientState(Landroid/view/View;Z)V

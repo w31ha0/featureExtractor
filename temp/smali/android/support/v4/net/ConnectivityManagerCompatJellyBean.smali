@@ -1,6 +1,6 @@
 .class Landroid/support/v4/net/ConnectivityManagerCompatJellyBean;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ConnectivityManagerCompatJellyBean.java"
 
 
 # direct methods
@@ -16,6 +16,7 @@
 
 .method public static isActiveNetworkMetered(Landroid/net/ConnectivityManager;)Z
     .locals 1
+    .param p0, "cm"    # Landroid/net/ConnectivityManager;
 
     .prologue
     .line 26

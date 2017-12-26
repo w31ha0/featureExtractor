@@ -1,6 +1,15 @@
 .class public abstract Landroid/support/v4/app/FragmentManager;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "FragmentManager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/app/FragmentManager$OnBackStackChangedListener;,
+        Landroid/support/v4/app/FragmentManager$BackStackEntry;
+    }
+.end annotation
 
 
 # static fields
@@ -21,6 +30,7 @@
 
 .method public static enableDebugLogging(Z)V
     .locals 0
+    .param p0, "enabled"    # Z
 
     .prologue
     .line 345

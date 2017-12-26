@@ -1,6 +1,14 @@
 .class public Landroid/support/v4/os/ParcelableCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ParcelableCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/os/ParcelableCompat$CompatCreator;
+    }
+.end annotation
 
 
 # direct methods
@@ -31,6 +39,7 @@
 
     .prologue
     .line 36
+    .local p0, "callbacks":Landroid/support/v4/os/ParcelableCompatCreatorCallbacks;, "Landroid/support/v4/os/ParcelableCompatCreatorCallbacks<TT;>;"
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xd

@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/ViewCompatEclairMr1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ViewCompatEclairMr1.java"
 
 
 # direct methods
@@ -16,6 +16,7 @@
 
 .method public static isOpaque(Landroid/view/View;)Z
     .locals 1
+    .param p0, "view"    # Landroid/view/View;
 
     .prologue
     .line 24

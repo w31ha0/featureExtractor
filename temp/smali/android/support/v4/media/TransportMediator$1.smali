@@ -1,9 +1,20 @@
 .class Landroid/support/v4/media/TransportMediator$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "TransportMediator.java"
 
 # interfaces
 .implements Landroid/support/v4/media/TransportMediatorCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/media/TransportMediator;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
@@ -43,6 +54,7 @@
 
 .method public handleAudioFocusChange(I)V
     .locals 1
+    .param p1, "focusChange"    # I
 
     .prologue
     .line 65
@@ -58,6 +70,7 @@
 
 .method public handleKey(Landroid/view/KeyEvent;)V
     .locals 1
+    .param p1, "key"    # Landroid/view/KeyEvent;
 
     .prologue
     .line 61
@@ -73,6 +86,7 @@
 
 .method public playbackPositionUpdate(J)V
     .locals 1
+    .param p1, "newPositionMs"    # J
 
     .prologue
     .line 75

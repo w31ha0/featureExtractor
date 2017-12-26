@@ -1,9 +1,18 @@
 .class Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$1;
 .super Ljava/lang/ThreadLocal;
-.source "SourceFile"
+.source "TrafficStatsCompat.java"
 
 
 # annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/ThreadLocal",

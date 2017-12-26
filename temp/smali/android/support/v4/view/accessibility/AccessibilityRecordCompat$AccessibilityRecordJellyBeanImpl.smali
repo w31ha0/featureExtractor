@@ -1,6 +1,17 @@
 .class Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordJellyBeanImpl;
 .super Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordIcsMr1Impl;
-.source "SourceFile"
+.source "AccessibilityRecordCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "AccessibilityRecordJellyBeanImpl"
+.end annotation
 
 
 # direct methods
@@ -18,6 +29,9 @@
 # virtual methods
 .method public setSource(Ljava/lang/Object;Landroid/view/View;I)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "root"    # Landroid/view/View;
+    .param p3, "virtualDescendantId"    # I
 
     .prologue
     .line 501

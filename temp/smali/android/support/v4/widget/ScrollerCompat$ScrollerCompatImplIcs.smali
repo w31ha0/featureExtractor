@@ -1,6 +1,17 @@
 .class Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplIcs;
 .super Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplGingerbread;
-.source "SourceFile"
+.source "ScrollerCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/ScrollerCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "ScrollerCompatImplIcs"
+.end annotation
 
 
 # direct methods
@@ -18,6 +29,7 @@
 # virtual methods
 .method public getCurrVelocity(Ljava/lang/Object;)F
     .locals 1
+    .param p1, "scroller"    # Ljava/lang/Object;
 
     .prologue
     .line 234

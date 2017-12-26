@@ -1,9 +1,20 @@
 .class Landroid/support/v4/view/GravityCompat$GravityCompatImplBase;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "GravityCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/GravityCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "GravityCompatImplBase"
+.end annotation
 
 
 # direct methods
@@ -21,6 +32,14 @@
 # virtual methods
 .method public apply(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;I)V
     .locals 0
+    .param p1, "gravity"    # I
+    .param p2, "w"    # I
+    .param p3, "h"    # I
+    .param p4, "container"    # Landroid/graphics/Rect;
+    .param p5, "xAdj"    # I
+    .param p6, "yAdj"    # I
+    .param p7, "outRect"    # Landroid/graphics/Rect;
+    .param p8, "layoutDirection"    # I
 
     .prologue
     .line 52
@@ -32,6 +51,12 @@
 
 .method public apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
     .locals 0
+    .param p1, "gravity"    # I
+    .param p2, "w"    # I
+    .param p3, "h"    # I
+    .param p4, "container"    # Landroid/graphics/Rect;
+    .param p5, "outRect"    # Landroid/graphics/Rect;
+    .param p6, "layoutDirection"    # I
 
     .prologue
     .line 46
@@ -43,6 +68,10 @@
 
 .method public applyDisplay(ILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
     .locals 0
+    .param p1, "gravity"    # I
+    .param p2, "display"    # Landroid/graphics/Rect;
+    .param p3, "inoutObj"    # Landroid/graphics/Rect;
+    .param p4, "layoutDirection"    # I
 
     .prologue
     .line 58
@@ -54,6 +83,8 @@
 
 .method public getAbsoluteGravity(II)I
     .locals 1
+    .param p1, "gravity"    # I
+    .param p2, "layoutDirection"    # I
 
     .prologue
     .line 40

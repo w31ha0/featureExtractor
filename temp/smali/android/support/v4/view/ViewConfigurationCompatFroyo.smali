@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/ViewConfigurationCompatFroyo;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ViewConfigurationCompatFroyo.java"
 
 
 # direct methods
@@ -16,6 +16,7 @@
 
 .method public static getScaledPagingTouchSlop(Landroid/view/ViewConfiguration;)I
     .locals 1
+    .param p0, "config"    # Landroid/view/ViewConfiguration;
 
     .prologue
     .line 26

@@ -1,9 +1,20 @@
 .class Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl$2;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SearchViewCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnCloseListenerCompatBridge;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl;->newOnCloseListener(Landroid/support/v4/widget/SearchViewCompat$OnCloseListenerCompat;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields

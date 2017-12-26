@@ -1,6 +1,6 @@
 .class Landroid/support/v4/app/TaskStackBuilderHoneycomb;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "TaskStackBuilderHoneycomb.java"
 
 
 # direct methods
@@ -16,6 +16,10 @@
 
 .method public static getActivitiesPendingIntent(Landroid/content/Context;I[Landroid/content/Intent;I)Landroid/app/PendingIntent;
     .locals 1
+    .param p0, "context"    # Landroid/content/Context;
+    .param p1, "requestCode"    # I
+    .param p2, "intents"    # [Landroid/content/Intent;
+    .param p3, "flags"    # I
 
     .prologue
     .line 29

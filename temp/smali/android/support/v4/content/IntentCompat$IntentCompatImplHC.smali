@@ -1,6 +1,17 @@
 .class Landroid/support/v4/content/IntentCompat$IntentCompatImplHC;
 .super Landroid/support/v4/content/IntentCompat$IntentCompatImplBase;
-.source "SourceFile"
+.source "IntentCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/content/IntentCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "IntentCompatImplHC"
+.end annotation
 
 
 # direct methods
@@ -18,6 +29,7 @@
 # virtual methods
 .method public makeMainActivity(Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 1
+    .param p1, "componentName"    # Landroid/content/ComponentName;
 
     .prologue
     .line 68
@@ -30,6 +42,7 @@
 
 .method public makeRestartActivityTask(Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 1
+    .param p1, "componentName"    # Landroid/content/ComponentName;
 
     .prologue
     .line 72

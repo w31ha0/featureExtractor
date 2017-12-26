@@ -1,6 +1,6 @@
 .class Landroid/support/v4/app/ShareCompatJB;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ShareCompatJB.java"
 
 
 # direct methods
@@ -16,6 +16,7 @@
 
 .method public static escapeHtml(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 1
+    .param p0, "html"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 23

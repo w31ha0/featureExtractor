@@ -1,6 +1,6 @@
 .class public Landroid/support/v4/media/TransportStateListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "TransportStateListener.java"
 
 
 # direct methods
@@ -18,6 +18,7 @@
 # virtual methods
 .method public onPlayingChanged(Landroid/support/v4/media/TransportController;)V
     .locals 0
+    .param p1, "controller"    # Landroid/support/v4/media/TransportController;
 
     .prologue
     .line 30
@@ -26,6 +27,7 @@
 
 .method public onTransportControlsChanged(Landroid/support/v4/media/TransportController;)V
     .locals 0
+    .param p1, "controller"    # Landroid/support/v4/media/TransportController;
 
     .prologue
     .line 38

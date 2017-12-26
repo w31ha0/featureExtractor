@@ -1,6 +1,17 @@
 .class interface abstract Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "CursorFilter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/CursorFilter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x608
+    name = "CursorFilterClient"
+.end annotation
 
 
 # virtual methods

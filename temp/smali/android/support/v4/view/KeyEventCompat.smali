@@ -1,6 +1,17 @@
 .class public Landroid/support/v4/view/KeyEventCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "KeyEventCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/view/KeyEventCompat$HoneycombKeyEventVersionImpl;,
+        Landroid/support/v4/view/KeyEventCompat$EclairKeyEventVersionImpl;,
+        Landroid/support/v4/view/KeyEventCompat$BaseKeyEventVersionImpl;,
+        Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
+    }
+.end annotation
 
 
 # static fields
@@ -54,6 +65,10 @@
 
 .method public static dispatch(Landroid/view/KeyEvent;Landroid/view/KeyEvent$Callback;Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
+    .param p0, "event"    # Landroid/view/KeyEvent;
+    .param p1, "receiver"    # Landroid/view/KeyEvent$Callback;
+    .param p2, "state"    # Ljava/lang/Object;
+    .param p3, "target"    # Ljava/lang/Object;
 
     .prologue
     .line 209
@@ -68,6 +83,7 @@
 
 .method public static getKeyDispatcherState(Landroid/view/View;)Ljava/lang/Object;
     .locals 1
+    .param p0, "view"    # Landroid/view/View;
 
     .prologue
     .line 204
@@ -82,6 +98,8 @@
 
 .method public static hasModifiers(Landroid/view/KeyEvent;I)Z
     .locals 2
+    .param p0, "event"    # Landroid/view/KeyEvent;
+    .param p1, "modifiers"    # I
 
     .prologue
     .line 188
@@ -100,6 +118,7 @@
 
 .method public static hasNoModifiers(Landroid/view/KeyEvent;)Z
     .locals 2
+    .param p0, "event"    # Landroid/view/KeyEvent;
 
     .prologue
     .line 192
@@ -118,6 +137,7 @@
 
 .method public static isTracking(Landroid/view/KeyEvent;)Z
     .locals 1
+    .param p0, "event"    # Landroid/view/KeyEvent;
 
     .prologue
     .line 200
@@ -132,6 +152,8 @@
 
 .method public static metaStateHasModifiers(II)Z
     .locals 1
+    .param p0, "metaState"    # I
+    .param p1, "modifiers"    # I
 
     .prologue
     .line 180
@@ -146,6 +168,7 @@
 
 .method public static metaStateHasNoModifiers(I)Z
     .locals 1
+    .param p0, "metaState"    # I
 
     .prologue
     .line 184
@@ -160,6 +183,7 @@
 
 .method public static normalizeMetaState(I)I
     .locals 1
+    .param p0, "metaState"    # I
 
     .prologue
     .line 176
@@ -174,6 +198,7 @@
 
 .method public static startTracking(Landroid/view/KeyEvent;)V
     .locals 1
+    .param p0, "event"    # Landroid/view/KeyEvent;
 
     .prologue
     .line 196

@@ -1,6 +1,16 @@
 .class public Landroid/support/v4/text/ICUCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ICUCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/text/ICUCompat$ICUCompatImplIcs;,
+        Landroid/support/v4/text/ICUCompat$ICUCompatImplBase;,
+        Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
+    }
+.end annotation
 
 
 # static fields
@@ -16,16 +26,17 @@
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 56
+    .local v0, "version":I
     const/16 v1, 0xe
 
     if-lt v0, v1, :cond_0
 
     .line 57
-    new-instance v0, Landroid/support/v4/text/ICUCompat$ICUCompatImplIcs;
+    new-instance v1, Landroid/support/v4/text/ICUCompat$ICUCompatImplIcs;
 
-    invoke-direct {v0}, Landroid/support/v4/text/ICUCompat$ICUCompatImplIcs;-><init>()V
+    invoke-direct {v1}, Landroid/support/v4/text/ICUCompat$ICUCompatImplIcs;-><init>()V
 
-    sput-object v0, Landroid/support/v4/text/ICUCompat;->IMPL:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
+    sput-object v1, Landroid/support/v4/text/ICUCompat;->IMPL:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
 
     .line 61
     :goto_0
@@ -33,11 +44,11 @@
 
     .line 59
     :cond_0
-    new-instance v0, Landroid/support/v4/text/ICUCompat$ICUCompatImplBase;
+    new-instance v1, Landroid/support/v4/text/ICUCompat$ICUCompatImplBase;
 
-    invoke-direct {v0}, Landroid/support/v4/text/ICUCompat$ICUCompatImplBase;-><init>()V
+    invoke-direct {v1}, Landroid/support/v4/text/ICUCompat$ICUCompatImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/text/ICUCompat;->IMPL:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
+    sput-object v1, Landroid/support/v4/text/ICUCompat;->IMPL:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
 
     goto :goto_0
 .end method
@@ -55,6 +66,7 @@
 
 .method public static addLikelySubtags(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p0, "locale"    # Ljava/lang/String;
 
     .prologue
     .line 96
@@ -69,6 +81,7 @@
 
 .method public static getScript(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p0, "locale"    # Ljava/lang/String;
 
     .prologue
     .line 70

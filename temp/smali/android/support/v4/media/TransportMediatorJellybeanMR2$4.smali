@@ -1,9 +1,20 @@
 .class Landroid/support/v4/media/TransportMediatorJellybeanMR2$4;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "TransportMediatorJellybeanMR2.java"
 
 # interfaces
 .implements Landroid/media/AudioManager$OnAudioFocusChangeListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/media/TransportMediatorJellybeanMR2;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
@@ -27,6 +38,7 @@
 # virtual methods
 .method public onAudioFocusChange(I)V
     .locals 1
+    .param p1, "focusChange"    # I
 
     .prologue
     .line 75

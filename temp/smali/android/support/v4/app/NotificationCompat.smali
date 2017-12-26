@@ -1,6 +1,24 @@
 .class public Landroid/support/v4/app/NotificationCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "NotificationCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/app/NotificationCompat$Action;,
+        Landroid/support/v4/app/NotificationCompat$InboxStyle;,
+        Landroid/support/v4/app/NotificationCompat$BigTextStyle;,
+        Landroid/support/v4/app/NotificationCompat$BigPictureStyle;,
+        Landroid/support/v4/app/NotificationCompat$Style;,
+        Landroid/support/v4/app/NotificationCompat$Builder;,
+        Landroid/support/v4/app/NotificationCompat$NotificationCompatImplJellybean;,
+        Landroid/support/v4/app/NotificationCompat$NotificationCompatImplIceCreamSandwich;,
+        Landroid/support/v4/app/NotificationCompat$NotificationCompatImplHoneycomb;,
+        Landroid/support/v4/app/NotificationCompat$NotificationCompatImplBase;,
+        Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
+    }
+.end annotation
 
 
 # static fields

@@ -1,6 +1,17 @@
 .class public Landroid/support/v4/app/NotificationCompat$InboxStyle;
 .super Landroid/support/v4/app/NotificationCompat$Style;
-.source "SourceFile"
+.source "NotificationCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/NotificationCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "InboxStyle"
+.end annotation
 
 
 # instance fields
@@ -37,6 +48,7 @@
 
 .method public constructor <init>(Landroid/support/v4/app/NotificationCompat$Builder;)V
     .locals 1
+    .param p1, "builder"    # Landroid/support/v4/app/NotificationCompat$Builder;
 
     .prologue
     .line 788
@@ -60,6 +72,7 @@
 # virtual methods
 .method public addLine(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$InboxStyle;
     .locals 1
+    .param p1, "cs"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 814
@@ -73,6 +86,7 @@
 
 .method public setBigContentTitle(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$InboxStyle;
     .locals 0
+    .param p1, "title"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 797
@@ -84,6 +98,7 @@
 
 .method public setSummaryText(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$InboxStyle;
     .locals 1
+    .param p1, "cs"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 805

@@ -1,9 +1,20 @@
 .class Landroid/support/v4/view/MenuItemCompatIcs$OnActionExpandListenerWrapper;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "MenuItemCompatIcs.java"
 
 # interfaces
 .implements Landroid/view/MenuItem$OnActionExpandListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/MenuItemCompatIcs;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "OnActionExpandListenerWrapper"
+.end annotation
 
 
 # instance fields
@@ -13,6 +24,7 @@
 # direct methods
 .method public constructor <init>(Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;)V
     .locals 0
+    .param p1, "wrapped"    # Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;
 
     .prologue
     .line 54
@@ -29,6 +41,7 @@
 # virtual methods
 .method public onMenuItemActionCollapse(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1, "item"    # Landroid/view/MenuItem;
 
     .prologue
     .line 65
@@ -43,6 +56,7 @@
 
 .method public onMenuItemActionExpand(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1, "item"    # Landroid/view/MenuItem;
 
     .prologue
     .line 60

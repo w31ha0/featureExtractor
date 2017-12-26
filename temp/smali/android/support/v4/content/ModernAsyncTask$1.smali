@@ -1,9 +1,20 @@
 .class final Landroid/support/v4/content/ModernAsyncTask$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ModernAsyncTask.java"
 
 # interfaces
 .implements Ljava/util/concurrent/ThreadFactory;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/content/ModernAsyncTask;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = null
+.end annotation
 
 
 # instance fields
@@ -34,6 +45,7 @@
 # virtual methods
 .method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 3
+    .param p1, "r"    # Ljava/lang/Runnable;
 
     .prologue
     .line 58

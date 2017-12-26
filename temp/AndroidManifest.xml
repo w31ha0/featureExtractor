@@ -1,30 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.wordloco.wordchallenge">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.skipping">
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/launch_icon" android:label="@string/app_title" android:largeHeap="true">
-        <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/app_id_gps"/>
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
-        <activity android:name="com.facebook.LoginActivity"/>
-        <activity android:name="com.wordloco.wordchallenge.view.RateDialog" android:screenOrientation="portrait" android:theme="@style/NoTitleDialog" android:windowNoTitle="true"/>
-        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-        <activity android:name="com.wordloco.wordchallenge.view.SplashScreen" android:screenOrientation="portrait">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.skipping.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.wordloco.wordchallenge.view.Home" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:screenOrientation="portrait"/>
-        <activity android:name="com.wordloco.wordchallenge.view.Game" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        <activity android:name="com.wordloco.wordchallenge.view.ShareDialog" android:screenOrientation="portrait" android:theme="@style/NoTitleDialog" android:windowNoTitle="true"/>
-        <activity android:name="com.wordloco.wordchallenge.view.MarketPlace" android:screenOrientation="portrait" android:theme="@style/NoTitleDialog" android:windowNoTitle="true"/>
-        <activity android:name="com.wordloco.wordchallenge.view.OkCancelDialog" android:screenOrientation="portrait" android:theme="@style/NoTitleDialog" android:windowNoTitle="true"/>
-        <activity android:name="com.wordloco.wordchallenge.view.AdDialog" android:screenOrientation="portrait" android:theme="@style/NoTitleDialog" android:windowNoTitle="true"/>
-        <activity android:name="com.wordloco.wordchallenge.view.InfoTutorial" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowNoTitle="true"/>
-        <activity android:name="com.wordloco.wordchallenge.view.TestAmazon" android:screenOrientation="portrait"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.amazon.device.ads.AdActivity"/>
-        <activity android:name="com.wordloco.wordchallenge.view.AmazonAd" android:screenOrientation="portrait"/>
-        <activity android:name="com.wordloco.wordchallenge.view.AmazonInt" android:screenOrientation="portrait"/>
-        <meta-data android:name="io.fabric.ApiKey" android:value="5c1faffe551313795c8ac5937ddc6f444c2a5e2f"/>
+        <activity android:name=".StatisticsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".NotificationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".PreferencesActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".TrainingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".LevelActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".AboutActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".WeightActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".Activity_notification_prefs" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".AfterTrainingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".AddWeightActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <receiver android:name=".AlarmManagerBroadcastReceiver"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"/>
     </application>
 </manifest>

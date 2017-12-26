@@ -1,9 +1,20 @@
 .class Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventStubImpl;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AccessibilityEventCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/view/accessibility/AccessibilityEventCompat$AccessibilityEventVersionImpl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/accessibility/AccessibilityEventCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "AccessibilityEventStubImpl"
+.end annotation
 
 
 # direct methods
@@ -21,6 +32,8 @@
 # virtual methods
 .method public appendRecord(Landroid/view/accessibility/AccessibilityEvent;Ljava/lang/Object;)V
     .locals 0
+    .param p1, "event"    # Landroid/view/accessibility/AccessibilityEvent;
+    .param p2, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 39
@@ -29,6 +42,8 @@
 
 .method public getRecord(Landroid/view/accessibility/AccessibilityEvent;I)Ljava/lang/Object;
     .locals 1
+    .param p1, "event"    # Landroid/view/accessibility/AccessibilityEvent;
+    .param p2, "index"    # I
 
     .prologue
     .line 43
@@ -39,6 +54,7 @@
 
 .method public getRecordCount(Landroid/view/accessibility/AccessibilityEvent;)I
     .locals 1
+    .param p1, "event"    # Landroid/view/accessibility/AccessibilityEvent;
 
     .prologue
     .line 48

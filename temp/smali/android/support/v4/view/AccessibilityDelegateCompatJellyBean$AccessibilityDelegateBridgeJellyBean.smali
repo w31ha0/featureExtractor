@@ -1,6 +1,17 @@
 .class public interface abstract Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AccessibilityDelegateCompatJellyBean.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "AccessibilityDelegateBridgeJellyBean"
+.end annotation
 
 
 # virtual methods

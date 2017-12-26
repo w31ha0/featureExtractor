@@ -1,9 +1,20 @@
 .class Landroid/support/v4/net/ConnectivityManagerCompat$JellyBeanConnectivityManagerCompatImpl;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ConnectivityManagerCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/net/ConnectivityManagerCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "JellyBeanConnectivityManagerCompatImpl"
+.end annotation
 
 
 # direct methods
@@ -21,6 +32,7 @@
 # virtual methods
 .method public isActiveNetworkMetered(Landroid/net/ConnectivityManager;)Z
     .locals 1
+    .param p1, "cm"    # Landroid/net/ConnectivityManager;
 
     .prologue
     .line 77

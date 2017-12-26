@@ -1,9 +1,20 @@
 .class final Landroid/support/v4/view/accessibility/AccessibilityManagerCompatIcs$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AccessibilityManagerCompatIcs.java"
 
 # interfaces
 .implements Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroid/support/v4/view/accessibility/AccessibilityManagerCompatIcs;->newAccessibilityStateChangeListener(Landroid/support/v4/view/accessibility/AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerBridge;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = null
+.end annotation
 
 
 # instance fields
@@ -27,6 +38,7 @@
 # virtual methods
 .method public onAccessibilityStateChanged(Z)V
     .locals 1
+    .param p1, "enabled"    # Z
 
     .prologue
     .line 39

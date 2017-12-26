@@ -1,9 +1,20 @@
 .class Landroid/support/v4/view/VelocityTrackerCompat$BaseVelocityTrackerVersionImpl;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "VelocityTrackerCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/VelocityTrackerCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "BaseVelocityTrackerVersionImpl"
+.end annotation
 
 
 # direct methods
@@ -21,6 +32,8 @@
 # virtual methods
 .method public getXVelocity(Landroid/view/VelocityTracker;I)F
     .locals 1
+    .param p1, "tracker"    # Landroid/view/VelocityTracker;
+    .param p2, "pointerId"    # I
 
     .prologue
     .line 40
@@ -33,6 +46,8 @@
 
 .method public getYVelocity(Landroid/view/VelocityTracker;I)F
     .locals 1
+    .param p1, "tracker"    # Landroid/view/VelocityTracker;
+    .param p2, "pointerId"    # I
 
     .prologue
     .line 44

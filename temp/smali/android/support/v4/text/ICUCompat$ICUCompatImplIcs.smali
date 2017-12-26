@@ -1,9 +1,20 @@
 .class Landroid/support/v4/text/ICUCompat$ICUCompatImplIcs;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ICUCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/text/ICUCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "ICUCompatImplIcs"
+.end annotation
 
 
 # direct methods
@@ -21,6 +32,7 @@
 # virtual methods
 .method public addLikelySubtags(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p1, "locale"    # Ljava/lang/String;
 
     .prologue
     .line 48
@@ -33,6 +45,7 @@
 
 .method public getScript(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p1, "locale"    # Ljava/lang/String;
 
     .prologue
     .line 43

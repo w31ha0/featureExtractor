@@ -1,6 +1,17 @@
 .class public Landroid/support/v4/widget/ScrollerCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ScrollerCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplIcs;,
+        Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplGingerbread;,
+        Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplBase;,
+        Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImpl;
+    }
+.end annotation
 
 
 # static fields
@@ -20,16 +31,17 @@
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 241
+    .local v0, "version":I
     const/16 v1, 0xe
 
     if-lt v0, v1, :cond_0
 
     .line 242
-    new-instance v0, Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplIcs;
+    new-instance v1, Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplIcs;
 
-    invoke-direct {v0}, Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplIcs;-><init>()V
+    invoke-direct {v1}, Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplIcs;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/ScrollerCompat;->IMPL:Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImpl;
+    sput-object v1, Landroid/support/v4/widget/ScrollerCompat;->IMPL:Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImpl;
 
     .line 248
     :goto_0
@@ -42,27 +54,29 @@
     if-lt v0, v1, :cond_1
 
     .line 244
-    new-instance v0, Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplGingerbread;
+    new-instance v1, Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplGingerbread;
 
-    invoke-direct {v0}, Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplGingerbread;-><init>()V
+    invoke-direct {v1}, Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplGingerbread;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/ScrollerCompat;->IMPL:Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImpl;
+    sput-object v1, Landroid/support/v4/widget/ScrollerCompat;->IMPL:Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImpl;
 
     goto :goto_0
 
     .line 246
     :cond_1
-    new-instance v0, Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplBase;
+    new-instance v1, Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplBase;
 
-    invoke-direct {v0}, Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplBase;-><init>()V
+    invoke-direct {v1}, Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplBase;-><init>()V
 
-    sput-object v0, Landroid/support/v4/widget/ScrollerCompat;->IMPL:Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImpl;
+    sput-object v1, Landroid/support/v4/widget/ScrollerCompat;->IMPL:Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImpl;
 
     goto :goto_0
 .end method
 
 .method constructor <init>(Landroid/content/Context;Landroid/view/animation/Interpolator;)V
     .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "interpolator"    # Landroid/view/animation/Interpolator;
 
     .prologue
     .line 258
@@ -83,6 +97,7 @@
 
 .method public static create(Landroid/content/Context;)Landroid/support/v4/widget/ScrollerCompat;
     .locals 1
+    .param p0, "context"    # Landroid/content/Context;
 
     .prologue
     .line 251
@@ -97,6 +112,8 @@
 
 .method public static create(Landroid/content/Context;Landroid/view/animation/Interpolator;)Landroid/support/v4/widget/ScrollerCompat;
     .locals 1
+    .param p0, "context"    # Landroid/content/Context;
+    .param p1, "interpolator"    # Landroid/view/animation/Interpolator;
 
     .prologue
     .line 255
@@ -142,6 +159,14 @@
 
 .method public fling(IIIIIIII)V
     .locals 10
+    .param p1, "startX"    # I
+    .param p2, "startY"    # I
+    .param p3, "velocityX"    # I
+    .param p4, "velocityY"    # I
+    .param p5, "minX"    # I
+    .param p6, "maxX"    # I
+    .param p7, "minY"    # I
+    .param p8, "maxY"    # I
 
     .prologue
     .line 382
@@ -173,6 +198,16 @@
 
 .method public fling(IIIIIIIIII)V
     .locals 12
+    .param p1, "startX"    # I
+    .param p2, "startY"    # I
+    .param p3, "velocityX"    # I
+    .param p4, "velocityY"    # I
+    .param p5, "minX"    # I
+    .param p6, "maxX"    # I
+    .param p7, "minY"    # I
+    .param p8, "maxY"    # I
+    .param p9, "overX"    # I
+    .param p10, "overY"    # I
 
     .prologue
     .line 410
@@ -320,6 +355,9 @@
 
 .method public notifyHorizontalEdgeReached(III)V
     .locals 2
+    .param p1, "startX"    # I
+    .param p2, "finalX"    # I
+    .param p3, "overX"    # I
 
     .prologue
     .line 437
@@ -335,6 +373,9 @@
 
 .method public notifyVerticalEdgeReached(III)V
     .locals 2
+    .param p1, "startY"    # I
+    .param p2, "finalY"    # I
+    .param p3, "overY"    # I
 
     .prologue
     .line 454
@@ -350,6 +391,10 @@
 
 .method public startScroll(IIII)V
     .locals 6
+    .param p1, "startX"    # I
+    .param p2, "startY"    # I
+    .param p3, "dx"    # I
+    .param p4, "dy"    # I
 
     .prologue
     .line 341
@@ -373,6 +418,11 @@
 
 .method public startScroll(IIIII)V
     .locals 7
+    .param p1, "startX"    # I
+    .param p2, "startY"    # I
+    .param p3, "dx"    # I
+    .param p4, "dy"    # I
+    .param p5, "duration"    # I
 
     .prologue
     .line 358

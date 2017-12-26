@@ -1,6 +1,6 @@
 .class public abstract Landroid/support/v4/widget/ResourceCursorAdapter;
 .super Landroid/support/v4/widget/CursorAdapter;
-.source "SourceFile"
+.source "ResourceCursorAdapter.java"
 
 
 # instance fields
@@ -14,6 +14,9 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILandroid/database/Cursor;)V
     .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "layout"    # I
+    .param p3, "c"    # Landroid/database/Cursor;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -43,6 +46,10 @@
 
 .method public constructor <init>(Landroid/content/Context;ILandroid/database/Cursor;I)V
     .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "layout"    # I
+    .param p3, "c"    # Landroid/database/Cursor;
+    .param p4, "flags"    # I
 
     .prologue
     .line 93
@@ -70,6 +77,10 @@
 
 .method public constructor <init>(Landroid/content/Context;ILandroid/database/Cursor;Z)V
     .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "layout"    # I
+    .param p3, "c"    # Landroid/database/Cursor;
+    .param p4, "autoRequery"    # Z
 
     .prologue
     .line 76
@@ -99,6 +110,9 @@
 # virtual methods
 .method public newDropDownView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "cursor"    # Landroid/database/Cursor;
+    .param p3, "parent"    # Landroid/view/ViewGroup;
 
     .prologue
     .line 111
@@ -117,6 +131,9 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "cursor"    # Landroid/database/Cursor;
+    .param p3, "parent"    # Landroid/view/ViewGroup;
 
     .prologue
     .line 106
@@ -135,6 +152,7 @@
 
 .method public setDropDownViewResource(I)V
     .locals 0
+    .param p1, "dropDownLayout"    # I
 
     .prologue
     .line 129
@@ -146,6 +164,7 @@
 
 .method public setViewResource(I)V
     .locals 0
+    .param p1, "layout"    # I
 
     .prologue
     .line 120

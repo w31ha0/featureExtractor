@@ -1,6 +1,16 @@
 .class public Landroid/support/v4/widget/EdgeEffectCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "EdgeEffectCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectIcsImpl;,
+        Landroid/support/v4/widget/EdgeEffectCompat$BaseEdgeEffectImpl;,
+        Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
+    }
+.end annotation
 
 
 # static fields
@@ -47,6 +57,7 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1, "context"    # Landroid/content/Context;
 
     .prologue
     .line 132
@@ -69,6 +80,7 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)Z
     .locals 2
+    .param p1, "canvas"    # Landroid/graphics/Canvas;
 
     .prologue
     .line 218
@@ -116,6 +128,7 @@
 
 .method public onAbsorb(I)Z
     .locals 2
+    .param p1, "velocity"    # I
 
     .prologue
     .line 204
@@ -132,6 +145,7 @@
 
 .method public onPull(F)Z
     .locals 2
+    .param p1, "deltaDistance"    # F
 
     .prologue
     .line 177
@@ -164,6 +178,8 @@
 
 .method public setSize(II)V
     .locals 2
+    .param p1, "width"    # I
+    .param p2, "height"    # I
 
     .prologue
     .line 143

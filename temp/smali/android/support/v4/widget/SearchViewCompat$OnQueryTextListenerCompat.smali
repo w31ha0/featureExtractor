@@ -1,6 +1,17 @@
 .class public abstract Landroid/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SearchViewCompat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/widget/SearchViewCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x409
+    name = "OnQueryTextListenerCompat"
+.end annotation
 
 
 # instance fields
@@ -34,6 +45,7 @@
 # virtual methods
 .method public onQueryTextChange(Ljava/lang/String;)Z
     .locals 1
+    .param p1, "newText"    # Ljava/lang/String;
 
     .prologue
     .line 365
@@ -44,6 +56,7 @@
 
 .method public onQueryTextSubmit(Ljava/lang/String;)Z
     .locals 1
+    .param p1, "query"    # Ljava/lang/String;
 
     .prologue
     .line 353

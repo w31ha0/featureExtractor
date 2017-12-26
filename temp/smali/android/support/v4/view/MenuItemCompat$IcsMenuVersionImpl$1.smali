@@ -1,9 +1,20 @@
 .class Landroid/support/v4/view/MenuItemCompat$IcsMenuVersionImpl$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "MenuItemCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroid/support/v4/view/MenuItemCompat$IcsMenuVersionImpl;->setOnActionExpandListener(Landroid/view/MenuItem;Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;)Landroid/view/MenuItem;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
@@ -31,6 +42,7 @@
 # virtual methods
 .method public onMenuItemActionCollapse(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1, "item"    # Landroid/view/MenuItem;
 
     .prologue
     .line 236
@@ -45,6 +57,7 @@
 
 .method public onMenuItemActionExpand(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1, "item"    # Landroid/view/MenuItem;
 
     .prologue
     .line 231

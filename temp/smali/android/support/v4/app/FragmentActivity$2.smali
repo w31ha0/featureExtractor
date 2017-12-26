@@ -1,9 +1,20 @@
 .class Landroid/support/v4/app/FragmentActivity$2;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "FragmentActivity.java"
 
 # interfaces
 .implements Landroid/support/v4/app/FragmentContainer;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/app/FragmentActivity;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
@@ -27,6 +38,7 @@
 # virtual methods
 .method public findViewById(I)Landroid/view/View;
     .locals 1
+    .param p1, "id"    # I
 
     .prologue
     .line 109

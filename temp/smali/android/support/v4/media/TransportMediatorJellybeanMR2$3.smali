@@ -1,6 +1,17 @@
 .class Landroid/support/v4/media/TransportMediatorJellybeanMR2$3;
 .super Landroid/content/BroadcastReceiver;
-.source "SourceFile"
+.source "TransportMediatorJellybeanMR2.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/media/TransportMediatorJellybeanMR2;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
@@ -23,29 +34,33 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 2
+    .locals 3
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
     .line 64
     :try_start_0
-    const-string v0, "android.intent.extra.KEY_EVENT"
+    const-string v2, "android.intent.extra.KEY_EVENT"
 
-    invoke-virtual {p2, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
+    invoke-virtual {p2, v2}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
-    move-result-object v0
+    move-result-object v1
 
-    check-cast v0, Landroid/view/KeyEvent;
+    check-cast v1, Landroid/view/KeyEvent;
 
     .line 65
-    iget-object v1, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2$3;->this$0:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
+    .local v1, "event":Landroid/view/KeyEvent;
+    iget-object v2, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2$3;->this$0:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
 
-    iget-object v1, v1, Landroid/support/v4/media/TransportMediatorJellybeanMR2;->mTransportCallback:Landroid/support/v4/media/TransportMediatorCallback;
+    iget-object v2, v2, Landroid/support/v4/media/TransportMediatorJellybeanMR2;->mTransportCallback:Landroid/support/v4/media/TransportMediatorCallback;
 
-    invoke-interface {v1, v0}, Landroid/support/v4/media/TransportMediatorCallback;->handleKey(Landroid/view/KeyEvent;)V
+    invoke-interface {v2, v1}, Landroid/support/v4/media/TransportMediatorCallback;->handleKey(Landroid/view/KeyEvent;)V
     :try_end_0
     .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 69
+    .end local v1    # "event":Landroid/view/KeyEvent;
     :goto_0
     return-void
 
@@ -54,9 +69,10 @@
     move-exception v0
 
     .line 67
-    const-string v1, "TransportController"
+    .local v0, "e":Ljava/lang/ClassCastException;
+    const-string v2, "TransportController"
 
-    invoke-static {v1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_0
 .end method

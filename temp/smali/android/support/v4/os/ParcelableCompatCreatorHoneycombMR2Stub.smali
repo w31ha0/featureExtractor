@@ -1,6 +1,6 @@
 .class Landroid/support/v4/os/ParcelableCompatCreatorHoneycombMR2Stub;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ParcelableCompatHoneycombMR2.java"
 
 
 # direct methods
@@ -30,6 +30,7 @@
 
     .prologue
     .line 24
+    .local p0, "callbacks":Landroid/support/v4/os/ParcelableCompatCreatorCallbacks;, "Landroid/support/v4/os/ParcelableCompatCreatorCallbacks<TT;>;"
     new-instance v0, Landroid/support/v4/os/ParcelableCompatCreatorHoneycombMR2;
 
     invoke-direct {v0, p0}, Landroid/support/v4/os/ParcelableCompatCreatorHoneycombMR2;-><init>(Landroid/support/v4/os/ParcelableCompatCreatorCallbacks;)V

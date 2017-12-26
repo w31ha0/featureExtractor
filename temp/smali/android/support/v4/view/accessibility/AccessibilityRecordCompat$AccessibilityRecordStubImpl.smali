@@ -1,9 +1,20 @@
 .class Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordStubImpl;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AccessibilityRecordCompat.java"
 
 # interfaces
 .implements Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "AccessibilityRecordStubImpl"
+.end annotation
 
 
 # direct methods
@@ -21,6 +32,7 @@
 # virtual methods
 .method public getAddedCount(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 92
@@ -31,6 +43,7 @@
 
 .method public getBeforeText(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 96
@@ -41,6 +54,7 @@
 
 .method public getClassName(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 100
@@ -51,6 +65,7 @@
 
 .method public getContentDescription(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 104
@@ -61,6 +76,7 @@
 
 .method public getCurrentItemIndex(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 108
@@ -71,6 +87,7 @@
 
 .method public getFromIndex(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 112
@@ -81,6 +98,7 @@
 
 .method public getItemCount(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 116
@@ -91,6 +109,7 @@
 
 .method public getMaxScrollX(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 120
@@ -101,6 +120,7 @@
 
 .method public getMaxScrollY(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 124
@@ -111,6 +131,7 @@
 
 .method public getParcelableData(Ljava/lang/Object;)Landroid/os/Parcelable;
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 128
@@ -121,6 +142,7 @@
 
 .method public getRemovedCount(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 132
@@ -131,6 +153,7 @@
 
 .method public getScrollX(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 136
@@ -141,6 +164,7 @@
 
 .method public getScrollY(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 140
@@ -151,6 +175,7 @@
 
 .method public getSource(Ljava/lang/Object;)Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 144
@@ -161,6 +186,7 @@
 
 .method public getText(Ljava/lang/Object;)Ljava/util/List;
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -184,6 +210,7 @@
 
 .method public getToIndex(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 152
@@ -194,6 +221,7 @@
 
 .method public getWindowId(Ljava/lang/Object;)I
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 156
@@ -204,6 +232,7 @@
 
 .method public isChecked(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 160
@@ -214,6 +243,7 @@
 
 .method public isEnabled(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 164
@@ -224,6 +254,7 @@
 
 .method public isFullScreen(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 168
@@ -234,6 +265,7 @@
 
 .method public isPassword(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 172
@@ -244,6 +276,7 @@
 
 .method public isScrollable(Ljava/lang/Object;)Z
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 176
@@ -264,6 +297,7 @@
 
 .method public obtain(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 88
@@ -274,6 +308,7 @@
 
 .method public recycle(Ljava/lang/Object;)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
 
     .prologue
     .line 181
@@ -282,6 +317,8 @@
 
 .method public setAddedCount(Ljava/lang/Object;I)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "addedCount"    # I
 
     .prologue
     .line 185
@@ -290,6 +327,8 @@
 
 .method public setBeforeText(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "beforeText"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 189
@@ -298,6 +337,8 @@
 
 .method public setChecked(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "isChecked"    # Z
 
     .prologue
     .line 193
@@ -306,6 +347,8 @@
 
 .method public setClassName(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "className"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 197
@@ -314,6 +357,8 @@
 
 .method public setContentDescription(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "contentDescription"    # Ljava/lang/CharSequence;
 
     .prologue
     .line 201
@@ -322,6 +367,8 @@
 
 .method public setCurrentItemIndex(Ljava/lang/Object;I)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "currentItemIndex"    # I
 
     .prologue
     .line 205
@@ -330,6 +377,8 @@
 
 .method public setEnabled(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "isEnabled"    # Z
 
     .prologue
     .line 209
@@ -338,6 +387,8 @@
 
 .method public setFromIndex(Ljava/lang/Object;I)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "fromIndex"    # I
 
     .prologue
     .line 213
@@ -346,6 +397,8 @@
 
 .method public setFullScreen(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "isFullScreen"    # Z
 
     .prologue
     .line 217
@@ -354,6 +407,8 @@
 
 .method public setItemCount(Ljava/lang/Object;I)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "itemCount"    # I
 
     .prologue
     .line 221
@@ -362,6 +417,8 @@
 
 .method public setMaxScrollX(Ljava/lang/Object;I)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "maxScrollX"    # I
 
     .prologue
     .line 225
@@ -370,6 +427,8 @@
 
 .method public setMaxScrollY(Ljava/lang/Object;I)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "maxScrollY"    # I
 
     .prologue
     .line 229
@@ -378,6 +437,8 @@
 
 .method public setParcelableData(Ljava/lang/Object;Landroid/os/Parcelable;)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "parcelableData"    # Landroid/os/Parcelable;
 
     .prologue
     .line 233
@@ -386,6 +447,8 @@
 
 .method public setPassword(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "isPassword"    # Z
 
     .prologue
     .line 237
@@ -394,6 +457,8 @@
 
 .method public setRemovedCount(Ljava/lang/Object;I)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "removedCount"    # I
 
     .prologue
     .line 241
@@ -402,6 +467,8 @@
 
 .method public setScrollX(Ljava/lang/Object;I)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "scrollX"    # I
 
     .prologue
     .line 245
@@ -410,6 +477,8 @@
 
 .method public setScrollY(Ljava/lang/Object;I)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "scrollY"    # I
 
     .prologue
     .line 249
@@ -418,6 +487,8 @@
 
 .method public setScrollable(Ljava/lang/Object;Z)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "scrollable"    # Z
 
     .prologue
     .line 253
@@ -426,6 +497,8 @@
 
 .method public setSource(Ljava/lang/Object;Landroid/view/View;)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "source"    # Landroid/view/View;
 
     .prologue
     .line 257
@@ -434,6 +507,9 @@
 
 .method public setSource(Ljava/lang/Object;Landroid/view/View;I)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "root"    # Landroid/view/View;
+    .param p3, "virtualDescendantId"    # I
 
     .prologue
     .line 261
@@ -442,6 +518,8 @@
 
 .method public setToIndex(Ljava/lang/Object;I)V
     .locals 0
+    .param p1, "record"    # Ljava/lang/Object;
+    .param p2, "toIndex"    # I
 
     .prologue
     .line 265

@@ -1,6 +1,6 @@
 .class Landroid/support/v4/app/ActivityCompatJB;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ActivityCompatJB.java"
 
 
 # direct methods
@@ -16,6 +16,7 @@
 
 .method public static finishAffinity(Landroid/app/Activity;)V
     .locals 0
+    .param p0, "activity"    # Landroid/app/Activity;
 
     .prologue
     .line 34
@@ -27,6 +28,9 @@
 
 .method public static startActivity(Landroid/content/Context;Landroid/content/Intent;Landroid/os/Bundle;)V
     .locals 0
+    .param p0, "context"    # Landroid/content/Context;
+    .param p1, "intent"    # Landroid/content/Intent;
+    .param p2, "options"    # Landroid/os/Bundle;
 
     .prologue
     .line 26
@@ -38,6 +42,10 @@
 
 .method public static startActivityForResult(Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)V
     .locals 0
+    .param p0, "activity"    # Landroid/app/Activity;
+    .param p1, "intent"    # Landroid/content/Intent;
+    .param p2, "requestCode"    # I
+    .param p3, "options"    # Landroid/os/Bundle;
 
     .prologue
     .line 30
