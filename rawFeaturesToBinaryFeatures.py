@@ -7,6 +7,8 @@ for path, subdirs, files in os.walk(dir_path):
     for name in files:
         fullpath = os.path.join(path, name)
         family = fullpath.split('/')[4]
+        if ".txt" in family:
+            continue
         os.system("mkdir "+PROJECT_PATH+"featuresOutput/"+family+"/binaryForm")
         if name.endswith('txt') and "binary" not in name:
             print "Reading contents of " + name
@@ -22,4 +24,3 @@ for path, subdirs, files in os.walk(dir_path):
                 f2.write(binary)
                 f2.write(' ')
             f2.close()
-            
