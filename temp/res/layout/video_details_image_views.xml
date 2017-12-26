@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.netflix.mediaclient.android.widget.TopCropImageView android:layout_gravity="center" android:id="@id/video_img" android:focusable="true" android:adjustViewBounds="true" style="@style/match" />
-    <ImageView android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/hero_gradient" android:background="?dpHeroGradient" android:layout_height="60.0dip" android:contentDescription="@string/label_pref_settings_category_playback" style="@style/match" />
-    <ImageView android:layout_gravity="center" android:id="@id/video_play_icon" android:layout_marginBottom="@dimen/details_play_overlay_bottom_margin" android:src="@drawable/ic_play_60" style="@style/wrap" />
-</merge>

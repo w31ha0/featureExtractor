@@ -1,6 +1,6 @@
 .class synthetic Landroid/support/v4/content/ModernAsyncTask$4;
 .super Ljava/lang/Object;
-.source "ModernAsyncTask.java"
+.source "SourceFile"
 
 
 # static fields
@@ -12,7 +12,7 @@
     .locals 3
 
     .prologue
-    .line 431
+    .line 407
     invoke-static {}, Landroid/support/v4/content/ModernAsyncTask$Status;->values()[Landroid/support/v4/content/ModernAsyncTask$Status;
 
     move-result-object v0

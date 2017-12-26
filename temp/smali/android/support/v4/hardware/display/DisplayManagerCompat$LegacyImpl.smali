@@ -1,6 +1,6 @@
 .class Landroid/support/v4/hardware/display/DisplayManagerCompat$LegacyImpl;
 .super Landroid/support/v4/hardware/display/DisplayManagerCompat;
-.source "DisplayManagerCompat.java"
+.source "SourceFile"
 
 
 # instance fields
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Landroid/support/v4/hardware/display/DisplayManagerCompat;-><init>()V
 
     .line 109
-    const-string/jumbo v0, "window"
+    const-string v0, "window"
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 

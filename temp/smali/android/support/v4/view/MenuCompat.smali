@@ -1,14 +1,14 @@
-.class public final Landroid/support/v4/view/MenuCompat;
+.class public Landroid/support/v4/view/MenuCompat;
 .super Ljava/lang/Object;
-.source "MenuCompat.java"
+.source "SourceFile"
 
 
 # direct methods
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 37
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

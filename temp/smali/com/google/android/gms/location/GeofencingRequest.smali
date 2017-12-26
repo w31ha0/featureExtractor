@@ -1,5 +1,8 @@
 .class public Lcom/google/android/gms/location/GeofencingRequest;
-.super Lcom/google/android/gms/common/internal/safeparcel/zza;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/google/android/gms/common/internal/safeparcel/SafeParcelable;
 
 
 # static fields
@@ -14,101 +17,163 @@
     .end annotation
 .end field
 
+.field public static final INITIAL_TRIGGER_DWELL:I = 0x4
+
+.field public static final INITIAL_TRIGGER_ENTER:I = 0x1
+
+.field public static final INITIAL_TRIGGER_EXIT:I = 0x2
+
 
 # instance fields
-.field private final mTag:Ljava/lang/String;
+.field private final zzCY:I
 
-.field private final zzbjS:Ljava/util/List;
+.field private final zzaxJ:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
             "<",
-            "Lcom/google/android/gms/internal/zzasm;",
+            "Lcom/google/android/gms/location/internal/ParcelableGeofence;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private final zzbjT:I
+.field private final zzaxK:I
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lcom/google/android/gms/location/zzi;
+    new-instance v0, Lcom/google/android/gms/location/zza;
 
-    invoke-direct {v0}, Lcom/google/android/gms/location/zzi;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/gms/location/zza;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/location/GeofencingRequest;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method constructor <init>(Ljava/util/List;ILjava/lang/String;)V
+.method constructor <init>(ILjava/util/List;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/util/List",
+            "<",
+            "Lcom/google/android/gms/location/internal/ParcelableGeofence;",
+            ">;I)V"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p1, p0, Lcom/google/android/gms/location/GeofencingRequest;->zzCY:I
+
+    iput-object p2, p0, Lcom/google/android/gms/location/GeofencingRequest;->zzaxJ:Ljava/util/List;
+
+    iput p3, p0, Lcom/google/android/gms/location/GeofencingRequest;->zzaxK:I
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/util/List;I)V
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List",
             "<",
-            "Lcom/google/android/gms/internal/zzasm;",
-            ">;I",
-            "Ljava/lang/String;",
-            ")V"
+            "Lcom/google/android/gms/location/internal/ParcelableGeofence;",
+            ">;I)V"
         }
     .end annotation
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/zza;-><init>()V
+    const/4 v0, 0x1
 
-    iput-object p1, p0, Lcom/google/android/gms/location/GeofencingRequest;->zzbjS:Ljava/util/List;
+    invoke-direct {p0, v0, p1, p2}, Lcom/google/android/gms/location/GeofencingRequest;-><init>(ILjava/util/List;I)V
 
-    iput p2, p0, Lcom/google/android/gms/location/GeofencingRequest;->zzbjT:I
+    return-void
+.end method
 
-    iput-object p3, p0, Lcom/google/android/gms/location/GeofencingRequest;->mTag:Ljava/lang/String;
+.method synthetic constructor <init>(Ljava/util/List;ILcom/google/android/gms/location/GeofencingRequest$1;)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lcom/google/android/gms/location/GeofencingRequest;-><init>(Ljava/util/List;I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getInitialTrigger()I
+.method public describeContents()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/location/GeofencingRequest;->zzbjT:I
+    const/4 v0, 0x0
 
     return v0
 .end method
 
-.method public getTag()Ljava/lang/String;
-    .locals 1
+.method public getGeofences()Ljava/util/List;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<",
+            "Lcom/google/android/gms/location/Geofence;",
+            ">;"
+        }
+    .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/location/GeofencingRequest;->mTag:Ljava/lang/String;
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iget-object v1, p0, Lcom/google/android/gms/location/GeofencingRequest;->zzaxJ:Ljava/util/List;
+
+    invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     return-object v0
+.end method
+
+.method public getInitialTrigger()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/gms/location/GeofencingRequest;->zzaxK:I
+
+    return v0
+.end method
+
+.method public getVersionCode()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/gms/location/GeofencingRequest;->zzCY:I
+
+    return v0
 .end method
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/location/zzi;->zza(Lcom/google/android/gms/location/GeofencingRequest;Landroid/os/Parcel;I)V
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/location/zza;->zza(Lcom/google/android/gms/location/GeofencingRequest;Landroid/os/Parcel;I)V
 
     return-void
 .end method
 
-.method public zzIe()Ljava/util/List;
+.method public zzun()Ljava/util/List;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
             "Ljava/util/List",
             "<",
-            "Lcom/google/android/gms/internal/zzasm;",
+            "Lcom/google/android/gms/location/internal/ParcelableGeofence;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/location/GeofencingRequest;->zzbjS:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/location/GeofencingRequest;->zzaxJ:Ljava/util/List;
 
     return-object v0
 .end method

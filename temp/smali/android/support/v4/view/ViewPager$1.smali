@@ -1,6 +1,6 @@
 .class final Landroid/support/v4/view/ViewPager$1;
 .super Ljava/lang/Object;
-.source "ViewPager.java"
+.source "SourceFile"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 139
+    .line 116
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +35,7 @@
     .locals 2
 
     .prologue
-    .line 142
+    .line 119
     iget v0, p1, Landroid/support/v4/view/ViewPager$ItemInfo;->position:I
 
     iget v1, p2, Landroid/support/v4/view/ViewPager$ItemInfo;->position:I
@@ -49,7 +49,7 @@
     .locals 1
 
     .prologue
-    .line 139
+    .line 116
     check-cast p1, Landroid/support/v4/view/ViewPager$ItemInfo;
 
     check-cast p2, Landroid/support/v4/view/ViewPager$ItemInfo;

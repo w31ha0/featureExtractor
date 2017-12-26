@@ -1,6 +1,6 @@
 .class Landroid/support/v4/widget/DrawerLayout$ViewDragCallback$1;
 .super Ljava/lang/Object;
-.source "DrawerLayout.java"
+.source "SourceFile"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 2057
+    .line 1320
     iput-object p1, p0, Landroid/support/v4/widget/DrawerLayout$ViewDragCallback$1;->this$1:Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -29,11 +29,11 @@
     .locals 1
 
     .prologue
-    .line 2059
+    .line 1322
     iget-object v0, p0, Landroid/support/v4/widget/DrawerLayout$ViewDragCallback$1;->this$1:Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;
 
-    invoke-virtual {v0}, Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;->peekDrawer()V
+    invoke-static {v0}, Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;->access$000(Landroid/support/v4/widget/DrawerLayout$ViewDragCallback;)V
 
-    .line 2060
+    .line 1323
     return-void
 .end method

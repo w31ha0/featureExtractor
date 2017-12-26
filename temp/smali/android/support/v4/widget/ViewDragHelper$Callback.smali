@@ -1,6 +1,6 @@
 .class public abstract Landroid/support/v4/widget/ViewDragHelper$Callback;
 .super Ljava/lang/Object;
-.source "ViewDragHelper.java"
+.source "SourceFile"
 
 
 # direct methods
@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 149
+    .line 148
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -20,7 +20,7 @@
     .locals 1
 
     .prologue
-    .line 305
+    .line 304
     const/4 v0, 0x0
 
     return v0
@@ -30,7 +30,7 @@
     .locals 1
 
     .prologue
-    .line 320
+    .line 319
     const/4 v0, 0x0
 
     return v0
@@ -40,7 +40,7 @@
     .locals 0
 
     .prologue
-    .line 250
+    .line 249
     return p1
 .end method
 
@@ -48,7 +48,7 @@
     .locals 1
 
     .prologue
-    .line 261
+    .line 260
     const/4 v0, 0x0
 
     return v0
@@ -58,7 +58,7 @@
     .locals 1
 
     .prologue
-    .line 272
+    .line 271
     const/4 v0, 0x0
 
     return v0
@@ -68,7 +68,7 @@
     .locals 0
 
     .prologue
-    .line 241
+    .line 240
     return-void
 .end method
 
@@ -76,7 +76,7 @@
     .locals 1
 
     .prologue
-    .line 227
+    .line 226
     const/4 v0, 0x0
 
     return v0
@@ -86,7 +86,7 @@
     .locals 0
 
     .prologue
-    .line 215
+    .line 214
     return-void
 .end method
 
@@ -94,7 +94,7 @@
     .locals 0
 
     .prologue
-    .line 182
+    .line 181
     return-void
 .end method
 
@@ -102,7 +102,7 @@
     .locals 0
 
     .prologue
-    .line 160
+    .line 159
     return-void
 .end method
 
@@ -110,7 +110,7 @@
     .locals 0
 
     .prologue
-    .line 171
+    .line 170
     return-void
 .end method
 
@@ -118,7 +118,7 @@
     .locals 0
 
     .prologue
-    .line 202
+    .line 201
     return-void
 .end method
 

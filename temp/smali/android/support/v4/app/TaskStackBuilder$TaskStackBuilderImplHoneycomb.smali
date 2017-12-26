@@ -1,6 +1,6 @@
 .class Landroid/support/v4/app/TaskStackBuilder$TaskStackBuilderImplHoneycomb;
 .super Ljava/lang/Object;
-.source "TaskStackBuilder.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/app/TaskStackBuilder$TaskStackBuilderImpl;

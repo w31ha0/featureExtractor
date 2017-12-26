@@ -1,6 +1,6 @@
 .class interface abstract Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;
 .super Ljava/lang/Object;
-.source "VelocityTrackerCompat.java"
+.source "SourceFile"
 
 
 # virtual methods

@@ -1,6 +1,6 @@
 .class public final Landroid/support/v4/content/Loader$ForceLoadContentObserver;
 .super Landroid/database/ContentObserver;
-.source "Loader.java"
+.source "SourceFile"
 
 
 # instance fields
@@ -12,17 +12,17 @@
     .locals 1
 
     .prologue
-    .line 53
+    .line 52
     iput-object p1, p0, Landroid/support/v4/content/Loader$ForceLoadContentObserver;->this$0:Landroid/support/v4/content/Loader;
 
-    .line 54
+    .line 53
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     invoke-direct {p0, v0}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 55
+    .line 54
     return-void
 .end method
 
@@ -32,7 +32,7 @@
     .locals 1
 
     .prologue
-    .line 59
+    .line 58
     const/4 v0, 0x1
 
     return v0
@@ -42,11 +42,11 @@
     .locals 1
 
     .prologue
-    .line 64
+    .line 63
     iget-object v0, p0, Landroid/support/v4/content/Loader$ForceLoadContentObserver;->this$0:Landroid/support/v4/content/Loader;
 
     invoke-virtual {v0}, Landroid/support/v4/content/Loader;->onContentChanged()V
 
-    .line 65
+    .line 64
     return-void
 .end method

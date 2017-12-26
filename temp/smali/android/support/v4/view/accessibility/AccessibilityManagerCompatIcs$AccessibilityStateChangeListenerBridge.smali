@@ -1,6 +1,6 @@
 .class interface abstract Landroid/support/v4/view/accessibility/AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerBridge;
 .super Ljava/lang/Object;
-.source "AccessibilityManagerCompatIcs.java"
+.source "SourceFile"
 
 
 # virtual methods

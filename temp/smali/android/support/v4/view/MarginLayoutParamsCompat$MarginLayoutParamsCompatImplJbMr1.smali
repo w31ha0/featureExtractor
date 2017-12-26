@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImplJbMr1;
 .super Ljava/lang/Object;
-.source "MarginLayoutParamsCompat.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;

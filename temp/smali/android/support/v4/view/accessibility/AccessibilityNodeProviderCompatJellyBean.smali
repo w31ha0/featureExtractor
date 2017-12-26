@@ -1,12 +1,6 @@
 .class Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompatJellyBean;
 .super Ljava/lang/Object;
-.source "AccessibilityNodeProviderCompatJellyBean.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0x10
-.end annotation
+.source "SourceFile"
 
 
 # direct methods
@@ -14,10 +8,10 @@
     .locals 0
 
     .prologue
-    .line 33
+    .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 34
+    .line 29
     return-void
 .end method
 
@@ -25,7 +19,7 @@
     .locals 1
 
     .prologue
-    .line 43
+    .line 38
     new-instance v0, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompatJellyBean$1;
 
     invoke-direct {v0, p0}, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompatJellyBean$1;-><init>(Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompatJellyBean$AccessibilityNodeInfoBridge;)V

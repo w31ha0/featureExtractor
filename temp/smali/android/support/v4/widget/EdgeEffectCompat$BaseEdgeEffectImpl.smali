@@ -1,6 +1,6 @@
 .class Landroid/support/v4/widget/EdgeEffectCompat$BaseEdgeEffectImpl;
 .super Ljava/lang/Object;
-.source "EdgeEffectCompat.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 61
+    .line 58
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,7 +23,7 @@
     .locals 1
 
     .prologue
-    .line 97
+    .line 86
     const/4 v0, 0x0
 
     return v0
@@ -33,7 +33,7 @@
     .locals 0
 
     .prologue
-    .line 78
+    .line 71
     return-void
 .end method
 
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 73
+    .line 67
     const/4 v0, 0x1
 
     return v0
@@ -51,7 +51,7 @@
     .locals 1
 
     .prologue
-    .line 64
+    .line 60
     const/4 v0, 0x0
 
     return-object v0
@@ -61,7 +61,7 @@
     .locals 1
 
     .prologue
-    .line 92
+    .line 82
     const/4 v0, 0x0
 
     return v0
@@ -71,17 +71,7 @@
     .locals 1
 
     .prologue
-    .line 82
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public onPull(Ljava/lang/Object;FF)Z
-    .locals 1
-
-    .prologue
-    .line 102
+    .line 74
     const/4 v0, 0x0
 
     return v0
@@ -91,7 +81,7 @@
     .locals 1
 
     .prologue
-    .line 87
+    .line 78
     const/4 v0, 0x0
 
     return v0
@@ -101,6 +91,6 @@
     .locals 0
 
     .prologue
-    .line 69
+    .line 64
     return-void
 .end method

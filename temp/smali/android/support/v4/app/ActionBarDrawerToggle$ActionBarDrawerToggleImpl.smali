@@ -1,6 +1,6 @@
 .class interface abstract Landroid/support/v4/app/ActionBarDrawerToggle$ActionBarDrawerToggleImpl;
 .super Ljava/lang/Object;
-.source "ActionBarDrawerToggle.java"
+.source "SourceFile"
 
 
 # virtual methods

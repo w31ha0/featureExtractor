@@ -1,6 +1,6 @@
 .class Landroid/support/v4/app/ListFragment$2;
 .super Ljava/lang/Object;
-.source "ListFragment.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemClickListener;
@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 57
+    .line 56
     iput-object p1, p0, Landroid/support/v4/app/ListFragment$2;->this$0:Landroid/support/v4/app/ListFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
     .end annotation
 
     .prologue
-    .line 60
+    .line 58
     iget-object v0, p0, Landroid/support/v4/app/ListFragment$2;->this$0:Landroid/support/v4/app/ListFragment;
 
     move-object v1, p1
@@ -53,6 +53,6 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/support/v4/app/ListFragment;->onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
 
-    .line 61
+    .line 59
     return-void
 .end method

@@ -1,12 +1,6 @@
 .class Landroid/support/v4/content/IntentCompatIcsMr1;
 .super Ljava/lang/Object;
-.source "IntentCompatIcsMr1.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0xf
-.end annotation
+.source "SourceFile"
 
 
 # direct methods
@@ -14,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 25
+    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +18,7 @@
     .locals 1
 
     .prologue
-    .line 28
+    .line 24
     invoke-static {p0, p1}, Landroid/content/Intent;->makeMainSelectorActivity(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0

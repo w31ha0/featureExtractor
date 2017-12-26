@@ -1,12 +1,6 @@
 .class Landroid/support/v4/view/MenuItemCompatHoneycomb;
 .super Ljava/lang/Object;
-.source "MenuItemCompatHoneycomb.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0xb
-.end annotation
+.source "SourceFile"
 
 
 # direct methods
@@ -14,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 30
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +18,7 @@
     .locals 1
 
     .prologue
-    .line 44
+    .line 39
     invoke-interface {p0}, Landroid/view/MenuItem;->getActionView()Landroid/view/View;
 
     move-result-object v0
@@ -36,7 +30,7 @@
     .locals 1
 
     .prologue
-    .line 40
+    .line 35
     invoke-interface {p0, p1}, Landroid/view/MenuItem;->setActionView(I)Landroid/view/MenuItem;
 
     move-result-object v0
@@ -48,7 +42,7 @@
     .locals 1
 
     .prologue
-    .line 36
+    .line 31
     invoke-interface {p0, p1}, Landroid/view/MenuItem;->setActionView(Landroid/view/View;)Landroid/view/MenuItem;
 
     move-result-object v0
@@ -60,9 +54,9 @@
     .locals 0
 
     .prologue
-    .line 32
+    .line 27
     invoke-interface {p0, p1}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
-    .line 33
+    .line 28
     return-void
 .end method

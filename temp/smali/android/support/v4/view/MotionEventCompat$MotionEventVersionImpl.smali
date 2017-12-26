@@ -1,14 +1,20 @@
 .class interface abstract Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 .super Ljava/lang/Object;
-.source "MotionEventCompat.java"
+.source "SourceFile"
 
 
 # virtual methods
-.method public abstract getAxisValue(Landroid/view/MotionEvent;I)F
+.method public abstract findPointerIndex(Landroid/view/MotionEvent;I)I
 .end method
 
-.method public abstract getAxisValue(Landroid/view/MotionEvent;II)F
+.method public abstract getPointerCount(Landroid/view/MotionEvent;)I
 .end method
 
-.method public abstract getButtonState(Landroid/view/MotionEvent;)I
+.method public abstract getPointerId(Landroid/view/MotionEvent;I)I
+.end method
+
+.method public abstract getX(Landroid/view/MotionEvent;I)F
+.end method
+
+.method public abstract getY(Landroid/view/MotionEvent;I)F
 .end method

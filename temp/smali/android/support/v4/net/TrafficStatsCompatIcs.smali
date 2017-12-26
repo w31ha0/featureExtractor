@@ -1,12 +1,6 @@
 .class Landroid/support/v4/net/TrafficStatsCompatIcs;
 .super Ljava/lang/Object;
-.source "TrafficStatsCompatIcs.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0xe
-.end annotation
+.source "SourceFile"
 
 
 # direct methods
@@ -14,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 34
+    .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,10 +18,10 @@
     .locals 0
 
     .prologue
-    .line 36
+    .line 29
     invoke-static {}, Landroid/net/TrafficStats;->clearThreadStatsTag()V
 
-    .line 37
+    .line 30
     return-void
 .end method
 
@@ -35,7 +29,7 @@
     .locals 1
 
     .prologue
-    .line 40
+    .line 33
     invoke-static {}, Landroid/net/TrafficStats;->getThreadStatsTag()I
 
     move-result v0
@@ -47,10 +41,10 @@
     .locals 0
 
     .prologue
-    .line 44
+    .line 37
     invoke-static {p0}, Landroid/net/TrafficStats;->incrementOperationCount(I)V
 
-    .line 45
+    .line 38
     return-void
 .end method
 
@@ -58,10 +52,10 @@
     .locals 0
 
     .prologue
-    .line 48
+    .line 41
     invoke-static {p0, p1}, Landroid/net/TrafficStats;->incrementOperationCount(II)V
 
-    .line 49
+    .line 42
     return-void
 .end method
 
@@ -69,37 +63,10 @@
     .locals 0
 
     .prologue
-    .line 52
+    .line 45
     invoke-static {p0}, Landroid/net/TrafficStats;->setThreadStatsTag(I)V
 
-    .line 53
-    return-void
-.end method
-
-.method public static tagDatagramSocket(Ljava/net/DatagramSocket;)V
-    .locals 3
-
-    .prologue
-    .line 64
-    invoke-static {p0}, Landroid/os/ParcelFileDescriptor;->fromDatagramSocket(Ljava/net/DatagramSocket;)Landroid/os/ParcelFileDescriptor;
-
-    move-result-object v0
-
-    .line 65
-    new-instance v1, Landroid/support/v4/net/DatagramSocketWrapper;
-
-    invoke-virtual {v0}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
-
-    move-result-object v2
-
-    invoke-direct {v1, p0, v2}, Landroid/support/v4/net/DatagramSocketWrapper;-><init>(Ljava/net/DatagramSocket;Ljava/io/FileDescriptor;)V
-
-    invoke-static {v1}, Landroid/net/TrafficStats;->tagSocket(Ljava/net/Socket;)V
-
-    .line 70
-    invoke-virtual {v0}, Landroid/os/ParcelFileDescriptor;->detachFd()I
-
-    .line 71
+    .line 46
     return-void
 .end method
 
@@ -107,37 +74,10 @@
     .locals 0
 
     .prologue
-    .line 56
+    .line 49
     invoke-static {p0}, Landroid/net/TrafficStats;->tagSocket(Ljava/net/Socket;)V
 
-    .line 57
-    return-void
-.end method
-
-.method public static untagDatagramSocket(Ljava/net/DatagramSocket;)V
-    .locals 3
-
-    .prologue
-    .line 74
-    invoke-static {p0}, Landroid/os/ParcelFileDescriptor;->fromDatagramSocket(Ljava/net/DatagramSocket;)Landroid/os/ParcelFileDescriptor;
-
-    move-result-object v0
-
-    .line 75
-    new-instance v1, Landroid/support/v4/net/DatagramSocketWrapper;
-
-    invoke-virtual {v0}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
-
-    move-result-object v2
-
-    invoke-direct {v1, p0, v2}, Landroid/support/v4/net/DatagramSocketWrapper;-><init>(Ljava/net/DatagramSocket;Ljava/io/FileDescriptor;)V
-
-    invoke-static {v1}, Landroid/net/TrafficStats;->untagSocket(Ljava/net/Socket;)V
-
-    .line 80
-    invoke-virtual {v0}, Landroid/os/ParcelFileDescriptor;->detachFd()I
-
-    .line 81
+    .line 50
     return-void
 .end method
 
@@ -145,9 +85,9 @@
     .locals 0
 
     .prologue
-    .line 60
+    .line 53
     invoke-static {p0}, Landroid/net/TrafficStats;->untagSocket(Ljava/net/Socket;)V
 
-    .line 61
+    .line 54
     return-void
 .end method

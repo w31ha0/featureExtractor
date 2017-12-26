@@ -1,13 +1,13 @@
 import requests,re,sys,time,os,urllib
 from random import shuffle
 
+out = sys.argv[1]
+
 reload(sys)
 sys.setdefaultencoding('utf8')
 toBeDownloaded = []
 urllib.URLopener.version = 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36 SE 2.X MetaSr 1.0'
-urls = ['https://play.google.com/store/apps/category/EDUCATION/collection/topselling_free?hl=en','https://play.google.com/store/apps/category/ART_AND_DESIGN/collection/topselling_free?hl=en',
-'https://play.google.com/store/apps/category/PRODUCTIVITY?hl=en','https://play.google.com/store/apps/category/SPORTS/collection/topselling_free?hl=en','https://play.google.com/store/apps/category/EVENTS/collection/topselling_free?hl=en'
-]
+urls = ['https://play.google.com/store/apps/category/COMMUNICATION/collection/topselling_free?hl=en','https://play.google.com/store/apps/category/COMMUNICATION/collection/topselling_free?hl=en','https://play.google.com/store/apps/category/PHOTOGRAPHY/collection/topselling_free?hl=en']
 
 def fetchTokens():
     r2 = requests.get('https://apps.evozi.com/apk-downloader/')
@@ -23,7 +23,7 @@ def fetchTokens():
     
 def downloadLink(link,package):
     print "Downloading "+link
-    path = "./benign_samples/"+package+".apk"
+    path = "/root/FYP/"+out+"/"+package+".apk"
     urllib.urlretrieve (link, path)
    
    

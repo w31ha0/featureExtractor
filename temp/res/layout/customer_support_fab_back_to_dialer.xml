@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.FloatingActionButton android:id="@id/backToCustomerSupportDialFab" android:clickable="true" android:layout_marginBottom="@dimen/back_to_contact_us_dialer_margin_bottom" android:src="@drawable/ic_call_active" android:layout_centerHorizontal="true" app:layout_anchorGravity="bottom|center" style="@style/CustomerSupportBackToDialerFAB"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,12 +1,6 @@
 .class Landroid/support/v4/content/IntentCompatHoneycomb;
 .super Ljava/lang/Object;
-.source "IntentCompatHoneycomb.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0xb
-.end annotation
+.source "SourceFile"
 
 
 # direct methods
@@ -14,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 26
+    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +18,7 @@
     .locals 1
 
     .prologue
-    .line 28
+    .line 24
     invoke-static {p0}, Landroid/content/Intent;->makeMainActivity(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     move-result-object v0
@@ -36,7 +30,7 @@
     .locals 1
 
     .prologue
-    .line 32
+    .line 28
     invoke-static {p0}, Landroid/content/Intent;->makeRestartActivityTask(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     move-result-object v0

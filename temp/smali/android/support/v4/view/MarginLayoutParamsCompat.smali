@@ -1,6 +1,6 @@
-.class public final Landroid/support/v4/view/MarginLayoutParamsCompat;
+.class public Landroid/support/v4/view/MarginLayoutParamsCompat;
 .super Ljava/lang/Object;
-.source "MarginLayoutParamsCompat.java"
+.source "SourceFile"
 
 
 # static fields
@@ -42,18 +42,19 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 241
+    .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 82
     return-void
 .end method
 
 .method public static getLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;)I
-    .locals 2
+    .locals 1
 
     .prologue
     .line 211
@@ -63,18 +64,6 @@
 
     move-result v0
 
-    .line 212
-    if-eqz v0, :cond_0
-
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_0
-
-    .line 216
-    const/4 v0, 0x0
-
-    .line 218
-    :cond_0
     return v0
 .end method
 
@@ -124,12 +113,12 @@
     .locals 1
 
     .prologue
-    .line 238
+    .line 231
     sget-object v0, Landroid/support/v4/view/MarginLayoutParamsCompat;->IMPL:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
 
     invoke-interface {v0, p0, p1}, Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;->resolveLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;I)V
 
-    .line 239
+    .line 232
     return-void
 .end method
 
@@ -137,12 +126,12 @@
     .locals 1
 
     .prologue
-    .line 229
+    .line 222
     sget-object v0, Landroid/support/v4/view/MarginLayoutParamsCompat;->IMPL:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
 
     invoke-interface {v0, p0, p1}, Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;->setLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;I)V
 
-    .line 230
+    .line 223
     return-void
 .end method
 

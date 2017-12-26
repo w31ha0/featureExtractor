@@ -1,6 +1,6 @@
-.class public final Landroid/support/v4/view/WindowCompat;
+.class public Landroid/support/v4/view/WindowCompat;
 .super Ljava/lang/Object;
-.source "WindowCompat.java"
+.source "SourceFile"
 
 
 # static fields
@@ -12,11 +12,11 @@
 
 
 # direct methods
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 62
+    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

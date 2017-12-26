@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/thumb_icon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_margin="@dimen/double_padding" android:src="@drawable/ic_thumbs_up_outline" android:scaleType="fitCenter" android:tint="@color/black" />
-    <TextView android:textSize="@dimen/text_medium" android:textColor="@color/black" android:id="@id/thumb_description_main_text" android:paddingTop="8.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rating_thanks_like_first_line" android:layout_alignBaseline="@id/thumb_icon" android:layout_toEndOf="@id/thumb_icon" />
-    <TextView android:textSize="@dimen/text_small" android:textColor="@color/billboard_text_synopsis_light_color" android:id="@id/thumb_description_sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rating_thanks_like_second_line" android:layout_below="@id/thumb_description_main_text" android:layout_toEndOf="@id/thumb_icon" />
-</RelativeLayout>

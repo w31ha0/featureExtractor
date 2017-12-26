@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerStubImpl;
 .super Ljava/lang/Object;
-.source "AccessibilityManagerCompat.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityManagerVersionImpl;
@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 56
+    .line 47
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -19,21 +19,11 @@
 
 
 # virtual methods
-.method public addAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager;Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListener;)Z
+.method public addAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager;Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat;)Z
     .locals 1
 
     .prologue
-    .line 66
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public addTouchExplorationStateChangeListener(Landroid/view/accessibility/AccessibilityManager;Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$TouchExplorationStateChangeListener;)Z
-    .locals 1
-
-    .prologue
-    .line 101
+    .line 55
     const/4 v0, 0x0
 
     return v0
@@ -54,7 +44,7 @@
     .end annotation
 
     .prologue
-    .line 78
+    .line 65
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
@@ -77,7 +67,7 @@
     .end annotation
 
     .prologue
-    .line 84
+    .line 70
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
@@ -89,47 +79,27 @@
     .locals 1
 
     .prologue
-    .line 89
+    .line 74
     const/4 v0, 0x0
 
     return v0
 .end method
 
-.method public newAccessibilityStateChangeListener(Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListener;)Landroid/support/v4/view/accessibility/AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerWrapper;
+.method public newAccessiblityStateChangeListener(Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat;)Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 50
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public removeAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager;Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat;)Z
     .locals 1
 
     .prologue
     .line 60
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public newTouchExplorationStateChangeListener(Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$TouchExplorationStateChangeListener;)Landroid/support/v4/view/accessibility/AccessibilityManagerCompatKitKat$TouchExplorationStateChangeListenerWrapper;
-    .locals 1
-
-    .prologue
-    .line 95
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public removeAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager;Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListener;)Z
-    .locals 1
-
-    .prologue
-    .line 72
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public removeTouchExplorationStateChangeListener(Landroid/view/accessibility/AccessibilityManager;Landroid/support/v4/view/accessibility/AccessibilityManagerCompat$TouchExplorationStateChangeListener;)Z
-    .locals 1
-
-    .prologue
-    .line 107
     const/4 v0, 0x0
 
     return v0

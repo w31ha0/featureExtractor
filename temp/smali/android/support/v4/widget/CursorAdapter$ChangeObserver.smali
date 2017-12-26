@@ -1,6 +1,6 @@
 .class Landroid/support/v4/widget/CursorAdapter$ChangeObserver;
 .super Landroid/database/ContentObserver;
-.source "CursorAdapter.java"
+.source "SourceFile"
 
 
 # instance fields
@@ -8,21 +8,21 @@
 
 
 # direct methods
-.method constructor <init>(Landroid/support/v4/widget/CursorAdapter;)V
+.method public constructor <init>(Landroid/support/v4/widget/CursorAdapter;)V
     .locals 1
 
     .prologue
-    .line 475
+    .line 454
     iput-object p1, p0, Landroid/support/v4/widget/CursorAdapter$ChangeObserver;->this$0:Landroid/support/v4/widget/CursorAdapter;
 
-    .line 476
+    .line 455
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     invoke-direct {p0, v0}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 477
+    .line 456
     return-void
 .end method
 
@@ -32,7 +32,7 @@
     .locals 1
 
     .prologue
-    .line 481
+    .line 460
     const/4 v0, 0x1
 
     return v0
@@ -42,11 +42,11 @@
     .locals 1
 
     .prologue
-    .line 486
+    .line 465
     iget-object v0, p0, Landroid/support/v4/widget/CursorAdapter$ChangeObserver;->this$0:Landroid/support/v4/widget/CursorAdapter;
 
     invoke-virtual {v0}, Landroid/support/v4/widget/CursorAdapter;->onContentChanged()V
 
-    .line 487
+    .line 466
     return-void
 .end method

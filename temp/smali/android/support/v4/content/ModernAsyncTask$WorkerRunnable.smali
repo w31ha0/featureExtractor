@@ -1,6 +1,6 @@
 .class abstract Landroid/support/v4/content/ModernAsyncTask$WorkerRunnable;
 .super Ljava/lang/Object;
-.source "ModernAsyncTask.java"
+.source "SourceFile"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -32,13 +32,22 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method private constructor <init>()V
     .locals 0
 
     .prologue
-    .line 514
+    .line 483
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 515
+    return-void
+.end method
+
+.method synthetic constructor <init>(Landroid/support/v4/content/ModernAsyncTask$1;)V
+    .locals 0
+
+    .prologue
+    .line 483
+    invoke-direct {p0}, Landroid/support/v4/content/ModernAsyncTask$WorkerRunnable;-><init>()V
+
     return-void
 .end method

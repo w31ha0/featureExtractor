@@ -1,13 +1,17 @@
 .class final Lcom/google/android/gms/cast/Cast$1;
-.super Lcom/google/android/gms/common/api/Api$zza;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/google/android/gms/common/api/Api$zza;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "Ljava/lang/Object;",
         "Lcom/google/android/gms/common/api/Api$zza",
         "<",
-        "Lcom/google/android/gms/internal/zzyq;",
+        "Lcom/google/android/gms/cast/internal/zze;",
         "Lcom/google/android/gms/cast/Cast$CastOptions;",
         ">;"
     }
@@ -18,14 +22,54 @@
 .method constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/api/Api$zza;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic zza(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zzg;Ljava/lang/Object;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/common/api/Api$zze;
+.method public getPriority()I
+    .locals 1
+
+    const v0, 0x7fffffff
+
+    return v0
+.end method
+
+.method public zza(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zze;Lcom/google/android/gms/cast/Cast$CastOptions;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/cast/internal/zze;
+    .locals 9
+
+    const-string v0, "Setting the API options is required."
+
+    invoke-static {p4, v0}, Lcom/google/android/gms/common/internal/zzu;->zzb(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    new-instance v0, Lcom/google/android/gms/cast/internal/zze;
+
+    iget-object v3, p4, Lcom/google/android/gms/cast/Cast$CastOptions;->zzQE:Lcom/google/android/gms/cast/CastDevice;
+
+    invoke-static {p4}, Lcom/google/android/gms/cast/Cast$CastOptions;->zza(Lcom/google/android/gms/cast/Cast$CastOptions;)I
+
+    move-result v1
+
+    int-to-long v4, v1
+
+    iget-object v6, p4, Lcom/google/android/gms/cast/Cast$CastOptions;->zzQF:Lcom/google/android/gms/cast/Cast$Listener;
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v7, p5
+
+    move-object v8, p6
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/gms/cast/internal/zze;-><init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/cast/CastDevice;JLcom/google/android/gms/cast/Cast$Listener;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)V
+
+    return-object v0
+.end method
+
+.method public bridge synthetic zza(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zze;Ljava/lang/Object;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/common/api/Api$Client;
     .locals 7
 
     move-object v4, p4
@@ -44,53 +88,9 @@
 
     move-object v6, p6
 
-    invoke-virtual/range {v0 .. v6}, Lcom/google/android/gms/cast/Cast$1;->zza(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zzg;Lcom/google/android/gms/cast/Cast$CastOptions;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/internal/zzyq;
+    invoke-virtual/range {v0 .. v6}, Lcom/google/android/gms/cast/Cast$1;->zza(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zze;Lcom/google/android/gms/cast/Cast$CastOptions;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/cast/internal/zze;
 
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public zza(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zzg;Lcom/google/android/gms/cast/Cast$CastOptions;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/internal/zzyq;
-    .locals 14
-
-    const-string/jumbo v2, "Setting the API options is required."
-
-    move-object/from16 v0, p4
-
-    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/zzac;->zzb(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    new-instance v3, Lcom/google/android/gms/internal/zzyq;
-
-    move-object/from16 v0, p4
-
-    iget-object v7, v0, Lcom/google/android/gms/cast/Cast$CastOptions;->zzanf:Lcom/google/android/gms/cast/CastDevice;
-
-    invoke-static/range {p4 .. p4}, Lcom/google/android/gms/cast/Cast$CastOptions;->zza(Lcom/google/android/gms/cast/Cast$CastOptions;)I
-
-    move-result v2
-
-    int-to-long v8, v2
-
-    move-object/from16 v0, p4
-
-    iget-object v10, v0, Lcom/google/android/gms/cast/Cast$CastOptions;->zzang:Lcom/google/android/gms/cast/Cast$Listener;
-
-    move-object/from16 v0, p4
-
-    iget-object v11, v0, Lcom/google/android/gms/cast/Cast$CastOptions;->extras:Landroid/os/Bundle;
-
-    move-object v4, p1
-
-    move-object/from16 v5, p2
-
-    move-object/from16 v6, p3
-
-    move-object/from16 v12, p5
-
-    move-object/from16 v13, p6
-
-    invoke-direct/range {v3 .. v13}, Lcom/google/android/gms/internal/zzyq;-><init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zzg;Lcom/google/android/gms/cast/CastDevice;JLcom/google/android/gms/cast/Cast$Listener;Landroid/os/Bundle;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)V
-
-    return-object v3
 .end method

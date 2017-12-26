@@ -1,6 +1,6 @@
 .class public final enum Landroid/support/v4/content/ModernAsyncTask$Status;
 .super Ljava/lang/Enum;
-.source "ModernAsyncTask.java"
+.source "SourceFile"
 
 
 # annotations
@@ -35,34 +35,34 @@
 
     const/4 v2, 0x0
 
-    .line 100
+    .line 93
     new-instance v0, Landroid/support/v4/content/ModernAsyncTask$Status;
 
-    const-string/jumbo v1, "PENDING"
+    const-string v1, "PENDING"
 
     invoke-direct {v0, v1, v2}, Landroid/support/v4/content/ModernAsyncTask$Status;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->PENDING:Landroid/support/v4/content/ModernAsyncTask$Status;
 
-    .line 104
+    .line 97
     new-instance v0, Landroid/support/v4/content/ModernAsyncTask$Status;
 
-    const-string/jumbo v1, "RUNNING"
+    const-string v1, "RUNNING"
 
     invoke-direct {v0, v1, v3}, Landroid/support/v4/content/ModernAsyncTask$Status;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->RUNNING:Landroid/support/v4/content/ModernAsyncTask$Status;
 
-    .line 108
+    .line 101
     new-instance v0, Landroid/support/v4/content/ModernAsyncTask$Status;
 
-    const-string/jumbo v1, "FINISHED"
+    const-string v1, "FINISHED"
 
     invoke-direct {v0, v1, v4}, Landroid/support/v4/content/ModernAsyncTask$Status;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->FINISHED:Landroid/support/v4/content/ModernAsyncTask$Status;
 
-    .line 96
+    .line 89
     const/4 v0, 0x3
 
     new-array v0, v0, [Landroid/support/v4/content/ModernAsyncTask$Status;
@@ -93,7 +93,7 @@
     .end annotation
 
     .prologue
-    .line 96
+    .line 89
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -103,7 +103,7 @@
     .locals 1
 
     .prologue
-    .line 96
+    .line 89
     const-class v0, Landroid/support/v4/content/ModernAsyncTask$Status;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -119,7 +119,7 @@
     .locals 1
 
     .prologue
-    .line 96
+    .line 89
     sget-object v0, Landroid/support/v4/content/ModernAsyncTask$Status;->$VALUES:[Landroid/support/v4/content/ModernAsyncTask$Status;
 
     invoke-virtual {v0}, [Landroid/support/v4/content/ModernAsyncTask$Status;->clone()Ljava/lang/Object;

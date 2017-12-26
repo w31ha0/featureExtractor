@@ -1,6 +1,6 @@
-.class public final Landroid/support/v4/view/ViewConfigurationCompat;
+.class public Landroid/support/v4/view/ViewConfigurationCompat;
 .super Ljava/lang/Object;
-.source "ViewConfigurationCompat.java"
+.source "SourceFile"
 
 
 # static fields
@@ -12,43 +12,26 @@
     .locals 2
 
     .prologue
-    .line 70
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0xe
-
-    if-lt v0, v1, :cond_0
-
-    .line 71
-    new-instance v0, Landroid/support/v4/view/ViewConfigurationCompat$IcsViewConfigurationVersionImpl;
-
-    invoke-direct {v0}, Landroid/support/v4/view/ViewConfigurationCompat$IcsViewConfigurationVersionImpl;-><init>()V
-
-    sput-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->IMPL:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
-
-    .line 77
-    :goto_0
-    return-void
-
-    .line 72
-    :cond_0
+    .line 58
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xb
 
-    if-lt v0, v1, :cond_1
+    if-lt v0, v1, :cond_0
 
-    .line 73
-    new-instance v0, Landroid/support/v4/view/ViewConfigurationCompat$HoneycombViewConfigurationVersionImpl;
+    .line 59
+    new-instance v0, Landroid/support/v4/view/ViewConfigurationCompat$FroyoViewConfigurationVersionImpl;
 
-    invoke-direct {v0}, Landroid/support/v4/view/ViewConfigurationCompat$HoneycombViewConfigurationVersionImpl;-><init>()V
+    invoke-direct {v0}, Landroid/support/v4/view/ViewConfigurationCompat$FroyoViewConfigurationVersionImpl;-><init>()V
 
     sput-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->IMPL:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
 
-    goto :goto_0
+    .line 63
+    :goto_0
+    return-void
 
-    .line 75
-    :cond_1
+    .line 61
+    :cond_0
     new-instance v0, Landroid/support/v4/view/ViewConfigurationCompat$BaseViewConfigurationVersionImpl;
 
     invoke-direct {v0}, Landroid/support/v4/view/ViewConfigurationCompat$BaseViewConfigurationVersionImpl;-><init>()V
@@ -58,38 +41,25 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 100
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 46
     return-void
 .end method
 
 .method public static getScaledPagingTouchSlop(Landroid/view/ViewConfiguration;)I
     .locals 1
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
 
     .prologue
-    .line 89
-    invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledPagingTouchSlop()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public static hasPermanentMenuKey(Landroid/view/ViewConfiguration;)Z
-    .locals 1
-
-    .prologue
-    .line 97
+    .line 73
     sget-object v0, Landroid/support/v4/view/ViewConfigurationCompat;->IMPL:Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
 
-    invoke-interface {v0, p0}, Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;->hasPermanentMenuKey(Landroid/view/ViewConfiguration;)Z
+    invoke-interface {v0, p0}, Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;->getScaledPagingTouchSlop(Landroid/view/ViewConfiguration;)I
 
     move-result v0
 

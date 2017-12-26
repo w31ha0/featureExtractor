@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="contact_us_landing_page_padding_bottom">20.0dip</dimen>
-    <dimen name="contact_us_landing_page_padding_left">100.0dip</dimen>
-    <dimen name="contact_us_landing_page_padding_right">100.0dip</dimen>
-    <dimen name="contact_us_dialer_buttons_margin_bottom">10.0dip</dimen>
-    <dimen name="contact_us_dialer_buttons_padding_on_side">0.0dip</dimen>
-    <dimen name="contact_us_dialer_fab_margin_bottom">15.0dip</dimen>
-</resources>

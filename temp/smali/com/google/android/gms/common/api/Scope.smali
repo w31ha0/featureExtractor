@@ -1,8 +1,8 @@
 .class public final Lcom/google/android/gms/common/api/Scope;
-.super Lcom/google/android/gms/common/internal/safeparcel/zza;
+.super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/google/android/gms/common/internal/ReflectedParcelable;
+.implements Lcom/google/android/gms/common/internal/safeparcel/SafeParcelable;
 
 
 # static fields
@@ -19,18 +19,18 @@
 
 
 # instance fields
-.field final zzaiI:I
+.field final zzCY:I
 
-.field private final zzazw:Ljava/lang/String;
+.field private final zzXO:Ljava/lang/String;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lcom/google/android/gms/common/api/zzg;
+    new-instance v0, Lcom/google/android/gms/common/api/zzj;
 
-    invoke-direct {v0}, Lcom/google/android/gms/common/api/zzg;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/gms/common/api/zzj;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/common/api/Scope;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -40,15 +40,15 @@
 .method constructor <init>(ILjava/lang/String;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/zza;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string/jumbo v0, "scopeUri must not be null or empty"
+    const-string v0, "scopeUri must not be null or empty"
 
-    invoke-static {p2, v0}, Lcom/google/android/gms/common/internal/zzac;->zzh(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p2, v0}, Lcom/google/android/gms/common/internal/zzu;->zzh(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
-    iput p1, p0, Lcom/google/android/gms/common/api/Scope;->zzaiI:I
+    iput p1, p0, Lcom/google/android/gms/common/api/Scope;->zzCY:I
 
-    iput-object p2, p0, Lcom/google/android/gms/common/api/Scope;->zzazw:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/common/api/Scope;->zzXO:Ljava/lang/String;
 
     return-void
 .end method
@@ -65,6 +65,14 @@
 
 
 # virtual methods
+.method public describeContents()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
 
@@ -85,11 +93,11 @@
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->zzazw:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->zzXO:Ljava/lang/String;
 
     check-cast p1, Lcom/google/android/gms/common/api/Scope;
 
-    iget-object v1, p1, Lcom/google/android/gms/common/api/Scope;->zzazw:Ljava/lang/String;
+    iget-object v1, p1, Lcom/google/android/gms/common/api/Scope;->zzXO:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -101,7 +109,7 @@
 .method public hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->zzazw:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->zzXO:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -113,7 +121,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->zzazw:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->zzXO:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -121,15 +129,15 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/api/zzg;->zza(Lcom/google/android/gms/common/api/Scope;Landroid/os/Parcel;I)V
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/api/zzj;->zza(Lcom/google/android/gms/common/api/Scope;Landroid/os/Parcel;I)V
 
     return-void
 .end method
 
-.method public zzvt()Ljava/lang/String;
+.method public zzmS()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->zzazw:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->zzXO:Ljava/lang/String;
 
     return-object v0
 .end method

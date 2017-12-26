@@ -1,6 +1,6 @@
 .class interface abstract Landroid/support/v4/widget/SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge;
 .super Ljava/lang/Object;
-.source "SearchViewCompatHoneycomb.java"
+.source "SourceFile"
 
 
 # virtual methods

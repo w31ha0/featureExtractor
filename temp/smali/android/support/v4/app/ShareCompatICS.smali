@@ -1,12 +1,6 @@
 .class Landroid/support/v4/app/ShareCompatICS;
 .super Ljava/lang/Object;
-.source "ShareCompatICS.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0xe
-.end annotation
+.source "SourceFile"
 
 
 # static fields
@@ -18,7 +12,7 @@
     .locals 0
 
     .prologue
-    .line 29
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,34 +22,33 @@
     .locals 3
 
     .prologue
-    .line 33
+    .line 29
     invoke-interface {p0}, Landroid/view/MenuItem;->getActionProvider()Landroid/view/ActionProvider;
 
     move-result-object v0
 
-    .line 35
+    .line 31
     instance-of v1, v0, Landroid/widget/ShareActionProvider;
 
     if-nez v1, :cond_0
 
-    .line 36
+    .line 32
     new-instance v0, Landroid/widget/ShareActionProvider;
 
     invoke-direct {v0, p1}, Landroid/widget/ShareActionProvider;-><init>(Landroid/content/Context;)V
 
-    .line 40
+    .line 36
     :goto_0
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v2, ".sharecompat_"
+    const-string v2, ".sharecompat_"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    .line 41
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
@@ -72,19 +65,18 @@
 
     move-result-object v1
 
-    .line 40
     invoke-virtual {v0, v1}, Landroid/widget/ShareActionProvider;->setShareHistoryFileName(Ljava/lang/String;)V
 
-    .line 42
+    .line 38
     invoke-virtual {v0, p2}, Landroid/widget/ShareActionProvider;->setShareIntent(Landroid/content/Intent;)V
 
-    .line 43
+    .line 39
     invoke-interface {p0, v0}, Landroid/view/MenuItem;->setActionProvider(Landroid/view/ActionProvider;)Landroid/view/MenuItem;
 
-    .line 44
+    .line 40
     return-void
 
-    .line 38
+    .line 34
     :cond_0
     check-cast v0, Landroid/widget/ShareActionProvider;
 

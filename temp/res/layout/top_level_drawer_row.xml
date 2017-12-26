@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@drawable/selectable_item_background" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/row_icon" android:background="@null" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true" android:alpha="0.7" android:paddingStart="@dimen/double_padding" android:layout_marginEnd="5.0dip" />
-    <View android:id="@id/icon_separator" android:background="@color/black" android:layout_width="wrap_content" android:layout_height="@dimen/drawer_separator_height" android:layout_alignBottom="@id/inner_row" android:layout_toStartOf="@id/inner_row" />
-    <include android:id="@id/inner_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/row_icon" layout="@layout/standard_sliding_menu_row" />
-</RelativeLayout>

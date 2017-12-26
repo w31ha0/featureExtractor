@@ -1,6 +1,6 @@
 .class Landroid/support/v4/text/TextDirectionHeuristicsCompat$AnyStrong;
 .super Ljava/lang/Object;
-.source "TextDirectionHeuristicsCompat.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
@@ -84,7 +84,7 @@
 
     move-result v4
 
-    invoke-static {v4}, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->isRtlText(I)I
+    invoke-static {v4}, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->access$200(I)I
 
     move-result v4
 

@@ -1,12 +1,6 @@
 .class final Landroid/support/v4/hardware/display/DisplayManagerJellybeanMr1;
 .super Ljava/lang/Object;
-.source "DisplayManagerJellybeanMr1.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0x11
-.end annotation
+.source "SourceFile"
 
 
 # direct methods
@@ -14,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 26
+    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +18,7 @@
     .locals 1
 
     .prologue
-    .line 32
+    .line 28
     check-cast p0, Landroid/hardware/display/DisplayManager;
 
     invoke-virtual {p0, p1}, Landroid/hardware/display/DisplayManager;->getDisplay(I)Landroid/view/Display;
@@ -38,8 +32,8 @@
     .locals 1
 
     .prologue
-    .line 28
-    const-string/jumbo v0, "display"
+    .line 24
+    const-string v0, "display"
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -52,7 +46,7 @@
     .locals 1
 
     .prologue
-    .line 36
+    .line 32
     check-cast p0, Landroid/hardware/display/DisplayManager;
 
     invoke-virtual {p0}, Landroid/hardware/display/DisplayManager;->getDisplays()[Landroid/view/Display;
@@ -66,7 +60,7 @@
     .locals 1
 
     .prologue
-    .line 40
+    .line 36
     check-cast p0, Landroid/hardware/display/DisplayManager;
 
     invoke-virtual {p0, p1}, Landroid/hardware/display/DisplayManager;->getDisplays(Ljava/lang/String;)[Landroid/view/Display;

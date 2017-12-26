@@ -1,6 +1,6 @@
 .class Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$1;
 .super Ljava/lang/ThreadLocal;
-.source "TrafficStatsCompat.java"
+.source "SourceFile"
 
 
 # annotations
@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 51
+    .line 45
     iput-object p1, p0, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$1;->this$0:Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl;
 
     invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
@@ -34,13 +34,15 @@
 
 # virtual methods
 .method protected initialValue()Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$SocketTags;
-    .locals 1
+    .locals 2
 
     .prologue
-    .line 54
+    .line 48
     new-instance v0, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$SocketTags;
 
-    invoke-direct {v0}, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$SocketTags;-><init>()V
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$SocketTags;-><init>(Landroid/support/v4/net/TrafficStatsCompat$1;)V
 
     return-object v0
 .end method
@@ -49,7 +51,7 @@
     .locals 1
 
     .prologue
-    .line 51
+    .line 45
     invoke-virtual {p0}, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$1;->initialValue()Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$SocketTags;
 
     move-result-object v0

@@ -1,6 +1,6 @@
 .class Landroid/support/v4/os/ParcelableCompat$CompatCreator;
 .super Ljava/lang/Object;
-.source "ParcelableCompat.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;

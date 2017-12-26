@@ -11,7 +11,7 @@
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator",
         "<",
-        "Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;",
+        "Lcom/google/android/gms/auth/api/credentials/CredentialRequest;",
         ">;"
     }
 .end annotation
@@ -26,52 +26,38 @@
     return-void
 .end method
 
-.method static zza(Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;Landroid/os/Parcel;I)V
-    .locals 3
+.method static zza(Lcom/google/android/gms/auth/api/credentials/CredentialRequest;Landroid/os/Parcel;I)V
+    .locals 4
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzaZ(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzac(Landroid/os/Parcel;)I
 
     move-result v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->shouldShowAddAccountButton()Z
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->getSupportsPasswordLogin()Z
 
     move-result v2
 
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zza(Landroid/os/Parcel;IZ)V
-
-    const/4 v1, 0x2
-
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->shouldShowCancelButton()Z
-
-    move-result v2
-
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zza(Landroid/os/Parcel;IZ)V
-
-    const/4 v1, 0x3
-
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->isForNewAccount()Z
-
-    move-result v2
-
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zza(Landroid/os/Parcel;IZ)V
-
-    const/4 v1, 0x4
-
-    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->zzqW()I
-
-    move-result v2
-
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzc(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;IZ)V
 
     const/16 v1, 0x3e8
 
-    iget v2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->zzaiI:I
+    iget v2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->zzCY:I
 
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzc(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;II)V
 
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzJ(Landroid/os/Parcel;I)V
+    const/4 v1, 0x2
+
+    invoke-virtual {p0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;->getAccountTypes()[Ljava/lang/String;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    invoke-static {p1, v1, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;I[Ljava/lang/String;Z)V
+
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzH(Landroid/os/Parcel;I)V
 
     return-void
 .end method
@@ -81,7 +67,7 @@
 .method public synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/auth/api/credentials/zzb;->zzL(Landroid/os/Parcel;)Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/auth/api/credentials/zzb;->zzD(Landroid/os/Parcel;)Lcom/google/android/gms/auth/api/credentials/CredentialRequest;
 
     move-result-object v0
 
@@ -91,142 +77,118 @@
 .method public synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/auth/api/credentials/zzb;->zzba(I)[Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/auth/api/credentials/zzb;->zzat(I)[Lcom/google/android/gms/auth/api/credentials/CredentialRequest;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public zzL(Landroid/os/Parcel;)Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
-    .locals 8
+.method public zzD(Landroid/os/Parcel;)Lcom/google/android/gms/auth/api/credentials/CredentialRequest;
+    .locals 6
 
-    const/4 v5, 0x0
+    const/4 v1, 0x0
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzaY(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzab(Landroid/os/Parcel;)I
 
-    move-result v0
+    move-result v3
 
-    move v4, v5
+    const/4 v0, 0x0
 
-    move v3, v5
-
-    move v2, v5
-
-    move v1, v5
+    move v2, v1
 
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move-result v6
+    move-result v4
 
-    if-ge v6, v0, :cond_0
+    if-ge v4, v3, :cond_0
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzaX(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzaa(Landroid/os/Parcel;)I
 
-    move-result v6
+    move-result v4
 
-    invoke-static {v6}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzdc(I)I
+    invoke-static {v4}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzbA(I)I
 
-    move-result v7
+    move-result v5
 
-    sparse-switch v7, :sswitch_data_0
+    sparse-switch v5, :sswitch_data_0
 
-    invoke-static {p1, v6}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzb(Landroid/os/Parcel;I)V
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzb(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
     :sswitch_0
-    invoke-static {p1, v6}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;I)Z
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzc(Landroid/os/Parcel;I)Z
+
+    move-result v1
+
+    goto :goto_0
+
+    :sswitch_1
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzg(Landroid/os/Parcel;I)I
 
     move-result v2
 
     goto :goto_0
 
-    :sswitch_1
-    invoke-static {p1, v6}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;I)Z
-
-    move-result v3
-
-    goto :goto_0
-
     :sswitch_2
-    invoke-static {p1, v6}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;I)Z
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzA(Landroid/os/Parcel;I)[Ljava/lang/String;
 
-    move-result v4
-
-    goto :goto_0
-
-    :sswitch_3
-    invoke-static {p1, v6}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzg(Landroid/os/Parcel;I)I
-
-    move-result v5
-
-    goto :goto_0
-
-    :sswitch_4
-    invoke-static {p1, v6}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzg(Landroid/os/Parcel;I)I
-
-    move-result v1
+    move-result-object v0
 
     goto :goto_0
 
     :cond_0
     invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move-result v6
+    move-result v4
 
-    if-eq v6, v0, :cond_1
+    if-eq v4, v3, :cond_1
 
-    new-instance v1, Lcom/google/android/gms/common/internal/safeparcel/zzb$zza;
+    new-instance v0, Lcom/google/android/gms/common/internal/safeparcel/zza$zza;
 
-    const/16 v2, 0x25
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+    const-string v2, "Overread allowed size end="
 
-    const-string/jumbo v2, "Overread allowed size end="
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v2
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-direct {v0, v1, p1}, Lcom/google/android/gms/common/internal/safeparcel/zza$zza;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
 
-    invoke-direct {v1, v0, p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb$zza;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
-
-    throw v1
+    throw v0
 
     :cond_1
-    new-instance v0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+    new-instance v3, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;
 
-    invoke-direct/range {v0 .. v5}, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;-><init>(IZZZI)V
+    invoke-direct {v3, v2, v1, v0}, Lcom/google/android/gms/auth/api/credentials/CredentialRequest;-><init>(IZ[Ljava/lang/String;)V
 
-    return-object v0
-
-    nop
+    return-object v3
 
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_0
-        0x2 -> :sswitch_1
-        0x3 -> :sswitch_2
-        0x4 -> :sswitch_3
-        0x3e8 -> :sswitch_4
+        0x2 -> :sswitch_2
+        0x3e8 -> :sswitch_1
     .end sparse-switch
 .end method
 
-.method public zzba(I)[Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+.method public zzat(I)[Lcom/google/android/gms/auth/api/credentials/CredentialRequest;
     .locals 1
 
-    new-array v0, p1, [Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;
+    new-array v0, p1, [Lcom/google/android/gms/auth/api/credentials/CredentialRequest;
 
     return-object v0
 .end method

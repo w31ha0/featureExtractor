@@ -3,14 +3,18 @@
 
 
 # instance fields
-.field final synthetic zzanc:Ljava/lang/String;
+.field final synthetic zzQB:Lcom/google/android/gms/cast/Cast$CastApi$zza;
+
+.field final synthetic zzQC:Ljava/lang/String;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/android/gms/cast/Cast$CastApi$zza;Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p3, p0, Lcom/google/android/gms/cast/Cast$CastApi$zza$2;->zzanc:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/cast/Cast$CastApi$zza$2;->zzQB:Lcom/google/android/gms/cast/Cast$CastApi$zza;
+
+    iput-object p3, p0, Lcom/google/android/gms/cast/Cast$CastApi$zza$2;->zzQC:Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lcom/google/android/gms/cast/Cast$zza;-><init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
 
@@ -19,25 +23,15 @@
 
 
 # virtual methods
-.method public bridge synthetic zza(Lcom/google/android/gms/common/api/Api$zzb;)V
-    .locals 0
-
-    check-cast p1, Lcom/google/android/gms/internal/zzyq;
-
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/cast/Cast$CastApi$zza$2;->zza(Lcom/google/android/gms/internal/zzyq;)V
-
-    return-void
-.end method
-
-.method public zza(Lcom/google/android/gms/internal/zzyq;)V
+.method protected zza(Lcom/google/android/gms/cast/internal/zze;)V
     .locals 2
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/cast/Cast$CastApi$zza$2;->zzanc:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/cast/Cast$CastApi$zza$2;->zzQC:Ljava/lang/String;
 
     const/4 v1, 0x0
 
-    invoke-virtual {p1, v0, v1, p0}, Lcom/google/android/gms/internal/zzyq;->zza(Ljava/lang/String;ZLcom/google/android/gms/internal/zzaad$zzb;)V
+    invoke-virtual {p1, v0, v1, p0}, Lcom/google/android/gms/cast/internal/zze;->zza(Ljava/lang/String;ZLcom/google/android/gms/common/api/zza$zzb;)V
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -49,7 +43,17 @@
 
     const/16 v0, 0x7d1
 
-    invoke-virtual {p0, v0}, Lcom/google/android/gms/cast/Cast$CastApi$zza$2;->zzck(I)V
+    invoke-virtual {p0, v0}, Lcom/google/android/gms/cast/Cast$CastApi$zza$2;->zzaL(I)V
 
     goto :goto_0
+.end method
+
+.method protected bridge synthetic zza(Lcom/google/android/gms/common/api/Api$Client;)V
+    .locals 0
+
+    check-cast p1, Lcom/google/android/gms/cast/internal/zze;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/cast/Cast$CastApi$zza$2;->zza(Lcom/google/android/gms/cast/internal/zze;)V
+
+    return-void
 .end method

@@ -1,6 +1,6 @@
 .class Landroid/support/v4/media/TransportMediatorJellybeanMR2$1;
 .super Ljava/lang/Object;
-.source "TransportMediatorJellybeanMR2.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnWindowAttachListener;
@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 44
+    .line 42
     iput-object p1, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2$1;->this$0:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -29,12 +29,12 @@
     .locals 1
 
     .prologue
-    .line 47
+    .line 45
     iget-object v0, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2$1;->this$0:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
 
     invoke-virtual {v0}, Landroid/support/v4/media/TransportMediatorJellybeanMR2;->windowAttached()V
 
-    .line 48
+    .line 46
     return-void
 .end method
 
@@ -42,11 +42,11 @@
     .locals 1
 
     .prologue
-    .line 51
+    .line 49
     iget-object v0, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2$1;->this$0:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
 
     invoke-virtual {v0}, Landroid/support/v4/media/TransportMediatorJellybeanMR2;->windowDetached()V
 
-    .line 52
+    .line 50
     return-void
 .end method

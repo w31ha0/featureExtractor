@@ -1,12 +1,6 @@
 .class Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcsMr1;
 .super Ljava/lang/Object;
-.source "AccessibilityRecordCompatIcsMr1.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0xf
-.end annotation
+.source "SourceFile"
 
 
 # direct methods
@@ -14,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 29
+    .line 24
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +18,7 @@
     .locals 1
 
     .prologue
-    .line 32
+    .line 27
     check-cast p0, Landroid/view/accessibility/AccessibilityRecord;
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->getMaxScrollX()I
@@ -38,7 +32,7 @@
     .locals 1
 
     .prologue
-    .line 36
+    .line 31
     check-cast p0, Landroid/view/accessibility/AccessibilityRecord;
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->getMaxScrollY()I
@@ -52,12 +46,12 @@
     .locals 0
 
     .prologue
-    .line 39
+    .line 34
     check-cast p0, Landroid/view/accessibility/AccessibilityRecord;
 
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityRecord;->setMaxScrollX(I)V
 
-    .line 40
+    .line 35
     return-void
 .end method
 
@@ -65,11 +59,11 @@
     .locals 0
 
     .prologue
-    .line 43
+    .line 38
     check-cast p0, Landroid/view/accessibility/AccessibilityRecord;
 
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityRecord;->setMaxScrollY(I)V
 
-    .line 44
+    .line 39
     return-void
 .end method

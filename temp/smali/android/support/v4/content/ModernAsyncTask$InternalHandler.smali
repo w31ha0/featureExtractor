@@ -1,21 +1,26 @@
 .class Landroid/support/v4/content/ModernAsyncTask$InternalHandler;
 .super Landroid/os/Handler;
-.source "ModernAsyncTask.java"
+.source "SourceFile"
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method private constructor <init>()V
+    .locals 0
 
     .prologue
-    .line 492
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+    .line 466
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    move-result-object v0
+    return-void
+.end method
 
-    invoke-direct {p0, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+.method synthetic constructor <init>(Landroid/support/v4/content/ModernAsyncTask$1;)V
+    .locals 0
 
-    .line 493
+    .prologue
+    .line 466
+    invoke-direct {p0}, Landroid/support/v4/content/ModernAsyncTask$InternalHandler;-><init>()V
+
     return-void
 .end method
 
@@ -25,21 +30,21 @@
     .locals 3
 
     .prologue
-    .line 498
+    .line 470
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Landroid/support/v4/content/ModernAsyncTask$AsyncTaskResult;
 
-    .line 499
+    .line 471
     iget v1, p1, Landroid/os/Message;->what:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 508
+    .line 480
     :goto_0
     return-void
 
-    .line 502
+    .line 474
     :pswitch_0
     iget-object v1, v0, Landroid/support/v4/content/ModernAsyncTask$AsyncTaskResult;->mTask:Landroid/support/v4/content/ModernAsyncTask;
 
@@ -49,11 +54,11 @@
 
     aget-object v0, v0, v2
 
-    invoke-virtual {v1, v0}, Landroid/support/v4/content/ModernAsyncTask;->finish(Ljava/lang/Object;)V
+    invoke-static {v1, v0}, Landroid/support/v4/content/ModernAsyncTask;->access$500(Landroid/support/v4/content/ModernAsyncTask;Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 505
+    .line 477
     :pswitch_1
     iget-object v1, v0, Landroid/support/v4/content/ModernAsyncTask$AsyncTaskResult;->mTask:Landroid/support/v4/content/ModernAsyncTask;
 
@@ -63,7 +68,7 @@
 
     goto :goto_0
 
-    .line 499
+    .line 471
     nop
 
     :pswitch_data_0

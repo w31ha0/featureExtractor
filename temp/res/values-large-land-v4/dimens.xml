@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="cast_player_action_button_width">64.0dip</dimen>
-    <dimen name="cast_player_controls_group_height">56.0dip</dimen>
-    <dimen name="cast_player_expanded_content_height">72.0sp</dimen>
-    <dimen name="cast_player_height">64.0sp</dimen>
-    <dimen name="cast_player_seek_bar_time_view_height">32.0dip</dimen>
-    <dimen name="cast_player_seek_bar_time_view_margin">16.0dip</dimen>
-</resources>

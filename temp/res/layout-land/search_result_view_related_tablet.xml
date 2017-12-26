@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="18.0sp" android:textColor="?relatedResultsTextColor" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/search_result_title" android:layout_width="fill_parent" android:layout_height="48.0dip" android:maxLines="1" android:paddingStart="10.0dip" />
-    </RelativeLayout>
-</merge>

@@ -1,6 +1,6 @@
 .class interface abstract Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImpl;
 .super Ljava/lang/Object;
-.source "PagerTitleStrip.java"
+.source "SourceFile"
 
 
 # virtual methods

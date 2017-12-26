@@ -1,6 +1,6 @@
 .class public interface abstract Landroid/support/v4/os/ParcelableCompatCreatorCallbacks;
 .super Ljava/lang/Object;
-.source "ParcelableCompatCreatorCallbacks.java"
+.source "SourceFile"
 
 
 # annotations

@@ -1,20 +1,29 @@
 .class Landroid/support/v4/app/ActionBarDrawerToggle$ActionBarDrawerToggleImplBase;
 .super Ljava/lang/Object;
-.source "ActionBarDrawerToggle.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/app/ActionBarDrawerToggle$ActionBarDrawerToggleImpl;
 
 
 # direct methods
-.method constructor <init>()V
+.method private constructor <init>()V
     .locals 0
 
     .prologue
-    .line 115
+    .line 101
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 116
+    return-void
+.end method
+
+.method synthetic constructor <init>(Landroid/support/v4/app/ActionBarDrawerToggle$1;)V
+    .locals 0
+
+    .prologue
+    .line 101
+    invoke-direct {p0}, Landroid/support/v4/app/ActionBarDrawerToggle$ActionBarDrawerToggleImplBase;-><init>()V
+
     return-void
 .end method
 
@@ -24,7 +33,7 @@
     .locals 1
 
     .prologue
-    .line 120
+    .line 104
     const/4 v0, 0x0
 
     return-object v0
@@ -34,7 +43,7 @@
     .locals 0
 
     .prologue
-    .line 133
+    .line 117
     return-object p1
 .end method
 
@@ -42,6 +51,6 @@
     .locals 0
 
     .prologue
-    .line 127
+    .line 111
     return-object p1
 .end method

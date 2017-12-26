@@ -1,6 +1,6 @@
 .class Landroid/support/v4/widget/CursorFilter;
 .super Landroid/widget/Filter;
-.source "CursorFilter.java"
+.source "SourceFile"
 
 
 # instance fields

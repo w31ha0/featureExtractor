@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/video_details_copyright_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.netflix.mediaclient.android.widget.NetflixTextView android:textColor="@color/grey" android:ellipsize="end" android:id="@id/video_details_copyright" android:background="@drawable/selectable_item_background" android:paddingTop="@dimen/content_padding" android:paddingBottom="@dimen/content_padding" android:maxLines="1" android:maxEms="28" android:paddingEnd="@dimen/content_padding" style="@style/PrimaryText.Micro" />
-</RelativeLayout>

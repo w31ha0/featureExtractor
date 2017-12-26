@@ -1,6 +1,6 @@
 .class public Landroid/support/v4/app/Fragment$InstantiationException;
 .super Ljava/lang/RuntimeException;
-.source "Fragment.java"
+.source "SourceFile"
 
 
 # direct methods
@@ -8,9 +8,9 @@
     .locals 0
 
     .prologue
-    .line 378
+    .line 348
     invoke-direct {p0, p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 379
+    .line 349
     return-void
 .end method

@@ -1,6 +1,6 @@
 .class public Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;
 .super Landroid/view/ViewGroup$MarginLayoutParams;
-.source "SlidingPaneLayout.java"
+.source "SourceFile"
 
 
 # static fields
@@ -22,7 +22,7 @@
     .locals 3
 
     .prologue
-    .line 1412
+    .line 1249
     const/4 v0, 0x1
 
     new-array v0, v0, [I
@@ -44,15 +44,15 @@
     .prologue
     const/4 v0, -0x1
 
-    .line 1436
+    .line 1273
     invoke-direct {p0, v0, v0}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(II)V
 
-    .line 1420
+    .line 1257
     const/4 v0, 0x0
 
     iput v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->weight:F
 
-    .line 1437
+    .line 1274
     return-void
 .end method
 
@@ -60,15 +60,15 @@
     .locals 1
 
     .prologue
-    .line 1440
+    .line 1277
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(II)V
 
-    .line 1420
+    .line 1257
     const/4 v0, 0x0
 
     iput v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->weight:F
 
-    .line 1441
+    .line 1278
     return-void
 .end method
 
@@ -78,20 +78,20 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1457
+    .line 1294
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 1420
+    .line 1257
     iput v2, p0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->weight:F
 
-    .line 1459
+    .line 1296
     sget-object v0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->ATTRS:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
-    .line 1460
+    .line 1297
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
@@ -100,10 +100,10 @@
 
     iput v1, p0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->weight:F
 
-    .line 1461
+    .line 1298
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 1462
+    .line 1299
     return-void
 .end method
 
@@ -111,20 +111,20 @@
     .locals 1
 
     .prologue
-    .line 1452
+    .line 1289
     invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
-    .line 1420
+    .line 1257
     const/4 v0, 0x0
 
     iput v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->weight:F
 
-    .line 1453
+    .line 1290
     iget v0, p1, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->weight:F
 
     iput v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->weight:F
 
-    .line 1454
+    .line 1291
     return-void
 .end method
 
@@ -132,15 +132,15 @@
     .locals 1
 
     .prologue
-    .line 1444
+    .line 1281
     invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1420
+    .line 1257
     const/4 v0, 0x0
 
     iput v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->weight:F
 
-    .line 1445
+    .line 1282
     return-void
 .end method
 
@@ -148,14 +148,14 @@
     .locals 1
 
     .prologue
-    .line 1448
+    .line 1285
     invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
-    .line 1420
+    .line 1257
     const/4 v0, 0x0
 
     iput v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;->weight:F
 
-    .line 1449
+    .line 1286
     return-void
 .end method

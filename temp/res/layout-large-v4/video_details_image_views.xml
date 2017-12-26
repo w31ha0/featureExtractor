@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.netflix.mediaclient.android.widget.TopCropImageView android:layout_gravity="center" android:id="@id/video_img" android:focusable="true" android:adjustViewBounds="true" style="@style/match" />
-    <ImageView android:layout_gravity="center" android:id="@id/video_play_icon" android:src="@drawable/ic_play_72" style="@style/wrap" />
-</merge>

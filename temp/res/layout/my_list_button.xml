@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/video_details_add_to_queue_group" style="@style/NetflixSquareButton.Flat"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.netflix.mediaclient.android.widget.IconFontTextView android:textSize="44.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|top" android:id="@id/video_details_add_to_queue" android:background="@drawable/selectable_video_background_with_press" android:layout_width="64.0dip" android:layout_height="64.0dip" android:text="@string/icon_font_add_to_list" style="@style/IconFontBasic" />
-    <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/video_actions_button_text_size" android:textColor="@color/video_actions_button_text_color" android:layout_gravity="bottom|center" android:id="@id/video_details_add_to_queue_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/label_my_list_2" android:maxLines="1" />
-</FrameLayout>

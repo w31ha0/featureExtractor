@@ -1,6 +1,6 @@
 .class Landroid/support/v4/content/LocalBroadcastManager$1;
 .super Landroid/os/Handler;
-.source "LocalBroadcastManager.java"
+.source "SourceFile"
 
 
 # instance fields

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.netflix.mediaclient.android.widget.NetflixTextView android:gravity="center_horizontal" android:id="@id/age_message" android:layout_marginTop="@dimen/pin_generic_24_margin" android:text="@string/label_age_verify_message" android:layout_marginStart="@dimen/pin_generic_24_margin" android:layout_marginEnd="@dimen/pin_generic_24_margin" style="@style/PrimaryText.Small" />
-    <ProgressBar android:layout_gravity="center" android:id="@id/dialog_age_progress_spinner" android:padding="@dimen/double_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pin_generic_16_margin" android:indeterminate="true" android:indeterminateOnly="true" style="?android:attr/progressBarStyle" />
-    <View android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/pin_generic_16_margin" />
-</LinearLayout>

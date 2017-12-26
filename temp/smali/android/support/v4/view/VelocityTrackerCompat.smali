@@ -1,6 +1,6 @@
-.class public final Landroid/support/v4/view/VelocityTrackerCompat;
+.class public Landroid/support/v4/view/VelocityTrackerCompat;
 .super Ljava/lang/Object;
-.source "VelocityTrackerCompat.java"
+.source "SourceFile"
 
 
 # static fields
@@ -41,13 +41,14 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 94
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 51
     return-void
 .end method
 

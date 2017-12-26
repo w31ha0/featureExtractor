@@ -1,20 +1,43 @@
 .class final Landroid/support/v4/app/FragmentActivity$NonConfigurationInstances;
 .super Ljava/lang/Object;
-.source "FragmentActivity.java"
+.source "SourceFile"
 
 
 # instance fields
-.field custom:Ljava/lang/Object;
+.field activity:Ljava/lang/Object;
 
-.field fragments:Landroid/support/v4/app/FragmentManagerNonConfig;
-
-.field loaders:Landroid/support/v4/util/SimpleArrayMap;
+.field children:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroid/support/v4/util/SimpleArrayMap",
+            "Ljava/util/HashMap",
             "<",
             "Ljava/lang/String;",
-            "Landroid/support/v4/app/LoaderManager;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field custom:Ljava/lang/Object;
+
+.field fragments:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList",
+            "<",
+            "Landroid/support/v4/app/Fragment;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field loaders:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap",
+            "<",
+            "Ljava/lang/String;",
+            "Landroid/support/v4/app/LoaderManagerImpl;",
             ">;"
         }
     .end annotation
@@ -26,7 +49,7 @@
     .locals 0
 
     .prologue
-    .line 134
+    .line 126
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

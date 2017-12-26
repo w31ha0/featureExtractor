@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/ViewConfigurationCompat$BaseViewConfigurationVersionImpl;
 .super Ljava/lang/Object;
-.source "ViewConfigurationCompat.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/view/ViewConfigurationCompat$ViewConfigurationVersionImpl;
@@ -19,12 +19,14 @@
 
 
 # virtual methods
-.method public hasPermanentMenuKey(Landroid/view/ViewConfiguration;)Z
+.method public getScaledPagingTouchSlop(Landroid/view/ViewConfiguration;)I
     .locals 1
 
     .prologue
-    .line 40
-    const/4 v0, 0x1
+    .line 39
+    invoke-virtual {p1}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
+
+    move-result v0
 
     return v0
 .end method

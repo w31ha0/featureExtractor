@@ -1,12 +1,6 @@
 .class Landroid/support/v4/app/ActivityCompatHoneycomb;
 .super Ljava/lang/Object;
-.source "ActivityCompatHoneycomb.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0xb
-.end annotation
+.source "SourceFile"
 
 
 # direct methods
@@ -14,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 32
+    .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,10 +18,10 @@
     .locals 0
 
     .prologue
-    .line 39
+    .line 34
     invoke-virtual {p0, p1, p2, p3, p4}, Landroid/app/Activity;->dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
-    .line 40
+    .line 35
     return-void
 .end method
 
@@ -35,9 +29,9 @@
     .locals 0
 
     .prologue
-    .line 34
+    .line 29
     invoke-virtual {p0}, Landroid/app/Activity;->invalidateOptionsMenu()V
 
-    .line 35
+    .line 30
     return-void
 .end method

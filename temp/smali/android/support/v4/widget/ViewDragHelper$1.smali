@@ -1,6 +1,6 @@
 .class final Landroid/support/v4/widget/ViewDragHelper$1;
 .super Ljava/lang/Object;
-.source "ViewDragHelper.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/view/animation/Interpolator;
@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 327
+    .line 326
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,10 +25,10 @@
     .prologue
     const/high16 v2, 0x3f800000    # 1.0f
 
-    .line 330
+    .line 328
     sub-float v0, p1, v2
 
-    .line 331
+    .line 329
     mul-float v1, v0, v0
 
     mul-float/2addr v1, v0

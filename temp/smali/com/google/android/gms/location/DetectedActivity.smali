@@ -1,20 +1,30 @@
 .class public Lcom/google/android/gms/location/DetectedActivity;
-.super Lcom/google/android/gms/common/internal/safeparcel/zza;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/google/android/gms/common/internal/safeparcel/SafeParcelable;
 
 
 # static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator",
-            "<",
-            "Lcom/google/android/gms/location/DetectedActivity;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final CREATOR:Lcom/google/android/gms/location/DetectedActivityCreator;
 
-.field public static final zzbjC:Ljava/util/Comparator;
+.field public static final IN_VEHICLE:I = 0x0
+
+.field public static final ON_BICYCLE:I = 0x1
+
+.field public static final ON_FOOT:I = 0x2
+
+.field public static final RUNNING:I = 0x8
+
+.field public static final STILL:I = 0x3
+
+.field public static final TILTING:I = 0x5
+
+.field public static final UNKNOWN:I = 0x4
+
+.field public static final WALKING:I = 0x7
+
+.field public static final zzaxv:Ljava/util/Comparator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Comparator",
@@ -25,15 +35,13 @@
     .end annotation
 .end field
 
-.field public static final zzbjD:[I
-
-.field public static final zzbjE:[I
-
 
 # instance fields
-.field zzbjF:I
+.field private final zzCY:I
 
-.field zzbjG:I
+.field zzaxw:I
+
+.field zzaxx:I
 
 
 # direct methods
@@ -44,69 +52,48 @@
 
     invoke-direct {v0}, Lcom/google/android/gms/location/DetectedActivity$1;-><init>()V
 
-    sput-object v0, Lcom/google/android/gms/location/DetectedActivity;->zzbjC:Ljava/util/Comparator;
+    sput-object v0, Lcom/google/android/gms/location/DetectedActivity;->zzaxv:Ljava/util/Comparator;
 
-    const/4 v0, 0x2
+    new-instance v0, Lcom/google/android/gms/location/DetectedActivityCreator;
 
-    new-array v0, v0, [I
+    invoke-direct {v0}, Lcom/google/android/gms/location/DetectedActivityCreator;-><init>()V
 
-    fill-array-data v0, :array_0
-
-    sput-object v0, Lcom/google/android/gms/location/DetectedActivity;->zzbjD:[I
-
-    const/16 v0, 0xd
-
-    new-array v0, v0, [I
-
-    fill-array-data v0, :array_1
-
-    sput-object v0, Lcom/google/android/gms/location/DetectedActivity;->zzbjE:[I
-
-    new-instance v0, Lcom/google/android/gms/location/zzh;
-
-    invoke-direct {v0}, Lcom/google/android/gms/location/zzh;-><init>()V
-
-    sput-object v0, Lcom/google/android/gms/location/DetectedActivity;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/google/android/gms/location/DetectedActivity;->CREATOR:Lcom/google/android/gms/location/DetectedActivityCreator;
 
     return-void
-
-    :array_0
-    .array-data 4
-        0x9
-        0xa
-    .end array-data
-
-    :array_1
-    .array-data 4
-        0x0
-        0x1
-        0x2
-        0x4
-        0x5
-        0x6
-        0x7
-        0x8
-        0xa
-        0xb
-        0xc
-        0xd
-        0xe
-    .end array-data
 .end method
 
 .method public constructor <init>(II)V
-    .locals 0
+    .locals 1
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/zza;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Lcom/google/android/gms/location/DetectedActivity;->zzbjF:I
+    const/4 v0, 0x1
 
-    iput p2, p0, Lcom/google/android/gms/location/DetectedActivity;->zzbjG:I
+    iput v0, p0, Lcom/google/android/gms/location/DetectedActivity;->zzCY:I
+
+    iput p1, p0, Lcom/google/android/gms/location/DetectedActivity;->zzaxw:I
+
+    iput p2, p0, Lcom/google/android/gms/location/DetectedActivity;->zzaxx:I
 
     return-void
 .end method
 
-.method private zzke(I)I
+.method public constructor <init>(III)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p1, p0, Lcom/google/android/gms/location/DetectedActivity;->zzCY:I
+
+    iput p2, p0, Lcom/google/android/gms/location/DetectedActivity;->zzaxw:I
+
+    iput p3, p0, Lcom/google/android/gms/location/DetectedActivity;->zzaxx:I
+
+    return-void
+.end method
+
+.method private zzgp(I)I
     .locals 1
 
     const/16 v0, 0xf
@@ -119,7 +106,7 @@
     return p1
 .end method
 
-.method public static zzkf(I)Ljava/lang/String;
+.method public static zzgq(I)Ljava/lang/String;
     .locals 1
 
     packed-switch p0, :pswitch_data_0
@@ -133,42 +120,42 @@
     return-object v0
 
     :pswitch_1
-    const-string/jumbo v0, "IN_VEHICLE"
+    const-string v0, "IN_VEHICLE"
 
     goto :goto_0
 
     :pswitch_2
-    const-string/jumbo v0, "ON_BICYCLE"
+    const-string v0, "ON_BICYCLE"
 
     goto :goto_0
 
     :pswitch_3
-    const-string/jumbo v0, "ON_FOOT"
+    const-string v0, "ON_FOOT"
 
     goto :goto_0
 
     :pswitch_4
-    const-string/jumbo v0, "STILL"
+    const-string v0, "STILL"
 
     goto :goto_0
 
     :pswitch_5
-    const-string/jumbo v0, "UNKNOWN"
+    const-string v0, "UNKNOWN"
 
     goto :goto_0
 
     :pswitch_6
-    const-string/jumbo v0, "TILTING"
+    const-string v0, "TILTING"
 
     goto :goto_0
 
     :pswitch_7
-    const-string/jumbo v0, "WALKING"
+    const-string v0, "WALKING"
 
     goto :goto_0
 
     :pswitch_8
-    const-string/jumbo v0, "RUNNING"
+    const-string v0, "RUNNING"
 
     goto :goto_0
 
@@ -188,62 +175,18 @@
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public describeContents()I
+    .locals 1
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
-
-    if-ne p0, p1, :cond_1
-
-    :cond_0
-    :goto_0
     return v0
-
-    :cond_1
-    if-eqz p1, :cond_2
-
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v2
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v3
-
-    if-eq v2, v3, :cond_3
-
-    :cond_2
-    move v0, v1
-
-    goto :goto_0
-
-    :cond_3
-    check-cast p1, Lcom/google/android/gms/location/DetectedActivity;
-
-    iget v2, p0, Lcom/google/android/gms/location/DetectedActivity;->zzbjF:I
-
-    iget v3, p1, Lcom/google/android/gms/location/DetectedActivity;->zzbjF:I
-
-    if-ne v2, v3, :cond_4
-
-    iget v2, p0, Lcom/google/android/gms/location/DetectedActivity;->zzbjG:I
-
-    iget v3, p1, Lcom/google/android/gms/location/DetectedActivity;->zzbjG:I
-
-    if-eq v2, v3, :cond_0
-
-    :cond_4
-    move v0, v1
-
-    goto :goto_0
 .end method
 
 .method public getConfidence()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/location/DetectedActivity;->zzbjG:I
+    iget v0, p0, Lcom/google/android/gms/location/DetectedActivity;->zzaxx:I
 
     return v0
 .end method
@@ -251,101 +194,61 @@
 .method public getType()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/location/DetectedActivity;->zzbjF:I
+    iget v0, p0, Lcom/google/android/gms/location/DetectedActivity;->zzaxw:I
 
-    invoke-direct {p0, v0}, Lcom/google/android/gms/location/DetectedActivity;->zzke(I)I
+    invoke-direct {p0, v0}, Lcom/google/android/gms/location/DetectedActivity;->zzgp(I)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public hashCode()I
-    .locals 3
+.method public getVersionCode()I
+    .locals 1
 
-    const/4 v0, 0x2
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    const/4 v1, 0x0
-
-    iget v2, p0, Lcom/google/android/gms/location/DetectedActivity;->zzbjF:I
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x1
-
-    iget v2, p0, Lcom/google/android/gms/location/DetectedActivity;->zzbjG:I
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    invoke-static {v0}, Lcom/google/android/gms/common/internal/zzaa;->hashCode([Ljava/lang/Object;)I
-
-    move-result v0
+    iget v0, p0, Lcom/google/android/gms/location/DetectedActivity;->zzCY:I
 
     return v0
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 4
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "DetectedActivity [type="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
 
     invoke-virtual {p0}, Lcom/google/android/gms/location/DetectedActivity;->getType()I
 
-    move-result v0
+    move-result v1
 
-    invoke-static {v0}, Lcom/google/android/gms/location/DetectedActivity;->zzkf(I)Ljava/lang/String;
+    invoke-static {v1}, Lcom/google/android/gms/location/DetectedActivity;->zzgq(I)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    iget v1, p0, Lcom/google/android/gms/location/DetectedActivity;->zzbjG:I
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    add-int/lit8 v2, v2, 0x30
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string/jumbo v2, "DetectedActivity [type="
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    const-string/jumbo v2, ", confidence="
+    const-string v1, ", confidence="
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
+
+    iget v1, p0, Lcom/google/android/gms/location/DetectedActivity;->zzaxx:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    const-string/jumbo v1, "]"
+    const-string v1, "]"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -361,7 +264,7 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/location/zzh;->zza(Lcom/google/android/gms/location/DetectedActivity;Landroid/os/Parcel;I)V
+    invoke-static {p0, p1, p2}, Lcom/google/android/gms/location/DetectedActivityCreator;->zza(Lcom/google/android/gms/location/DetectedActivity;Landroid/os/Parcel;I)V
 
     return-void
 .end method

@@ -1,12 +1,6 @@
 .class Landroid/support/v4/app/ActivityOptionsCompatJB;
 .super Ljava/lang/Object;
-.source "ActivityOptionsCompatJB.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0x10
-.end annotation
+.source "SourceFile"
 
 
 # instance fields
@@ -18,13 +12,13 @@
     .locals 0
 
     .prologue
-    .line 51
+    .line 47
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 52
+    .line 48
     iput-object p1, p0, Landroid/support/v4/app/ActivityOptionsCompatJB;->mActivityOptions:Landroid/app/ActivityOptions;
 
-    .line 53
+    .line 49
     return-void
 .end method
 
@@ -32,10 +26,9 @@
     .locals 2
 
     .prologue
-    .line 33
+    .line 29
     new-instance v0, Landroid/support/v4/app/ActivityOptionsCompatJB;
 
-    .line 34
     invoke-static {p0, p1, p2}, Landroid/app/ActivityOptions;->makeCustomAnimation(Landroid/content/Context;II)Landroid/app/ActivityOptions;
 
     move-result-object v1
@@ -49,10 +42,9 @@
     .locals 2
 
     .prologue
-    .line 39
+    .line 35
     new-instance v0, Landroid/support/v4/app/ActivityOptionsCompatJB;
 
-    .line 40
     invoke-static {p0, p1, p2, p3, p4}, Landroid/app/ActivityOptions;->makeScaleUpAnimation(Landroid/view/View;IIII)Landroid/app/ActivityOptions;
 
     move-result-object v1
@@ -66,10 +58,9 @@
     .locals 2
 
     .prologue
-    .line 45
+    .line 41
     new-instance v0, Landroid/support/v4/app/ActivityOptionsCompatJB;
 
-    .line 46
     invoke-static {p0, p1, p2, p3}, Landroid/app/ActivityOptions;->makeThumbnailScaleUpAnimation(Landroid/view/View;Landroid/graphics/Bitmap;II)Landroid/app/ActivityOptions;
 
     move-result-object v1
@@ -85,7 +76,7 @@
     .locals 1
 
     .prologue
-    .line 56
+    .line 52
     iget-object v0, p0, Landroid/support/v4/app/ActivityOptionsCompatJB;->mActivityOptions:Landroid/app/ActivityOptions;
 
     invoke-virtual {v0}, Landroid/app/ActivityOptions;->toBundle()Landroid/os/Bundle;
@@ -99,13 +90,13 @@
     .locals 2
 
     .prologue
-    .line 60
+    .line 56
     iget-object v0, p0, Landroid/support/v4/app/ActivityOptionsCompatJB;->mActivityOptions:Landroid/app/ActivityOptions;
 
     iget-object v1, p1, Landroid/support/v4/app/ActivityOptionsCompatJB;->mActivityOptions:Landroid/app/ActivityOptions;
 
     invoke-virtual {v0, v1}, Landroid/app/ActivityOptions;->update(Landroid/app/ActivityOptions;)V
 
-    .line 61
+    .line 57
     return-void
 .end method

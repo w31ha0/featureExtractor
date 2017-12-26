@@ -1,6 +1,6 @@
 .class Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicLocale;
 .super Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;
-.source "TextDirectionHeuristicsCompat.java"
+.source "SourceFile"
 
 
 # static fields

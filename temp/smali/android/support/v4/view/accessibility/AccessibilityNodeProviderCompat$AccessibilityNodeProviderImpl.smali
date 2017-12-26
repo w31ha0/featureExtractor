@@ -1,6 +1,6 @@
 .class interface abstract Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;
 .super Ljava/lang/Object;
-.source "AccessibilityNodeProviderCompat.java"
+.source "SourceFile"
 
 
 # virtual methods

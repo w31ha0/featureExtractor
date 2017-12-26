@@ -1,6 +1,6 @@
-.class public final Landroid/support/v4/content/pm/ActivityInfoCompat;
+.class public Landroid/support/v4/content/pm/ActivityInfoCompat;
 .super Ljava/lang/Object;
-.source "ActivityInfoCompat.java"
+.source "SourceFile"
 
 
 # static fields

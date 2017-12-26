@@ -1,229 +1,888 @@
-.class public Lcom/google/android/gms/common/internal/zzj;
-.super Lcom/google/android/gms/common/internal/safeparcel/zza;
+.class public final Lcom/google/android/gms/common/internal/zzj;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/os/Handler$Callback;
 
 
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+# instance fields
+.field private final mHandler:Landroid/os/Handler;
+
+.field private final zzaaC:Lcom/google/android/gms/common/internal/zzj$zza;
+
+.field private final zzaaD:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroid/os/Parcelable$Creator",
+            "Ljava/util/ArrayList",
             "<",
-            "Lcom/google/android/gms/common/internal/zzj;",
+            "Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;",
             ">;"
         }
     .end annotation
 .end field
 
+.field final zzaaE:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList",
+            "<",
+            "Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-# instance fields
-.field final version:I
+.field private final zzaaF:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList",
+            "<",
+            "Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field final zzaFK:I
+.field private volatile zzaaG:Z
 
-.field zzaFL:I
+.field private final zzaaH:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field zzaFM:Ljava/lang/String;
+.field private zzaaI:Z
 
-.field zzaFN:Landroid/os/IBinder;
-
-.field zzaFO:[Lcom/google/android/gms/common/api/Scope;
-
-.field zzaFP:Landroid/os/Bundle;
-
-.field zzaFQ:Landroid/accounts/Account;
-
-.field zzaFR:[Lcom/google/android/gms/common/zzc;
+.field private final zzqt:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Landroid/os/Looper;Lcom/google/android/gms/common/internal/zzj$zza;)V
+    .locals 2
 
-    new-instance v0, Lcom/google/android/gms/common/internal/zzk;
+    const/4 v1, 0x0
 
-    invoke-direct {v0}, Lcom/google/android/gms/common/internal/zzk;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/google/android/gms/common/internal/zzj;->CREATOR:Landroid/os/Parcelable$Creator;
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaD:Ljava/util/ArrayList;
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaE:Ljava/util/ArrayList;
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaF:Ljava/util/ArrayList;
+
+    iput-boolean v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaG:Z
+
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
+
+    iput-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaH:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    iput-boolean v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaI:Z
+
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzqt:Ljava/lang/Object;
+
+    iput-object p2, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaC:Lcom/google/android/gms/common/internal/zzj$zza;
+
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-direct {v0, p1, p0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
+
+    iput-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->mHandler:Landroid/os/Handler;
 
     return-void
 .end method
 
-.method public constructor <init>(I)V
-    .locals 1
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/zza;-><init>()V
+# virtual methods
+.method public handleMessage(Landroid/os/Message;)Z
+    .locals 4
 
-    const/4 v0, 0x3
+    const/4 v1, 0x1
 
-    iput v0, p0, Lcom/google/android/gms/common/internal/zzj;->version:I
+    iget v0, p1, Landroid/os/Message;->what:I
 
-    sget v0, Lcom/google/android/gms/common/zze;->GOOGLE_PLAY_SERVICES_VERSION_CODE:I
+    if-ne v0, v1, :cond_1
 
-    iput v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFL:I
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    iput p1, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFK:I
+    check-cast v0, Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;
 
-    return-void
+    iget-object v2, p0, Lcom/google/android/gms/common/internal/zzj;->zzqt:Ljava/lang/Object;
+
+    monitor-enter v2
+
+    :try_start_0
+    iget-boolean v3, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaG:Z
+
+    if-eqz v3, :cond_0
+
+    iget-object v3, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaC:Lcom/google/android/gms/common/internal/zzj$zza;
+
+    invoke-interface {v3}, Lcom/google/android/gms/common/internal/zzj$zza;->isConnected()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    iget-object v3, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaD:Ljava/util/ArrayList;
+
+    invoke-virtual {v3, v0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    iget-object v3, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaC:Lcom/google/android/gms/common/internal/zzj$zza;
+
+    invoke-interface {v3}, Lcom/google/android/gms/common/internal/zzj$zza;->zzlM()Landroid/os/Bundle;
+
+    move-result-object v3
+
+    invoke-interface {v0, v3}, Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;->onConnected(Landroid/os/Bundle;)V
+
+    :cond_0
+    monitor-exit v2
+
+    move v0, v1
+
+    :goto_0
+    return v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+
+    :cond_1
+    const-string v0, "GmsClientEvents"
+
+    const-string v1, "Don\'t know how to handle this message."
+
+    invoke-static {v0, v1}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
-.method constructor <init>(IIILjava/lang/String;Landroid/os/IBinder;[Lcom/google/android/gms/common/api/Scope;Landroid/os/Bundle;Landroid/accounts/Account;[Lcom/google/android/gms/common/zzc;)V
-    .locals 1
+.method public isConnectionCallbacksRegistered(Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;)Z
+    .locals 2
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/zza;-><init>()V
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/zzu;->zzu(Ljava/lang/Object;)Ljava/lang/Object;
 
-    iput p1, p0, Lcom/google/android/gms/common/internal/zzj;->version:I
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzqt:Ljava/lang/Object;
 
-    iput p2, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFK:I
+    monitor-enter v1
 
-    iput p3, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFL:I
+    :try_start_0
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaD:Ljava/util/ArrayList;
 
-    const-string/jumbo v0, "com.google.android.gms"
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
-    invoke-virtual {v0, p4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v0
+
+    monitor-exit v1
+
+    return v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method public isConnectionFailedListenerRegistered(Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Z
+    .locals 2
+
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/zzu;->zzu(Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzqt:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    :try_start_0
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaF:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    monitor-exit v1
+
+    return v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method public registerConnectionCallbacks(Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;)V
+    .locals 4
+
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/zzu;->zzu(Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzqt:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    :try_start_0
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaD:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const-string v0, "GmsClientEvents"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "registerConnectionCallbacks(): listener "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, " is already registered"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_0
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaC:Lcom/google/android/gms/common/internal/zzj$zza;
+
+    invoke-interface {v0}, Lcom/google/android/gms/common/internal/zzj$zza;->isConnected()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    const-string/jumbo v0, "com.google.android.gms"
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->mHandler:Landroid/os/Handler;
 
-    iput-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFM:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->mHandler:Landroid/os/Handler;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v1, v2, p1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+
+    :cond_0
+    return-void
+
+    :cond_1
+    :try_start_1
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaD:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v0
+.end method
+
+.method public registerConnectionFailedListener(Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)V
+    .locals 4
+
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/zzu;->zzu(Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzqt:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    :try_start_0
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaF:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "GmsClientEvents"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "registerConnectionFailedListener(): listener "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, " is already registered"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_0
-    const/4 v0, 0x2
-
-    if-ge p1, v0, :cond_1
-
-    invoke-direct {p0, p5}, Lcom/google/android/gms/common/internal/zzj;->zzbq(Landroid/os/IBinder;)Landroid/accounts/Account;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFQ:Landroid/accounts/Account;
-
-    :goto_1
-    iput-object p6, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFO:[Lcom/google/android/gms/common/api/Scope;
-
-    iput-object p7, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFP:Landroid/os/Bundle;
-
-    iput-object p9, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFR:[Lcom/google/android/gms/common/zzc;
+    monitor-exit v1
 
     return-void
 
     :cond_0
-    iput-object p4, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFM:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaF:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    :cond_1
-    iput-object p5, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFN:Landroid/os/IBinder;
+    :catchall_0
+    move-exception v0
 
-    iput-object p8, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFQ:Landroid/accounts/Account;
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method public unregisterConnectionCallbacks(Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;)V
+    .locals 4
+
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/zzu;->zzu(Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzqt:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    :try_start_0
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaD:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "GmsClientEvents"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "unregisterConnectionCallbacks(): listener "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, " not found"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    :goto_0
+    monitor-exit v1
+
+    return-void
+
+    :cond_1
+    iget-boolean v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaI:Z
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaE:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method public unregisterConnectionFailedListener(Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)V
+    .locals 4
+
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/zzu;->zzu(Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzqt:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    :try_start_0
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaF:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const-string v0, "GmsClientEvents"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "unregisterConnectionFailedListener(): listener "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, " not found"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    monitor-exit v1
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method public zzbu(I)V
+    .locals 5
+
+    const/4 v1, 0x1
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->mHandler:Landroid/os/Handler;
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzqt:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    const/4 v0, 0x1
+
+    :try_start_0
+    iput-boolean v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaI:Z
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    iget-object v2, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaD:Ljava/util/ArrayList;
+
+    invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    iget-object v2, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaH:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
+    move-result v2
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v3
+
+    :cond_0
+    :goto_0
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;
+
+    iget-boolean v4, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaG:Z
+
+    if-eqz v4, :cond_1
+
+    iget-object v4, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaH:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-virtual {v4}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
+    move-result v4
+
+    if-eq v4, v2, :cond_2
+
+    :cond_1
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaE:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaI:Z
+
+    monitor-exit v1
+
+    return-void
+
+    :cond_2
+    iget-object v4, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaD:Ljava/util/ArrayList;
+
+    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;->onConnectionSuspended(I)V
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method public zzg(Landroid/os/Bundle;)V
+    .locals 5
+
+    const/4 v1, 0x0
+
+    const/4 v0, 0x1
+
+    iget-object v3, p0, Lcom/google/android/gms/common/internal/zzj;->zzqt:Ljava/lang/Object;
+
+    monitor-enter v3
+
+    :try_start_0
+    iget-boolean v2, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaI:Z
+
+    if-nez v2, :cond_2
+
+    move v2, v0
+
+    :goto_0
+    invoke-static {v2}, Lcom/google/android/gms/common/internal/zzu;->zzU(Z)V
+
+    iget-object v2, p0, Lcom/google/android/gms/common/internal/zzj;->mHandler:Landroid/os/Handler;
+
+    const/4 v4, 0x1
+
+    invoke-virtual {v2, v4}, Landroid/os/Handler;->removeMessages(I)V
+
+    const/4 v2, 0x1
+
+    iput-boolean v2, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaI:Z
+
+    iget-object v2, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaE:Ljava/util/ArrayList;
+
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+
+    move-result v2
+
+    if-nez v2, :cond_3
+
+    :goto_1
+    invoke-static {v0}, Lcom/google/android/gms/common/internal/zzu;->zzU(Z)V
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaD:Ljava/util/ArrayList;
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaH:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
+    move-result v1
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :cond_0
+    :goto_2
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;
+
+    iget-boolean v4, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaG:Z
+
+    if-eqz v4, :cond_1
+
+    iget-object v4, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaC:Lcom/google/android/gms/common/internal/zzj$zza;
+
+    invoke-interface {v4}, Lcom/google/android/gms/common/internal/zzj$zza;->isConnected()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    iget-object v4, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaH:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-virtual {v4}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
+    move-result v4
+
+    if-eq v4, v1, :cond_4
+
+    :cond_1
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaE:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaI:Z
+
+    monitor-exit v3
+
+    return-void
+
+    :cond_2
+    move v2, v1
+
+    goto :goto_0
+
+    :cond_3
+    move v0, v1
+
+    goto :goto_1
+
+    :cond_4
+    iget-object v4, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaE:Ljava/util/ArrayList;
+
+    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
+
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;->onConnected(Landroid/os/Bundle;)V
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v3
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method public zzh(Lcom/google/android/gms/common/ConnectionResult;)V
+    .locals 5
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->mHandler:Landroid/os/Handler;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzj;->zzqt:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    :try_start_0
+    new-instance v0, Ljava/util/ArrayList;
+
+    iget-object v2, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaF:Ljava/util/ArrayList;
+
+    invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    iget-object v2, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaH:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
+    move-result v2
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v3
+
+    :cond_0
+    :goto_0
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;
+
+    iget-boolean v4, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaG:Z
+
+    if-eqz v4, :cond_1
+
+    iget-object v4, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaH:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-virtual {v4}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
+    move-result v4
+
+    if-eq v4, v2, :cond_2
+
+    :cond_1
+    monitor-exit v1
+
+    :goto_1
+    return-void
+
+    :cond_2
+    iget-object v4, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaF:Ljava/util/ArrayList;
+
+    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    invoke-interface {v0, p1}, Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;->onConnectionFailed(Lcom/google/android/gms/common/ConnectionResult;)V
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+
+    :cond_3
+    :try_start_1
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto :goto_1
 .end method
 
-.method private zzbq(Landroid/os/IBinder;)Landroid/accounts/Account;
+.method public zznT()V
     .locals 1
 
     const/4 v0, 0x0
 
-    if-eqz p1, :cond_0
+    iput-boolean v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaG:Z
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/zzr$zza;->zzbr(Landroid/os/IBinder;)Lcom/google/android/gms/common/internal/zzr;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaH:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/google/android/gms/common/internal/zza;->zza(Lcom/google/android/gms/common/internal/zzr;)Landroid/accounts/Account;
-
-    move-result-object v0
-
-    :cond_0
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/common/internal/zzk;->zza(Lcom/google/android/gms/common/internal/zzj;Landroid/os/Parcel;I)V
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
 
     return-void
 .end method
 
-.method public zza([Lcom/google/android/gms/common/zzc;)Lcom/google/android/gms/common/internal/zzj;
-    .locals 0
-
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFR:[Lcom/google/android/gms/common/zzc;
-
-    return-object p0
-.end method
-
-.method public zzb(Lcom/google/android/gms/common/internal/zzr;)Lcom/google/android/gms/common/internal/zzj;
+.method public zznU()V
     .locals 1
 
-    if-eqz p1, :cond_0
+    const/4 v0, 0x1
 
-    invoke-interface {p1}, Lcom/google/android/gms/common/internal/zzr;->asBinder()Landroid/os/IBinder;
+    iput-boolean v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaaG:Z
 
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFN:Landroid/os/IBinder;
-
-    :cond_0
-    return-object p0
-.end method
-
-.method public zzdm(Ljava/lang/String;)Lcom/google/android/gms/common/internal/zzj;
-    .locals 0
-
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFM:Ljava/lang/String;
-
-    return-object p0
-.end method
-
-.method public zzf(Landroid/accounts/Account;)Lcom/google/android/gms/common/internal/zzj;
-    .locals 0
-
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFQ:Landroid/accounts/Account;
-
-    return-object p0
-.end method
-
-.method public zzf(Ljava/util/Collection;)Lcom/google/android/gms/common/internal/zzj;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Collection",
-            "<",
-            "Lcom/google/android/gms/common/api/Scope;",
-            ">;)",
-            "Lcom/google/android/gms/common/internal/zzj;"
-        }
-    .end annotation
-
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
-
-    move-result v0
-
-    new-array v0, v0, [Lcom/google/android/gms/common/api/Scope;
-
-    invoke-interface {p1, v0}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [Lcom/google/android/gms/common/api/Scope;
-
-    iput-object v0, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFO:[Lcom/google/android/gms/common/api/Scope;
-
-    return-object p0
-.end method
-
-.method public zzp(Landroid/os/Bundle;)Lcom/google/android/gms/common/internal/zzj;
-    .locals 0
-
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/zzj;->zzaFP:Landroid/os/Bundle;
-
-    return-object p0
+    return-void
 .end method

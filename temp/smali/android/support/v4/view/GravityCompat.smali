@@ -1,6 +1,6 @@
-.class public final Landroid/support/v4/view/GravityCompat;
+.class public Landroid/support/v4/view/GravityCompat;
 .super Ljava/lang/Object;
-.source "GravityCompat.java"
+.source "SourceFile"
 
 
 # static fields
@@ -50,13 +50,14 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 204
+    .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 62
     return-void
 .end method
 

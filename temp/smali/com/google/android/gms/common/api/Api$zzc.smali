@@ -1,23 +1,28 @@
-.class public Lcom/google/android/gms/common/api/Api$zzc;
+.class public interface abstract Lcom/google/android/gms/common/api/Api$zzc;
 .super Ljava/lang/Object;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<C::",
+        "<T::",
         "Lcom/google/android/gms/common/api/Api$zzb;",
+        "O:",
+        "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;"
     }
 .end annotation
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
+# virtual methods
+.method public abstract zzl(Ljava/lang/Object;)Lcom/google/android/gms/common/api/Api$zzb;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TO;)TT;"
+        }
+    .end annotation
+.end method
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
+.method public abstract zzmu()I
 .end method

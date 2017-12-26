@@ -24,10 +24,10 @@ def nGramsExtractor(apk,family):
 		Sinks.append(payload)
 
     Sequences = {}
-    cmd = 'cd '+PROJECT_PATH+'tools/flowdroid/ && java -Xmx12g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /root/FYP/android-platforms --pathalgo contextsensitive'
+    cmd = 'cd '+PROJECT_PATH+'tools/flowdroid/ && java -Xmx4g -cp soot-trunk.jar:soot-infoflow.jar:soot-infoflow-android.jar:slf4j-api-1.7.5.jar:slf4j-simple-1.7.5.jar:axml-2.0.jar soot.jimple.infoflow.android.TestApps.Test "'+apk+'" /root/FYP/android-platforms --pathalgo contextsensitive'
     print "\nCommand is " + cmd + "\n"
     try:
-        output = Command(cmd).run(capture=True,timeout=500)            
+        output = Command(cmd).run(capture=True,timeout=600)            
         if output == "failed":
             print "Moving apk to quarantine"
             os.system("mv "+apk+" "+PROJECT_PATH+"quarantine/"+family+"/")

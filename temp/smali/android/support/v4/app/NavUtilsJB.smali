@@ -1,12 +1,6 @@
 .class Landroid/support/v4/app/NavUtilsJB;
 .super Ljava/lang/Object;
-.source "NavUtilsJB.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0x10
-.end annotation
+.source "SourceFile"
 
 
 # direct methods
@@ -14,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 27
+    .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +18,7 @@
     .locals 1
 
     .prologue
-    .line 29
+    .line 25
     invoke-virtual {p0}, Landroid/app/Activity;->getParentActivityIntent()Landroid/content/Intent;
 
     move-result-object v0
@@ -36,7 +30,7 @@
     .locals 1
 
     .prologue
-    .line 41
+    .line 37
     iget-object v0, p0, Landroid/content/pm/ActivityInfo;->parentActivityName:Ljava/lang/String;
 
     return-object v0
@@ -46,10 +40,10 @@
     .locals 0
 
     .prologue
-    .line 37
+    .line 33
     invoke-virtual {p0, p1}, Landroid/app/Activity;->navigateUpTo(Landroid/content/Intent;)Z
 
-    .line 38
+    .line 34
     return-void
 .end method
 
@@ -57,7 +51,7 @@
     .locals 1
 
     .prologue
-    .line 33
+    .line 29
     invoke-virtual {p0, p1}, Landroid/app/Activity;->shouldUpRecreateTask(Landroid/content/Intent;)Z
 
     move-result v0

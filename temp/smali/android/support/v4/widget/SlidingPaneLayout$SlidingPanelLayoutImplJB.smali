@@ -1,6 +1,6 @@
 .class Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;
 .super Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplBase;
-.source "SlidingPaneLayout.java"
+.source "SourceFile"
 
 
 # instance fields
@@ -14,14 +14,14 @@
     .locals 3
 
     .prologue
-    .line 1522
+    .line 1356
     invoke-direct {p0}, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplBase;-><init>()V
 
-    .line 1524
+    .line 1358
     :try_start_0
     const-class v1, Landroid/view/View;
 
-    const-string/jumbo v2, "getDisplayList"
+    const-string v2, "getDisplayList"
 
     const/4 v0, 0x0
 
@@ -35,12 +35,12 @@
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1529
+    .line 1363
     :goto_0
     :try_start_1
     const-class v0, Landroid/view/View;
 
-    const-string/jumbo v1, "mRecreateDisplayList"
+    const-string v1, "mRecreateDisplayList"
 
     invoke-virtual {v0, v1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
@@ -48,7 +48,7 @@
 
     iput-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->mRecreateDisplayList:Ljava/lang/reflect/Field;
 
-    .line 1530
+    .line 1364
     iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->mRecreateDisplayList:Ljava/lang/reflect/Field;
 
     const/4 v1, 0x1
@@ -57,31 +57,31 @@
     :try_end_1
     .catch Ljava/lang/NoSuchFieldException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 1534
+    .line 1368
     :goto_1
     return-void
 
-    .line 1525
+    .line 1359
     :catch_0
     move-exception v0
 
-    .line 1526
-    const-string/jumbo v1, "SlidingPaneLayout"
+    .line 1360
+    const-string v1, "SlidingPaneLayout"
 
-    const-string/jumbo v2, "Couldn\'t fetch getDisplayList method; dimming won\'t work right."
+    const-string v2, "Couldn\'t fetch getDisplayList method; dimming won\'t work right."
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_0
 
-    .line 1531
+    .line 1365
     :catch_1
     move-exception v0
 
-    .line 1532
-    const-string/jumbo v1, "SlidingPaneLayout"
+    .line 1366
+    const-string v1, "SlidingPaneLayout"
 
-    const-string/jumbo v2, "Couldn\'t fetch mRecreateDisplayList field; dimming will be slow."
+    const-string v2, "Couldn\'t fetch mRecreateDisplayList field; dimming will be slow."
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -94,7 +94,7 @@
     .locals 3
 
     .prologue
-    .line 1538
+    .line 1372
     iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->mGetDisplayList:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
@@ -103,7 +103,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1540
+    .line 1374
     :try_start_0
     iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->mRecreateDisplayList:Ljava/lang/reflect/Field;
 
@@ -111,7 +111,7 @@
 
     invoke-virtual {v0, p2, v1}, Ljava/lang/reflect/Field;->setBoolean(Ljava/lang/Object;Z)V
 
-    .line 1541
+    .line 1375
     iget-object v1, p0, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplJB;->mGetDisplayList:Ljava/lang/reflect/Method;
 
     const/4 v0, 0x0
@@ -122,28 +122,28 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1550
+    .line 1384
     :goto_0
     invoke-super {p0, p1, p2}, Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImplBase;->invalidateChildRegion(Landroid/support/v4/widget/SlidingPaneLayout;Landroid/view/View;)V
 
-    .line 1551
+    .line 1385
     :goto_1
     return-void
 
-    .line 1542
+    .line 1376
     :catch_0
     move-exception v0
 
-    .line 1543
-    const-string/jumbo v1, "SlidingPaneLayout"
+    .line 1377
+    const-string v1, "SlidingPaneLayout"
 
-    const-string/jumbo v2, "Error refreshing display list state"
+    const-string v2, "Error refreshing display list state"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_0
 
-    .line 1547
+    .line 1381
     :cond_0
     invoke-virtual {p2}, Landroid/view/View;->invalidate()V
 

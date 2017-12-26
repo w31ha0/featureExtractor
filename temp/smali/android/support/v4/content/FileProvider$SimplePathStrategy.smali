@@ -1,6 +1,6 @@
 .class Landroid/support/v4/content/FileProvider$SimplePathStrategy;
 .super Ljava/lang/Object;
-.source "FileProvider.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/content/FileProvider$PathStrategy;
@@ -27,20 +27,20 @@
     .locals 1
 
     .prologue
-    .line 667
+    .line 317
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 665
+    .line 315
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Landroid/support/v4/content/FileProvider$SimplePathStrategy;->mRoots:Ljava/util/HashMap;
 
-    .line 668
+    .line 318
     iput-object p1, p0, Landroid/support/v4/content/FileProvider$SimplePathStrategy;->mAuthority:Ljava/lang/String;
 
-    .line 669
+    .line 319
     return-void
 .end method
 
@@ -50,23 +50,23 @@
     .locals 4
 
     .prologue
-    .line 676
+    .line 326
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 677
+    .line 327
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string/jumbo v1, "Name must not be empty"
+    const-string v1, "Name must not be empty"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    .line 682
+    .line 332
     :cond_0
     :try_start_0
     invoke-virtual {p2}, Ljava/io/File;->getCanonicalFile()Ljava/io/File;
@@ -75,26 +75,26 @@
 
     move-result-object v0
 
-    .line 688
+    .line 338
     iget-object v1, p0, Landroid/support/v4/content/FileProvider$SimplePathStrategy;->mRoots:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 689
+    .line 339
     return-void
 
-    .line 683
+    .line 333
     :catch_0
     move-exception v0
 
-    .line 684
+    .line 334
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "Failed to resolve canonical path for "
+    const-string v3, "Failed to resolve canonical path for "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -119,19 +119,19 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 731
+    .line 381
     invoke-virtual {p1}, Landroid/net/Uri;->getEncodedPath()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 733
+    .line 383
     const/16 v1, 0x2f
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/String;->indexOf(II)I
 
     move-result v1
 
-    .line 734
+    .line 384
     invoke-virtual {v0, v2, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
@@ -140,7 +140,7 @@
 
     move-result-object v2
 
-    .line 735
+    .line 385
     add-int/lit8 v1, v1, 0x1
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
@@ -151,7 +151,7 @@
 
     move-result-object v1
 
-    .line 737
+    .line 387
     iget-object v0, p0, Landroid/support/v4/content/FileProvider$SimplePathStrategy;->mRoots:Ljava/util/HashMap;
 
     invoke-virtual {v0, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -160,17 +160,17 @@
 
     check-cast v0, Ljava/io/File;
 
-    .line 738
+    .line 388
     if-nez v0, :cond_0
 
-    .line 739
+    .line 389
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v2, "Unable to find configured root for "
+    const-string v2, "Unable to find configured root for "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -188,13 +188,13 @@
 
     throw v0
 
-    .line 742
+    .line 392
     :cond_0
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, v0, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 744
+    .line 394
     :try_start_0
     invoke-virtual {v2}, Ljava/io/File;->getCanonicalFile()Ljava/io/File;
     :try_end_0
@@ -202,7 +202,7 @@
 
     move-result-object v1
 
-    .line 749
+    .line 399
     invoke-virtual {v1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v2
@@ -217,27 +217,27 @@
 
     if-nez v0, :cond_1
 
-    .line 750
+    .line 400
     new-instance v0, Ljava/lang/SecurityException;
 
-    const-string/jumbo v1, "Resolved path jumped beyond configured root"
+    const-string v1, "Resolved path jumped beyond configured root"
 
     invoke-direct {v0, v1}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    .line 745
+    .line 395
     :catch_0
     move-exception v0
 
-    .line 746
+    .line 396
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "Failed to resolve canonical path for "
+    const-string v3, "Failed to resolve canonical path for "
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -255,7 +255,7 @@
 
     throw v0
 
-    .line 753
+    .line 403
     :cond_1
     return-object v1
 .end method
@@ -264,7 +264,7 @@
     .locals 6
 
     .prologue
-    .line 695
+    .line 345
     :try_start_0
     invoke-virtual {p1}, Ljava/io/File;->getCanonicalPath()Ljava/lang/String;
     :try_end_0
@@ -272,10 +272,10 @@
 
     move-result-object v3
 
-    .line 701
+    .line 351
     const/4 v2, 0x0
 
-    .line 702
+    .line 352
     iget-object v0, p0, Landroid/support/v4/content/FileProvider$SimplePathStrategy;->mRoots:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
@@ -299,7 +299,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 703
+    .line 353
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -310,7 +310,7 @@
 
     move-result-object v1
 
-    .line 704
+    .line 354
     invoke-virtual {v3, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v5
@@ -319,7 +319,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 705
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v5
@@ -344,21 +343,21 @@
     :goto_1
     move-object v2, v0
 
-    .line 708
+    .line 358
     goto :goto_0
 
-    .line 696
+    .line 346
     :catch_0
     move-exception v0
 
-    .line 697
+    .line 347
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v2, "Failed to resolve canonical path for "
+    const-string v2, "Failed to resolve canonical path for "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -376,18 +375,18 @@
 
     throw v0
 
-    .line 710
+    .line 360
     :cond_1
     if-nez v2, :cond_2
 
-    .line 711
+    .line 361
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v2, "Failed to find configured root that contains "
+    const-string v2, "Failed to find configured root that contains "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -405,7 +404,7 @@
 
     throw v0
 
-    .line 716
+    .line 366
     :cond_2
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -417,8 +416,8 @@
 
     move-result-object v0
 
-    .line 717
-    const-string/jumbo v1, "/"
+    .line 367
+    const-string v1, "/"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
@@ -426,7 +425,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 718
+    .line 368
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -437,7 +436,7 @@
 
     move-object v1, v0
 
-    .line 724
+    .line 374
     :goto_2
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -463,7 +462,7 @@
 
     move-result-object v0
 
-    const-string/jumbo v2, "/"
+    const-string v2, "/"
 
     invoke-static {v1, v2}, Landroid/net/Uri;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -477,12 +476,12 @@
 
     move-result-object v0
 
-    .line 725
+    .line 375
     new-instance v1, Landroid/net/Uri$Builder;
 
     invoke-direct {v1}, Landroid/net/Uri$Builder;-><init>()V
 
-    const-string/jumbo v2, "content"
+    const-string v2, "content"
 
     invoke-virtual {v1, v2}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
@@ -490,7 +489,6 @@
 
     iget-object v2, p0, Landroid/support/v4/content/FileProvider$SimplePathStrategy;->mAuthority:Ljava/lang/String;
 
-    .line 726
     invoke-virtual {v1, v2}, Landroid/net/Uri$Builder;->authority(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     move-result-object v1
@@ -505,7 +503,7 @@
 
     return-object v0
 
-    .line 720
+    .line 370
     :cond_3
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 

@@ -1,6 +1,6 @@
 .class final Landroid/support/v4/app/Fragment$SavedState$1;
 .super Ljava/lang/Object;
-.source "Fragment.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 359
+    .line 331
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +35,7 @@
     .locals 2
 
     .prologue
-    .line 362
+    .line 333
     new-instance v0, Landroid/support/v4/app/Fragment$SavedState;
 
     const/4 v1, 0x0
@@ -49,7 +49,7 @@
     .locals 1
 
     .prologue
-    .line 359
+    .line 331
     invoke-virtual {p0, p1}, Landroid/support/v4/app/Fragment$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Landroid/support/v4/app/Fragment$SavedState;
 
     move-result-object v0
@@ -61,7 +61,7 @@
     .locals 1
 
     .prologue
-    .line 367
+    .line 337
     new-array v0, p1, [Landroid/support/v4/app/Fragment$SavedState;
 
     return-object v0
@@ -71,7 +71,7 @@
     .locals 1
 
     .prologue
-    .line 359
+    .line 331
     invoke-virtual {p0, p1}, Landroid/support/v4/app/Fragment$SavedState$1;->newArray(I)[Landroid/support/v4/app/Fragment$SavedState;
 
     move-result-object v0

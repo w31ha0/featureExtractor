@@ -1,6 +1,6 @@
 .class Landroid/support/v4/content/LocalBroadcastManager$ReceiverRecord;
 .super Ljava/lang/Object;
-.source "LocalBroadcastManager.java"
+.source "SourceFile"
 
 
 # instance fields
@@ -43,7 +43,7 @@
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
     .line 60
-    const-string/jumbo v1, "Receiver{"
+    const-string v1, "Receiver{"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -53,7 +53,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 62
-    const-string/jumbo v1, " filter="
+    const-string v1, " filter="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -63,7 +63,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 64
-    const-string/jumbo v1, "}"
+    const-string v1, "}"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<view android:theme="@style/ThemeOverlay.AppCompat.Dark" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/buffetbar_padding_horizontal" android:paddingEnd="0.0dip" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" class="com.netflix.android.widgetry.buffet.BuffetBar$BuffetLayout" style="@style/Widget.Design.Snackbar"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

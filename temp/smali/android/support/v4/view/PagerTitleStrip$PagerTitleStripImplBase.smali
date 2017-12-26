@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImplBase;
 .super Ljava/lang/Object;
-.source "PagerTitleStrip.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImpl;
@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 90
+    .line 86
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,9 +23,9 @@
     .locals 0
 
     .prologue
-    .line 93
+    .line 88
     invoke-virtual {p1}, Landroid/widget/TextView;->setSingleLine()V
 
-    .line 94
+    .line 89
     return-void
 .end method

@@ -1,33 +1,22 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: com.netflix.mediaclient.apk
+apkFileName: com.wordloco.wordchallenge.apk
 compressionType: false
 doNotCompress:
 - arsc
-- dat
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
   renameManifestPackage: null
 sdkInfo:
-  minSdkVersion: '21'
-  targetSdkVersion: '25'
+  minSdkVersion: '11'
+  targetSdkVersion: '21'
 sharedLibrary: false
-unknownFiles:
-  NDK_LICENSES: '8'
-  build-data.properties: '8'
-  com/ibm/icu/impl/data/icudt59b/en_US.res: '8'
-  com/ibm/icu/impl/data/icudt59b/pool.res: '8'
-  com/jayway/android/robotium/solo/RobotiumWeb.js: '8'
-  entityauth/msl.key: '8'
-  entityauth/msl.pem: '8'
-  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
-  org/bouncycastle/x509/CertPathReviewerMessages.properties: '8'
-  org/bouncycastle/x509/CertPathReviewerMessages_de.properties: '8'
+unknownFiles: {}
 usesFramework:
   ids:
   - 1
   tag: null
 version: 2.2.4
 versionInfo:
-  versionCode: '17106'
-  versionName: 5.1.2 build 17106
+  versionCode: '9'
+  versionName: 1.1.1

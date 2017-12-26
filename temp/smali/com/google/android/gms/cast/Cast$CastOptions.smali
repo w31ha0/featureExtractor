@@ -6,13 +6,11 @@
 
 
 # instance fields
-.field final extras:Landroid/os/Bundle;
+.field final zzQE:Lcom/google/android/gms/cast/CastDevice;
 
-.field final zzanf:Lcom/google/android/gms/cast/CastDevice;
+.field final zzQF:Lcom/google/android/gms/cast/Cast$Listener;
 
-.field final zzang:Lcom/google/android/gms/cast/Cast$Listener;
-
-.field private final zzanh:I
+.field private final zzQG:I
 
 
 # direct methods
@@ -21,25 +19,19 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iget-object v0, p1, Lcom/google/android/gms/cast/Cast$CastOptions$Builder;->zzani:Lcom/google/android/gms/cast/CastDevice;
+    iget-object v0, p1, Lcom/google/android/gms/cast/Cast$CastOptions$Builder;->zzQH:Lcom/google/android/gms/cast/CastDevice;
 
-    iput-object v0, p0, Lcom/google/android/gms/cast/Cast$CastOptions;->zzanf:Lcom/google/android/gms/cast/CastDevice;
+    iput-object v0, p0, Lcom/google/android/gms/cast/Cast$CastOptions;->zzQE:Lcom/google/android/gms/cast/CastDevice;
 
-    iget-object v0, p1, Lcom/google/android/gms/cast/Cast$CastOptions$Builder;->zzanj:Lcom/google/android/gms/cast/Cast$Listener;
+    iget-object v0, p1, Lcom/google/android/gms/cast/Cast$CastOptions$Builder;->zzQI:Lcom/google/android/gms/cast/Cast$Listener;
 
-    iput-object v0, p0, Lcom/google/android/gms/cast/Cast$CastOptions;->zzang:Lcom/google/android/gms/cast/Cast$Listener;
+    iput-object v0, p0, Lcom/google/android/gms/cast/Cast$CastOptions;->zzQF:Lcom/google/android/gms/cast/Cast$Listener;
 
     invoke-static {p1}, Lcom/google/android/gms/cast/Cast$CastOptions$Builder;->zza(Lcom/google/android/gms/cast/Cast$CastOptions$Builder;)I
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/gms/cast/Cast$CastOptions;->zzanh:I
-
-    invoke-static {p1}, Lcom/google/android/gms/cast/Cast$CastOptions$Builder;->zzb(Lcom/google/android/gms/cast/Cast$CastOptions$Builder;)Landroid/os/Bundle;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/google/android/gms/cast/Cast$CastOptions;->extras:Landroid/os/Bundle;
+    iput v0, p0, Lcom/google/android/gms/cast/Cast$CastOptions;->zzQG:I
 
     return-void
 .end method
@@ -67,7 +59,7 @@
 .method static synthetic zza(Lcom/google/android/gms/cast/Cast$CastOptions;)I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/cast/Cast$CastOptions;->zzanh:I
+    iget v0, p0, Lcom/google/android/gms/cast/Cast$CastOptions;->zzQG:I
 
     return v0
 .end method

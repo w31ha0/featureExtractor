@@ -1,6 +1,6 @@
 .class Landroid/support/v4/app/ShareCompat$ShareCompatImplJB;
 .super Landroid/support/v4/app/ShareCompat$ShareCompatImplICS;
-.source "ShareCompat.java"
+.source "SourceFile"
 
 
 # direct methods
@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 141
+    .line 137
     invoke-direct {p0}, Landroid/support/v4/app/ShareCompat$ShareCompatImplICS;-><init>()V
 
     return-void
@@ -20,7 +20,7 @@
     .locals 1
 
     .prologue
-    .line 144
+    .line 139
     invoke-static {p1}, Landroid/support/v4/app/ShareCompatJB;->escapeHtml(Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v0
@@ -32,7 +32,7 @@
     .locals 1
 
     .prologue
-    .line 149
+    .line 144
     const/4 v0, 0x0
 
     return v0

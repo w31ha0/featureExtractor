@@ -1,6 +1,6 @@
 .class public abstract Landroid/support/v4/hardware/display/DisplayManagerCompat;
 .super Ljava/lang/Object;
-.source "DisplayManagerCompat.java"
+.source "SourceFile"
 
 
 # static fields

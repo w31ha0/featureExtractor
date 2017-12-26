@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.netflix.mediaclient.android.widget.NetflixTextView android:textStyle="bold" android:textColor="@color/season_spinner_text_color" android:gravity="center" android:background="@color/kubrick_kids_blue" android:paddingTop="@dimen/kubrick_kids_season_spinner_item_padding_top" android:paddingBottom="@dimen/kubrick_kids_season_spinner_item_padding_bottom" android:singleLine="true" android:paddingStart="@dimen/kubrick_kids_season_spinner_item_padding_start" android:paddingEnd="@dimen/kubrick_kids_season_spinner_item_padding_end" style="@style/PrimaryText.SmallMedium"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

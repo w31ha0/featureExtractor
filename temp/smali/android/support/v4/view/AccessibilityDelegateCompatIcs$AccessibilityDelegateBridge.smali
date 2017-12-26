@@ -1,6 +1,6 @@
 .class public interface abstract Landroid/support/v4/view/AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge;
 .super Ljava/lang/Object;
-.source "AccessibilityDelegateCompatIcs.java"
+.source "SourceFile"
 
 
 # virtual methods

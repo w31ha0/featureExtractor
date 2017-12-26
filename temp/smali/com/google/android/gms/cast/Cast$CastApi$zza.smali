@@ -16,18 +16,36 @@
 
 
 # virtual methods
-.method public getApplicationMetadata(Lcom/google/android/gms/common/api/GoogleApiClient;)Lcom/google/android/gms/cast/ApplicationMetadata;
+.method public getActiveInputState(Lcom/google/android/gms/common/api/GoogleApiClient;)I
     .locals 1
 
-    sget-object v0, Lcom/google/android/gms/internal/zzyy;->zzawy:Lcom/google/android/gms/common/api/Api$zzf;
+    sget-object v0, Lcom/google/android/gms/cast/internal/zzk;->zzNX:Lcom/google/android/gms/common/api/Api$ClientKey;
 
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$zzc;)Lcom/google/android/gms/common/api/Api$zze;
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$ClientKey;)Lcom/google/android/gms/common/api/Api$Client;
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/android/gms/internal/zzyq;
+    check-cast v0, Lcom/google/android/gms/cast/internal/zze;
 
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/zzyq;->getApplicationMetadata()Lcom/google/android/gms/cast/ApplicationMetadata;
+    invoke-virtual {v0}, Lcom/google/android/gms/cast/internal/zze;->zzlP()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getApplicationMetadata(Lcom/google/android/gms/common/api/GoogleApiClient;)Lcom/google/android/gms/cast/ApplicationMetadata;
+    .locals 1
+
+    sget-object v0, Lcom/google/android/gms/cast/internal/zzk;->zzNX:Lcom/google/android/gms/common/api/Api$ClientKey;
+
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$ClientKey;)Lcom/google/android/gms/common/api/Api$Client;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/cast/internal/zze;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/cast/internal/zze;->getApplicationMetadata()Lcom/google/android/gms/cast/ApplicationMetadata;
 
     move-result-object v0
 
@@ -37,15 +55,94 @@
 .method public getApplicationStatus(Lcom/google/android/gms/common/api/GoogleApiClient;)Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lcom/google/android/gms/internal/zzyy;->zzawy:Lcom/google/android/gms/common/api/Api$zzf;
+    sget-object v0, Lcom/google/android/gms/cast/internal/zzk;->zzNX:Lcom/google/android/gms/common/api/Api$ClientKey;
 
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$zzc;)Lcom/google/android/gms/common/api/Api$zze;
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$ClientKey;)Lcom/google/android/gms/common/api/Api$Client;
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/android/gms/internal/zzyq;
+    check-cast v0, Lcom/google/android/gms/cast/internal/zze;
 
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/zzyq;->getApplicationStatus()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/google/android/gms/cast/internal/zze;->getApplicationStatus()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getStandbyState(Lcom/google/android/gms/common/api/GoogleApiClient;)I
+    .locals 1
+
+    sget-object v0, Lcom/google/android/gms/cast/internal/zzk;->zzNX:Lcom/google/android/gms/common/api/Api$ClientKey;
+
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$ClientKey;)Lcom/google/android/gms/common/api/Api$Client;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/cast/internal/zze;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/cast/internal/zze;->zzlQ()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getVolume(Lcom/google/android/gms/common/api/GoogleApiClient;)D
+    .locals 2
+
+    sget-object v0, Lcom/google/android/gms/cast/internal/zzk;->zzNX:Lcom/google/android/gms/common/api/Api$ClientKey;
+
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$ClientKey;)Lcom/google/android/gms/common/api/Api$Client;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/cast/internal/zze;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/cast/internal/zze;->zzlO()D
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public isMute(Lcom/google/android/gms/common/api/GoogleApiClient;)Z
+    .locals 1
+
+    sget-object v0, Lcom/google/android/gms/cast/internal/zzk;->zzNX:Lcom/google/android/gms/common/api/Api$ClientKey;
+
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$ClientKey;)Lcom/google/android/gms/common/api/Api$Client;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/cast/internal/zze;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/cast/internal/zze;->isMute()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public joinApplication(Lcom/google/android/gms/common/api/GoogleApiClient;)Lcom/google/android/gms/common/api/PendingResult;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/common/api/GoogleApiClient;",
+            ")",
+            "Lcom/google/android/gms/common/api/PendingResult",
+            "<",
+            "Lcom/google/android/gms/cast/Cast$ApplicationConnectionResult;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Lcom/google/android/gms/cast/Cast$CastApi$zza$6;
+
+    invoke-direct {v0, p0, p1}, Lcom/google/android/gms/cast/Cast$CastApi$zza$6;-><init>(Lcom/google/android/gms/cast/Cast$CastApi$zza;Lcom/google/android/gms/common/api/GoogleApiClient;)V
+
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zzb(Lcom/google/android/gms/common/api/zza$zza;)Lcom/google/android/gms/common/api/zza$zza;
 
     move-result-object v0
 
@@ -67,9 +164,38 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    new-instance v0, Lcom/google/android/gms/cast/Cast$CastApi$zza$5;
 
-    invoke-virtual {p0, p1, p2, v0, v0}, Lcom/google/android/gms/cast/Cast$CastApi$zza;->zza(Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/cast/zzf;)Lcom/google/android/gms/common/api/PendingResult;
+    invoke-direct {v0, p0, p1, p2}, Lcom/google/android/gms/cast/Cast$CastApi$zza$5;-><init>(Lcom/google/android/gms/cast/Cast$CastApi$zza;Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;)V
+
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zzb(Lcom/google/android/gms/common/api/zza$zza;)Lcom/google/android/gms/common/api/zza$zza;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public joinApplication(Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/gms/common/api/PendingResult;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/common/api/GoogleApiClient;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ")",
+            "Lcom/google/android/gms/common/api/PendingResult",
+            "<",
+            "Lcom/google/android/gms/cast/Cast$ApplicationConnectionResult;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Lcom/google/android/gms/cast/Cast$CastApi$zza$4;
+
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/google/android/gms/cast/Cast$CastApi$zza$4;-><init>(Lcom/google/android/gms/cast/Cast$CastApi$zza;Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zzb(Lcom/google/android/gms/common/api/zza$zza;)Lcom/google/android/gms/common/api/zza$zza;
 
     move-result-object v0
 
@@ -95,7 +221,96 @@
 
     invoke-direct {v0, p0, p1, p2}, Lcom/google/android/gms/cast/Cast$CastApi$zza$2;-><init>(Lcom/google/android/gms/cast/Cast$CastApi$zza;Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;)V
 
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zzb(Lcom/google/android/gms/internal/zzaad$zza;)Lcom/google/android/gms/internal/zzaad$zza;
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zzb(Lcom/google/android/gms/common/api/zza$zza;)Lcom/google/android/gms/common/api/zza$zza;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public launchApplication(Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;Lcom/google/android/gms/cast/LaunchOptions;)Lcom/google/android/gms/common/api/PendingResult;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/common/api/GoogleApiClient;",
+            "Ljava/lang/String;",
+            "Lcom/google/android/gms/cast/LaunchOptions;",
+            ")",
+            "Lcom/google/android/gms/common/api/PendingResult",
+            "<",
+            "Lcom/google/android/gms/cast/Cast$ApplicationConnectionResult;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Lcom/google/android/gms/cast/Cast$CastApi$zza$3;
+
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/google/android/gms/cast/Cast$CastApi$zza$3;-><init>(Lcom/google/android/gms/cast/Cast$CastApi$zza;Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;Lcom/google/android/gms/cast/LaunchOptions;)V
+
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zzb(Lcom/google/android/gms/common/api/zza$zza;)Lcom/google/android/gms/common/api/zza$zza;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public launchApplication(Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;Z)Lcom/google/android/gms/common/api/PendingResult;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/common/api/GoogleApiClient;",
+            "Ljava/lang/String;",
+            "Z)",
+            "Lcom/google/android/gms/common/api/PendingResult",
+            "<",
+            "Lcom/google/android/gms/cast/Cast$ApplicationConnectionResult;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    new-instance v0, Lcom/google/android/gms/cast/LaunchOptions$Builder;
+
+    invoke-direct {v0}, Lcom/google/android/gms/cast/LaunchOptions$Builder;-><init>()V
+
+    invoke-virtual {v0, p3}, Lcom/google/android/gms/cast/LaunchOptions$Builder;->setRelaunchIfRunning(Z)Lcom/google/android/gms/cast/LaunchOptions$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/google/android/gms/cast/LaunchOptions$Builder;->build()Lcom/google/android/gms/cast/LaunchOptions;
+
+    move-result-object v0
+
+    invoke-virtual {p0, p1, p2, v0}, Lcom/google/android/gms/cast/Cast$CastApi$zza;->launchApplication(Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;Lcom/google/android/gms/cast/LaunchOptions;)Lcom/google/android/gms/common/api/PendingResult;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public leaveApplication(Lcom/google/android/gms/common/api/GoogleApiClient;)Lcom/google/android/gms/common/api/PendingResult;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/common/api/GoogleApiClient;",
+            ")",
+            "Lcom/google/android/gms/common/api/PendingResult",
+            "<",
+            "Lcom/google/android/gms/common/api/Status;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Lcom/google/android/gms/cast/Cast$CastApi$zza$7;
+
+    invoke-direct {v0, p0, p1}, Lcom/google/android/gms/cast/Cast$CastApi$zza$7;-><init>(Lcom/google/android/gms/cast/Cast$CastApi$zza;Lcom/google/android/gms/common/api/GoogleApiClient;)V
+
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zzb(Lcom/google/android/gms/common/api/zza$zza;)Lcom/google/android/gms/common/api/zza$zza;
 
     move-result-object v0
 
@@ -106,15 +321,15 @@
     .locals 2
 
     :try_start_0
-    sget-object v0, Lcom/google/android/gms/internal/zzyy;->zzawy:Lcom/google/android/gms/common/api/Api$zzf;
+    sget-object v0, Lcom/google/android/gms/cast/internal/zzk;->zzNX:Lcom/google/android/gms/common/api/Api$ClientKey;
 
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$zzc;)Lcom/google/android/gms/common/api/Api$zze;
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$ClientKey;)Lcom/google/android/gms/common/api/Api$Client;
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/android/gms/internal/zzyq;
+    check-cast v0, Lcom/google/android/gms/cast/internal/zze;
 
-    invoke-virtual {v0, p2}, Lcom/google/android/gms/internal/zzyq;->removeMessageReceivedCallbacks(Ljava/lang/String;)V
+    invoke-virtual {v0, p2}, Lcom/google/android/gms/cast/internal/zze;->zzbC(Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -125,7 +340,37 @@
 
     new-instance v0, Ljava/io/IOException;
 
-    const-string/jumbo v1, "service error"
+    const-string v1, "service error"
+
+    invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public requestStatus(Lcom/google/android/gms/common/api/GoogleApiClient;)V
+    .locals 2
+
+    :try_start_0
+    sget-object v0, Lcom/google/android/gms/cast/internal/zzk;->zzNX:Lcom/google/android/gms/common/api/Api$ClientKey;
+
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$ClientKey;)Lcom/google/android/gms/common/api/Api$Client;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/cast/internal/zze;
+
+    invoke-virtual {v0}, Lcom/google/android/gms/cast/internal/zze;->zzlN()V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    new-instance v0, Ljava/io/IOException;
+
+    const-string v1, "service error"
 
     invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
@@ -152,7 +397,7 @@
 
     invoke-direct {v0, p0, p1, p2, p3}, Lcom/google/android/gms/cast/Cast$CastApi$zza$1;-><init>(Lcom/google/android/gms/cast/Cast$CastApi$zza;Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zzb(Lcom/google/android/gms/internal/zzaad$zza;)Lcom/google/android/gms/internal/zzaad$zza;
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zzb(Lcom/google/android/gms/common/api/zza$zza;)Lcom/google/android/gms/common/api/zza$zza;
 
     move-result-object v0
 
@@ -163,15 +408,15 @@
     .locals 2
 
     :try_start_0
-    sget-object v0, Lcom/google/android/gms/internal/zzyy;->zzawy:Lcom/google/android/gms/common/api/Api$zzf;
+    sget-object v0, Lcom/google/android/gms/cast/internal/zzk;->zzNX:Lcom/google/android/gms/common/api/Api$ClientKey;
 
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$zzc;)Lcom/google/android/gms/common/api/Api$zze;
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$ClientKey;)Lcom/google/android/gms/common/api/Api$Client;
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/android/gms/internal/zzyq;
+    check-cast v0, Lcom/google/android/gms/cast/internal/zze;
 
-    invoke-virtual {v0, p2, p3}, Lcom/google/android/gms/internal/zzyq;->setMessageReceivedCallbacks(Ljava/lang/String;Lcom/google/android/gms/cast/Cast$MessageReceivedCallback;)V
+    invoke-virtual {v0, p2, p3}, Lcom/google/android/gms/cast/internal/zze;->zza(Ljava/lang/String;Lcom/google/android/gms/cast/Cast$MessageReceivedCallback;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -182,7 +427,67 @@
 
     new-instance v0, Ljava/io/IOException;
 
-    const-string/jumbo v1, "service error"
+    const-string v1, "service error"
+
+    invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public setMute(Lcom/google/android/gms/common/api/GoogleApiClient;Z)V
+    .locals 2
+
+    :try_start_0
+    sget-object v0, Lcom/google/android/gms/cast/internal/zzk;->zzNX:Lcom/google/android/gms/common/api/Api$ClientKey;
+
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$ClientKey;)Lcom/google/android/gms/common/api/Api$Client;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/cast/internal/zze;
+
+    invoke-virtual {v0, p2}, Lcom/google/android/gms/cast/internal/zze;->zzR(Z)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    new-instance v0, Ljava/io/IOException;
+
+    const-string v1, "service error"
+
+    invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public setVolume(Lcom/google/android/gms/common/api/GoogleApiClient;D)V
+    .locals 2
+
+    :try_start_0
+    sget-object v0, Lcom/google/android/gms/cast/internal/zzk;->zzNX:Lcom/google/android/gms/common/api/Api$ClientKey;
+
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zza(Lcom/google/android/gms/common/api/Api$ClientKey;)Lcom/google/android/gms/common/api/Api$Client;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/cast/internal/zze;
+
+    invoke-virtual {v0, p2, p3}, Lcom/google/android/gms/cast/internal/zze;->zzd(D)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    new-instance v0, Ljava/io/IOException;
+
+    const-string v1, "service error"
 
     invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
@@ -203,49 +508,37 @@
         }
     .end annotation
 
-    new-instance v0, Lcom/google/android/gms/cast/Cast$CastApi$zza$6;
+    new-instance v0, Lcom/google/android/gms/cast/Cast$CastApi$zza$8;
 
-    invoke-direct {v0, p0, p1}, Lcom/google/android/gms/cast/Cast$CastApi$zza$6;-><init>(Lcom/google/android/gms/cast/Cast$CastApi$zza;Lcom/google/android/gms/common/api/GoogleApiClient;)V
+    invoke-direct {v0, p0, p1}, Lcom/google/android/gms/cast/Cast$CastApi$zza$8;-><init>(Lcom/google/android/gms/cast/Cast$CastApi$zza;Lcom/google/android/gms/common/api/GoogleApiClient;)V
 
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zzb(Lcom/google/android/gms/internal/zzaad$zza;)Lcom/google/android/gms/internal/zzaad$zza;
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zzb(Lcom/google/android/gms/common/api/zza$zza;)Lcom/google/android/gms/common/api/zza$zza;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public zza(Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/cast/zzf;)Lcom/google/android/gms/common/api/PendingResult;
-    .locals 6
+.method public stopApplication(Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;)Lcom/google/android/gms/common/api/PendingResult;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/google/android/gms/common/api/GoogleApiClient;",
             "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Lcom/google/android/gms/cast/zzf;",
             ")",
             "Lcom/google/android/gms/common/api/PendingResult",
             "<",
-            "Lcom/google/android/gms/cast/Cast$ApplicationConnectionResult;",
+            "Lcom/google/android/gms/common/api/Status;",
             ">;"
         }
     .end annotation
 
-    new-instance v0, Lcom/google/android/gms/cast/Cast$CastApi$zza$4;
+    new-instance v0, Lcom/google/android/gms/cast/Cast$CastApi$zza$9;
 
-    move-object v1, p0
+    invoke-direct {v0, p0, p1, p2}, Lcom/google/android/gms/cast/Cast$CastApi$zza$9;-><init>(Lcom/google/android/gms/cast/Cast$CastApi$zza;Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;)V
 
-    move-object v2, p1
-
-    move-object v3, p2
-
-    move-object v4, p3
-
-    move-object v5, p4
-
-    invoke-direct/range {v0 .. v5}, Lcom/google/android/gms/cast/Cast$CastApi$zza$4;-><init>(Lcom/google/android/gms/cast/Cast$CastApi$zza;Lcom/google/android/gms/common/api/GoogleApiClient;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/cast/zzf;)V
-
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zzb(Lcom/google/android/gms/internal/zzaad$zza;)Lcom/google/android/gms/internal/zzaad$zza;
+    invoke-interface {p1, v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->zzb(Lcom/google/android/gms/common/api/zza$zza;)Lcom/google/android/gms/common/api/zza$zza;
 
     move-result-object v0
 

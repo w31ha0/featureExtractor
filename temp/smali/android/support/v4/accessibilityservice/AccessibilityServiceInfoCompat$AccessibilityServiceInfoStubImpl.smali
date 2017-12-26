@@ -1,6 +1,6 @@
 .class Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl;
 .super Ljava/lang/Object;
-.source "AccessibilityServiceInfoCompat.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 42
+    .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,7 +23,7 @@
     .locals 1
 
     .prologue
-    .line 46
+    .line 43
     const/4 v0, 0x0
 
     return v0
@@ -33,7 +33,7 @@
     .locals 1
 
     .prologue
-    .line 71
+    .line 63
     const/4 v0, 0x0
 
     return v0
@@ -43,7 +43,7 @@
     .locals 1
 
     .prologue
-    .line 51
+    .line 47
     const/4 v0, 0x0
 
     return-object v0
@@ -53,7 +53,7 @@
     .locals 1
 
     .prologue
-    .line 56
+    .line 51
     const/4 v0, 0x0
 
     return-object v0
@@ -63,7 +63,7 @@
     .locals 1
 
     .prologue
-    .line 61
+    .line 55
     const/4 v0, 0x0
 
     return-object v0
@@ -73,17 +73,7 @@
     .locals 1
 
     .prologue
-    .line 66
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public loadDescription(Landroid/accessibilityservice/AccessibilityServiceInfo;Landroid/content/pm/PackageManager;)Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 76
+    .line 59
     const/4 v0, 0x0
 
     return-object v0

@@ -1,12 +1,6 @@
 .class Landroid/support/v4/view/ViewCompatICS;
 .super Ljava/lang/Object;
-.source "ViewCompatICS.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0xe
-.end annotation
+.source "SourceFile"
 
 
 # direct methods
@@ -14,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 33
+    .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +18,7 @@
     .locals 1
 
     .prologue
-    .line 36
+    .line 30
     invoke-virtual {p0, p1}, Landroid/view/View;->canScrollHorizontally(I)Z
 
     move-result v0
@@ -36,7 +30,7 @@
     .locals 1
 
     .prologue
-    .line 40
+    .line 34
     invoke-virtual {p0, p1}, Landroid/view/View;->canScrollVertically(I)Z
 
     move-result v0
@@ -48,10 +42,10 @@
     .locals 0
 
     .prologue
-    .line 52
+    .line 46
     invoke-virtual {p0, p1}, Landroid/view/View;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
-    .line 53
+    .line 47
     return-void
 .end method
 
@@ -59,12 +53,12 @@
     .locals 0
 
     .prologue
-    .line 56
+    .line 50
     check-cast p1, Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
-    .line 57
+    .line 51
     return-void
 .end method
 
@@ -72,10 +66,10 @@
     .locals 0
 
     .prologue
-    .line 48
+    .line 42
     invoke-virtual {p0, p1}, Landroid/view/View;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
-    .line 49
+    .line 43
     return-void
 .end method
 
@@ -83,22 +77,11 @@
     .locals 0
 
     .prologue
-    .line 44
+    .line 38
     check-cast p1, Landroid/view/View$AccessibilityDelegate;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
 
-    .line 45
-    return-void
-.end method
-
-.method public static setFitsSystemWindows(Landroid/view/View;Z)V
-    .locals 0
-
-    .prologue
-    .line 60
-    invoke-virtual {p0, p1}, Landroid/view/View;->setFitsSystemWindows(Z)V
-
-    .line 61
+    .line 39
     return-void
 .end method

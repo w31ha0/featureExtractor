@@ -1,6 +1,6 @@
-.class public final Landroid/support/v4/view/KeyEventCompat;
+.class public Landroid/support/v4/view/KeyEventCompat;
 .super Ljava/lang/Object;
-.source "KeyEventCompat.java"
+.source "SourceFile"
 
 
 # static fields
@@ -12,25 +12,25 @@
     .locals 2
 
     .prologue
-    .line 129
+    .line 166
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xb
 
     if-lt v0, v1, :cond_0
 
-    .line 130
+    .line 167
     new-instance v0, Landroid/support/v4/view/KeyEventCompat$HoneycombKeyEventVersionImpl;
 
     invoke-direct {v0}, Landroid/support/v4/view/KeyEventCompat$HoneycombKeyEventVersionImpl;-><init>()V
 
     sput-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
-    .line 134
+    .line 171
     :goto_0
     return-void
 
-    .line 132
+    .line 169
     :cond_0
     new-instance v0, Landroid/support/v4/view/KeyEventCompat$BaseKeyEventVersionImpl;
 
@@ -41,26 +41,25 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 200
+    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 144
     return-void
 .end method
 
 .method public static dispatch(Landroid/view/KeyEvent;Landroid/view/KeyEvent$Callback;Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
 
     .prologue
-    .line 193
-    check-cast p2, Landroid/view/KeyEvent$DispatcherState;
+    .line 209
+    sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
-    invoke-virtual {p0, p1, p2, p3}, Landroid/view/KeyEvent;->dispatch(Landroid/view/KeyEvent$Callback;Landroid/view/KeyEvent$DispatcherState;Ljava/lang/Object;)Z
+    invoke-interface {v0, p0, p1, p2, p3}, Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;->dispatch(Landroid/view/KeyEvent;Landroid/view/KeyEvent$Callback;Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -69,12 +68,12 @@
 
 .method public static getKeyDispatcherState(Landroid/view/View;)Ljava/lang/Object;
     .locals 1
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
 
     .prologue
-    .line 182
-    invoke-virtual {p0}, Landroid/view/View;->getKeyDispatcherState()Landroid/view/KeyEvent$DispatcherState;
+    .line 204
+    sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
+
+    invoke-interface {v0, p0}, Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;->getKeyDispatcherState(Landroid/view/View;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -85,7 +84,7 @@
     .locals 2
 
     .prologue
-    .line 151
+    .line 188
     sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
     invoke-virtual {p0}, Landroid/view/KeyEvent;->getMetaState()I
@@ -103,7 +102,7 @@
     .locals 2
 
     .prologue
-    .line 155
+    .line 192
     sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
     invoke-virtual {p0}, Landroid/view/KeyEvent;->getMetaState()I
@@ -117,28 +116,14 @@
     return v0
 .end method
 
-.method public static isCtrlPressed(Landroid/view/KeyEvent;)Z
-    .locals 1
-
-    .prologue
-    .line 197
-    sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
-
-    invoke-interface {v0, p0}, Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;->isCtrlPressed(Landroid/view/KeyEvent;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
 .method public static isTracking(Landroid/view/KeyEvent;)Z
     .locals 1
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
 
     .prologue
-    .line 173
-    invoke-virtual {p0}, Landroid/view/KeyEvent;->isTracking()Z
+    .line 200
+    sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
+
+    invoke-interface {v0, p0}, Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;->isTracking(Landroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -149,7 +134,7 @@
     .locals 1
 
     .prologue
-    .line 143
+    .line 180
     sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
     invoke-interface {v0, p0, p1}, Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;->metaStateHasModifiers(II)Z
@@ -163,7 +148,7 @@
     .locals 1
 
     .prologue
-    .line 147
+    .line 184
     sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;->metaStateHasNoModifiers(I)Z
@@ -177,7 +162,7 @@
     .locals 1
 
     .prologue
-    .line 139
+    .line 176
     sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
     invoke-interface {v0, p0}, Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;->normalizeMetaState(I)I
@@ -188,14 +173,14 @@
 .end method
 
 .method public static startTracking(Landroid/view/KeyEvent;)V
-    .locals 0
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+    .locals 1
 
     .prologue
-    .line 164
-    invoke-virtual {p0}, Landroid/view/KeyEvent;->startTracking()V
+    .line 196
+    sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
-    .line 165
+    invoke-interface {v0, p0}, Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;->startTracking(Landroid/view/KeyEvent;)V
+
+    .line 197
     return-void
 .end method

@@ -1,145 +1,198 @@
 .class public Lcom/google/android/gms/location/zza;
-.super Lcom/google/android/gms/common/internal/safeparcel/zza;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator",
-            "<",
-            "Lcom/google/android/gms/location/zza;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
-# instance fields
-.field private mTag:Ljava/lang/String;
-
-.field private zzaiu:Ljava/lang/String;
-
-.field private zzbjo:J
-
-.field private zzbjp:Z
-
-.field private zzbjq:Landroid/os/WorkSource;
-
-.field private zzbjr:[I
-
-.field private zzbjs:Z
-
-.field private final zzbjt:J
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator",
+        "<",
+        "Lcom/google/android/gms/location/GeofencingRequest;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>()V
+    .locals 0
 
-    new-instance v0, Lcom/google/android/gms/location/zzb;
-
-    invoke-direct {v0}, Lcom/google/android/gms/location/zzb;-><init>()V
-
-    sput-object v0, Lcom/google/android/gms/location/zza;->CREATOR:Landroid/os/Parcelable$Creator;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method constructor <init>(JZLandroid/os/WorkSource;Ljava/lang/String;[IZLjava/lang/String;J)V
-    .locals 1
+.method static zza(Lcom/google/android/gms/location/GeofencingRequest;Landroid/os/Parcel;I)V
+    .locals 4
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/zza;-><init>()V
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzac(Landroid/os/Parcel;)I
 
-    iput-wide p1, p0, Lcom/google/android/gms/location/zza;->zzbjo:J
+    move-result v0
 
-    iput-boolean p3, p0, Lcom/google/android/gms/location/zza;->zzbjp:Z
+    const/4 v1, 0x1
 
-    iput-object p4, p0, Lcom/google/android/gms/location/zza;->zzbjq:Landroid/os/WorkSource;
+    invoke-virtual {p0}, Lcom/google/android/gms/location/GeofencingRequest;->zzun()Ljava/util/List;
 
-    iput-object p5, p0, Lcom/google/android/gms/location/zza;->mTag:Ljava/lang/String;
+    move-result-object v2
 
-    iput-object p6, p0, Lcom/google/android/gms/location/zza;->zzbjr:[I
+    const/4 v3, 0x0
 
-    iput-boolean p7, p0, Lcom/google/android/gms/location/zza;->zzbjs:Z
+    invoke-static {p1, v1, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;ILjava/util/List;Z)V
 
-    iput-object p8, p0, Lcom/google/android/gms/location/zza;->zzaiu:Ljava/lang/String;
+    const/16 v1, 0x3e8
 
-    iput-wide p9, p0, Lcom/google/android/gms/location/zza;->zzbjt:J
+    invoke-virtual {p0}, Lcom/google/android/gms/location/GeofencingRequest;->getVersionCode()I
+
+    move-result v2
+
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;II)V
+
+    const/4 v1, 0x2
+
+    invoke-virtual {p0}, Lcom/google/android/gms/location/GeofencingRequest;->getInitialTrigger()I
+
+    move-result v2
+
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;II)V
+
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzH(Landroid/os/Parcel;I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getAccountName()Ljava/lang/String;
+.method public synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/location/zza;->zzaiu:Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/location/zza;->zzec(Landroid/os/Parcel;)Lcom/google/android/gms/location/GeofencingRequest;
+
+    move-result-object v0
 
     return-object v0
 .end method
 
-.method public getIntervalMillis()J
-    .locals 2
-
-    iget-wide v0, p0, Lcom/google/android/gms/location/zza;->zzbjo:J
-
-    return-wide v0
-.end method
-
-.method public getTag()Ljava/lang/String;
+.method public synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/location/zza;->mTag:Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/location/zza;->zzgs(I)[Lcom/google/android/gms/location/GeofencingRequest;
+
+    move-result-object v0
 
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 0
+.method public zzec(Landroid/os/Parcel;)Lcom/google/android/gms/location/GeofencingRequest;
+    .locals 6
 
-    invoke-static {p0, p1, p2}, Lcom/google/android/gms/location/zzb;->zza(Lcom/google/android/gms/location/zza;Landroid/os/Parcel;I)V
+    const/4 v0, 0x0
 
-    return-void
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzab(Landroid/os/Parcel;)I
+
+    move-result v3
+
+    const/4 v1, 0x0
+
+    move v2, v0
+
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v4
+
+    if-ge v4, v3, :cond_0
+
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzaa(Landroid/os/Parcel;)I
+
+    move-result v4
+
+    invoke-static {v4}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzbA(I)I
+
+    move-result v5
+
+    sparse-switch v5, :sswitch_data_0
+
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzb(Landroid/os/Parcel;I)V
+
+    goto :goto_0
+
+    :sswitch_0
+    sget-object v1, Lcom/google/android/gms/location/internal/ParcelableGeofence;->CREATOR:Lcom/google/android/gms/location/internal/zzm;
+
+    invoke-static {p1, v4, v1}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzc(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    goto :goto_0
+
+    :sswitch_1
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzg(Landroid/os/Parcel;I)I
+
+    move-result v2
+
+    goto :goto_0
+
+    :sswitch_2
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzg(Landroid/os/Parcel;I)I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v4
+
+    if-eq v4, v3, :cond_1
+
+    new-instance v0, Lcom/google/android/gms/common/internal/safeparcel/zza$zza;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "Overread allowed size end="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1, p1}, Lcom/google/android/gms/common/internal/safeparcel/zza$zza;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
+
+    throw v0
+
+    :cond_1
+    new-instance v3, Lcom/google/android/gms/location/GeofencingRequest;
+
+    invoke-direct {v3, v2, v1, v0}, Lcom/google/android/gms/location/GeofencingRequest;-><init>(ILjava/util/List;I)V
+
+    return-object v3
+
+    :sswitch_data_0
+    .sparse-switch
+        0x1 -> :sswitch_0
+        0x2 -> :sswitch_2
+        0x3e8 -> :sswitch_1
+    .end sparse-switch
 .end method
 
-.method public zzHW()Z
+.method public zzgs(I)[Lcom/google/android/gms/location/GeofencingRequest;
     .locals 1
 
-    iget-boolean v0, p0, Lcom/google/android/gms/location/zza;->zzbjp:Z
-
-    return v0
-.end method
-
-.method public zzHX()Landroid/os/WorkSource;
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/location/zza;->zzbjq:Landroid/os/WorkSource;
+    new-array v0, p1, [Lcom/google/android/gms/location/GeofencingRequest;
 
     return-object v0
-.end method
-
-.method public zzHY()[I
-    .locals 1
-
-    iget-object v0, p0, Lcom/google/android/gms/location/zza;->zzbjr:[I
-
-    return-object v0
-.end method
-
-.method public zzHZ()Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/google/android/gms/location/zza;->zzbjs:Z
-
-    return v0
-.end method
-
-.method public zzIa()J
-    .locals 2
-
-    iget-wide v0, p0, Lcom/google/android/gms/location/zza;->zzbjt:J
-
-    return-wide v0
 .end method

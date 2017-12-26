@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ProgressBar android:id="@id/snackbar_loading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" android:layout_alignParentEnd="true" style="?android:attr/progressBarStyleSmall" />
-    <com.netflix.mediaclient.android.widget.NetflixTextView android:textAppearance="@style/TextAppearance.Design.Snackbar.Message" android:ellipsize="none" android:id="@id/snackbar_percent" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="20.0dip" android:maxLines="1" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
-    <ImageView android:id="@id/snackbar_downloading" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_centerVertical="true" android:layout_marginEnd="5.0dip" android:layout_toStartOf="@id/snackbar_percent" />
-</RelativeLayout>

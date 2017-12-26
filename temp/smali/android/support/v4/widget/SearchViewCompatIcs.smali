@@ -1,12 +1,6 @@
 .class Landroid/support/v4/widget/SearchViewCompatIcs;
 .super Ljava/lang/Object;
-.source "SearchViewCompatIcs.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0xe
-.end annotation
+.source "SourceFile"
 
 
 # direct methods
@@ -14,10 +8,10 @@
     .locals 0
 
     .prologue
-    .line 31
+    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 33
+    .line 28
     return-void
 .end method
 
@@ -25,7 +19,7 @@
     .locals 1
 
     .prologue
-    .line 48
+    .line 43
     new-instance v0, Landroid/support/v4/widget/SearchViewCompatIcs$MySearchView;
 
     invoke-direct {v0, p0}, Landroid/support/v4/widget/SearchViewCompatIcs$MySearchView;-><init>(Landroid/content/Context;)V
@@ -37,12 +31,12 @@
     .locals 0
 
     .prologue
-    .line 52
+    .line 47
     check-cast p0, Landroid/widget/SearchView;
 
     invoke-virtual {p0, p1}, Landroid/widget/SearchView;->setImeOptions(I)V
 
-    .line 53
+    .line 48
     return-void
 .end method
 
@@ -50,11 +44,11 @@
     .locals 0
 
     .prologue
-    .line 56
+    .line 51
     check-cast p0, Landroid/widget/SearchView;
 
     invoke-virtual {p0, p1}, Landroid/widget/SearchView;->setInputType(I)V
 
-    .line 57
+    .line 52
     return-void
 .end method

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
-        <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/uma_text" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-light" />
-        <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="14.0sp" android:textColor="@color/uma_text" android:id="@id/body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:fontFamily="sans-serif-light" />
-    </LinearLayout>
-    <com.netflix.mediaclient.android.widget.FlowLayout android:layout_gravity="center_vertical" android:id="@id/cta_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" app:fl_horizontalSpacing="8.0dip" app:fl_verticalSpacing="8.0dip" app:fl_maxWidth="320.0dip" />
-</merge>

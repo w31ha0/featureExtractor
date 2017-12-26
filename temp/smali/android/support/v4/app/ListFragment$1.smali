@@ -1,6 +1,6 @@
 .class Landroid/support/v4/app/ListFragment$1;
 .super Ljava/lang/Object;
-.source "ListFragment.java"
+.source "SourceFile"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +29,7 @@
     .locals 2
 
     .prologue
-    .line 52
+    .line 51
     iget-object v0, p0, Landroid/support/v4/app/ListFragment$1;->this$0:Landroid/support/v4/app/ListFragment;
 
     iget-object v0, v0, Landroid/support/v4/app/ListFragment;->mList:Landroid/widget/ListView;
@@ -40,6 +40,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->focusableViewAvailable(Landroid/view/View;)V
 
-    .line 53
+    .line 52
     return-void
 .end method

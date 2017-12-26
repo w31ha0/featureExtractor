@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/GravityCompat$GravityCompatImplBase;
 .super Ljava/lang/Object;
-.source "GravityCompat.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/view/GravityCompat$GravityCompatImpl;

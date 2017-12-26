@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/ViewPager$ViewPositionComparator;
 .super Ljava/lang/Object;
-.source "ViewPager.java"
+.source "SourceFile"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 3173
+    .line 2865
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,45 +35,45 @@
     .locals 4
 
     .prologue
-    .line 3176
+    .line 2868
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     check-cast v0, Landroid/support/v4/view/ViewPager$LayoutParams;
 
-    .line 3177
+    .line 2869
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
     check-cast v1, Landroid/support/v4/view/ViewPager$LayoutParams;
 
-    .line 3178
+    .line 2870
     iget-boolean v2, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->isDecor:Z
 
     iget-boolean v3, v1, Landroid/support/v4/view/ViewPager$LayoutParams;->isDecor:Z
 
     if-eq v2, v3, :cond_1
 
-    .line 3179
+    .line 2871
     iget-boolean v0, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->isDecor:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 3181
+    .line 2873
     :goto_0
     return v0
 
-    .line 3179
+    .line 2871
     :cond_0
     const/4 v0, -0x1
 
     goto :goto_0
 
-    .line 3181
+    .line 2873
     :cond_1
     iget v0, v0, Landroid/support/v4/view/ViewPager$LayoutParams;->position:I
 
@@ -88,7 +88,7 @@
     .locals 1
 
     .prologue
-    .line 3173
+    .line 2865
     check-cast p1, Landroid/view/View;
 
     check-cast p2, Landroid/view/View;

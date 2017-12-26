@@ -1,6 +1,6 @@
 .class interface abstract Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 .super Ljava/lang/Object;
-.source "EdgeEffectCompat.java"
+.source "SourceFile"
 
 
 # virtual methods
@@ -20,9 +20,6 @@
 .end method
 
 .method public abstract onPull(Ljava/lang/Object;F)Z
-.end method
-
-.method public abstract onPull(Ljava/lang/Object;FF)Z
 .end method
 
 .method public abstract onRelease(Ljava/lang/Object;)Z

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/video_data_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/double_padding" android:layout_marginEnd="@dimen/double_padding"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/selection_indicator" android:background="@color/brand_red" android:layout_width="fill_parent" android:layout_height="3.0dip" />
-    <com.netflix.mediaclient.android.widget.NetflixTextView android:textColor="@drawable/kubrick_selectable_text" android:id="@id/season_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/double_padding" style="@style/PrimaryText.SmallMedium" />
-</LinearLayout>

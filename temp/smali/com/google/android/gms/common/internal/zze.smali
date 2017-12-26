@@ -1,230 +1,396 @@
-.class public Lcom/google/android/gms/common/internal/zze;
+.class public final Lcom/google/android/gms/common/internal/zze;
 .super Ljava/lang/Object;
 
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
 
+# instance fields
+.field private final zzMY:Landroid/accounts/Account;
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator",
-        "<",
-        "Lcom/google/android/gms/common/internal/zzd;",
-        ">;"
-    }
-.end annotation
+.field private final zzOd:Ljava/lang/String;
+
+.field private final zzOe:Ljava/lang/String;
+
+.field private final zzWv:Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set",
+            "<",
+            "Lcom/google/android/gms/common/api/Scope;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final zzWw:I
+
+.field private final zzWx:Landroid/view/View;
+
+.field private final zzZS:Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set",
+            "<",
+            "Lcom/google/android/gms/common/api/Scope;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final zzZT:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map",
+            "<",
+            "Lcom/google/android/gms/common/api/Api",
+            "<*>;",
+            "Lcom/google/android/gms/common/internal/zze$zza;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final zzZU:Lcom/google/android/gms/internal/zzpt;
+
+.field private zzZV:Ljava/lang/Integer;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>(Landroid/accounts/Account;Ljava/util/Collection;Ljava/util/Map;ILandroid/view/View;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/zzpt;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/accounts/Account;",
+            "Ljava/util/Collection",
+            "<",
+            "Lcom/google/android/gms/common/api/Scope;",
+            ">;",
+            "Ljava/util/Map",
+            "<",
+            "Lcom/google/android/gms/common/api/Api",
+            "<*>;",
+            "Lcom/google/android/gms/common/internal/zze$zza;",
+            ">;I",
+            "Landroid/view/View;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Lcom/google/android/gms/internal/zzpt;",
+            ")V"
+        }
+    .end annotation
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/zze;->zzMY:Landroid/accounts/Account;
 
-.method static zza(Lcom/google/android/gms/common/internal/zzd;Landroid/os/Parcel;I)V
-    .locals 4
+    if-nez p2, :cond_1
 
-    const/4 v3, 0x0
+    sget-object v0, Ljava/util/Collections;->EMPTY_SET:Ljava/util/Set;
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzaZ(Landroid/os/Parcel;)I
+    :goto_0
+    iput-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzWv:Ljava/util/Set;
+
+    if-nez p3, :cond_0
+
+    sget-object p3, Ljava/util/Collections;->EMPTY_MAP:Ljava/util/Map;
+
+    :cond_0
+    iput-object p3, p0, Lcom/google/android/gms/common/internal/zze;->zzZT:Ljava/util/Map;
+
+    iput-object p5, p0, Lcom/google/android/gms/common/internal/zze;->zzWx:Landroid/view/View;
+
+    iput p4, p0, Lcom/google/android/gms/common/internal/zze;->zzWw:I
+
+    iput-object p6, p0, Lcom/google/android/gms/common/internal/zze;->zzOe:Ljava/lang/String;
+
+    iput-object p7, p0, Lcom/google/android/gms/common/internal/zze;->zzOd:Ljava/lang/String;
+
+    iput-object p8, p0, Lcom/google/android/gms/common/internal/zze;->zzZU:Lcom/google/android/gms/internal/zzpt;
+
+    new-instance v1, Ljava/util/HashSet;
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzWv:Ljava/util/Set;
+
+    invoke-direct {v1, v0}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzZT:Ljava/util/Map;
+
+    invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_1
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
-    const/4 v1, 0x1
+    if-eqz v0, :cond_2
 
-    iget v2, p0, Lcom/google/android/gms/common/internal/zzd;->zzaiI:I
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzc(Landroid/os/Parcel;II)V
+    move-result-object v0
 
-    const/4 v1, 0x2
+    check-cast v0, Lcom/google/android/gms/common/internal/zze$zza;
 
-    iget-object v2, p0, Lcom/google/android/gms/common/internal/zzd;->zzaEW:Landroid/os/IBinder;
+    iget-object v0, v0, Lcom/google/android/gms/common/internal/zze$zza;->zzWJ:Ljava/util/Set;
 
-    invoke-static {p1, v1, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zza(Landroid/os/Parcel;ILandroid/os/IBinder;Z)V
+    invoke-interface {v1, v0}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
-    const/4 v1, 0x3
+    goto :goto_1
 
-    iget-object v2, p0, Lcom/google/android/gms/common/internal/zzd;->zzaEX:[Lcom/google/android/gms/common/api/Scope;
+    :cond_1
+    new-instance v0, Ljava/util/HashSet;
 
-    invoke-static {p1, v1, v2, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zza(Landroid/os/Parcel;I[Landroid/os/Parcelable;IZ)V
+    invoke-direct {v0, p2}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
-    const/4 v1, 0x4
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
 
-    iget-object v2, p0, Lcom/google/android/gms/common/internal/zzd;->zzaEY:Ljava/lang/Integer;
+    move-result-object v0
 
-    invoke-static {p1, v1, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zza(Landroid/os/Parcel;ILjava/lang/Integer;Z)V
+    goto :goto_0
 
-    const/4 v1, 0x5
+    :cond_2
+    invoke-static {v1}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
 
-    iget-object v2, p0, Lcom/google/android/gms/common/internal/zzd;->zzaEZ:Ljava/lang/Integer;
+    move-result-object v0
 
-    invoke-static {p1, v1, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zza(Landroid/os/Parcel;ILjava/lang/Integer;Z)V
-
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzJ(Landroid/os/Parcel;I)V
+    iput-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzZS:Ljava/util/Set;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+.method public getAccount()Landroid/accounts/Account;
     .locals 1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/internal/zze;->zzaQ(Landroid/os/Parcel;)Lcom/google/android/gms/common/internal/zzd;
-
-    move-result-object v0
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzMY:Landroid/accounts/Account;
 
     return-object v0
 .end method
 
-.method public synthetic newArray(I)[Ljava/lang/Object;
+.method public getAccountName()Ljava/lang/String;
     .locals 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/internal/zze;->zzcR(I)[Lcom/google/android/gms/common/internal/zzd;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzMY:Landroid/accounts/Account;
 
-    move-result-object v0
+    if-eqz v0, :cond_0
 
-    return-object v0
-.end method
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzMY:Landroid/accounts/Account;
 
-.method public zzaQ(Landroid/os/Parcel;)Lcom/google/android/gms/common/internal/zzd;
-    .locals 8
-
-    const/4 v5, 0x0
-
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzaY(Landroid/os/Parcel;)I
-
-    move-result v6
-
-    const/4 v1, 0x0
-
-    move-object v4, v5
-
-    move-object v3, v5
-
-    move-object v2, v5
+    iget-object v0, v0, Landroid/accounts/Account;->name:Ljava/lang/String;
 
     :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+    return-object v0
 
-    move-result v0
-
-    if-ge v0, v6, :cond_0
-
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzaX(Landroid/os/Parcel;)I
-
-    move-result v0
-
-    invoke-static {v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzdc(I)I
-
-    move-result v7
-
-    packed-switch v7, :pswitch_data_0
-
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzb(Landroid/os/Parcel;I)V
+    :cond_0
+    const/4 v0, 0x0
 
     goto :goto_0
+.end method
 
-    :pswitch_0
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzg(Landroid/os/Parcel;I)I
+.method public zza(Ljava/lang/Integer;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/zze;->zzZV:Ljava/lang/Integer;
+
+    return-void
+.end method
+
+.method public zzb(Lcom/google/android/gms/common/api/Api;)Ljava/util/Set;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/common/api/Api",
+            "<*>;)",
+            "Ljava/util/Set",
+            "<",
+            "Lcom/google/android/gms/common/api/Scope;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzZT:Ljava/util/Map;
+
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/google/android/gms/common/internal/zze$zza;
+
+    if-eqz v0, :cond_0
+
+    iget-object v1, v0, Lcom/google/android/gms/common/internal/zze$zza;->zzWJ:Ljava/util/Set;
+
+    invoke-interface {v1}, Ljava/util/Set;->isEmpty()Z
 
     move-result v1
 
+    if-eqz v1, :cond_1
+
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzWv:Ljava/util/Set;
+
+    :goto_0
+    return-object v0
+
+    :cond_1
+    new-instance v1, Ljava/util/HashSet;
+
+    iget-object v2, p0, Lcom/google/android/gms/common/internal/zze;->zzWv:Ljava/util/Set;
+
+    invoke-direct {v1, v2}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+
+    iget-object v0, v0, Lcom/google/android/gms/common/internal/zze$zza;->zzWJ:Ljava/util/Set;
+
+    invoke-interface {v1, v0}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
+
+    move-object v0, v1
+
     goto :goto_0
+.end method
 
-    :pswitch_1
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzr(Landroid/os/Parcel;I)Landroid/os/IBinder;
+.method public zznA()Landroid/view/View;
+    .locals 1
 
-    move-result-object v2
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzWx:Landroid/view/View;
 
-    goto :goto_0
+    return-object v0
+.end method
 
-    :pswitch_2
-    sget-object v3, Lcom/google/android/gms/common/api/Scope;->CREATOR:Landroid/os/Parcelable$Creator;
+.method public zznB()Lcom/google/android/gms/internal/zzpt;
+    .locals 1
 
-    invoke-static {p1, v0, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzb(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)[Ljava/lang/Object;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzZU:Lcom/google/android/gms/internal/zzpt;
+
+    return-object v0
+.end method
+
+.method public zznC()Ljava/lang/Integer;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzZV:Ljava/lang/Integer;
+
+    return-object v0
+.end method
+
+.method public zzns()Ljava/lang/String;
+    .locals 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/zze;->zznt()Landroid/accounts/Account;
 
     move-result-object v0
 
-    check-cast v0, [Lcom/google/android/gms/common/api/Scope;
-
-    move-object v3, v0
-
-    goto :goto_0
-
-    :pswitch_3
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzh(Landroid/os/Parcel;I)Ljava/lang/Integer;
-
-    move-result-object v4
-
-    goto :goto_0
-
-    :pswitch_4
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzh(Landroid/os/Parcel;I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
-
-    move-result v0
-
-    if-eq v0, v6, :cond_1
-
-    new-instance v0, Lcom/google/android/gms/common/internal/safeparcel/zzb$zza;
-
-    const/16 v1, 0x25
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string/jumbo v1, "Overread allowed size end="
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1, p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb$zza;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
-
-    throw v0
-
-    :cond_1
-    new-instance v0, Lcom/google/android/gms/common/internal/zzd;
-
-    invoke-direct/range {v0 .. v5}, Lcom/google/android/gms/common/internal/zzd;-><init>(ILandroid/os/IBinder;[Lcom/google/android/gms/common/api/Scope;Ljava/lang/Integer;Ljava/lang/Integer;)V
+    iget-object v0, v0, Landroid/accounts/Account;->name:Ljava/lang/String;
 
     return-object v0
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-        :pswitch_4
-    .end packed-switch
 .end method
 
-.method public zzcR(I)[Lcom/google/android/gms/common/internal/zzd;
+.method public zznt()Landroid/accounts/Account;
+    .locals 3
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzMY:Landroid/accounts/Account;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzMY:Landroid/accounts/Account;
+
+    :goto_0
+    return-object v0
+
+    :cond_0
+    new-instance v0, Landroid/accounts/Account;
+
+    const-string v1, "<<default account>>"
+
+    const-string v2, "com.google"
+
+    invoke-direct {v0, v1, v2}, Landroid/accounts/Account;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
+.end method
+
+.method public zznu()I
     .locals 1
 
-    new-array v0, p1, [Lcom/google/android/gms/common/internal/zzd;
+    iget v0, p0, Lcom/google/android/gms/common/internal/zze;->zzWw:I
+
+    return v0
+.end method
+
+.method public zznv()Ljava/util/Set;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set",
+            "<",
+            "Lcom/google/android/gms/common/api/Scope;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzWv:Ljava/util/Set;
+
+    return-object v0
+.end method
+
+.method public zznw()Ljava/util/Set;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set",
+            "<",
+            "Lcom/google/android/gms/common/api/Scope;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzZS:Ljava/util/Set;
+
+    return-object v0
+.end method
+
+.method public zznx()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map",
+            "<",
+            "Lcom/google/android/gms/common/api/Api",
+            "<*>;",
+            "Lcom/google/android/gms/common/internal/zze$zza;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzZT:Ljava/util/Map;
+
+    return-object v0
+.end method
+
+.method public zzny()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzOe:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public zznz()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zze;->zzOd:Ljava/lang/String;
 
     return-object v0
 .end method

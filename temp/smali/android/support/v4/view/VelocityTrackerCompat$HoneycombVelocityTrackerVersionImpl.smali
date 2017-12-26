@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl;
 .super Ljava/lang/Object;
-.source "VelocityTrackerCompat.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;

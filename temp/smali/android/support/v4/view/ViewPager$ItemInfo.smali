@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/ViewPager$ItemInfo;
 .super Ljava/lang/Object;
-.source "ViewPager.java"
+.source "SourceFile"
 
 
 # instance fields
@@ -20,7 +20,7 @@
     .locals 0
 
     .prologue
-    .line 131
+    .line 108
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

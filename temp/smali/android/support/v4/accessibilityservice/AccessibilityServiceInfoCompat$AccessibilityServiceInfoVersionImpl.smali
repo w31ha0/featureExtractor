@@ -1,6 +1,6 @@
 .class interface abstract Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
 .super Ljava/lang/Object;
-.source "AccessibilityServiceInfoCompat.java"
+.source "SourceFile"
 
 
 # virtual methods
@@ -20,7 +20,4 @@
 .end method
 
 .method public abstract getSettingsActivityName(Landroid/accessibilityservice/AccessibilityServiceInfo;)Ljava/lang/String;
-.end method
-
-.method public abstract loadDescription(Landroid/accessibilityservice/AccessibilityServiceInfo;Landroid/content/pm/PackageManager;)Ljava/lang/String;
 .end method

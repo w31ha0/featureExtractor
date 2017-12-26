@@ -1,13 +1,17 @@
 .class final Lcom/google/android/gms/location/ActivityRecognition$1;
-.super Lcom/google/android/gms/common/api/Api$zza;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/google/android/gms/common/api/Api$zza;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "Ljava/lang/Object;",
         "Lcom/google/android/gms/common/api/Api$zza",
         "<",
-        "Lcom/google/android/gms/internal/zzash;",
+        "Lcom/google/android/gms/location/internal/zzj;",
         "Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;",
         ">;"
     }
@@ -18,14 +22,22 @@
 .method constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/google/android/gms/common/api/Api$zza;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public synthetic zza(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zzg;Ljava/lang/Object;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/common/api/Api$zze;
+.method public getPriority()I
+    .locals 1
+
+    const v0, 0x7fffffff
+
+    return v0
+.end method
+
+.method public synthetic zza(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zze;Ljava/lang/Object;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/common/api/Api$Client;
     .locals 7
 
     move-object v4, p4
@@ -44,19 +56,19 @@
 
     move-object v6, p6
 
-    invoke-virtual/range {v0 .. v6}, Lcom/google/android/gms/location/ActivityRecognition$1;->zzq(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zzg;Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/internal/zzash;
+    invoke-virtual/range {v0 .. v6}, Lcom/google/android/gms/location/ActivityRecognition$1;->zzo(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zze;Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/location/internal/zzj;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public zzq(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zzg;Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/internal/zzash;
+.method public zzo(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zze;Lcom/google/android/gms/common/api/Api$ApiOptions$NoOptions;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/location/internal/zzj;
     .locals 6
 
-    new-instance v0, Lcom/google/android/gms/internal/zzash;
+    new-instance v0, Lcom/google/android/gms/location/internal/zzj;
 
-    const-string/jumbo v5, "activity_recognition"
+    const-string v5, "activity_recognition"
 
     move-object v1, p1
 
@@ -66,7 +78,7 @@
 
     move-object v4, p6
 
-    invoke-direct/range {v0 .. v5}, Lcom/google/android/gms/internal/zzash;-><init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/google/android/gms/location/internal/zzj;-><init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;Ljava/lang/String;)V
 
     return-object v0
 .end method

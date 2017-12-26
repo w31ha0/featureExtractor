@@ -1,12 +1,6 @@
 .class interface abstract Landroid/support/v4/media/TransportMediatorCallback;
 .super Ljava/lang/Object;
-.source "TransportMediatorCallback.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0x12
-.end annotation
+.source "SourceFile"
 
 
 # virtual methods

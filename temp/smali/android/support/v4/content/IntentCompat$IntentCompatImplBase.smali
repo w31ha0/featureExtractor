@@ -1,6 +1,6 @@
 .class Landroid/support/v4/content/IntentCompat$IntentCompatImplBase;
 .super Ljava/lang/Object;
-.source "IntentCompat.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/content/IntentCompat$IntentCompatImpl;
@@ -26,7 +26,7 @@
     .line 39
     new-instance v0, Landroid/content/Intent;
 
-    const-string/jumbo v1, "android.intent.action.MAIN"
+    const-string v1, "android.intent.action.MAIN"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -34,7 +34,7 @@
     invoke-virtual {v0, p1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     .line 41
-    const-string/jumbo v1, "android.intent.category.LAUNCHER"
+    const-string v1, "android.intent.category.LAUNCHER"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 

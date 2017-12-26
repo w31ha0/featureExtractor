@@ -1,106 +1,172 @@
-.class public abstract Lcom/google/android/gms/common/internal/zzt$zza;
-.super Landroid/os/Binder;
+.class public final Lcom/google/android/gms/common/internal/zzt$zza;
+.super Ljava/lang/Object;
 
-# interfaces
-.implements Lcom/google/android/gms/common/internal/zzt;
+
+# instance fields
+.field private final zzGE:Ljava/lang/Object;
+
+.field private final zzabb:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>()V
+.method private constructor <init>(Ljava/lang/Object;)V
     .locals 1
 
-    invoke-direct {p0}, Landroid/os/Binder;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string/jumbo v0, "com.google.android.gms.common.internal.ICertData"
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/zzu;->zzu(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {p0, p0, v0}, Lcom/google/android/gms/common/internal/zzt$zza;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/google/android/gms/common/internal/zzt$zza;->zzGE:Ljava/lang/Object;
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/google/android/gms/common/internal/zzt$zza;->zzabb:Ljava/util/List;
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Ljava/lang/Object;Lcom/google/android/gms/common/internal/zzt$1;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/google/android/gms/common/internal/zzt$zza;-><init>(Ljava/lang/Object;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public asBinder()Landroid/os/IBinder;
-    .locals 0
+.method public toString()Ljava/lang/String;
+    .locals 4
 
-    return-object p0
-.end method
+    new-instance v0, Ljava/lang/StringBuilder;
 
-.method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 2
+    const/16 v1, 0x64
 
-    const/4 v1, 0x1
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    sparse-switch p1, :sswitch_data_0
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzt$zza;->zzGE:Ljava/lang/Object;
 
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result v0
+    move-result-object v1
 
-    :goto_0
-    return v0
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    :sswitch_0
-    const-string/jumbo v0, "com.google.android.gms.common.internal.ICertData"
+    move-result-object v1
 
-    invoke-virtual {p3, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    move v0, v1
-
-    goto :goto_0
-
-    :sswitch_1
-    const-string/jumbo v0, "com.google.android.gms.common.internal.ICertData"
-
-    invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/zzt$zza;->zzva()Lcom/google/android/gms/dynamic/IObjectWrapper;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+    const/16 v1, 0x7b
 
-    if-eqz v0, :cond_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-interface {v0}, Lcom/google/android/gms/dynamic/IObjectWrapper;->asBinder()Landroid/os/IBinder;
+    move-result-object v2
 
-    move-result-object v0
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzt$zza;->zzabb:Ljava/util/List;
 
-    :goto_1
-    invoke-virtual {p3, v0}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
-    move v0, v1
+    move-result v3
 
-    goto :goto_0
-
-    :cond_0
     const/4 v0, 0x0
 
-    goto :goto_1
+    move v1, v0
 
-    :sswitch_2
-    const-string/jumbo v0, "com.google.android.gms.common.internal.ICertData"
+    :goto_0
+    if-ge v1, v3, :cond_1
 
-    invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzt$zza;->zzabb:Ljava/util/List;
 
-    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/zzt$zza;->zzvb()I
+    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result v0
+    move-result-object v0
 
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+    check-cast v0, Ljava/lang/String;
 
-    invoke-virtual {p3, v0}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move v0, v1
+    add-int/lit8 v0, v3, -0x1
+
+    if-ge v1, v0, :cond_0
+
+    const-string v0, ", "
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    :cond_0
+    add-int/lit8 v0, v1, 0x1
+
+    move v1, v0
 
     goto :goto_0
 
-    nop
+    :cond_1
+    const/16 v0, 0x7d
 
-    :sswitch_data_0
-    .sparse-switch
-        0x1 -> :sswitch_1
-        0x2 -> :sswitch_2
-        0x5f4e5446 -> :sswitch_0
-    .end sparse-switch
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public zzg(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/android/gms/common/internal/zzt$zza;
+    .locals 3
+
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zzt$zza;->zzabb:Ljava/util/List;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/zzu;->zzu(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v2, "="
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    return-object p0
 .end method

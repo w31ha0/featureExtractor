@@ -1,6 +1,6 @@
 .class Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderStubImpl;
 .super Ljava/lang/Object;
-.source "AccessibilityNodeProviderCompat.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl;
@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 37
+    .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,7 +23,7 @@
     .locals 1
 
     .prologue
-    .line 40
+    .line 39
     const/4 v0, 0x0
 
     return-object v0

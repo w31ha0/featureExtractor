@@ -1,39 +1,31 @@
-.class public abstract Lcom/google/android/gms/common/api/Api$zza;
-.super Lcom/google/android/gms/common/api/Api$zzd;
+.class public interface abstract Lcom/google/android/gms/common/api/Api$zza;
+.super Ljava/lang/Object;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T::",
-        "Lcom/google/android/gms/common/api/Api$zze;",
+        "Lcom/google/android/gms/common/api/Api$Client;",
         "O:",
         "Ljava/lang/Object;",
         ">",
-        "Lcom/google/android/gms/common/api/Api$zzd",
-        "<TT;TO;>;"
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/google/android/gms/common/api/Api$zzd;-><init>()V
-
-    return-void
+# virtual methods
+.method public abstract getPriority()I
 .end method
 
-
-# virtual methods
-.method public abstract zza(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zzg;Ljava/lang/Object;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/common/api/Api$zze;
+.method public abstract zza(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/zze;Ljava/lang/Object;Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;)Lcom/google/android/gms/common/api/Api$Client;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
             "Landroid/os/Looper;",
-            "Lcom/google/android/gms/common/internal/zzg;",
+            "Lcom/google/android/gms/common/internal/zze;",
             "TO;",
             "Lcom/google/android/gms/common/api/GoogleApiClient$ConnectionCallbacks;",
             "Lcom/google/android/gms/common/api/GoogleApiClient$OnConnectionFailedListener;",

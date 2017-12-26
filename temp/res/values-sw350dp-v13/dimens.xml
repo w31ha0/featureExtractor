@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="contact_us_dialer_number_desc_size">12.0sp</dimen>
-    <dimen name="contact_us_dialer_number_size">36.0sp</dimen>
-    <dimen name="contact_us_dialer_pad_fab_margin_bottom">20.0dip</dimen>
-    <dimen name="contact_us_dialer_pad_margin_bottom">10.0dip</dimen>
-    <dimen name="contact_us_dialer_pad_margin_top">10.0dip</dimen>
-    <dimen name="toolbar_subtitle_text_size">14.0dip</dimen>
-</resources>

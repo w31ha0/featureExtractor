@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/left_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/content_padding" android:paddingEnd="@dimen/content_padding"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_marginBottom="4.0dip" style="@style/wrap">
-        <TextView android:id="@id/video_details_match_percentage" style="@style/PercentageMatch.NanoMedium" />
-        <com.netflix.mediaclient.android.widget.NetflixTextView android:textColor="@color/grey50" android:layout_gravity="center_vertical" android:id="@id/video_details_basic_info" android:singleLine="true" android:lineSpacingMultiplier="@dimen/line_spacing_expanded" style="@style/PrimaryText.NanoMedium" />
-        <com.netflix.mediaclient.android.widget.IconFontTextView android:textSize="@dimen/text_micro" android:textColor="@color/capability_badge_light" android:layout_gravity="center_vertical" android:id="@id/basic_info_badges" android:singleLine="true" style="@style/IconFontBasic" />
-    </LinearLayout>
-</LinearLayout>

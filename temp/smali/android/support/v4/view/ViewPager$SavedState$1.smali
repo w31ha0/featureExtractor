@@ -1,6 +1,6 @@
 .class final Landroid/support/v4/view/ViewPager$SavedState$1;
 .super Ljava/lang/Object;
-.source "ViewPager.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/os/ParcelableCompatCreatorCallbacks;
@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 1437
+    .line 1237
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +35,7 @@
     .locals 1
 
     .prologue
-    .line 1440
+    .line 1240
     new-instance v0, Landroid/support/v4/view/ViewPager$SavedState;
 
     invoke-direct {v0, p1, p2}, Landroid/support/v4/view/ViewPager$SavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
@@ -47,7 +47,7 @@
     .locals 1
 
     .prologue
-    .line 1437
+    .line 1237
     invoke-virtual {p0, p1, p2}, Landroid/support/v4/view/ViewPager$SavedState$1;->createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Landroid/support/v4/view/ViewPager$SavedState;
 
     move-result-object v0
@@ -59,7 +59,7 @@
     .locals 1
 
     .prologue
-    .line 1444
+    .line 1244
     new-array v0, p1, [Landroid/support/v4/view/ViewPager$SavedState;
 
     return-object v0
@@ -69,7 +69,7 @@
     .locals 1
 
     .prologue
-    .line 1437
+    .line 1237
     invoke-virtual {p0, p1}, Landroid/support/v4/view/ViewPager$SavedState$1;->newArray(I)[Landroid/support/v4/view/ViewPager$SavedState;
 
     move-result-object v0

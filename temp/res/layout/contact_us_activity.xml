@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/contact_us_dialer_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="start|center" android:id="@id/customerSupportUpAction" android:paddingTop="@dimen/contact_us_landing_page_home_padding_top" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_back" android:paddingStart="@dimen/contact_us_landing_page_home_padding_left" android:paddingEnd="@dimen/contact_us_landing_page_home_padding_right" />
-    <com.netflix.mediaclient.android.widget.SafeViewFlipper android:id="@id/contactUsFlipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <include android:id="@id/landingPage" layout="@layout/contact_us_landing_page" />
-        <include android:id="@id/dialer" layout="@layout/contact_us_dialer" />
-    </com.netflix.mediaclient.android.widget.SafeViewFlipper>
-</LinearLayout>

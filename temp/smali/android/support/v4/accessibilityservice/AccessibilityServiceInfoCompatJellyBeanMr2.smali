@@ -1,12 +1,6 @@
 .class Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompatJellyBeanMr2;
 .super Ljava/lang/Object;
-.source "AccessibilityServiceInfoCompatJellyBeanMr2.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0x12
-.end annotation
+.source "SourceFile"
 
 
 # direct methods
@@ -14,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 29
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +18,7 @@
     .locals 1
 
     .prologue
-    .line 32
+    .line 28
     invoke-virtual {p0}, Landroid/accessibilityservice/AccessibilityServiceInfo;->getCapabilities()I
 
     move-result v0

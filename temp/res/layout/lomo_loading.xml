@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/lomo_frame" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:textSize="14.0sp" android:textColor="@android:color/transparent" android:ellipsize="end" android:layout_gravity="start" android:id="@id/lomo_title" android:background="@color/lolomo_row_dark_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:maxLines="1" android:fontFamily="monospace" />
-    <com.netflix.android.widgetry.lolomo.RowRecyclerView android:orientation="horizontal" android:id="@id/lolomo_row" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</LinearLayout>

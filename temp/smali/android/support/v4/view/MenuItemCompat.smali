@@ -1,6 +1,6 @@
-.class public final Landroid/support/v4/view/MenuItemCompat;
+.class public Landroid/support/v4/view/MenuItemCompat;
 .super Ljava/lang/Object;
-.source "MenuItemCompat.java"
+.source "SourceFile"
 
 
 # static fields
@@ -24,9 +24,10 @@
     .locals 2
 
     .prologue
-    .line 248
+    .line 247
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
+    .line 248
     const/16 v1, 0xe
 
     if-lt v0, v1, :cond_0
@@ -44,8 +45,6 @@
 
     .line 250
     :cond_0
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
     const/16 v1, 0xb
 
     if-lt v0, v1, :cond_1
@@ -70,13 +69,14 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 441
+    .line 32
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 200
     return-void
 .end method
 
@@ -162,9 +162,9 @@
 
     .line 366
     :cond_0
-    const-string/jumbo v0, "MenuItemCompat"
+    const-string v0, "MenuItemCompat"
 
-    const-string/jumbo v1, "getActionProvider: item does not implement SupportMenuItem; returning null"
+    const-string v1, "getActionProvider: item does not implement SupportMenuItem; returning null"
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -256,9 +256,9 @@
 
     .line 348
     :cond_0
-    const-string/jumbo v0, "MenuItemCompat"
+    const-string v0, "MenuItemCompat"
 
-    const-string/jumbo v1, "setActionProvider: item does not implement SupportMenuItem; ignoring"
+    const-string v1, "setActionProvider: item does not implement SupportMenuItem; ignoring"
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 

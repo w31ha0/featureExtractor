@@ -1,6 +1,6 @@
 .class interface abstract Landroid/support/v4/view/MenuItemCompatIcs$SupportActionExpandProxy;
 .super Ljava/lang/Object;
-.source "MenuItemCompatIcs.java"
+.source "SourceFile"
 
 
 # virtual methods

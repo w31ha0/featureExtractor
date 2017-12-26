@@ -1,6 +1,6 @@
 .class Landroid/support/v4/media/TransportMediatorJellybeanMR2$4;
 .super Ljava/lang/Object;
-.source "TransportMediatorJellybeanMR2.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/media/AudioManager$OnAudioFocusChangeListener;
@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 74
+    .line 72
     iput-object p1, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2$4;->this$0:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -29,13 +29,13 @@
     .locals 1
 
     .prologue
-    .line 77
+    .line 75
     iget-object v0, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2$4;->this$0:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
 
     iget-object v0, v0, Landroid/support/v4/media/TransportMediatorJellybeanMR2;->mTransportCallback:Landroid/support/v4/media/TransportMediatorCallback;
 
     invoke-interface {v0, p1}, Landroid/support/v4/media/TransportMediatorCallback;->handleAudioFocusChange(I)V
 
-    .line 78
+    .line 76
     return-void
 .end method

@@ -2,6 +2,12 @@
 .super Ljava/lang/Object;
 
 
+# static fields
+.field public static final CAUSE_NETWORK_LOST:I = 0x2
+
+.field public static final CAUSE_SERVICE_DISCONNECTED:I = 0x1
+
+
 # virtual methods
 .method public abstract onConnected(Landroid/os/Bundle;)V
 .end method

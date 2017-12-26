@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/rating_bar_group" android:paddingTop="@dimen/content_padding" android:paddingBottom="@dimen/content_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/double_padding" android:paddingEnd="@dimen/double_padding"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/text_small" android:gravity="center" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_padding" android:text="@string/label_details_action_rate_frag" android:layout_marginStart="@dimen/double_padding" android:layout_marginEnd="@dimen/double_padding" />
-    <com.netflix.mediaclient.ui.details.NetflixRatingBar android:layout_gravity="start" android:id="@id/ratings_bar_dialog_ratings_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_padding" android:layout_marginBottom="@dimen/content_padding" android:layout_marginStart="@dimen/double_padding" android:layout_marginEnd="@dimen/double_padding" style="@style/StarRatingsBar" />
-</LinearLayout>

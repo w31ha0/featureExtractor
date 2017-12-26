@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/kong_post_play_title_height" android:layout_marginTop="@dimen/kong_post_play_title_margin_top" android:layout_marginStart="@dimen/kong_post_play_title_margin_start"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.netflix.mediaclient.android.widget.NetflixTextView android:id="@id/post_play_title" style="@style/KongLabelTextTitle" />
-    <ImageView android:layout_gravity="center" android:id="@id/title_red_flare" android:layout_width="wrap_content" android:layout_height="@dimen/kong_post_play_title_flare_height" android:layout_marginTop="@dimen/kong_post_play_title_flare_margin" android:scaleType="fitStart" android:layout_marginStart="@dimen/kong_post_play_title_flare_margin" />
-</LinearLayout>

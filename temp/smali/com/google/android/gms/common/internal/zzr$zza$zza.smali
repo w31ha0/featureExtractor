@@ -6,7 +6,7 @@
 
 
 # instance fields
-.field private zzrk:Landroid/os/IBinder;
+.field private zznF:Landroid/os/IBinder;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/zzr$zza$zza;->zzrk:Landroid/os/IBinder;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/zzr$zza$zza;->zznF:Landroid/os/IBinder;
 
     return-void
 .end method
@@ -25,12 +25,12 @@
 .method public asBinder()Landroid/os/IBinder;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzr$zza$zza;->zzrk:Landroid/os/IBinder;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzr$zza$zza;->zznF:Landroid/os/IBinder;
 
     return-object v0
 .end method
 
-.method public getAccount()Landroid/accounts/Account;
+.method public zza(Lcom/google/android/gms/dynamic/zzd;II)Lcom/google/android/gms/dynamic/zzd;
     .locals 5
 
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
@@ -42,13 +42,26 @@
     move-result-object v2
 
     :try_start_0
-    const-string/jumbo v0, "com.google.android.gms.common.internal.IAccountAccessor"
+    const-string v0, "com.google.android.gms.common.internal.ISignInButtonCreator"
 
     invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzr$zza$zza;->zzrk:Landroid/os/IBinder;
+    if-eqz p1, :cond_0
 
-    const/4 v3, 0x2
+    invoke-interface {p1}, Lcom/google/android/gms/dynamic/zzd;->asBinder()Landroid/os/IBinder;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-virtual {v1, v0}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
+
+    invoke-virtual {v1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    invoke-virtual {v1, p3}, Landroid/os/Parcel;->writeInt(I)V
+
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zzr$zza$zza;->zznF:Landroid/os/IBinder;
+
+    const/4 v3, 0x1
 
     const/4 v4, 0x0
 
@@ -56,23 +69,16 @@
 
     invoke-virtual {v2}, Landroid/os/Parcel;->readException()V
 
-    invoke-virtual {v2}, Landroid/os/Parcel;->readInt()I
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    sget-object v0, Landroid/accounts/Account;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    invoke-interface {v0, v2}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    invoke-virtual {v2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
     move-result-object v0
 
-    check-cast v0, Landroid/accounts/Account;
+    invoke-static {v0}, Lcom/google/android/gms/dynamic/zzd$zza;->zzbg(Landroid/os/IBinder;)Lcom/google/android/gms/dynamic/zzd;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    :goto_0
+    move-result-object v0
+
     invoke-virtual {v2}, Landroid/os/Parcel;->recycle()V
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V

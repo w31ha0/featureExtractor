@@ -1,12 +1,12 @@
 .class final Landroid/support/v4/app/FragmentTabHost$TabInfo;
 .super Ljava/lang/Object;
-.source "FragmentTabHost.java"
+.source "SourceFile"
 
 
 # instance fields
-.field final args:Landroid/os/Bundle;
+.field private final args:Landroid/os/Bundle;
 
-.field final clss:Ljava/lang/Class;
+.field private final clss:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class",
@@ -15,9 +15,9 @@
     .end annotation
 .end field
 
-.field fragment:Landroid/support/v4/app/Fragment;
+.field private fragment:Landroid/support/v4/app/Fragment;
 
-.field final tag:Ljava/lang/String;
+.field private final tag:Ljava/lang/String;
 
 
 # direct methods
@@ -35,18 +35,68 @@
     .end annotation
 
     .prologue
-    .line 70
+    .line 67
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 71
+    .line 68
     iput-object p1, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->tag:Ljava/lang/String;
 
-    .line 72
+    .line 69
     iput-object p2, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->clss:Ljava/lang/Class;
 
-    .line 73
+    .line 70
     iput-object p3, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->args:Landroid/os/Bundle;
 
-    .line 74
+    .line 71
     return-void
+.end method
+
+.method static synthetic access$100(Landroid/support/v4/app/FragmentTabHost$TabInfo;)Landroid/support/v4/app/Fragment;
+    .locals 1
+
+    .prologue
+    .line 61
+    iget-object v0, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->fragment:Landroid/support/v4/app/Fragment;
+
+    return-object v0
+.end method
+
+.method static synthetic access$102(Landroid/support/v4/app/FragmentTabHost$TabInfo;Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/Fragment;
+    .locals 0
+
+    .prologue
+    .line 61
+    iput-object p1, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->fragment:Landroid/support/v4/app/Fragment;
+
+    return-object p1
+.end method
+
+.method static synthetic access$200(Landroid/support/v4/app/FragmentTabHost$TabInfo;)Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 61
+    iget-object v0, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->tag:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method static synthetic access$300(Landroid/support/v4/app/FragmentTabHost$TabInfo;)Ljava/lang/Class;
+    .locals 1
+
+    .prologue
+    .line 61
+    iget-object v0, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->clss:Ljava/lang/Class;
+
+    return-object v0
+.end method
+
+.method static synthetic access$400(Landroid/support/v4/app/FragmentTabHost$TabInfo;)Landroid/os/Bundle;
+    .locals 1
+
+    .prologue
+    .line 61
+    iget-object v0, p0, Landroid/support/v4/app/FragmentTabHost$TabInfo;->args:Landroid/os/Bundle;
+
+    return-object v0
 .end method

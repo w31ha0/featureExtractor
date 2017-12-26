@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
-        <com.netflix.mediaclient.android.widget.NetflixTextView android:ellipsize="end" android:id="@id/mdx_dialog_list_item_title" android:singleLine="true" android:paddingStart="@dimen/content_padding" android:paddingEnd="@dimen/content_padding" style="@style/PrimaryText.Small" />
-        <com.netflix.mediaclient.android.widget.NetflixTextView android:ellipsize="end" android:id="@id/mdx_dialog_list_item_sub_title" android:singleLine="true" android:paddingStart="@dimen/content_padding" android:paddingEnd="@dimen/content_padding" style="@style/SecondaryText.Micro" />
-    </LinearLayout>
-</RelativeLayout>

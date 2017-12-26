@@ -6,5 +6,5 @@
 
 
 # virtual methods
-.method public abstract getAccount()Landroid/accounts/Account;
+.method public abstract zza(Lcom/google/android/gms/dynamic/zzd;II)Lcom/google/android/gms/dynamic/zzd;
 .end method

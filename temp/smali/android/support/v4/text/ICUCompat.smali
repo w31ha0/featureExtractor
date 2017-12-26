@@ -1,6 +1,6 @@
-.class public final Landroid/support/v4/text/ICUCompat;
+.class public Landroid/support/v4/text/ICUCompat;
 .super Ljava/lang/Object;
-.source "ICUCompat.java"
+.source "SourceFile"
 
 
 # static fields
@@ -12,30 +12,13 @@
     .locals 2
 
     .prologue
-    .line 53
+    .line 55
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    .line 54
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_0
-
-    .line 55
-    new-instance v0, Landroid/support/v4/text/ICUCompat$ICUCompatImplLollipop;
-
-    invoke-direct {v0}, Landroid/support/v4/text/ICUCompat$ICUCompatImplLollipop;-><init>()V
-
-    sput-object v0, Landroid/support/v4/text/ICUCompat;->IMPL:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
-
-    .line 61
-    :goto_0
-    return-void
-
     .line 56
-    :cond_0
     const/16 v1, 0xe
 
-    if-lt v0, v1, :cond_1
+    if-lt v0, v1, :cond_0
 
     .line 57
     new-instance v0, Landroid/support/v4/text/ICUCompat$ICUCompatImplIcs;
@@ -44,10 +27,12 @@
 
     sput-object v0, Landroid/support/v4/text/ICUCompat;->IMPL:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
 
-    goto :goto_0
+    .line 61
+    :goto_0
+    return-void
 
     .line 59
-    :cond_1
+    :cond_0
     new-instance v0, Landroid/support/v4/text/ICUCompat$ICUCompatImplBase;
 
     invoke-direct {v0}, Landroid/support/v4/text/ICUCompat$ICUCompatImplBase;-><init>()V
@@ -57,24 +42,39 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 90
+    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 40
     return-void
 .end method
 
-.method public static maximizeAndGetScript(Ljava/util/Locale;)Ljava/lang/String;
+.method public static addLikelySubtags(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 87
+    .line 96
     sget-object v0, Landroid/support/v4/text/ICUCompat;->IMPL:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
 
-    invoke-interface {v0, p0}, Landroid/support/v4/text/ICUCompat$ICUCompatImpl;->maximizeAndGetScript(Ljava/util/Locale;)Ljava/lang/String;
+    invoke-interface {v0, p0}, Landroid/support/v4/text/ICUCompat$ICUCompatImpl;->addLikelySubtags(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static getScript(Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 70
+    sget-object v0, Landroid/support/v4/text/ICUCompat;->IMPL:Landroid/support/v4/text/ICUCompat$ICUCompatImpl;
+
+    invoke-interface {v0, p0}, Landroid/support/v4/text/ICUCompat$ICUCompatImpl;->getScript(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

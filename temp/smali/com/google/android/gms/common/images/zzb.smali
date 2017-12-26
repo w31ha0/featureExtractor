@@ -29,15 +29,17 @@
 .method static zza(Lcom/google/android/gms/common/images/WebImage;Landroid/os/Parcel;I)V
     .locals 4
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzaZ(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzac(Landroid/os/Parcel;)I
 
     move-result v0
 
     const/4 v1, 0x1
 
-    iget v2, p0, Lcom/google/android/gms/common/images/WebImage;->zzaiI:I
+    invoke-virtual {p0}, Lcom/google/android/gms/common/images/WebImage;->getVersionCode()I
 
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzc(Landroid/os/Parcel;II)V
+    move-result v2
+
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;II)V
 
     const/4 v1, 0x2
 
@@ -47,7 +49,7 @@
 
     const/4 v3, 0x0
 
-    invoke-static {p1, v1, v2, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zza(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+    invoke-static {p1, v1, v2, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     const/4 v1, 0x3
 
@@ -55,7 +57,7 @@
 
     move-result v2
 
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzc(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;II)V
 
     const/4 v1, 0x4
 
@@ -63,9 +65,9 @@
 
     move-result v2
 
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzc(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;II)V
 
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzJ(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzH(Landroid/os/Parcel;I)V
 
     return-void
 .end method
@@ -75,7 +77,7 @@
 .method public synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/images/zzb;->zzaP(Landroid/os/Parcel;)Lcom/google/android/gms/common/images/WebImage;
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/images/zzb;->zzT(Landroid/os/Parcel;)Lcom/google/android/gms/common/images/WebImage;
 
     move-result-object v0
 
@@ -85,19 +87,19 @@
 .method public synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/images/zzb;->zzcP(I)[Lcom/google/android/gms/common/images/WebImage;
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/common/images/zzb;->zzbn(I)[Lcom/google/android/gms/common/images/WebImage;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public zzaP(Landroid/os/Parcel;)Lcom/google/android/gms/common/images/WebImage;
+.method public zzT(Landroid/os/Parcel;)Lcom/google/android/gms/common/images/WebImage;
     .locals 8
 
     const/4 v1, 0x0
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzaY(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzab(Landroid/os/Parcel;)I
 
     move-result v5
 
@@ -114,17 +116,17 @@
 
     if-ge v0, v5, :cond_0
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzaX(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzaa(Landroid/os/Parcel;)I
 
     move-result v0
 
-    invoke-static {v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzdc(I)I
+    invoke-static {v0}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzbA(I)I
 
     move-result v6
 
     packed-switch v6, :pswitch_data_0
 
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzb(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzb(Landroid/os/Parcel;I)V
 
     move v0, v1
 
@@ -146,7 +148,7 @@
     goto :goto_0
 
     :pswitch_0
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzg(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzg(Landroid/os/Parcel;I)I
 
     move-result v0
 
@@ -165,7 +167,7 @@
     :pswitch_1
     sget-object v3, Landroid/net/Uri;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p1, v0, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p1, v0, v3}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zza(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object v0
 
@@ -184,7 +186,7 @@
     goto :goto_1
 
     :pswitch_2
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzg(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzg(Landroid/os/Parcel;I)I
 
     move-result v0
 
@@ -201,7 +203,7 @@
     goto :goto_1
 
     :pswitch_3
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzg(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzg(Landroid/os/Parcel;I)I
 
     move-result v0
 
@@ -220,17 +222,15 @@
 
     if-eq v0, v5, :cond_1
 
-    new-instance v0, Lcom/google/android/gms/common/internal/safeparcel/zzb$zza;
+    new-instance v0, Lcom/google/android/gms/common/internal/safeparcel/zza$zza;
 
-    const/16 v1, 0x25
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    const-string v2, "Overread allowed size end="
 
-    const-string/jumbo v1, "Overread allowed size end="
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -242,7 +242,7 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb$zza;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
+    invoke-direct {v0, v1, p1}, Lcom/google/android/gms/common/internal/safeparcel/zza$zza;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
 
     throw v0
 
@@ -253,8 +253,6 @@
 
     return-object v0
 
-    nop
-
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -264,7 +262,7 @@
     .end packed-switch
 .end method
 
-.method public zzcP(I)[Lcom/google/android/gms/common/images/WebImage;
+.method public zzbn(I)[Lcom/google/android/gms/common/images/WebImage;
     .locals 1
 
     new-array v0, p1, [Lcom/google/android/gms/common/images/WebImage;

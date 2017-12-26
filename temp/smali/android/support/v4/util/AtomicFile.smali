@@ -1,6 +1,6 @@
 .class public Landroid/support/v4/util/AtomicFile;
 .super Ljava/lang/Object;
-.source "AtomicFile.java"
+.source "SourceFile"
 
 
 # instance fields
@@ -35,7 +35,7 @@
 
     move-result-object v1
 
-    const-string/jumbo v2, ".bak"
+    const-string v2, ".bak"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -146,9 +146,9 @@
     move-exception v0
 
     .line 146
-    const-string/jumbo v1, "AtomicFile"
+    const-string v1, "AtomicFile"
 
-    const-string/jumbo v2, "failWrite: Got exception:"
+    const-string v2, "failWrite: Got exception:"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -186,9 +186,9 @@
     move-exception v0
 
     .line 128
-    const-string/jumbo v1, "AtomicFile"
+    const-string v1, "AtomicFile"
 
-    const-string/jumbo v2, "finishWrite: Got exception:"
+    const-string v2, "finishWrite: Got exception:"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -368,13 +368,13 @@
     if-nez v0, :cond_0
 
     .line 91
-    const-string/jumbo v0, "AtomicFile"
+    const-string v0, "AtomicFile"
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v2, "Couldn\'t rename file "
+    const-string v2, "Couldn\'t rename file "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -386,7 +386,7 @@
 
     move-result-object v1
 
-    const-string/jumbo v2, " to backup file "
+    const-string v2, " to backup file "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -440,7 +440,7 @@
     move-result-object v0
 
     .line 103
-    invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
+    invoke-virtual {v0}, Ljava/io/File;->mkdir()Z
 
     move-result v0
 
@@ -453,7 +453,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v2, "Couldn\'t create directory "
+    const-string v2, "Couldn\'t create directory "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -497,7 +497,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v2, "Couldn\'t create "
+    const-string v2, "Couldn\'t create "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

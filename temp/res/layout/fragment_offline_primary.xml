@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" style="@style/match"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.netflix.mediaclient.android.widget.NetflixTextButton android:textSize="@dimen/text_small" android:id="@id/find_more_button" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/NetflixButton.Outline.Padded" />
-    <android.support.v7.widget.RecyclerView android:id="@id/list_view_offline_playables" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/find_more_button" />
-    <com.netflix.mediaclient.android.widget.EmptyStateView android:id="@id/empty_state_view" android:visibility="gone" app:esv_icon="@drawable/ic_my_download_empty_state" app:esv_message="@string/offline_my_download_empty_state_description" app:esv_button="@string/offline_action_something_to_download_upper" style="@style/match" />
-</RelativeLayout>

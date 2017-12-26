@@ -1,6 +1,6 @@
 .class Landroid/support/v4/content/IntentCompat$IntentCompatImplIcsMr1;
 .super Landroid/support/v4/content/IntentCompat$IntentCompatImplHC;
-.source "IntentCompat.java"
+.source "SourceFile"
 
 
 # direct methods

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/language_selector_row_height" android:paddingStart="@dimen/double_padding" android:paddingEnd="24.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RadioButton android:id="@id/language_selector_list_row_choice" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/language_selector_radio_button" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
-    <com.netflix.mediaclient.android.widget.NetflixTextView android:textSize="@dimen/language_selector_text_fixed_small" android:ellipsize="end" android:id="@id/language_selector_list_row_name" android:layout_width="fill_parent" android:singleLine="true" android:layout_centerVertical="true" android:alpha="@dimen/text_alpha_unselected" android:paddingStart="@dimen/content_padding" android:layout_toEndOf="@id/language_selector_list_row_choice" style="@style/PrimaryText.Small" />
-</RelativeLayout>

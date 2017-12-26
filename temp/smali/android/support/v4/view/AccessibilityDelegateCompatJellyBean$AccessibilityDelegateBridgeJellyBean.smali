@@ -1,6 +1,6 @@
 .class public interface abstract Landroid/support/v4/view/AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean;
 .super Ljava/lang/Object;
-.source "AccessibilityDelegateCompatJellyBean.java"
+.source "SourceFile"
 
 
 # virtual methods

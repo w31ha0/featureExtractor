@@ -1,6 +1,6 @@
 .class public interface abstract Landroid/support/v4/app/LoaderManager$LoaderCallbacks;
 .super Ljava/lang/Object;
-.source "LoaderManager.java"
+.source "SourceFile"
 
 
 # annotations

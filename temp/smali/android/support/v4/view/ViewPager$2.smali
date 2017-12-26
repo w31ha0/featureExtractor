@@ -1,6 +1,6 @@
 .class final Landroid/support/v4/view/ViewPager$2;
 .super Ljava/lang/Object;
-.source "ViewPager.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/view/animation/Interpolator;
@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 146
+    .line 123
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,10 +25,10 @@
     .prologue
     const/high16 v2, 0x3f800000    # 1.0f
 
-    .line 149
+    .line 125
     sub-float v0, p1, v2
 
-    .line 150
+    .line 126
     mul-float v1, v0, v0
 
     mul-float/2addr v1, v0

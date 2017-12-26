@@ -1,6 +1,6 @@
-.class public final Landroid/support/v4/content/LocalBroadcastManager;
+.class public Landroid/support/v4/content/LocalBroadcastManager;
 .super Ljava/lang/Object;
-.source "LocalBroadcastManager.java"
+.source "SourceFile"
 
 
 # static fields
@@ -428,12 +428,10 @@
 
     iget-object v1, v0, Landroid/support/v4/content/LocalBroadcastManager;->mAppContext:Landroid/content/Context;
 
-    .line 204
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    .line 203
     move-object/from16 v0, p1
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->resolveTypeIfNeeded(Landroid/content/ContentResolver;)Ljava/lang/String;
@@ -455,7 +453,7 @@
 
     move-result-object v6
 
-    .line 210
+    .line 209
     invoke-virtual/range {p1 .. p1}, Landroid/content/Intent;->getFlags()I
 
     move-result v1
@@ -472,13 +470,13 @@
     :goto_0
     if-eqz v12, :cond_0
 
-    const-string/jumbo v1, "LocalBroadcastManager"
+    const-string v1, "LocalBroadcastManager"
 
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v8, "Resolving type "
+    const-string v8, "Resolving type "
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -488,7 +486,7 @@
 
     move-result-object v7
 
-    const-string/jumbo v8, " scheme "
+    const-string v8, " scheme "
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -498,7 +496,7 @@
 
     move-result-object v7
 
-    const-string/jumbo v8, " of intent "
+    const-string v8, " of intent "
 
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -542,13 +540,13 @@
     .line 217
     if-eqz v12, :cond_1
 
-    const-string/jumbo v1, "LocalBroadcastManager"
+    const-string v1, "LocalBroadcastManager"
 
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v9, "Action list: "
+    const-string v9, "Action list: "
 
     invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -594,13 +592,13 @@
     .line 222
     if-eqz v12, :cond_2
 
-    const-string/jumbo v1, "LocalBroadcastManager"
+    const-string v1, "LocalBroadcastManager"
 
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v14, "Matching against filter "
+    const-string v14, "Matching against filter "
 
     invoke-virtual {v7, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -628,9 +626,9 @@
     if-eqz v12, :cond_7
 
     .line 226
-    const-string/jumbo v1, "LocalBroadcastManager"
+    const-string v1, "LocalBroadcastManager"
 
-    const-string/jumbo v7, "  Filter\'s target already added"
+    const-string v7, "  Filter\'s target already added"
 
     invoke-static {v1, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -646,7 +644,7 @@
 
     goto :goto_1
 
-    .line 210
+    .line 209
     :cond_3
     const/4 v1, 0x0
 
@@ -658,7 +656,7 @@
     :cond_4
     iget-object v1, v9, Landroid/support/v4/content/LocalBroadcastManager$ReceiverRecord;->filter:Landroid/content/IntentFilter;
 
-    const-string/jumbo v7, "LocalBroadcastManager"
+    const-string v7, "LocalBroadcastManager"
 
     invoke-virtual/range {v1 .. v7}, Landroid/content/IntentFilter;->match(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/util/Set;Ljava/lang/String;)I
 
@@ -670,19 +668,18 @@
     .line 234
     if-eqz v12, :cond_5
 
-    const-string/jumbo v7, "LocalBroadcastManager"
+    const-string v7, "LocalBroadcastManager"
 
     new-instance v14, Ljava/lang/StringBuilder;
 
     invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v15, "  Filter matched!  match=0x"
+    const-string v15, "  Filter matched!  match=0x"
 
     invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v14
 
-    .line 235
     invoke-static {v1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v1
@@ -695,7 +692,6 @@
 
     move-result-object v1
 
-    .line 234
     invoke-static {v7, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 236
@@ -737,17 +733,17 @@
 
     .line 249
     :try_start_1
-    const-string/jumbo v1, "unknown reason"
+    const-string v1, "unknown reason"
 
     .line 251
     :goto_4
-    const-string/jumbo v7, "LocalBroadcastManager"
+    const-string v7, "LocalBroadcastManager"
 
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v14, "  Filter did not match: "
+    const-string v14, "  Filter did not match: "
 
     invoke-virtual {v9, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -770,25 +766,25 @@
 
     .line 245
     :pswitch_0
-    const-string/jumbo v1, "action"
+    const-string v1, "action"
 
     goto :goto_4
 
     .line 246
     :pswitch_1
-    const-string/jumbo v1, "category"
+    const-string v1, "category"
 
     goto :goto_4
 
     .line 247
     :pswitch_2
-    const-string/jumbo v1, "data"
+    const-string v1, "data"
 
     goto :goto_4
 
     .line 248
     :pswitch_3
-    const-string/jumbo v1, "type"
+    const-string v1, "type"
 
     goto :goto_4
 

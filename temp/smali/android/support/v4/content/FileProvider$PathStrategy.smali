@@ -1,6 +1,6 @@
 .class interface abstract Landroid/support/v4/content/FileProvider$PathStrategy;
 .super Ljava/lang/Object;
-.source "FileProvider.java"
+.source "SourceFile"
 
 
 # virtual methods

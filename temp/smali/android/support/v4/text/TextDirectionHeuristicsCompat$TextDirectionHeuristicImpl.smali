@@ -1,6 +1,6 @@
 .class abstract Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;
 .super Ljava/lang/Object;
-.source "TextDirectionHeuristicsCompat.java"
+.source "SourceFile"
 
 # interfaces
 .implements Landroid/support/v4/text/TextDirectionHeuristicCompat;

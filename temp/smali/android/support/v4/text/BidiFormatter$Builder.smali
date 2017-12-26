@@ -1,6 +1,6 @@
 .class public final Landroid/support/v4/text/BidiFormatter$Builder;
 .super Ljava/lang/Object;
-.source "BidiFormatter.java"
+.source "SourceFile"
 
 
 # instance fields
@@ -16,10 +16,10 @@
     .locals 1
 
     .prologue
-    .line 138
+    .line 137
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 139
+    .line 138
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v0
@@ -30,7 +30,7 @@
 
     invoke-direct {p0, v0}, Landroid/support/v4/text/BidiFormatter$Builder;->initialize(Z)V
 
-    .line 140
+    .line 139
     return-void
 .end method
 
@@ -38,17 +38,17 @@
     .locals 1
 
     .prologue
-    .line 156
+    .line 155
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 157
+    .line 156
     invoke-static {p1}, Landroid/support/v4/text/BidiFormatter;->access$000(Ljava/util/Locale;)Z
 
     move-result v0
 
     invoke-direct {p0, v0}, Landroid/support/v4/text/BidiFormatter$Builder;->initialize(Z)V
 
-    .line 158
+    .line 157
     return-void
 .end method
 
@@ -56,13 +56,13 @@
     .locals 0
 
     .prologue
-    .line 147
+    .line 146
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 148
+    .line 147
     invoke-direct {p0, p1}, Landroid/support/v4/text/BidiFormatter$Builder;->initialize(Z)V
 
-    .line 149
+    .line 148
     return-void
 .end method
 
@@ -70,7 +70,7 @@
     .locals 1
 
     .prologue
-    .line 197
+    .line 196
     if-eqz p0, :cond_0
 
     invoke-static {}, Landroid/support/v4/text/BidiFormatter;->access$200()Landroid/support/v4/text/BidiFormatter;
@@ -92,22 +92,22 @@
     .locals 1
 
     .prologue
-    .line 166
+    .line 165
     iput-boolean p1, p0, Landroid/support/v4/text/BidiFormatter$Builder;->mIsRtlContext:Z
 
-    .line 167
+    .line 166
     invoke-static {}, Landroid/support/v4/text/BidiFormatter;->access$100()Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/support/v4/text/BidiFormatter$Builder;->mTextDirectionHeuristicCompat:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
-    .line 168
+    .line 167
     const/4 v0, 0x2
 
     iput v0, p0, Landroid/support/v4/text/BidiFormatter$Builder;->mFlags:I
 
-    .line 169
+    .line 168
     return-void
 .end method
 
@@ -117,7 +117,7 @@
     .locals 5
 
     .prologue
-    .line 204
+    .line 203
     iget v0, p0, Landroid/support/v4/text/BidiFormatter$Builder;->mFlags:I
 
     const/4 v1, 0x2
@@ -126,21 +126,20 @@
 
     iget-object v0, p0, Landroid/support/v4/text/BidiFormatter$Builder;->mTextDirectionHeuristicCompat:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
-    .line 205
     invoke-static {}, Landroid/support/v4/text/BidiFormatter;->access$100()Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     move-result-object v1
 
     if-ne v0, v1, :cond_0
 
-    .line 206
+    .line 205
     iget-boolean v0, p0, Landroid/support/v4/text/BidiFormatter$Builder;->mIsRtlContext:Z
 
     invoke-static {v0}, Landroid/support/v4/text/BidiFormatter$Builder;->getDefaultInstanceFromContext(Z)Landroid/support/v4/text/BidiFormatter;
 
     move-result-object v0
 
-    .line 208
+    .line 207
     :goto_0
     return-object v0
 
@@ -164,10 +163,10 @@
     .locals 0
 
     .prologue
-    .line 192
+    .line 191
     iput-object p1, p0, Landroid/support/v4/text/BidiFormatter$Builder;->mTextDirectionHeuristicCompat:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
-    .line 193
+    .line 192
     return-object p0
 .end method
 
@@ -175,21 +174,21 @@
     .locals 1
 
     .prologue
-    .line 176
+    .line 175
     if-eqz p1, :cond_0
 
-    .line 177
+    .line 176
     iget v0, p0, Landroid/support/v4/text/BidiFormatter$Builder;->mFlags:I
 
     or-int/lit8 v0, v0, 0x2
 
     iput v0, p0, Landroid/support/v4/text/BidiFormatter$Builder;->mFlags:I
 
-    .line 181
+    .line 180
     :goto_0
     return-object p0
 
-    .line 179
+    .line 178
     :cond_0
     iget v0, p0, Landroid/support/v4/text/BidiFormatter$Builder;->mFlags:I
 

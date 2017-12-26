@@ -1,23 +1,8 @@
-.class public abstract Landroid/support/v4/app/FragmentContainer;
+.class interface abstract Landroid/support/v4/app/FragmentContainer;
 .super Ljava/lang/Object;
-.source "FragmentContainer.java"
-
-
-# direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    .prologue
-    .line 11
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
+.source "SourceFile"
 
 
 # virtual methods
-.method public abstract onFindViewById(I)Landroid/view/View;
-.end method
-
-.method public abstract onHasView()Z
+.method public abstract findViewById(I)Landroid/view/View;
 .end method

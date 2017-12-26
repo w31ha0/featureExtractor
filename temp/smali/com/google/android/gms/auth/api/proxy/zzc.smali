@@ -11,7 +11,7 @@
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator",
         "<",
-        "Lcom/google/android/gms/auth/api/proxy/ProxyRequest;",
+        "Lcom/google/android/gms/auth/api/proxy/ProxyResponse;",
         ">;"
     }
 .end annotation
@@ -26,52 +26,52 @@
     return-void
 .end method
 
-.method static zza(Lcom/google/android/gms/auth/api/proxy/ProxyRequest;Landroid/os/Parcel;I)V
-    .locals 5
+.method static zza(Lcom/google/android/gms/auth/api/proxy/ProxyResponse;Landroid/os/Parcel;I)V
+    .locals 4
 
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzaZ(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzac(Landroid/os/Parcel;)I
 
     move-result v0
 
     const/4 v1, 0x1
 
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->url:Ljava/lang/String;
+    iget v2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyResponse;->zzPu:I
 
-    invoke-static {p1, v1, v2, v4}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zza(Landroid/os/Parcel;ILjava/lang/String;Z)V
-
-    const/4 v1, 0x2
-
-    iget v2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->httpMethod:I
-
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzc(Landroid/os/Parcel;II)V
-
-    const/4 v1, 0x3
-
-    iget-wide v2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->timeoutMillis:J
-
-    invoke-static {p1, v1, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zza(Landroid/os/Parcel;IJ)V
-
-    const/4 v1, 0x4
-
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->body:[B
-
-    invoke-static {p1, v1, v2, v4}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zza(Landroid/os/Parcel;I[BZ)V
-
-    const/4 v1, 0x5
-
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->zzajR:Landroid/os/Bundle;
-
-    invoke-static {p1, v1, v2, v4}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zza(Landroid/os/Parcel;ILandroid/os/Bundle;Z)V
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;II)V
 
     const/16 v1, 0x3e8
 
-    iget v2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->versionCode:I
+    iget v2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyResponse;->versionCode:I
 
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzc(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;II)V
 
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzJ(Landroid/os/Parcel;I)V
+    const/4 v1, 0x2
+
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyResponse;->zzPv:Landroid/app/PendingIntent;
+
+    invoke-static {p1, v1, v2, p2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
+
+    const/4 v1, 0x3
+
+    iget v2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyResponse;->zzPw:I
+
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;II)V
+
+    const/4 v1, 0x4
+
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyResponse;->zzPt:Landroid/os/Bundle;
+
+    invoke-static {p1, v1, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;ILandroid/os/Bundle;Z)V
+
+    const/4 v1, 0x5
+
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyResponse;->zzPs:[B
+
+    invoke-static {p1, v1, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;I[BZ)V
+
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzH(Landroid/os/Parcel;I)V
 
     return-void
 .end method
@@ -81,7 +81,7 @@
 .method public synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/auth/api/proxy/zzc;->zzU(Landroid/os/Parcel;)Lcom/google/android/gms/auth/api/proxy/ProxyRequest;
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/auth/api/proxy/zzc;->zzI(Landroid/os/Parcel;)Lcom/google/android/gms/auth/api/proxy/ProxyResponse;
 
     move-result-object v0
 
@@ -91,150 +91,156 @@
 .method public synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/auth/api/proxy/zzc;->zzbj(I)[Lcom/google/android/gms/auth/api/proxy/ProxyRequest;
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/auth/api/proxy/zzc;->zzay(I)[Lcom/google/android/gms/auth/api/proxy/ProxyResponse;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public zzU(Landroid/os/Parcel;)Lcom/google/android/gms/auth/api/proxy/ProxyRequest;
-    .locals 10
+.method public zzI(Landroid/os/Parcel;)Lcom/google/android/gms/auth/api/proxy/ProxyResponse;
+    .locals 9
 
-    const/4 v3, 0x0
+    const/4 v6, 0x0
 
-    const/4 v7, 0x0
+    const/4 v4, 0x0
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzaY(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzab(Landroid/os/Parcel;)I
 
-    move-result v0
+    move-result v7
 
-    const-wide/16 v4, 0x0
+    move-object v5, v6
 
-    move-object v6, v7
+    move-object v3, v6
 
-    move-object v2, v7
+    move v2, v4
 
-    move v1, v3
+    move v1, v4
 
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
+    move-result v0
+
+    if-ge v0, v7, :cond_0
+
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzaa(Landroid/os/Parcel;)I
+
+    move-result v0
+
+    invoke-static {v0}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzbA(I)I
+
     move-result v8
 
-    if-ge v8, v0, :cond_0
+    sparse-switch v8, :sswitch_data_0
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzaX(Landroid/os/Parcel;)I
-
-    move-result v8
-
-    invoke-static {v8}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzdc(I)I
-
-    move-result v9
-
-    sparse-switch v9, :sswitch_data_0
-
-    invoke-static {p1, v8}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzb(Landroid/os/Parcel;I)V
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzb(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
     :sswitch_0
-    invoke-static {p1, v8}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzq(Landroid/os/Parcel;I)Ljava/lang/String;
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzg(Landroid/os/Parcel;I)I
 
-    move-result-object v2
+    move-result v2
 
     goto :goto_0
 
     :sswitch_1
-    invoke-static {p1, v8}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzg(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzg(Landroid/os/Parcel;I)I
 
-    move-result v3
+    move-result v1
 
     goto :goto_0
 
     :sswitch_2
-    invoke-static {p1, v8}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzi(Landroid/os/Parcel;I)J
+    sget-object v3, Landroid/app/PendingIntent;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    move-result-wide v4
+    invoke-static {p1, v0, v3}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zza(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/PendingIntent;
+
+    move-object v3, v0
 
     goto :goto_0
 
     :sswitch_3
-    invoke-static {p1, v8}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzt(Landroid/os/Parcel;I)[B
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzg(Landroid/os/Parcel;I)I
 
-    move-result-object v6
+    move-result v4
 
     goto :goto_0
 
     :sswitch_4
-    invoke-static {p1, v8}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzs(Landroid/os/Parcel;I)Landroid/os/Bundle;
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzq(Landroid/os/Parcel;I)Landroid/os/Bundle;
 
-    move-result-object v7
+    move-result-object v5
 
     goto :goto_0
 
     :sswitch_5
-    invoke-static {p1, v8}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzg(Landroid/os/Parcel;I)I
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzr(Landroid/os/Parcel;I)[B
 
-    move-result v1
+    move-result-object v6
 
     goto :goto_0
 
     :cond_0
     invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move-result v8
+    move-result v0
 
-    if-eq v8, v0, :cond_1
+    if-eq v0, v7, :cond_1
 
-    new-instance v1, Lcom/google/android/gms/common/internal/safeparcel/zzb$zza;
+    new-instance v0, Lcom/google/android/gms/common/internal/safeparcel/zza$zza;
 
-    const/16 v2, 0x25
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+    const-string v2, "Overread allowed size end="
 
-    const-string/jumbo v2, "Overread allowed size end="
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v2
+    invoke-virtual {v1, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-direct {v0, v1, p1}, Lcom/google/android/gms/common/internal/safeparcel/zza$zza;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
 
-    invoke-direct {v1, v0, p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb$zza;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
-
-    throw v1
+    throw v0
 
     :cond_1
-    new-instance v0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;
+    new-instance v0, Lcom/google/android/gms/auth/api/proxy/ProxyResponse;
 
-    invoke-direct/range {v0 .. v7}, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;-><init>(ILjava/lang/String;IJ[BLandroid/os/Bundle;)V
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/auth/api/proxy/ProxyResponse;-><init>(IILandroid/app/PendingIntent;ILandroid/os/Bundle;[B)V
 
     return-object v0
+
+    nop
 
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_0
-        0x2 -> :sswitch_1
-        0x3 -> :sswitch_2
-        0x4 -> :sswitch_3
-        0x5 -> :sswitch_4
-        0x3e8 -> :sswitch_5
+        0x2 -> :sswitch_2
+        0x3 -> :sswitch_3
+        0x4 -> :sswitch_4
+        0x5 -> :sswitch_5
+        0x3e8 -> :sswitch_1
     .end sparse-switch
 .end method
 
-.method public zzbj(I)[Lcom/google/android/gms/auth/api/proxy/ProxyRequest;
+.method public zzay(I)[Lcom/google/android/gms/auth/api/proxy/ProxyResponse;
     .locals 1
 
-    new-array v0, p1, [Lcom/google/android/gms/auth/api/proxy/ProxyRequest;
+    new-array v0, p1, [Lcom/google/android/gms/auth/api/proxy/ProxyResponse;
 
     return-object v0
 .end method

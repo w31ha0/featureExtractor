@@ -6,9 +6,9 @@
 
 
 # instance fields
-.field zzayh:Z
+.field zzVE:Z
 
-.field private final zzayi:Ljava/util/concurrent/BlockingQueue;
+.field private final zzVF:Ljava/util/concurrent/BlockingQueue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/BlockingQueue",
@@ -28,13 +28,13 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/google/android/gms/common/zza;->zzayh:Z
+    iput-boolean v0, p0, Lcom/google/android/gms/common/zza;->zzVE:Z
 
     new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/common/zza;->zzayi:Ljava/util/concurrent/BlockingQueue;
+    iput-object v0, p0, Lcom/google/android/gms/common/zza;->zzVF:Ljava/util/concurrent/BlockingQueue;
 
     return-void
 .end method
@@ -44,7 +44,7 @@
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/common/zza;->zzayi:Ljava/util/concurrent/BlockingQueue;
+    iget-object v0, p0, Lcom/google/android/gms/common/zza;->zzVF:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {v0, p2}, Ljava/util/concurrent/BlockingQueue;->add(Ljava/lang/Object;)Z
 
@@ -57,48 +57,50 @@
     return-void
 .end method
 
-.method public zza(JLjava/util/concurrent/TimeUnit;)Landroid/os/IBinder;
-    .locals 3
+.method public zzmh()Landroid/os/IBinder;
+    .locals 2
 
-    const-string/jumbo v0, "BlockingServiceConnection.getServiceWithTimeout() called on main thread"
+    invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
-    invoke-static {v0}, Lcom/google/android/gms/common/internal/zzac;->zzdk(Ljava/lang/String;)V
+    move-result-object v0
 
-    iget-boolean v0, p0, Lcom/google/android/gms/common/zza;->zzayh:Z
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
-    if-eqz v0, :cond_0
+    move-result-object v1
+
+    if-ne v0, v1, :cond_0
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    const-string/jumbo v1, "Cannot call get on this connection more than once"
+    const-string v1, "BlockingServiceConnection.getService() called on main thread"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
     :cond_0
+    iget-boolean v0, p0, Lcom/google/android/gms/common/zza;->zzVE:Z
+
+    if-eqz v0, :cond_1
+
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    invoke-direct {v0}, Ljava/lang/IllegalStateException;-><init>()V
+
+    throw v0
+
+    :cond_1
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/google/android/gms/common/zza;->zzayh:Z
+    iput-boolean v0, p0, Lcom/google/android/gms/common/zza;->zzVE:Z
 
-    iget-object v0, p0, Lcom/google/android/gms/common/zza;->zzayi:Ljava/util/concurrent/BlockingQueue;
+    iget-object v0, p0, Lcom/google/android/gms/common/zza;->zzVF:Ljava/util/concurrent/BlockingQueue;
 
-    invoke-interface {v0, p1, p2, p3}, Ljava/util/concurrent/BlockingQueue;->poll(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/concurrent/BlockingQueue;->take()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/os/IBinder;
 
-    if-nez v0, :cond_1
-
-    new-instance v0, Ljava/util/concurrent/TimeoutException;
-
-    const-string/jumbo v1, "Timed out waiting for the service connection"
-
-    invoke-direct {v0, v1}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
     return-object v0
 .end method

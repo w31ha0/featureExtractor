@@ -1,12 +1,6 @@
 .class Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;
 .super Landroid/support/v4/app/ActivityOptionsCompat;
-.source "ActivityOptionsCompat.java"
-
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0x10
-.end annotation
+.source "SourceFile"
 
 
 # instance fields
@@ -18,13 +12,13 @@
     .locals 0
 
     .prologue
-    .line 316
+    .line 115
     invoke-direct {p0}, Landroid/support/v4/app/ActivityOptionsCompat;-><init>()V
 
-    .line 317
+    .line 116
     iput-object p1, p0, Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;->mImpl:Landroid/support/v4/app/ActivityOptionsCompatJB;
 
-    .line 318
+    .line 117
     return-void
 .end method
 
@@ -34,7 +28,7 @@
     .locals 1
 
     .prologue
-    .line 322
+    .line 121
     iget-object v0, p0, Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;->mImpl:Landroid/support/v4/app/ActivityOptionsCompatJB;
 
     invoke-virtual {v0}, Landroid/support/v4/app/ActivityOptionsCompatJB;->toBundle()Landroid/os/Bundle;
@@ -48,22 +42,22 @@
     .locals 2
 
     .prologue
-    .line 327
+    .line 126
     instance-of v0, p1, Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;
 
     if-eqz v0, :cond_0
 
-    .line 328
+    .line 127
     check-cast p1, Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;
 
-    .line 329
+    .line 128
     iget-object v0, p0, Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;->mImpl:Landroid/support/v4/app/ActivityOptionsCompatJB;
 
     iget-object v1, p1, Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;->mImpl:Landroid/support/v4/app/ActivityOptionsCompatJB;
 
     invoke-virtual {v0, v1}, Landroid/support/v4/app/ActivityOptionsCompatJB;->update(Landroid/support/v4/app/ActivityOptionsCompatJB;)V
 
-    .line 331
+    .line 130
     :cond_0
     return-void
 .end method

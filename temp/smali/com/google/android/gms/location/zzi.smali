@@ -11,7 +11,7 @@
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator",
         "<",
-        "Lcom/google/android/gms/location/GeofencingRequest;",
+        "Lcom/google/android/gms/location/LocationSettingsStates;",
         ">;"
     }
 .end annotation
@@ -26,40 +26,78 @@
     return-void
 .end method
 
-.method static zza(Lcom/google/android/gms/location/GeofencingRequest;Landroid/os/Parcel;I)V
-    .locals 4
+.method static zza(Lcom/google/android/gms/location/LocationSettingsStates;Landroid/os/Parcel;I)V
+    .locals 3
 
-    const/4 v3, 0x0
-
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzaZ(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzac(Landroid/os/Parcel;)I
 
     move-result v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {p0}, Lcom/google/android/gms/location/GeofencingRequest;->zzIe()Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-static {p1, v1, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzc(Landroid/os/Parcel;ILjava/util/List;Z)V
-
-    const/4 v1, 0x2
-
-    invoke-virtual {p0}, Lcom/google/android/gms/location/GeofencingRequest;->getInitialTrigger()I
+    invoke-virtual {p0}, Lcom/google/android/gms/location/LocationSettingsStates;->isGpsUsable()Z
 
     move-result v2
 
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzc(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;IZ)V
+
+    const/16 v1, 0x3e8
+
+    invoke-virtual {p0}, Lcom/google/android/gms/location/LocationSettingsStates;->getVersionCode()I
+
+    move-result v2
+
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;II)V
+
+    const/4 v1, 0x2
+
+    invoke-virtual {p0}, Lcom/google/android/gms/location/LocationSettingsStates;->isNetworkLocationUsable()Z
+
+    move-result v2
+
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;IZ)V
 
     const/4 v1, 0x3
 
-    invoke-virtual {p0}, Lcom/google/android/gms/location/GeofencingRequest;->getTag()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/google/android/gms/location/LocationSettingsStates;->isBleUsable()Z
 
-    move-result-object v2
+    move-result v2
 
-    invoke-static {p1, v1, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zza(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;IZ)V
 
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzc;->zzJ(Landroid/os/Parcel;I)V
+    const/4 v1, 0x4
+
+    invoke-virtual {p0}, Lcom/google/android/gms/location/LocationSettingsStates;->isGpsPresent()Z
+
+    move-result v2
+
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;IZ)V
+
+    const/4 v1, 0x5
+
+    invoke-virtual {p0}, Lcom/google/android/gms/location/LocationSettingsStates;->isNetworkLocationPresent()Z
+
+    move-result v2
+
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;IZ)V
+
+    const/4 v1, 0x6
+
+    invoke-virtual {p0}, Lcom/google/android/gms/location/LocationSettingsStates;->isBlePresent()Z
+
+    move-result v2
+
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;IZ)V
+
+    const/4 v1, 0x7
+
+    invoke-virtual {p0}, Lcom/google/android/gms/location/LocationSettingsStates;->zzus()Z
+
+    move-result v2
+
+    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;IZ)V
+
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzH(Landroid/os/Parcel;I)V
 
     return-void
 .end method
@@ -69,7 +107,7 @@
 .method public synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/location/zzi;->zzgK(Landroid/os/Parcel;)Lcom/google/android/gms/location/GeofencingRequest;
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/location/zzi;->zzeh(Landroid/os/Parcel;)Lcom/google/android/gms/location/LocationSettingsStates;
 
     move-result-object v0
 
@@ -79,124 +117,168 @@
 .method public synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
 
-    invoke-virtual {p0, p1}, Lcom/google/android/gms/location/zzi;->zzki(I)[Lcom/google/android/gms/location/GeofencingRequest;
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/location/zzi;->zzgz(I)[Lcom/google/android/gms/location/LocationSettingsStates;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public zzgK(Landroid/os/Parcel;)Lcom/google/android/gms/location/GeofencingRequest;
-    .locals 6
+.method public zzeh(Landroid/os/Parcel;)Lcom/google/android/gms/location/LocationSettingsStates;
+    .locals 11
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzaY(Landroid/os/Parcel;)I
+    const/4 v8, 0x0
 
-    move-result v3
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzab(Landroid/os/Parcel;)I
 
-    const/4 v2, 0x0
+    move-result v0
 
-    const/4 v1, 0x0
+    move v7, v8
 
-    const-string/jumbo v0, ""
+    move v6, v8
+
+    move v5, v8
+
+    move v4, v8
+
+    move v3, v8
+
+    move v2, v8
+
+    move v1, v8
 
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move-result v4
+    move-result v9
 
-    if-ge v4, v3, :cond_0
+    if-ge v9, v0, :cond_0
 
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzaX(Landroid/os/Parcel;)I
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzaa(Landroid/os/Parcel;)I
 
-    move-result v4
+    move-result v9
 
-    invoke-static {v4}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzdc(I)I
+    invoke-static {v9}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzbA(I)I
 
-    move-result v5
+    move-result v10
 
-    packed-switch v5, :pswitch_data_0
+    sparse-switch v10, :sswitch_data_0
 
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzb(Landroid/os/Parcel;I)V
-
-    goto :goto_0
-
-    :pswitch_0
-    sget-object v2, Lcom/google/android/gms/internal/zzasm;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    invoke-static {p1, v4, v2}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzc(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
-
-    move-result-object v2
+    invoke-static {p1, v9}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzb(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
-    :pswitch_1
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzg(Landroid/os/Parcel;I)I
+    :sswitch_0
+    invoke-static {p1, v9}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzc(Landroid/os/Parcel;I)Z
+
+    move-result v2
+
+    goto :goto_0
+
+    :sswitch_1
+    invoke-static {p1, v9}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzg(Landroid/os/Parcel;I)I
 
     move-result v1
 
     goto :goto_0
 
-    :pswitch_2
-    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zzq(Landroid/os/Parcel;I)Ljava/lang/String;
+    :sswitch_2
+    invoke-static {p1, v9}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzc(Landroid/os/Parcel;I)Z
 
-    move-result-object v0
+    move-result v3
+
+    goto :goto_0
+
+    :sswitch_3
+    invoke-static {p1, v9}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzc(Landroid/os/Parcel;I)Z
+
+    move-result v4
+
+    goto :goto_0
+
+    :sswitch_4
+    invoke-static {p1, v9}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzc(Landroid/os/Parcel;I)Z
+
+    move-result v5
+
+    goto :goto_0
+
+    :sswitch_5
+    invoke-static {p1, v9}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzc(Landroid/os/Parcel;I)Z
+
+    move-result v6
+
+    goto :goto_0
+
+    :sswitch_6
+    invoke-static {p1, v9}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzc(Landroid/os/Parcel;I)Z
+
+    move-result v7
+
+    goto :goto_0
+
+    :sswitch_7
+    invoke-static {p1, v9}, Lcom/google/android/gms/common/internal/safeparcel/zza;->zzc(Landroid/os/Parcel;I)Z
+
+    move-result v8
 
     goto :goto_0
 
     :cond_0
     invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    move-result v4
+    move-result v9
 
-    if-eq v4, v3, :cond_1
+    if-eq v9, v0, :cond_1
 
-    new-instance v0, Lcom/google/android/gms/common/internal/safeparcel/zzb$zza;
-
-    const/16 v1, 0x25
+    new-instance v1, Lcom/google/android/gms/common/internal/safeparcel/zza$zza;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v1, "Overread allowed size end="
+    const-string v3, "Overread allowed size end="
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-direct {v0, v1, p1}, Lcom/google/android/gms/common/internal/safeparcel/zzb$zza;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
+    invoke-direct {v1, v0, p1}, Lcom/google/android/gms/common/internal/safeparcel/zza$zza;-><init>(Ljava/lang/String;Landroid/os/Parcel;)V
 
-    throw v0
+    throw v1
 
     :cond_1
-    new-instance v3, Lcom/google/android/gms/location/GeofencingRequest;
+    new-instance v0, Lcom/google/android/gms/location/LocationSettingsStates;
 
-    invoke-direct {v3, v2, v1, v0}, Lcom/google/android/gms/location/GeofencingRequest;-><init>(Ljava/util/List;ILjava/lang/String;)V
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/gms/location/LocationSettingsStates;-><init>(IZZZZZZZ)V
 
-    return-object v3
+    return-object v0
 
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-    .end packed-switch
+    :sswitch_data_0
+    .sparse-switch
+        0x1 -> :sswitch_0
+        0x2 -> :sswitch_2
+        0x3 -> :sswitch_3
+        0x4 -> :sswitch_4
+        0x5 -> :sswitch_5
+        0x6 -> :sswitch_6
+        0x7 -> :sswitch_7
+        0x3e8 -> :sswitch_1
+    .end sparse-switch
 .end method
 
-.method public zzki(I)[Lcom/google/android/gms/location/GeofencingRequest;
+.method public zzgz(I)[Lcom/google/android/gms/location/LocationSettingsStates;
     .locals 1
 
-    new-array v0, p1, [Lcom/google/android/gms/location/GeofencingRequest;
+    new-array v0, p1, [Lcom/google/android/gms/location/LocationSettingsStates;
 
     return-object v0
 .end method

@@ -1,16 +1,17 @@
-.class public final Landroid/support/v4/os/ParcelableCompat;
+.class public Landroid/support/v4/os/ParcelableCompat;
 .super Ljava/lang/Object;
-.source "ParcelableCompat.java"
+.source "SourceFile"
 
 
 # direct methods
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 60
+    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 42
     return-void
 .end method
 
@@ -39,16 +40,11 @@
     .line 37
     invoke-static {p0}, Landroid/support/v4/os/ParcelableCompatCreatorHoneycombMR2Stub;->instantiate(Landroid/support/v4/os/ParcelableCompatCreatorCallbacks;)Landroid/os/Parcelable$Creator;
 
-    move-result-object v0
-
     .line 39
-    :goto_0
-    return-object v0
-
     :cond_0
     new-instance v0, Landroid/support/v4/os/ParcelableCompat$CompatCreator;
 
     invoke-direct {v0, p0}, Landroid/support/v4/os/ParcelableCompat$CompatCreator;-><init>(Landroid/support/v4/os/ParcelableCompatCreatorCallbacks;)V
 
-    goto :goto_0
+    return-object v0
 .end method
