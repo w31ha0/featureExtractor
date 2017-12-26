@@ -106,7 +106,7 @@ while(1):
                     totalFilesSucceed += 1
                     if family == "benign":
                         print "Moving parsed bengin sample"
-                        os.system("mv "+apk+" "+PROJECT_PATH+"benign/benign/")
+                        os.system("mv "+apkfile+" "+PROJECT_PATH+"benign/benign/")
                 else:
                     continue
             except Exception as e:

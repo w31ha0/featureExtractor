@@ -70,10 +70,10 @@ os.system('rm '+resultsFile2)
 os.system('rm '+resultsFile3)
 
 loadDataSet()
-maxDepth_min=int(0.01 * trainingPortion * len(fullSet))
+maxDepth_min=1
 maxDepth_max=int(trainingPortion * len(fullSet))
 maxDepth_step=10
-min_samples_min=int(0.01 * trainingPortion * len(fullSet))
+min_samples_min=1
 min_samples_max=int(trainingPortion * len(fullSet))
 min_samples_step=10
 split_min = 2
