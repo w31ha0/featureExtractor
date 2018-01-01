@@ -1,8 +1,9 @@
 import os,sys
 
+
 dir_path = sys.argv[1]
-classifiers = ['learnTree.py']
-os.system('python rawFeaturesToBinaryFeatures.py /root/FYP/featuresOutput')
+classifiers = ['learnTree.py','learnSVM.py','learnNeighbours.py']
+os.system('python rawFeaturesToBinaryFeatures.py /home/ubuntu/featuresOutput')
 
 for classifier in classifiers:
     parsedFamilies = []
