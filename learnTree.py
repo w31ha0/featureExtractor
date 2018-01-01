@@ -10,7 +10,8 @@ from xlutils.copy import copy
 
 def fillParams(min,max,step):
 	array = []
-	i = min
+	array.append(min)
+	i = min+step
 	while i <= max:
 		array.append(i)
 		i += step
@@ -80,16 +81,19 @@ split_min = 2
 split_max = int(trainingPortion * len(fullSet))
 split_step = 10
 
+
 maxDepths = fillParams(maxDepth_min,maxDepth_max,maxDepth_step)
 min_samples = fillParams(min_samples_min,min_samples_max,min_samples_step)
 splits = fillParams(split_min,split_max,split_step)
+print str(splits)
+
 param_grid = {'min_samples_split':splits,'max_depth':maxDepths,'min_samples_leaf':min_samples}
 clf = DecisionTreeClassifier(criterion = "gini")
 grid_search = GridSearchCV(clf, param_grid)
 
 
 #print str(maliciousDataSet)
-if len(maliciousDataSet) < 5:
+if len(maliciousDataSet) < 10:
 	print "Skipping "+family+" because there are not enough data"
 	sys.exit(1)
 noOfTrainingSets = int(trainingPortion*len(maliciousDataSet))

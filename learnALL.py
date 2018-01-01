@@ -1,7 +1,7 @@
 import os,sys
 
 dir_path = sys.argv[1]
-classifiers = ['learnSVM.py','learnTree.py','learnNeighbours.py']
+classifiers = ['learnTree.py']
 os.system('python rawFeaturesToBinaryFeatures.py /root/FYP/featuresOutput')
 
 for classifier in classifiers:
