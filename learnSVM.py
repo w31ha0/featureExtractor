@@ -121,10 +121,10 @@ print "Total Number of samples: " + str(len(fullSet))
 grid_search.fit(x_train, y_train)
 predictions = grid_search.predict(x_test)
 cm = metrics.confusion_matrix(y_test,predictions)
-FP = (cm.sum(axis=0) - np.diag(cm) )[0]
-FN = (cm.sum(axis=1) - np.diag(cm))[0]
-TP = (np.diag(cm))[0]
-TN = (cm.sum() - (FP + FN + TP))
+FP = float((cm.sum(axis=0) - np.diag(cm) )[0])
+FN = float((cm.sum(axis=1) - np.diag(cm))[0])
+TP = float((np.diag(cm))[0])
+TN = float(cm.sum() - (FP + FN + TP))
 
 print "FP:"+str(FP)
 print "FN:"+str(FN)
@@ -147,7 +147,8 @@ FNR = FN/(TP+FN)
 FDR = FP/(TP+FP)
 
 # Overall accuracy
-ACC = grid_search.score(x_test,y_test)
+ACC = (TP+TN)/(TP+FP+FN+TN)
+#ACC = grid_search.score(x_test,y_test)
 params = grid_search.best_params_
 print "TPR:"+str(TPR)+",TNR:"+str(TNR)+",FPR:"+str(FPR)+",FNR:"+str(FNR)+",ACC:"+str(ACC)+" with params "+str(params)
 

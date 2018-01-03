@@ -166,7 +166,8 @@ FNR = FN/(TP+FN)
 FDR = FP/(TP+FP)
 
 # Overall accuracy
-ACC = grid_search.score(x_test,y_test)
+ACC = (TP+TN)/(TP+FP+FN+TN)
+#ACC = grid_search.score(x_test,y_test)
 params = grid_search.best_params_
 print "TPR:"+str(TPR)+",TNR:"+str(TNR)+",FPR:"+str(FPR)+",FNR:"+str(FNR)+",ACC:"+str(ACC)+" with params "+str(params)
 
