@@ -1,9 +1,10 @@
 import os,sys
-
+from constants import *
 
 dir_path = sys.argv[1]
 classifiers = ['learnTree.py','learnSVM.py','learnNeighbours.py']
-os.system('python rawFeaturesToBinaryFeatures.py /home/ubuntu/featuresOutput')
+print PROJECT_PATH + 'featuresOutput'
+os.system('python rawFeaturesToBinaryFeatures.py '+PROJECT_PATH+'+featuresOutput')
 
 for classifier in classifiers:
     parsedFamilies = []

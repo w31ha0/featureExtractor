@@ -57,8 +57,8 @@ def loadDataSet():
 
 trainingPortion = 0.8
 family = sys.argv[1]
-malicious_dir_path = PROJECT_PATH+"featuresOutput/"+family
-benign_dir_path = PROJECT_PATH+"featuresOutput/benign"
+malicious_dir_path = PROJECT_PATH+"featuresOutput2/"+family
+benign_dir_path = PROJECT_PATH+"featuresOutput2/benign"
 maliciousDataSet = []
 beinignDataSet = []
 fullSet = []
@@ -125,12 +125,12 @@ temp = beinignDataSet[-int(noOfTestSets/2):]
 x_test.extend(temp)
 for sample in temp:
     y_test.append(0)
- 
-x_train = preprocessing.scale(np.array(x_train))   
-x_test = preprocessing.scale(np.array(x_test))  
+
+x_train = preprocessing.scale(np.array(x_train))
+x_test = preprocessing.scale(np.array(x_test))
 print str(x_train)
 print str(x_test)
- 
+
 print "No of training samples:" + str(len(x_train))
 print "No of test samples:" + str(len(x_test))
 print "No of malicious samples: " + str(len(maliciousDataSet))
@@ -153,7 +153,7 @@ print "TN:"+str(TN)
 # Sensitivity, hit rate, recall, or true positive rate
 TPR = TP/(TP+FN)
 # Specificity or true negative rate
-TNR = TN/(TN+FP) 
+TNR = TN/(TN+FP)
 # Precision or positive predictive value
 PPV = TP/(TP+FP)
 # Negative predictive value
@@ -171,7 +171,7 @@ ACC = (TP+TN)/(TP+FP+FN+TN)
 params = grid_search.best_params_
 print "TPR:"+str(TPR)+",TNR:"+str(TNR)+",FPR:"+str(FPR)+",FNR:"+str(FNR)+",ACC:"+str(ACC)+" with params "+str(params)
 
-rb = open_workbook("learning_results.csv")
+rb = open_workbook("learning_results2.csv")
 sh = rb.sheet_by_name("Tree")
 book = copy(rb)
 sh2 = book.get_sheet(1)
@@ -180,16 +180,16 @@ newRow = sh.nrows
 for i in range(0,newRow):
     value = sh.col_values(0)[i]
     if value == family:
-        sh2.write(i+1,1,str(ACC))
-        sh2.write(i+1,2,str(TPR))
-        sh2.write(i+1,3,str(TNR))
-        sh2.write(i+1,4,str(FPR))
-        sh2.write(i+1,5,str(FNR))
-        sh2.write(i+1,6,str(params['min_samples_split']))
-        sh2.write(i+1,7,str(params['max_depth']))
-        sh2.write(i+1,8,str(params['min_samples_leaf']))
-        sh2.write(i+1,9,str(len(maliciousDataSet)))
-        sh2.write(i+1,10,str(len(beinignDataSet)))
+        sh2.write(i,1,str(ACC))
+        sh2.write(i,2,str(TPR))
+        sh2.write(i,3,str(TNR))
+        sh2.write(i,4,str(FPR))
+        sh2.write(i,5,str(FNR))
+        sh2.write(i,6,str(params['min_samples_split']))
+        sh2.write(i,7,str(params['max_depth']))
+        sh2.write(i,8,str(params['min_samples_leaf']))
+        sh2.write(i,9,str(len(maliciousDataSet)))
+        sh2.write(i,10,str(len(beinignDataSet)))
         break
     elif i == (newRow-1):
         sh2.write(newRow,0,str(family))
@@ -202,7 +202,7 @@ for i in range(0,newRow):
         sh2.write(newRow,7,str(params['max_depth']))
         sh2.write(newRow,8,str(params['min_samples_leaf']))
         sh2.write(newRow,9,str(len(maliciousDataSet)))
-        sh2.write(newRow,10,str(len(beinignDataSet)))        
+        sh2.write(newRow,10,str(len(beinignDataSet)))
     #print value
 #sh.write()
 
