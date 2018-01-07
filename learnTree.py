@@ -48,6 +48,7 @@ def loadDataSet():
                 #print "Read file " + name + " with data " + data
                 f.close()
                 array = data.split(' ')
+                array = array[:163]
                 results = map(int, array[:-1])
                 #print str(results)
                 beinignDataSet.append(results)
@@ -55,33 +56,24 @@ def loadDataSet():
     print "Combining benign and malicious data sets"
     fullSet = maliciousDataSet + beinignDataSet
 
-trainingPortion = 0.8
+trainingPortion = float(sys.argv[2])
 family = sys.argv[1]
 malicious_dir_path = PROJECT_PATH+"featuresOutput2/"+family
 benign_dir_path = PROJECT_PATH+"featuresOutput2/benign"
 maliciousDataSet = []
 beinignDataSet = []
 fullSet = []
-resultsFile1 = PROJECT_PATH+"machinelearningResults/"+family+"/"+family+'_Tree_random'
-resultsFile2 = PROJECT_PATH+"machinelearningResults/"+family+"/"+family+'_Tree_depth'
-resultsFile3 = PROJECT_PATH+"machinelearningResults/"+family+"/"+family+'_Tree_sample'
-
-os.system('mkdir '+PROJECT_PATH+"machinelearningResults/")
-os.system('mkdir '+PROJECT_PATH+"machinelearningResults/"+family)
-os.system('rm '+resultsFile1)
-os.system('rm '+resultsFile2)
-os.system('rm '+resultsFile3)
 
 loadDataSet()
 maxDepth_min=1
 maxDepth_max=int(trainingPortion * len(fullSet))
-maxDepth_step=10
+maxDepth_step=int(0.05*maxDepth_max)
 min_samples_min=1
 min_samples_max=int(trainingPortion * len(fullSet))
-min_samples_step=10
+min_samples_step=int(0.05*min_samples_max)
 split_min = 2
 split_max = int(trainingPortion * len(fullSet))
-split_step = 10
+split_step = int(0.05*split_max)
 
 
 maxDepths = fillParams(maxDepth_min,maxDepth_max,maxDepth_step)
@@ -126,16 +118,14 @@ x_test.extend(temp)
 for sample in temp:
     y_test.append(0)
 
-x_train = preprocessing.scale(np.array(x_train))
-x_test = preprocessing.scale(np.array(x_test))
-print str(x_train)
-print str(x_test)
-
 print "No of training samples:" + str(len(x_train))
 print "No of test samples:" + str(len(x_test))
 print "No of malicious samples: " + str(len(maliciousDataSet))
 print "No of benign samples: " + str(len(beinignDataSet))
 print "Total Number of samples: " + str(len(fullSet))
+
+x_train = preprocessing.scale(np.array(x_train))
+x_test = preprocessing.scale(np.array(x_test))
 
 grid_search.fit(x_train, y_train)
 predictions = grid_search.predict(x_test)
@@ -207,6 +197,6 @@ for i in range(0,newRow):
 #sh.write()
 
 try:
-    rb.save("learning_results.csv")
+    rb.save("learning_results2.csv")
 except:
-    book.save("learning_results.csv")
+    book.save("learning_results2.csv")

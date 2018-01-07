@@ -6,7 +6,8 @@ dir_path = sys.argv[1]
 for path, subdirs, files in os.walk(dir_path):
     for name in files:
         fullpath = os.path.join(path, name)
-        family = fullpath.split('/')[4]
+        family = fullpath.split('/')[6]
+        print "family is "+family
         if ".txt" in family:
             continue
         os.system("mkdir "+PROJECT_PATH+"featuresOutput2/"+family+"/binaryForm")

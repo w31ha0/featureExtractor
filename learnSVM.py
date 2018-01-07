@@ -36,8 +36,6 @@ def loadDataSet():
     #load benignSet
     for path, subdirs, files in os.walk(benign_dir_path):
         for name in files:
-            if len(beinignDataSet) == len(maliciousDataSet):
-                break
             fullpath = os.path.join(path, name)
             #print name
             if "binary" in name:
@@ -46,9 +44,15 @@ def loadDataSet():
                 #print "Read file " + name + " with data " + data
                 f.close()
                 array = data.split(' ')
+                #print str(len(array))
+                array = array[:163]
                 results = map(int, array[:-1])
                 #print str(results)
                 beinignDataSet.append(results)
+
+    if len(beinignDataSet) > len(maliciousDataSet):
+        shuffle(beinignDataSet)
+        beinignDataSet = beinignDataSet[:len(maliciousDataSet)]
 
     print "Combining benign and malicious data sets"
     fullSet = maliciousDataSet + beinignDataSet
@@ -72,7 +76,7 @@ Gammas = fillParams(gamma_min,gamma_max,gamma_step)
 param_grid = {'C':Cs,'gamma':Gammas}
 clf = svm.SVC()
 grid_search = GridSearchCV(clf, param_grid)
-trainingPortion = 0.8
+trainingPortion = float(sys.argv[2])
 
 loadDataSet()
 if len(maliciousDataSet) < 10:
@@ -187,6 +191,6 @@ for i in range(0,newRow):
 #sh.write()
 
 try:
-    rb.save("learning_results.csv")
+    rb.save("learning_results2.csv")
 except:
-    book.save("learning_results.csv")
+    book.save("learning_results2.csv")

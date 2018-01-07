@@ -47,6 +47,7 @@ def loadDataSet():
                 #print "Read file " + name + " with data " + data
                 f.close()
                 array = data.split(' ')
+                array = array[:163]
                 results = map(int, array[:-1])
                 #print str(results)
                 beinignDataSet.append(results)
@@ -54,7 +55,7 @@ def loadDataSet():
     print "Combining benign and malicious data sets"
     fullSet = maliciousDataSet + beinignDataSet
 
-trainingPortion = 0.8
+trainingPortion = float(sys.argv[2])
 family = sys.argv[1]
 malicious_dir_path = PROJECT_PATH+"featuresOutput2/"+family
 benign_dir_path = PROJECT_PATH+"featuresOutput2/benign"
@@ -65,19 +66,13 @@ resultsFile1 = PROJECT_PATH+"machinelearningResults/"+family+"/"+family+'_neighb
 resultsFile2 = PROJECT_PATH+"machinelearningResults/"+family+"/"+family+'_neighbour_leaf'
 resultsFile3 = PROJECT_PATH+"machinelearningResults/"+family+"/"+family+'_neighbour_p'
 
-os.system('mkdir '+PROJECT_PATH+"machinelearningResults/")
-os.system('mkdir '+PROJECT_PATH+"machinelearningResults/"+family)
-os.system('rm '+resultsFile1)
-os.system('rm '+resultsFile2)
-os.system('rm '+resultsFile3)
-
 loadDataSet()
 if len(maliciousDataSet) < 10:
     print "Skipping "+family+" because there are not enough data"
     sys.exit(1)
 neighbour_min = 1
 neighbour_max=int(0.5*trainingPortion*len(fullSet))
-neighbour_step=5
+neighbour_step=int(0.03 * neighbour_max)
 
 print "Max neighbours "+str(neighbour_max)
 '''
@@ -204,6 +199,6 @@ for i in range(0,newRow):
 #sh.write()
 
 try:
-    rb.save("learning_results.csv")
+    rb.save("learning_results2.csv")
 except:
-    book.save("learning_results.csv")
+    book.save("learning_results2.csv")
