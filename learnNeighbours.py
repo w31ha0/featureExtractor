@@ -19,13 +19,13 @@ def fillParams(min,max,step):
     return array
 
 def loadDataSet():
-    global fullSet
+    global fullSet,maliciousDataSet,beinignDataSet
     #loadMalwareSet
     for path, subdirs, files in os.walk(malicious_dir_path):
         for name in files:
             fullpath = os.path.join(path, name)
             #print name
-            if "binary" in name:
+            if "binary123" in name:
                 f = open(fullpath,"r")
                 data = f.read()
                 #print "Read file " + name + " with data " + data
@@ -41,7 +41,7 @@ def loadDataSet():
                 break
             fullpath = os.path.join(path, name)
             #print name
-            if "binary" in name:
+            if "binary123" in name:
                 f = open(fullpath,"r")
                 data = f.read()
                 #print "Read file " + name + " with data " + data

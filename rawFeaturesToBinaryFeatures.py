@@ -6,17 +6,19 @@ dir_path = sys.argv[1]
 for path, subdirs, files in os.walk(dir_path):
     for name in files:
         fullpath = os.path.join(path, name)
-        family = fullpath.split('/')[6]
+        family = fullpath.split('/')[4]
         print "family is "+family
         if ".txt" in family:
             continue
         os.system("mkdir "+PROJECT_PATH+"featuresOutput2/"+family+"/binaryForm")
-        if name.endswith('txt') and "binary" not in name:
+        if name.endswith('txt') and "binary123" not in name:
             print "Reading contents of " + name
             f = open(fullpath,"r")
             features = f.readlines()
             f.close()
-            f2 = open(PROJECT_PATH+"featuresOutput2/"+family+"/binaryForm/binary"+name,"w+")
+            fileName = PROJECT_PATH+"featuresOutput2/"+family+"/binaryForm/binary123"+name
+            print "Creating file "+fileName
+            f2 = open(fileName,"w+")
             for feature in features:
                 #print feature
                 if ":::" not in feature:

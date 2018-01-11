@@ -9,6 +9,10 @@ import os,sys
 from random import shuffle
 import numpy as np
 
+maliciousDataSet = []
+beinignDataSet = []
+fullSet = []
+
 def fillParams(min,max,step):
     array = []
     i = min
@@ -18,19 +22,22 @@ def fillParams(min,max,step):
     return array
 
 def loadDataSet():
-    global fullSet
+    global fullSet,maliciousDataSet,beinignDataSet
     #loadMalwareSet
     for path, subdirs, files in os.walk(malicious_dir_path):
         for name in files:
             fullpath = os.path.join(path, name)
             #print name
-            if "binary" in name:
+            if "binary123" in name:
                 f = open(fullpath,"r")
                 data = f.read()
                 #print "Read file " + name + " with data " + data
                 f.close()
                 array = data.split(' ')
+                array = array[:163]
                 results = map(int, array[:-1])
+                if len(results) != 162:
+                    print str(len(results))+" for "+fullpath
                 #print str(results)
                 maliciousDataSet.append(results)
     #load benignSet
@@ -38,21 +45,28 @@ def loadDataSet():
         for name in files:
             fullpath = os.path.join(path, name)
             #print name
-            if "binary" in name:
+            if "binary123" in name:
                 f = open(fullpath,"r")
                 data = f.read()
                 #print "Read file " + name + " with data " + data
                 f.close()
                 array = data.split(' ')
+                #print str(array)
+                #print fullpath
                 #print str(len(array))
                 array = array[:163]
                 results = map(int, array[:-1])
+                if len(results) != 162:
+                    print str(len(results))+" for "+fullpath
                 #print str(results)
                 beinignDataSet.append(results)
 
     if len(beinignDataSet) > len(maliciousDataSet):
         shuffle(beinignDataSet)
         beinignDataSet = beinignDataSet[:len(maliciousDataSet)]
+        for b in beinignDataSet:
+            if len(b) != 162:
+                print str(len(b))+" for "
 
     print "Combining benign and malicious data sets"
     fullSet = maliciousDataSet + beinignDataSet
@@ -60,9 +74,7 @@ def loadDataSet():
 family = sys.argv[1]
 malicious_dir_path = PROJECT_PATH+"featuresOutput2/"+family
 benign_dir_path = PROJECT_PATH+"featuresOutput2/benign"
-maliciousDataSet = []
-beinignDataSet = []
-fullSet = []
+
 
 gamma_min = 2**(-15)
 gamma_max = 2**4
