@@ -19,8 +19,7 @@ allGetMethodCode = []
 
 nonAsciiCounter = 0
 
-
-def traveseAll(sh,startColumn):
+def traveseAll(sh,startColumn,TEMP_DIRECTORY):
     global nonAsciiCounter,allSensitiveAPIS,allNetworkAddresses,allClassLoadingCode,allReflectionCode,allDexCode,allDecryptionCode,allNativeCode,nonAsciiCounter,allInnerJarAPKFiles,features,allDoFinalCode,allGetMethodCode
 
     dir_path = os.path.dirname(os.path.realpath(__file__)) + '/' + TEMP_DIRECTORY

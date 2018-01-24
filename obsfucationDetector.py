@@ -4,7 +4,7 @@ import os,subprocess
 from sharedFunctions import *
 from featuresStruct import features
 
-def parseDex(sh):
+def parseDex(sh,TEMP_DIRECTORY):
     dir_path = os.path.dirname(os.path.realpath(__file__))
     for path, subdirs, files in os.walk(dir_path):
         for name in files:

@@ -9,7 +9,7 @@ os.system(cmd)
 cmd = 'python -W ignore rawFeaturesToBinaryFeatures.py '+PROJECT_PATH+'featuresOutput2/'
 os.system(cmd)
 trainingPortion = 0.5
-
+noOfIterations = 5
 
 for classifier in classifiers:
     parsedFamilies = []
@@ -26,4 +26,4 @@ for classifier in classifiers:
             if ".txt" in family:
                 continue
             print "Learning family:"+family
-            os.system('python -W ignore '+classifier+' '+family+' '+str(trainingPortion))
+            os.system('python -W ignore '+classifier+' '+family+' '+str(trainingPortion)+' '+str(noOfIterations))

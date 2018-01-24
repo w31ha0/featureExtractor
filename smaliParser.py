@@ -2,7 +2,7 @@ import re
 import sys,os
 from constants import *
 
-def parseSmali():
+def parseSmali(TEMP_DIRECTORY):
 	dir_path = os.path.dirname(os.path.realpath(__file__)) + '/' + TEMP_DIRECTORY + '/' + SMALI_PATH
 	allSensitiveAPIS = []
 	allNetworkAddresses = []

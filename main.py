@@ -9,6 +9,19 @@ from xlrd import *
 from xlutils.copy import copy
 import featuresStruct
 import time,os
+import threading
+
+queue = []
+overallStartTime = time.time()
+parser = argparse.ArgumentParser(description='Feature Extractor')
+parser.add_argument('-i', action="store",dest="i",required=True,help="Input APK File")
+parser.add_argument('-o', action="store",dest="o",required=True,help="Output stats file")
+args = parser.parse_args()
+dir_path = args.i
+outputStatsFile = args.o
+sheetname = "temp"
+totalFilesTried = 0
+totalFilesSucceed = 0
 
 def getSheetNo(sheetname):
     try:
@@ -35,7 +48,7 @@ def getSheetNo(sheetname):
 
     return sheetNo
 
-def getStartCol(sh):
+def getStartCol(sh,appname):
     startColumn = -1
     noOfCols = sh.ncols
 
@@ -50,88 +63,93 @@ def getStartCol(sh):
         startColumn = 1
 
     return startColumn
+    
+def parseApk(iteration):
+    global queue,totalFilesTried,totalFilesSucceed
+    print "Spawned thread "+str(iteration)
+    TEMP_DIRECTORY = "temp"+str(iteration)
+    while queue:
+        fullpath = queue.pop()
+        print "Parsing " + fullpath
+        family = fullpath.split('/')[4]
+        os.system("mkdir "+PROJECT_PATH+"featuresOutput/"+family)
+        os.system("mkdir "+PROJECT_PATH+"quarantine/"+family)
+        print "Malware family: " + str(family)
 
-overallStartTime = time.time()
-parser = argparse.ArgumentParser(description='Feature Extractor')
-parser.add_argument('-i', action="store",dest="i",required=True,help="Input APK File")
-parser.add_argument('-o', action="store",dest="o",required=True,help="Output stats file")
-args = parser.parse_args()
-dir_path = args.i
-outputStatsFile = args.o
-sheetname = "temp"
-totalFilesTried = 0
-totalFilesSucceed = 0
+        startTime = time.time()
+        apkfile = fullpath
+        featuresStruct.init()
 
-while(1):
-    for path, subdirs, files in os.walk(dir_path):
-        for name in files:
-            fullpath = os.path.join(path, name)
-            if not name.endswith("apk"):
-                print "Skipping " + fullpath
-                continue
-            family = fullpath.split('/')[4]
-            os.system("mkdir "+PROJECT_PATH+"featuresOutput/"+family)
-            os.system("mkdir "+PROJECT_PATH+"quarantine/"+family)
-            print "Malware family: " + str(family)
+        apkname = apkfile.split('/')[-1].split('.apk')[0]
+        if len(apkname) > 29:
+            appname = apkname[:30]
+        else:
+            appname = apkname
 
-            startTime = time.time()
-            apkfile = fullpath
-            featuresStruct.init()
+        sheetNo = getSheetNo(sheetname)
+        rb = open_workbook("results.csv")
+        sh = rb.sheet_by_name(sheetname)
+        startColumn = getStartCol(sh,appname)
+        book = copy(rb)
+        sh = book.get_sheet(sheetNo)
+        #sh.write(0,startColumn,appname)
 
-            print "Parsing apk file " + apkfile
-
-            apkname = apkfile.split('/')[-1].split('.apk')[0]
-            if len(apkname) > 29:
-                appname = apkname[:30]
+        try:
+            totalFilesTried += 1
+            disassemble(apkfile,TEMP_DIRECTORY)
+            print ""
+            parseManifest(sh,startColumn,TEMP_DIRECTORY)
+            traveseAll(sh,startColumn,TEMP_DIRECTORY)
+            parseDex(sh,TEMP_DIRECTORY)
+            calculateCyclomaticComplexity(apkfile,sh,startColumn)
+            if nGramsExtractor(apkfile,family):
+                totalFilesSucceed += 1
+                if family == "benign":
+                    print "Moving parsed bengin sample"
+                    os.system("mv "+apkfile+" "+PROJECT_PATH+"benign/benign/")
             else:
-                appname = apkname
-
-            sheetNo = getSheetNo(sheetname)
-            rb = open_workbook("results.csv")
-            sh = rb.sheet_by_name(sheetname)
-            startColumn = getStartCol(sh)
-            book = copy(rb)
-            sh = book.get_sheet(sheetNo)
-            #sh.write(0,startColumn,appname)
-
-            try:
-                totalFilesTried += 1
-                disassemble(apkfile)
-                print ""
-                parseManifest(sh,startColumn)
-                traveseAll(sh,startColumn)
-                parseDex(sh)
-                calculateCyclomaticComplexity(apkfile,sh,startColumn)
-                if nGramsExtractor(apkfile,family):
-                    totalFilesSucceed += 1
-                    if family == "benign":
-                        print "Moving parsed bengin sample"
-                        os.system("mv "+apkfile+" "+PROJECT_PATH+"benign/benign/")
-                else:
-                    continue
-            except Exception as e:
-                print str(e)
                 continue
-            cleanup()
+        except Exception as e:
+            print str(e)
+            continue
+        cleanup(TEMP_DIRECTORY)
 
 
-            f = open(PROJECT_PATH+"featuresOutput/"+family+"/"+apkname+".txt","w+")
-            for key, value in sorted(featuresStruct.features.iteritems()):
-                print key + " ::: " + str(value)
-                f.write(key + " ::: " + str(value))
-                f.write('\n')
+        f = open(PROJECT_PATH+"featuresOutput/"+family+"/"+apkname+".txt","w+")
+        for key, value in sorted(featuresStruct.features.iteritems()):
+            print key + " ::: " + str(value)
+            f.write(key + " ::: " + str(value))
+            f.write('\n')
 
-            print "Execution took " + str(time.time() - startTime) + " seconds."
-            f.write("Execution took " + str(time.time() - startTime) + " seconds.")
-            f.close()
+        print "Execution took " + str(time.time() - startTime) + " seconds."
+        f.write("Execution took " + str(time.time() - startTime) + " seconds.")
+        f.close()
 
-            try:
-                rb.save("results.csv")
-            except:
-                book.save("results.csv")
+        try:
+            rb.save("results.csv")
+        except:
+            book.save("results.csv")
 
-    print "Sleeping a short while before searching for new files"
-    time.sleep(10)
+#print "Sleeping a short while before searching for new files"
+#time.sleep(10)
+
+print "Going to fill up queue..."
+for path, subdirs, files in os.walk(dir_path):
+    for name in files:
+        fullpath = os.path.join(path, name)
+        if not name.endswith("apk"):
+            print "Skipping " + fullpath
+            continue
+        print "Filling queue with "+fullpath
+        queue.append(fullpath)
+ 
+print "Completed filling queue....Going to spawn threads" 
+threads = [threading.Thread(target=parseApk,args=[i]) for i in range(4)]
+for thread in threads:
+    thread.start()
+    
+for thread in threads:
+    thread.join()
 
 timeTaken = time.time() - overallStartTime
 stats = open(PROJECT_PATH+"featuresOutput/"+outputStatsFile,"w+")

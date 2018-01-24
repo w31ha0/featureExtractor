@@ -4,7 +4,6 @@ from featuresStruct import features
 from constants import *
 from sharedFunctions import *
 
-manifestPath = TEMP_DIRECTORY+'/'+MANIFEST_FILE_CONVERTED
 
 def checkSuspiciousName(sample,array):
     global features 
@@ -23,8 +22,10 @@ def getNameValueFromObject(object):
     else:
         return None
 
-def parseManifest(sh,startColumn):    
+def parseManifest(sh,startColumn,TEMP_DIRECTORY):    
     global features
+    
+    manifestPath = TEMP_DIRECTORY+'/'+MANIFEST_FILE_CONVERTED
     
     tree = ET.parse(manifestPath)
     root = tree.getroot()

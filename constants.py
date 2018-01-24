@@ -1,6 +1,5 @@
 import os
 
-TEMP_DIRECTORY = 'temp'
 ANDROGUARD_PATH = '../tools/androguard/'
 SMALI_PATH = 'smali'
 BAKSMALI_PATH = ' ~/tools/baksmali-2.2.1.jar'

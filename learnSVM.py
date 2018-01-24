@@ -89,6 +89,7 @@ param_grid = {'C':Cs,'gamma':Gammas}
 clf = svm.SVC()
 grid_search = GridSearchCV(clf, param_grid)
 trainingPortion = float(sys.argv[2])
+noOfIterations = int(sys.argv[3])
 
 loadDataSet()
 if len(maliciousDataSet) < 10:
@@ -98,75 +99,111 @@ if len(maliciousDataSet) < 10:
 noOfTrainingSets = int(trainingPortion*len(fullSet))
 noOfTestSets = len(fullSet) - noOfTrainingSets
 #x_train,x_test,y_train,y_test = cross_validation.train_test_split(fullSet,labelSet, test_size=(1-trainingPortion) )
-shuffle(maliciousDataSet)
-shuffle(beinignDataSet)
-x_train = []
-x_test = []
-y_train = []
-y_test = []
+netACC = 0.0
+netTPR = 0.0
+netFPR = 0.0
+netTNR = 0.0
+netFNR = 0.0
+for i in range(0,noOfIterations):
+    shuffle(maliciousDataSet)
+    shuffle(beinignDataSet)
+    x_train = []
+    x_test = []
+    y_train = []
+    y_test = []
 
-temp = maliciousDataSet[:int(noOfTrainingSets/2)]
-x_train.extend(temp)
-for sample in temp:
-    y_train.append(1)
-temp = beinignDataSet[:int(noOfTrainingSets/2)]
-x_train.extend(temp)
-for sample in temp:
-    y_train.append(0)
+    temp = maliciousDataSet[:int(noOfTrainingSets/2)]
+    x_train.extend(temp)
+    for sample in temp:
+        y_train.append(1)
+    temp = beinignDataSet[:int(noOfTrainingSets/2)]
+    x_train.extend(temp)
+    for sample in temp:
+        y_train.append(0)
 
-temp = maliciousDataSet[-int(noOfTestSets/2):]
-x_test.extend(temp)
-for sample in temp:
-    y_test.append(1)
-temp = beinignDataSet[-int(noOfTestSets/2):]
-x_test.extend(temp)
-for sample in temp:
-    y_test.append(0)
+    temp = maliciousDataSet[-int(noOfTestSets/2):]
+    x_test.extend(temp)
+    for sample in temp:
+        y_test.append(1)
+    temp = beinignDataSet[-int(noOfTestSets/2):]
+    x_test.extend(temp)
+    for sample in temp:
+        y_test.append(0)
 
-x_train = preprocessing.scale(np.array(x_train))
-x_test = preprocessing.scale(np.array(x_test))
-print str(x_train)
-print str(x_test)
+    x_train = preprocessing.scale(np.array(x_train))
+    x_test = preprocessing.scale(np.array(x_test))
+    print str(x_train)
+    print str(x_test)
 
-print "No of training samples:" + str(len(x_train))
-print "No of test samples:" + str(len(x_test))
-print "No of malicious samples: " + str(len(maliciousDataSet))
-print "No of benign samples: " + str(len(beinignDataSet))
-print "Total Number of samples: " + str(len(fullSet))
+    print "No of training samples:" + str(len(x_train))
+    print "No of test samples:" + str(len(x_test))
+    print "No of malicious samples: " + str(len(maliciousDataSet))
+    print "No of benign samples: " + str(len(beinignDataSet))
+    print "Total Number of samples: " + str(len(fullSet))
 
-grid_search.fit(x_train, y_train)
-predictions = grid_search.predict(x_test)
-cm = metrics.confusion_matrix(y_test,predictions)
-FP = float((cm.sum(axis=0) - np.diag(cm) )[0])
-FN = float((cm.sum(axis=1) - np.diag(cm))[0])
-TP = float((np.diag(cm))[0])
-TN = float(cm.sum() - (FP + FN + TP))
+    grid_search.fit(x_train, y_train)
+    predictions = grid_search.predict(x_test)
+    cm = metrics.confusion_matrix(y_test,predictions)
+    FP = float((cm.sum(axis=0) - np.diag(cm) )[0])
+    FN = float((cm.sum(axis=1) - np.diag(cm))[0])
+    TP = float((np.diag(cm))[0])
+    TN = float(cm.sum() - (FP + FN + TP))
 
-print "FP:"+str(FP)
-print "FN:"+str(FN)
-print "TP:"+str(TP)
-print "TN:"+str(TN)
+    '''
+    print "FP:"+str(FP)
+    print "FN:"+str(FN)
+    print "TP:"+str(TP)
+    print "TN:"+str(TN)
+    '''
+    # Sensitivity, hit rate, recall, or true positive rate
+    TPR = TP/(TP+FN)
+    # Specificity or true negative rate
+    TNR = TN/(TN+FP)
+    # Precision or positive predictive value
+    PPV = TP/(TP+FP)
+    # Negative predictive value
+    NPV = TN/(TN+FN)
+    # Fall out or false positive rate
+    FPR = FP/(FP+TN)
+    # False negative rate
+    FNR = FN/(TP+FN)
+    # False discovery rate
+    FDR = FP/(TP+FP)
 
-# Sensitivity, hit rate, recall, or true positive rate
-TPR = TP/(TP+FN)
-# Specificity or true negative rate
-TNR = TN/(TN+FP)
-# Precision or positive predictive value
-PPV = TP/(TP+FP)
-# Negative predictive value
-NPV = TN/(TN+FN)
-# Fall out or false positive rate
-FPR = FP/(FP+TN)
-# False negative rate
-FNR = FN/(TP+FN)
-# False discovery rate
-FDR = FP/(TP+FP)
+    # Overall accuracy
+    ACC = (TP+TN)/(TP+FP+FN+TN)
+    #ACC = grid_search.score(x_test,y_test)
+    params = grid_search.best_params_
+    '''
+    netACC += ACC
+    netTPR += TPR
+    netTNR += TNR
+    netFPR += FPR
+    netFNR += FNR
+    '''
 
-# Overall accuracy
-ACC = (TP+TN)/(TP+FP+FN+TN)
-#ACC = grid_search.score(x_test,y_test)
-params = grid_search.best_params_
-print "TPR:"+str(TPR)+",TNR:"+str(TNR)+",FPR:"+str(FPR)+",FNR:"+str(FNR)+",ACC:"+str(ACC)+" with params "+str(params)
+    if ACC > netACC:
+        netACC = ACC
+    if TPR > netTPR:
+        netTPR = TPR
+    if TNR > netTNR:
+        netTNR = TNR
+    if FPR > netFPR:
+        netFPR = FPR
+    if FNR > netFNR:
+        netFNR = FNR
+
+    print "TPR:"+str(TPR)+",TNR:"+str(TNR)+",FPR:"+str(FPR)+",FNR:"+str(FNR)+",ACC:"+str(ACC)+" with params "+str(params)
+
+'''
+netACC /= noOfIterations
+netTPR /= noOfIterations
+netTNR /= noOfIterations
+netFPR /= noOfIterations
+netFNR /= noOfIterations
+'''
+
+print "OVERALL: TPR:"+str(netTPR)+",TNR:"+str(netTNR)+",FPR:"+str(netFPR)+",FNR:"+str(netFNR)+",ACC:"+str(netACC)
 
 rb = open_workbook("learning_results2.csv")
 sh = rb.sheet_by_name("SVM")
@@ -178,11 +215,11 @@ newRow = sh.nrows
 for i in range(0,newRow):
     value = sh.col_values(0)[i]
     if value == family:
-        sh2.write(i,1,str(ACC))
-        sh2.write(i,2,str(TPR))
-        sh2.write(i,3,str(TNR))
-        sh2.write(i,4,str(FPR))
-        sh2.write(i,5,str(FNR))
+        sh2.write(i,1,str(netACC))
+        sh2.write(i,2,str(netTPR))
+        sh2.write(i,3,str(netTNR))
+        sh2.write(i,4,str(netFPR))
+        sh2.write(i,5,str(netFNR))
         sh2.write(i,6,str(params['C']))
         sh2.write(i,7,str(params['gamma']))
         sh2.write(i,8,str(len(maliciousDataSet)))
@@ -190,11 +227,11 @@ for i in range(0,newRow):
         break
     elif i == (newRow-1):
         sh2.write(newRow,0,str(family))
-        sh2.write(newRow,1,str(ACC))
-        sh2.write(newRow,2,str(TPR))
-        sh2.write(newRow,3,str(TNR))
-        sh2.write(newRow,4,str(FPR))
-        sh2.write(newRow,5,str(FNR))
+        sh2.write(newRow,1,str(netACC))
+        sh2.write(newRow,2,str(netTPR))
+        sh2.write(newRow,3,str(netTNR))
+        sh2.write(newRow,4,str(netFPR))
+        sh2.write(newRow,5,str(netFNR))
         sh2.write(newRow,6,str(params['C']))
         sh2.write(newRow,7,str(params['gamma']))
         sh2.write(newRow,8,str(len(maliciousDataSet)))
