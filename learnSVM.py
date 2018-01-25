@@ -12,6 +12,15 @@ import numpy as np
 maliciousDataSet = []
 beinignDataSet = []
 fullSet = []
+maliciousDict = []
+benignDict = []
+samplesDict = {}
+
+def generateKey(array):
+    key = ""
+    for item in array:
+        key += ","+str(item)
+    return key
 
 def fillParams(min,max,step):
     array = []
@@ -40,6 +49,8 @@ def loadDataSet():
                     print str(len(results))+" for "+fullpath
                 #print str(results)
                 maliciousDataSet.append(results)
+                maliciousDict.append(name)
+                samplesDict[generateKey(results)]=name
     #load benignSet
     for path, subdirs, files in os.walk(benign_dir_path):
         for name in files:
@@ -60,6 +71,8 @@ def loadDataSet():
                     print str(len(results))+" for "+fullpath
                 #print str(results)
                 beinignDataSet.append(results)
+                benignDict.append(name)
+                samplesDict[generateKey(results)]=name
 
     if len(beinignDataSet) > len(maliciousDataSet):
         shuffle(beinignDataSet)
@@ -105,8 +118,14 @@ netFPR = 0.0
 netTNR = 0.0
 netFNR = 0.0
 for i in range(0,noOfIterations):
-    shuffle(maliciousDataSet)
-    shuffle(beinignDataSet)
+    x = list(enumerate(maliciousDataSet))
+    shuffle(x)
+    MaliciousIndices, maliciousDataSet = zip(*x)
+    
+    y = list(enumerate(beinignDataSet))
+    shuffle(y)
+    BenignIndices, beinignDataSet = zip(*y)
+
     x_train = []
     x_test = []
     y_train = []
@@ -132,8 +151,8 @@ for i in range(0,noOfIterations):
 
     x_train = preprocessing.scale(np.array(x_train))
     x_test = preprocessing.scale(np.array(x_test))
-    print str(x_train)
-    print str(x_test)
+    #print str(x_train)
+    #print str(x_test)
 
     print "No of training samples:" + str(len(x_train))
     print "No of test samples:" + str(len(x_test))
@@ -144,6 +163,13 @@ for i in range(0,noOfIterations):
     grid_search.fit(x_train, y_train)
     predictions = grid_search.predict(x_test)
     cm = metrics.confusion_matrix(y_test,predictions)
+    misclassified = np.where(predictions != y_test)
+    f = open("misclassified_SVM_"+family,"w+")
+    print "Misclassified Samples:"
+    for mis in misclassified[0]:
+        f.write(str(x_test[mis])+" misclassified as " + str(predictions[mis]))
+        f.write("\n")
+    f.close()
     FP = float((cm.sum(axis=0) - np.diag(cm) )[0])
     FN = float((cm.sum(axis=1) - np.diag(cm))[0])
     TP = float((np.diag(cm))[0])

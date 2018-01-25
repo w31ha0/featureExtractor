@@ -131,8 +131,6 @@ for i in range(0,noOfIterations):
 
     x_train = preprocessing.scale(np.array(x_train))
     x_test = preprocessing.scale(np.array(x_test))
-    print str(x_train)
-    print str(x_test)
 
     print "No of training samples:" + str(len(x_train))
     print "No of test samples:" + str(len(x_test))
@@ -143,6 +141,13 @@ for i in range(0,noOfIterations):
     grid_search.fit(x_train, y_train)
     predictions = grid_search.predict(x_test)
     cm = metrics.confusion_matrix(y_test,predictions)
+    misclassified = np.where(predictions != y_test)
+    f = open("misclassified_Neighbours_"+family,"w+")
+    print "Misclassified Samples:"
+    for mis in misclassified[0]:
+        f.write(str(x_test[mis])+" misclassified as " + str(predictions[mis]))
+        f.write("\n")
+    f.close()
     FP = float((cm.sum(axis=0) - np.diag(cm) )[0])
     FN = float((cm.sum(axis=1) - np.diag(cm))[0])
     TP = float((np.diag(cm))[0])
