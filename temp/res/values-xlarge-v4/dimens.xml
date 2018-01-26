@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="pref_2">45.0dip</dimen>
-    <dimen name="pref_4">30.0dip</dimen>
-    <dimen name="pref_5">45.0dip</dimen>
-    <dimen name="pref_6">500.0dip</dimen>
-    <dimen name="pref_7">65.0dip</dimen>
-    <dimen name="AdvancedTextViewtextSize">15.0dip</dimen>
-</resources>
