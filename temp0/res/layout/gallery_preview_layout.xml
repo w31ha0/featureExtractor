@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:id="@id/gallery_preview_root" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/gallery_preview_progressbar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/gallery_image_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="35.0dip" />
+    <RelativeLayout android:gravity="bottom|center" android:layout_gravity="bottom|center" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_marginBottom="10.0dip">
+        <WebView android:layout_gravity="bottom|center" android:id="@id/gallery_text_preview" android:background="@android:color/transparent" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <include layout="@layout/navigation_layout" />
+</FrameLayout>

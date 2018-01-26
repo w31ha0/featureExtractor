@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/navigation_tab_container" android:background="@android:color/transparent" android:descendantFocusability="afterDescendants" android:layout_width="wrap_content" android:layout_height="75.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|top" android:id="@id/navigation_image_view" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="12.0dip" android:scaleType="fitXY" android:minWidth="25.0dip" android:minHeight="25.0dip" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#ffaaaaaa" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/navigation_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

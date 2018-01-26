@@ -1,0 +1,26 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com.app_probeach.layout.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '7'
+  targetSdkVersion: '12'
+sharedLibrary: false
+unknownFiles:
+  readme.txt: '8'
+  com/paypal/android/utils/data/data.bin: '8'
+  com/paypal/android/utils/data/locale.bin: '8'
+  org/apache/http/client/version.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.2.4
+versionInfo:
+  versionCode: '300'
+  versionName: '1.300'

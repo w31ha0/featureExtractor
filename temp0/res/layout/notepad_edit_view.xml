@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/notepad_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tab_title_container" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="19.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/tab_title_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/edit_note_add_note" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_add" android:contentDescription="@string/add_note" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="35.0dip" android:src="@drawable/line_v" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:src="@drawable/line_v" />
+        <LinearLayout android:orientation="vertical" android:id="@id/edit_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/date_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="left" android:layout_gravity="left" android:id="@id/day_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" />
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:gravity="right" android:layout_gravity="right" android:id="@id/full_date" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <com.biznessapps.fragments.notepad.LinedEditText android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="top" android:id="@id/edit_text" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0" android:inputType="textMultiLine" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <Button android:id="@id/arrow_left" android:background="@drawable/arrow_left_disabled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+                <Button android:id="@id/note_send_btn" android:background="@drawable/mail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <Button android:id="@id/note_delete_btn" android:background="@drawable/trash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <Button android:id="@id/arrow_right" android:background="@drawable/arrow_right_disabled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

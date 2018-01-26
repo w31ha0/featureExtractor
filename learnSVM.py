@@ -15,6 +15,14 @@ fullSet = []
 maliciousDict = []
 benignDict = []
 samplesDict = {}
+featureNames = []
+
+f = open("features.txt","r")
+content = f.readlines()
+for line in content:
+    payload = line.split(" ::: ")[0]
+    print payload
+    featureNames.append(payload)
 
 def generateKey(array):
     key = ""
@@ -99,7 +107,7 @@ C_step = 4
 Cs = fillParams(C_min,C_max,C_step)
 Gammas = fillParams(gamma_min,gamma_max,gamma_step)
 param_grid = {'C':Cs,'gamma':Gammas}
-clf = svm.SVC()
+clf = svm.SVC(kernel="linear")
 grid_search = GridSearchCV(clf, param_grid)
 trainingPortion = float(sys.argv[2])
 noOfIterations = int(sys.argv[3])
@@ -220,6 +228,8 @@ for i in range(0,noOfIterations):
         netFNR = FNR
 
     print "TPR:"+str(TPR)+",TNR:"+str(TNR)+",FPR:"+str(FPR)+",FNR:"+str(FNR)+",ACC:"+str(ACC)+" with params "+str(params)
+    
+    print str(clf.coef_)
 
 '''
 netACC /= noOfIterations

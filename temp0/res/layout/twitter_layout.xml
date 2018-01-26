@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tab_title_container" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="19.0sp" android:gravity="center" android:id="@id/tab_title_text" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerInParent="true" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/twitter_info_button" android:background="@drawable/icon_information" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="7.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@drawable/tweet_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:gravity="right" android:layout_gravity="right" android:id="@id/twitter_text_counter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <EditText android:textSize="15.0sp" android:textColor="#ff000000" android:gravity="center|left|top" android:id="@id/twitter_text_edittext" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="25.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="25.0dip" android:lines="5" android:scrollHorizontally="false" android:singleLine="false" android:inputType="textMultiLine" />
+        <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <ImageButton android:id="@id/twitter_recipients_button" android:background="@drawable/tweet_receipients" android:layout_width="180.0dip" android:layout_height="69.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="7.0dip">
+            <ImageButton android:id="@id/twitter_hashtags_button" android:background="@drawable/tweet_hashtags" android:layout_width="173.0dip" android:layout_height="63.0dip" android:layout_alignParentLeft="true" />
+            <ImageButton android:id="@id/twitter_tweet_button" android:background="@drawable/tweet_tweet" android:layout_width="91.0dip" android:layout_height="60.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

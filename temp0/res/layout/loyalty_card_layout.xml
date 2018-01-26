@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/loyalty_first_item_container" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/loyalty_first_item_lock" android:background="@drawable/lock_icon" android:layout_width="40.0dip" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/loyalty_first_item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/loyalty_first_item_stamp" android:background="@drawable/loyalty_approved_stamp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageView android:background="@drawable/vertical_loyalty_line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/loyalty_second_item_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/loyalty_second_item_lock" android:background="@drawable/lock_icon" android:layout_width="40.0dip" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/loyalty_second_item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/loyalty_second_item_stamp" android:background="@drawable/loyalty_approved_stamp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

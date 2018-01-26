@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/upper_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/checkout_product_image" android:layout_width="130.0dip" android:layout_height="100.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/product_default" android:scaleType="centerInside" android:adjustViewBounds="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/product_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/product_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/name" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="#ff6b1e1a" android:id="@id/product_price" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/price" />
+            <LinearLayout android:id="@id/qty_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tag_green" />
+                <EditText android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/quantity_edit_text" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="45.0dip" android:layout_height="wrap_content" android:singleLine="true" android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/btn_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip">
+        <Button android:textStyle="bold" android:textColor="#ff404a8a" android:id="@id/update_btn" android:background="@drawable/button_light_green_src" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/update" android:layout_weight="1.0" />
+        <Button android:textStyle="bold" android:textColor="#ff404a8a" android:id="@id/remove_btn" android:background="@drawable/button_light_green_src" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/remove" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

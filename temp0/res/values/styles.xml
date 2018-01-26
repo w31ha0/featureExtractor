@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="OrdinaryText">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="BigWhiteText">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="BigBlackBoldText">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="CommonButtonStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_height">45.0dip</item>
+    </style>
+    <style name="Theme.CustomTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:label">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="Theme.TwitterLoginTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="Theme" parent="@android:style/Theme" />
+    <style name="Theme.NoBackground" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Loading" parent="@style/Theme">
+        <item name="android:windowBackground">@drawable/icon_default</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

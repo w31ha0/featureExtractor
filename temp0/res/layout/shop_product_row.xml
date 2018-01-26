@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/product_small_image" android:layout_width="45.0dip" android:layout_height="60.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/product_default" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/product_name" android:layout_width="135.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/product_small_image" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/price_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/more_label">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="#ff6b1e1a" android:id="@id/product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/product_name" android:layout_centerVertical="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_price" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="#ff676767" android:gravity="center|right" android:id="@id/more_label" android:paddingLeft="2.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=">" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

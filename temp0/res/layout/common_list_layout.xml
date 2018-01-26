@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/list_view_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tab_title_container" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/common_back_button" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="3.0dip" android:singleLine="true" />
+        <TextView android:textSize="19.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/tab_title_text" android:layout_width="fill_parent" android:layout_height="50.0dip" android:singleLine="true" android:layout_centerInParent="true" />
+    </LinearLayout>
+    <com.biznessapps.widgets.RefreshableListView android:id="@id/list_view" android:background="@android:color/transparent" android:focusable="false" android:scrollbars="vertical" android:fadingEdge="none" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:divider="#ffdbdbdb" android:dividerHeight="1.0px" android:layout_weight="1.0" />
+</LinearLayout>

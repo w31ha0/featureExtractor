@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/product_details" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tab_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="19.0sp" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tab_title_text" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/cart_group" android:layout_width="wrap_content" android:layout_height="38.0dip">
+            <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@id/cart_counter_text_product_details" android:background="@drawable/cart_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="center|left" android:id="@id/cart_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/shopping_cart" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/product_details_tell_friends_content" android:background="@drawable/tell_friend_dialog_background" android:padding="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="210.0dip">
+        <Button android:id="@id/product_details_share_by_email_button" android:background="@drawable/button_light_gray_src" android:layout_width="fill_parent" android:layout_marginBottom="3.0dip" android:text="@string/share_by_email" style="@style/CommonButtonStyle" />
+        <Button android:id="@id/product_details_share_on_facebook_button" android:background="@drawable/button_light_gray_src" android:layout_width="fill_parent" android:layout_marginBottom="3.0dip" android:text="@string/share_on_facebook" style="@style/CommonButtonStyle" />
+        <Button android:id="@id/product_details_share_on_twitter_button" android:background="@drawable/button_light_gray_src" android:layout_width="fill_parent" android:layout_marginBottom="3.0dip" android:text="@string/share_on_twitter" style="@style/CommonButtonStyle" />
+        <Button android:id="@id/product_details_cancel_button" android:background="@drawable/button_light_gray_src" android:layout_width="fill_parent" android:text="@string/cancel" style="@style/CommonButtonStyle" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="right" android:id="@id/upper_Layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="left" android:id="@id/product_image" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="1.0" android:contentDescription="@string/product_image" />
+        <LinearLayout android:orientation="vertical" android:id="@id/right_layout" android:layout_width="102.0dip" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="#ff811625" android:id="@id/txt_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/price" />
+            <LinearLayout android:id="@id/qty_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/txt_price">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tag_green" />
+                <EditText android:layout_gravity="center_vertical" android:id="@id/qty_edit_text" android:layout_width="35.0dip" android:layout_height="wrap_content" android:text="1" android:inputType="number" />
+            </LinearLayout>
+            <Button android:textStyle="bold" android:textColor="#ff404a8a" android:id="@id/add_to_cart_btn" android:background="@drawable/button_light_green_src" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/add_to_cart" />
+            <Button android:textStyle="bold" android:textColor="#ff404a8a" android:id="@id/share_product_btn" android:background="@drawable/button_light_green_src" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/share_item" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="@android:color/black" android:id="@id/product_details_description" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="0.25" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/lowaer_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textStyle="bold" android:textColor="#ff404a8a" android:id="@id/read_reviews_btn" android:background="@drawable/button_light_green_src" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/read_reviews" android:layout_weight="1.0" />
+        <Button android:textStyle="bold" android:textColor="#ff404a8a" android:id="@id/post_review_btn" android:background="@drawable/button_light_green_src" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/post_review" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

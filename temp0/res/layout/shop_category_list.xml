@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/list_view_root" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tab_title_container" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="19.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/tab_title_text" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/cart_group" android:layout_width="wrap_content" android:layout_height="38.0dip">
+            <TextView android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@id/cart_counter_text" android:background="@drawable/cart_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="0" android:layout_toRightOf="@id/tab_title_text" />
+            <ImageView android:layout_gravity="bottom|center|left" android:id="@id/cart_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/shopping_cart" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <EditText android:id="@id/shop_category_search_box" android:background="@drawable/rounded_edittext" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_margin="7.0dip" android:hint="@string/search" android:maxLines="1" android:drawableLeft="@drawable/search_icon" android:inputType="text" />
+    <com.biznessapps.widgets.RefreshableListView android:id="@id/list_view" android:background="@android:color/white" android:focusable="false" android:scrollbars="vertical" android:fadingEdge="none" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="@android:color/transparent" android:divider="#ffdbdbdb" android:dividerHeight="1.0px" android:layout_weight="1.0" />
+</LinearLayout>

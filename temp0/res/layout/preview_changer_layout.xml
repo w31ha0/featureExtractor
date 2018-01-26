@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/preview_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="250.0dip" android:layout_height="100.0dip" android:layout_marginTop="45.0dip" android:layout_marginBottom="20.0dip" android:text="@string/demo_title" style="@style/BigWhiteText" />
+    <EditText android:layout_gravity="center" android:id="@id/demo_code_edittext" android:layout_width="250.0dip" android:layout_height="50.0dip" android:singleLine="true" android:imeOptions="actionGo" />
+    <Button android:layout_gravity="center" android:id="@id/load_demo_button" android:background="@drawable/selected_tab_background" android:layout_width="250.0dip" android:layout_marginTop="10.0dip" android:text="@string/load_demo" style="@style/CommonButtonStyle" />
+    <Button android:layout_gravity="center" android:id="@id/reset_demo_button" android:background="@drawable/selected_tab_background" android:layout_width="250.0dip" android:layout_marginTop="15.0dip" android:text="@string/reset" style="@style/CommonButtonStyle" />
+    <FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

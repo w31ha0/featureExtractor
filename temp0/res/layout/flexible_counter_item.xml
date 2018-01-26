@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/counter_text_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/email_results" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/counter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/email_results" />
+    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/counter_decrease_button" android:background="@drawable/button_light_gray_src" android:layout_width="45.0dip" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="-" />
+    <Button android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/counter_increase_button" android:background="@drawable/button_light_gray_src" android:layout_width="45.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="+" />
+</LinearLayout>

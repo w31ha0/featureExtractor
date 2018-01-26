@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tab_title_bar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/home_layout_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/tell_friends_content" android:background="@drawable/tell_friend_dialog_background" android:padding="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="210.0dip">
+            <Button android:id="@id/share_by_email_button" android:background="@drawable/button_light_gray_src" android:layout_width="fill_parent" android:layout_marginBottom="3.0dip" android:text="@string/share_by_email" style="@style/CommonButtonStyle" />
+            <Button android:id="@id/share_on_facebook_button" android:background="@drawable/button_light_gray_src" android:layout_width="fill_parent" android:layout_marginBottom="3.0dip" android:text="@string/share_on_facebook" style="@style/CommonButtonStyle" />
+            <Button android:id="@id/share_on_twitter_button" android:background="@drawable/button_light_gray_src" android:layout_width="fill_parent" android:layout_marginBottom="3.0dip" android:text="@string/share_on_twitter" style="@style/CommonButtonStyle" />
+            <Button android:id="@id/cancel_button" android:background="@drawable/button_light_gray_src" android:layout_width="fill_parent" android:text="@string/cancel" style="@style/CommonButtonStyle" />
+        </LinearLayout>
+        <GridView android:gravity="center" android:layout_gravity="center" android:id="@id/home_tab_gallery_view" android:background="@android:color/transparent" android:scrollbars="vertical" android:layoutAnimation="@anim/tab_wave_scale" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="spacingWidth" android:columnWidth="100.0dip" android:numColumns="2" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="57.0dip" android:layout_marginBottom="15.0dip">
+            <Button android:id="@id/call_us_button" android:visibility="gone" android:layout_width="100.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="2.0dip" android:text="@string/call_us" style="@style/CommonButtonStyle" />
+            <Button android:id="@id/direction_button" android:visibility="gone" android:layout_width="100.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="@string/directions" style="@style/CommonButtonStyle" />
+            <Button android:id="@id/tell_friend_button" android:visibility="gone" android:layout_width="100.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="5.0dip" android:text="@string/tell_friend" style="@style/CommonButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -193,6 +193,8 @@ for i in range(0,noOfIterations):
 
     params = grid_search.best_params_
     print "TPR:"+str(TPR)+",TNR:"+str(TNR)+",FPR:"+str(FPR)+",FNR:"+str(FNR)+",ACC:"+str(ACC)+" with params "+str(params)
+    
+    print str(clf.feature_importances_ )
 
 '''
 netACC /= noOfIterations

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="330.0dip" android:layout_height="420.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/twitter_oauth_internal_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tab_title_bar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.biznessapps.widgets.TabGallery android:gravity="bottom" android:id="@id/gallery_view_coverflow" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="15.0dip" android:spacing="-20.0dip" android:layout_weight="1.0" />
+        <GridView android:gravity="center" android:id="@id/gallery_view" android:background="#ffffffff" android:visibility="gone" android:scrollbars="vertical" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:stretchMode="columnWidth" android:numColumns="3" android:layout_weight="1.0" />
+    </LinearLayout>
+    <include layout="@layout/navigation_layout" />
+</LinearLayout>

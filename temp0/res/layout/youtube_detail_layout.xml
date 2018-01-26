@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tab_title_bar" />
+    <FrameLayout android:id="@id/fan_wall_root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/youtube_item_image" android:layout_width="fill_parent" android:layout_height="180.0dip" android:scaleType="fitXY" />
+                <ImageView android:layout_gravity="center" android:id="@id/youtube_play_item_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/youtube_playing" />
+            </FrameLayout>
+            <ListView android:id="@id/comments_list_view" android:background="@android:color/transparent" android:focusable="false" android:scrollbars="vertical" android:fadingEdge="none" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:divider="#ff777777" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/choose_accounts_content" android:background="@drawable/tell_friend_dialog_background" android:padding="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="210.0dip">
+            <Button android:id="@id/add_via_facebook_button" android:background="@drawable/button_light_gray_src" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginBottom="3.0dip" android:text="@string/facebook" />
+            <Button android:id="@id/add_via_twitter_button" android:background="@drawable/button_light_gray_src" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginBottom="3.0dip" android:text="@string/twitter" />
+            <Button android:id="@id/cancel_button" android:background="@drawable/button_light_gray_src" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginBottom="15.0dip" android:text="@string/cancel" />
+        </LinearLayout>
+        <ImageButton android:layout_gravity="bottom|center|right" android:id="@id/choose_login_account" android:background="#ffc2dffb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/icon_10_medical_2x" android:layout_alignParentRight="true" />
+    </FrameLayout>
+    <com.biznessapps.facebook.LoginButton android:layout_gravity="center_vertical" android:id="@id/facebook_login_button" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/login_button" />
+</LinearLayout>

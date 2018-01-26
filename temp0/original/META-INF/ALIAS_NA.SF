@@ -1,0 +1,2618 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: ngANqza5/whaYZFfNQhzhT/iRBA=
+Created-By: 1.6.0_29 (Sun Microsystems Inc.)
+SHA1-Digest-Manifest: zKA72GySQW3HqjtSZnafPM6P4z0=
+
+Name: res/drawable/icon_copy.png
+SHA1-Digest: G0ddghcMIcYG8gpMkm+pa1BCvfM=
+
+Name: res/drawable/icon_02_redo_2x.png
+SHA1-Digest: bMqD4IBzBOqd0M1jPzsprsPr4j0=
+
+Name: res/drawable/tweet_bg.png
+SHA1-Digest: BQxQNgpIhn5nMdl2EpdcxsAkShI=
+
+Name: res/drawable/icon_paper_trash.png
+SHA1-Digest: el7+Ds6iq+oTAAk/K0lT0JZWeJc=
+
+Name: res/layout-land/coupon_detail_layout.xml
+SHA1-Digest: nAMiGtOMgjFsjg4Q4ImGejvoDCs=
+
+Name: res/drawable/icon_78_stopwatch_2x.png
+SHA1-Digest: 1mu3DtbRyUtVPFamU/tGkq06/Oo=
+
+Name: res/drawable/envelope.png
+SHA1-Digest: 9mrIruYPn9agzswAl/ZcQJk9tek=
+
+Name: res/drawable/icon_184_warning_2x.png
+SHA1-Digest: nJW9OkgmFeWv8znuC4V5uMSHcJQ=
+
+Name: res/drawable/icon_118_coat_hanger_2x.png
+SHA1-Digest: eZRlDaOx3YQEeGHDtuxhYu6PF9U=
+
+Name: res/drawable/icon_66_microphone.png
+SHA1-Digest: MMMx6sDu3KlW8t3wonaGaZi76tI=
+
+Name: res/drawable/icon_16_line_chart_2x.png
+SHA1-Digest: SKKaw5ruz7IZu7BWS5lu9zNNtzc=
+
+Name: res/layout/twitter_tags_row.xml
+SHA1-Digest: 5UJXqPbITy5RwIRR5S3HDi29xQY=
+
+Name: res/drawable/icon_shopping_bag.png
+SHA1-Digest: DTh/HyqgF1XXPeomjodm/mVCHK4=
+
+Name: res/drawable/icon_window_globe.png
+SHA1-Digest: cv9n8/8XDBelvnAZrgoCio4Ovfk=
+
+Name: res/layout/home_screen_layout_4row.xml
+SHA1-Digest: 7rSs4qedWf9YCiRr8e43EM803ro=
+
+Name: res/drawable/icon_buzzer.png
+SHA1-Digest: WzPUJKXlqJzrokIFxbw3XbwSHBU=
+
+Name: res/drawable/tweet_receipients.png
+SHA1-Digest: N2MiQN8goBCb+LKIQ/b1d/v/mD0=
+
+Name: res/drawable/icon_box_mail.png
+SHA1-Digest: d8gTDU+NK4QJBVeISRP+437mwRw=
+
+Name: res/layout/tab.xml
+SHA1-Digest: 3VAYlSC8TQZk2jS58HlNXGWCqno=
+
+Name: res/drawable/icon_161_calculator_2x.png
+SHA1-Digest: eYzXRIIOzctSKdkPP2pOawT8bC8=
+
+Name: res/drawable/icon_181_hammer_2x.png
+SHA1-Digest: 31aD5mASzBZ1J44xmAHR/teY/+o=
+
+Name: res/drawable/icon_42_photos_2x.png
+SHA1-Digest: OEUHUK/zNUJmqrdgOfylbZ/0FCE=
+
+Name: res/drawable/dialog_bg.xml
+SHA1-Digest: KBRmjaku6j9h/0RPsGqxRQpxOrI=
+
+Name: res/drawable/icon_138_scales_2x.png
+SHA1-Digest: Nqm/V7VeCvXXfy/OeHHRQfiza6k=
+
+Name: res/layout/tabs_circles_container.xml
+SHA1-Digest: 8AuQ6oin5KE/7LU4SZEV/y6krXc=
+
+Name: res/drawable/icon_82_dog_paw.png
+SHA1-Digest: oRRrQg4NJzE+r3WtnUxKx6BodaI=
+
+Name: res/drawable/icon_photo.png
+SHA1-Digest: QPiHdSDNIoP9ubyr9ZW69g+NHEM=
+
+Name: res/drawable/icon_13_target_2x.png
+SHA1-Digest: WLUfuuOP1IIzaEvFtwjV0ozTfUc=
+
+Name: res/drawable/icon_124_bullhorn_2x.png
+SHA1-Digest: YsCCvsyabTc2MseA5GAu5WpNj5w=
+
+Name: res/layout-land/qr_scanner_layout.xml
+SHA1-Digest: t0PkTqIQb9WoF3sGHzbIZYzGLeE=
+
+Name: res/drawable/button_orange.9.png
+SHA1-Digest: zsHxO+G0cGjkECIdBEE8QYZheOs=
+
+Name: res/drawable/icon_mail.png
+SHA1-Digest: wOGSnov2qR/mWZ0wXLPCl+nQ/tA=
+
+Name: res/drawable/icon_45_movie_1_2x.png
+SHA1-Digest: H5Em/FJpVCGcyDlK7yLdOP0yGu4=
+
+Name: res/drawable/icon_122_stats.png
+SHA1-Digest: Ai0fpXGVcyIXDr7TYxbuD+U7M54=
+
+Name: res/drawable/icon_paint.png
+SHA1-Digest: vGu1HPnaYeSwpBwyovZ/fqic1DU=
+
+Name: res/drawable/icon_67_tshirt.png
+SHA1-Digest: lx1LAmS5RttlLG9TEZv62dmYFeA=
+
+Name: res/drawable/icon_165_glasses_3.png
+SHA1-Digest: X+U+iNDwJdNpSPYyqv9yX3MaKrg=
+
+Name: res/drawable/icon_90_life_buoy_2x.png
+SHA1-Digest: Mt+YjQFbYBlOcCtdfBQUU0q+EsE=
+
+Name: res/layout/message_row.xml
+SHA1-Digest: bGUtm193Uiw8pQS/dQRPbJdVLz0=
+
+Name: res/layout/coverflow_item_layout.xml
+SHA1-Digest: k3Tcp1/fRWySXStDaJYb0hFOh/w=
+
+Name: res/drawable/icon_event.png
+SHA1-Digest: dOaeOklleRL9pEj0eMcSdNNgWCQ=
+
+Name: res/drawable/icon_93_thermometer_2x.png
+SHA1-Digest: /g+4ws/jy+zaYH+LMQdICE4J5ZM=
+
+Name: res/drawable/button_white_gray_src.xml
+SHA1-Digest: n0zVTKANOBGQsWxPL4JgjUuOcnA=
+
+Name: res/drawable/icon_10_medical.png
+SHA1-Digest: gLqCyUOvhWKPwWq2YS9B0B4i+9o=
+
+Name: res/drawable/icon_62_contrast.png
+SHA1-Digest: hYHTSrVqmKLV+FXOlIcJ/EB4XrI=
+
+Name: res/drawable/player_play_button.png
+SHA1-Digest: BMw4LM6eu5H9ZUcSnLJmM6jXDLI=
+
+Name: res/drawable/button_icon11_src.xml
+SHA1-Digest: T2Ch08xE6Z8UuDb4iGNU0W3gX9Q=
+
+Name: res/drawable/tag_green.png
+SHA1-Digest: LpW3J59gYkPtNsgA1BecvXomHr0=
+
+Name: res/drawable/icon_157_wrench_2x.png
+SHA1-Digest: h2PZxApacrKPfJtiLYaHToPbp0s=
+
+Name: res/drawable/icon_blackarrow.png
+SHA1-Digest: CnGNgyS7q9e1bGXjiOlkpWqE0/w=
+
+Name: res/drawable/icon_111_user_2x.png
+SHA1-Digest: AqwJQ3iuco/A4hD+fofno2/cPvc=
+
+Name: res/drawable/icon_profile.png
+SHA1-Digest: Tbx2MbDGiZO3uW29dA28J9cEM+Y=
+
+Name: res/drawable/icon_circle_arrow_right.png
+SHA1-Digest: 19hCM9excowDY3Q8rMDDzfvjlF0=
+
+Name: res/drawable/black_button_normal.xml
+SHA1-Digest: kPR1OTrthegbY9Cff5fqQyhv8RU=
+
+Name: res/drawable/icon_183_genie_lamp_2x.png
+SHA1-Digest: cohimHEY8hrKwxHdH5+zt+IvZl8=
+
+Name: res/layout-mdpi/tab.xml
+SHA1-Digest: 6WJrDEgf3BEejONw+fUIu3KZHGY=
+
+Name: res/drawable/icon_60_signpost_2x.png
+SHA1-Digest: XSXeGZ/D7wHjkuPdd9fbXwJuUKI=
+
+Name: res/drawable/button_icon1_src.xml
+SHA1-Digest: msJhZ5INk7Pp9H9JO6yYMGMHQq8=
+
+Name: res/layout/shop_google_checkout.xml
+SHA1-Digest: kxqK4cZpElWlTw2gLDiEbiHlwqU=
+
+Name: res/drawable/icon_182_messenger_bag.png
+SHA1-Digest: oGnfV3jAYJTqgUNgKPzEUrSmK3w=
+
+Name: res/drawable/icon_200_card_clubs_2x.png
+SHA1-Digest: L4A86k+QdDdr347wQhjN00t5sbE=
+
+Name: res/drawable/button_bright_green_selected.9.png
+SHA1-Digest: lxXpEvQmytNRfbMKOSiehB6V01Y=
+
+Name: res/drawable/icon_148_doghouse.png
+SHA1-Digest: z4DhYRKXf5qTCg0UySH2hApbCIM=
+
+Name: res/drawable/tweet_tweet.png
+SHA1-Digest: dx8tE1wKX4gUYMH5y2OxaVA4mOQ=
+
+Name: res/layout/tab_gallery_item.xml
+SHA1-Digest: 40eBxc+jvZCUCZpxmSIGM2lUEa0=
+
+Name: res/drawable/icon_92_test_tube_2x.png
+SHA1-Digest: ei7+LuI/zQ5pmyqdAIGsSRbqmXs=
+
+Name: res/drawable/button_pink_red.9.png
+SHA1-Digest: GRlvbmfIMFvhODeOgzhn4HFlAPY=
+
+Name: res/drawable/icon_volume.png
+SHA1-Digest: Nh1w4v74L4+LaahA0SPGAN3SSUk=
+
+Name: res/drawable/icon_153_guitar_2x.png
+SHA1-Digest: eBrI3ctyjzLBFOnN800U3YIC+ww=
+
+Name: res/drawable/button_light_dark_green_selected.9.png
+SHA1-Digest: Mh7iAj5NzjgpIPuFRsDS3yPul0I=
+
+Name: res/drawable/tweet_hashtags.png
+SHA1-Digest: 0DTQ+f+gJHErL9NE4Eih168oTEI=
+
+Name: res/drawable/button_yellow_selected.9.png
+SHA1-Digest: HnCtTKI1Y1zroUWdddndnsVZZ0E=
+
+Name: res/layout/loyalty_detail.xml
+SHA1-Digest: GtIwu+xcxo5xrzmoZ7qNRzawWTM=
+
+Name: res/drawable/icon_28_star.png
+SHA1-Digest: MpSRGffIjOmnmq4UOtkthx+Hv+M=
+
+Name: res/drawable/cricle_button.png
+SHA1-Digest: 2R+FGP76/rIRCzofttax/L8vUAw=
+
+Name: res/drawable/icon_120_headphones_2x.png
+SHA1-Digest: CjSSwiJZRL12Q29vw45rVbNJPvk=
+
+Name: res/drawable/icon_forum.png
+SHA1-Digest: ROqez0yg5mpCRbT5AqWv+H5TR6g=
+
+Name: res/drawable/icon_checkmark.png
+SHA1-Digest: Cv6DY+3xjMYqfRyoECIfWc333xY=
+
+Name: res/drawable/icon_15_tags.png
+SHA1-Digest: fzzrH8vHrZvikKcoQYNnT/eapFY=
+
+Name: res/drawable/icon_167_upload_photo.png
+SHA1-Digest: Ca8eohrvdcjZQ/4NiAVn6zxMVhc=
+
+Name: res/drawable/icon_141_lamp_2x.png
+SHA1-Digest: jGaFufvjDBPtmChuCd7RRKExg8U=
+
+Name: res/drawable/icon_42_photos.png
+SHA1-Digest: qeUed3PTKSGjDI+0vAleN7nTTIs=
+
+Name: res/drawable/icon_106_sliders.png
+SHA1-Digest: rYwK+XqzttKT+AyjySygATNpiZE=
+
+Name: res/drawable/icon_09_chat2_2x.png
+SHA1-Digest: yat0HZMDio8dFkCZpM3fnLYlzs4=
+
+Name: res/drawable/icon_14_tag.png
+SHA1-Digest: iHNazOWS4sF3KxYO3c8aJ4i0ZGE=
+
+Name: res/drawable/icon_176_ipad_2x.png
+SHA1-Digest: eMTTrRz7aI4gsZvy7wq+y91wt6g=
+
+Name: res/drawable/icon_173_eyedropper.png
+SHA1-Digest: QapHtT+eUphgw8hTldJk1R4dx/s=
+
+Name: res/drawable/button_light_red_src.xml
+SHA1-Digest: vj5eu/IDO8XKiwwPww14g2jAYJk=
+
+Name: res/drawable/icon_36_toolbox_2x.png
+SHA1-Digest: MgUPm4aOteneKj3en03czvmAE60=
+
+Name: res/drawable/icon_25_weather_2x.png
+SHA1-Digest: 1nR/iXYS0K1fCaz6ViJUlPQ6grs=
+
+Name: res/drawable/icon_130_dice_2x.png
+SHA1-Digest: VSUsEnME1fAhi+hmcfqsO0Mwako=
+
+Name: res/drawable/icon_52_pinetree.png
+SHA1-Digest: Dv0HWvzJ2kuC0owmtms+/NcdalA=
+
+Name: res/drawable/icon_183_genie_lamp.png
+SHA1-Digest: lQcgITtiZhy5z7RXeSNRn1yywxo=
+
+Name: res/drawable/icon_error.png
+SHA1-Digest: BqCujR/nLDydz/dAFR0I4VbC5lY=
+
+Name: res/drawable/icon_174_imac.png
+SHA1-Digest: j61BtGuL3zJgfXJFNTfIIPWwLxE=
+
+Name: res/drawable/button_light_red_selected.9.png
+SHA1-Digest: a+xEedSNlVT4OSAHY0VQPIVbTLo=
+
+Name: res/drawable/middle_row.png
+SHA1-Digest: +kzszzN4KChk6PKd3tGbZFz/joI=
+
+Name: res/drawable/icon_144_martini_2x.png
+SHA1-Digest: EPYq0g4AaUCvhLMHz9HEuHLGDyA=
+
+Name: res/drawable/icon_rss.png
+SHA1-Digest: hzbtMOWVHNN7Z5rpTlFMUTWyyWw=
+
+Name: res/drawable/icon_favorities_remove.png
+SHA1-Digest: dC2wEsoyzDxFDvUHFFJKMuV/P9k=
+
+Name: res/drawable/button_icon9_src.xml
+SHA1-Digest: +IL11hHgnWKU+cMAXG9ZjKU2jWY=
+
+Name: res/drawable/side_line_background.xml
+SHA1-Digest: YOmG2/Wf1c9HiaK+MPKBfLyH41U=
+
+Name: res/drawable/icon_179_notepad_2x.png
+SHA1-Digest: xNq4uQRfjSh78XozK4duY2VNUPw=
+
+Name: res/drawable/icon_76_baby.png
+SHA1-Digest: P6/JEzjWMPy7+9VWZkqMTcDHPPA=
+
+Name: res/drawable/icon_delete.png
+SHA1-Digest: K+j8MTgz0YTTK1hLFP4QXkuZWPE=
+
+Name: res/drawable/icon_92_test_tube.png
+SHA1-Digest: 0rXGViNIz1bz3x42gkcCvvXQukU=
+
+Name: res/drawable/icon_158_wrench_2.png
+SHA1-Digest: JiNzOqY7EhISp/iDRFHUoeDXsHc=
+
+Name: res/drawable/icon_folder_bookmark.png
+SHA1-Digest: zuvsLrgBgOeC4ZkmLdo71IMF0Uk=
+
+Name: res/drawable/icon_200_card_clubs.png
+SHA1-Digest: JYW/d9EqonlEICpCuKDX9jkRi1Y=
+
+Name: res/drawable/icon_99_umbrella_2x.png
+SHA1-Digest: qdIoCPQwM2wlDHV0NJxqu1fe8Mk=
+
+Name: res/drawable/icon_190_bank.png
+SHA1-Digest: 0+zrmsLUj9gTiBQ+bIS/aAVoN/I=
+
+Name: res/drawable/icon_195_barcode.png
+SHA1-Digest: Sazdi63pZIwhfASsOBZN74KK6BE=
+
+Name: res/drawable/icon_30_key.png
+SHA1-Digest: DY38+97cr6YvuBQ32IZIXDdzuTo=
+
+Name: res/drawable/icon_199_card_hearts.png
+SHA1-Digest: zg6IJ/WuO3uST7wVTVarUjGcKQs=
+
+Name: res/drawable/player_previous_button.png
+SHA1-Digest: bxgPDIYhYkAD02wgjGRDMxbka9Y=
+
+Name: res/drawable/button_bright_pink_selected.9.png
+SHA1-Digest: IQ8AOrmEmj5DTOUDcTMaa3pb5K4=
+
+Name: res/drawable/icon_157_wrench.png
+SHA1-Digest: EyBMCyFB5c+4zi14w8g1gE+fKoI=
+
+Name: res/drawable/icon_146_gavel.png
+SHA1-Digest: poT57KV+/fnaHr8nQbEjnSUTIQw=
+
+Name: res/drawable/icon_160_voicemail_2_2x.png
+SHA1-Digest: iuxa0MjpblFUFTJs1WBz1GmMA2U=
+
+Name: res/drawable/button_light_green_src.xml
+SHA1-Digest: e5eGqO8eJ2SPHILQJBXGb15luow=
+
+Name: res/drawable/icon_101_gameplan_2x.png
+SHA1-Digest: OUBn2N3RQVgFX9eg1fXjTFBvNJI=
+
+Name: res/drawable/icon_contrast.png
+SHA1-Digest: l9Hy8Mmo2p1qzGUjOJ49E5rfDCg=
+
+Name: res/drawable/icon_fonts.png
+SHA1-Digest: qao1rdHVtTQfl/DoIBfnHrp90M0=
+
+Name: res/drawable/bubble.png
+SHA1-Digest: nbeu0WzpEaSVPwrsKCB2xlzQrKs=
+
+Name: res/layout/home_screen_layout_2row.xml
+SHA1-Digest: Wuu75RimzYhU2GWut8KSf4IiXec=
+
+Name: res/drawable/icon_56_cloud_2x.png
+SHA1-Digest: i54GYUuzf1SeDJFP1In30oJjbkQ=
+
+Name: res/drawable/icon_187_pencil.png
+SHA1-Digest: HsVXylIEv7S31gdcRIMD3YK7tG8=
+
+Name: res/drawable/icon_time.png
+SHA1-Digest: RVxl7IRgEVmMDveDWdtnZ/CiBHA=
+
+Name: res/drawable/icon_140_gradhat_2x.png
+SHA1-Digest: IIYqogacTRVhT9fsI2cT/JGLczM=
+
+Name: res/layout/common_row.xml
+SHA1-Digest: YRKv53LSmy0l9ia5gLfEPK1bdCg=
+
+Name: res/drawable/button_icon5.png
+SHA1-Digest: FOaHimyt4Bw4QEHfzZ11Sa2Hrwc=
+
+Name: res/drawable/icon_77_ekg_2x.png
+SHA1-Digest: UATQNq8Rlh4jhXCCmnfWID/rtDg=
+
+Name: res/drawable/icon_84_lightbulb_2x.png
+SHA1-Digest: 6smRABRSLlKFkLMdjkszaScGOZo=
+
+Name: res/drawable/icon_87_wineglass_2x.png
+SHA1-Digest: ry+cHj5F/uy68E3RwFu1ZBKbsCg=
+
+Name: res/drawable/icon_49_battery_2x.png
+SHA1-Digest: KauvZwXuYLTHbipHCHw6Ba1IFjM=
+
+Name: res/drawable/button_bright_light_dark.9.png
+SHA1-Digest: 1OPiD/ojGH5xTleGwayL7DKZ5Vo=
+
+Name: res/drawable/button_icon3_src.xml
+SHA1-Digest: so/zJv1sZsqrl/60lywMFrtph+c=
+
+Name: res/drawable/icon_188_paint_roller.png
+SHA1-Digest: K7/wRlTu+RDXkJiY8UxwF5hckr0=
+
+Name: res/drawable/icon_41_picture_frame_2x.png
+SHA1-Digest: U7Ijs1jOh41DA/acVFWCH+Hk+DM=
+
+Name: res/drawable/icon_172_pricetag.png
+SHA1-Digest: 2gRaLOCTmqytonlOgnQ6oR/a4bc=
+
+Name: res/drawable/icon_tag.png
+SHA1-Digest: 3vnkNt0m7sT5FPfhKyLeFLsvUQI=
+
+Name: res/drawable/icon_44_shoebox_2x.png
+SHA1-Digest: d+ficAj4xK975Is0LbDaKuz8qx0=
+
+Name: res/drawable/icon_159_voicemail.png
+SHA1-Digest: 3lHYzBHQbb6EDg+J9R7u4zQRgzQ=
+
+Name: res/drawable/icon_minus.png
+SHA1-Digest: MTjwTbi/3/Y3NLFompybYymuoDA=
+
+Name: res/drawable/icon_safe.png
+SHA1-Digest: Pdr8r7xRQyPFWfXbhv5QXNlifGU=
+
+Name: res/drawable/button_white_gray.9.png
+SHA1-Digest: 2HMfCRoi+T4QdcvWevJ64kJTeJo=
+
+Name: res/drawable/icon_font.png
+SHA1-Digest: J37bmaH4G+RfHdbnQhZdgSdz38U=
+
+Name: res/drawable/icon_95_equalizer.png
+SHA1-Digest: L/BETG7JYL0obXUoGwPwf9QBkeY=
+
+Name: res/layout/section_header.xml
+SHA1-Digest: Qh5GRV5ABgtqesrGm9mUP+w6Xys=
+
+Name: res/layout/flexible_counter_item.xml
+SHA1-Digest: aQeyx7hgxmRXJ4N44M+9L+BXwfY=
+
+Name: res/drawable/icon_text_align_justify.png
+SHA1-Digest: p2TYMyfzRc6sBkF/41hOikPFbRI=
+
+Name: res/drawable/icon_box.png
+SHA1-Digest: Ggr8TaXxvn4IqC42/m7oVT5H+Kk=
+
+Name: res/drawable/icon_computer_off.png
+SHA1-Digest: XPT1nQ1r6hy6VJtXKpCdxoDxiPI=
+
+Name: res/drawable/icon_05_shuffle.png
+SHA1-Digest: HT1/237CvKjlkeihxsu9H+ZtGdk=
+
+Name: res/drawable/icon_38_airplane_2x.png
+SHA1-Digest: 8imD7Rfih2xDG0Qn0ZdEo4jf/HU=
+
+Name: res/drawable/icon_150_sailboat_2x.png
+SHA1-Digest: t2c9C+36qeJIMrhv3lWkrz7C2io=
+
+Name: res/drawable/icon_mic.png
+SHA1-Digest: 8heSDMrQVV1M12kipGDdj+1v1pM=
+
+Name: res/layout/home_screen_layout_3row.xml
+SHA1-Digest: k8cFirfiV5x/VpXxZlH+fCAhcHE=
+
+Name: res/drawable/icon_147_popsicle_2x.png
+SHA1-Digest: lPXvONQHV9vc4Cz1rYGF/lmTy0I=
+
+Name: res/drawable/icon_153_guitar.png
+SHA1-Digest: En94Qj0P8a1juFu4kTed4SOArhg=
+
+Name: res/drawable/icon_169_8ball_2x.png
+SHA1-Digest: mIRC+d1lw0Sn+GYZF19lhkEoAIg=
+
+Name: res/drawable/icon_35_shopping_bag.png
+SHA1-Digest: XddevaX/rW9KY2wynH0cC30+/Bk=
+
+Name: res/drawable/icon_175_macbook_2x.png
+SHA1-Digest: fsn9EhqXcSLQ7IsdZkHZmrspmQs=
+
+Name: res/drawable/icon_75_phone_2x.png
+SHA1-Digest: GyLlwzmUsMrZjX4YX4v0FghQqhc=
+
+Name: res/drawable/icon_111_user.png
+SHA1-Digest: lUtrGccxcJkrO5XzYYPncXn2V4U=
+
+Name: res/drawable/icon_39_spraycan.png
+SHA1-Digest: IsI5cDR9G/7PnaK93s6BYh4pufU=
+
+Name: res/drawable/icon_137_presentation_2x.png
+SHA1-Digest: s8MfkItHOLWQ+T/G7bjHy5e+Qr4=
+
+Name: res/drawable/icon_57_download.png
+SHA1-Digest: MExTkW2uflKjvigKrPv6wtCCUHE=
+
+Name: res/drawable/icon_magnify_glass.png
+SHA1-Digest: 87JIPF0DaD25GuaFl79loPTywwI=
+
+Name: res/layout-ldpi/tab.xml
+SHA1-Digest: h6as5j33JRRrK6kjEaTjJ6b0ojA=
+
+Name: res/layout/info_detail_layout.xml
+SHA1-Digest: OGLv7UtlEZtGOpl6g3HWPNxqP9o=
+
+Name: res/drawable/icon_63_runner_2x.png
+SHA1-Digest: Yrpmbj9FelmgJjpn8oXgil37CcE=
+
+Name: res/drawable/icon_40_inbox_2x.png
+SHA1-Digest: kjuuYlFSuLiWgUz3tmXPMgetqgM=
+
+Name: res/drawable/icon_29_heart.png
+SHA1-Digest: ixQrpUnlRizqZZpHKRX1D/uMX18=
+
+Name: res/drawable/icon_98_palette.png
+SHA1-Digest: tZ3f9WkGu6PG+m4wv51o+gfFhp0=
+
+Name: res/drawable/icon_whitearrow.png
+SHA1-Digest: 3D1kWJaIGG96w4kzYk1AbLfv71g=
+
+Name: res/drawable/icon_163_glasses_1_2x.png
+SHA1-Digest: ZCK/wjuoeDEin+g1pZFw0DuKeN8=
+
+Name: res/drawable/button_grey.9.png
+SHA1-Digest: GPeBXCbFC3QBCQ+1u7YRF05qryY=
+
+Name: res/drawable/icon_103_map_2x.png
+SHA1-Digest: Y/7Ce9aUjtbNv/ii5R8qL1597nE=
+
+Name: res/drawable/icon_03_loopback_2x.png
+SHA1-Digest: awWHEyXz0y8nPj4VvRjbmCeBqVM=
+
+Name: res/drawable/login.png
+SHA1-Digest: mMr7bUvnTRDVpWj2wqovGLwvsw8=
+
+Name: res/drawable/icon_blackarrow_2x.png
+SHA1-Digest: O9nV5KTlt72rNyRM+CKglzGV+7A=
+
+Name: res/drawable/icon_17_bar_chart.png
+SHA1-Digest: zLRKRKZFIKcdp05mJtOBiZinb6Y=
+
+Name: res/drawable/icon_paragraph.png
+SHA1-Digest: ZpNCGezwXtGEpLc+5j5K5YYC2dY=
+
+Name: res/drawable/icon_142_wine_bottle_2x.png
+SHA1-Digest: Wm0E7QfjyJCtjGSZImiz18DhbHE=
+
+Name: res/layout/home_part_layout.xml
+SHA1-Digest: e4FC2rqjxuw8hgsoSzDt0JRw3Ls=
+
+Name: res/drawable/icon_87_wineglass.png
+SHA1-Digest: E8sY3p7ZbxcHA5SmStKPcFvA+kU=
+
+Name: res/drawable/icon_star.png
+SHA1-Digest: Dfjni80ocILWn/X6CT7QV7G69pk=
+
+Name: res/drawable/icon_46_movie_2_2x.png
+SHA1-Digest: Yw80SyTQqTk7w7XyRmZdEu0l0bU=
+
+Name: res/drawable/icon_65_note_2x.png
+SHA1-Digest: cCMLsEhYF8H369vzXQ490azV2nE=
+
+Name: res/drawable/icon_35_shopping.png
+SHA1-Digest: 8DUSTcydDU4qlbC9oEFXHM2WVBI=
+
+Name: res/drawable/button_light_blue.9.png
+SHA1-Digest: 0qXWouFpSPU2JGhYJDFBxNWbrNQ=
+
+Name: res/drawable/icon_72_pin.png
+SHA1-Digest: 8yhW7B1ei4nW1GEXNtUWlkitUBI=
+
+Name: res/drawable/icon_113_navigation.png
+SHA1-Digest: FYBm+UeDNJcgaCCPgaKMeYovKNc=
+
+Name: res/drawable/barcode_icon.png
+SHA1-Digest: 3blnMciB0vethjfhQWKa596fpQE=
+
+Name: res/drawable/icon_178_city.png
+SHA1-Digest: qCb7tsfgsorVUDyf5HHxv2RfdR8=
+
+Name: res/drawable/preview_gradient.xml
+SHA1-Digest: iPAuLf97/qZrkkKQYpILVqfBDCQ=
+
+Name: res/drawable/icon_186_ruler.png
+SHA1-Digest: d2zlcOyC0J4g6jcQcW+GXA23oqk=
+
+Name: res/layout/coupon_detail_layout.xml
+SHA1-Digest: Jch09Ltu5wYCehCWCFKMiNadLeo=
+
+Name: res/layout/voice_recording_layout.xml
+SHA1-Digest: d1TXAKzAQqIAZ/U+o4cjD1Fulro=
+
+Name: res/drawable/icon_162_receipt_2x.png
+SHA1-Digest: dioYlkCtf4utIvXGANDpQ0PkS0A=
+
+Name: res/drawable/black_button_rounded_left.xml
+SHA1-Digest: r0MlxQs7LXi2lCThMpFQZHPD4T0=
+
+Name: res/drawable/icon_73_radar_2x.png
+SHA1-Digest: ngpDR9M712HcF6VXnCgXoQlpkAM=
+
+Name: res/layout/qr_scanner_layout.xml
+SHA1-Digest: SgYbJcHGT9PyeJy1/KrqP+ZNn2Q=
+
+Name: res/drawable/icon_83_calendar_2x.png
+SHA1-Digest: EGm+Fqm7kxWwbNzt5Trj8oESlnE=
+
+Name: res/drawable/button_purple.9.png
+SHA1-Digest: 0wp0xeUn1olgiJiYR46Bg+U7ABY=
+
+Name: res/layout/multiple_item_dialog.xml
+SHA1-Digest: Zu8B38DsiEyAtkPSlCFbKB4blBs=
+
+Name: res/drawable/logout.png
+SHA1-Digest: T91THyjROZ9K3dfhIVFTLCIiXHk=
+
+Name: res/layout/location_item.xml
+SHA1-Digest: RdkHaas41pSfCI72rUZNK1QBam8=
+
+Name: res/drawable/icon_136_tractor_2x.png
+SHA1-Digest: O1vE4fVND4WxabbV8CN4f9SeEWE=
+
+Name: res/drawable/icon_20_gear2.png
+SHA1-Digest: xQAxx9LByAt2gmWLQNRomB5pTII=
+
+Name: res/drawable/icon_123_id_card.png
+SHA1-Digest: w90y5YFXRz6TlYTVvaiLrNKTBX8=
+
+Name: res/layout-land/mortgage_calculator_layout.xml
+SHA1-Digest: t83zqdvFpFn073ALTEyxsqtVho8=
+
+Name: res/drawable/selected_circle.png
+SHA1-Digest: jTnfiB+32tIZ32rJEgCs9KyhEKg=
+
+Name: res/drawable/icon_168_upload_photo_2_2x.png
+SHA1-Digest: Qh4++gW2wt9wPlXAti/nokY4vv0=
+
+Name: res/drawable/icon_font_italic.png
+SHA1-Digest: mndWBSRHh0kNdM6eppLidRUscQg=
+
+Name: res/drawable/button_icon8_src.xml
+SHA1-Digest: tu1VlY4AzGL5fwAbSCxiSQiAacU=
+
+Name: res/layout/pull_to_refresh_header.xml
+SHA1-Digest: zxz7RUwkxBg+wmSekQ62t0Vorl8=
+
+Name: res/drawable/icon_05_shuffle_2x.png
+SHA1-Digest: v6vSheYpn2bYCKfLu/jdd1CXaBw=
+
+Name: org/apache/http/client/version.properties
+SHA1-Digest: /Jlko2s0n15IrBar1ZYbQQ4/p80=
+
+Name: res/drawable/icon_bluearrow_2x.png
+SHA1-Digest: Wkp5EnOTRMB/xC8ae3POiTOOHpc=
+
+Name: res/drawable/icon_80_shopping_cart.png
+SHA1-Digest: RlrSj5U0tMkuAyyQlIEBwfZzNpY=
+
+Name: res/drawable/button_icon11.png
+SHA1-Digest: PcWFJ7qzgwB0GXbxxEvvcLMSfHY=
+
+Name: res/drawable/icon_dollar.png
+SHA1-Digest: 7M9NE2azS5CfN5bw/Izb5hcvp/0=
+
+Name: res/drawable/grey_button_.png
+SHA1-Digest: FLjTfdVGPBnk/w+lokm6jU8tnVk=
+
+Name: res/drawable/icon_text_align_center.png
+SHA1-Digest: vzwSadchizh/RWcm6JNtK8tqtt4=
+
+Name: res/drawable/cart_btn.xml
+SHA1-Digest: cVodOLkx2pagjHqVCqBnnB0lc7E=
+
+Name: res/drawable/button_icon1_selected.png
+SHA1-Digest: srv4Td/KPLWvXPsxutGWXjFgmw8=
+
+Name: res/layout/list_layout.xml
+SHA1-Digest: U/z7bNHMtNop9diVsrJMdku53zk=
+
+Name: res/drawable/icon_113_navigation_2x.png
+SHA1-Digest: BK5U/HSdv7QNF4H/C0Kb41To70s=
+
+Name: res/drawable/button_turquoise.9.png
+SHA1-Digest: nXFdHDDBftWiwNVfZsxxXBN/TC4=
+
+Name: res/drawable/icon_11_clock_vectorized_2x.png
+SHA1-Digest: A0IePF2Rj7NBnny0MyVekzTLD2E=
+
+Name: res/drawable/button_icon4_selected.png
+SHA1-Digest: pYyOlOzu/DWd1Av11sWd9JwCKj4=
+
+Name: res/drawable/icon_75_phone.png
+SHA1-Digest: WC1kdod/mQBb9RvJb9jLu64UWKc=
+
+Name: res/drawable/icon_cut.png
+SHA1-Digest: 8bXT1c5rFlNmgIGpDCrsDdG9ZT0=
+
+Name: res/drawable/icon_list_numbers.png
+SHA1-Digest: mNoAlUpRrEtrgxISrRBTioxi1a0=
+
+Name: res/drawable/icon_zoom_out.png
+SHA1-Digest: xyuw1eQUDWk4buskopZVpnK5mUE=
+
+Name: res/drawable/icon_154_necktie.png
+SHA1-Digest: LL61lFCk69qQLURghJBtmMA5oy0=
+
+Name: res/layout/webview_layout.xml
+SHA1-Digest: mJEvKFqpBRYqWxj1hhKRdfXJhDY=
+
+Name: res/drawable/icon_102_walk.png
+SHA1-Digest: LqS61euQb5PHYbaVJ75GMUS+S4w=
+
+Name: res/drawable/arrow_left.png
+SHA1-Digest: gWUQSFA0J09h/pp/D6mC642i2lQ=
+
+Name: res/drawable/button_bright_pink.9.png
+SHA1-Digest: vWxISlQh5PE23wJkRD+vAW82BFA=
+
+Name: res/drawable/icon_64_zap_2x.png
+SHA1-Digest: +pDFco1WiP37bQDOKG/ETsUHBJE=
+
+Name: res/drawable/icon_graph_lines.png
+SHA1-Digest: PExNrfaIUDcOPdbEBobGI0CNeTA=
+
+Name: res/drawable/icon_123_id_card_2x.png
+SHA1-Digest: bxEWwVUUujDzp5yWMrIEdnkLJFQ=
+
+Name: res/drawable/icon_02_redo.png
+SHA1-Digest: 3mp6iSycuVtwUFLs0NN3fwSa/rY=
+
+Name: res/drawable/icon_tag_delete.png
+SHA1-Digest: bd15lrRSoonfh0ZRb1DvRAIffq8=
+
+Name: res/drawable/icon_mic_1.png
+SHA1-Digest: BAY+j7bLxCEvzdBkxfkCQm5B5mU=
+
+Name: res/drawable/icon_favorities.png
+SHA1-Digest: oNrMny2H/YQcXBOD2A/05H2nhv0=
+
+Name: res/anim/hide_navigation_container.xml
+SHA1-Digest: jBgXfOve9CzZCYoVYG6qSk77uaA=
+
+Name: res/drawable/icon_151_telescope.png
+SHA1-Digest: k+dV8jOevmkta+Gj4aNwjSPdzeg=
+
+Name: res/drawable/button_light_dark_blue_src.xml
+SHA1-Digest: 1bP+7NBaxigdZYQIT4uhd8fod/Y=
+
+Name: res/drawable/icon_add.png
+SHA1-Digest: nR3BHDdMD4xuiWk4L2n6GN13udE=
+
+Name: res/drawable/icon_21_skull.png
+SHA1-Digest: 4FeWRo+Dj+ydVgVa0h9qLc2ZAUw=
+
+Name: res/drawable/icon_71_compass_2x.png
+SHA1-Digest: KxrQkZ0KYe4ch9AIbgw4gLLy65w=
+
+Name: res/drawable/icon_134_viking.png
+SHA1-Digest: gc5c5zieqmKIP6sUNWF116+2OzE=
+
+Name: res/drawable/icon_text_align_right.png
+SHA1-Digest: NDSd7JEO04aB9KI5PTJ2Kx0nTNw=
+
+Name: res/drawable/icon_59_flag.png
+SHA1-Digest: Q+x7UzIPOcOI3JTopVbcGxnbYLw=
+
+Name: readme.txt
+SHA1-Digest: JRWlNdSc7bicYaEB8xWtc3YQ+Ts=
+
+Name: res/layout/loyalty_dialog.xml
+SHA1-Digest: +abG1PTpOuerGl5UKjHOqIVocd8=
+
+Name: res/drawable/button_light_gray.9.png
+SHA1-Digest: SaAparIjahy6kK1c5+r64EeND0w=
+
+Name: res/drawable/button_drak_orange_selected.9.png
+SHA1-Digest: 9qVc+zGEkJQFag0q6pVvwpt7xQA=
+
+Name: res/drawable/icon_user.png
+SHA1-Digest: d/2yQ5gEcd7PlwkJlHiJZPD9gvY=
+
+Name: res/drawable/icon_46_movie_2.png
+SHA1-Digest: i9xNH171nTmNRTsupC8T3nwMNwQ=
+
+Name: res/drawable/button_bright_green_src.xml
+SHA1-Digest: a3aDig0gHslxceyv6MEcWBe01zY=
+
+Name: res/drawable/icon_81_dashboard_2x.png
+SHA1-Digest: RaxTPwDh8512Q/pW6JQdZUVtkEM=
+
+Name: res/drawable/icon_110_bug_2x.png
+SHA1-Digest: R+gop2C2e1z2NJFVbAOOpElhUdI=
+
+Name: res/drawable/icon_179_notepad.png
+SHA1-Digest: Yz38Zb2Q5HztLX93qCbguRb3dq4=
+
+Name: res/drawable/icon_graph_bars_up.png
+SHA1-Digest: YtGWzvMF+JFkNavBV89986RORYU=
+
+Name: res/drawable/tab_circles_src.xml
+SHA1-Digest: 7flH7yeT/tgTOePOeV/JxXtVkB4=
+
+Name: res/drawable/icon_51_outlet.png
+SHA1-Digest: N72NPKTRwc8ufQVcohdB9LISsqc=
+
+Name: res/drawable/player_pause_button.png
+SHA1-Digest: rPHt1QXij8E2PCXz21kL7Bd0y0M=
+
+Name: res/drawable/icon_156_controller.png
+SHA1-Digest: UginJGnsNOjWTuW8/n5CJd/Cvuo=
+
+Name: res/drawable/icon_136_tractor.png
+SHA1-Digest: mY9SEoGiZj/SiEMN8p7Sy+cnWkA=
+
+Name: res/layout/flexible_counter_layout.xml
+SHA1-Digest: LO38z/3NhQuP07K+tUMTaFz5V34=
+
+Name: res/layout/location_layout.xml
+SHA1-Digest: ckObpP1DGyf+UAjaMHbhIYsNWbc=
+
+Name: res/drawable/icon_112_group_2x.png
+SHA1-Digest: pd8U9g3Njnas+lMiuv0uJzUvFZ4=
+
+Name: res/drawable/icon_54_lock_2x.png
+SHA1-Digest: gUYe+ZTihJWDG/qLriYBDHIZ7Po=
+
+Name: res/drawable/button_light_green.9.png
+SHA1-Digest: ejcwQMSLIm5rEo3AxpR6aRLTDGM=
+
+Name: res/drawable/icon_187_pencil_2x.png
+SHA1-Digest: Bee8+tDB1Ioo/Dr1JH+RITNWgr0=
+
+Name: res/drawable/icon_arrow_up.png
+SHA1-Digest: 6Yav2LGKYc3h8nTCEtTgZJr5j/M=
+
+Name: res/layout/around_us_layout.xml
+SHA1-Digest: w3BBehFpB9psdXR2OctNgZvwnDY=
+
+Name: res/drawable/icon_padlock_clip_art_7529.jpg
+SHA1-Digest: P9ecXxpU00mIUJtPk6aLQMVCVgQ=
+
+Name: res/drawable/button_orange_src.xml
+SHA1-Digest: kmPDqnrgIHhPml2G7AjEy0daOag=
+
+Name: res/drawable/lock_icon.png
+SHA1-Digest: 2d03yf7tPtzRoiysUiNXc/mx10E=
+
+Name: res/layout/home_screen_layout_1row.xml
+SHA1-Digest: AVfyz8N5oJWgg2i9fhWcFE7oV6U=
+
+Name: res/drawable/button_light_dark_blue.9.png
+SHA1-Digest: ihthCnxzjuD3M/sAMAON3w3hcHs=
+
+Name: res/drawable/icon_22_skull_n_bones.png
+SHA1-Digest: 6Eyp2OsqFutCOWC8VRzr875LvyA=
+
+Name: res/drawable/tell_friend_dialog_background.xml
+SHA1-Digest: eH5wOuGZwHwoQj69tYMwerl/RY0=
+
+Name: res/drawable/icon_sad_face.png
+SHA1-Digest: kZD7whwQgfWxmdt0qqIyOQmJ6+0=
+
+Name: res/drawable/icon_graph_up.png
+SHA1-Digest: 9C5I4ViymNTlngongSutSvKxmHg=
+
+Name: res/drawable/icon_font_capital.png
+SHA1-Digest: tvbZ576YzNGVbJ+pb/1wlFnN4X4=
+
+Name: res/drawable/tab_selector.xml
+SHA1-Digest: zOaKh5x+g3knFxmkhkg05rEWKGs=
+
+Name: res/drawable/icon_keyboard.png
+SHA1-Digest: DgEU//c53d7MN7m+M3mKzyM82/k=
+
+Name: res/drawable/icon_pencil.png
+SHA1-Digest: OoG91L0DffG0ko3NJsbviL+nfIo=
+
+Name: res/drawable/icon_zoom_in.png
+SHA1-Digest: hsDp4rCylrCTXa94bq1r5njb7kA=
+
+Name: res/drawable/icon_102_walk_2x.png
+SHA1-Digest: AY5I52SBjAG/BkVqbv63l3EmUKs=
+
+Name: res/drawable/icon_case.png
+SHA1-Digest: 331j7NZrd8A6QFsrtVESV//rzNU=
+
+Name: res/drawable/icon_14_tag_2x.png
+SHA1-Digest: CMFH8CsSkCXAGN7YrNfRXOBtP+A=
+
+Name: res/drawable/icon_164_glasses_2_2x.png
+SHA1-Digest: B2aOnsZuWmLoKyiyqizBjY9gL6s=
+
+Name: res/drawable/icon_23_bird_2x.png
+SHA1-Digest: tuAWX84q//JZxgaZd2gf7KYVRCk=
+
+Name: res/drawable/icon_45_movie_1.png
+SHA1-Digest: d1hsqnvc/XB5ElzTRuoY1UbPnC4=
+
+Name: res/drawable/button_icon7_selected.png
+SHA1-Digest: 77n5wbCmyuhIsgMVv73mDop8W9Q=
+
+Name: res/drawable/icon_link.png
+SHA1-Digest: OuiUHa982BXCD7zln7/9ngLoiZc=
+
+Name: res/drawable/icon_68_paperclip.png
+SHA1-Digest: pYV7CY4av0YLXiYPybii1SHEnqs=
+
+Name: res/drawable/icon_sort_az.png
+SHA1-Digest: wn0dMDeRyyh6/eCaV1DaWii82Ws=
+
+Name: res/drawable/button_green_selected.9.png
+SHA1-Digest: GG51rlr8KTyBxMGdql6TluVnHVk=
+
+Name: res/drawable/icon_191_collection.png
+SHA1-Digest: E89blsc+CQS9K2MzrK2ikAQD6eY=
+
+Name: res/drawable/icon_circle_arrow_left.png
+SHA1-Digest: 8HWboZJtj4ofArSo2zjxO+MKdQU=
+
+Name: res/drawable/button_icon6.png
+SHA1-Digest: I86rT12B1CtNYTJG3f6EGuF/WUk=
+
+Name: res/layout/home_layout.xml
+SHA1-Digest: uGohznwpnPiidpNjbAzZ4t7NUQI=
+
+Name: res/drawable/icon_151_telescope_2x.png
+SHA1-Digest: N4bejr7DVC+ITGXKj2Tz62HQr2M=
+
+Name: res/drawable/icon_piechart.png
+SHA1-Digest: D9a5F8+U+uOeUzP5XItrZkqd9+M=
+
+Name: res/drawable/icon_69_display.png
+SHA1-Digest: yJDO37oG1rrr678OASENN5Jve8Y=
+
+Name: res/drawable/icon_154_necktie_2x.png
+SHA1-Digest: 4VXpvF2CSdKokgQxOCGfQEFbTVM=
+
+Name: res/drawable/icon_13_target.png
+SHA1-Digest: HBnwArs/8gAYGpQ0CxnEnybjwCk=
+
+Name: res/drawable/icon_88_beer_mug_2x.png
+SHA1-Digest: 7SLZP4n+R8q1niCzAkGwj4wD/5I=
+
+Name: res/drawable/coupon_details_bg.png
+SHA1-Digest: mPReL9Z8Pb/pzsYFaHXWfkOmBuI=
+
+Name: res/drawable/arrow_right.png
+SHA1-Digest: zxNkLGmwr4srJloHEAyCad0XMys=
+
+Name: res/drawable/button_icon4.png
+SHA1-Digest: V8Lv8nl+IITWg9PNE6fcRzmyFnc=
+
+Name: res/drawable/icon_34_coffee.png
+SHA1-Digest: t/YYZYh/IlZ8oSt8HWH0F8va+0A=
+
+Name: res/drawable/icon_save.png
+SHA1-Digest: FWI0OtfnifvATeFkw6jLuWvDOkM=
+
+Name: res/drawable/button_turquoise_selected.9.png
+SHA1-Digest: Zahi5C8nP+HJhZGSkFaye6pe1xA=
+
+Name: res/drawable/icon_arrow_right.png
+SHA1-Digest: BCl+Bgw1Zz7SDq9Z8cjQbcWwZs8=
+
+Name: res/drawable/line_v.png
+SHA1-Digest: PkJTqJRNRdNxZ7m06oOtWf0wK/o=
+
+Name: res/drawable-ldpi/facebook_icon.png
+SHA1-Digest: YSuvASwvSMVgSVI9vP+fi0h4rpY=
+
+Name: res/layout/gallery_layout.xml
+SHA1-Digest: PBiGyzHo/YGtGbkMcmCgYF3VOeU=
+
+Name: res/layout/notepad_list_row.xml
+SHA1-Digest: jXf7b7j7uxwfnMJlkVe/qyamGeI=
+
+Name: res/drawable/icon_173_eyedropper_2x.png
+SHA1-Digest: rYmmk9E5W1Q2YMovIQm+WcT+9Q0=
+
+Name: res/drawable/icon_first_aid.png
+SHA1-Digest: oQ+dLa7QYzkJt7AbdTmFY/dwP94=
+
+Name: res/drawable/icon_window_error.png
+SHA1-Digest: oTcsb6EAT2/qN7nY6sWWcmL7QeE=
+
+Name: res/drawable/icon_131_tower_2x.png
+SHA1-Digest: 5kqtp8NACjbG43YWVRdHD/6dHY0=
+
+Name: res/drawable/icon_129_golf_2x.png
+SHA1-Digest: AQnuVr7YWI94zUm/q243J3D+hjQ=
+
+Name: res/drawable/barcode_button_icon.png
+SHA1-Digest: 3K0j6pn8QRELukHYvG58C93qT5w=
+
+Name: res/drawable/icon_127_sock_2x.png
+SHA1-Digest: upVTWloPqdn5+vqaK8j6Gk96ZiY=
+
+Name: res/drawable/icon_23_bird.png
+SHA1-Digest: VKMe0y+FdFDFysIf3G2ZLs2XBfY=
+
+Name: res/drawable/icon_69_display_2x.png
+SHA1-Digest: ySGbdTi7J//JzZH9DaZYqvWIpLc=
+
+Name: res/drawable/icon_55_network_2x.png
+SHA1-Digest: d4zam2Cxj8vY58y7EtKAZ9MP82k=
+
+Name: com/paypal/android/utils/data/data.bin
+SHA1-Digest: IMfKqWIEzzCsfc9VJUVZwNTSNEk=
+
+Name: res/layout-land/tip_calculator_layout.xml
+SHA1-Digest: GJ3SA96cvKIumdtDouuQTBJYkrs=
+
+Name: res/drawable/icon_graph_bars_down.png
+SHA1-Digest: 02++Q2lkuiDllxdv9l4gIeHdNpU=
+
+Name: res/drawable/icon_box_full.png
+SHA1-Digest: ED8O9yyhx4BHNvupG0Bp7cO2gWc=
+
+Name: res/drawable/button_icon2.png
+SHA1-Digest: 5rgh7LJtAlb6awMMnZp67sQAlvw=
+
+Name: res/drawable/icon_filming.png
+SHA1-Digest: OFrVlF7XfULfs7OFIY6PEL67oHQ=
+
+Name: res/drawable/icon_27_planet.png
+SHA1-Digest: dCKCBr1cUfzb2y+33p+3PgfPtZM=
+
+Name: res/drawable/icon_18_envelope_2x.png
+SHA1-Digest: U/Lv5SR442r6M3jFD9bJF5SwSws=
+
+Name: res/drawable/icon_37_suitcase_2x.png
+SHA1-Digest: 46NL3QO/KlU22mVaSPSX8g6Ydk8=
+
+Name: res/drawable/icon_121_landscape_2x.png
+SHA1-Digest: +rclNY2eucAeq0deNMgH/h5kvjg=
+
+Name: res/layout/common_fragment_layout.xml
+SHA1-Digest: dwshXH/67AZxihY1b56R+4UNl+8=
+
+Name: res/drawable/icon_computer_on.png
+SHA1-Digest: A7rAo7jNQGWd74vk8THL27ULRkk=
+
+Name: res/drawable/button_icon6_src.xml
+SHA1-Digest: ykFl44peQydR/TG8FiviPTPglco=
+
+Name: res/drawable/icon_79_medical_bag_2x.png
+SHA1-Digest: ycpFvW35APPkuzghcDx9mLZWA9s=
+
+Name: res/drawable/icon_71_compass.png
+SHA1-Digest: ikxBLLN/fBg2QJjL4kyWAYvY/hE=
+
+Name: res/drawable/icon_flash_arrow.png
+SHA1-Digest: /25qtsC01g7koENVdO1JWJaY1BA=
+
+Name: res/drawable/icon_49_battery.png
+SHA1-Digest: F35MLQOmABCtbuZc6qELqGtQgQM=
+
+Name: res/drawable/button_icon10_selected.png
+SHA1-Digest: EEbvq5znLX3/hQqVPIjdjEf7Rbo=
+
+Name: res/drawable/icon_88_beer_mug.png
+SHA1-Digest: 0hKujyGr6vqB6x5k285jBCQ4VpE=
+
+Name: res/drawable/icon_110_bug.png
+SHA1-Digest: 8dTZCSENC3P5IQfTohsJlN8ZlYs=
+
+Name: res/drawable/icon_174_imac_2x.png
+SHA1-Digest: qKFwz6c6BQ9ECoPBd+pKIgMPIVA=
+
+Name: res/drawable/icon_35_shopping_bag_2x.png
+SHA1-Digest: 9HuLLcGcXS6nzo+tOiqeAZWOKW8=
+
+Name: res/drawable/button_icon5_src.xml
+SHA1-Digest: M35evAdSYLrCoqHWw3OQ54O7+9Q=
+
+Name: res/drawable/icon_storage.png
+SHA1-Digest: mY0LekQ7MY0fqdjwbyGk8OGiSl0=
+
+Name: res/drawable/button_icon8_selected.png
+SHA1-Digest: U2znYJfoq6a5kueC190E7bpIt3M=
+
+Name: res/drawable/icon_105_piano.png
+SHA1-Digest: hJ+b/X9UDgnNDhLQBMlMdmT2grY=
+
+Name: res/drawable/icon_159_voicemail_2x.png
+SHA1-Digest: 81Oj+OR6X5vhqRmkzkandzHw0CE=
+
+Name: res/drawable/button_light_green_selected.9.png
+SHA1-Digest: z/LreAVhe4RwGzCS3EkfO+1p57U=
+
+Name: res/drawable/icon_32_iphone.png
+SHA1-Digest: KgihAogu0g5AKlUSMpvmHSX/PAo=
+
+Name: res/drawable/icon_133_ufo.png
+SHA1-Digest: Csh9Nb2NDR4ipPsfjqKMD8SpUkY=
+
+Name: res/drawable/icon_86_camera_2x.png
+SHA1-Digest: vQ8TgzMwnrpsTwYya/BNkZrFxWs=
+
+Name: res/layout/tip_calculator_layout.xml
+SHA1-Digest: VAwnO0fy8KLjRM7pkd1T3u4hmq0=
+
+Name: res/drawable/button_pink_red_selected.9.png
+SHA1-Digest: VQ0a6AICYwLZVs/7ql2PF6Krap0=
+
+Name: res/drawable/button_drak_orange_src.xml
+SHA1-Digest: feyBAde7ldkwg7pl1nDzhH+zKOY=
+
+Name: res/drawable/icon_post.png
+SHA1-Digest: ZXdLBLUBlPLq78KIpnrdI9BFlEk=
+
+Name: res/drawable/button_green.9.png
+SHA1-Digest: 88hH0LdffbsHKVrUrtnpPcXTvzQ=
+
+Name: res/drawable/icon_12_eye_2x.png
+SHA1-Digest: +2StCm8DAbF4t7qw2Tw+A94s/cM=
+
+Name: res/drawable/icon_116_controller_2x.png
+SHA1-Digest: eeJX+QGPQUbWY+sTpHmKuO/NH1c=
+
+Name: res/drawable/icon_103_map.png
+SHA1-Digest: zdxB+GlGZk1pER3x1WuNA6v99zc=
+
+Name: res/drawable/icon_65_note.png
+SHA1-Digest: eY9qk67JaLP5NRHQZZUy6VDSyqM=
+
+Name: res/drawable/header.png
+SHA1-Digest: fnWq/cxxWGYWyP4lvaj+8I/KJrM=
+
+Name: res/drawable/icon_paperclip.png
+SHA1-Digest: 2fS0vYAyxcI/ViWt2R9ZEvjnEyk=
+
+Name: res/drawable/icon_06_magnify_2x.png
+SHA1-Digest: LqXNOZ7i1lsAuo4scTjqyzGd6h0=
+
+Name: res/drawable/icon_comment_delete.png
+SHA1-Digest: vus08AQit7nUORqs82yQEKbU/aY=
+
+Name: res/drawable/icon_call.png
+SHA1-Digest: OnK4bHnufwW2pWdl5PAjxhUKFa0=
+
+Name: res/drawable/icon_22_skull_n_bones_2x.png
+SHA1-Digest: hIae/9wBCP2FJGcApGUL9hi6TbM=
+
+Name: res/drawable/button_yellow_src.xml
+SHA1-Digest: PUaRtK504nI2EDfya+3YyNnMldY=
+
+Name: res/drawable/button_light_gray_src.xml
+SHA1-Digest: Z9Bw6lxM/AQ5qw4/K4+KOtxNlEE=
+
+Name: res/drawable/icon_34_coffee_2x.png
+SHA1-Digest: mPzCVF7IhhS3VVa1MukcwCFU7pY=
+
+Name: res/drawable/icon_89_dumbell_2x.png
+SHA1-Digest: u/s3XapNVFNBZYdtOxFNb0tjx/w=
+
+Name: res/drawable/icon_controls_4.png
+SHA1-Digest: eO6dvj3oL6ilRzAqbmk4sdIE0+M=
+
+Name: res/drawable/icon_shopping_cart.png
+SHA1-Digest: IbMNvhJluszCZS2/qKp4ux7c4eA=
+
+Name: res/drawable/icon_192_credit_card.png
+SHA1-Digest: 1g9O7xIbMGLwxXrkelRGrtKEFws=
+
+Name: res/drawable/icon_128_bone_2x.png
+SHA1-Digest: 1ro6XoR36eSgbXY49Xt83rr3Y3o=
+
+Name: res/drawable/icon_197_card_diamonds_2x.png
+SHA1-Digest: sc9eB8psOaFM9E0jlBY7ABIlYsI=
+
+Name: res/drawable/icon_bookmark.png
+SHA1-Digest: 6bPdL8xVn11vIpyNMeGg0jqsjak=
+
+Name: res/drawable/button_light_dark_blue_selected.9.png
+SHA1-Digest: byU5AjayGE56rMjogDNM2SBt930=
+
+Name: res/drawable/icon_20_gear2_2x.png
+SHA1-Digest: TUtkWCeRPx3LlGD+/5vexb70gAc=
+
+Name: res/drawable/button_icon6_selected.png
+SHA1-Digest: uGPesICS5kgsTfwGw/l4R56E1to=
+
+Name: res/layout/youtube_rss_row.xml
+SHA1-Digest: k7P6uLPS4U3cBMcxduxsikxWbAQ=
+
+Name: res/drawable/icon_measures.png
+SHA1-Digest: X4Nebvq7yDT+df+RHUapqZYKWQY=
+
+Name: res/layout/info_item_row.xml
+SHA1-Digest: mCBomf1YnLhof94UMo+bzjtitS4=
+
+Name: res/drawable/icon_favorities_add.png
+SHA1-Digest: GFCSu8ixIknII23acEbADva2sHk=
+
+Name: res/drawable/icon_09_chat2.png
+SHA1-Digest: 1qT9PbyQbeQrpbQ/Ck6Sh0kNrSo=
+
+Name: res/layout/gallery_preview_layout.xml
+SHA1-Digest: CNbOqy2oofA4C+Eo2ZAGGOhVM5A=
+
+Name: res/drawable/icon_126_moon.png
+SHA1-Digest: UR0GvEBJeiVAxr1/gWIwnmNC6rc=
+
+Name: res/layout/tab_title_bar.xml
+SHA1-Digest: WLgk6ZCQeTPT59t/8sQ9zcQSObU=
+
+Name: res/drawable/black_button_rounde_right.xml
+SHA1-Digest: B+0DMnuqLLE0JvrK8KILIOhschA=
+
+Name: res/layout/main.xml
+SHA1-Digest: m93kffk4Gsonx11QmuQc+pOqvcM=
+
+Name: res/drawable/icon_118_coat_hanger.png
+SHA1-Digest: 2seqWnPBOnhhGEZxGC40DbH41HQ=
+
+Name: res/drawable/icon_40_inbox.png
+SHA1-Digest: qYY2Fxd19iZU7efjH3fjioQhnSM=
+
+Name: res/drawable/icon_controls_8.png
+SHA1-Digest: r/t8hRCUlwxss6CpFBgg7nJBn4o=
+
+Name: res/drawable/icon_115_bow_and_arrow_2x.png
+SHA1-Digest: RNd+AyqQgHM9hQy+Ox8PKAJX3dU=
+
+Name: res/drawable/icon_194_note_2.png
+SHA1-Digest: uM3HU7PGAxJMLvJ0rMi8aU7x8Yk=
+
+Name: res/drawable/icon_52_pinetree_2x.png
+SHA1-Digest: YdfBaO3jqrwcX/uZNCk6HXEYDQA=
+
+Name: res/drawable/icon_177_building_2x.png
+SHA1-Digest: SzC9Y3dM1HOYVS5dnNDxoXeamlo=
+
+Name: res/drawable/icon_140_gradhat.png
+SHA1-Digest: JIdY4tGAbENR4fshEqVJKyg26Is=
+
+Name: res/drawable/icon_194_note_2_2x.png
+SHA1-Digest: 7nTobJu0gKMqIphJBZlFt7DeMnM=
+
+Name: res/drawable/icon_164_glasses_2.png
+SHA1-Digest: dTmSiMbl/CsKCFw0lvWpxLCR9do=
+
+Name: res/drawable/icon_149_windmill.png
+SHA1-Digest: fJ4+qjV16oj21EZTCmTjS6ji3U4=
+
+Name: res/drawable/button_blue_selected.9.png
+SHA1-Digest: kxCeCtI46Rebqt+ZsJ628yDFWJs=
+
+Name: res/drawable/icon_125_food_2x.png
+SHA1-Digest: 34HINhCBH+Q1AcyPq4oMy1ascVs=
+
+Name: res/drawable/logout_button.xml
+SHA1-Digest: kVKb0/ofGkQcSsxRc8jKFOcWw3Y=
+
+Name: res/drawable/icon_74_location.png
+SHA1-Digest: pxU+PwD7fME9bGI9TMz0yTr283A=
+
+Name: res/drawable/icon_48_fork_and_knife.png
+SHA1-Digest: xNMQgwy/UtDKyd6S2NjIJofIE6k=
+
+Name: res/drawable/icon_tag_cancel.png
+SHA1-Digest: XmMOgYAo2ZpZPK1yfBBybXt6dDU=
+
+Name: res/drawable/trash.png
+SHA1-Digest: TKBU62kqYVuO+qLZZvCOZbwHQ+Y=
+
+Name: res/drawable/icon_96_book_2x.png
+SHA1-Digest: F4dt3aAhhro1x4NFaaPi9spm+U8=
+
+Name: res/drawable/icon_44_shoebox.png
+SHA1-Digest: A81yOw5laN8F0XAR4ePuHxi/Syk=
+
+Name: res/layout/fan_wall_layout.xml
+SHA1-Digest: dT1KFT5fdQPXvTQoi7BGdpeHr44=
+
+Name: res/drawable/icon_flag.png
+SHA1-Digest: fTUbwAvI7TolEvrxkPBPH5JsYn4=
+
+Name: res/layout/podcast_layout.xml
+SHA1-Digest: cMFMwveO55KqRHe5eEsto4rjitI=
+
+Name: res/drawable/icon_home.png
+SHA1-Digest: 1muT2rDtg63ABrEQ5RgwNJq3AMk=
+
+Name: res/drawable/icon_73_radar.png
+SHA1-Digest: cbfLaOfEvZAVGnzyzH6/kM68rKI=
+
+Name: res/drawable/icon_locations.png
+SHA1-Digest: Kt/7rAT6+c8PeJVWcBe8igxWL4M=
+
+Name: res/drawable/icon_152_rolodex_2x.png
+SHA1-Digest: ErrGskLDqeKOUyfN/kEACKV/MAg=
+
+Name: res/drawable/icon_104_index_cards.png
+SHA1-Digest: 3M/Ap6pfbTWU5s0LGj2EkNVWOwU=
+
+Name: res/drawable/button_bright_light_dark_selected.9.png
+SHA1-Digest: hfNnSo4WWVtpDtCrIfalD9jQbuQ=
+
+Name: res/drawable/icon_01_refresh_2x.png
+SHA1-Digest: hFit2lwhHQRiLoTamKGOgM+dT8Q=
+
+Name: res/drawable/icon_55_network.png
+SHA1-Digest: JEMwp/foMnfNRqYXcCdfPALpazE=
+
+Name: res/drawable/icon_smile_face.png
+SHA1-Digest: WBzXWEwp0OCJx9YV8zahUQYE5Q8=
+
+Name: res/drawable/icon_64_zap.png
+SHA1-Digest: RL92CZ58h2ZhKubGu0YPN72MP98=
+
+Name: res/drawable/icon_80_shopping_cart_2x.png
+SHA1-Digest: ylpPQ33+UfQkH810i+V0LyZf/FE=
+
+Name: res/drawable/icon_measure.png
+SHA1-Digest: Ds3fYBIyULwWFWcz2ggF8LSUERU=
+
+Name: res/layout/notepad_list_view.xml
+SHA1-Digest: Na0AEJY0DRqntFsOic1ZwKx1hng=
+
+Name: res/layout/shop_checkout_list.xml
+SHA1-Digest: 63JU8EEEAevsI2mTAyYGru0/hgk=
+
+Name: res/drawable/icon_189_plant.png
+SHA1-Digest: NQ1Nqa4Nyi100ap/8QUOn7w5k0g=
+
+Name: res/drawable/icon_document_blank.png
+SHA1-Digest: GO1Y4N/SBu4i+SaINQ68/mwd+iw=
+
+Name: res/drawable/icon_default.png
+SHA1-Digest: QO9eMrrAk63/Kxd6nUcD4MKisDE=
+
+Name: res/drawable/icon_161_calculator.png
+SHA1-Digest: W5HoZ+ZntR9Iq+W0/CwwoN16gwI=
+
+Name: res/drawable/icon_145_persondot.png
+SHA1-Digest: TQFPVYfFNZJjdWcP/H1RUASKY5c=
+
+Name: res/drawable/icon_56_cloud.png
+SHA1-Digest: nwabmy6in+ENBH1y03a7NdR/vdw=
+
+Name: res/drawable/icon_twg.png
+SHA1-Digest: 7/AK1e1O7q2+5pVLp/k7WSwPRPg=
+
+Name: res/drawable/icon_156_controller_2x.png
+SHA1-Digest: Zdn6qu6K+h+iQ1uVj+bNugZl79k=
+
+Name: res/drawable/arrowd.png
+SHA1-Digest: zJ2Qota9w3t+dyA9lwWRUH6mBNc=
+
+Name: res/drawable/youtube_playing.png
+SHA1-Digest: sXu2LHEkHfgCYMNgD1sh4298tYs=
+
+Name: res/drawable/button_blue_src.xml
+SHA1-Digest: CkxAhzOP2MArqNimEgj5QoxUcRw=
+
+Name: res/drawable/product_default.gif
+SHA1-Digest: 6x34esuVFnT6ErDDo/ycd/JrZD8=
+
+Name: res/drawable/button_green_src.xml
+SHA1-Digest: Hl1uAYRrK0fq6rY4UPdMaE0QqZs=
+
+Name: res/drawable/icon_89_dumbell.png
+SHA1-Digest: gGwUXRaOpCBEdMFng1MuxFVgR/E=
+
+Name: res/layout/more_item_row.xml
+SHA1-Digest: xAze5CaO4u9k7mZcevhn2I4Rzbw=
+
+Name: res/drawable/coupon_bottom_bg.9.png
+SHA1-Digest: z7ZkWY66bT2eNWwwNpwGnr8GITc=
+
+Name: res/drawable/icon_96_book.png
+SHA1-Digest: paSWzEfvuj/ScCu+cuaX4QGyzG0=
+
+Name: res/drawable/icon_125_food.png
+SHA1-Digest: zuf1qJW0Ft1CwgTW/nN2bYOt6Bw=
+
+Name: res/drawable-mdpi/facebook_icon.png
+SHA1-Digest: jzYmvbRyldJH32+MTOgLqrsUPBM=
+
+Name: res/drawable/button_dark_blue.9.png
+SHA1-Digest: Iyt+30QjZugoi5mUgrZNboeinBU=
+
+Name: res/drawable/selected_tab_background.xml
+SHA1-Digest: gsCOz1+kmRYw1z5NPNo5iPU8SFo=
+
+Name: res/layout/twitter_login_view.xml
+SHA1-Digest: 22mWXieOHTC64Ue+zf9pmPMetZM=
+
+Name: res/drawable/button_drak_orange.9.png
+SHA1-Digest: QXBqyhdX9RRIDHW2nflM/U6+FNU=
+
+Name: res/drawable/icon_26_bandaid.png
+SHA1-Digest: 9GmOz4oZvBbhmyEcYg5wqZfXZ1A=
+
+Name: res/drawable/progress_bar_bg.xml
+SHA1-Digest: LaDliVDqJBBOlyVdzBlOHODx78Y=
+
+Name: res/drawable/button_icon2_selected.png
+SHA1-Digest: KTOdOyxIp3AH22OcedLI1BFHWYQ=
+
+Name: res/drawable/icon_81_dashboard.png
+SHA1-Digest: 81SoeJTnjo82RIT89AJy9MCNPjE=
+
+Name: res/drawable/icon_137_presentation.png
+SHA1-Digest: JYceRZ6d5QN4NbvWD8LZ5Nzhan8=
+
+Name: res/drawable/icon_101_gameplan.png
+SHA1-Digest: 9bC5GopNjjirFMMiVGlp/DCZbZw=
+
+Name: res/drawable/icon_104_index_cards_2x.png
+SHA1-Digest: KbwhrKYo/lPFScYLxh5j8rKnpkU=
+
+Name: res/drawable/icon_143_liquor_bottle.png
+SHA1-Digest: 6C2FK7iq9MKGSuSW9w+8LgEJqBg=
+
+Name: res/drawable/button_white_gray_selected.9.png
+SHA1-Digest: giviMK4Y4oVOpFTpZP0dgjHSEpo=
+
+Name: res/drawable/icon_04_squiggle_2x.png
+SHA1-Digest: BI+e5GH1nIRyEmJng2Ly8TANmDo=
+
+Name: res/drawable/icon_149_windmill_2x.png
+SHA1-Digest: qCRD+7IsjieF94ci4fkdnZlqyvg=
+
+Name: res/drawable/icon_128_bone.png
+SHA1-Digest: +pRCmkle/nUEne5H5p//FuCwo/M=
+
+Name: res/layout/capture_layout.xml
+SHA1-Digest: BLrkDH8gzNPrYR3sPxAIeDA+wS4=
+
+Name: res/layout/dialog.xml
+SHA1-Digest: N81MPPrD7vTEe2aD26a+ja1Q3AY=
+
+Name: res/drawable/button_blue.9.png
+SHA1-Digest: xFAjphMO0+B7CqgI8uiA0EELGlk=
+
+Name: res/drawable/icon_135_hockeymask.png
+SHA1-Digest: evqooEXcfKwfTNz/OsaFGWRwB2k=
+
+Name: res/drawable/icon_26_bandaid_2x.png
+SHA1-Digest: PRxcfMcDPI2E6ld24qrPCUWiGh8=
+
+Name: res/drawable/icon_63_runner.png
+SHA1-Digest: uN1FPP6X49WkiJZrF4CDCUbrPHY=
+
+Name: res/drawable/icon_162_receipt.png
+SHA1-Digest: WZ2NV5dgErCkQlMT4fOKJVvkRXY=
+
+Name: res/drawable/horizontal_loyalty_line.png
+SHA1-Digest: tYI9ZkC3vrF1oS85IhhYno6zv2A=
+
+Name: res/drawable/icon_paper_plane.png
+SHA1-Digest: DAM9Vfvrv2wnxSbEO/Jos5bFkk4=
+
+Name: res/drawable/icon_82_dog_paw_2x.png
+SHA1-Digest: EbnYMzkWNq1ZJCfd2z8I3t38e8k=
+
+Name: res/drawable/icon_court.png
+SHA1-Digest: gIPLu6py3YeY/REcmRsCfL6O6WQ=
+
+Name: res/drawable/button_light_blue_selected.9.png
+SHA1-Digest: aArqF3+JBz8MDq88vnAde52HBqM=
+
+Name: res/drawable/icon_37_suitcase.png
+SHA1-Digest: 0X7q4U9+CVgyXzmaz+2BTUbkMD0=
+
+Name: res/drawable/button_icon7_src.xml
+SHA1-Digest: koR9EV22aHuexsRrkhzUsB9m4xU=
+
+Name: res/drawable/icon_30_key_2x.png
+SHA1-Digest: d8xLAM20vSJMRIt4scgGHlzqsfM=
+
+Name: res/drawable/icon_key.png
+SHA1-Digest: pdf1qyNQmhzPEZ8tlQbLcNpUi4M=
+
+Name: res/drawable/icon_107_widescreen.png
+SHA1-Digest: awkPr855w3QPpCcuq28WGVvh09s=
+
+Name: res/drawable/button_light_dark_green.9.png
+SHA1-Digest: 3E3dU33wh68L3ra6xakZATv/FdI=
+
+Name: res/drawable/icon_58_bookmark.png
+SHA1-Digest: nc7nmrf6rJmW+J2LfO3q+N7Xpuo=
+
+Name: res/layout/image_fragment_layout.xml
+SHA1-Digest: wF3ljKXaDJaIc0OxqqhFN6m5wlA=
+
+Name: res/drawable/arrow_right_disabled.png
+SHA1-Digest: Alpi4/rmZ5Y10eWv4RS/m/DA26o=
+
+Name: res/drawable/icon_43_film_roll.png
+SHA1-Digest: pL7AiJpOJyVNjSFfhQ00WlqWxPg=
+
+Name: res/drawable/button_bright_green.9.png
+SHA1-Digest: 7aSzMhBpG9ttbhexYZ1rzJ+7tGo=
+
+Name: res/drawable/icon_86_camera.png
+SHA1-Digest: tQzqixxTzcwxUZcge+MgdK8E3YM=
+
+Name: res/drawable/icon_124_bullhorn.png
+SHA1-Digest: 14Ypwr9aVbtQ4L6nTtz7OxJkKuk=
+
+Name: res/drawable/icon_150_sailboat.png
+SHA1-Digest: Upy9wdNyww2PE51ck/YSpOXB5nw=
+
+Name: res/drawable/icon_91_beaker_2_2x.png
+SHA1-Digest: Siu35iuJCaSRLuUdL4Fh9A/ps6w=
+
+Name: res/drawable/icon_117_todo_2x.png
+SHA1-Digest: vBFh//HpI1Esybi/0jIg5UGi/+4=
+
+Name: res/drawable/icon_bell_off.png
+SHA1-Digest: V/TYBzJi8ZwXLOLaaYOM3JJPO+I=
+
+Name: res/drawable/icon_timer.png
+SHA1-Digest: RVOitF1DI5i4pWV8LFm0fXU1FkA=
+
+Name: res/drawable/player_next_button.png
+SHA1-Digest: zjq5KTdTaxrqKKw+NfigVS009pw=
+
+Name: res/layout/shop_category_row.xml
+SHA1-Digest: f3BLH1x+U8kh8lMrSLhHxY3w7Tc=
+
+Name: res/drawable/button_light_dark_green_src.xml
+SHA1-Digest: s9TuRpTH5U9uddyqANK52qt3qAo=
+
+Name: res/drawable/icon_24_gift.png
+SHA1-Digest: yWWXDcz41k4B0GhQkFLpdybywWE=
+
+Name: res/drawable/icon_178_city_2x.png
+SHA1-Digest: eaw2bPYTdJqk6jKJD7bJv/sozzQ=
+
+Name: res/drawable/icon_font_regular.png
+SHA1-Digest: FBp+fkMTRf16d2ONdSaXLEUbHBU=
+
+Name: res/drawable/icon_168_upload_photo_2.png
+SHA1-Digest: jgYfU1xz9uiueIEnOZhF1amPmeI=
+
+Name: res/layout/podcast_row.xml
+SHA1-Digest: gfMfuTGwt7yo3W2dIqeLEEVODOo=
+
+Name: res/drawable/button_blue_src2.xml
+SHA1-Digest: AcIjbhyLp3JImalaYAX0Jsn9qqQ=
+
+Name: res/drawable/icon_35_shopping_2x.png
+SHA1-Digest: hAdelwgiaEoa008YAAFb6tAtH18=
+
+Name: res/drawable/icon_193_location_arrow.png
+SHA1-Digest: d+niZx29FBKCZYXYYspuN5bCink=
+
+Name: res/drawable/icon_67_tshirt_2x.png
+SHA1-Digest: id7p46j+GCODEf+tJH8OSS0DuII=
+
+Name: res/anim/tab_wave_scale.xml
+SHA1-Digest: qWqgDFXSmYudGiZ34Ko6qNUgQgw=
+
+Name: res/drawable/icon_39_spraycan_2x.png
+SHA1-Digest: pUy/PZ5OgzfywcPm2aLpqdRpxvM=
+
+Name: res/drawable/icon_61_brightness.png
+SHA1-Digest: ns4aCRqBI22pAwZb73aByIyEhHM=
+
+Name: res/drawable/icon_196_radiation_2x.png
+SHA1-Digest: HQh2kug2iMYJyCWzqotNsCdCEbc=
+
+Name: res/drawable/icon_152_rolodex.png
+SHA1-Digest: GSEMiz3ONx280wqrdw7k0+VCLZ4=
+
+Name: res/anim/tab_wave_anim.xml
+SHA1-Digest: XTd7q3SMtbmuNAg7yV8/CJ1RwJU=
+
+Name: res/drawable/icon_114_balloon.png
+SHA1-Digest: tLNbRHbSMrN79wJvrf/kSOt06jU=
+
+Name: res/drawable/icon_graph_areas.png
+SHA1-Digest: 3Ls5wO9xRrFecd8eUnDrgMb3yxc=
+
+Name: res/drawable/icon_12_eye.png
+SHA1-Digest: 6iCJ++1YGfqLhywKu0wIQbWJ6Po=
+
+Name: res/drawable/icon_wallet.png
+SHA1-Digest: HBCvJdE92NHmX/QBLmhod6h7N2I=
+
+Name: res/drawable/icon_142_wine_bottle.png
+SHA1-Digest: HH7b8viqvQKGhtuorjtjUJb8nxs=
+
+Name: res/drawable/icon_eventspng.png
+SHA1-Digest: c7BF9gZ7Yg/86dcHz5J3sTaUpVM=
+
+Name: res/layout/more_layout.xml
+SHA1-Digest: OUDeNBWpVrqpAqkIpp+88MaA/HY=
+
+Name: res/drawable/icon_graph_down.png
+SHA1-Digest: Zz/23ZzsFZBGhLlV0c/tcaMR4NI=
+
+Name: res/drawable/icon_volume_down.png
+SHA1-Digest: v96CUunCLkRlnwLGj7q3pzhu5ic=
+
+Name: res/layout/gallery_item_layout.xml
+SHA1-Digest: Q9iNznspTkhzOHTElt0k6S5XYTs=
+
+Name: res/drawable/icon_72_pin_2x.png
+SHA1-Digest: rHSrslWyXjOWJXa+TsELeG8s4lo=
+
+Name: res/drawable/icon_folder_goto.png
+SHA1-Digest: uxwSvD1jNCeAHnwA4D4EWi3iOUQ=
+
+Name: res/drawable/login_button.xml
+SHA1-Digest: hJWpc7ccocH0FCLGjW9MX3o0lvI=
+
+Name: res/drawable/icon_window.png
+SHA1-Digest: j2eyeZ1XzqJ/yNZ/w+6qz+WsHWo=
+
+Name: res/drawable/icon_24_gift_2x.png
+SHA1-Digest: dSrC5Zx2693ECRLwD1TNDQ+2MjA=
+
+Name: res/drawable/icon_refresh.png
+SHA1-Digest: xo6KgjWqTaZwV7iUl3uhEGI95/U=
+
+Name: res/drawable/icon_106_sliders_2x.png
+SHA1-Digest: r3aJWSoXhykPWPmUCXpC1wIa2zM=
+
+Name: res/drawable/icon_comment_add.png
+SHA1-Digest: KXNnY6nElw6DJzkHrFbnMvBdPSk=
+
+Name: res/layout/pin_dialog.xml
+SHA1-Digest: fdZfG1PLtUnTOoUAknSqPX8XWuA=
+
+Name: res/drawable/icon_bluearrow.png
+SHA1-Digest: WodipAV8gI7gwj0yyJQt8SNcxXw=
+
+Name: res/drawable/login_down.png
+SHA1-Digest: lyTTZfdwhNihJhhF4stCnjUIZUQ=
+
+Name: res/drawable/icon_196_radiation.png
+SHA1-Digest: uPPRs82Flr9t7u3bTCrv+OC4Yk4=
+
+Name: res/drawable/icon_138_scales.png
+SHA1-Digest: VUACIZObyjkTJTMWgDZz5Z3OtSs=
+
+Name: res/drawable/icon_calendar.png
+SHA1-Digest: mtK/MaGnG28PwwGpqWTruGIPenI=
+
+Name: res/drawable/icon_94_pill_2x.png
+SHA1-Digest: P4JyF1AchTWFQVy/+P1MgrNl5bE=
+
+Name: res/layout/shop_checkout_row.xml
+SHA1-Digest: bwYK0xAWIteIDy+fdK/1H3+35NY=
+
+Name: res/drawable/icon_book_marked.png
+SHA1-Digest: N9y6vmw047/7luaGyfbT1IRacHQ=
+
+Name: res/drawable/icon_171_sun.png
+SHA1-Digest: 8wOxPZEiBrasTcMZFwRkhx/jFj8=
+
+Name: res/drawable/icon_135_hockeymask_2x.png
+SHA1-Digest: r3BhkeerTwA+R79NI4l7Xw/Ah8Y=
+
+Name: res/drawable/navigation_background.xml
+SHA1-Digest: k5hVyEqYNOEhD8ZLdGhKzJviAbY=
+
+Name: res/drawable/icon_16_line_chart.png
+SHA1-Digest: AYcTkKSec27FxNP7kNPhnHIb2ys=
+
+Name: res/drawable/icon_145_persondot_2x.png
+SHA1-Digest: pQmn6JiXUOe9D88gKl2CyjpPTTI=
+
+Name: res/drawable/icon_129_golf.png
+SHA1-Digest: pyI+vuBU/rJ4K/y8eKsqnQKmBkc=
+
+Name: res/drawable-hdpi/facebook_icon.png
+SHA1-Digest: w3XnuXBmFTUdZmS5mvNEtFcAU8k=
+
+Name: res/layout/fragment_swipeytab.xml
+SHA1-Digest: qN1e9+UBNdSp9LwfA9sexDAR7k8=
+
+Name: res/drawable/icon_58_bookmark_2x.png
+SHA1-Digest: 0aUoazHpPfMu2UjUVwUFVamQSZo=
+
+Name: res/drawable/icon_115_bow_and_arrow.png
+SHA1-Digest: Jk7CWQ3gsmEXMIyISYCZHBqc89M=
+
+Name: res/drawable/section_list_background.xml
+SHA1-Digest: GRRMy1vq4xTkNXzDoVsH0IJ9/dk=
+
+Name: res/drawable/icon_120_headphones.png
+SHA1-Digest: SXFD0sqFODg1aS+l2Jo10PdLIGY=
+
+Name: res/drawable/icon_78_stopwatch.png
+SHA1-Digest: pJL3Gbkv1IlvzEHp3Wnq6FGd6Uw=
+
+Name: res/drawable/icon_hat.png
+SHA1-Digest: m9Y+MBi2bi4SA6wWVdm+lSLoD+0=
+
+Name: res/drawable/icon_130_dice.png
+SHA1-Digest: HUOEfPLgBaVnwZFS7e46bkZW4tw=
+
+Name: res/drawable/button_turquoise_src.xml
+SHA1-Digest: p+JzqINHItUoBs/RPsWo3ss9YIQ=
+
+Name: res/drawable/icon_170_butterfly.png
+SHA1-Digest: nrtD6jaLJuksBl6bZY5XIau0p0o=
+
+Name: res/layout/event_row.xml
+SHA1-Digest: twwnTkWiWbj6fz8YOuCcdapShQ8=
+
+Name: res/drawable/icon_08_chat_2x.png
+SHA1-Digest: UuyC6qVQKen1hn7fb9qhcjMfpJU=
+
+Name: res/drawable/icon_mute.png
+SHA1-Digest: D7wdq+orgUI1yECvqRfngriv+YI=
+
+Name: res/drawable/button_dark_blue_selected.9.png
+SHA1-Digest: /xQEaCGfJEs+db1C4zmFe+UDzTY=
+
+Name: res/drawable/mail.png
+SHA1-Digest: GidDz4TWHVqBcVm1QOkII6gNEp8=
+
+Name: res/drawable/icon_08_chat.png
+SHA1-Digest: 2MvDYUGXTe+622u1OK9D3s791Pk=
+
+Name: res/layout/contact_layout.xml
+SHA1-Digest: 8CMZQ2AVAwuFC9Nugq/mdYR5DUU=
+
+Name: res/drawable/icon_191_collection_2x.png
+SHA1-Digest: 2VCgrIJZCKubExK4hBq4bh9oqpQ=
+
+Name: res/drawable/icon_66_microphone_2x.png
+SHA1-Digest: HZ74QSrl2FR+V976O9WrrsCY0gg=
+
+Name: res/drawable/icon_28_star_2x.png
+SHA1-Digest: +EjCff5IqaNQeGIrlMy8gi7tEHg=
+
+Name: res/drawable/icon_47_fuel_2x.png
+SHA1-Digest: VqDjui4blWV4vxhs2ak904yvs18=
+
+Name: res/drawable/icon_controls_6.png
+SHA1-Digest: o4XYYyKr9fr9CmUev1k23wGcpPs=
+
+Name: res/drawable/icon_list_bullets.png
+SHA1-Digest: SCTWYy29DSWpEnKSU2ksM0AR8p4=
+
+Name: res/drawable/icon_31_ipod_2x.png
+SHA1-Digest: pqHFGwWRV07526pCHaphA2UG+Hg=
+
+Name: res/drawable/icon_07_map_marker.png
+SHA1-Digest: ujZDRzRfFJzwzK4wDzZFtpnGkb4=
+
+Name: res/drawable/icon_139_flags_2x.png
+SHA1-Digest: aZ4qJSaARD1PSTI5NEtT0Xy9rJM=
+
+Name: res/drawable/icon_169_8ball.png
+SHA1-Digest: Upggm7dhweiKwRaBvNHWgP1btO0=
+
+Name: res/drawable/icon_172_pricetag_2x.png
+SHA1-Digest: /Oi4YFerPqyDei7jVMZRRvGdwS4=
+
+Name: res/drawable/icon_25_weather.png
+SHA1-Digest: +5yj8E/6o+5AHLfXYEcm+u15kO4=
+
+Name: AndroidManifest.xml
+SHA1-Digest: /1FpWTedfm0ChDpWfJBGY6KyL70=
+
+Name: res/drawable/icon_79_medical_bag.png
+SHA1-Digest: 7csyQoNzfZfW9RiDzUg2TUiJ/tY=
+
+Name: res/drawable/icon_198_card_spades.png
+SHA1-Digest: Bn174O8iQGwGtOlXFW0wc5OSmN4=
+
+Name: res/drawable/icon_68_paperclip_2x.png
+SHA1-Digest: X9oB11DbjXfzwVtM9/sRb0Fnva0=
+
+Name: res/layout/email_photo_layout.xml
+SHA1-Digest: c6wOC0KlbrZ1uq2MhrXKfWpEFTU=
+
+Name: res/drawable/icon_text_align_left.png
+SHA1-Digest: IrhnR8uPrfKMEBRdW3CaZYVgBR4=
+
+Name: res/drawable/icon_controls_1.png
+SHA1-Digest: sjUCstDtVbFVRP194UuQ2kVVHUQ=
+
+Name: res/drawable/icon_198_card_spades_2x.png
+SHA1-Digest: AqRbKLDQ6rEHro54POBr3HrqOMw=
+
+Name: res/drawable/icon_131_tower.png
+SHA1-Digest: nC/XParliSQWY/UxzYDAtvTJTaE=
+
+Name: res/drawable/icon_disclosure.png
+SHA1-Digest: FvcDN6wawmiPnsAQRsBJohuAc2E=
+
+Name: res/drawable/icon_manage.png
+SHA1-Digest: I7hqV8LzL5CMECbmsIkqWRGDHDI=
+
+Name: res/drawable/icon_188_paint_roller_2x.png
+SHA1-Digest: oX46FC2erwouKCaLt5/vRUWC6z0=
+
+Name: res/drawable/badge.png
+SHA1-Digest: //n+KLfoBYSGl7wDv8S4VdYQW7s=
+
+Name: res/drawable/icon_33_cabinet.png
+SHA1-Digest: Jxhb57gQfDdWLxb2piRgqYxtb5w=
+
+Name: classes.dex
+SHA1-Digest: cmUbeDniQse2cZAmzVO4gleQh0M=
+
+Name: res/drawable/icon_folder.png
+SHA1-Digest: +ZEr7J4U7Lddj5nY1seBWSDfWnw=
+
+Name: res/drawable/button_icon11_selected.png
+SHA1-Digest: QHv69qs2bjPpzPwg3iwSAWA9btQ=
+
+Name: res/drawable/icon_107_widescreen_2x.png
+SHA1-Digest: rH0u05m990b4DOSPV2AaCKYo9PU=
+
+Name: res/drawable/icon_61_brightness_2x.png
+SHA1-Digest: dxjhN/5RwxboY+m8U3IBE4mTPek=
+
+Name: res/layout/qr_scanner_help_row.xml
+SHA1-Digest: 2oQHUz5WTFmm7j8H9BF/T87vK8I=
+
+Name: res/drawable/button_bright_pink_src.xml
+SHA1-Digest: Ul2uieWDFB8Uy/HX4r6BcLKQOag=
+
+Name: res/drawable/button_icon1.png
+SHA1-Digest: sZCGCq2+SkS4uEDNwx8O7cMb95Q=
+
+Name: res/drawable/icon_180_stickynote_2x.png
+SHA1-Digest: eBOBLESb9ReBEBAvi3gyqB2YSHY=
+
+Name: res/drawable/icon_11_clock.png
+SHA1-Digest: 9C2S1VsmPHOTU3fUNSUBfYG6Ol0=
+
+Name: res/drawable/paypal.gif
+SHA1-Digest: YztwmM5vBvIfie5hGaqvfv7ZCoY=
+
+Name: res/drawable/icon_laptop.png
+SHA1-Digest: 7qKPgpiUbsmQtQjC8XZJHiomW3U=
+
+Name: res/drawable/icon_edit_app.png
+SHA1-Digest: 4P59h81MrpipU7plffNbkryuXU0=
+
+Name: res/drawable/button_gray_src.xml
+SHA1-Digest: R+ZT2YYatcEWhnhlJyZhPBkuxeE=
+
+Name: res/drawable/row_background.xml
+SHA1-Digest: j8hTRCz6s220MQ1BVYOp4v2N0Lc=
+
+Name: res/drawable/button_icon9_selected.png
+SHA1-Digest: t5Osk7X+97lsM+J/RtV4+Fek8KU=
+
+Name: res/layout-land/preview_changer_layout.xml
+SHA1-Digest: /KqMFAmIrETmV/P5TXOFvenXcbI=
+
+Name: res/drawable/pull_to_refresh_header_background.xml
+SHA1-Digest: k/XT+WAYuOJRjRZwXT+UW46803M=
+
+Name: res/drawable/speech_bubble_.9.png
+SHA1-Digest: P1Gxj/XwoghWKffq7BL4w2sMmgw=
+
+Name: res/drawable/icon_32_iphone_2x.png
+SHA1-Digest: EjyqEsL2MyaYEIx8JZ1qvwdXi38=
+
+Name: res/drawable/icon_127_sock.png
+SHA1-Digest: f9+dY0wcxPfsWRl8FJFKJNO7Vlw=
+
+Name: res/drawable/button_icon9.png
+SHA1-Digest: cWb7sBmuRHb70RmK6MlTykmOPbc=
+
+Name: res/drawable/button_blue_turquoise.9.png
+SHA1-Digest: Tenj4t3mzpJoGze0SZPFYNJrcj8=
+
+Name: res/drawable/background_transition.xml
+SHA1-Digest: cnwX9wf4h8LSqLlLre22tMgyivk=
+
+Name: res/drawable/icon_53_house_2x.png
+SHA1-Digest: uKcu4nbGLJoRRubdAhQah9qxRHE=
+
+Name: res/drawable/soundbar_plate_mono.png
+SHA1-Digest: 1eAu72VSh+no3kCTqUc88S5GFbM=
+
+Name: res/drawable/icon_190_bank_2x.png
+SHA1-Digest: XKle34bgLMQE/VgYfguuBN8lyjA=
+
+Name: res/drawable/icon_17_bar_chart_2x.png
+SHA1-Digest: qxRhSzwojcDBTyR6jbqIxtvpPBQ=
+
+Name: res/drawable/icon_87_wine_glass.png
+SHA1-Digest: 0zE52Tl3LCwL1DIngFfFUU+3bBg=
+
+Name: res/drawable/icon_bookmark_add.png
+SHA1-Digest: guaACOH91dBHYZpKW3JCmJRnobc=
+
+Name: res/drawable/icon_114_balloon_2x.png
+SHA1-Digest: V8GEx6JnpXwvKozys5MTYRlAKTE=
+
+Name: res/drawable/icon_more.png
+SHA1-Digest: hIsOjVEvoHpiA8AaV2Gjdvtlwxc=
+
+Name: res/drawable/icon_146_gavel_2x.png
+SHA1-Digest: ln7iYxmQO/HyE1WjGEKyvQGg6SM=
+
+Name: res/drawable/icon_176_ipad.png
+SHA1-Digest: vt0vguqaUcLNMltgHEOZRq6sCBk=
+
+Name: res/drawable/icon_108_badge.png
+SHA1-Digest: GTQduEGBtYM1LtkK55Q5EK8pGWQ=
+
+Name: res/drawable/icon_91_beaker_2.png
+SHA1-Digest: MGa7CZ47uuP1JFIdd6h3F7kv9zE=
+
+Name: res/drawable/search_icon.png
+SHA1-Digest: DZJIsuDg5kKCSFgL9jGv5TayyXU=
+
+Name: res/drawable/icon_icon.png
+SHA1-Digest: QPE0GYZIEOgOVdjSL6m2hT/NHRc=
+
+Name: res/drawable/button_blue_turquoise_selected.9.png
+SHA1-Digest: VhNuVpJxpYQhooBo40utKtE6SHs=
+
+Name: res/drawable/icon_brightness.png
+SHA1-Digest: wXZSzf+hkjNrql6uHggBSShl9Lw=
+
+Name: res/drawable/icon_icon_chicowrec.png
+SHA1-Digest: /7SQcnkpdCoYrUhiin851IOa1Ms=
+
+Name: res/drawable/icon_bell.png
+SHA1-Digest: lkyRItTbNlUNq4tWNYyBAdNtk48=
+
+Name: res/drawable/icon_97_puzzle_2x.png
+SHA1-Digest: sYlw5Xfb/Lohy6x6K5WQ4dp9K7s=
+
+Name: res/layout/coupons_layout.xml
+SHA1-Digest: TynoEr4Y/hFcReh02DCNKmZ9KAk=
+
+Name: res/drawable/logout_down.png
+SHA1-Digest: nBKVdPHL8kRYGU002TLYoGtBSyY=
+
+Name: res/drawable/icon_arrow_left.png
+SHA1-Digest: ieXQOmudHaEuY22yXGeI0q7TLlk=
+
+Name: res/drawable/icon_information.png
+SHA1-Digest: U+HB3B+8F0hQ8PKov57AmbsnP/U=
+
+Name: res/drawable/icon_182_messenger_bag_2x.png
+SHA1-Digest: Q0xfqc+XMlMVtg9R/NHWQs0f3Uo=
+
+Name: res/drawable/icon_155_bowtie_2x.png
+SHA1-Digest: YOesg2uL1QETuJHWLLCymbOwzgk=
+
+Name: res/drawable/icon_19_gear_2x.png
+SHA1-Digest: p2N237tppiTCpD5JjbLMnpIcCc8=
+
+Name: res/drawable/icon_70_tv.png
+SHA1-Digest: T4jMTsOTglWMTvpMngAmBwcdwmY=
+
+Name: res/layout/mailing_list_layout.xml
+SHA1-Digest: ulNDi5NmLsgtuUwxKhHRwiyJIks=
+
+Name: res/drawable/black_button.xml
+SHA1-Digest: gwTHYrIT6KV3WMN40aHT7b9gEMQ=
+
+Name: res/drawable/icon_108_badge_2x.png
+SHA1-Digest: RXcqy6RZmnOQyOlSMjE3h8i8GRA=
+
+Name: res/drawable/icon_36_toolbox.png
+SHA1-Digest: yvKFll7yOQxmmB+RY32/fzImhfU=
+
+Name: res/drawable/icon_199_card_hearts_2x.png
+SHA1-Digest: xOJntnjMfUMyERnaVXA15PbnmWs=
+
+Name: res/drawable/icon_wifi.png
+SHA1-Digest: KNpYzTbjz5ZN/9Vw3ckgX1qjRFk=
+
+Name: res/drawable/icon_blog.png
+SHA1-Digest: /nc0p24E94E+4U7QndQaucdUM8Y=
+
+Name: res/layout/preview_changer_layout.xml
+SHA1-Digest: rwEx02sPJhSdUMEzHdFS3zHJDcY=
+
+Name: res/drawable/button_dark_blue_src.xml
+SHA1-Digest: rcn7TGLwb1LR1lwt3BEhLwIzue4=
+
+Name: res/drawable/icon_05_shufflea1_2x.png
+SHA1-Digest: b7QsS660g2pslKUYfX/K6pt0QjQ=
+
+Name: res/drawable/icon_04_squiggle.png
+SHA1-Digest: H2ZbhKbwCCuFTiCo2zE1vKqc29U=
+
+Name: res/drawable/icon_165_glasses_3_2x.png
+SHA1-Digest: NZ66KLcJiFGjAI0IwMjFJx3o528=
+
+Name: res/drawable/icon_flag_1.png
+SHA1-Digest: +OYC9lnpzoPRcSrKnI7kbiyPVIs=
+
+Name: res/drawable/icon_bulb_on.png
+SHA1-Digest: f/jyM6G9pJF4/H8JQhVgg5RTItE=
+
+Name: res/drawable/icon_06_magnify.png
+SHA1-Digest: CVfXbG/FaHtOkeuOT50UNa9xmF4=
+
+Name: res/drawable/unselected_circle.png
+SHA1-Digest: chpqCua3Kh7drftRrk8Xo6TJSko=
+
+Name: res/drawable/icon_controls_2.png
+SHA1-Digest: it6mazQFgfRJpmm9lHHYZl7frRQ=
+
+Name: res/layout/email_photo_dialog.xml
+SHA1-Digest: ft93c2F6qZToSxsBg2jhCbHQHbo=
+
+Name: res/layout/fan_wall_item_layout.xml
+SHA1-Digest: h9rV5TeFHd6dEwQk3E47sZH27XI=
+
+Name: res/drawable/icon_158_wrench_2_2x.png
+SHA1-Digest: HNMXVMhvZuJLIGYpbCduMw/Is7M=
+
+Name: res/drawable/icon_unlock.png
+SHA1-Digest: udYsY6WW1TW50M9FvfCUsbcqnUI=
+
+Name: res/drawable/icon_07_map_marker_2x.png
+SHA1-Digest: fe5r4GRI2mIzVR+JipgIk1Xrcb8=
+
+Name: res/drawable/icon_50_beaker.png
+SHA1-Digest: +e4lQVCWjJoczq0FW3YrtpgMoBA=
+
+Name: res/drawable/icon_19_gear.png
+SHA1-Digest: t4UUAHkAM4MP2DboahcHnvWDSP4=
+
+Name: res/drawable/icon_85_trophy_2x.png
+SHA1-Digest: LOzNbP/+dS+Qs/YpRdm1Xhe65NA=
+
+Name: res/drawable/icon_38_airplane.png
+SHA1-Digest: l2IYhwfZyK4t5VGKRrFcPRhnIcM=
+
+Name: res/drawable/icon_98_palette_2x.png
+SHA1-Digest: 8qD58aKvsMzfKlpH4x7L6hytDB4=
+
+Name: res/drawable/icon_177_building.png
+SHA1-Digest: RH6N5IfeOvH+jxW1oH9PkpZPCW8=
+
+Name: res/drawable/icon_volume_up.png
+SHA1-Digest: 3UgYWXYI7BsaI0/PN67xIssabt4=
+
+Name: res/drawable/icon_50_beaker_2x.png
+SHA1-Digest: yD9CvtJXBxdYjpGRgBZ8TSmA2LI=
+
+Name: res/drawable/icon_99_umbrella.png
+SHA1-Digest: Q0fM64+S2EqlCDRch1g7eqiFxXo=
+
+Name: res/layout/add_comments_layout.xml
+SHA1-Digest: +pmhRbIJeEmj4j07Yep8Vlhi8S0=
+
+Name: res/drawable/icon_flash.png
+SHA1-Digest: Tcz+txlYedHTdoh8lz1IHGBAR+E=
+
+Name: res/drawable/icon_132_ghost_2x.png
+SHA1-Digest: yHlyNZQzsysXDLPMqx+BV5ridoQ=
+
+Name: res/anim/show_tell_friends_dialog.xml
+SHA1-Digest: uFEoERzKF/6JrozzNGhLnpmSEDY=
+
+Name: res/layout/shop_category_list.xml
+SHA1-Digest: gRmrIWGi0JtKyAbIEdBA5U6Z70U=
+
+Name: res/drawable/icon_148_doghouse_2x.png
+SHA1-Digest: zvel8Sr23ahkLcQvY8qaPy5O8P0=
+
+Name: res/drawable/button_icon7.png
+SHA1-Digest: dfto5PX0R+iyGyrRpVOD5lKIvx0=
+
+Name: res/drawable/icon_43_film_roll_2x.png
+SHA1-Digest: /wpwE5P5jAG658Sc14AkpnM3bEc=
+
+Name: res/layout/notepad_edit_view.xml
+SHA1-Digest: egCWPxzvxR5a0wMwGGGoTHUV3qw=
+
+Name: res/layout/rss_row.xml
+SHA1-Digest: u6PVBSVUtuxQpPqS+AYFGn/KZeI=
+
+Name: res/drawable/icon_119_piggy_bank_2x.png
+SHA1-Digest: H43+VIAGiQN+JiymMPxdVQ0D/IA=
+
+Name: res/drawable/icon_41_picture_frame.png
+SHA1-Digest: VJnTmlIKu2kNNgiKyAiY/EeNAV0=
+
+Name: res/drawable/icon_31_ipod.png
+SHA1-Digest: TaWmQg+UYLFuPqLLhkXeVWg53JY=
+
+Name: res/drawable/icon_15_tags_2x.png
+SHA1-Digest: svCKrnUbFFgt1Fp5xcq4coyRK4k=
+
+Name: res/drawable/icon_60_signpost.png
+SHA1-Digest: jRMQGiXFfTkN3qwCARs5DGY4HNs=
+
+Name: res/drawable/icon_frame.png
+SHA1-Digest: bmyzSm2akwE/J88yk9MOdMbqi5U=
+
+Name: res/drawable/ic_popup_sync_1.png
+SHA1-Digest: 551w+gQCfqbbVV/SqHJdBQtYHiE=
+
+Name: res/drawable/icon_93_thermometer.png
+SHA1-Digest: Of8i9Orrb8CTbtYP0J8lP4iSJXk=
+
+Name: res/layout/navigation_bar.xml
+SHA1-Digest: 0H7TvLrzYLokx6CDhveUszL/RpU=
+
+Name: res/drawable/icon_controls_3.png
+SHA1-Digest: +DCOfx8LulXr3hCzVVSoPXC+IHA=
+
+Name: res/drawable/button_light_gray_selected.9.png
+SHA1-Digest: 2mzD1HX2TNujM4aH6BkcA/qTPYQ=
+
+Name: res/drawable/icon_preview_app.png
+SHA1-Digest: rIh7KGMP37r7TmjjV5RCvFam1Xo=
+
+Name: res/layout/menu_row.xml
+SHA1-Digest: FXPnDKP1WZ+ylQ/bu2AhxX6O2Do=
+
+Name: res/layout/navigation_layout.xml
+SHA1-Digest: 67fJ63xZilDaufgdOnPmkIVmOlo=
+
+Name: res/drawable/icon_comment_ok.png
+SHA1-Digest: Ash5W13dt55kHP8YbQHr4hvOx1Q=
+
+Name: res/drawable/icon_119_piggy_bank.png
+SHA1-Digest: nEQVRaGTLPgOGDwphuKE89Am6Dw=
+
+Name: res/drawable/icon_03_loopback.png
+SHA1-Digest: 9TPB67ejrrnxyYVJ39zdXN2LZ+U=
+
+Name: res/drawable/icon_83_calendar.png
+SHA1-Digest: FSnH92aaqJcATZd7AFUHBX7xOUE=
+
+Name: res/drawable/icon_arrow_down.png
+SHA1-Digest: sM++nJBN7tP/uS8uZ7LFBd3XTBE=
+
+Name: res/drawable/icon_sim.png
+SHA1-Digest: Mb3CganTjHlcnUGebFGojlXsBS0=
+
+Name: res/drawable/icon_calculator.png
+SHA1-Digest: ddRJa4Ey7L1Yb3NyBW8C4YgZKnU=
+
+Name: res/layout/youtube_detail_layout.xml
+SHA1-Digest: rSuYqMYNH+vmSYLnL52w95aBK1k=
+
+Name: res/drawable/button_yellow.9.png
+SHA1-Digest: AXLExO383S13Mi8Lb4jYDsx7zcc=
+
+Name: res/drawable/icon_help.png
+SHA1-Digest: OcU56eJs0k3IxkBYJD7V6KxsvHI=
+
+Name: res/drawable/icon_cancel.png
+SHA1-Digest: 7jPRS+uY9FvP8T2GZKMS/zxoTC8=
+
+Name: res/drawable/icon_133_ufo_2x.png
+SHA1-Digest: wjwCz0YqanLDt4RBCaJ9RRtZY50=
+
+Name: res/drawable/icon_100_coffee_2x.png
+SHA1-Digest: 69GzImoHa3Vr1UrVCdgicd3UMJc=
+
+Name: res/drawable/thumbsup.png
+SHA1-Digest: ieCfesDHB8ag/eQSJiqKQ8CeCsA=
+
+Name: res/drawable/icon_01_refresh.png
+SHA1-Digest: 2TXyeYaFwl7xVcL3tlcmBbbHHmo=
+
+Name: res/drawable/icon_141_lamp.png
+SHA1-Digest: d9ge8BC0Yuuu+JlN44yPUz5CW7U=
+
+Name: res/drawable/icon_sort_za.png
+SHA1-Digest: zztzhwYYEVRBFcXVyw4HLcKTmuw=
+
+Name: res/layout/sub_tab_layout.xml
+SHA1-Digest: RjJSH/tLdvFhvNz64VDagIOoWfg=
+
+Name: res/drawable/icon_10_medical_2x.png
+SHA1-Digest: bXv8+d1J/VTglDhP1ATeYWDpc/Q=
+
+Name: res/drawable/loyalty_approved_stamp.png
+SHA1-Digest: cvY/y3C/QPTL6vDCHrvzP3uy3zM=
+
+Name: res/drawable/icon_74_location_2x.png
+SHA1-Digest: GtkRglMH/vrV7QW5kc7Y2IXYk8M=
+
+Name: res/drawable/icon_film.png
+SHA1-Digest: fQe7A9/QIamjdoZJAtIb5XGDtmE=
+
+Name: res/layout/web_tier_item.xml
+SHA1-Digest: LD1VdWETymQc8XThY8g30XyrRJQ=
+
+Name: res/drawable/icon_featured.png
+SHA1-Digest: 0D8DJrTz00dLESMYoMmVGDmbi6U=
+
+Name: res/drawable/button_purple_selected.9.png
+SHA1-Digest: 6xDIUfgKXtxIbIb6ikltXy7Gpn8=
+
+Name: res/drawable/icon_59_flag_2x.png
+SHA1-Digest: 8/HnJj48WbhQ4pVIjB/CRwgh0w4=
+
+Name: res/drawable/chat.png
+SHA1-Digest: Xl/0TaDYmOMs/m+64rCt7qCGxak=
+
+Name: res/drawable/icon_170_butterfly_2x.png
+SHA1-Digest: 9eEB9imWsp1HOWa+3UTSnfo1uDo=
+
+Name: res/drawable/icon_100_coffee.png
+SHA1-Digest: 0qsO7UdEuixTVuPrDFuPzCJO1WQ=
+
+Name: res/layout/shop_product_row.xml
+SHA1-Digest: TwEBiEUJ8OMsiAtAnbWs7WmDvaQ=
+
+Name: res/drawable/button_bright_light_dark_src.xml
+SHA1-Digest: 8OofKpwCDjmZxQWlVLH+dGsZEBE=
+
+Name: res/layout/circle_image.xml
+SHA1-Digest: D5gqv5H80kqwpnsb+RpUnWbmT6o=
+
+Name: res/drawable/icon_whitearrow_2x.png
+SHA1-Digest: 8ckiQeMHUwg54VMPUbNYld30bcU=
+
+Name: res/drawable/button_icon10_src.xml
+SHA1-Digest: WMh72dnXLykRDEWM6o0WmHyKg4k=
+
+Name: res/drawable/locations.png
+SHA1-Digest: cV47T6/EWe1OiIbpoLPliBUJ/uI=
+
+Name: res/anim/hide_tell_friends_dialog.xml
+SHA1-Digest: qZsAM4d3nX58FEhfo5OpvGU11I8=
+
+Name: res/drawable/icon_29_heart_2x.png
+SHA1-Digest: CwFBdCtRY13YEvoX91quj5DutWY=
+
+Name: res/drawable/icon_143_liquor_bottle_2x.png
+SHA1-Digest: S+MaCLL+fvhT2Rg8o4NpeH08f8U=
+
+Name: res/drawable/icon_11_clock_vectorized.png
+SHA1-Digest: 9hbMTGepi3LIcz/bInv17f+IkG8=
+
+Name: res/drawable/icon_settings.png
+SHA1-Digest: QneIuxmgbKmZvE43a3THQ8+2rAk=
+
+Name: res/layout-land/mailing_list_layout.xml
+SHA1-Digest: HAJntXVe70dL5qRG68/E6i8NBGQ=
+
+Name: res/drawable/icon_155_bowtie.png
+SHA1-Digest: prFmkxpEtszGnZuVPc2iA8Qm9R4=
+
+Name: res/drawable/button_blue_turquoise_src.xml
+SHA1-Digest: RFDzvUklQwVd+1vc2qIQvrJJr20=
+
+Name: res/drawable/rounded_edittext.xml
+SHA1-Digest: FBh2jBwd3GkUUh/6YNz8XShySEI=
+
+Name: res/drawable/icon_189_plant_2x.png
+SHA1-Digest: q7/QX8KcoY4Pp9x1E9euUBB1X/c=
+
+Name: res/drawable/icon_95_equalizer_2x.png
+SHA1-Digest: YTuL7TaKOLjzgsZCYs8pg+Vqtm0=
+
+Name: res/drawable/icon_command_line.png
+SHA1-Digest: oJArx6bSu44R4MVx7iURfuOw9jw=
+
+Name: res/drawable/icon_184_warning.png
+SHA1-Digest: gafLUIjh8VZWiuLAIi5xNNUfRc8=
+
+Name: res/drawable/button_gray_selected.9.png
+SHA1-Digest: BquMzwWTjiPenSTZhOt8gIbMtcU=
+
+Name: res/drawable/icon_109_chicken_2x.png
+SHA1-Digest: ePuA7ihs+kE1jXKY/ST3oHK9yJs=
+
+Name: res/drawable/icon_105_piano_2x.png
+SHA1-Digest: 3NxJr+Xy7Ya1YEBxe+UhFwOy7Ws=
+
+Name: res/drawable/icon_180_stickynote.png
+SHA1-Digest: kaJY6Xw4whkOpLvlKEWlN+/GG/Y=
+
+Name: res/drawable/button_pink_red_src.xml
+SHA1-Digest: jaZaWHFHgynr3Px2SIEi0Lywszc=
+
+Name: res/drawable/icon_05_shufflea1.png
+SHA1-Digest: Bjvnueg+jiFHFGcGN0Drd50xvVA=
+
+Name: res/drawable/icon_97_puzzle.png
+SHA1-Digest: RZWEp2brJxn2EaHIqsMUaXuL0XA=
+
+Name: res/drawable/icon_lock.png
+SHA1-Digest: /KcpcvCQD/UH98z3wCl4RMtL8F4=
+
+Name: res/drawable/icon_brush.png
+SHA1-Digest: Sifhw4RdtP2C7N2E1Y9gONXKdZE=
+
+Name: res/drawable/icon_download.png
+SHA1-Digest: N4qBKOc+0pdDxVwiXkNR4Bs0LFw=
+
+Name: com/paypal/android/utils/data/locale.bin
+SHA1-Digest: dkJVvYyZ1NEaxLHBa4QaO8sfBXY=
+
+Name: res/layout/shop_product_details.xml
+SHA1-Digest: wD3zw0ILyi9pn40KyXpJauNq7SA=
+
+Name: res/anim/show_navigation_container.xml
+SHA1-Digest: ABVmKBf8GX788wWRF9GBzoTW+go=
+
+Name: res/drawable/icon_warning.png
+SHA1-Digest: 6WbPRAC8R5GKT3zyNt890C8Dp9U=
+
+Name: res/drawable/button_icon3.png
+SHA1-Digest: GhNtWpFhpkK6tsl+fIz1tPlaFeQ=
+
+Name: res/drawable/icon_credit_card.png
+SHA1-Digest: n+8iVfwQTiICQeqVbsPVL1fhg5w=
+
+Name: res/drawable/icon_70_tv_2x.png
+SHA1-Digest: 6g2wVFMtUJyKi5AnwV389VHggA4=
+
+Name: res/drawable/button_icon4_src.xml
+SHA1-Digest: eh0VQ5RZTmvAjvgYbPhFr+NatQ4=
+
+Name: res/drawable/shopping_cart.png
+SHA1-Digest: HDH782tzvEoTy6W4Dtw8uMDMhX8=
+
+Name: res/drawable/icon_112_group.png
+SHA1-Digest: ftnBJd/gibWCCx6DlHBtyktlgAA=
+
+Name: res/drawable/icon_109_chicken.png
+SHA1-Digest: Ft53ZS+wcwvB8O/VFPzT960WDUk=
+
+Name: res/drawable/button_purple_src.xml
+SHA1-Digest: JEy+m9RaWuyW/h5qvI3ZuCA+QEg=
+
+Name: res/drawable/icon_window_lock.png
+SHA1-Digest: okfdmYPeYMguKmGeWf2Io9FyrSQ=
+
+Name: res/drawable/button_light_blue_src.xml
+SHA1-Digest: 3YaxW6k6L4TGZV3K5YBdUPN+hdg=
+
+Name: res/drawable/button_icon8.png
+SHA1-Digest: Hoj5cN0SohUgVCk8lDbLG6eCM88=
+
+Name: res/layout/common_list_layout.xml
+SHA1-Digest: YzIqva4PWB8juzMoDX0cmvsXGEw=
+
+Name: res/drawable/icon_attach.png
+SHA1-Digest: 2vRU4otfWjmxlciqLsvylZksQbc=
+
+Name: res/drawable/icon_33_cabinet_2x.png
+SHA1-Digest: GJg3aBLhfuga8GrYCRir90M0CEI=
+
+Name: res/drawable/icon_77_ekg.png
+SHA1-Digest: 98lizIUGumluESovsNzcJw9ijQs=
+
+Name: res/drawable/icon_166_newspaper.png
+SHA1-Digest: I2sGucip8DDOPR9SOjXyrp2yXC8=
+
+Name: res/drawable/icon_graph_bars.png
+SHA1-Digest: UroBIr0yQHcAbkV52PnclNqCQXY=
+
+Name: res/drawable/icon_192_credit_card_2x.png
+SHA1-Digest: 1sozf+nFTYhXZzh7+jLfx9b/uVQ=
+
+Name: res/drawable/icon_tag_add.png
+SHA1-Digest: TcIeAcqu/TeDQ+oQFaHo/HQD32M=
+
+Name: res/drawable/icon_147_popsicle.png
+SHA1-Digest: PdvPEOxes2nF1zD/dZlEMoouIbc=
+
+Name: res/layout/loyalty_card_layout.xml
+SHA1-Digest: /i9UAmHkyMcCnJniUV+lOk6BbIQ=
+
+Name: res/drawable/icon_62_contrast_2x.png
+SHA1-Digest: gEYKxyFHJjfduE7zalnQ3Y0HpIM=
+
+Name: res/drawable/icon_166_newspaper_2x.png
+SHA1-Digest: nejN5gdF+mnH/mFxhJx1m2bS9To=
+
+Name: res/layout/shop_products_list.xml
+SHA1-Digest: UnACakxLZwQ9cu+o4eyCAJ3LXfA=
+
+Name: res/drawable/icon_122_stats_2x.png
+SHA1-Digest: mnhZ4pxGjrVkMHXbJo/hYk7TkLM=
+
+Name: res/drawable/icon_185_printer_2x.png
+SHA1-Digest: peVWwHSW1cpVwpBTKzmNAqqCr+c=
+
+Name: res/drawable/icon_193_location_arrow_2x.png
+SHA1-Digest: bV6EvehHFdwk5xOu5Mn5+8mOI7o=
+
+Name: res/drawable/button_icon10.png
+SHA1-Digest: n2pdKhW+OQiUeBv+k8vOJ7/4usQ=
+
+Name: res/drawable/icon_186_ruler_2x.png
+SHA1-Digest: +KI2ziXcuVhPqkEWnnpHFy2XKgY=
+
+Name: res/drawable/icon_quote_form.png
+SHA1-Digest: 8gS7cwv2H7KhUTsEx8w8Txa26dg=
+
+Name: resources.arsc
+SHA1-Digest: o8dyY304ff8g/uevb4JSa13osPk=
+
+Name: res/drawable/icon_51_outlet_2x.png
+SHA1-Digest: HIYke53m1dk/rEgo1KVO/dhyaQo=
+
+Name: res/drawable/button_light_red.9.png
+SHA1-Digest: ijyUSmsz9byOjhyl17Tqwrr4sLU=
+
+Name: res/layout/dialog_button.xml
+SHA1-Digest: GiQOhjGPo4DlmSiOMcduV6R3lVY=
+
+Name: res/layout/mortgage_calculator_layout.xml
+SHA1-Digest: aKjvU2DxUZap318lAGa/kFCjAcE=
+
+Name: res/drawable/icon_163_glasses_1.png
+SHA1-Digest: EpPVdhaaI6m1Zzfw0Wliknd1qrw=
+
+Name: res/drawable/icon_144_martini.png
+SHA1-Digest: A8ZlHLegWhzXxcBwgYBOTP6iR24=
+
+Name: res/drawable/icon_167_upload_photo_2x.png
+SHA1-Digest: f7XqkMsyBQ4D3QuZ/uzx9UOvibw=
+
+Name: res/drawable/icon_132_ghost.png
+SHA1-Digest: ItdHt8MjOLKi83Ug9dBtWJaN3hY=
+
+Name: res/drawable/icon_175_macbook.png
+SHA1-Digest: rmyIWdNnbdbVT2RT+7ARyL/nYIk=
+
+Name: res/drawable/button_icon3_selected.png
+SHA1-Digest: NNQxEPQTKopEI11wiVP0pcFt/kQ=
+
+Name: res/drawable/icon_185_printer.png
+SHA1-Digest: 3DsopUV17c90ICvo/mPVoLL8CPw=
+
+Name: res/layout/common_dialog_layout.xml
+SHA1-Digest: BC39inlHytVfJqMwMAs+eKIpbm8=
+
+Name: res/drawable/icon_danger.png
+SHA1-Digest: ptxjArVbvbsOtKoKzkMOgsp+dKQ=
+
+Name: res/drawable/icon_controls_7.png
+SHA1-Digest: ZAGcJbExkcGyfILm3qNtouRc0wM=
+
+Name: res/drawable/icon_160_voicemail_2.png
+SHA1-Digest: Sp+JV7APvzZ9fogtN7hJwSSupAw=
+
+Name: res/drawable/icon_116_controller.png
+SHA1-Digest: QakInaujThhAaU+a6NTziwYu4U4=
+
+Name: res/drawable/icon_139_flags.png
+SHA1-Digest: 6aUOxSDI4B89f1DiE/NgLtKqa4o=
+
+Name: res/drawable/icon_76_baby_2x.png
+SHA1-Digest: Y4LlqGx5EbqoZb7/gI1+3rKPWDI=
+
+Name: res/drawable/icon_171_sun_2x.png
+SHA1-Digest: 4oGjbZLEAGvChjLJDNFMNwyqZYE=
+
+Name: res/drawable/icon_90_life_buoy.png
+SHA1-Digest: lr9B1hYUSywjOhl5cAt5adeEcb4=
+
+Name: res/drawable/button_gray.9.png
+SHA1-Digest: gyDbLoq7rIx7/6v5v8sy9SnERa0=
+
+Name: res/drawable/icon_85_trophy.png
+SHA1-Digest: Y3//kd6IqiIY5zqcgxDRWHjYsps=
+
+Name: res/layout/coupon_row.xml
+SHA1-Digest: 5e/vI83oiNJIH/aQTEqG/Lu/TNA=
+
+Name: res/drawable/icon_shopping_heavy.png
+SHA1-Digest: a6/0Ic1g/UKvKaw7l9F69OU1GWs=
+
+Name: res/drawable/icon_disk.png
+SHA1-Digest: /wpJpQeVvhX3DcngewgUXB4H8zM=
+
+Name: res/drawable/icon_book.png
+SHA1-Digest: gOl1rrlAM5sb2dVQo/54RUioJGU=
+
+Name: res/drawable/icon_bulb_off.png
+SHA1-Digest: atPVSP/uP9DK8qT9v4CpBxmLhI4=
+
+Name: res/drawable/arrow_left_disabled.png
+SHA1-Digest: MZAvSRbqj5yWJEFkcB5Qenw/Q2s=
+
+Name: res/drawable/icon_switch.png
+SHA1-Digest: uF1uzPZ6u3CV24FXjdKJwYVTXHA=
+
+Name: res/drawable/icon_48_fork_and_knife_2x.png
+SHA1-Digest: SAKmfq194pbNpRLXHU9TJITA9tc=
+
+Name: res/drawable/icon_trash.png
+SHA1-Digest: nqVAWt3ZeGgQdjOEb+nc/H8PbwM=
+
+Name: res/drawable/icon_134_viking_2x.png
+SHA1-Digest: flIp4PNpPfGDugSIL/mA0qVeGiY=
+
+Name: res/drawable/icon_54_lock.png
+SHA1-Digest: X3peDzzSlhRHmlGXRGYJ3To6Tcs=
+
+Name: res/drawable/button_orange_selected.9.png
+SHA1-Digest: uYlL5T2TUZk8rFIdVMxx/CTpBWs=
+
+Name: res/drawable/icon_users.png
+SHA1-Digest: QM0BCQ8FX+E04dFJfrr7O69wDFQ=
+
+Name: res/drawable/icon_117_todo.png
+SHA1-Digest: ce6741JCSuQseIrhVn0c60s+V/w=
+
+Name: res/drawable/icon_197_card_diamonds.png
+SHA1-Digest: 7+nGHKxKExPKgNGH5+aXGK7yASE=
+
+Name: res/drawable/button_icon2_src.xml
+SHA1-Digest: ThFgMSl7S5wR187FLDwASJAO9XQ=
+
+Name: res/drawable/icon_87_wine_glass_2x.png
+SHA1-Digest: 0l5xnF1HNn91uxUW31XBGMcT5gU=
+
+Name: res/drawable/icon_94_pill.png
+SHA1-Digest: q7buIoAjyDdzpQOk1ViOO60Sgy4=
+
+Name: res/drawable/icon_57_download_2x.png
+SHA1-Digest: smTmrn1D1w9+v0e037WllB7ncZw=
+
+Name: res/drawable/speech_bubble.png
+SHA1-Digest: w1p8RCIx+o4M8UPg12sGmrL2LNY=
+
+Name: res/drawable/icon_font_underline.png
+SHA1-Digest: yt3VhYLPMlufo671GET9J+2mc/4=
+
+Name: res/drawable/icon_resize.png
+SHA1-Digest: 0K6HOEWSegJMsrJyvP9a3fDmg5Q=
+
+Name: res/drawable/icon_controls_5.png
+SHA1-Digest: F5lYFDtxJxg8IKzw5EoqowbsdEQ=
+
+Name: res/drawable/icon_47_fuel.png
+SHA1-Digest: XvgTjNUO/NIqSb7wl2JYyFol040=
+
+Name: res/drawable/button_icon5_selected.png
+SHA1-Digest: 0RGukFS8ZAROHmvYgNJzrtrSzRQ=
+
+Name: res/drawable/vertical_loyalty_line.png
+SHA1-Digest: CyT+1azo0c1z3qyoqj8hM/OwM48=
+
+Name: res/drawable/icon_18_envelope.png
+SHA1-Digest: YYoTcDr6BZyrXQDRNC9L3+aOki4=
+
+Name: res/drawable/icon_84_lightbulb.png
+SHA1-Digest: KW3o7GY8LG0KjYQLONk3dQ2vMNg=
+
+Name: res/drawable/icon_upload.png
+SHA1-Digest: aPhfWTnTOkpsUarDfmX64BDaXus=
+
+Name: res/drawable/icon_126_moon_2x.png
+SHA1-Digest: cblGLRp1qbsQJDMS7LmYG3S2vRQ=
+
+Name: res/drawable/icon_27_planet_2x.png
+SHA1-Digest: O+Yz14fCf3dhwg8+Qp5r1vtW/0E=
+
+Name: res/drawable/icon_21_skull_2x.png
+SHA1-Digest: FXct2QDmURRbptucEoQkKC6WmFE=
+
+Name: res/layout/multiple_row.xml
+SHA1-Digest: xY3UzcrhychnlhfXdifYDzSEq+c=
+
+Name: res/drawable/icon_11_clock_2x.png
+SHA1-Digest: 95xhqPHq3vl74phPN55mEFo73iY=
+
+Name: res/drawable/icon_newspaper.png
+SHA1-Digest: RwueLy2Y2YIqrCi3y+TpueScwR0=
+
+Name: res/drawable/icon_195_barcode_2x.png
+SHA1-Digest: AMfuW8YRQKrnBw9BQ4abkzkf5BY=
+
+Name: res/drawable/icon_181_hammer.png
+SHA1-Digest: 5jUy/GrLALvYs/0zQYx6YP5lhl8=
+
+Name: res/drawable/icon_53_house.png
+SHA1-Digest: Ci9MhqlnEqWTBrkTIX3ZYMclv3Y=
+
+Name: res/layout/swipey_tab_indicator.xml
+SHA1-Digest: FkcxM51NPXVtuE+YQl2gwA7qAn8=
+
+Name: res/drawable/icon_auction.png
+SHA1-Digest: XWf9dPoSzsW1MXOAepVjJLNqpVk=
+
+Name: res/drawable/coupon_locked.png
+SHA1-Digest: 7NsIMx11kyRv3Ro4BVRWpjvba2s=
+
+Name: res/layout/twitter_layout.xml
+SHA1-Digest: wdK4h23TUV+WmQrE06zZ/Fpmn8U=
+
+Name: res/drawable/icon_121_landscape.png
+SHA1-Digest: 646lS38TTa7efY2EBdYeH8Rhoa0=
+
+Name: res/drawable/white_round_rect.xml
+SHA1-Digest: /tMWgP4xjo412byOUSAkKHbLFEI=
+
+Name: res/drawable/ic_pulltorefresh_arrow.png
+SHA1-Digest: PCcxLu5MpuzUak3GJhanRWrNz08=
+
+Name: res/drawable/icon_document.png
+SHA1-Digest: r0a/szdzR/jCsD1Cp+4+aNmHqU0=
+

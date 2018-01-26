@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/list_view_root" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tab_title_container" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/tab_title_text" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/body_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.biznessapps.widgets.RefreshableListView android:id="@id/list_view" android:background="@drawable/white_round_rect" android:padding="3.0dip" android:fadingEdge="none" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:cacheColorHint="@android:color/transparent" android:dividerHeight="1.0dip" />
+        <LinearLayout android:gravity="right" android:layout_gravity="right" android:id="@id/checkout" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginLeft="0.0dip" android:layout_weight="0.5">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/checkout_buttons" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="8.0dip" android:layout_weight="0.5" />
+            <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@id/checkout_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginTop="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/total_items_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff000000" android:id="@id/total_items_label" android:layout_width="77.0dip" android:layout_height="wrap_content" android:text="@string/total_items" />
+                    <TextView android:textColor="#ff000000" android:gravity="right" android:id="@id/total_items_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/subtotal_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff000000" android:id="@id/text_subtotal_label" android:layout_width="77.0dip" android:layout_height="wrap_content" android:text="@string/subtotal" />
+                    <TextView android:textColor="#ff000000" android:gravity="right" android:id="@id/text_subtotal_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/tax_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff000000" android:id="@id/tax" android:layout_width="77.0dip" android:layout_height="wrap_content" android:text="@string/tax" />
+                    <TextView android:textColor="#ff000000" android:gravity="right" android:id="@id/tax_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="00" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/total_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff000000" android:id="@id/total" android:layout_width="77.0dip" android:layout_height="wrap_content" android:text="@string/total" />
+                    <TextView android:textColor="#ff000000" android:gravity="right" android:id="@id/total_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="00" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

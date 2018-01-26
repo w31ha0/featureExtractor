@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:layout_gravity="center_horizontal" android:background="@drawable/button_light_gray_src" android:layout_width="160.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" style="@style/BigBlackBoldText"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

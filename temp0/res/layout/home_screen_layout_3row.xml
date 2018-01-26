@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:swipeytabs="http://schemas.android.com/apk/res/com.biznessapps.layout">
+    <ImageView android:id="@id/home_screen_header" android:layout_width="fill_parent" android:layout_height="40.0dip" android:scaleType="fitXY" />
+    <FrameLayout android:id="@id/home_screen_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.biznessapps.fragments.CustomizableViewPager android:layout_gravity="top" android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.biznessapps.fragments.SwipeyTabs android:layout_gravity="center" android:id="@id/swipeytabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="235.0dip">
+            <LinearLayout android:id="@id/progress_bar_container" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+            <com.biznessapps.fragments.CustomizableViewPager android:id="@id/tab_viewpager" android:layout_width="fill_parent" android:layout_height="210.0dip" />
+        </LinearLayout>
+        <include layout="@layout/tabs_circles_container" />
+    </FrameLayout>
+    <include layout="@layout/navigation_layout" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/speech_bubble_" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:id="@id/fan_wall_comment_item_image" android:background="#ffbcbcbc" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:layout_alignParentLeft="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ff000000" android:id="@id/fan_wall_name" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:layout_toRightOf="@id/fan_wall_comment_item_image" android:layout_alignParentTop="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff000000" android:layout_gravity="right" android:id="@id/fan_wall_time_ago" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/fan_wall_comment_item_image" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/fan_wall_comment_replies" android:background="@drawable/envelope" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ff000000" android:id="@id/fan_wall_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="30.0dip" android:singleLine="false" />
+</LinearLayout>

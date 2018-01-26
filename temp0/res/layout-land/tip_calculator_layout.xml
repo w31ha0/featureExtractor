@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tip_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip">
+            <include layout="@layout/tab_title_bar" />
+            <TableLayout android:id="@id/table_layout" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stretchColumns="0,1">
+                <TableRow>
+                    <TextView android:id="@id/amount_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/amount_label" style="@style/BigBlackBoldText" />
+                    <EditText android:textSize="13.0sp" android:gravity="center|right" android:id="@id/amount_text" android:layout_width="100.0dip" android:layout_height="40.0dip" android:inputType="numberDecimal" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:id="@id/tip_percent_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tip_percent_label" style="@style/BigBlackBoldText" />
+                    <EditText android:textSize="13.0sp" android:gravity="center|right" android:id="@id/tip_percent_text" android:layout_width="100.0dip" android:layout_height="40.0dip" android:inputType="numberDecimal" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:id="@id/people_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/people_label" style="@style/BigBlackBoldText" />
+                    <EditText android:textSize="13.0sp" android:gravity="center|right" android:id="@id/people_text" android:layout_width="100.0dip" android:layout_height="40.0dip" android:text="" android:inputType="number" />
+                </TableRow>
+            </TableLayout>
+            <Button android:id="@id/calculate_button" android:layout_width="140.0dip" android:layout_height="45.0dip" android:layout_marginTop="20.0dip" android:text="@string/calculate" style="@style/BigBlackBoldText" />
+            <TextView android:id="@id/each_person_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/tip_pay_label" style="@style/BigBlackBoldText" />
+            <TextView android:id="@id/each_person_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" style="@style/BigBlackBoldText" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/navigation_layout" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/tab_title_bar" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/scan_code_container" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="105.0dip">
+                    <ImageView android:id="@id/barcode_icon" android:background="@drawable/barcode_icon" android:layout_width="85.0dip" android:layout_height="85.0dip" android:layout_margin="10.0dip" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="left" android:id="@id/find_qr_code_title" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:text="@string/find_qr_code" android:layout_toRightOf="@id/barcode_icon" android:layout_alignParentTop="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="left" android:id="@id/scan_code_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/scan_code_description" android:layout_toRightOf="@id/barcode_icon" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center_horizontal" android:id="@id/scan_code_result_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="12.0dip" />
+                <Button android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/scan_code_button" android:layout_width="160.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="20.0dip" android:text="@string/scan_qr_code" android:drawableLeft="@drawable/barcode_button_icon" android:drawablePadding="5.0dip" style="@style/CommonButtonStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/qr_help_container" android:background="#ffffddff" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/need_help_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/need_help" android:singleLine="true" />
+                <TextView android:textStyle="bold" android:textColor="#ff000000" android:gravity="center|right" android:id="@id/more_text" android:paddingTop="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="> " />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/navigation_layout" />
+</LinearLayout>

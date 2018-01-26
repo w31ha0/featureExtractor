@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/preview_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_marginBottom="10.0dip" android:text="@string/demo_title" style="@style/BigWhiteText" />
+        <EditText android:layout_gravity="center" android:id="@id/demo_code_edittext" android:layout_width="246.0dip" android:layout_height="50.0dip" />
+        <Button android:layout_gravity="center" android:id="@id/load_demo_button" android:background="@drawable/button_light_gray_src" android:layout_width="250.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:text="@string/load_demo" style="@style/OrdinaryText" />
+        <Button android:layout_gravity="center" android:id="@id/reset_demo_button" android:background="@drawable/button_light_gray_src" android:layout_width="250.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/reset" style="@style/OrdinaryText" />
+        <FrameLayout android:id="@id/bottom_navig_conrol_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
