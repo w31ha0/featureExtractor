@@ -72,7 +72,7 @@ def parseApk(iteration):
         fullpath = queue.pop()
         print "Parsing " + fullpath
         family = fullpath.split('/')[4]
-        os.system("mkdir "+PROJECT_PATH+"featuresOutput/"+family)
+        os.system("mkdir "+PROJECT_PATH+"featuresOutput2/"+family)
         os.system("mkdir "+PROJECT_PATH+"quarantine/"+family)
         print "Malware family: " + str(family)
 
@@ -115,7 +115,7 @@ def parseApk(iteration):
         cleanup(TEMP_DIRECTORY)
 
 
-        f = open(PROJECT_PATH+"featuresOutput/"+family+"/"+apkname+".txt","w+")
+        f = open(PROJECT_PATH+"featuresOutput2/"+family+"/"+apkname+".txt","w+")
         for key, value in sorted(featuresStruct.features.iteritems()):
             print key + " ::: " + str(value)
             f.write(key + " ::: " + str(value))
@@ -152,7 +152,7 @@ for thread in threads:
     thread.join()
 
 timeTaken = time.time() - overallStartTime
-stats = open(PROJECT_PATH+"featuresOutput/"+outputStatsFile,"w+")
+stats = open(PROJECT_PATH+"featuresOutput2/"+outputStatsFile,"w+")
 print "Overall execution took " +str(timeTaken)+" seconds."
 stats.write("Overall execution took " +str(timeTaken)+" seconds.")
 stats.write(str(totalFilesSucceed)+" out of "+str(totalFilesTried)+" files succeeded.")

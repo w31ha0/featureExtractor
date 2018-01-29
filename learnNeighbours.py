@@ -58,6 +58,7 @@ def loadDataSet():
 trainingPortion = float(sys.argv[2])
 family = sys.argv[1]
 noOfIterations = int(sys.argv[3])
+scoringMode = sys.argv[4]
 malicious_dir_path = PROJECT_PATH+"featuresOutput2/"+family
 benign_dir_path = PROJECT_PATH+"featuresOutput2/benign"
 maliciousDataSet = []
@@ -98,11 +99,20 @@ noOfTrainingSets = int(trainingPortion*len(fullSet))
 noOfTestSets = len(fullSet) - noOfTrainingSets
 
 #x_train,x_test,y_train,y_test = cross_validation.train_test_split(fullSet,labelSet, test_size=(1-trainingPortion) )
-netACC = 0.0
-netTPR = 0.0
-netFPR = 0.0
-netTNR = 0.0
-netFNR = 0.0
+netParams = {}
+if scoringMode == "greatest" or scoringMode == "average":
+    netACC = 0.0
+    netTPR = 0.0
+    netFPR = 0.0
+    netTNR = 0.0
+    netFNR = 0.0
+elif scoringMode == "lowest": 
+    netACC = 10.0
+    netTPR = 10.0
+    netFPR = 10.0
+    netTNR = 10.0
+    netFNR = 10.0
+    
 for i in range(0,noOfIterations):
     shuffle(maliciousDataSet)
     shuffle(beinignDataSet)
@@ -176,6 +186,7 @@ for i in range(0,noOfIterations):
     # Overall accuracy
     ACC = (TP+TN)/(TP+FP+FN+TN)
     #ACC = grid_search.score(x_test,y_test)
+    params = grid_search.best_params_
     '''
     netACC += ACC
     netTPR += TPR
@@ -184,25 +195,47 @@ for i in range(0,noOfIterations):
     netFNR += FNR
     '''
 
-    if ACC > netACC:
-        netACC = ACC
-    if TPR > netTPR:
-        netTPR = TPR
-    if TNR > netTNR:
-        netTNR = TNR
-    if FPR > netFPR:
-        netFPR = FPR
-    if FNR > netFNR:
-        netFNR = FNR
-    params = grid_search.best_params_
+    if scoringMode == "greatest":
+        if ACC > netACC:
+            netParams = params
+            netACC = ACC
+        if TPR > netTPR:
+            netTPR = TPR
+        if TNR > netTNR:
+            netTNR = TNR
+        if FPR > netFPR:
+            netFPR = FPR
+        if FNR > netFNR:
+            netFNR = FNR
+    elif scoringMode == "lowest":
+        if ACC < netACC:
+            netParams = params
+            netACC = ACC
+        if TPR < netTPR:
+            netTPR = TPR
+        if TNR < netTNR:
+            netTNR = TNR
+        if FPR < netFPR:
+            netFPR = FPR
+        if FNR < netFNR:
+            netFNR = FNR
+    elif scoringMode == "average":
+        netParams = params
+        netACC += ACC
+        netTPR += TPR
+        netTNR += TNR
+        netFPR += FPR
+        netFNR += FNR
+    
     print "TPR:"+str(TPR)+",TNR:"+str(TNR)+",FPR:"+str(FPR)+",FNR:"+str(FNR)+",ACC:"+str(ACC)+" with params "+str(params)
-'''
-netACC /= noOfIterations
-netTPR /= noOfIterations
-netTNR /= noOfIterations
-netFPR /= noOfIterations
-netFNR /= noOfIterations
-'''
+    
+if scoringMode == "average":
+    netACC /= noOfIterations
+    netTPR /= noOfIterations
+    netTNR /= noOfIterations
+    netFPR /= noOfIterations
+    netFNR /= noOfIterations
+
 print "OVERALL: TPR:"+str(netTPR)+",TNR:"+str(netTNR)+",FPR:"+str(netFPR)+",FNR:"+str(netFNR)+",ACC:"+str(netACC)
 
 rb = open_workbook("learning_results2.csv")
@@ -219,7 +252,7 @@ for i in range(0,newRow):
         sh2.write(i,3,str(netTNR))
         sh2.write(i,4,str(netFPR))
         sh2.write(i,5,str(netFNR))
-        sh2.write(i,6,str(params['n_neighbors']))
+        sh2.write(i,6,str(netParams['n_neighbors']))
         sh2.write(i,7,str(len(maliciousDataSet)))
         sh2.write(i,8,str(len(beinignDataSet)))
         break
@@ -230,7 +263,7 @@ for i in range(0,newRow):
         sh2.write(newRow,3,str(netTNR))
         sh2.write(newRow,4,str(netFPR))
         sh2.write(newRow,5,str(netFNR))
-        sh2.write(newRow,6,str(params['n_neighbors']))
+        sh2.write(newRow,6,str(netParams['n_neighbors']))
         sh2.write(newRow,7,str(len(maliciousDataSet)))
         sh2.write(newRow,8,str(len(beinignDataSet)))
     #print value

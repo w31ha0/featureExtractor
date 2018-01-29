@@ -2,6 +2,7 @@ import os,sys
 from constants import *
 
 dir_path = sys.argv[1]
+scoringMode = sys.argv[2]
 classifiers = ['learnTree.py','learnSVM.py','learnNeighbours.py']
 print PROJECT_PATH + 'featuresOutput2'
 cmd = 'cp -r '+PROJECT_PATH+'featuresOutput/benign'+' '+PROJECT_PATH+'featuresOutput2/'
@@ -26,4 +27,4 @@ for classifier in classifiers:
             if ".txt" in family:
                 continue
             print "Learning family:"+family
-            os.system('python -W ignore '+classifier+' '+family+' '+str(trainingPortion)+' '+str(noOfIterations))
+            os.system('python -W ignore '+classifier+' '+family+' '+str(trainingPortion)+' '+str(noOfIterations)+' '+scoringMode)
