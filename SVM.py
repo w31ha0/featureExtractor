@@ -98,7 +98,7 @@ p_gamma = float(sys.argv[3])
 malicious_dir_path = PROJECT_PATH+"featuresOutput2/"+family
 benign_dir_path = PROJECT_PATH+"featuresOutput2/benign"
 
-clf = svm.SVC(gamma=p_gamma,C=p_C)
+clf = svm.SVC(gamma=p_gamma,C=p_C,kernel="linear")
 trainingPortion = float(sys.argv[2])
 loadDataSet()
 if len(maliciousDataSet) < 10:
@@ -157,11 +157,11 @@ print "No of benign samples: " + str(len(beinignDataSet))
 print "Total Number of samples: " + str(len(fullSet))
 
 clf.fit(x_train, y_train)
+print "Coefficients are "+str(clf.coef_) 
 predictions = clf.predict(x_test)
 cm = metrics.confusion_matrix(y_test,predictions)
 misclassified = np.where(predictions != y_test)
 f = open("misclassified_SVM_"+family,"w+")
-print "Misclassified Samples:"
 for mis in misclassified[0]:
     f.write(str(x_test[mis])+" misclassified as " + str(predictions[mis]))
     f.write("\n")
@@ -216,13 +216,22 @@ if FNR > netFNR:
 
 print "TPR:"+str(TPR)+",TNR:"+str(TNR)+",FPR:"+str(FPR)+",FNR:"+str(FNR)+",ACC:"+str(ACC)
 
+featuresRanking = {}
+for i in range(0,len(clf.coef_[0])):
+    featureName = featureNames[i]
+    featuresRanking[featureName] = clf.coef_[0][i]
+    
+for key, value in reversed(sorted(featuresRanking.iteritems(), key=lambda (k,v): (v,k))):
+    print "%s: %s" % (key, value)
+
+
 '''
 netACC /= noOfIterations
 netTPR /= noOfIterations
 netTNR /= noOfIterations
 netFPR /= noOfIterations
 netFNR /= noOfIterations
-'''
+
 
 aggregatedFeatures = [[] for _ in range(163)]
 
@@ -239,4 +248,4 @@ for j in range(0,len(aggregatedFeatures)):
     corr = pearsonr(aggregatedFeatures[j],predictions.tolist())[0]
     if corr > 0.5:
         print featureNames[j]+" ::: " + str(corr)
-       
+'''      

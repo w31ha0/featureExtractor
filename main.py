@@ -22,6 +22,7 @@ outputStatsFile = args.o
 sheetname = "temp"
 totalFilesTried = 0
 totalFilesSucceed = 0
+noOfThreads = 3
 
 def getSheetNo(sheetname):
     try:
@@ -137,14 +138,15 @@ print "Going to fill up queue..."
 for path, subdirs, files in os.walk(dir_path):
     for name in files:
         fullpath = os.path.join(path, name)
-        if not name.endswith("apk"):
+        print name
+        if len(name) < 60 and not name.endswith(".apk"):
             print "Skipping " + fullpath
             continue
         print "Filling queue with "+fullpath
         queue.append(fullpath)
  
 print "Completed filling queue....Going to spawn threads" 
-threads = [threading.Thread(target=parseApk,args=[i]) for i in range(4)]
+threads = [threading.Thread(target=parseApk,args=[i]) for i in range(noOfThreads)]
 for thread in threads:
     thread.start()
     
